@@ -1,0 +1,237 @@
+[
+ {
+  "t": "Cash account",
+  "d": "Account where the customer pays in full for purchases.",
+  "ch": 11
+ },
+ {
+  "t": "Margin account",
+  "d": "Account that lets the customer borrow from the broker-dealer; securities are collateral.",
+  "ch": 11
+ },
+ {
+  "t": "Regulation T",
+  "d": "Federal Reserve rule: 50% initial margin for purchases/short sales of margin-eligible securities.",
+  "ch": 11
+ },
+ {
+  "t": "Initial margin",
+  "d": "Equity a customer must deposit to open a margin position (Reg T 50%, FINRA minimums).",
+  "ch": 11
+ },
+ {
+  "t": "Maintenance margin",
+  "d": "Minimum equity kept afterwards: 25% of long MV, 30% of short MV.",
+  "ch": 11
+ },
+ {
+  "t": "Maintenance call",
+  "d": "Demand for more cash/securities when equity falls below the maintenance requirement.",
+  "ch": 11
+ },
+ {
+  "t": "Mark to market",
+  "d": "Daily revaluation of margin positions to current prices.",
+  "ch": 11
+ },
+ {
+  "t": "Debit balance",
+  "d": "Amount a margin customer owes the broker-dealer.",
+  "ch": 11
+ },
+ {
+  "t": "Credit balance",
+  "d": "In a short account: short sale proceeds plus the customer’s deposit.",
+  "ch": 11
+ },
+ {
+  "t": "Hypothecation",
+  "d": "Pledging securities as collateral for a margin loan.",
+  "ch": 11
+ },
+ {
+  "t": "Re-hypothecation",
+  "d": "The broker-dealer re-pledging customer securities as collateral for its own bank loan.",
+  "ch": 11
+ },
+ {
+  "t": "Street name",
+  "d": "Securities registered in the name of the broker-dealer.",
+  "ch": 11
+ },
+ {
+  "t": "Broker call rate",
+  "d": "Rate banks charge broker-dealers for margin loans; basis of customer margin interest.",
+  "ch": 11
+ },
+ {
+  "t": "Loan consent",
+  "d": "Optional margin-agreement part allowing the firm to lend customer shares for short sales.",
+  "ch": 11
+ },
+ {
+  "t": "Free-riding",
+  "d": "Buying and selling a security without ever paying for it.",
+  "ch": 11
+ },
+ {
+  "t": "Frozen account",
+  "d": "Account restricted to sells and fully funded buys, typically for 90 days after a Reg T violation.",
+  "ch": 11
+ },
+ {
+  "t": "Discretionary account",
+  "d": "Account where the rep chooses action, asset or amount under a written power of attorney.",
+  "ch": 11
+ },
+ {
+  "t": "Not held order",
+  "d": "Order giving the rep latitude over time and price; not discretionary.",
+  "ch": 11
+ },
+ {
+  "t": "Power of attorney",
+  "d": "Written authority for another person to act for the customer; ends at death.",
+  "ch": 11
+ },
+ {
+  "t": "Churning",
+  "d": "Excessive trading to generate commissions, inconsistent with objectives.",
+  "ch": 11
+ },
+ {
+  "t": "Signature of convenience",
+  "d": "Signing a customer’s name for them — prohibited even with permission.",
+  "ch": 11
+ },
+ {
+  "t": "JTWROS",
+  "d": "Joint tenants with rights of survivorship: survivor inherits; avoids probate.",
+  "ch": 11
+ },
+ {
+  "t": "JTIC / TIC",
+  "d": "Joint (or) tenants in common: each owner’s share passes to their own heirs; probated.",
+  "ch": 11
+ },
+ {
+  "t": "TOD",
+  "d": "Transfer on death designation; allows an individual account to avoid probate.",
+  "ch": 11
+ },
+ {
+  "t": "Probate",
+  "d": "Court process validating a will and distributing an estate.",
+  "ch": 11
+ },
+ {
+  "t": "UGMA / UTMA",
+  "d": "Uniform Gifts / Transfers to Minors Act custodial accounts for a minor.",
+  "ch": 11
+ },
+ {
+  "t": "Custodian",
+  "d": "Adult fiduciary managing a UGMA/UTMA account.",
+  "ch": 11
+ },
+ {
+  "t": "Fiduciary",
+  "d": "Person legally bound to put another’s interests first.",
+  "ch": 11
+ },
+ {
+  "t": "Trustor / Grantor",
+  "d": "The person who creates a trust.",
+  "ch": 11
+ },
+ {
+  "t": "Trustee",
+  "d": "Person who manages a trust for its beneficiaries.",
+  "ch": 11
+ },
+ {
+  "t": "Revocable trust",
+  "d": "Trust the grantor can change or cancel.",
+  "ch": 11
+ },
+ {
+  "t": "Irrevocable trust",
+  "d": "Trust that cannot be changed without the beneficiary’s agreement.",
+  "ch": 11
+ },
+ {
+  "t": "Stepped-up basis",
+  "d": "Heir’s cost basis becomes the market value at the date of death.",
+  "ch": 11
+ },
+ {
+  "t": "Corporate resolution",
+  "d": "Board document naming who may trade for a corporate account.",
+  "ch": 11
+ },
+ {
+  "t": "Introducing firm",
+  "d": "Broker-dealer with the customer relationship; does not hold assets or settle trades.",
+  "ch": 11
+ },
+ {
+  "t": "Clearing firm",
+  "d": "Broker-dealer that settles trades and holds customer cash and securities.",
+  "ch": 11
+ },
+ {
+  "t": "Numbered account",
+  "d": "Account identified by a symbol/number instead of a name; ownership statement still required.",
+  "ch": 11
+ },
+ {
+  "t": "Options disclosure document",
+  "d": "Risk document from the OCC delivered at or before options account approval.",
+  "ch": 11
+ },
+ {
+  "t": "ROP",
+  "d": "Registered Options Principal — approves options accounts.",
+  "ch": 11
+ },
+ {
+  "t": "Trade confirmation",
+  "d": "Written trade details sent at or before settlement.",
+  "ch": 11
+ },
+ {
+  "t": "Regulation S-P",
+  "d": "SEC privacy rule: privacy notice at opening and annually; opt-out for non-affiliate sharing.",
+  "ch": 11
+ },
+ {
+  "t": "Commingling",
+  "d": "Mixing customer and firm assets — prohibited.",
+  "ch": 11
+ },
+ {
+  "t": "Segregation",
+  "d": "Keeping fully paid customer securities apart from the firm’s assets.",
+  "ch": 11
+ },
+ {
+  "t": "SIPC",
+  "d": "Non-profit that protects customers of failed broker-dealers up to $500,000 ($250,000 cash).",
+  "ch": 11
+ },
+ {
+  "t": "FDIC",
+  "d": "Federal agency insuring bank deposits up to $250,000 per depositor.",
+  "ch": 11
+ },
+ {
+  "t": "Trusted contact",
+  "d": "Person a firm may contact about a customer, particularly a vulnerable investor.",
+  "ch": 11
+ },
+ {
+  "t": "Vulnerable investor",
+  "d": "Age 65+ or 18+ with impairment; firm may place a temporary hold on disbursements.",
+  "ch": 11
+ }
+]

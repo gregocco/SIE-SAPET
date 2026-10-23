@@ -1,0 +1,1500 @@
+{
+ "id": 11,
+ "title": "Customer Accounts",
+ "section": "Accounts",
+ "minutes": 75,
+ "brief": [
+  {
+   "h": "Opening an account",
+   "md": "- **Cold calls** (non-customers only): **8:00 am – 9:00 pm in the prospect’s local time**. Caller must give name + firm, phone + address, and purpose of the call.\n- Scripts = **retail communications** → principal approval **before first use**.\n- **Do-not-call**: the firm’s internal list is **indefinite**; the national registry also applies. Exceptions: **existing customer, personal relationship, prior written consent**.\n- An unregistered employee may cold-call, but must **hand the call to a registered person** once the prospect wants more information.\n- **New account form** (Rule 4512): name, address, phone, SSN/TIN, DOB, employment, citizenship, income, net worth (excl. home), tax bracket, objectives, experience, risk tolerance.\n- **Only the designated principal signs** the form (not the customer, not the rep). Approval **before or promptly after** the first trade.\n- Customer refuses to give financial data → account **can** open, but the rep can take **unsolicited orders only**.\n- **Numbered account**: symbol or number, never an alias — but the firm still needs **written ownership statement + ID**.\n- **Verification of information**: first request within **30 days** of opening; again within 30 days of any change; then **every 36 months** (each owner of a joint account).\n> **Exam tip** Introducing firm = relationship + takes orders. Clearing firm = custody + settlement."
+  },
+  {
+   "h": "Cash accounts, Reg T and free-riding",
+   "md": "- **Cash account**: pay **in full**. Regular-way settlement is **T+1**.\n- **Reg T payment deadline**: **2 business days after settlement (S+2)**. If unpaid and no extension: position **sold out** and account **frozen 90 days** (shortage ≤ **$1,000** → firm has discretion).\n- **Frozen account**: sells allowed; buys only if the cash is **already in the account** when the order is placed.\n- **Free-riding** = buying and selling a security **without ever paying** for it. Consequence: freeze (90 days) — proceeds are not released until the original purchase is paid.\n> **Exam tip** Free-riding is about *never paying*. Paying late within the extension is not free-riding."
+  },
+  {
+   "h": "Margin accounts",
+   "md": "- Borrow from the broker-dealer; securities are the **collateral**. **All short sales must be in a margin account.**\n- **Reg T initial margin = 50%** (since 1974). Government and municipal securities are **exempt from Reg T** → margin set by FINRA.\n- **FINRA minimum equity** for small trades:\n\n| Trade size | Long | Short |\n|---|---|---|\n| Up to $2,000 | **100%** of price | **$2,000** |\n| $2,000 – $4,000 | **$2,000** | **$2,000** |\n| Over $4,000 | **50%** (Reg T) | **50%** (Reg T) |\n\n- **Maintenance**: **25%** of long market value, **30%** of short market value. **Marked to market daily.** Below requirement → **maintenance (margin) call**; firm may liquidate if unmet.\n- **Eligible**: listed stocks, approved OTC, bonds, CEFs, ETFs, **LEAPS > 9 months**, Treasuries.\n- **Not eligible**: **IPOs (first 30 days)**, unapproved OTC, **mutual funds**, options ≤ 9 months, annuities. Mutual funds can be *collateral* after **30 days**.\n- **Margin agreement** = **hypothecation** (pledge; securities held in **street name**; **re-hypothecation** allowed) + **credit agreement** (interest = broker call + spread, lower rate for larger debit) + **loan consent** (**optional** — lets the firm lend your shares for short sales).\n- **Margin disclosure statement** (Rule 2264): before/at opening, **annually**. Key warnings: lose more than you deposit; forced sale **without contacting you**; no say in what is sold; house requirements can rise **with no notice**; no right to an extension."
+  },
+  {
+   "h": "Options accounts",
+   "md": "1. Customer expresses interest → rep sends the **options disclosure document** (ODD, prepared by the **OCC**) **at or before** approval.\n2. A **Registered Options Principal (ROP)** reviews and approves **in writing** (level depends on profile: covered calls < naked options).\n3. Customer **may start trading** once approved.\n4. **Options agreement** must be signed and returned **within 15 days of approval**; otherwise **closing transactions only** (no new positions, no exercise).\n> **Exam tip** Trading can begin *before* the signed agreement comes back. That surprises people."
+  },
+  {
+   "h": "Discretionary accounts and fees",
+   "md": "- **Discretion = the rep decides any of the 3 A’s**: **A**ction (buy/sell), **A**sset (which security), **A**mount (how many). **Time and price are not discretionary** (a “time and price” order is *not held*).\n- Needs **written power of attorney** (Rule 2510) + principal approval **before the first trade**, and **prompt** approval of each discretionary trade.\n- POA **ends at death**. Court-declared incompetence cancels it unless it is a **durable** POA.\n- **Signature of convenience** (signing for the client) is prohibited, even with permission.\n- **Churning** = excessive trading inconsistent with objectives to generate commissions (no fixed trade count).\n- **Fee-based accounts**: unsuitable for **buy-and-hold / infrequent traders**.\n- **DVP / RVP**: settlement methods tying delivery of securities to payment."
+  },
+  {
+   "h": "Account titles and what happens at death",
+   "md": "| Account | At death of an owner | Probate |\n|---|---|---|\n| **Individual** | Open orders cancelled, account frozen → beneficiary, else will/estate | Yes (unless **TOD**) |\n| **JTIC** (tenants in common) | **Their share** goes to their own beneficiary/estate | **Yes** |\n| **JTWROS** | Interest passes to **surviving owners** | **No** |\n\n- Joint accounts: unlimited owners, any owner can give instructions, **checks payable to all owners**. A **parent and minor child cannot** open a joint account.\n- JTIC fits e.g. **two siblings who want assets to go to their own spouses**. JTWROS fits spouses / parent + adult child."
+  },
+  {
+   "h": "Fiduciary accounts: UGMA/UTMA and trusts",
+   "md": "- **UGMA/UTMA**: adult **custodian** (fiduciary) manages for a minor. Securities in the **custodian’s name**; **minor’s SSN** on the account.\n- **One custodian, one minor.** Donor need not be a parent; **donor can be the custodian**.\n- **Gifts are irrevocable**; assets cannot move from one child’s account to another’s.\n- Age of majority: **18 (UGMA)**, **18–25 (UTMA, by state)**.\n- **No margin**; risky strategies (naked options, penny stocks) are *inappropriate*, not outright banned. **Minor owes the taxes**; custodian makes sure they’re paid. A minor **cannot trade**, even with permission.\n- **Trust**: trustor creates, **trustee** (fiduciary, has trading discretion) manages for beneficiaries; firm needs a **copy of the trust agreement**. **Revocable** (trustor can change) vs **irrevocable**. Can be invalidated for **undue influence** or **lack of capacity**.\n- **Inherited securities** get a **stepped-up basis** = value at date of death."
+  },
+  {
+   "h": "Business accounts",
+   "md": "- **Corporate**: **corporate resolution** naming who can trade; margin only if the **charter** allows it. **No beneficiary** (unlimited life). Taxed as a separate entity.\n- **Partnership**: **partnership agreement** says which partners can transact.\n- **Investment clubs**: usually partnerships; many firms require a special investment-club account."
+  },
+  {
+   "h": "Ongoing duties: statements, confirms, mail, records",
+   "md": "| Item | Rule |\n|---|---|\n| **Account statements** | **Quarterly** if a position, balance or activity; **monthly** if the account holds **options or penny stocks**; none if empty and inactive |\n| **Trade confirmations** | **At or before settlement.** Principal trade → show **mark-up/mark-down**; agency trade → show **commission** |\n| **Muni confirms** (MSRB G-15) | Yield to worst, call/put features, accrued interest, yield and dollar price, AMT status |\n| **Annual reports / proxies** | Issuer mails if shares are in the customer’s name; **firm forwards** if in **street name**; issuer reimburses costs |\n| **Hold mail** | **Permitted, not required**; **written** request; **max 3 months** unless valid reason (**safety**, not convenience) |\n| **Account records** | Kept **6 years after the account is closed** |"
+  },
+  {
+   "h": "Protecting customers: Reg S-P, custody, SIPC, FDIC, vulnerable investors",
+   "md": "- **Reg S-P (privacy)**: notice at **opening and annually**; customers may **opt out** of sharing with **non-affiliates** (typically **30 days** to do so) but **not** where sharing is legally required (IRS, AML).\n- **Custody**: customer assets must be **segregated**; mixing customer and firm assets = **commingling** (prohibited). No withdrawing customer funds without **written authorization**.\n- **SIPC**: non-profit, **not a government agency**. Covers loss from **broker-dealer failure**, **not market losses**. **$500,000 per separate customer, max $250,000 cash.** Value fixed at the **bankruptcy filing date**. Above the limit → general creditor. Not covered: commodities/futures.\n- **Separate customers**: individual, joint, trust, IRA, Roth IRA, minor’s account — each protected to the limit.\n- **FDIC**: **bank deposits** only, **$250,000** per depositor per bank; backed by the **US government**. Does **not** cover securities, mutual funds or annuities — even bought at a bank.\n- **Vulnerable investors** (65+, or 18+ with impairment): obtain a **trusted contact**; temporary hold on disbursements **15 business days**, +**10**, +**30** if reported to authorities (**55 total**).\n- **Financial condition** (Rule 2261): on request, provide the firm’s **balance sheet**."
+  }
+ ],
+ "traps": [
+  "**Margin buys and mutual funds.** Mutual funds are **never** bought on margin. They only become *collateral* after 30 days. Exchange-traded funds and CEFs are eligible.",
+  "**25% vs 30%.** Long = 25% of **long market value**. Short = 30% of **short market value**. Examiners swap them.",
+  "**Initial vs maintenance.** Initial = 50% (Reg T) with FINRA $2,000 floor. Maintenance = 25% / 30%. Don’t mix the two in a calculation.",
+  "**Small trades.** For a long purchase of $1,500 you deposit **$1,500**, not $750. For a short sale of $1,500 you deposit **$2,000**.",
+  "**Who signs the new account form?** Only the **designated principal**. Not the customer, not the rep.",
+  "**Options account timing.** You can trade **before** returning the agreement; you lose the right to open new positions **after 15 days** without it.",
+  "**Discretion is not time/price.** A client choosing *what* and *how many* but letting the rep pick the **timing or price** is still non-discretionary.",
+  "**JTIC vs JTWROS.** “Rights of survivorship” = survivor takes everything and probate is avoided. JTIC = deceased’s share goes to **their** heirs and **is** probated.",
+  "**UGMA/UTMA.** The **minor’s** SSN is on the account, the minor pays the tax, gifts are irrevocable, and there is **no margin**.",
+  "**SIPC ≠ insurance against losses.** It covers a **failed broker-dealer**, never market declines. $500k **including** max $250k cash — not $500k *plus* $250k.",
+  "**FDIC vs SIPC.** FDIC = bank deposits (not mutual funds, even from a bank). SIPC = securities and cash at a brokerage.",
+  "**Mail hold.** Convenience is **not** a valid reason for more than 3 months.",
+  "**Free-riding.** The violation is selling without ever paying. A late payment inside an approved extension is not free-riding."
+ ],
+ "formulas": [
+  {
+   "name": "Initial margin deposit",
+   "rule": "Long: ≤ $2,000 → 100%; $2,000–$4,000 → $2,000; > $4,000 → 50%.  Short: ≤ $4,000 → $2,000; > $4,000 → 50%.",
+   "example": "Short 1,000 sh at $12 = $12,000 → 50% = **$6,000**. Long $3,200 → FINRA floor **$2,000** (Reg T alone would be $1,600)."
+  },
+  {
+   "name": "Long account: equity and call",
+   "rule": "Equity = Long market value (LMV) − Debit balance.  Requirement = 25% × LMV.  Call = Requirement − Equity (if positive).",
+   "example": "LMV $60,000, debit $48,000 → equity $12,000; requirement $15,000 → **call $3,000**."
+  },
+  {
+   "name": "Short account: equity and call",
+   "rule": "Credit balance = short proceeds + initial deposit.  Equity = Credit balance − Short market value (SMV).  Requirement = 30% × SMV.",
+   "example": "Short 1,000 at $40 (credit $60,000). Price rises to $50 → SMV $50,000; equity $10,000; requirement $15,000 → **call $5,000**."
+  },
+  {
+   "name": "SIPC coverage",
+   "rule": "Covered = securities + min(cash, $250,000), capped at $500,000, per separate customer.",
+   "example": "$100,000 securities + $300,000 cash → 100,000 + 250,000 = **$350,000** covered."
+  },
+  {
+   "name": "Stepped-up basis (inheritance)",
+   "rule": "Heir’s cost basis = market value at date of death.",
+   "example": "Bought at $10, owner dies at $30, heir sells at $34 → gain = **$4**, not $24."
+  }
+ ],
+ "cards": [
+  {
+   "id": "11-c01",
+   "f": "Cold-call hours",
+   "b": "8:00 am – 9:00 pm in the **prospect’s** local time (non-customers only).",
+   "r": "11.1.1"
+  },
+  {
+   "id": "11-c02",
+   "f": "Three items disclosed on a cold call",
+   "b": "Name of caller + firm; phone number and address; reason for the call.",
+   "r": "11.1.1"
+  },
+  {
+   "id": "11-c03",
+   "f": "Exceptions to the do-not-call rules",
+   "b": "Existing customer, personal relationship with the rep, or prior written consent.",
+   "r": "11.1.1"
+  },
+  {
+   "id": "11-c04",
+   "f": "How long does a firm keep someone on its internal do-not-call list?",
+   "b": "Indefinitely.",
+   "r": "11.1.1"
+  },
+  {
+   "id": "11-c05",
+   "f": "Cold-call script approval",
+   "b": "A script is a retail communication: **principal approval before first use**.",
+   "r": "11.1.1"
+  },
+  {
+   "id": "11-c06",
+   "f": "Who signs the new account form?",
+   "b": "Only the **designated principal** (not customer, not rep).",
+   "r": "11.1.4"
+  },
+  {
+   "id": "11-c07",
+   "f": "When must a principal approve a new account?",
+   "b": "Before, or promptly after, the first transaction.",
+   "r": "11.1.4"
+  },
+  {
+   "id": "11-c08",
+   "f": "Customer refuses to give income/net worth",
+   "b": "Account may open; rep may accept **unsolicited orders only**, no recommendations.",
+   "r": "11.1.3"
+  },
+  {
+   "id": "11-c09",
+   "f": "Numbered account requirements",
+   "b": "Symbol or number (no alias); **written statement of ownership + proof of identity**.",
+   "r": "11.1.2"
+  },
+  {
+   "id": "11-c10",
+   "f": "Introducing firm vs clearing firm",
+   "b": "Introducing: customer relationship, takes orders. Clearing: processes/settles trades and holds custody of cash and securities.",
+   "r": "11.1.2"
+  },
+  {
+   "id": "11-c11",
+   "f": "Account information verification schedule",
+   "b": "Within 30 days of opening; within 30 days of a change; then every 36 months (to each joint owner).",
+   "r": "11.1.5"
+  },
+  {
+   "id": "11-c12",
+   "f": "Cash account settlement vs Reg T deadline",
+   "b": "Regular way = T+1. Reg T payment due within 2 business days after settlement (S+2).",
+   "r": "11.2.1.1"
+  },
+  {
+   "id": "11-c13",
+   "f": "If a cash-account purchase isn’t paid by the Reg T deadline (no extension)",
+   "b": "Position sold out; account frozen for **90 days** (firm discretion if shortage ≤ $1,000).",
+   "r": "11.2.1.1"
+  },
+  {
+   "id": "11-c14",
+   "f": "What can a frozen account do?",
+   "b": "Sell orders, and buys only if cash is **already in the account** at the time of the order.",
+   "r": "11.2.1.1"
+  },
+  {
+   "id": "11-c15",
+   "f": "Free-riding",
+   "b": "Buying and selling a security without ever paying for it → account frozen.",
+   "r": "11.2.1.1"
+  },
+  {
+   "id": "11-c16",
+   "f": "Which transactions must be done in a margin account?",
+   "b": "All short sales.",
+   "r": "11.2.2"
+  },
+  {
+   "id": "11-c17",
+   "f": "Reg T initial margin",
+   "b": "50% of market value (since 1974) for purchases and short sales of margin-eligible securities.",
+   "r": "11.2.2.1"
+  },
+  {
+   "id": "11-c18",
+   "f": "Securities exempt from Reg T",
+   "b": "US government and municipal securities — margin set by FINRA/self-regulatory rules.",
+   "r": "11.2.2.1"
+  },
+  {
+   "id": "11-c19",
+   "f": "FINRA minimum equity: long purchase",
+   "b": "≤ $2,000: 100%. $2,000–$4,000: $2,000. Over $4,000: 50%.",
+   "r": "11.2.2.2"
+  },
+  {
+   "id": "11-c20",
+   "f": "FINRA minimum equity: short sale",
+   "b": "Up to $4,000: **$2,000**. Over $4,000: 50%.",
+   "r": "11.2.2.2"
+  },
+  {
+   "id": "11-c21",
+   "f": "Long maintenance requirement",
+   "b": "25% of long market value.",
+   "r": "11.2.2.3"
+  },
+  {
+   "id": "11-c22",
+   "f": "Short maintenance requirement",
+   "b": "30% of short market value.",
+   "r": "11.2.2.3"
+  },
+  {
+   "id": "11-c23",
+   "f": "How often are margin accounts marked to market?",
+   "b": "Daily (longs and shorts).",
+   "r": "11.2.2.3"
+  },
+  {
+   "id": "11-c24",
+   "f": "Securities eligible for margin",
+   "b": "Exchange-listed stocks, Fed-approved OTC stocks, bonds, CEFs, ETFs, LEAPS > 9 months, Treasuries.",
+   "r": "11.2.2.4"
+  },
+  {
+   "id": "11-c25",
+   "f": "Securities NOT eligible for margin",
+   "b": "IPOs (first 30 days), unapproved OTC, mutual funds, options ≤ 9 months, annuities.",
+   "r": "11.2.2.4"
+  },
+  {
+   "id": "11-c26",
+   "f": "When can a mutual fund be used as margin collateral?",
+   "b": "After being held at least 30 days.",
+   "r": "11.2.2.4"
+  },
+  {
+   "id": "11-c27",
+   "f": "Three parts of the margin agreement",
+   "b": "Hypothecation, credit agreement, loan consent (optional).",
+   "r": "11.2.2.5"
+  },
+  {
+   "id": "11-c28",
+   "f": "Hypothecation",
+   "b": "Customer pledges securities as collateral for the margin loan; securities held in **street name**; firm may re-hypothecate.",
+   "r": "11.2.2.5"
+  },
+  {
+   "id": "11-c29",
+   "f": "Loan consent form",
+   "b": "Optional; lets the firm lend the customer’s securities for short sales.",
+   "r": "11.2.2.5"
+  },
+  {
+   "id": "11-c30",
+   "f": "Margin interest rate vs debit balance",
+   "b": "Rate = broker call rate + spread; **larger debit → lower rate**.",
+   "r": "11.2.2.5"
+  },
+  {
+   "id": "11-c31",
+   "f": "Margin disclosure statement: when and how often?",
+   "b": "Before or at account opening, and annually.",
+   "r": "11.2.2.6"
+  },
+  {
+   "id": "11-c32",
+   "f": "Options account opening: order of steps",
+   "b": "Disclosure document → ROP written approval → trading may begin → signed agreement within 15 days.",
+   "r": "11.2.3"
+  },
+  {
+   "id": "11-c33",
+   "f": "Unsigned options agreement after 15 days",
+   "b": "Customer may only **close** existing positions; no new positions, no exercise.",
+   "r": "11.2.3"
+  },
+  {
+   "id": "11-c34",
+   "f": "Who approves options accounts?",
+   "b": "A Registered Options Principal (ROP).",
+   "r": "11.2.3"
+  },
+  {
+   "id": "11-c35",
+   "f": "The three A’s of discretion",
+   "b": "Action, Asset, Amount. (Time and price are NOT discretionary.)",
+   "r": "11.2.4"
+  },
+  {
+   "id": "11-c36",
+   "f": "What is needed for discretionary trading?",
+   "b": "Written POA from the customer; principal approval before the first trade; prompt approval of each trade.",
+   "r": "11.2.4"
+  },
+  {
+   "id": "11-c37",
+   "f": "Power of attorney and death / incompetence",
+   "b": "Ends at death. Court-declared incompetence ends it unless it is a durable POA.",
+   "r": "11.2.4"
+  },
+  {
+   "id": "11-c38",
+   "f": "Signature of convenience",
+   "b": "Signing for a customer (even with permission) — prohibited.",
+   "r": "11.2.4"
+  },
+  {
+   "id": "11-c39",
+   "f": "Churning",
+   "b": "Excessive trading inconsistent with the customer’s objectives, to generate fees. No fixed trade count.",
+   "r": "11.2.4.1"
+  },
+  {
+   "id": "11-c40",
+   "f": "Who is a fee-based account unsuitable for?",
+   "b": "Buy-and-hold / infrequent traders.",
+   "r": "11.2.5"
+  },
+  {
+   "id": "11-c41",
+   "f": "JTWROS at an owner’s death",
+   "b": "Interest passes to surviving owners; avoids probate.",
+   "r": "11.3.2.2"
+  },
+  {
+   "id": "11-c42",
+   "f": "JTIC at an owner’s death",
+   "b": "That owner’s share goes to their beneficiary/estate (probate applies).",
+   "r": "11.3.2.1"
+  },
+  {
+   "id": "11-c43",
+   "f": "Joint account payments",
+   "b": "Any owner may give instructions; checks payable to **all** owners.",
+   "r": "11.3.2"
+  },
+  {
+   "id": "11-c44",
+   "f": "UGMA/UTMA age of majority",
+   "b": "UGMA: 18. UTMA: 18–25 depending on state.",
+   "r": "11.3.3.1"
+  },
+  {
+   "id": "11-c45",
+   "f": "UGMA/UTMA: whose SSN, whose taxes, whose name on securities?",
+   "b": "Minor’s SSN; minor is taxed; securities registered in the custodian’s name.",
+   "r": "11.3.3.1"
+  },
+  {
+   "id": "11-c46",
+   "f": "Can a UGMA/UTMA account use margin?",
+   "b": "No.",
+   "r": "11.3.3.1"
+  },
+  {
+   "id": "11-c47",
+   "f": "Cost basis of inherited shares",
+   "b": "Stepped up to value on the date of death.",
+   "r": "11.3.3.2"
+  },
+  {
+   "id": "11-c48",
+   "f": "Corporate account documents",
+   "b": "Corporate resolution naming authorized persons; margin only if permitted by the charter.",
+   "r": "11.4.1"
+  },
+  {
+   "id": "11-c49",
+   "f": "Statement frequency",
+   "b": "Quarterly; monthly if account holds options or penny stocks; none if inactive and empty.",
+   "r": "11.5.1"
+  },
+  {
+   "id": "11-c50",
+   "f": "When must a trade confirmation be sent?",
+   "b": "At or before completion of the transaction (settlement).",
+   "r": "11.5.2"
+  },
+  {
+   "id": "11-c51",
+   "f": "Principal vs agency trade confirmation",
+   "b": "Principal: show mark-up/mark-down. Agency: show commission.",
+   "r": "11.5.2"
+  },
+  {
+   "id": "11-c52",
+   "f": "Customer mail hold limit",
+   "b": "Up to 3 months, by written request; longer only for valid reasons like safety (not convenience).",
+   "r": "11.5.4"
+  },
+  {
+   "id": "11-c53",
+   "f": "Account records retention",
+   "b": "6 years after the account is closed.",
+   "r": "11.5.5"
+  },
+  {
+   "id": "11-c54",
+   "f": "Reg S-P privacy notice timing",
+   "b": "At account opening and annually; customers can opt out of non-affiliate sharing (not legally required sharing).",
+   "r": "11.6.1"
+  },
+  {
+   "id": "11-c55",
+   "f": "Commingling",
+   "b": "Mixing customer and firm assets — a violation. Customer assets must be segregated.",
+   "r": "11.6.2"
+  },
+  {
+   "id": "11-c56",
+   "f": "SIPC limits",
+   "b": "$500,000 per separate customer, of which at most $250,000 in cash.",
+   "r": "11.6.3"
+  },
+  {
+   "id": "11-c57",
+   "f": "What does SIPC not cover?",
+   "b": "Market losses, commodities/futures, and bad investment decisions. It is not a government agency.",
+   "r": "11.6.3"
+  },
+  {
+   "id": "11-c58",
+   "f": "Separate customers for SIPC",
+   "b": "Individual, joint, trust, IRA, Roth IRA, minor’s account — each separately protected.",
+   "r": "11.6.3.1"
+  },
+  {
+   "id": "11-c59",
+   "f": "FDIC coverage",
+   "b": "Bank deposits only: $250,000 per depositor per bank. Not securities, mutual funds or annuities.",
+   "r": "11.6.4"
+  },
+  {
+   "id": "11-c60",
+   "f": "Vulnerable investor temporary hold",
+   "b": "15 business days; +10 if suspicion persists; +30 if reported (55 total). Applies to age 65+, or 18+ with impairment.",
+   "r": "11.6.5"
+  },
+  {
+   "id": "11-c61",
+   "f": "Rule 2261",
+   "b": "On request, the firm provides its financial condition (balance sheet).",
+   "r": "11.6.6"
+  }
+ ],
+ "questions": [
+  {
+   "id": "11-q01",
+   "r": "11.1.1",
+   "k": "scenario",
+   "d": 2,
+   "q": "A registered representative in New York wants to cold-call a prospect (not an existing customer) who lives in Los Angeles. What is the earliest time, New York time, that the call may be placed?",
+   "o": [
+    "8:00 am",
+    "9:00 am",
+    "11:00 am",
+    "5:00 am"
+   ],
+   "a": 2,
+   "w": [
+    "Wrong: 8:00 am is the limit in the prospect’s time zone, not New York’s.",
+    "Wrong: no adjustment of one hour applies.",
+    "Correct: 8:00 am Pacific is 11:00 am Eastern; the window runs on the called person’s local time.",
+    "Wrong: this subtracts the time difference instead of adding it."
+   ]
+  },
+  {
+   "id": "11-q02",
+   "r": "11.1.1",
+   "k": "concept",
+   "d": 1,
+   "q": "Which of the following allows a representative to call a person who is on the firm’s internal do-not-call list?",
+   "o": [
+    "The person asked to be removed six months ago",
+    "The person is an existing customer of the firm",
+    "The call is made before 9:00 am",
+    "A colleague says the person no longer minds"
+   ],
+   "a": 1,
+   "w": [
+    "Wrong: the internal list is indefinite; time does not remove anyone.",
+    "Correct: existing customers, personal relationships and prior written consent are exceptions.",
+    "Wrong: calling hours do not override the do-not-call status.",
+    "Wrong: only the person’s own written consent counts."
+   ]
+  },
+  {
+   "id": "11-q03",
+   "r": "11.1.1",
+   "k": "concept",
+   "d": 1,
+   "q": "A firm wants its representatives to use a script on cold calls. How is the script treated?",
+   "o": [
+    "Institutional communication needing no approval",
+    "A retail communication that must be approved by a principal before first use",
+    "Correspondence, reviewed after use",
+    "A communication that must be filed with the SEC before use"
+   ],
+   "a": 1,
+   "w": [
+    "Wrong: cold calls target the public, not institutions.",
+    "Correct: scripts are retail communications requiring prior principal approval.",
+    "Wrong: correspondence is a different category and no prior approval is required for a scripted solicitation.",
+    "Wrong: the SEC does not pre-approve broker-dealer scripts."
+   ]
+  },
+  {
+   "id": "11-q04",
+   "r": "11.1.1",
+   "k": "scenario",
+   "d": 2,
+   "q": "An unregistered employee of a broker-dealer cold-calls prospects and offers to send a free research report. A prospect asks for more information about the company. What must the employee do?",
+   "o": [
+    "Read excerpts from the report",
+    "Turn the call over to a registered person",
+    "End the call; unregistered staff may not cold-call at all",
+    "Give the prospect the firm’s investment recommendation"
+   ],
+   "a": 1,
+   "w": [
+    "Wrong: discussing the substance goes beyond what an unregistered person may do.",
+    "Correct: the call must be handed to a registered person.",
+    "Wrong: unregistered employees may place cold calls, within limits.",
+    "Wrong: recommendations are a registered activity."
+   ]
+  },
+  {
+   "id": "11-q05",
+   "r": "11.1.4",
+   "k": "concept",
+   "d": 1,
+   "q": "Who is required to sign the new account form?",
+   "o": [
+    "The customer and the registered representative",
+    "The customer and the designated principal",
+    "Only the customer",
+    "Only the designated principal who approves the account"
+   ],
+   "a": 3,
+   "w": [
+    "Wrong: neither of them needs to sign.",
+    "Wrong: the customer’s signature is not required on the form itself.",
+    "Wrong: the customer need not sign the form.",
+    "Correct: the principal’s signature documents approval and is the only one required."
+   ]
+  },
+  {
+   "id": "11-q06",
+   "r": "11.1.3",
+   "k": "scenario",
+   "d": 2,
+   "q": "A new client provides all identification data but refuses to disclose income and net worth. What is true?",
+   "o": [
+    "The account cannot be opened",
+    "The account may be opened but the rep can only take unsolicited orders",
+    "The account may be opened and the rep may recommend conservative products",
+    "The principal may approve recommendations after the first trade"
+   ],
+   "a": 1,
+   "w": [
+    "Wrong: refusal does not prevent opening.",
+    "Correct: without the facts, no recommendations; only unsolicited orders.",
+    "Wrong: any recommendation requires knowing the customer’s facts.",
+    "Wrong: approval does not cure the lack of information."
+   ]
+  },
+  {
+   "id": "11-q07",
+   "r": "11.1.2",
+   "k": "concept",
+   "d": 1,
+   "q": "A customer who wants anonymity from relatives at the firm asks to open an account. What may the firm do?",
+   "o": [
+    "Open the account under an alias",
+    "Open it under a fictitious name with made-up data",
+    "Open a numbered account, keeping a written statement of ownership and ID",
+    "Refuse; anonymity is never permitted"
+   ],
+   "a": 2,
+   "w": [
+    "Wrong: aliases are not allowed.",
+    "Wrong: false information is never allowed.",
+    "Correct: a symbol or number is allowed, with ownership statement and proof of identity on file.",
+    "Wrong: numbered accounts are permitted."
+   ]
+  },
+  {
+   "id": "11-q08",
+   "r": "11.1.5",
+   "k": "concept",
+   "d": 2,
+   "q": "After the initial verification, how often must a firm send customers a request to verify their account information?",
+   "o": [
+    "Every 12 months",
+    "Every 24 months",
+    "Every 36 months",
+    "Only when the customer reports a change"
+   ],
+   "a": 2,
+   "w": [
+    "Wrong: annual verification is not the rule; after the first request the interval is 36 months.",
+    "Wrong: not the required interval.",
+    "Correct: the initial request within 30 days, then every 36 months (and 30 days after any reported change).",
+    "Wrong: periodic verification is mandatory even without a change."
+   ]
+  },
+  {
+   "id": "11-q09",
+   "r": "11.1.2",
+   "k": "concept",
+   "d": 1,
+   "q": "Which function is performed by a clearing firm but not by an introducing firm?",
+   "o": [
+    "Opening customer accounts",
+    "Accepting customer orders",
+    "Holding customer cash and securities and settling trades",
+    "Obtaining new account forms"
+   ],
+   "a": 2,
+   "w": [
+    "Wrong: the introducing firm opens accounts.",
+    "Wrong: the introducing firm takes orders.",
+    "Correct: custody and settlement belong to the clearing firm.",
+    "Wrong: collected at the introducing level."
+   ]
+  },
+  {
+   "id": "11-q10",
+   "r": "11.2.1.1",
+   "k": "concept",
+   "d": 2,
+   "q": "A customer buys stock in a cash account and does not pay by the Reg T deadline; no extension is granted and the shortage exceeds $1,000. What happens?",
+   "o": [
+    "The firm sells the position and freezes the account for 90 days",
+    "The firm freezes the account for 30 days only",
+    "The firm charges margin interest and keeps the position",
+    "The customer is reported to the SEC"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: sell-out and a 90-day freeze.",
+    "Wrong: the freeze is 90 days.",
+    "Wrong: a cash account has no margin loan.",
+    "Wrong: no automatic SEC report; the consequence is the sell-out and freeze."
+   ]
+  },
+  {
+   "id": "11-q11",
+   "r": "11.2.1.1",
+   "k": "scenario",
+   "d": 2,
+   "q": "Susan buys ABC stock on Tuesday (regular way) and sells the same shares on Tuesday in a cash trade, using the proceeds to pay for her purchase. This is:",
+   "o": [
+    "Permitted if she pays by settlement",
+    "A margin violation",
+    "Free-riding",
+    "Churning"
+   ],
+   "a": 2,
+   "w": [
+    "Wrong: she never paid with her own money.",
+    "Wrong: no margin loan is involved.",
+    "Correct: she bought and sold without paying for the stock — free-riding.",
+    "Wrong: churning concerns excessive trading by a rep."
+   ]
+  },
+  {
+   "id": "11-q12",
+   "r": "11.2.1.1",
+   "k": "concept",
+   "d": 2,
+   "q": "An account is frozen for free-riding. Which orders are permitted?",
+   "o": [
+    "None",
+    "Sell orders only",
+    "Sell orders, and buy orders only if full cash is in the account when placed",
+    "Only orders approved by a principal"
+   ],
+   "a": 2,
+   "w": [
+    "Wrong: trading is limited, not banned.",
+    "Wrong: buys with cash already on deposit are also allowed.",
+    "Correct: sells, plus buys fully funded at the time of the order.",
+    "Wrong: approval is not the test; funding is."
+   ]
+  },
+  {
+   "id": "11-q13",
+   "r": "11.2.2",
+   "k": "concept",
+   "d": 1,
+   "q": "A customer wants to sell stock short. In which account must the trade be placed?",
+   "o": [
+    "Cash account",
+    "Margin account",
+    "Custodial account",
+    "Any account type"
+   ],
+   "a": 1,
+   "w": [
+    "Wrong: cash accounts require full payment for purchases and cannot hold shorts.",
+    "Correct: all short sales are executed in a margin account.",
+    "Wrong: custodial accounts cannot use margin.",
+    "Wrong: only margin accounts."
+   ]
+  },
+  {
+   "id": "11-q14",
+   "r": "11.2.2.2",
+   "k": "calc",
+   "d": 2,
+   "q": "A customer buys $60,000 of listed stock in a margin account. What is the minimum initial deposit?",
+   "o": [
+    "$15,000",
+    "$30,000",
+    "$45,000",
+    "$60,000"
+   ],
+   "a": 1,
+   "w": [
+    "Wrong: 25% is the maintenance level for longs.",
+    "Correct: Reg T requires 50% → $30,000.",
+    "Wrong: 75% is not a margin requirement.",
+    "Wrong: that is the cash-account requirement."
+   ]
+  },
+  {
+   "id": "11-q15",
+   "r": "11.2.2.2",
+   "k": "calc",
+   "d": 2,
+   "q": "A customer buys $3,200 of stock in a margin account. What is the minimum deposit?",
+   "o": [
+    "$1,600",
+    "$2,000",
+    "$3,200",
+    "$4,000"
+   ],
+   "a": 1,
+   "w": [
+    "Wrong: 50% would be $1,600, but the FINRA minimum overrides it.",
+    "Correct: between $2,000 and $4,000 the minimum is $2,000.",
+    "Wrong: the full price is required only at $2,000 or less.",
+    "Wrong: no such requirement."
+   ]
+  },
+  {
+   "id": "11-q16",
+   "r": "11.2.2.2",
+   "k": "calc",
+   "d": 2,
+   "q": "A customer buys $1,500 of stock in a margin account. What is the minimum deposit?",
+   "o": [
+    "$750",
+    "$1,500",
+    "$2,000",
+    "$1,125"
+   ],
+   "a": 1,
+   "w": [
+    "Wrong: 50% is less than the allowed purchase price.",
+    "Correct: FINRA requires the lesser of $2,000 or 100% of the price → $1,500.",
+    "Wrong: she doesn’t need to deposit more than the cost.",
+    "Wrong: 75% of the price is not a margin level; the FINRA rule is the lesser of $2,000 or 100%."
+   ]
+  },
+  {
+   "id": "11-q17",
+   "r": "11.2.2.2",
+   "k": "calc",
+   "d": 3,
+   "q": "A customer sells short 1,000 shares of XYZ at $12 and 100 shares of ABC at $10 in a margin account (two separate trades). What are the minimum deposits for each trade respectively?",
+   "o": [
+    "$6,000 and $500",
+    "$6,000 and $2,000",
+    "$12,000 and $1,000",
+    "$2,000 and $2,000"
+   ],
+   "a": 1,
+   "w": [
+    "Wrong: for a short sale of $1,000 the minimum is still $2,000.",
+    "Correct: $12,000 × 50% = $6,000; the $1,000 short needs the $2,000 minimum.",
+    "Wrong: those are 100% figures.",
+    "Wrong: the $12,000 short exceeds $4,000, so Reg T 50% applies."
+   ]
+  },
+  {
+   "id": "11-q18",
+   "r": "11.2.2.1",
+   "k": "concept",
+   "d": 2,
+   "q": "Which statement about Regulation T is correct?",
+   "o": [
+    "It sets the initial margin requirement for margin-eligible securities",
+    "It sets the maintenance requirement at 25%",
+    "It applies to municipal bonds",
+    "It was set by FINRA"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: the Fed’s Reg T sets initial margin (50%).",
+    "Wrong: the 25% maintenance level is FINRA’s.",
+    "Wrong: municipals and governments are exempt from Reg T.",
+    "Wrong: Reg T is a Federal Reserve Board regulation."
+   ]
+  },
+  {
+   "id": "11-q19",
+   "r": "11.2.2.3",
+   "k": "calc",
+   "d": 2,
+   "q": "A customer’s long margin account holds $120,000 of securities. What is the FINRA minimum maintenance equity?",
+   "o": [
+    "$30,000",
+    "$36,000",
+    "$60,000",
+    "$120,000"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: 25% × $120,000 = $30,000.",
+    "Wrong: 30% is the short requirement.",
+    "Wrong: 50% is the initial requirement.",
+    "Wrong: 100% is the cash-account level."
+   ]
+  },
+  {
+   "id": "11-q20",
+   "r": "11.2.2.3",
+   "k": "calc",
+   "d": 3,
+   "q": "A long margin account has market value of $60,000 and a debit balance of $48,000. How large is the maintenance call?",
+   "o": [
+    "No call",
+    "$3,000",
+    "$12,000",
+    "$15,000"
+   ],
+   "a": 1,
+   "w": [
+    "Wrong: equity is below the requirement.",
+    "Correct: equity = $12,000; requirement = 25% × $60,000 = $15,000; call = $3,000.",
+    "Wrong: that is the equity, not the call.",
+    "Wrong: that is the requirement, not the shortfall."
+   ]
+  },
+  {
+   "id": "11-q21",
+   "r": "11.2.2.3",
+   "k": "calc",
+   "d": 3,
+   "q": "A customer shorts 1,000 shares at $40 and deposits the initial requirement. The stock rises to $50. What is the maintenance call?",
+   "o": [
+    "$2,500",
+    "$5,000",
+    "$7,500",
+    "No call"
+   ],
+   "a": 1,
+   "w": [
+    "Wrong: misapplies the percentage.",
+    "Correct: credit $60,000 − SMV $50,000 = equity $10,000; requirement 30% × $50,000 = $15,000; call $5,000.",
+    "Wrong: confuses requirement and initial deposit.",
+    "Wrong: equity is below the requirement."
+   ]
+  },
+  {
+   "id": "11-q22",
+   "r": "11.2.2.3",
+   "k": "concept",
+   "d": 1,
+   "q": "How often are margin accounts marked to the market?",
+   "o": [
+    "Daily",
+    "Weekly",
+    "Monthly",
+    "At the firm’s discretion"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: daily, for both long and short accounts.",
+    "Wrong: weekly is too infrequent.",
+    "Wrong: monthly is not the rule.",
+    "Wrong: the requirement is daily."
+   ]
+  },
+  {
+   "id": "11-q23",
+   "r": "11.2.2.4",
+   "k": "concept",
+   "d": 2,
+   "q": "Which of these can be purchased on margin?",
+   "o": [
+    "A mutual fund",
+    "An IPO share 10 days after the effective date",
+    "A LEAPS option with 18 months to expiration",
+    "An annuity"
+   ],
+   "a": 2,
+   "w": [
+    "Wrong: mutual funds cannot be bought on margin.",
+    "Wrong: IPOs are restricted for the first 30 days.",
+    "Correct: LEAPS with more than 9 months to expiration are eligible.",
+    "Wrong: annuities are not eligible."
+   ]
+  },
+  {
+   "id": "11-q24",
+   "r": "11.2.2.5",
+   "k": "concept",
+   "d": 2,
+   "q": "Which part of the margin agreement is optional for the customer to sign?",
+   "o": [
+    "Hypothecation agreement",
+    "Credit agreement",
+    "Loan consent form",
+    "All three are required"
+   ],
+   "a": 2,
+   "w": [
+    "Wrong: needed to pledge collateral.",
+    "Wrong: sets interest terms; required.",
+    "Correct: it allows the firm to lend the customer’s shares for short sales.",
+    "Wrong: the loan consent is optional."
+   ]
+  },
+  {
+   "id": "11-q25",
+   "r": "11.2.2.5",
+   "k": "concept",
+   "d": 2,
+   "q": "By signing the hypothecation agreement, a margin customer:",
+   "o": [
+    "Allows the firm to sell shares at any time with no notice and no collateral",
+    "Pledges securities as collateral for the margin loan",
+    "Waives margin interest",
+    "Agrees to a 25% initial deposit"
+   ],
+   "a": 1,
+   "w": [
+    "Wrong: not what hypothecation means.",
+    "Correct: securities are pledged as collateral for the loan.",
+    "Wrong: interest is set by the credit agreement.",
+    "Wrong: initial margin is 50% under Reg T."
+   ]
+  },
+  {
+   "id": "11-q26",
+   "r": "11.2.2.6",
+   "k": "concept",
+   "d": 2,
+   "q": "Which statement is NOT a required warning in the margin disclosure statement?",
+   "o": [
+    "You can lose more than you deposit",
+    "The firm can sell your securities without contacting you",
+    "You will receive 30 days’ written notice before the firm raises house maintenance requirements",
+    "You are not entitled to an extension on a margin call"
+   ],
+   "a": 2,
+   "w": [
+    "This warning is in the statement: a margin investor can lose more than the amount deposited.",
+    "This warning is in the statement: the firm may sell without contacting the customer.",
+    "Correct choice: the warning is that the firm can raise requirements without advance notice.",
+    "This warning is in the statement: no entitlement to extra time on a margin call."
+   ]
+  },
+  {
+   "id": "11-q27",
+   "r": "11.2.3",
+   "k": "scenario",
+   "d": 3,
+   "q": "A customer wants to trade options. Which sequence is correct?",
+   "o": [
+    "Signed agreement → principal approval → disclosure document",
+    "Disclosure document (at or before approval) → ROP approval → trading → signed agreement within 15 days",
+    "ROP approval → trading → disclosure document at 15 days",
+    "Signed agreement → disclosure document → trading"
+   ],
+   "a": 1,
+   "w": [
+    "Wrong: the agreement comes after approval.",
+    "Correct: the ODD is delivered at or before approval; trading may begin; agreement due within 15 days.",
+    "Wrong: the ODD cannot be delayed.",
+    "Wrong: the agreement is not first."
+   ]
+  },
+  {
+   "id": "11-q28",
+   "r": "11.2.3",
+   "k": "concept",
+   "d": 2,
+   "q": "A customer’s options account was approved 20 days ago but the customer has not returned the signed options agreement. The customer may:",
+   "o": [
+    "Open new positions normally",
+    "Only close existing positions",
+    "Not do anything",
+    "Exercise only"
+   ],
+   "a": 1,
+   "w": [
+    "Wrong: after 15 days new positions are not allowed.",
+    "Correct: liquidating (closing) transactions only.",
+    "Wrong: closing is permitted.",
+    "Wrong: exercising is also barred."
+   ]
+  },
+  {
+   "id": "11-q29",
+   "r": "11.2.4",
+   "k": "scenario",
+   "d": 2,
+   "q": "A client tells the rep: “I want exposure to technology.” The rep picks the specific stock and buys it. This trade is:",
+   "o": [
+    "Non-discretionary because the client chose the sector",
+    "Discretionary because the rep chose the asset",
+    "Not held",
+    "Unsolicited"
+   ],
+   "a": 1,
+   "w": [
+    "Wrong: choosing the specific security is the rep’s decision.",
+    "Correct: deciding any of action, asset or amount makes it discretionary.",
+    "Wrong: “not held” refers to time and price latitude.",
+    "Wrong: the client did not initiate the specific purchase."
+   ]
+  },
+  {
+   "id": "11-q30",
+   "r": "11.2.4",
+   "k": "concept",
+   "d": 2,
+   "q": "A client tells the rep: “Buy 100 shares of Apple when the time and price are right.” The trade is:",
+   "o": [
+    "Discretionary",
+    "Non-discretionary (a not-held order)",
+    "Prohibited",
+    "A churning risk"
+   ],
+   "a": 1,
+   "w": [
+    "Wrong: time and price are not discretionary items.",
+    "Correct: action, asset and amount are set by the client.",
+    "Wrong: nothing prohibits a client leaving time and price to the rep; it simply isn’t discretion.",
+    "Wrong: this is a single trade."
+   ]
+  },
+  {
+   "id": "11-q31",
+   "r": "11.2.4",
+   "k": "concept",
+   "d": 2,
+   "q": "Which is true of a power of attorney for discretionary trading?",
+   "o": [
+    "It continues after the customer’s death",
+    "It must be written, and a principal must approve the account before the first trade",
+    "The rep may sign for the customer if permission is given",
+    "It is needed only for margin accounts"
+   ],
+   "a": 1,
+   "w": [
+    "Wrong: a power of attorney ends at the customer’s death.",
+    "Correct: written authority, principal approval before first trade and promptly after each trade.",
+    "Wrong: signing for a customer is prohibited.",
+    "Wrong: it concerns discretion, not margin."
+   ]
+  },
+  {
+   "id": "11-q32",
+   "r": "11.2.4.1",
+   "k": "concept",
+   "d": 1,
+   "q": "Excessive trading in a conservative client’s account that earns the rep commissions is called:",
+   "o": [
+    "Front-running",
+    "Churning",
+    "Free-riding",
+    "Commingling"
+   ],
+   "a": 1,
+   "w": [
+    "Wrong: trading ahead of customer orders.",
+    "Correct: excessive trading inconsistent with objectives to generate fees.",
+    "Wrong: buying and selling without paying.",
+    "Wrong: mixing customer and firm assets."
+   ]
+  },
+  {
+   "id": "11-q33",
+   "r": "11.2.5",
+   "k": "concept",
+   "d": 1,
+   "q": "For which investor is a fee-based account LEAST suitable?",
+   "o": [
+    "An active trader placing many orders",
+    "A buy-and-hold investor who trades rarely",
+    "A client with a large portfolio and frequent rebalancing",
+    "A customer wanting predictable costs"
+   ],
+   "a": 1,
+   "w": [
+    "Fits a fee-based account.",
+    "Correct: a rare trader pays fees for little activity.",
+    "This investor suits a fee-based account: frequent activity makes a flat or asset-based fee efficient.",
+    "This investor suits a fee-based account: fees are predictable rather than per-trade."
+   ]
+  },
+  {
+   "id": "11-q34",
+   "r": "11.3.2",
+   "k": "scenario",
+   "d": 2,
+   "q": "Two siblings open a joint account and each wants their share to go to their own spouse at death. Which title fits?",
+   "o": [
+    "JTWROS",
+    "JTIC",
+    "UTMA",
+    "Individual"
+   ],
+   "a": 1,
+   "w": [
+    "Wrong: the survivor would take everything.",
+    "Correct: JTIC lets each owner’s share pass to their own beneficiary.",
+    "Wrong: custodial account for a minor.",
+    "Wrong: it needs two owners."
+   ]
+  },
+  {
+   "id": "11-q35",
+   "r": "11.3.2.2",
+   "k": "concept",
+   "d": 2,
+   "q": "Which account avoids probate at an owner’s death?",
+   "o": [
+    "JTIC",
+    "Individual account without TOD",
+    "JTWROS",
+    "Corporate account"
+   ],
+   "a": 2,
+   "w": [
+    "Wrong: JTIC shares are probated.",
+    "Wrong: goes through the estate unless TOD is designated.",
+    "Correct: assets pass directly to the survivor.",
+    "Wrong: corporations have unlimited life, probate does not apply."
+   ]
+  },
+  {
+   "id": "11-q36",
+   "r": "11.3.2",
+   "k": "concept",
+   "d": 2,
+   "q": "In a joint account, which statement is correct?",
+   "o": [
+    "Checks may be made out to any one owner",
+    "Any owner may give trading instructions, but checks must be payable to all owners",
+    "All owners must sign every order",
+    "A parent and a minor child may open one"
+   ],
+   "a": 1,
+   "w": [
+    "Wrong: checks must name all owners.",
+    "Correct: any owner may instruct the firm, but checks must be payable to all owners.",
+    "Wrong: one owner may give instructions.",
+    "Wrong: a minor cannot be part of a joint account."
+   ]
+  },
+  {
+   "id": "11-q37",
+   "r": "11.3.3.1",
+   "k": "concept",
+   "d": 2,
+   "q": "Which statement about UGMA/UTMA accounts is TRUE?",
+   "o": [
+    "The custodian’s Social Security number is on the account",
+    "Gifts to the account are irrevocable",
+    "Margin trading is permitted with the custodian’s approval",
+    "The minor may trade with the custodian’s permission"
+   ],
+   "a": 1,
+   "w": [
+    "Wrong: the minor’s number is used.",
+    "Correct: the donor cannot take the gift back.",
+    "Wrong: margin is not permitted.",
+    "Wrong: the minor cannot trade."
+   ]
+  },
+  {
+   "id": "11-q38",
+   "r": "11.3.3.1",
+   "k": "concept",
+   "d": 2,
+   "q": "Who owes the income tax on dividends earned in a UTMA account?",
+   "o": [
+    "The custodian",
+    "The donor",
+    "The minor",
+    "The broker-dealer"
+   ],
+   "a": 2,
+   "w": [
+    "Wrong: the custodian ensures payment but is not liable.",
+    "Wrong: the gift is irrevocable.",
+    "Correct: the minor owns the assets and is liable for taxes.",
+    "Wrong: the broker-dealer is not the taxpayer; the minor owns the assets and owes the tax."
+   ]
+  },
+  {
+   "id": "11-q39",
+   "r": "11.3.3.2",
+   "k": "calc",
+   "d": 3,
+   "q": "John buys XYZ at $10 and dies when it trades at $30. His daughter inherits and later sells at $34. What is her taxable gain per share?",
+   "o": [
+    "$4",
+    "$20",
+    "$24",
+    "$34"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: stepped-up basis of $30; gain = $34 − $30.",
+    "Wrong: $30 − $10 is the deceased’s gain.",
+    "Wrong: uses the original basis.",
+    "Wrong: the full proceeds."
+   ]
+  },
+  {
+   "id": "11-q40",
+   "r": "11.4.1",
+   "k": "concept",
+   "d": 1,
+   "q": "What document must a corporation provide to open a brokerage account?",
+   "o": [
+    "A copy of the articles of incorporation only",
+    "A corporate resolution naming persons authorized to trade",
+    "A partnership agreement",
+    "A power of attorney from each shareholder"
+   ],
+   "a": 1,
+   "w": [
+    "Wrong: insufficient to name authorized traders.",
+    "Correct: the board resolution names who may transact.",
+    "Wrong: used for partnerships.",
+    "Wrong: shareholders do not grant authority; the board names the authorised traders by resolution."
+   ]
+  },
+  {
+   "id": "11-q41",
+   "r": "11.5.1",
+   "k": "scenario",
+   "d": 2,
+   "q": "A customer account holds stocks and penny stocks and has recent activity. How often must the firm send statements?",
+   "o": [
+    "Annually",
+    "Quarterly",
+    "Monthly",
+    "Not required"
+   ],
+   "a": 2,
+   "w": [
+    "Wrong: there is no annual-statement rule; statements are at least quarterly, monthly with penny stocks or options.",
+    "Wrong: quarterly applies to ordinary accounts.",
+    "Correct: holding options or penny stocks triggers monthly statements.",
+    "Wrong: required with any position or activity."
+   ]
+  },
+  {
+   "id": "11-q42",
+   "r": "11.5.2",
+   "k": "concept",
+   "d": 1,
+   "q": "A trade confirmation must be sent to the customer:",
+   "o": [
+    "Within 30 days of the trade",
+    "At or before completion of the transaction",
+    "Within 5 business days after settlement",
+    "Only upon request"
+   ],
+   "a": 1,
+   "w": [
+    "Wrong: 30 days is far too late; the confirmation is due no later than settlement.",
+    "Correct: at or before settlement.",
+    "Wrong: after settlement is too late; confirmations are due at or before settlement.",
+    "Wrong: confirmations are mandatory."
+   ]
+  },
+  {
+   "id": "11-q43",
+   "r": "11.5.2",
+   "k": "concept",
+   "d": 2,
+   "q": "On a principal (dealer) trade with a retail customer, the confirmation must show:",
+   "o": [
+    "The commission",
+    "The mark-up or mark-down",
+    "The firm’s net capital",
+    "Nothing about the firm’s compensation"
+   ],
+   "a": 1,
+   "w": [
+    "Wrong: commission applies to agency trades.",
+    "Correct: a principal trade must show the mark-up or mark-down.",
+    "Wrong: the firm’s net capital is not shown on a trade confirmation.",
+    "Wrong: the mark-up/mark-down must be disclosed."
+   ]
+  },
+  {
+   "id": "11-q44",
+   "r": "11.5.4",
+   "k": "concept",
+   "d": 2,
+   "q": "A customer asks the firm to hold mail for 5 months because he doesn’t want to deal with it. The firm should:",
+   "o": [
+    "Agree orally",
+    "Agree in writing",
+    "Refuse because convenience is not an acceptable reason beyond 3 months",
+    "Agree if a principal approves"
+   ],
+   "a": 2,
+   "w": [
+    "Wrong: a hold request must be in writing, and the length is the problem here.",
+    "Wrong: written instruction is necessary but not enough here.",
+    "Correct: beyond three months a valid reason such as safety is required.",
+    "Wrong: approval does not change the rule."
+   ]
+  },
+  {
+   "id": "11-q45",
+   "r": "11.5.5",
+   "k": "concept",
+   "d": 1,
+   "q": "For how long must a firm keep customer account records after the account is closed?",
+   "o": [
+    "1 year",
+    "3 years",
+    "6 years",
+    "Indefinitely"
+   ],
+   "a": 2,
+   "w": [
+    "Wrong: one year is far shorter than the six-year retention requirement.",
+    "Wrong: three years falls short; the requirement is six years after closing.",
+    "Correct: at least six years after closing.",
+    "Wrong: retention is six years after closing, not indefinite."
+   ]
+  },
+  {
+   "id": "11-q46",
+   "r": "11.6.1",
+   "k": "concept",
+   "d": 2,
+   "q": "Under Regulation S-P, a customer cannot opt out of information sharing:",
+   "o": [
+    "With non-affiliated marketers",
+    "When the sharing is required by law, such as in an AML investigation",
+    "With the firm’s affiliates",
+    "When the notice was sent annually"
+   ],
+   "a": 1,
+   "w": [
+    "Wrong: this is what opt-out is for.",
+    "Correct: legally required sharing cannot be blocked.",
+    "Wrong: not the typical test.",
+    "Wrong: the annual notice does not remove or create an opt-out right; legally required sharing is the exception."
+   ]
+  },
+  {
+   "id": "11-q47",
+   "r": "11.6.2",
+   "k": "concept",
+   "d": 1,
+   "q": "Using customer fully paid securities as collateral for the firm’s own loan is:",
+   "o": [
+    "Permitted with notice",
+    "Commingling and prohibited",
+    "Hypothecation permitted",
+    "Allowed for exchange-listed securities"
+   ],
+   "a": 1,
+   "w": [
+    "Wrong: fully paid securities must be segregated; notice does not make pledging them for the firm’s debt legal.",
+    "Correct: fully paid securities must be segregated.",
+    "Wrong: hypothecation applies to margin securities under an agreement.",
+    "Wrong: listing status is irrelevant; commingling fully paid securities is prohibited."
+   ]
+  },
+  {
+   "id": "11-q48",
+   "r": "11.6.3",
+   "k": "calc",
+   "d": 3,
+   "q": "An investor has $100,000 of securities and $300,000 cash in a brokerage account when the firm fails. What is the maximum SIPC protection?",
+   "o": [
+    "$350,000",
+    "$400,000",
+    "$500,000",
+    "$250,000"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: securities $100,000 + cash capped at $250,000.",
+    "Wrong: ignores the cash cap.",
+    "Wrong: the $500,000 limit isn’t reached.",
+    "Wrong: the cash cap, not the total."
+   ]
+  },
+  {
+   "id": "11-q49",
+   "r": "11.6.3.1",
+   "k": "scenario",
+   "d": 2,
+   "q": "An investor holds an individual account, a joint account with a spouse, and a Roth IRA at the same firm. For SIPC, how many separate customers are there?",
+   "o": [
+    "One",
+    "Two",
+    "Three",
+    "Depends on the dollar amount"
+   ],
+   "a": 2,
+   "w": [
+    "Wrong: one customer would apply only if all assets sat in a single account title.",
+    "Wrong: three different account titles, not two.",
+    "Correct: each account type is a separate customer, each protected to the limit.",
+    "Wrong: dollar amounts determine the limit, not the number of separate customers."
+   ]
+  },
+  {
+   "id": "11-q50",
+   "r": "11.6.4",
+   "k": "concept",
+   "d": 2,
+   "q": "Which statement correctly contrasts FDIC and SIPC?",
+   "o": [
+    "FDIC protects market losses, SIPC does not",
+    "FDIC covers bank deposits; SIPC covers securities and cash at a failed broker-dealer",
+    "SIPC is a US government agency",
+    "Both cover mutual fund losses"
+   ],
+   "a": 1,
+   "w": [
+    "Wrong: neither covers market losses.",
+    "Correct: FDIC insures bank deposits; SIPC covers securities and cash at a failed broker-dealer.",
+    "Wrong: SIPC is a non-profit corporation.",
+    "Wrong: neither covers fund losses."
+   ]
+  },
+  {
+   "id": "11-q51",
+   "r": "11.6.5",
+   "k": "concept",
+   "d": 2,
+   "q": "A firm reasonably believes a 70-year-old customer is being financially exploited. What can the firm do first?",
+   "o": [
+    "Place a temporary hold on disbursements for up to 15 business days",
+    "Freeze the account indefinitely",
+    "Close the account",
+    "Report to the IRS"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: initial 15-business-day hold.",
+    "Wrong: indefinite freezes are not authorized.",
+    "Wrong: a firm cannot close the account on suspicion; the rule allows a temporary hold on disbursements.",
+    "Wrong: reports go to adult protective services or state regulators; the first action is the hold."
+   ]
+  },
+  {
+   "id": "11-q52",
+   "r": "11.6.3",
+   "k": "concept",
+   "d": 1,
+   "q": "SIPC protects an investor against:",
+   "o": [
+    "A decline in the value of securities",
+    "The failure of the brokerage firm",
+    "Poor investment advice",
+    "Losses on commodity futures"
+   ],
+   "a": 1,
+   "w": [
+    "Wrong: market losses are not covered.",
+    "Correct: SIPC steps in when the brokerage firm fails.",
+    "Wrong: poor advice is a suitability/regulatory matter, not covered by SIPC.",
+    "Wrong: commodities and futures are not covered."
+   ]
+  }
+ ]
+}

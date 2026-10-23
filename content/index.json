@@ -1,0 +1,142 @@
+[
+ {
+  "id": 1,
+  "title": "Equity Securities",
+  "section": "Products",
+  "estQ": "~5",
+  "priority": "med",
+  "pages": 30,
+  "notes": 24,
+  "live": false
+ },
+ {
+  "id": 2,
+  "title": "Debt Securities",
+  "section": "Products",
+  "estQ": "~5",
+  "priority": "low",
+  "pages": 28,
+  "notes": 24,
+  "live": false
+ },
+ {
+  "id": 3,
+  "title": "Types of Bonds",
+  "section": "Products",
+  "estQ": "~5",
+  "priority": "med",
+  "pages": 30,
+  "notes": 22,
+  "live": false
+ },
+ {
+  "id": 4,
+  "title": "Investment Company Securities",
+  "section": "Products",
+  "estQ": "~5",
+  "priority": "high",
+  "pages": 36,
+  "notes": 34,
+  "live": false
+ },
+ {
+  "id": 5,
+  "title": "Other Managed Products",
+  "section": "Products",
+  "estQ": "~5",
+  "priority": "med",
+  "pages": 24,
+  "notes": 23,
+  "live": false
+ },
+ {
+  "id": 6,
+  "title": "Options",
+  "section": "Products",
+  "estQ": "3–4",
+  "priority": "low",
+  "pages": 40,
+  "notes": 21,
+  "live": false
+ },
+ {
+  "id": 7,
+  "title": "Suitability & Investment Risks",
+  "section": "Products",
+  "estQ": "~5",
+  "priority": "high",
+  "pages": 32,
+  "notes": 26,
+  "live": false
+ },
+ {
+  "id": 8,
+  "title": "Issuing Securities",
+  "section": "Capital Markets",
+  "estQ": "~4",
+  "priority": "low",
+  "pages": 34,
+  "notes": 29,
+  "live": false
+ },
+ {
+  "id": 9,
+  "title": "Secondary Market & Equity Trading",
+  "section": "Capital Markets",
+  "estQ": "~4",
+  "priority": "med",
+  "pages": 30,
+  "notes": 27,
+  "live": false
+ },
+ {
+  "id": 10,
+  "title": "Economics & Monetary Policy",
+  "section": "Capital Markets",
+  "estQ": "~3",
+  "priority": "low",
+  "pages": 36,
+  "notes": 27,
+  "live": false
+ },
+ {
+  "id": 11,
+  "title": "Customer Accounts",
+  "section": "Accounts",
+  "estQ": "11–12",
+  "priority": "high",
+  "pages": 38,
+  "notes": 48,
+  "live": true
+ },
+ {
+  "id": 12,
+  "title": "Tax-Advantaged Accounts & Products",
+  "section": "Accounts",
+  "estQ": "11–12",
+  "priority": "high",
+  "pages": 38,
+  "notes": 37,
+  "live": false
+ },
+ {
+  "id": 13,
+  "title": "FINRA Registration",
+  "section": "Regulation",
+  "estQ": "~3",
+  "priority": "med",
+  "pages": 26,
+  "notes": 24,
+  "live": false
+ },
+ {
+  "id": 14,
+  "title": "Business Conduct Rules",
+  "section": "Regulation",
+  "estQ": "~4",
+  "priority": "med",
+  "pages": 45,
+  "notes": 32,
+  "live": false
+ }
+]

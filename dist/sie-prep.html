@@ -1,0 +1,548 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#2a56e8">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="SIE Prep">
+<title>SIE Prep</title>
+<style>:root{
+  --bg:#f5f4ef;--surface:#ffffff;--surface2:#faf9f5;--ink:#15181e;--muted:#5e6572;--line:#e5e2d9;
+  --accent:#2a56e8;--accent-ink:#ffffff;--accent-soft:#e8edff;
+  --ok:#157a4d;--ok-soft:#e2f4ea;--bad:#c93636;--bad-soft:#fbe7e7;--warn:#9a6700;--warn-soft:#fdf1d6;
+  --shadow:0 1px 2px rgba(20,24,30,.05),0 8px 24px -12px rgba(20,24,30,.12);
+  --r:16px;--font:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0d0f13;--surface:#161a21;--surface2:#12151b;--ink:#eceef3;--muted:#9aa2b0;--line:#262b35;
+  --accent:#7b95ff;--accent-ink:#0d0f13;--accent-soft:#1c2440;
+  --ok:#4cc38a;--ok-soft:#12291f;--bad:#ff7b7b;--bad-soft:#331819;--warn:#e6b94d;--warn-soft:#2e2510;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px -12px rgba(0,0,0,.6)}}
+:root[data-theme="dark"]{
+  --bg:#0d0f13;--surface:#161a21;--surface2:#12151b;--ink:#eceef3;--muted:#9aa2b0;--line:#262b35;
+  --accent:#7b95ff;--accent-ink:#0d0f13;--accent-soft:#1c2440;
+  --ok:#4cc38a;--ok-soft:#12291f;--bad:#ff7b7b;--bad-soft:#331819;--warn:#e6b94d;--warn-soft:#2e2510;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px -12px rgba(0,0,0,.6)}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font);font-size:16px;line-height:1.5;-webkit-text-size-adjust:100%}
+body{min-height:100vh;padding-bottom:84px}
+button{font:inherit;color:inherit;cursor:pointer}
+h1,h2,h3,h4{margin:0;line-height:1.2;letter-spacing:-.01em}
+h1{font-size:1.6rem;font-weight:750}h2{font-size:1.2rem;font-weight:700}h3{font-size:1.02rem;font-weight:700}
+p{margin:.4em 0}
+.num{font-variant-numeric:tabular-nums}
+.wrap{max-width:780px;margin:0 auto;padding:0 16px}
+header.top{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header.top .wrap{display:flex;align-items:center;gap:12px;height:56px}
+.brand{font-weight:800;letter-spacing:-.02em;display:flex;align-items:center;gap:8px}
+.brand i{width:26px;height:26px;border-radius:8px;background:var(--accent);display:inline-block;position:relative}
+.brand i:after{content:"";position:absolute;inset:7px 6px 6px 7px;border-left:3px solid var(--accent-ink);border-bottom:3px solid var(--accent-ink);transform:skew(-10deg) rotate(-8deg)}
+.spacer{flex:1}
+.icon-btn{width:40px;height:40px;border-radius:12px;border:1px solid var(--line);background:var(--surface);display:grid;place-items:center}
+nav.tabs{position:fixed;left:0;right:0;bottom:0;z-index:30;background:var(--surface);border-top:1px solid var(--line);padding-bottom:env(safe-area-inset-bottom)}
+nav.tabs .in{max-width:780px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr)}
+nav.tabs a{display:flex;flex-direction:column;align-items:center;gap:2px;padding:9px 0 8px;font-size:.72rem;font-weight:600;color:var(--muted);text-decoration:none}
+nav.tabs a svg{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+nav.tabs a.on{color:var(--accent)}
+@media(min-width:900px){
+  body{padding-bottom:40px}
+  nav.tabs{position:sticky;top:56px;bottom:auto;border-top:0;border-bottom:1px solid var(--line);background:var(--bg)}
+  nav.tabs .in{grid-template-columns:repeat(4,auto);justify-content:start;gap:8px;padding:0 16px}
+  nav.tabs a{flex-direction:row;gap:8px;padding:12px 14px;font-size:.9rem}
+}
+main{padding:20px 0 12px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--shadow);padding:18px}
+.card+.card,.stack>*+*{margin-top:14px}
+.stack>*+*{margin-top:14px}
+.row{display:flex;align-items:center;gap:12px}.row.wrapx{flex-wrap:wrap}
+.muted{color:var(--muted)}.small{font-size:.85rem}.tiny{font-size:.75rem}
+.eyebrow{font-size:.72rem;text-transform:uppercase;letter-spacing:.09em;font-weight:700;color:var(--muted)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:46px;padding:0 18px;border-radius:13px;border:1px solid var(--line);background:var(--surface);font-weight:650;text-decoration:none;color:var(--ink)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.btn.block{display:flex;width:100%}
+.btn.ghost{background:transparent}
+.btn[disabled]{opacity:.45;pointer-events:none}
+.btn.sm{min-height:36px;padding:0 12px;font-size:.88rem;border-radius:10px}
+.pill{display:inline-flex;align-items:center;gap:5px;font-size:.72rem;font-weight:700;padding:3px 9px;border-radius:99px;background:var(--surface2);border:1px solid var(--line);color:var(--muted);white-space:nowrap}
+.pill.high{background:var(--bad-soft);color:var(--bad);border-color:transparent}
+.pill.med{background:var(--warn-soft);color:var(--warn);border-color:transparent}
+.pill.low{background:var(--ok-soft);color:var(--ok);border-color:transparent}
+.pill.acc{background:var(--accent-soft);color:var(--accent);border-color:transparent}
+.hero{background:linear-gradient(135deg,var(--accent) 0%,color-mix(in srgb,var(--accent) 55%,#7c3aed) 100%);color:#fff;border:0}
+.hero .muted{color:rgba(255,255,255,.8)}
+.hero .btn.primary{background:#fff;color:#1b2a6b;border-color:#fff}
+.hero .btn{border-color:rgba(255,255,255,.4);color:#fff;background:transparent}
+.big{font-size:2.6rem;font-weight:800;letter-spacing:-.03em;line-height:1}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.stat{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:12px 14px}
+.stat b{display:block;font-size:1.35rem;letter-spacing:-.02em}
+.bar{height:8px;border-radius:99px;background:var(--line);overflow:hidden}
+.bar>i{display:block;height:100%;background:var(--accent);border-radius:99px}
+.bp{display:flex;height:28px;border-radius:10px;overflow:hidden;gap:2px;font-size:.7rem;font-weight:700;color:#fff}
+.bp>div{display:grid;place-items:center;min-width:0;overflow:hidden;white-space:nowrap}
+.ch-item{display:flex;align-items:center;gap:14px;padding:14px;text-decoration:none;color:inherit}
+.ch-item.off{opacity:.5;pointer-events:none}
+.ch-no{width:40px;height:40px;border-radius:12px;background:var(--accent-soft);color:var(--accent);display:grid;place-items:center;font-weight:800}
+.ring{position:relative;width:46px;height:46px;flex:none}
+.ring svg{transform:rotate(-90deg)}
+.ring span{position:absolute;inset:0;display:grid;place-items:center;font-size:.72rem;font-weight:800}
+.list{padding:0;margin:0;list-style:none}
+.list>li{border-top:1px solid var(--line)}.list>li:first-child{border-top:0}
+.seg{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;padding:2px 0 10px}
+.seg::-webkit-scrollbar{display:none}
+.seg a{flex:none;padding:8px 14px;border-radius:99px;border:1px solid var(--line);background:var(--surface);font-weight:650;font-size:.88rem;color:var(--muted);text-decoration:none}
+.seg a.on{background:var(--ink);border-color:var(--ink);color:var(--bg)}
+.prose h3{margin:0 0 6px}
+.prose ul,.prose ol{margin:.5em 0;padding-left:1.25em}
+.prose li{margin:.3em 0}
+.prose code{background:var(--surface2);border:1px solid var(--line);border-radius:6px;padding:0 5px;font-size:.9em}
+.tip{margin:.8em 0 .2em;padding:12px 14px;border-radius:12px;background:var(--warn-soft);color:var(--ink);border-left:4px solid var(--warn)}
+.tw{overflow-x:auto;margin:.7em 0;border:1px solid var(--line);border-radius:12px}
+table{border-collapse:collapse;width:100%;font-size:.88rem;min-width:420px}
+th,td{padding:9px 11px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:var(--surface2);font-size:.75rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+tr:last-child td{border-bottom:0}
+.trap{display:flex;gap:12px;align-items:flex-start;padding:14px 0;border-top:1px solid var(--line)}
+.trap:first-child{border-top:0}
+.trap i{flex:none;width:28px;height:28px;border-radius:9px;background:var(--bad-soft);color:var(--bad);display:grid;place-items:center;font-style:normal;font-weight:800;font-size:.85rem}
+.formula{border-left:4px solid var(--accent);padding-left:14px;margin:0}
+.formula .ex{margin-top:8px;padding:10px 12px;background:var(--surface2);border-radius:10px;font-size:.92rem}
+/* runner */
+.run-top{display:flex;align-items:center;gap:12px;margin-bottom:16px}
+.run-top .bar{flex:1}
+.qstem{font-size:1.1rem;font-weight:600;line-height:1.45}
+.opt{display:flex;gap:12px;align-items:flex-start;width:100%;text-align:left;padding:14px;border-radius:14px;border:1.5px solid var(--line);background:var(--surface);margin-top:10px}
+.opt b{flex:none;width:28px;height:28px;border-radius:9px;background:var(--surface2);border:1px solid var(--line);display:grid;place-items:center;font-size:.82rem}
+.opt:hover{border-color:var(--accent)}
+.opt.sel{border-color:var(--accent);background:var(--accent-soft)}
+.opt.ok{border-color:var(--ok);background:var(--ok-soft)}.opt.ok b{background:var(--ok);color:#fff;border-color:var(--ok)}
+.opt.bad{border-color:var(--bad);background:var(--bad-soft)}.opt.bad b{background:var(--bad);color:#fff;border-color:var(--bad)}
+.opt.locked{pointer-events:none}
+.why{margin-top:14px;padding:14px;border-radius:14px;background:var(--surface2);border:1px solid var(--line)}
+.why li{margin:.4em 0;font-size:.92rem}
+.why li.c{color:var(--ok);font-weight:600}
+.flip{perspective:1200px}
+.flipcard{min-height:240px;display:grid;place-items:center;text-align:center;padding:26px;border-radius:20px;border:1px solid var(--line);background:var(--surface);box-shadow:var(--shadow);cursor:pointer}
+.flipcard .q{font-size:1.25rem;font-weight:700}
+.flipcard .a{font-size:1.08rem}
+input.num-in{width:100%;font:inherit;font-size:1.3rem;padding:12px 14px;border-radius:12px;border:1.5px solid var(--line);background:var(--surface);color:var(--ink)}
+input.search{width:100%;font:inherit;padding:12px 14px;border-radius:12px;border:1.5px solid var(--line);background:var(--surface);color:var(--ink)}
+.timer{font-variant-numeric:tabular-nums;font-weight:800}
+.qgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(40px,1fr));gap:6px}
+.qgrid button{height:40px;border-radius:10px;border:1px solid var(--line);background:var(--surface);font-weight:700}
+.qgrid button.a{background:var(--accent-soft);border-color:var(--accent)}
+.qgrid button.f{outline:2px solid var(--warn)}
+.qgrid button.cur{background:var(--ink);color:var(--bg)}
+.sheet{position:fixed;inset:0;z-index:50;background:rgba(10,12,16,.55);display:flex;align-items:flex-end;justify-content:center}
+.sheet>div{width:100%;max-width:560px;background:var(--surface);border-radius:22px 22px 0 0;padding:20px 18px calc(20px + env(safe-area-inset-bottom));max-height:88vh;overflow:auto}
+@media(min-width:900px){.sheet{align-items:center}.sheet>div{border-radius:22px}}
+.field{display:block;margin-top:14px}
+.field label{display:block;font-weight:650;margin-bottom:6px;font-size:.9rem}
+.field input,.field select{width:100%;font:inherit;padding:11px 12px;border-radius:12px;border:1.5px solid var(--line);background:var(--surface2);color:var(--ink)}
+.score{font-size:3.2rem;font-weight:800;letter-spacing:-.03em}
+.kbd{font-size:.75rem;color:var(--muted)}
+.empty{padding:28px 16px;text-align:center;color:var(--muted)}
+details>summary{cursor:pointer;font-weight:650;padding:6px 0}
+.card>.ch-item:first-child{border-top:0!important}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap"><div class="brand"><i></i>SIE Prep</div><div class="spacer"></div>
+<button class="icon-btn" data-act="settings" aria-label="Settings"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1L7 17M17 7l2.1-2.1"/></svg></button></div></header>
+<nav class="tabs" id="nav" aria-label="Main"></nav>
+<main><div class="wrap" id="app"></div></main>
+<script>window.SIE_DATA={"index":[{"id":1,"title":"Equity Securities","section":"Products","estQ":"~5","priority":"med","pages":30,"notes":24,"live":false},{"id":2,"title":"Debt Securities","section":"Products","estQ":"~5","priority":"low","pages":28,"notes":24,"live":false},{"id":3,"title":"Types of Bonds","section":"Products","estQ":"~5","priority":"med","pages":30,"notes":22,"live":false},{"id":4,"title":"Investment Company Securities","section":"Products","estQ":"~5","priority":"high","pages":36,"notes":34,"live":false},{"id":5,"title":"Other Managed Products","section":"Products","estQ":"~5","priority":"med","pages":24,"notes":23,"live":false},{"id":6,"title":"Options","section":"Products","estQ":"3–4","priority":"low","pages":40,"notes":21,"live":false},{"id":7,"title":"Suitability & Investment Risks","section":"Products","estQ":"~5","priority":"high","pages":32,"notes":26,"live":false},{"id":8,"title":"Issuing Securities","section":"Capital Markets","estQ":"~4","priority":"low","pages":34,"notes":29,"live":false},{"id":9,"title":"Secondary Market & Equity Trading","section":"Capital Markets","estQ":"~4","priority":"med","pages":30,"notes":27,"live":false},{"id":10,"title":"Economics & Monetary Policy","section":"Capital Markets","estQ":"~3","priority":"low","pages":36,"notes":27,"live":false},{"id":11,"title":"Customer Accounts","section":"Accounts","estQ":"11–12","priority":"high","pages":38,"notes":48,"live":true},{"id":12,"title":"Tax-Advantaged Accounts & Products","section":"Accounts","estQ":"11–12","priority":"high","pages":38,"notes":37,"live":false},{"id":13,"title":"FINRA Registration","section":"Regulation","estQ":"~3","priority":"med","pages":26,"notes":24,"live":false},{"id":14,"title":"Business Conduct Rules","section":"Regulation","estQ":"~4","priority":"med","pages":45,"notes":32,"live":false}],"glossary":[{"t":"Cash account","d":"Account where the customer pays in full for purchases.","ch":11},{"t":"Margin account","d":"Account that lets the customer borrow from the broker-dealer; securities are collateral.","ch":11},{"t":"Regulation T","d":"Federal Reserve rule: 50% initial margin for purchases/short sales of margin-eligible securities.","ch":11},{"t":"Initial margin","d":"Equity a customer must deposit to open a margin position (Reg T 50%, FINRA minimums).","ch":11},{"t":"Maintenance margin","d":"Minimum equity kept afterwards: 25% of long MV, 30% of short MV.","ch":11},{"t":"Maintenance call","d":"Demand for more cash/securities when equity falls below the maintenance requirement.","ch":11},{"t":"Mark to market","d":"Daily revaluation of margin positions to current prices.","ch":11},{"t":"Debit balance","d":"Amount a margin customer owes the broker-dealer.","ch":11},{"t":"Credit balance","d":"In a short account: short sale proceeds plus the customer’s deposit.","ch":11},{"t":"Hypothecation","d":"Pledging securities as collateral for a margin loan.","ch":11},{"t":"Re-hypothecation","d":"The broker-dealer re-pledging customer securities as collateral for its own bank loan.","ch":11},{"t":"Street name","d":"Securities registered in the name of the broker-dealer.","ch":11},{"t":"Broker call rate","d":"Rate banks charge broker-dealers for margin loans; basis of customer margin interest.","ch":11},{"t":"Loan consent","d":"Optional margin-agreement part allowing the firm to lend customer shares for short sales.","ch":11},{"t":"Free-riding","d":"Buying and selling a security without ever paying for it.","ch":11},{"t":"Frozen account","d":"Account restricted to sells and fully funded buys, typically for 90 days after a Reg T violation.","ch":11},{"t":"Discretionary account","d":"Account where the rep chooses action, asset or amount under a written power of attorney.","ch":11},{"t":"Not held order","d":"Order giving the rep latitude over time and price; not discretionary.","ch":11},{"t":"Power of attorney","d":"Written authority for another person to act for the customer; ends at death.","ch":11},{"t":"Churning","d":"Excessive trading to generate commissions, inconsistent with objectives.","ch":11},{"t":"Signature of convenience","d":"Signing a customer’s name for them — prohibited even with permission.","ch":11},{"t":"JTWROS","d":"Joint tenants with rights of survivorship: survivor inherits; avoids probate.","ch":11},{"t":"JTIC / TIC","d":"Joint (or) tenants in common: each owner’s share passes to their own heirs; probated.","ch":11},{"t":"TOD","d":"Transfer on death designation; allows an individual account to avoid probate.","ch":11},{"t":"Probate","d":"Court process validating a will and distributing an estate.","ch":11},{"t":"UGMA / UTMA","d":"Uniform Gifts / Transfers to Minors Act custodial accounts for a minor.","ch":11},{"t":"Custodian","d":"Adult fiduciary managing a UGMA/UTMA account.","ch":11},{"t":"Fiduciary","d":"Person legally bound to put another’s interests first.","ch":11},{"t":"Trustor / Grantor","d":"The person who creates a trust.","ch":11},{"t":"Trustee","d":"Person who manages a trust for its beneficiaries.","ch":11},{"t":"Revocable trust","d":"Trust the grantor can change or cancel.","ch":11},{"t":"Irrevocable trust","d":"Trust that cannot be changed without the beneficiary’s agreement.","ch":11},{"t":"Stepped-up basis","d":"Heir’s cost basis becomes the market value at the date of death.","ch":11},{"t":"Corporate resolution","d":"Board document naming who may trade for a corporate account.","ch":11},{"t":"Introducing firm","d":"Broker-dealer with the customer relationship; does not hold assets or settle trades.","ch":11},{"t":"Clearing firm","d":"Broker-dealer that settles trades and holds customer cash and securities.","ch":11},{"t":"Numbered account","d":"Account identified by a symbol/number instead of a name; ownership statement still required.","ch":11},{"t":"Options disclosure document","d":"Risk document from the OCC delivered at or before options account approval.","ch":11},{"t":"ROP","d":"Registered Options Principal — approves options accounts.","ch":11},{"t":"Trade confirmation","d":"Written trade details sent at or before settlement.","ch":11},{"t":"Regulation S-P","d":"SEC privacy rule: privacy notice at opening and annually; opt-out for non-affiliate sharing.","ch":11},{"t":"Commingling","d":"Mixing customer and firm assets — prohibited.","ch":11},{"t":"Segregation","d":"Keeping fully paid customer securities apart from the firm’s assets.","ch":11},{"t":"SIPC","d":"Non-profit that protects customers of failed broker-dealers up to $500,000 ($250,000 cash).","ch":11},{"t":"FDIC","d":"Federal agency insuring bank deposits up to $250,000 per depositor.","ch":11},{"t":"Trusted contact","d":"Person a firm may contact about a customer, particularly a vulnerable investor.","ch":11},{"t":"Vulnerable investor","d":"Age 65+ or 18+ with impairment; firm may place a temporary hold on disbursements.","ch":11}],"chapters":[{"id":11,"title":"Customer Accounts","section":"Accounts","minutes":75,"brief":[{"h":"Opening an account","md":"- **Cold calls** (non-customers only): **8:00 am – 9:00 pm in the prospect’s local time**. Caller must give name + firm, phone + address, and purpose of the call.\n- Scripts = **retail communications** → principal approval **before first use**.\n- **Do-not-call**: the firm’s internal list is **indefinite**; the national registry also applies. Exceptions: **existing customer, personal relationship, prior written consent**.\n- An unregistered employee may cold-call, but must **hand the call to a registered person** once the prospect wants more information.\n- **New account form** (Rule 4512): name, address, phone, SSN/TIN, DOB, employment, citizenship, income, net worth (excl. home), tax bracket, objectives, experience, risk tolerance.\n- **Only the designated principal signs** the form (not the customer, not the rep). Approval **before or promptly after** the first trade.\n- Customer refuses to give financial data → account **can** open, but the rep can take **unsolicited orders only**.\n- **Numbered account**: symbol or number, never an alias — but the firm still needs **written ownership statement + ID**.\n- **Verification of information**: first request within **30 days** of opening; again within 30 days of any change; then **every 36 months** (each owner of a joint account).\n> **Exam tip** Introducing firm = relationship + takes orders. Clearing firm = custody + settlement."},{"h":"Cash accounts, Reg T and free-riding","md":"- **Cash account**: pay **in full**. Regular-way settlement is **T+1**.\n- **Reg T payment deadline**: **2 business days after settlement (S+2)**. If unpaid and no extension: position **sold out** and account **frozen 90 days** (shortage ≤ **$1,000** → firm has discretion).\n- **Frozen account**: sells allowed; buys only if the cash is **already in the account** when the order is placed.\n- **Free-riding** = buying and selling a security **without ever paying** for it. Consequence: freeze (90 days) — proceeds are not released until the original purchase is paid.\n> **Exam tip** Free-riding is about *never paying*. Paying late within the extension is not free-riding."},{"h":"Margin accounts","md":"- Borrow from the broker-dealer; securities are the **collateral**. **All short sales must be in a margin account.**\n- **Reg T initial margin = 50%** (since 1974). Government and municipal securities are **exempt from Reg T** → margin set by FINRA.\n- **FINRA minimum equity** for small trades:\n\n| Trade size | Long | Short |\n|---|---|---|\n| Up to $2,000 | **100%** of price | **$2,000** |\n| $2,000 – $4,000 | **$2,000** | **$2,000** |\n| Over $4,000 | **50%** (Reg T) | **50%** (Reg T) |\n\n- **Maintenance**: **25%** of long market value, **30%** of short market value. **Marked to market daily.** Below requirement → **maintenance (margin) call**; firm may liquidate if unmet.\n- **Eligible**: listed stocks, approved OTC, bonds, CEFs, ETFs, **LEAPS > 9 months**, Treasuries.\n- **Not eligible**: **IPOs (first 30 days)**, unapproved OTC, **mutual funds**, options ≤ 9 months, annuities. Mutual funds can be *collateral* after **30 days**.\n- **Margin agreement** = **hypothecation** (pledge; securities held in **street name**; **re-hypothecation** allowed) + **credit agreement** (interest = broker call + spread, lower rate for larger debit) + **loan consent** (**optional** — lets the firm lend your shares for short sales).\n- **Margin disclosure statement** (Rule 2264): before/at opening, **annually**. Key warnings: lose more than you deposit; forced sale **without contacting you**; no say in what is sold; house requirements can rise **with no notice**; no right to an extension."},{"h":"Options accounts","md":"1. Customer expresses interest → rep sends the **options disclosure document** (ODD, prepared by the **OCC**) **at or before** approval.\n2. A **Registered Options Principal (ROP)** reviews and approves **in writing** (level depends on profile: covered calls \u003c naked options).\n3. Customer **may start trading** once approved.\n4. **Options agreement** must be signed and returned **within 15 days of approval**; otherwise **closing transactions only** (no new positions, no exercise).\n> **Exam tip** Trading can begin *before* the signed agreement comes back. That surprises people."},{"h":"Discretionary accounts and fees","md":"- **Discretion = the rep decides any of the 3 A’s**: **A**ction (buy/sell), **A**sset (which security), **A**mount (how many). **Time and price are not discretionary** (a “time and price” order is *not held*).\n- Needs **written power of attorney** (Rule 2510) + principal approval **before the first trade**, and **prompt** approval of each discretionary trade.\n- POA **ends at death**. Court-declared incompetence cancels it unless it is a **durable** POA.\n- **Signature of convenience** (signing for the client) is prohibited, even with permission.\n- **Churning** = excessive trading inconsistent with objectives to generate commissions (no fixed trade count).\n- **Fee-based accounts**: unsuitable for **buy-and-hold / infrequent traders**.\n- **DVP / RVP**: settlement methods tying delivery of securities to payment."},{"h":"Account titles and what happens at death","md":"| Account | At death of an owner | Probate |\n|---|---|---|\n| **Individual** | Open orders cancelled, account frozen → beneficiary, else will/estate | Yes (unless **TOD**) |\n| **JTIC** (tenants in common) | **Their share** goes to their own beneficiary/estate | **Yes** |\n| **JTWROS** | Interest passes to **surviving owners** | **No** |\n\n- Joint accounts: unlimited owners, any owner can give instructions, **checks payable to all owners**. A **parent and minor child cannot** open a joint account.\n- JTIC fits e.g. **two siblings who want assets to go to their own spouses**. JTWROS fits spouses / parent + adult child."},{"h":"Fiduciary accounts: UGMA/UTMA and trusts","md":"- **UGMA/UTMA**: adult **custodian** (fiduciary) manages for a minor. Securities in the **custodian’s name**; **minor’s SSN** on the account.\n- **One custodian, one minor.** Donor need not be a parent; **donor can be the custodian**.\n- **Gifts are irrevocable**; assets cannot move from one child’s account to another’s.\n- Age of majority: **18 (UGMA)**, **18–25 (UTMA, by state)**.\n- **No margin**; risky strategies (naked options, penny stocks) are *inappropriate*, not outright banned. **Minor owes the taxes**; custodian makes sure they’re paid. A minor **cannot trade**, even with permission.\n- **Trust**: trustor creates, **trustee** (fiduciary, has trading discretion) manages for beneficiaries; firm needs a **copy of the trust agreement**. **Revocable** (trustor can change) vs **irrevocable**. Can be invalidated for **undue influence** or **lack of capacity**.\n- **Inherited securities** get a **stepped-up basis** = value at date of death."},{"h":"Business accounts","md":"- **Corporate**: **corporate resolution** naming who can trade; margin only if the **charter** allows it. **No beneficiary** (unlimited life). Taxed as a separate entity.\n- **Partnership**: **partnership agreement** says which partners can transact.\n- **Investment clubs**: usually partnerships; many firms require a special investment-club account."},{"h":"Ongoing duties: statements, confirms, mail, records","md":"| Item | Rule |\n|---|---|\n| **Account statements** | **Quarterly** if a position, balance or activity; **monthly** if the account holds **options or penny stocks**; none if empty and inactive |\n| **Trade confirmations** | **At or before settlement.** Principal trade → show **mark-up/mark-down**; agency trade → show **commission** |\n| **Muni confirms** (MSRB G-15) | Yield to worst, call/put features, accrued interest, yield and dollar price, AMT status |\n| **Annual reports / proxies** | Issuer mails if shares are in the customer’s name; **firm forwards** if in **street name**; issuer reimburses costs |\n| **Hold mail** | **Permitted, not required**; **written** request; **max 3 months** unless valid reason (**safety**, not convenience) |\n| **Account records** | Kept **6 years after the account is closed** |"},{"h":"Protecting customers: Reg S-P, custody, SIPC, FDIC, vulnerable investors","md":"- **Reg S-P (privacy)**: notice at **opening and annually**; customers may **opt out** of sharing with **non-affiliates** (typically **30 days** to do so) but **not** where sharing is legally required (IRS, AML).\n- **Custody**: customer assets must be **segregated**; mixing customer and firm assets = **commingling** (prohibited). No withdrawing customer funds without **written authorization**.\n- **SIPC**: non-profit, **not a government agency**. Covers loss from **broker-dealer failure**, **not market losses**. **$500,000 per separate customer, max $250,000 cash.** Value fixed at the **bankruptcy filing date**. Above the limit → general creditor. Not covered: commodities/futures.\n- **Separate customers**: individual, joint, trust, IRA, Roth IRA, minor’s account — each protected to the limit.\n- **FDIC**: **bank deposits** only, **$250,000** per depositor per bank; backed by the **US government**. Does **not** cover securities, mutual funds or annuities — even bought at a bank.\n- **Vulnerable investors** (65+, or 18+ with impairment): obtain a **trusted contact**; temporary hold on disbursements **15 business days**, +**10**, +**30** if reported to authorities (**55 total**).\n- **Financial condition** (Rule 2261): on request, provide the firm’s **balance sheet**."}],"traps":["**Margin buys and mutual funds.** Mutual funds are **never** bought on margin. They only become *collateral* after 30 days. Exchange-traded funds and CEFs are eligible.","**25% vs 30%.** Long = 25% of **long market value**. Short = 30% of **short market value**. Examiners swap them.","**Initial vs maintenance.** Initial = 50% (Reg T) with FINRA $2,000 floor. Maintenance = 25% / 30%. Don’t mix the two in a calculation.","**Small trades.** For a long purchase of $1,500 you deposit **$1,500**, not $750. For a short sale of $1,500 you deposit **$2,000**.","**Who signs the new account form?** Only the **designated principal**. Not the customer, not the rep.","**Options account timing.** You can trade **before** returning the agreement; you lose the right to open new positions **after 15 days** without it.","**Discretion is not time/price.** A client choosing *what* and *how many* but letting the rep pick the **timing or price** is still non-discretionary.","**JTIC vs JTWROS.** “Rights of survivorship” = survivor takes everything and probate is avoided. JTIC = deceased’s share goes to **their** heirs and **is** probated.","**UGMA/UTMA.** The **minor’s** SSN is on the account, the minor pays the tax, gifts are irrevocable, and there is **no margin**.","**SIPC ≠ insurance against losses.** It covers a **failed broker-dealer**, never market declines. $500k **including** max $250k cash — not $500k *plus* $250k.","**FDIC vs SIPC.** FDIC = bank deposits (not mutual funds, even from a bank). SIPC = securities and cash at a brokerage.","**Mail hold.** Convenience is **not** a valid reason for more than 3 months.","**Free-riding.** The violation is selling without ever paying. A late payment inside an approved extension is not free-riding."],"formulas":[{"name":"Initial margin deposit","rule":"Long: ≤ $2,000 → 100%; $2,000–$4,000 → $2,000; > $4,000 → 50%.  Short: ≤ $4,000 → $2,000; > $4,000 → 50%.","example":"Short 1,000 sh at $12 = $12,000 → 50% = **$6,000**. Long $3,200 → FINRA floor **$2,000** (Reg T alone would be $1,600)."},{"name":"Long account: equity and call","rule":"Equity = Long market value (LMV) − Debit balance.  Requirement = 25% × LMV.  Call = Requirement − Equity (if positive).","example":"LMV $60,000, debit $48,000 → equity $12,000; requirement $15,000 → **call $3,000**."},{"name":"Short account: equity and call","rule":"Credit balance = short proceeds + initial deposit.  Equity = Credit balance − Short market value (SMV).  Requirement = 30% × SMV.","example":"Short 1,000 at $40 (credit $60,000). Price rises to $50 → SMV $50,000; equity $10,000; requirement $15,000 → **call $5,000**."},{"name":"SIPC coverage","rule":"Covered = securities + min(cash, $250,000), capped at $500,000, per separate customer.","example":"$100,000 securities + $300,000 cash → 100,000 + 250,000 = **$350,000** covered."},{"name":"Stepped-up basis (inheritance)","rule":"Heir’s cost basis = market value at date of death.","example":"Bought at $10, owner dies at $30, heir sells at $34 → gain = **$4**, not $24."}],"cards":[{"id":"11-c01","f":"Cold-call hours","b":"8:00 am – 9:00 pm in the **prospect’s** local time (non-customers only).","r":"11.1.1"},{"id":"11-c02","f":"Three items disclosed on a cold call","b":"Name of caller + firm; phone number and address; reason for the call.","r":"11.1.1"},{"id":"11-c03","f":"Exceptions to the do-not-call rules","b":"Existing customer, personal relationship with the rep, or prior written consent.","r":"11.1.1"},{"id":"11-c04","f":"How long does a firm keep someone on its internal do-not-call list?","b":"Indefinitely.","r":"11.1.1"},{"id":"11-c05","f":"Cold-call script approval","b":"A script is a retail communication: **principal approval before first use**.","r":"11.1.1"},{"id":"11-c06","f":"Who signs the new account form?","b":"Only the **designated principal** (not customer, not rep).","r":"11.1.4"},{"id":"11-c07","f":"When must a principal approve a new account?","b":"Before, or promptly after, the first transaction.","r":"11.1.4"},{"id":"11-c08","f":"Customer refuses to give income/net worth","b":"Account may open; rep may accept **unsolicited orders only**, no recommendations.","r":"11.1.3"},{"id":"11-c09","f":"Numbered account requirements","b":"Symbol or number (no alias); **written statement of ownership + proof of identity**.","r":"11.1.2"},{"id":"11-c10","f":"Introducing firm vs clearing firm","b":"Introducing: customer relationship, takes orders. Clearing: processes/settles trades and holds custody of cash and securities.","r":"11.1.2"},{"id":"11-c11","f":"Account information verification schedule","b":"Within 30 days of opening; within 30 days of a change; then every 36 months (to each joint owner).","r":"11.1.5"},{"id":"11-c12","f":"Cash account settlement vs Reg T deadline","b":"Regular way = T+1. Reg T payment due within 2 business days after settlement (S+2).","r":"11.2.1.1"},{"id":"11-c13","f":"If a cash-account purchase isn’t paid by the Reg T deadline (no extension)","b":"Position sold out; account frozen for **90 days** (firm discretion if shortage ≤ $1,000).","r":"11.2.1.1"},{"id":"11-c14","f":"What can a frozen account do?","b":"Sell orders, and buys only if cash is **already in the account** at the time of the order.","r":"11.2.1.1"},{"id":"11-c15","f":"Free-riding","b":"Buying and selling a security without ever paying for it → account frozen.","r":"11.2.1.1"},{"id":"11-c16","f":"Which transactions must be done in a margin account?","b":"All short sales.","r":"11.2.2"},{"id":"11-c17","f":"Reg T initial margin","b":"50% of market value (since 1974) for purchases and short sales of margin-eligible securities.","r":"11.2.2.1"},{"id":"11-c18","f":"Securities exempt from Reg T","b":"US government and municipal securities — margin set by FINRA/self-regulatory rules.","r":"11.2.2.1"},{"id":"11-c19","f":"FINRA minimum equity: long purchase","b":"≤ $2,000: 100%. $2,000–$4,000: $2,000. Over $4,000: 50%.","r":"11.2.2.2"},{"id":"11-c20","f":"FINRA minimum equity: short sale","b":"Up to $4,000: **$2,000**. Over $4,000: 50%.","r":"11.2.2.2"},{"id":"11-c21","f":"Long maintenance requirement","b":"25% of long market value.","r":"11.2.2.3"},{"id":"11-c22","f":"Short maintenance requirement","b":"30% of short market value.","r":"11.2.2.3"},{"id":"11-c23","f":"How often are margin accounts marked to market?","b":"Daily (longs and shorts).","r":"11.2.2.3"},{"id":"11-c24","f":"Securities eligible for margin","b":"Exchange-listed stocks, Fed-approved OTC stocks, bonds, CEFs, ETFs, LEAPS > 9 months, Treasuries.","r":"11.2.2.4"},{"id":"11-c25","f":"Securities NOT eligible for margin","b":"IPOs (first 30 days), unapproved OTC, mutual funds, options ≤ 9 months, annuities.","r":"11.2.2.4"},{"id":"11-c26","f":"When can a mutual fund be used as margin collateral?","b":"After being held at least 30 days.","r":"11.2.2.4"},{"id":"11-c27","f":"Three parts of the margin agreement","b":"Hypothecation, credit agreement, loan consent (optional).","r":"11.2.2.5"},{"id":"11-c28","f":"Hypothecation","b":"Customer pledges securities as collateral for the margin loan; securities held in **street name**; firm may re-hypothecate.","r":"11.2.2.5"},{"id":"11-c29","f":"Loan consent form","b":"Optional; lets the firm lend the customer’s securities for short sales.","r":"11.2.2.5"},{"id":"11-c30","f":"Margin interest rate vs debit balance","b":"Rate = broker call rate + spread; **larger debit → lower rate**.","r":"11.2.2.5"},{"id":"11-c31","f":"Margin disclosure statement: when and how often?","b":"Before or at account opening, and annually.","r":"11.2.2.6"},{"id":"11-c32","f":"Options account opening: order of steps","b":"Disclosure document → ROP written approval → trading may begin → signed agreement within 15 days.","r":"11.2.3"},{"id":"11-c33","f":"Unsigned options agreement after 15 days","b":"Customer may only **close** existing positions; no new positions, no exercise.","r":"11.2.3"},{"id":"11-c34","f":"Who approves options accounts?","b":"A Registered Options Principal (ROP).","r":"11.2.3"},{"id":"11-c35","f":"The three A’s of discretion","b":"Action, Asset, Amount. (Time and price are NOT discretionary.)","r":"11.2.4"},{"id":"11-c36","f":"What is needed for discretionary trading?","b":"Written POA from the customer; principal approval before the first trade; prompt approval of each trade.","r":"11.2.4"},{"id":"11-c37","f":"Power of attorney and death / incompetence","b":"Ends at death. Court-declared incompetence ends it unless it is a durable POA.","r":"11.2.4"},{"id":"11-c38","f":"Signature of convenience","b":"Signing for a customer (even with permission) — prohibited.","r":"11.2.4"},{"id":"11-c39","f":"Churning","b":"Excessive trading inconsistent with the customer’s objectives, to generate fees. No fixed trade count.","r":"11.2.4.1"},{"id":"11-c40","f":"Who is a fee-based account unsuitable for?","b":"Buy-and-hold / infrequent traders.","r":"11.2.5"},{"id":"11-c41","f":"JTWROS at an owner’s death","b":"Interest passes to surviving owners; avoids probate.","r":"11.3.2.2"},{"id":"11-c42","f":"JTIC at an owner’s death","b":"That owner’s share goes to their beneficiary/estate (probate applies).","r":"11.3.2.1"},{"id":"11-c43","f":"Joint account payments","b":"Any owner may give instructions; checks payable to **all** owners.","r":"11.3.2"},{"id":"11-c44","f":"UGMA/UTMA age of majority","b":"UGMA: 18. UTMA: 18–25 depending on state.","r":"11.3.3.1"},{"id":"11-c45","f":"UGMA/UTMA: whose SSN, whose taxes, whose name on securities?","b":"Minor’s SSN; minor is taxed; securities registered in the custodian’s name.","r":"11.3.3.1"},{"id":"11-c46","f":"Can a UGMA/UTMA account use margin?","b":"No.","r":"11.3.3.1"},{"id":"11-c47","f":"Cost basis of inherited shares","b":"Stepped up to value on the date of death.","r":"11.3.3.2"},{"id":"11-c48","f":"Corporate account documents","b":"Corporate resolution naming authorized persons; margin only if permitted by the charter.","r":"11.4.1"},{"id":"11-c49","f":"Statement frequency","b":"Quarterly; monthly if account holds options or penny stocks; none if inactive and empty.","r":"11.5.1"},{"id":"11-c50","f":"When must a trade confirmation be sent?","b":"At or before completion of the transaction (settlement).","r":"11.5.2"},{"id":"11-c51","f":"Principal vs agency trade confirmation","b":"Principal: show mark-up/mark-down. Agency: show commission.","r":"11.5.2"},{"id":"11-c52","f":"Customer mail hold limit","b":"Up to 3 months, by written request; longer only for valid reasons like safety (not convenience).","r":"11.5.4"},{"id":"11-c53","f":"Account records retention","b":"6 years after the account is closed.","r":"11.5.5"},{"id":"11-c54","f":"Reg S-P privacy notice timing","b":"At account opening and annually; customers can opt out of non-affiliate sharing (not legally required sharing).","r":"11.6.1"},{"id":"11-c55","f":"Commingling","b":"Mixing customer and firm assets — a violation. Customer assets must be segregated.","r":"11.6.2"},{"id":"11-c56","f":"SIPC limits","b":"$500,000 per separate customer, of which at most $250,000 in cash.","r":"11.6.3"},{"id":"11-c57","f":"What does SIPC not cover?","b":"Market losses, commodities/futures, and bad investment decisions. It is not a government agency.","r":"11.6.3"},{"id":"11-c58","f":"Separate customers for SIPC","b":"Individual, joint, trust, IRA, Roth IRA, minor’s account — each separately protected.","r":"11.6.3.1"},{"id":"11-c59","f":"FDIC coverage","b":"Bank deposits only: $250,000 per depositor per bank. Not securities, mutual funds or annuities.","r":"11.6.4"},{"id":"11-c60","f":"Vulnerable investor temporary hold","b":"15 business days; +10 if suspicion persists; +30 if reported (55 total). Applies to age 65+, or 18+ with impairment.","r":"11.6.5"},{"id":"11-c61","f":"Rule 2261","b":"On request, the firm provides its financial condition (balance sheet).","r":"11.6.6"}],"questions":[{"id":"11-q01","r":"11.1.1","k":"scenario","d":2,"q":"A registered representative in New York wants to cold-call a prospect (not an existing customer) who lives in Los Angeles. What is the earliest time, New York time, that the call may be placed?","o":["8:00 am","9:00 am","11:00 am","5:00 am"],"a":2,"w":["Wrong: 8:00 am is the limit in the prospect’s time zone, not New York’s.","Wrong: no adjustment of one hour applies.","Correct: 8:00 am Pacific is 11:00 am Eastern; the window runs on the called person’s local time.","Wrong: this subtracts the time difference instead of adding it."]},{"id":"11-q02","r":"11.1.1","k":"concept","d":1,"q":"Which of the following allows a representative to call a person who is on the firm’s internal do-not-call list?","o":["The person asked to be removed six months ago","The person is an existing customer of the firm","The call is made before 9:00 am","A colleague says the person no longer minds"],"a":1,"w":["Wrong: the internal list is indefinite; time does not remove anyone.","Correct: existing customers, personal relationships and prior written consent are exceptions.","Wrong: calling hours do not override the do-not-call status.","Wrong: only the person’s own written consent counts."]},{"id":"11-q03","r":"11.1.1","k":"concept","d":1,"q":"A firm wants its representatives to use a script on cold calls. How is the script treated?","o":["Institutional communication needing no approval","A retail communication that must be approved by a principal before first use","Correspondence, reviewed after use","A communication that must be filed with the SEC before use"],"a":1,"w":["Wrong: cold calls target the public, not institutions.","Correct: scripts are retail communications requiring prior principal approval.","Wrong: correspondence is a different category and no prior approval is required for a scripted solicitation.","Wrong: the SEC does not pre-approve broker-dealer scripts."]},{"id":"11-q04","r":"11.1.1","k":"scenario","d":2,"q":"An unregistered employee of a broker-dealer cold-calls prospects and offers to send a free research report. A prospect asks for more information about the company. What must the employee do?","o":["Read excerpts from the report","Turn the call over to a registered person","End the call; unregistered staff may not cold-call at all","Give the prospect the firm’s investment recommendation"],"a":1,"w":["Wrong: discussing the substance goes beyond what an unregistered person may do.","Correct: the call must be handed to a registered person.","Wrong: unregistered employees may place cold calls, within limits.","Wrong: recommendations are a registered activity."]},{"id":"11-q05","r":"11.1.4","k":"concept","d":1,"q":"Who is required to sign the new account form?","o":["The customer and the registered representative","The customer and the designated principal","Only the customer","Only the designated principal who approves the account"],"a":3,"w":["Wrong: neither of them needs to sign.","Wrong: the customer’s signature is not required on the form itself.","Wrong: the customer need not sign the form.","Correct: the principal’s signature documents approval and is the only one required."]},{"id":"11-q06","r":"11.1.3","k":"scenario","d":2,"q":"A new client provides all identification data but refuses to disclose income and net worth. What is true?","o":["The account cannot be opened","The account may be opened but the rep can only take unsolicited orders","The account may be opened and the rep may recommend conservative products","The principal may approve recommendations after the first trade"],"a":1,"w":["Wrong: refusal does not prevent opening.","Correct: without the facts, no recommendations; only unsolicited orders.","Wrong: any recommendation requires knowing the customer’s facts.","Wrong: approval does not cure the lack of information."]},{"id":"11-q07","r":"11.1.2","k":"concept","d":1,"q":"A customer who wants anonymity from relatives at the firm asks to open an account. What may the firm do?","o":["Open the account under an alias","Open it under a fictitious name with made-up data","Open a numbered account, keeping a written statement of ownership and ID","Refuse; anonymity is never permitted"],"a":2,"w":["Wrong: aliases are not allowed.","Wrong: false information is never allowed.","Correct: a symbol or number is allowed, with ownership statement and proof of identity on file.","Wrong: numbered accounts are permitted."]},{"id":"11-q08","r":"11.1.5","k":"concept","d":2,"q":"After the initial verification, how often must a firm send customers a request to verify their account information?","o":["Every 12 months","Every 24 months","Every 36 months","Only when the customer reports a change"],"a":2,"w":["Wrong: annual verification is not the rule; after the first request the interval is 36 months.","Wrong: not the required interval.","Correct: the initial request within 30 days, then every 36 months (and 30 days after any reported change).","Wrong: periodic verification is mandatory even without a change."]},{"id":"11-q09","r":"11.1.2","k":"concept","d":1,"q":"Which function is performed by a clearing firm but not by an introducing firm?","o":["Opening customer accounts","Accepting customer orders","Holding customer cash and securities and settling trades","Obtaining new account forms"],"a":2,"w":["Wrong: the introducing firm opens accounts.","Wrong: the introducing firm takes orders.","Correct: custody and settlement belong to the clearing firm.","Wrong: collected at the introducing level."]},{"id":"11-q10","r":"11.2.1.1","k":"concept","d":2,"q":"A customer buys stock in a cash account and does not pay by the Reg T deadline; no extension is granted and the shortage exceeds $1,000. What happens?","o":["The firm sells the position and freezes the account for 90 days","The firm freezes the account for 30 days only","The firm charges margin interest and keeps the position","The customer is reported to the SEC"],"a":0,"w":["Correct: sell-out and a 90-day freeze.","Wrong: the freeze is 90 days.","Wrong: a cash account has no margin loan.","Wrong: no automatic SEC report; the consequence is the sell-out and freeze."]},{"id":"11-q11","r":"11.2.1.1","k":"scenario","d":2,"q":"Susan buys ABC stock on Tuesday (regular way) and sells the same shares on Tuesday in a cash trade, using the proceeds to pay for her purchase. This is:","o":["Permitted if she pays by settlement","A margin violation","Free-riding","Churning"],"a":2,"w":["Wrong: she never paid with her own money.","Wrong: no margin loan is involved.","Correct: she bought and sold without paying for the stock — free-riding.","Wrong: churning concerns excessive trading by a rep."]},{"id":"11-q12","r":"11.2.1.1","k":"concept","d":2,"q":"An account is frozen for free-riding. Which orders are permitted?","o":["None","Sell orders only","Sell orders, and buy orders only if full cash is in the account when placed","Only orders approved by a principal"],"a":2,"w":["Wrong: trading is limited, not banned.","Wrong: buys with cash already on deposit are also allowed.","Correct: sells, plus buys fully funded at the time of the order.","Wrong: approval is not the test; funding is."]},{"id":"11-q13","r":"11.2.2","k":"concept","d":1,"q":"A customer wants to sell stock short. In which account must the trade be placed?","o":["Cash account","Margin account","Custodial account","Any account type"],"a":1,"w":["Wrong: cash accounts require full payment for purchases and cannot hold shorts.","Correct: all short sales are executed in a margin account.","Wrong: custodial accounts cannot use margin.","Wrong: only margin accounts."]},{"id":"11-q14","r":"11.2.2.2","k":"calc","d":2,"q":"A customer buys $60,000 of listed stock in a margin account. What is the minimum initial deposit?","o":["$15,000","$30,000","$45,000","$60,000"],"a":1,"w":["Wrong: 25% is the maintenance level for longs.","Correct: Reg T requires 50% → $30,000.","Wrong: 75% is not a margin requirement.","Wrong: that is the cash-account requirement."]},{"id":"11-q15","r":"11.2.2.2","k":"calc","d":2,"q":"A customer buys $3,200 of stock in a margin account. What is the minimum deposit?","o":["$1,600","$2,000","$3,200","$4,000"],"a":1,"w":["Wrong: 50% would be $1,600, but the FINRA minimum overrides it.","Correct: between $2,000 and $4,000 the minimum is $2,000.","Wrong: the full price is required only at $2,000 or less.","Wrong: no such requirement."]},{"id":"11-q16","r":"11.2.2.2","k":"calc","d":2,"q":"A customer buys $1,500 of stock in a margin account. What is the minimum deposit?","o":["$750","$1,500","$2,000","$1,125"],"a":1,"w":["Wrong: 50% is less than the allowed purchase price.","Correct: FINRA requires the lesser of $2,000 or 100% of the price → $1,500.","Wrong: she doesn’t need to deposit more than the cost.","Wrong: 75% of the price is not a margin level; the FINRA rule is the lesser of $2,000 or 100%."]},{"id":"11-q17","r":"11.2.2.2","k":"calc","d":3,"q":"A customer sells short 1,000 shares of XYZ at $12 and 100 shares of ABC at $10 in a margin account (two separate trades). What are the minimum deposits for each trade respectively?","o":["$6,000 and $500","$6,000 and $2,000","$12,000 and $1,000","$2,000 and $2,000"],"a":1,"w":["Wrong: for a short sale of $1,000 the minimum is still $2,000.","Correct: $12,000 × 50% = $6,000; the $1,000 short needs the $2,000 minimum.","Wrong: those are 100% figures.","Wrong: the $12,000 short exceeds $4,000, so Reg T 50% applies."]},{"id":"11-q18","r":"11.2.2.1","k":"concept","d":2,"q":"Which statement about Regulation T is correct?","o":["It sets the initial margin requirement for margin-eligible securities","It sets the maintenance requirement at 25%","It applies to municipal bonds","It was set by FINRA"],"a":0,"w":["Correct: the Fed’s Reg T sets initial margin (50%).","Wrong: the 25% maintenance level is FINRA’s.","Wrong: municipals and governments are exempt from Reg T.","Wrong: Reg T is a Federal Reserve Board regulation."]},{"id":"11-q19","r":"11.2.2.3","k":"calc","d":2,"q":"A customer’s long margin account holds $120,000 of securities. What is the FINRA minimum maintenance equity?","o":["$30,000","$36,000","$60,000","$120,000"],"a":0,"w":["Correct: 25% × $120,000 = $30,000.","Wrong: 30% is the short requirement.","Wrong: 50% is the initial requirement.","Wrong: 100% is the cash-account level."]},{"id":"11-q20","r":"11.2.2.3","k":"calc","d":3,"q":"A long margin account has market value of $60,000 and a debit balance of $48,000. How large is the maintenance call?","o":["No call","$3,000","$12,000","$15,000"],"a":1,"w":["Wrong: equity is below the requirement.","Correct: equity = $12,000; requirement = 25% × $60,000 = $15,000; call = $3,000.","Wrong: that is the equity, not the call.","Wrong: that is the requirement, not the shortfall."]},{"id":"11-q21","r":"11.2.2.3","k":"calc","d":3,"q":"A customer shorts 1,000 shares at $40 and deposits the initial requirement. The stock rises to $50. What is the maintenance call?","o":["$2,500","$5,000","$7,500","No call"],"a":1,"w":["Wrong: misapplies the percentage.","Correct: credit $60,000 − SMV $50,000 = equity $10,000; requirement 30% × $50,000 = $15,000; call $5,000.","Wrong: confuses requirement and initial deposit.","Wrong: equity is below the requirement."]},{"id":"11-q22","r":"11.2.2.3","k":"concept","d":1,"q":"How often are margin accounts marked to the market?","o":["Daily","Weekly","Monthly","At the firm’s discretion"],"a":0,"w":["Correct: daily, for both long and short accounts.","Wrong: weekly is too infrequent.","Wrong: monthly is not the rule.","Wrong: the requirement is daily."]},{"id":"11-q23","r":"11.2.2.4","k":"concept","d":2,"q":"Which of these can be purchased on margin?","o":["A mutual fund","An IPO share 10 days after the effective date","A LEAPS option with 18 months to expiration","An annuity"],"a":2,"w":["Wrong: mutual funds cannot be bought on margin.","Wrong: IPOs are restricted for the first 30 days.","Correct: LEAPS with more than 9 months to expiration are eligible.","Wrong: annuities are not eligible."]},{"id":"11-q24","r":"11.2.2.5","k":"concept","d":2,"q":"Which part of the margin agreement is optional for the customer to sign?","o":["Hypothecation agreement","Credit agreement","Loan consent form","All three are required"],"a":2,"w":["Wrong: needed to pledge collateral.","Wrong: sets interest terms; required.","Correct: it allows the firm to lend the customer’s shares for short sales.","Wrong: the loan consent is optional."]},{"id":"11-q25","r":"11.2.2.5","k":"concept","d":2,"q":"By signing the hypothecation agreement, a margin customer:","o":["Allows the firm to sell shares at any time with no notice and no collateral","Pledges securities as collateral for the margin loan","Waives margin interest","Agrees to a 25% initial deposit"],"a":1,"w":["Wrong: not what hypothecation means.","Correct: securities are pledged as collateral for the loan.","Wrong: interest is set by the credit agreement.","Wrong: initial margin is 50% under Reg T."]},{"id":"11-q26","r":"11.2.2.6","k":"concept","d":2,"q":"Which statement is NOT a required warning in the margin disclosure statement?","o":["You can lose more than you deposit","The firm can sell your securities without contacting you","You will receive 30 days’ written notice before the firm raises house maintenance requirements","You are not entitled to an extension on a margin call"],"a":2,"w":["This warning is in the statement: a margin investor can lose more than the amount deposited.","This warning is in the statement: the firm may sell without contacting the customer.","Correct choice: the warning is that the firm can raise requirements without advance notice.","This warning is in the statement: no entitlement to extra time on a margin call."]},{"id":"11-q27","r":"11.2.3","k":"scenario","d":3,"q":"A customer wants to trade options. Which sequence is correct?","o":["Signed agreement → principal approval → disclosure document","Disclosure document (at or before approval) → ROP approval → trading → signed agreement within 15 days","ROP approval → trading → disclosure document at 15 days","Signed agreement → disclosure document → trading"],"a":1,"w":["Wrong: the agreement comes after approval.","Correct: the ODD is delivered at or before approval; trading may begin; agreement due within 15 days.","Wrong: the ODD cannot be delayed.","Wrong: the agreement is not first."]},{"id":"11-q28","r":"11.2.3","k":"concept","d":2,"q":"A customer’s options account was approved 20 days ago but the customer has not returned the signed options agreement. The customer may:","o":["Open new positions normally","Only close existing positions","Not do anything","Exercise only"],"a":1,"w":["Wrong: after 15 days new positions are not allowed.","Correct: liquidating (closing) transactions only.","Wrong: closing is permitted.","Wrong: exercising is also barred."]},{"id":"11-q29","r":"11.2.4","k":"scenario","d":2,"q":"A client tells the rep: “I want exposure to technology.” The rep picks the specific stock and buys it. This trade is:","o":["Non-discretionary because the client chose the sector","Discretionary because the rep chose the asset","Not held","Unsolicited"],"a":1,"w":["Wrong: choosing the specific security is the rep’s decision.","Correct: deciding any of action, asset or amount makes it discretionary.","Wrong: “not held” refers to time and price latitude.","Wrong: the client did not initiate the specific purchase."]},{"id":"11-q30","r":"11.2.4","k":"concept","d":2,"q":"A client tells the rep: “Buy 100 shares of Apple when the time and price are right.” The trade is:","o":["Discretionary","Non-discretionary (a not-held order)","Prohibited","A churning risk"],"a":1,"w":["Wrong: time and price are not discretionary items.","Correct: action, asset and amount are set by the client.","Wrong: nothing prohibits a client leaving time and price to the rep; it simply isn’t discretion.","Wrong: this is a single trade."]},{"id":"11-q31","r":"11.2.4","k":"concept","d":2,"q":"Which is true of a power of attorney for discretionary trading?","o":["It continues after the customer’s death","It must be written, and a principal must approve the account before the first trade","The rep may sign for the customer if permission is given","It is needed only for margin accounts"],"a":1,"w":["Wrong: a power of attorney ends at the customer’s death.","Correct: written authority, principal approval before first trade and promptly after each trade.","Wrong: signing for a customer is prohibited.","Wrong: it concerns discretion, not margin."]},{"id":"11-q32","r":"11.2.4.1","k":"concept","d":1,"q":"Excessive trading in a conservative client’s account that earns the rep commissions is called:","o":["Front-running","Churning","Free-riding","Commingling"],"a":1,"w":["Wrong: trading ahead of customer orders.","Correct: excessive trading inconsistent with objectives to generate fees.","Wrong: buying and selling without paying.","Wrong: mixing customer and firm assets."]},{"id":"11-q33","r":"11.2.5","k":"concept","d":1,"q":"For which investor is a fee-based account LEAST suitable?","o":["An active trader placing many orders","A buy-and-hold investor who trades rarely","A client with a large portfolio and frequent rebalancing","A customer wanting predictable costs"],"a":1,"w":["Fits a fee-based account.","Correct: a rare trader pays fees for little activity.","This investor suits a fee-based account: frequent activity makes a flat or asset-based fee efficient.","This investor suits a fee-based account: fees are predictable rather than per-trade."]},{"id":"11-q34","r":"11.3.2","k":"scenario","d":2,"q":"Two siblings open a joint account and each wants their share to go to their own spouse at death. Which title fits?","o":["JTWROS","JTIC","UTMA","Individual"],"a":1,"w":["Wrong: the survivor would take everything.","Correct: JTIC lets each owner’s share pass to their own beneficiary.","Wrong: custodial account for a minor.","Wrong: it needs two owners."]},{"id":"11-q35","r":"11.3.2.2","k":"concept","d":2,"q":"Which account avoids probate at an owner’s death?","o":["JTIC","Individual account without TOD","JTWROS","Corporate account"],"a":2,"w":["Wrong: JTIC shares are probated.","Wrong: goes through the estate unless TOD is designated.","Correct: assets pass directly to the survivor.","Wrong: corporations have unlimited life, probate does not apply."]},{"id":"11-q36","r":"11.3.2","k":"concept","d":2,"q":"In a joint account, which statement is correct?","o":["Checks may be made out to any one owner","Any owner may give trading instructions, but checks must be payable to all owners","All owners must sign every order","A parent and a minor child may open one"],"a":1,"w":["Wrong: checks must name all owners.","Correct: any owner may instruct the firm, but checks must be payable to all owners.","Wrong: one owner may give instructions.","Wrong: a minor cannot be part of a joint account."]},{"id":"11-q37","r":"11.3.3.1","k":"concept","d":2,"q":"Which statement about UGMA/UTMA accounts is TRUE?","o":["The custodian’s Social Security number is on the account","Gifts to the account are irrevocable","Margin trading is permitted with the custodian’s approval","The minor may trade with the custodian’s permission"],"a":1,"w":["Wrong: the minor’s number is used.","Correct: the donor cannot take the gift back.","Wrong: margin is not permitted.","Wrong: the minor cannot trade."]},{"id":"11-q38","r":"11.3.3.1","k":"concept","d":2,"q":"Who owes the income tax on dividends earned in a UTMA account?","o":["The custodian","The donor","The minor","The broker-dealer"],"a":2,"w":["Wrong: the custodian ensures payment but is not liable.","Wrong: the gift is irrevocable.","Correct: the minor owns the assets and is liable for taxes.","Wrong: the broker-dealer is not the taxpayer; the minor owns the assets and owes the tax."]},{"id":"11-q39","r":"11.3.3.2","k":"calc","d":3,"q":"John buys XYZ at $10 and dies when it trades at $30. His daughter inherits and later sells at $34. What is her taxable gain per share?","o":["$4","$20","$24","$34"],"a":0,"w":["Correct: stepped-up basis of $30; gain = $34 − $30.","Wrong: $30 − $10 is the deceased’s gain.","Wrong: uses the original basis.","Wrong: the full proceeds."]},{"id":"11-q40","r":"11.4.1","k":"concept","d":1,"q":"What document must a corporation provide to open a brokerage account?","o":["A copy of the articles of incorporation only","A corporate resolution naming persons authorized to trade","A partnership agreement","A power of attorney from each shareholder"],"a":1,"w":["Wrong: insufficient to name authorized traders.","Correct: the board resolution names who may transact.","Wrong: used for partnerships.","Wrong: shareholders do not grant authority; the board names the authorised traders by resolution."]},{"id":"11-q41","r":"11.5.1","k":"scenario","d":2,"q":"A customer account holds stocks and penny stocks and has recent activity. How often must the firm send statements?","o":["Annually","Quarterly","Monthly","Not required"],"a":2,"w":["Wrong: there is no annual-statement rule; statements are at least quarterly, monthly with penny stocks or options.","Wrong: quarterly applies to ordinary accounts.","Correct: holding options or penny stocks triggers monthly statements.","Wrong: required with any position or activity."]},{"id":"11-q42","r":"11.5.2","k":"concept","d":1,"q":"A trade confirmation must be sent to the customer:","o":["Within 30 days of the trade","At or before completion of the transaction","Within 5 business days after settlement","Only upon request"],"a":1,"w":["Wrong: 30 days is far too late; the confirmation is due no later than settlement.","Correct: at or before settlement.","Wrong: after settlement is too late; confirmations are due at or before settlement.","Wrong: confirmations are mandatory."]},{"id":"11-q43","r":"11.5.2","k":"concept","d":2,"q":"On a principal (dealer) trade with a retail customer, the confirmation must show:","o":["The commission","The mark-up or mark-down","The firm’s net capital","Nothing about the firm’s compensation"],"a":1,"w":["Wrong: commission applies to agency trades.","Correct: a principal trade must show the mark-up or mark-down.","Wrong: the firm’s net capital is not shown on a trade confirmation.","Wrong: the mark-up/mark-down must be disclosed."]},{"id":"11-q44","r":"11.5.4","k":"concept","d":2,"q":"A customer asks the firm to hold mail for 5 months because he doesn’t want to deal with it. The firm should:","o":["Agree orally","Agree in writing","Refuse because convenience is not an acceptable reason beyond 3 months","Agree if a principal approves"],"a":2,"w":["Wrong: a hold request must be in writing, and the length is the problem here.","Wrong: written instruction is necessary but not enough here.","Correct: beyond three months a valid reason such as safety is required.","Wrong: approval does not change the rule."]},{"id":"11-q45","r":"11.5.5","k":"concept","d":1,"q":"For how long must a firm keep customer account records after the account is closed?","o":["1 year","3 years","6 years","Indefinitely"],"a":2,"w":["Wrong: one year is far shorter than the six-year retention requirement.","Wrong: three years falls short; the requirement is six years after closing.","Correct: at least six years after closing.","Wrong: retention is six years after closing, not indefinite."]},{"id":"11-q46","r":"11.6.1","k":"concept","d":2,"q":"Under Regulation S-P, a customer cannot opt out of information sharing:","o":["With non-affiliated marketers","When the sharing is required by law, such as in an AML investigation","With the firm’s affiliates","When the notice was sent annually"],"a":1,"w":["Wrong: this is what opt-out is for.","Correct: legally required sharing cannot be blocked.","Wrong: not the typical test.","Wrong: the annual notice does not remove or create an opt-out right; legally required sharing is the exception."]},{"id":"11-q47","r":"11.6.2","k":"concept","d":1,"q":"Using customer fully paid securities as collateral for the firm’s own loan is:","o":["Permitted with notice","Commingling and prohibited","Hypothecation permitted","Allowed for exchange-listed securities"],"a":1,"w":["Wrong: fully paid securities must be segregated; notice does not make pledging them for the firm’s debt legal.","Correct: fully paid securities must be segregated.","Wrong: hypothecation applies to margin securities under an agreement.","Wrong: listing status is irrelevant; commingling fully paid securities is prohibited."]},{"id":"11-q48","r":"11.6.3","k":"calc","d":3,"q":"An investor has $100,000 of securities and $300,000 cash in a brokerage account when the firm fails. What is the maximum SIPC protection?","o":["$350,000","$400,000","$500,000","$250,000"],"a":0,"w":["Correct: securities $100,000 + cash capped at $250,000.","Wrong: ignores the cash cap.","Wrong: the $500,000 limit isn’t reached.","Wrong: the cash cap, not the total."]},{"id":"11-q49","r":"11.6.3.1","k":"scenario","d":2,"q":"An investor holds an individual account, a joint account with a spouse, and a Roth IRA at the same firm. For SIPC, how many separate customers are there?","o":["One","Two","Three","Depends on the dollar amount"],"a":2,"w":["Wrong: one customer would apply only if all assets sat in a single account title.","Wrong: three different account titles, not two.","Correct: each account type is a separate customer, each protected to the limit.","Wrong: dollar amounts determine the limit, not the number of separate customers."]},{"id":"11-q50","r":"11.6.4","k":"concept","d":2,"q":"Which statement correctly contrasts FDIC and SIPC?","o":["FDIC protects market losses, SIPC does not","FDIC covers bank deposits; SIPC covers securities and cash at a failed broker-dealer","SIPC is a US government agency","Both cover mutual fund losses"],"a":1,"w":["Wrong: neither covers market losses.","Correct: FDIC insures bank deposits; SIPC covers securities and cash at a failed broker-dealer.","Wrong: SIPC is a non-profit corporation.","Wrong: neither covers fund losses."]},{"id":"11-q51","r":"11.6.5","k":"concept","d":2,"q":"A firm reasonably believes a 70-year-old customer is being financially exploited. What can the firm do first?","o":["Place a temporary hold on disbursements for up to 15 business days","Freeze the account indefinitely","Close the account","Report to the IRS"],"a":0,"w":["Correct: initial 15-business-day hold.","Wrong: indefinite freezes are not authorized.","Wrong: a firm cannot close the account on suspicion; the rule allows a temporary hold on disbursements.","Wrong: reports go to adult protective services or state regulators; the first action is the hold."]},{"id":"11-q52","r":"11.6.3","k":"concept","d":1,"q":"SIPC protects an investor against:","o":["A decline in the value of securities","The failure of the brokerage firm","Poor investment advice","Losses on commodity futures"],"a":1,"w":["Wrong: market losses are not covered.","Correct: SIPC steps in when the brokerage firm fails.","Wrong: poor advice is a suitability/regulatory matter, not covered by SIPC.","Wrong: commodities and futures are not covered."]}]}]};</script>
+<script>(function () {
+'use strict';
+const DATA = window.SIE_DATA;
+const META = DATA.index;
+const CHAPTERS = {};
+DATA.chapters.forEach(c => (CHAPTERS[c.id] = c));
+const ITEMS = [];
+DATA.chapters.forEach(c => {
+  c.cards.forEach(x => ITEMS.push({ kind: 'card', ch: c.id, id: x.id, x }));
+  c.questions.forEach(x => ITEMS.push({ kind: 'q', ch: c.id, id: x.id, x }));
+});
+const BYID = Object.fromEntries(ITEMS.map(i => [i.id, i]));
+const QUESTIONS = ITEMS.filter(i => i.kind === 'q');
+
+/* ---------- helpers ---------- */
+const $ = (s, r = document) => r.querySelector(s);
+const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+const inline = s => esc(s).replace(/\*\*(.+?)\*\*/g, '<b>$1</b>').replace(/\*(.+?)\*/g, '<i>$1</i>').replace(/`(.+?)`/g, '<code>$1</code>');
+function md(src) {
+  const L = src.split('\n'); let out = '', i = 0;
+  while (i < L.length) {
+    const l = L[i];
+    if (!l.trim()) { i++; continue; }
+    if (l.startsWith('|')) {
+      const rows = []; while (i < L.length && L[i].startsWith('|')) rows.push(L[i++]);
+      const cells = r => r.replace(/^\||\|$/g, '').split('|').map(c => c.trim());
+      const head = cells(rows[0]), body = rows.slice(2).map(cells);
+      out += '<div class="tw"><table><thead><tr>' + head.map(h => '<th>' + inline(h) + '</th>').join('') + '</tr></thead><tbody>' +
+        body.map(r => '<tr>' + r.map(c => '<td>' + inline(c) + '</td>').join('') + '</tr>').join('') + '</tbody></table></div>';
+      continue;
+    }
+    if (/^(- |\d+\. )/.test(l)) {
+      const ord = /^\d/.test(l), it = [];
+      while (i < L.length && /^(- |\d+\. )/.test(L[i])) it.push(L[i++].replace(/^(- |\d+\. )/, ''));
+      out += (ord ? '<ol>' : '<ul>') + it.map(x => '<li>' + inline(x) + '</li>').join('') + (ord ? '</ol>' : '</ul>');
+      continue;
+    }
+    if (l.startsWith('> ')) { const t = []; while (i < L.length && L[i].startsWith('> ')) t.push(L[i++].slice(2)); out += '<div class="tip">' + inline(t.join(' ')) + '</div>'; continue; }
+    out += '<p>' + inline(l) + '</p>'; i++;
+  }
+  return out;
+}
+const shuffle = a => { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
+const pick = a => a[Math.floor(Math.random() * a.length)];
+const money = n => (n < 0 ? '-$' : '$') + Math.round(Math.abs(n)).toLocaleString('en-US');
+const LET = ['A', 'B', 'C', 'D'];
+const clean = w => { const t = w.replace(/^(Correct|Wrong)(: |\.|—)?\s*/i, ''); return t.length > 3 ? t.charAt(0).toUpperCase() + t.slice(1) : w; };
+const today = () => Math.floor((Date.now() - new Date().getTimezoneOffset() * 6e4) / 864e5);
+
+/* ---------- store ---------- */
+const KEY = 'sie-prep.v1';
+let S = null;
+try { S = JSON.parse(localStorage.getItem(KEY)); } catch (e) { }
+S = Object.assign({ rec: {}, exams: [], examDate: null, theme: 'auto', log: {}, flags: {} }, S || {});
+const save = () => { try { localStorage.setItem(KEY, JSON.stringify(S)); } catch (e) { } };
+function applyTheme() { const r = document.documentElement; if (S.theme === 'auto') r.removeAttribute('data-theme'); else r.setAttribute('data-theme', S.theme); }
+
+/* ---------- spaced repetition (Leitner) ---------- */
+const INT = [0, 1, 3, 7, 14, 30];
+function grade(id, ok, easy) {
+  const r = S.rec[id] || (S.rec[id] = { b: 0, due: 0, n: 0, w: 0 });
+  r.n++;
+  if (ok) r.b = Math.min(5, r.b + (easy ? 2 : 1)); else { r.b = 0; r.w++; }
+  r.due = today() + INT[r.b];
+  S.log[today()] = (S.log[today()] || 0) + 1;
+  save();
+}
+const isDue = i => { const r = S.rec[i.id]; return r && r.due <= today(); };
+const isNew = i => !S.rec[i.id];
+function mastery(chId) {
+  const its = ITEMS.filter(i => i.ch === chId); if (!its.length) return 0;
+  return its.reduce((s, i) => s + (S.rec[i.id] ? Math.min(5, S.rec[i.id].b) / 5 : 0), 0) / its.length;
+}
+function accuracy() {
+  let n = 0, w = 0; QUESTIONS.forEach(q => { const r = S.rec[q.id]; if (r) { n += r.n; w += r.w; } });
+  return n ? Math.round((1 - w / n) * 100) : null;
+}
+
+/* ---------- drills (generated, unlimited) ---------- */
+const ri = (a, b, st = 1) => a + Math.floor(Math.random() * ((b - a) / st + 1)) * st;
+const DRILLS = [
+  { id: 'initial', ch: 11, title: 'Initial margin deposit', sub: 'Reg T 50% vs FINRA $2,000 minimums', gen() {
+      const type = pick(['long', 'short', 'cash']);
+      const px = pick([10, 12, 15, 20, 25, 32, 40, 48, 60]), sh = pick([100, 100, 200, 500, 1000]);
+      const v = px * sh; let ans, steps;
+      if (type === 'cash') { ans = v; steps = ['Cash account → pay 100% of the price.', `${money(v)}`]; }
+      else if (type === 'long') {
+        ans = v <= 2000 ? v : v <= 4000 ? 2000 : v / 2;
+        steps = [`Value = ${sh} × $${px} = ${money(v)}.`, v <= 2000 ? 'Up to $2,000 → 100% of price (FINRA).' : v <= 4000 ? '$2,000–$4,000 → flat $2,000 (FINRA minimum).' : 'Over $4,000 → 50% (Reg T).'];
+      } else {
+        ans = v <= 4000 ? 2000 : v / 2;
+        steps = [`Short value = ${sh} × $${px} = ${money(v)}.`, v <= 4000 ? 'Short sale up to $4,000 → $2,000 minimum.' : 'Over $4,000 → 50% (Reg T).'];
+      }
+      const what = type === 'cash' ? `buy ${sh} shares at $${px} in a CASH account` : type === 'long' ? `buy ${sh} shares at $${px} in a MARGIN account` : `sell short ${sh} shares at $${px} in a MARGIN account`;
+      return { q: `A customer wants to ${what}. What is the minimum cash deposit required to open the position?`, ans, unit: '$', steps, tip: 'Small trades are where the FINRA minimums bite: check the size BEFORE halving.' };
+    } },
+  { id: 'longmaint', ch: 11, title: 'Long margin: maintenance call', sub: '25% of long market value', gen() {
+      const mv = ri(40, 200, 5) * 1000, debit = Math.round(mv * (ri(70, 84) / 100) / 500) * 500;
+      const eq = mv - debit, req = mv * 0.25, call = Math.max(0, req - eq);
+      return { q: `A long margin account holds securities worth ${money(mv)} with a debit balance of ${money(debit)}. How large is the maintenance call? (Enter 0 if none.)`, ans: call, unit: '$',
+        steps: [`Equity = MV − debit = ${money(mv)} − ${money(debit)} = ${money(eq)}.`, `Requirement = 25% × ${money(mv)} = ${money(req)}.`, call ? `Call = ${money(req)} − ${money(eq)} = ${money(call)}.` : 'Equity ≥ requirement → no call.'], tip: 'Work in thousands on the small calculator: 60 × .25 = 15.' };
+    } },
+  { id: 'shortmaint', ch: 11, title: 'Short margin: maintenance call', sub: '30% of short market value', gen() {
+      const sh = pick([100, 500, 1000]), p0 = pick([20, 30, 40, 50, 60]), p1 = Math.round(p0 * (1 + ri(10, 45) / 100));
+      const credit = 1.5 * sh * p0, smv = sh * p1, eq = credit - smv, req = 0.3 * smv, call = Math.max(0, req - eq);
+      return { q: `A customer sold short ${sh} shares at $${p0} and deposited the initial Reg T requirement. The stock now trades at $${p1}. What is the maintenance call? (Enter 0 if none.)`, ans: call, unit: '$',
+        steps: [`Short proceeds = ${money(sh * p0)}; deposit 50% = ${money(0.5 * sh * p0)} → credit balance ${money(credit)}.`, `SMV now = ${sh} × $${p1} = ${money(smv)}.`, `Equity = credit − SMV = ${money(eq)}.`, `Requirement = 30% × ${money(smv)} = ${money(req)}.`, call ? `Call = ${money(call)}.` : 'No call.'], tip: 'Shorts: equity = credit balance − SMV. Requirement is 30%, not 25%.' };
+    } },
+  { id: 'sipc', ch: 11, title: 'SIPC coverage', sub: '$500k per customer, max $250k cash', gen() {
+      const sec = ri(0, 600, 25) * 1000, cash = ri(0, 400, 25) * 1000, cc = Math.min(cash, 250000), ans = Math.min(500000, sec + cc);
+      return { q: `A brokerage fails. A customer’s single account holds ${money(sec)} of securities and ${money(cash)} of cash. What is the maximum amount SIPC protects?`, ans, unit: '$',
+        steps: [`Cash counts up to $250,000 → ${money(cc)}.`, `Securities + covered cash = ${money(sec + cc)}.`, `Cap at $500,000 → ${money(ans)}.`], tip: 'The $250k cash limit sits INSIDE the $500k total.' };
+    } },
+  { id: 'basis', ch: 11, title: 'Inherited shares: gain per share', sub: 'Stepped-up basis', gen() {
+      const buy = ri(10, 40, 2), death = buy + ri(4, 30, 2), sale = death + pick([-6, -4, 2, 4, 6, 8]);
+      return { q: `An investor buys stock at $${buy}. The investor dies when it trades at $${death}. The heir sells at $${sale}. What is the heir’s gain (or loss, as a negative number) per share?`, ans: sale - death, unit: '$',
+        steps: [`Heir’s basis is stepped up to the date-of-death value: $${death}.`, `Gain = $${sale} − $${death} = $${sale - death}.`], tip: 'The original purchase price is irrelevant to the heir.' };
+    } }
+];
+function drillSet(id, n = 5) { const d = DRILLS.find(x => x.id === id); return Array.from({ length: n }, () => ({ kind: 'drill', id: 'drill:' + id, drill: d, p: d.gen() })); }
+
+/* ---------- sessions ---------- */
+let RUN = null;
+function startRun(title, items, opts = {}) {
+  if (!items.length) { toast('Nothing to study here yet.'); return; }
+  RUN = { title, items: items.slice(), i: 0, done: 0, ok: 0, misses: [], state: 'ask', picked: null, shown: false, back: opts.back || '#/' };
+  go('#/run');
+}
+function sessionReview() {
+  const due = shuffle(ITEMS.filter(isDue)).slice(0, 30);
+  const fresh = shuffle(ITEMS.filter(isNew)).slice(0, due.length >= 25 ? 0 : 12);
+  return due.concat(fresh);
+}
+function chQuiz(ch, n) {
+  const qs = QUESTIONS.filter(q => q.ch === ch);
+  const scored = shuffle(qs).sort((a, b) => ((S.rec[a.id] ? S.rec[a.id].b : -1) - (S.rec[b.id] ? S.rec[b.id].b : -1)));
+  return shuffle(scored.slice(0, n || qs.length));
+}
+function chCards(ch) {
+  const cs = ITEMS.filter(i => i.kind === 'card' && i.ch === ch);
+  const ord = shuffle(cs).sort((a, b) => (isDue(b) ? 1 : 0) - (isDue(a) ? 1 : 0) || (isNew(b) ? 1 : 0) - (isNew(a) ? 1 : 0));
+  return ord.slice(0, 20);
+}
+const weakItems = () => shuffle(ITEMS.filter(i => S.rec[i.id] && S.rec[i.id].w > 0 && S.rec[i.id].b < 3)).slice(0, 20);
+
+/* ---------- toast ---------- */
+let toastT;
+function toast(m) { let t = $('#toast'); if (!t) { t = document.createElement('div'); t.id = 'toast'; t.style.cssText = 'position:fixed;left:50%;bottom:96px;transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:10px 16px;border-radius:12px;z-index:80;font-weight:600;font-size:.9rem'; document.body.appendChild(t); } t.textContent = m; t.style.display = 'block'; clearTimeout(toastT); toastT = setTimeout(() => (t.style.display = 'none'), 2200); }
+
+/* ---------- views ---------- */
+const ICON = {
+  today: '<svg viewBox="0 0 24 24"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/></svg>',
+  learn: '<svg viewBox="0 0 24 24"><path d="M4 5a2 2 0 012-2h13v16H6a2 2 0 00-2 2z"/><path d="M4 21V5"/></svg>',
+  practice: '<svg viewBox="0 0 24 24"><path d="M13 3L4 14h7l-1 7 9-11h-7z"/></svg>',
+  exam: '<svg viewBox="0 0 24 24"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l3 2M9 2h6"/></svg>',
+  gear: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 00.3 1.8l.1.1a2 2 0 11-2.8 2.8l-.1-.1a1.7 1.7 0 00-1.8-.3 1.7 1.7 0 00-1 1.5V21a2 2 0 11-4 0v-.1a1.7 1.7 0 00-1.1-1.5 1.7 1.7 0 00-1.8.3l-.1.1a2 2 0 11-2.8-2.8l.1-.1a1.7 1.7 0 00.3-1.8 1.7 1.7 0 00-1.5-1H3a2 2 0 110-4h.1a1.7 1.7 0 001.5-1.1 1.7 1.7 0 00-.3-1.8l-.1-.1a2 2 0 112.8-2.8l.1.1a1.7 1.7 0 001.8.3H9a1.7 1.7 0 001-1.5V3a2 2 0 114 0v.1a1.7 1.7 0 001 1.5 1.7 1.7 0 001.8-.3l.1-.1a2 2 0 112.8 2.8l-.1.1a1.7 1.7 0 00-.3 1.8V9a1.7 1.7 0 001.5 1H21a2 2 0 110 4h-.1a1.7 1.7 0 00-1.5 1z"/></svg>'
+};
+const SEC_COL = { 'Capital Markets': '#2a56e8', 'Products': '#7c3aed', 'Accounts': '#0f9d8a', 'Regulation': '#d97706' };
+const BLUEPRINT = [['Products & Risks', 44, '#7c3aed'], ['Accounts & Trading', 31, '#0f9d8a'], ['Capital Markets', 16, '#2a56e8'], ['Regulation', 9, '#d97706']];
+
+function ring(p) {
+  const r = 19, c = 2 * Math.PI * r;
+  return `<div class="ring"><svg width="46" height="46" viewBox="0 0 46 46"><circle cx="23" cy="23" r="${r}" fill="none" stroke="var(--line)" stroke-width="5"/><circle cx="23" cy="23" r="${r}" fill="none" stroke="var(--accent)" stroke-width="5" stroke-linecap="${p > 0 ? 'round' : 'butt'}" stroke-dasharray="${(c * p).toFixed(1)} ${c.toFixed(1)}"/></svg><span class="num">${Math.round(p * 100)}</span></div>`;
+}
+const prio = p => ({ high: ['high', 'High value'], med: ['med', 'Medium'], low: ['low', 'Express'] }[p]);
+
+function viewHome() {
+  const dueN = ITEMS.filter(isDue).length, newN = ITEMS.filter(isNew).length, acc = accuracy();
+  const days = S.examDate ? Math.ceil((new Date(S.examDate + 'T00:00:00') - new Date()) / 864e5) : null;
+  const answered = Object.values(S.rec).reduce((s, r) => s + r.n, 0);
+  const mastered = Object.values(S.rec).filter(r => r.b >= 3).length;
+  const hero = `<section class="card hero"><div class="eyebrow" style="color:rgba(255,255,255,.75)">SIE exam</div>
+    ${days === null ? `<div class="big" style="margin-top:8px">Set your date</div><p class="muted">A countdown keeps the plan honest.</p><button class="btn primary" data-act="settings">Set exam date</button>`
+      : `<div class="big num" style="margin-top:8px">${Math.max(days, 0)} <span style="font-size:1.1rem;font-weight:650">days to go</span></div><p class="muted">${esc(new Date(S.examDate + 'T00:00:00').toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' }))} · pass mark 70%</p>`}
+  </section>`;
+  const plan = `<section class="card"><div class="row"><div style="flex:1"><div class="eyebrow">Today</div><h2 style="margin-top:4px">${dueN ? `${dueN} item${dueN > 1 ? 's' : ''} due for review` : 'Nothing due — learn something new'}</h2>
+    <p class="muted small">${newN} new item${newN === 1 ? '' : 's'} available. A short daily review beats weekend cramming.</p></div></div>
+    <div class="row wrapx" style="margin-top:12px"><button class="btn primary" data-act="review">${dueN ? 'Start review' : 'Study new material'}</button><a class="btn" href="#/learn/11/brief">Read a chapter</a></div></section>`;
+  const stats = `<div class="grid3"><div class="stat"><span class="tiny muted">Answered</span><b class="num">${answered}</b></div><div class="stat"><span class="tiny muted">Accuracy</span><b class="num">${acc === null ? '—' : acc + '%'}</b></div><div class="stat"><span class="tiny muted">Mastered</span><b class="num">${mastered}</b></div></div>`;
+  const bp = `<section class="card"><h3>What the exam tests</h3><p class="muted small">75 scored questions. Where the points are:</p>
+    <div class="bp" style="margin-top:10px">${BLUEPRINT.map(([n, w, c]) => `<div style="flex:${w};background:${c}">${w}%</div>`).join('')}</div>
+    <div class="row wrapx tiny muted" style="margin-top:8px;gap:12px">${BLUEPRINT.map(([n, w, c]) => `<span><i style="display:inline-block;width:9px;height:9px;border-radius:3px;background:${c};margin-right:5px"></i>${n}</span>`).join('')}</div></section>`;
+  const live = META.filter(m => m.live).map(m => chRow(m)).join('');
+  return `<div class="stack">${hero}${plan}${stats}<section><div class="row" style="margin:6px 0 10px"><h2 style="flex:1">Your chapters</h2><a class="small" href="#/learn" style="color:var(--accent);font-weight:650;text-decoration:none">All 14 →</a></div><div class="card" style="padding:0">${live}</div><p class="muted small" style="margin-top:10px">More chapters unlock as they’re produced. Highest-value first.</p></section>${bp}</div>`;
+}
+function chRow(m) {
+  const p = prio(m.priority);
+  return `<a class="ch-item ${m.live ? '' : 'off'}" href="#/learn/${m.id}/brief" style="border-top:1px solid var(--line)"><div class="ch-no">${m.id}</div>
+    <div style="flex:1;min-width:0"><div style="font-weight:700">${esc(m.title)}</div><div class="row wrapx" style="gap:6px;margin-top:4px"><span class="pill ${p[0]}">${p[1]}</span><span class="pill">${esc(m.estQ)} Q</span>${m.live ? '' : '<span class="pill">Coming</span>'}</div></div>
+    ${m.live ? ring(mastery(m.id)) : ''}</a>`;
+}
+function viewLearn() {
+  const secs = ['Accounts', 'Products', 'Capital Markets', 'Regulation'];
+  return `<div class="stack"><div><h1>Learn</h1><p class="muted">Ordered by expected points per hour of study, not by page number. “Q” is the estimated number of exam questions.</p></div>` +
+    secs.map(s => `<section><div class="eyebrow" style="margin:6px 4px 8px;color:${SEC_COL[s]}">${s}</div><div class="card" style="padding:0">${META.filter(m => m.section === s).map(chRow).join('').replace('border-top:1px solid var(--line)', '')}</div></section>`).join('') + '</div>';
+}
+function viewChapter(id, tab) {
+  const c = CHAPTERS[id], m = META.find(x => x.id === +id);
+  if (!c) return `<div class="empty"><h2>Not produced yet</h2><p>This chapter is planned for a later lot.</p><a class="btn" href="#/learn">Back</a></div>`;
+  const tabs = ['brief', 'traps', 'formulas', 'cards', 'quiz'], names = { brief: 'Brief', traps: 'Traps', formulas: 'Formulas', cards: 'Cards', quiz: 'Test' };
+  const seg = `<div class="seg">${tabs.map(t => `<a href="#/learn/${id}/${t}" class="${t === tab ? 'on' : ''}">${names[t]}</a>`).join('')}</div>`;
+  let body = '';
+  if (tab === 'brief') body = c.brief.map((s, i) => `<section class="card prose"><div class="eyebrow">${id}.${i + 1}</div><h3 style="margin:4px 0 8px">${esc(s.h)}</h3>${md(s.md)}</section>`).join('') + `<div class="row"><button class="btn primary block" data-act="chquiz" data-ch="${id}">Test yourself on this chapter</button></div>`;
+  else if (tab === 'traps') body = `<section class="card"><h3>Exam traps</h3><p class="muted small">Where candidates lose points. Read these the day before the exam.</p>${c.traps.map((t, i) => `<div class="trap"><i>${i + 1}</i><div class="prose">${md(t)}</div></div>`).join('')}</section>`;
+  else if (tab === 'formulas') body = c.formulas.map(f => `<section class="card"><h3>${esc(f.name)}</h3><div class="formula prose" style="margin-top:10px">${md(f.rule)}<div class="ex"><span class="eyebrow">Example</span><div>${inline(f.example)}</div></div></div></section>`).join('') +
+    `<div class="card"><h3>Practice the maths</h3><p class="muted small">Generated problems, unlimited. Same calculator constraints as exam day.</p><a class="btn primary block" href="#/practice" style="margin-top:8px">Go to drills</a></div>`;
+  else if (tab === 'cards') {
+    const d = ITEMS.filter(i => i.kind === 'card' && i.ch === +id);
+    body = `<button class="btn primary block" data-act="chcards" data-ch="${id}">Study flashcards (${Math.min(20, d.length)} of ${d.length})</button><section class="card" style="margin-top:14px"><h3>All cards</h3><ul class="list" style="margin-top:6px">${d.map(i => `<li style="padding:10px 0"><div style="font-weight:650">${esc(i.x.f)}</div><div class="muted small">${inline(i.x.b)}</div></li>`).join('')}</ul></section>`;
+  } else {
+    const qs = QUESTIONS.filter(q => q.ch === +id).length;
+    body = `<div class="stack"><section class="card"><h3>Practice questions</h3><p class="muted small">${qs} original questions. Every wrong answer is explained.</p><div class="row wrapx" style="margin-top:10px"><button class="btn primary" data-act="chquiz" data-ch="${id}" data-n="15">Quick quiz · 15</button><button class="btn" data-act="chquiz" data-ch="${id}" data-n="0">All ${qs}</button></div></section>
+    <section class="card"><h3>Calculation drills</h3><ul class="list" style="margin-top:6px">${DRILLS.filter(d => d.ch === +id).map(d => `<li><button class="row" style="width:100%;background:none;border:0;padding:12px 0;text-align:left" data-act="drill" data-id="${d.id}"><div style="flex:1"><div style="font-weight:650">${esc(d.title)}</div><div class="muted small">${esc(d.sub)}</div></div><span class="pill acc">5 problems</span></button></li>`).join('')}</ul></section></div>`;
+  }
+  return `<div class="stack"><div class="row"><a class="icon-btn" href="#/learn" aria-label="Back"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg></a><div style="flex:1;min-width:0"><div class="eyebrow">Chapter ${id} · ${esc(m.section)}</div><h1>${esc(c.title)}</h1></div>${ring(mastery(+id))}</div>
+    <div class="row wrapx" style="gap:6px"><span class="pill ${prio(m.priority)[0]}">${prio(m.priority)[1]}</span><span class="pill">${esc(m.estQ)} exam questions</span><span class="pill">${m.notes} flagged concepts</span><span class="pill">~${c.minutes} min</span></div>${seg}${body}</div>`;
+}
+function viewPractice() {
+  const due = ITEMS.filter(isDue).length, weak = ITEMS.filter(i => S.rec[i.id] && S.rec[i.id].w > 0 && S.rec[i.id].b < 3).length;
+  return `<div class="stack"><div><h1>Practice</h1><p class="muted">Test first, read later. Wrong answers come back sooner.</p></div>
+  <section class="card"><div class="row"><div style="flex:1"><h3>Daily review</h3><p class="muted small">${due} due · new items fill the gap</p></div><button class="btn primary" data-act="review">Start</button></div></section>
+  <section class="card"><div class="row"><div style="flex:1"><h3>Weak spots</h3><p class="muted small">${weak} item${weak === 1 ? '' : 's'} you’ve missed and not yet recovered</p></div><button class="btn" data-act="weak" ${weak ? '' : 'disabled'}>Drill</button></div></section>
+  <section class="card"><h3>Mixed quiz</h3><p class="muted small">Random questions from every available chapter.</p><div class="row wrapx" style="margin-top:10px"><button class="btn primary" data-act="mixed" data-n="10">10 questions</button><button class="btn" data-act="mixed" data-n="25">25 questions</button></div></section>
+  <section class="card"><h3>Calculation drills</h3><p class="muted small">Numbers are generated on the fly. Do them until they feel automatic.</p><ul class="list" style="margin-top:6px">${DRILLS.map(d => `<li><button class="row" style="width:100%;background:none;border:0;padding:12px 0;text-align:left" data-act="drill" data-id="${d.id}"><div style="flex:1"><div style="font-weight:650">${esc(d.title)}</div><div class="muted small">Ch. ${d.ch} · ${esc(d.sub)}</div></div><span class="pill acc">5</span></button></li>`).join('')}</ul></section>
+  <a class="card row" href="#/glossary" style="text-decoration:none;color:inherit"><div style="flex:1"><h3>Glossary</h3><p class="muted small">${DATA.glossary.length} terms, searchable</p></div><span>›</span></a></div>`;
+}
+function viewGlossary() {
+  return `<div class="stack"><div class="row"><a class="icon-btn" href="#/practice" aria-label="Back"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg></a><h1>Glossary</h1></div><input class="search" id="gq" placeholder="Search a term…" autocomplete="off"><div class="card" style="padding:0 16px"><ul class="list" id="gl">${glossHtml('')}</ul></div></div>`;
+}
+const glossHtml = q => { const l = DATA.glossary.filter(g => (g.t + ' ' + g.d).toLowerCase().includes(q.toLowerCase())).sort((a, b) => a.t.localeCompare(b.t)); return l.length ? l.map(g => `<li style="padding:12px 0"><div style="font-weight:700">${esc(g.t)}</div><div class="muted small">${inline(g.d)}</div></li>`).join('') : '<li class="empty">No match.</li>'; };
+
+/* ---------- runner ---------- */
+function viewRun() {
+  if (!RUN) return '<div class="empty">No session.</div>';
+  const R = RUN;
+  if (R.i >= R.items.length) return runFinish();
+  const it = R.items[R.i], pct = Math.round(R.done / R.items.length * 100);
+  let body = '';
+  if (it.kind === 'q') {
+    const q = it.x;
+    body = `<div class="eyebrow">Question · §${esc(q.r)}</div><div class="qstem" style="margin-top:8px">${esc(q.q)}</div>` +
+      q.o.map((o, k) => { let cl = ''; if (R.state === 'show') { if (k === q.a) cl = 'ok'; else if (k === R.picked) cl = 'bad'; cl += ' locked'; } return `<button class="opt ${cl}" data-act="pick" data-k="${k}"><b>${LET[k]}</b><span>${esc(o)}</span></button>`; }).join('');
+    if (R.state === 'show') body += `<div class="why"><b>${R.picked === q.a ? '✓ Correct' : '✗ Not quite'}</b><ul class="list" style="margin-top:6px">${q.w.map((w, k) => `<li class="${k === q.a ? 'c' : ''}"><b>${LET[k]}.</b> ${esc(clean(w))}</li>`).join('')}</ul><div class="row" style="margin-top:8px"><span class="pill">Manual §${esc(q.r)}</span><button class="btn sm ghost" data-act="flag" data-id="${it.id}">${S.flags[it.id] ? '⚑ Flagged' : '⚑ Flag as doubtful'}</button></div></div><button class="btn primary block" style="margin-top:14px" data-act="next">${R.i + 1 >= R.items.length ? 'Finish' : 'Next'}</button>`;
+  } else if (it.kind === 'card') {
+    const c = it.x;
+    body = `<div class="eyebrow">Flashcard · §${esc(c.r)}</div><div class="flip" style="margin-top:10px"><div class="flipcard" data-act="flip">${R.shown ? `<div class="a">${inline(c.b)}</div>` : `<div class="q">${esc(c.f)}</div>`}</div></div>`;
+    body += R.shown ? `<div class="grid3" style="margin-top:14px"><button class="btn" data-act="gcard" data-g="0" style="color:var(--bad)">Missed</button><button class="btn primary" data-act="gcard" data-g="1">Got it</button><button class="btn" data-act="gcard" data-g="2">Easy</button></div>` : `<button class="btn primary block" style="margin-top:14px" data-act="flip">Show answer</button>`;
+  } else {
+    const p = it.p;
+    body = `<div class="eyebrow">Drill · ${esc(it.drill.title)}</div><div class="qstem" style="margin-top:8px">${esc(p.q)}</div>`;
+    if (R.state === 'ask') body += `<div style="margin-top:14px"><input class="num-in" id="dans" inputmode="decimal" placeholder="Answer in ${p.unit === '$' ? 'dollars' : ''}" autocomplete="off"></div><button class="btn primary block" style="margin-top:12px" data-act="dcheck">Check</button>`;
+    else body += `<div class="why"><b>${R.picked ? '✓ Correct' : '✗ Answer: ' + money(p.ans)}</b><ol style="margin:8px 0 0;padding-left:1.2em">${p.steps.map(s => `<li>${esc(s)}</li>`).join('')}</ol><div class="tip">${esc(p.tip)}</div></div><button class="btn primary block" style="margin-top:14px" data-act="next">${R.i + 1 >= R.items.length ? 'Finish' : 'Next'}</button>`;
+  }
+  return `<div class="run-top"><button class="icon-btn" data-act="quit" aria-label="Close">✕</button><div class="bar"><i style="width:${pct}%"></i></div><span class="small muted num">${Math.min(R.done + 1, R.items.length)}/${R.items.length}</span></div><div class="card">${body}</div>`;
+}
+function runFinish() {
+  const R = RUN, tot = R.done || 1, p = Math.round(R.ok / tot * 100);
+  const miss = R.misses.map(i => i.kind === 'q' ? `<li style="padding:10px 0"><div style="font-weight:600">${esc(i.x.q)}</div><div class="small" style="color:var(--ok)">✓ ${esc(i.x.o[i.x.a])}</div></li>` : i.kind === 'card' ? `<li style="padding:10px 0"><div style="font-weight:600">${esc(i.x.f)}</div><div class="small" style="color:var(--ok)">${inline(i.x.b)}</div></li>` : '').join('');
+  return `<div class="stack"><section class="card" style="text-align:center"><div class="eyebrow">${esc(R.title)}</div><div class="score num" style="margin-top:8px">${p}%</div><p class="muted">${R.ok} of ${tot} correct</p><div class="row wrapx" style="justify-content:center;margin-top:10px"><button class="btn primary" data-act="again">Another round</button><a class="btn" href="${R.back}">Done</a></div></section>
+  ${R.misses.length ? `<section class="card"><h3>To revisit (${R.misses.length})</h3><ul class="list">${miss}</ul></section>` : ''}</div>`;
+}
+function advance(ok) {
+  const R = RUN, it = R.items[R.i];
+  R.done++; if (ok) R.ok++; else { R.misses.push(it); if (!it.retry) R.items.push(Object.assign({}, it, { retry: true, p: it.kind === 'drill' ? it.drill.gen() : undefined })); }
+  R.i++; R.state = 'ask'; R.picked = null; R.shown = false;
+  // retried items don't count toward the score twice
+  if (it.retry) { R.done--; if (ok) R.ok--; }
+}
+
+/* ---------- exam ---------- */
+let EX = null, exTimer = null;
+function viewExam() {
+  const n = Math.min(QUESTIONS.length, 20), mins = Math.round(n * 1.4);
+  const hist = S.exams.slice(-5).reverse().map(e => `<li class="row" style="padding:12px 0"><div style="flex:1"><div style="font-weight:650">${new Date(e.t).toLocaleDateString('en-GB', { day: 'numeric', month: 'short' })} · ${e.n} Q</div><div class="muted small">${e.mins} min</div></div><span class="pill ${e.pct >= 70 ? 'low' : 'high'}">${e.pct}%</span></li>`).join('');
+  return `<div class="stack"><div><h1>Exam simulator</h1><p class="muted">Real format: 4 choices, no feedback until the end, flag and review, small-calculator discipline.</p></div>
+  <section class="card"><h3>Mini exam · ${n} questions</h3><p class="muted small">${mins} minutes (the real exam gives ~1.4 min per question). Built from the ${QUESTIONS.length} questions currently available.</p><button class="btn primary block" style="margin-top:12px" data-act="exstart" data-n="${n}">Start mini exam</button></section>
+  <section class="card" style="opacity:.75"><h3>Full simulation · 75 questions · 1 h 45</h3><p class="muted small">Unlocks when at least 150 questions are available (${QUESTIONS.length} now). Matches the official weights: 12 / 33 / 23 / 7.</p><button class="btn block" style="margin-top:12px" disabled>Locked</button></section>
+  ${hist ? `<section class="card"><h3>Recent attempts</h3><ul class="list">${hist}</ul></section>` : ''}</div>`;
+}
+function exStart(n) {
+  const qs = shuffle(QUESTIONS).slice(0, n);
+  EX = { qs, ans: qs.map(() => null), flag: qs.map(() => false), i: 0, mins: Math.round(n * 1.4), end: Date.now() + Math.round(n * 1.4) * 60000, grid: false, result: null };
+  clearInterval(exTimer); exTimer = setInterval(tick, 1000); go('#/exam/run');
+}
+function tick() { const el = $('#tm'); if (!EX || EX.result) { clearInterval(exTimer); return; } const left = Math.max(0, Math.round((EX.end - Date.now()) / 1000)); if (el) el.textContent = Math.floor(left / 60) + ':' + String(left % 60).padStart(2, '0'); if (!left) exFinish(); }
+function viewExamRun() {
+  if (!EX) return '<div class="empty">No exam in progress.</div>';
+  if (EX.result) return viewExamResult();
+  const q = EX.qs[EX.i].x, left = Math.max(0, Math.round((EX.end - Date.now()) / 1000));
+  const grid = EX.grid ? `<section class="card" style="margin-bottom:12px"><div class="qgrid">${EX.qs.map((_, k) => `<button data-act="exgo" data-k="${k}" class="${EX.ans[k] !== null ? 'a' : ''} ${EX.flag[k] ? 'f' : ''} ${k === EX.i ? 'cur' : ''}">${k + 1}</button>`).join('')}</div><p class="tiny muted" style="margin-top:8px">Blue = answered · outlined = flagged</p></section>` : '';
+  return `<div class="run-top"><button class="icon-btn" data-act="exquit" aria-label="Quit">✕</button><div style="flex:1" class="small muted num">Question ${EX.i + 1} of ${EX.qs.length}</div><span class="timer" id="tm">${Math.floor(left / 60)}:${String(left % 60).padStart(2, '0')}</span><button class="icon-btn" data-act="exgrid" aria-label="Question map">▦</button></div>${grid}
+  <div class="card"><div class="qstem">${esc(q.q)}</div>${q.o.map((o, k) => `<button class="opt ${EX.ans[EX.i] === k ? 'sel' : ''}" data-act="expick" data-k="${k}"><b>${LET[k]}</b><span>${esc(o)}</span></button>`).join('')}</div>
+  <div class="row" style="margin-top:14px"><button class="btn" data-act="exprev" ${EX.i === 0 ? 'disabled' : ''}>‹ Prev</button><button class="btn ghost" data-act="exflag">${EX.flag[EX.i] ? '⚑ Flagged' : '⚐ Flag'}</button><div class="spacer"></div>${EX.i + 1 < EX.qs.length ? '<button class="btn primary" data-act="exnext">Next ›</button>' : '<button class="btn primary" data-act="exfinish">Finish</button>'}</div>`;
+}
+function exFinish() {
+  if (!EX || EX.result) return;
+  clearInterval(exTimer);
+  let ok = 0; const by = {};
+  EX.qs.forEach((it, k) => { const good = EX.ans[k] === it.x.a; if (good) ok++; (by[it.ch] = by[it.ch] || { n: 0, ok: 0 }); by[it.ch].n++; if (good) by[it.ch].ok++; if (EX.ans[k] !== null) grade(it.id, good); else grade(it.id, false); });
+  const pct = Math.round(ok / EX.qs.length * 100);
+  EX.result = { ok, pct, by };
+  S.exams.push({ t: Date.now(), n: EX.qs.length, pct, mins: Math.round((Date.now() - (EX.end - EX.mins * 60000)) / 60000) }); save();
+  go('#/exam/run'); render();
+}
+function viewExamResult() {
+  const r = EX.result, pass = r.pct >= 70;
+  const rows = EX.qs.map((it, k) => { const q = it.x, a = EX.ans[k], good = a === q.a; return `<li style="padding:12px 0"><div class="row" style="align-items:flex-start"><span class="pill ${good ? 'low' : 'high'}">${k + 1}</span><div style="flex:1"><div style="font-weight:600">${esc(q.q)}</div><div class="small" style="color:var(--ok)">✓ ${LET[q.a]}. ${esc(q.o[q.a])}</div>${good ? '' : `<div class="small" style="color:var(--bad)">${a === null ? 'Unanswered' : '✗ ' + LET[a] + '. ' + esc(q.o[a])}</div><div class="small muted">${esc(clean(q.w[q.a]))}</div>`}</div></div></li>`; }).join('');
+  return `<div class="stack"><section class="card" style="text-align:center"><div class="eyebrow">Result</div><div class="score num" style="margin-top:6px;color:${pass ? 'var(--ok)' : 'var(--bad)'}">${r.pct}%</div><p class="muted">${r.ok} / ${EX.qs.length} · ${pass ? 'Above' : 'Below'} the 70% pass mark</p><div class="row wrapx" style="justify-content:center;margin-top:8px"><button class="btn primary" data-act="exstart" data-n="${EX.qs.length}">Retake (new draw)</button><a class="btn" href="#/exam" data-act="exdone">Close</a></div></section>
+  <section class="card"><h3>Review</h3><ul class="list">${rows}</ul></section></div>`;
+}
+
+/* ---------- settings ---------- */
+function settingsSheet() {
+  const s = document.createElement('div'); s.className = 'sheet'; s.id = 'sheet';
+  s.innerHTML = `<div><div class="row"><h2 style="flex:1">Settings</h2><button class="icon-btn" data-act="closesheet" aria-label="Close">✕</button></div>
+  <div class="field"><label for="sd">Exam date</label><input type="date" id="sd" value="${S.examDate || ''}"></div>
+  <div class="field"><label for="st">Theme</label><select id="st"><option value="auto">Automatic</option><option value="light">Light</option><option value="dark">Dark</option></select></div>
+  <div class="row wrapx" style="margin-top:18px"><button class="btn primary" data-act="savesettings">Save</button><button class="btn" data-act="export">Export progress</button><label class="btn" style="cursor:pointer">Import<input type="file" id="imp" accept="application/json" hidden></label></div>
+  <p class="tiny muted" style="margin-top:14px">Progress is stored on this device only. Export it now and then as a backup.</p>
+  <button class="btn ghost sm" data-act="reset" style="margin-top:8px;color:var(--bad)">Reset all progress</button></div>`;
+  document.body.appendChild(s); $('#st').value = S.theme;
+}
+
+/* ---------- router ---------- */
+const APP = $('#app');
+function go(h) { if (location.hash === h) render(); else location.hash = h; }
+function render() {
+  const h = (location.hash || '#/').slice(2).split('/'), r = h[0] || '';
+  let html = '', tab = r;
+  if (r === '') html = viewHome();
+  else if (r === 'learn') { tab = 'learn'; html = h[1] ? viewChapter(h[1], h[2] || 'brief') : viewLearn(); }
+  else if (r === 'practice' || r === 'glossary') { tab = 'practice'; html = r === 'glossary' ? viewGlossary() : viewPractice(); }
+  else if (r === 'run') { tab = 'practice'; html = viewRun(); }
+  else if (r === 'exam') { tab = 'exam'; html = h[1] === 'run' ? viewExamRun() : viewExam(); }
+  else html = viewHome();
+  APP.innerHTML = html;
+  document.querySelectorAll('nav.tabs a').forEach(a => a.classList.toggle('on', a.dataset.t === (tab || 'today')));
+  const gq = $('#gq'); if (gq) gq.addEventListener('input', () => ($('#gl').innerHTML = glossHtml(gq.value)));
+  const dans = $('#dans'); if (dans) dans.focus();
+}
+let lastRoute = '';
+window.addEventListener('hashchange', () => { render(); const k = (location.hash.split('/')[1] || '') + (location.hash.split('/')[2] || ''); if (k !== lastRoute) window.scrollTo(0, 0); lastRoute = k; });
+
+document.addEventListener('keydown', e => { if (e.key === 'Enter' && RUN && location.hash === '#/run') { const b = $('[data-act="dcheck"]') || $('[data-act="next"]'); if (b) b.click(); } });
+document.addEventListener('change', e => {
+  if (e.target.id === 'imp' && e.target.files[0]) { const f = new FileReader(); f.onload = () => { try { const d = JSON.parse(f.result); if (d && d.rec) { S = Object.assign(S, d); save(); applyTheme(); toast('Progress imported'); $('#sheet') && $('#sheet').remove(); render(); } else toast('Invalid file'); } catch (er) { toast('Invalid file'); } }; f.readAsText(e.target.files[0]); }
+});
+document.addEventListener('click', e => {
+  const t = e.target.closest('[data-act]'); if (!t) return;
+  const a = t.dataset.act, R = RUN;
+  switch (a) {
+    case 'settings': settingsSheet(); break;
+    case 'closesheet': $('#sheet').remove(); break;
+    case 'savesettings': S.examDate = $('#sd').value || null; S.theme = $('#st').value; save(); applyTheme(); $('#sheet').remove(); render(); break;
+    case 'export': { const b = new Blob([JSON.stringify(S)], { type: 'application/json' }), u = URL.createObjectURL(b), l = document.createElement('a'); l.href = u; l.download = 'sie-prep-progress.json'; l.click(); break; }
+    case 'reset': if (confirm('Erase all progress on this device?')) { S = { rec: {}, exams: [], examDate: null, theme: 'auto', log: {}, flags: {} }; save(); applyTheme(); $('#sheet').remove(); go('#/'); render(); } break;
+    case 'review': startRun('Daily review', sessionReview(), { back: '#/' }); break;
+    case 'weak': startRun('Weak spots', weakItems(), { back: '#/practice' }); break;
+    case 'mixed': startRun('Mixed quiz', shuffle(QUESTIONS).slice(0, +t.dataset.n), { back: '#/practice' }); break;
+    case 'chquiz': startRun('Chapter ' + t.dataset.ch + ' quiz', chQuiz(+t.dataset.ch, +t.dataset.n || 0), { back: '#/learn/' + t.dataset.ch + '/quiz' }); break;
+    case 'chcards': startRun('Chapter ' + t.dataset.ch + ' cards', chCards(+t.dataset.ch), { back: '#/learn/' + t.dataset.ch + '/cards' }); break;
+    case 'drill': startRun(DRILLS.find(d => d.id === t.dataset.id).title, drillSet(t.dataset.id), { back: '#/practice', drill: t.dataset.id }); RUN.drillId = t.dataset.id; break;
+    case 'again': if (R.drillId) { startRun(R.title, drillSet(R.drillId), { back: R.back }); RUN.drillId = R.drillId; } else { const fresh = R.title === 'Daily review' ? sessionReview() : R.title === 'Weak spots' ? weakItems() : shuffle(R.items.filter(i => !i.retry)); startRun(R.title, fresh, { back: R.back }); } break;
+    case 'quit': RUN = null; go('#/practice'); break;
+    case 'pick': { if (R.state !== 'ask') break; const it = R.items[R.i], k = +t.dataset.k; R.picked = k; R.state = 'show'; const ok = k === it.x.a; grade(it.id, ok); R.lastOk = ok; render(); break; }
+    case 'flip': R.shown = !R.shown; render(); break;
+    case 'gcard': { const it = R.items[R.i], g = +t.dataset.g; if (!it.retry) grade(it.id, g > 0, g === 2); advance(g > 0); render(); break; }
+    case 'dcheck': { const it = R.items[R.i], v = parseFloat(($('#dans').value || '').replace(/[$,\s]/g, '')); if (isNaN(v)) { toast('Enter a number'); break; } const ok = Math.abs(v - it.p.ans) < 0.51; R.picked = ok; R.state = 'show'; R.lastOk = ok; render(); break; }
+    case 'next': { const it = R.items[R.i]; advance(it.kind === 'q' ? R.lastOk : R.picked === true); render(); break; }
+    case 'flag': S.flags[t.dataset.id] = !S.flags[t.dataset.id]; save(); render(); break;
+    case 'exstart': exStart(+t.dataset.n); break;
+    case 'expick': EX.ans[EX.i] = +t.dataset.k; render(); break;
+    case 'exnext': EX.i++; render(); break;
+    case 'exprev': EX.i--; render(); break;
+    case 'exflag': EX.flag[EX.i] = !EX.flag[EX.i]; render(); break;
+    case 'exgrid': EX.grid = !EX.grid; render(); break;
+    case 'exgo': EX.i = +t.dataset.k; EX.grid = false; render(); break;
+    case 'exfinish': { const un = EX.ans.filter(x => x === null).length; if (!un || confirm(un + ' unanswered question(s). Finish anyway?')) exFinish(); break; }
+    case 'exquit': if (confirm('Quit this exam? Progress will be lost.')) { clearInterval(exTimer); EX = null; go('#/exam'); } break;
+    case 'exdone': EX = null; break;
+  }
+});
+
+/* ---------- nav + boot ---------- */
+const nav = [['today', 'Today', '#/'], ['learn', 'Learn', '#/learn'], ['practice', 'Practice', '#/practice'], ['exam', 'Exam', '#/exam']];
+$('#nav').innerHTML = '<div class="in">' + nav.map(n => `<a href="${n[2]}" data-t="${n[0]}">${ICON[n[0]]}${n[1]}</a>`).join('') + '</div>';
+applyTheme();
+render();
+})();
+</script>
+</body>
+</html>

@@ -4,7 +4,14 @@ Application web de révision (mobile + PC, hors-ligne) construite à partir du m
 *SIE Textbook 6th Edition* (490 p., 14 chapitres), pour une VP DCM FIG (4 ans d'expérience)
 qui doit passer le SIE avant fin 2026 en vue d'une mission de 6 mois à New York.
 
-**Statut : phase 1 — cadrage terminé, aucun code applicatif.** Lire dans l'ordre :
+**Statut : lot L1 livré — socle de l'appli + chapitre pilote (ch. 11 Customer Accounts).**
+
+## Utiliser l'appli
+Ouvrir **`dist/sie-prep.html`** (fichier unique, hors-ligne, aucun serveur). Sur GitHub : ouvrir le fichier → *Download raw file*, puis l'ouvrir dans le navigateur (Chrome/Safari/Edge). La progression est enregistrée dans le navigateur de l'appareil (export/import JSON dans ⚙).
+Reconstruire après modification du contenu : `node tools/build.mjs`.
+
+## Documentation
+Lire dans l'ordre :
 
 | Doc | Contenu |
 |---|---|
@@ -16,3 +23,11 @@ qui doit passer le SIE avant fin 2026 en vue d'une mission de 6 mois à New York
 | [docs/06-questions-ouvertes.md](docs/06-questions-ouvertes.md) | Décisions à prendre avant de coder |
 
 `tools/extract.sh` extrait le texte du PDF (le texte extrait n'est volontairement pas versionné).
+
+## Structure
+```
+content/   index.json (14 chapitres), ch-XX.json (cours, pièges, formules, cartes, QCM), glossary.json
+src/       index.html, styles.css, app.js (SRS, quiz, drills, simulateur d'examen)
+tools/     build.mjs (assemble dist/sie-prep.html + vérifie le contenu), extract.sh (texte du PDF)
+dist/      sie-prep.html (livrable)
+```
