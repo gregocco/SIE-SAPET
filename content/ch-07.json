@@ -150,7 +150,7 @@
   },
   {
    "t": "Retail customer",
-   "d": "Non-institutional investor whose recommendations are governed by Reg BI."
+   "d": "Individual investor whose recommendations fall under Reg BI rather than the institutional suitability standard."
   },
   {
    "t": "Recommendation",
@@ -793,6 +793,54 @@
    "f": "Total return on bonds",
    "b": "(**Interest + capital gain/loss**) ÷ initial purchase price; at maturity the gain is par − price.",
    "r": "7.6.1.3"
+  },
+  {
+   "id": "7-c81",
+   "f": "Moving average (technical analysis)",
+   "b": "Tracks a security’s price over a period. **Shorter** timeframe = **more sensitive** to price changes; **longer** = **less sensitive**.",
+   "r": "7.5.3"
+  },
+  {
+   "id": "7-c82",
+   "f": "Risk and return of the three asset classes",
+   "b": "**Stocks**: highest potential reward and greatest risk. **Bonds**: less volatile, more modest return. **Cash and equivalents**: safest, lowest return; key risk is **inflation**.",
+   "r": "7.5.1"
+  },
+  {
+   "id": "7-c83",
+   "f": "Municipal bonds: benefits and risks",
+   "b": "Benefits: steady income, safety **second only to US government**, **federal tax-free** (sometimes state/local). Risks: credit (occasional defaults), inflation, interest rate, **possible AMT**.",
+   "r": "7.4"
+  },
+  {
+   "id": "7-c84",
+   "f": "US government debt: benefits and risks",
+   "b": "**Highest safety** of principal and interest, steady income, liquidity; **lower rates** for the safety; inflation risk (except **TIPS**) and interest rate risk.",
+   "r": "7.4"
+  },
+  {
+   "id": "7-c85",
+   "f": "Options: benefits and key risks",
+   "b": "Benefits: income (writing), hedging a long or short stock position. Risks: **capital risk** (premium lost) and **unlimited risk** when writing **uncovered calls**.",
+   "r": "7.4"
+  },
+  {
+   "id": "7-c86",
+   "f": "Who benefits when interest rates rise?",
+   "b": "**Financial services companies such as banks**: they earn more on loans and widen the spread between borrowing and lending costs.",
+   "r": "7.2.6"
+  },
+  {
+   "id": "7-c87",
+   "f": "Closed-end fund: benefits and risks",
+   "b": "Diversification, professional management, **exchange-traded liquidity**; **management fees** and shared portfolio risks.",
+   "r": "7.4"
+  },
+  {
+   "id": "7-c88",
+   "f": "Diversification within one asset class",
+   "b": "An all-stock portfolio (e.g. a 25-year-old with a long horizon) is still diversified **within** the class by holding many stocks or a broad fund.",
+   "r": "7.5.2"
   }
  ],
  "questions": [
@@ -825,15 +873,15 @@
    "o": [
     "At least 20 investors",
     "At least 10% of the firm’s customers",
-    "At least some investors",
-    "Every institutional customer of the firm"
+    "Every institutional customer of the firm",
+    "At least some investors"
    ],
-   "a": 2,
+   "a": 3,
    "w": [
     "Wrong: no numerical minimum of 20 exists; the test is simply some investors.",
     "Wrong: no percentage of the customer base is used in this test.",
-    "Correct: the standard is deliberately vague: the product must be suitable for at least some investors, not a fixed count.",
-    "Wrong: suitability for every customer is not required; customer-specific suitability handles the individual fit."
+    "Wrong: suitability for every customer is not required; customer-specific suitability handles the individual fit.",
+    "Correct: the standard is deliberately vague: the product must be suitable for at least some investors, not a fixed count."
    ]
   },
   {
@@ -845,15 +893,15 @@
    "o": [
     "Quantitative suitability",
     "Customer-specific suitability",
-    "None, because the client requested it",
-    "Reasonable-basis suitability"
+    "Reasonable-basis suitability",
+    "None, because the client requested it"
    ],
-   "a": 3,
+   "a": 2,
    "w": [
     "Wrong: this test concerns excessive trading and turnover, not a lack of product knowledge.",
     "Wrong: the central failure is lack of product understanding, which is the reasonable-basis test, not a mismatch with the client profile.",
-    "Wrong: the institutional exemption relieves only customer-specific suitability and does not waive reasonable basis.",
-    "Correct: a rep who does not understand a product cannot have a reasonable basis to believe it is suitable for some investors."
+    "Correct: a rep who does not understand a product cannot have a reasonable basis to believe it is suitable for some investors.",
+    "Wrong: the institutional exemption relieves only customer-specific suitability and does not waive reasonable basis."
    ]
   },
   {
@@ -871,8 +919,8 @@
    "a": 0,
    "w": [
     "Correct: it is unsuitable for everyone, so no recommendation is permitted, institutional or otherwise.",
-    "Wrong: sophistication does not cure a failed reasonable-basis test. The choice “It can be recommended to a sophisticated institution” therefore does not fit the rule or facts tested in this question.",
-    "Wrong: the client cannot waive the firm’s reasonable-basis obligation. The choice “It can be recommended if the client waives the test” therefore does not fit the rule or facts tested in this question.",
+    "Wrong: sophistication does not cure a failed reasonable-basis test.",
+    "Wrong: the client cannot waive the firm’s reasonable-basis obligation.",
     "Wrong: all three tests must be passed; passing one does not offset failing another."
    ]
   },
@@ -883,17 +931,17 @@
    "d": 2,
    "q": "An institutional customer may be exempt from which suitability obligation if the rep believes it can evaluate risk independently and it affirmatively states it is exercising independent judgment?",
    "o": [
-    "Reasonable-basis suitability",
     "Customer-specific suitability",
+    "Reasonable-basis suitability",
     "Quantitative suitability",
     "All three obligations"
    ],
-   "a": 1,
+   "a": 0,
    "w": [
-    "Wrong: the exemption never removes the duty to understand the product. The choice “Reasonable-basis suitability” therefore does not fit the rule or facts tested in this question.",
     "Correct: this exemption removes only the customer-specific analysis when both criteria are met.",
-    "Wrong: churning concerns remain even for institutions; only customer-specific is exempt. The choice “Quantitative suitability” therefore does not fit the rule or facts tested in this question.",
-    "Wrong: only one of the three obligations can be exempted. The choice “All three obligations” therefore does not fit the rule or facts tested in this question."
+    "Wrong: the exemption never removes the duty to understand the product.",
+    "Wrong: churning concerns remain even for institutions; only customer-specific is exempt.",
+    "Wrong: only one of the three obligations can be exempted."
    ]
   },
   {
@@ -910,10 +958,10 @@
    ],
    "a": 2,
    "w": [
-    "Wrong: the test is total assets, not income. The choice “An individual with annual income of $5 million” therefore does not fit the rule or facts tested in this question.",
-    "Wrong: this is below the $50 million threshold. The choice “An individual with total assets of $20 million” therefore does not fit the rule or facts tested in this question.",
+    "Wrong: the test is total assets, not income.",
+    "Wrong: this is below the $50 million threshold.",
     "Correct: any person, including a retail individual, with total assets of at least $50 million qualifies.",
-    "Wrong: family relationship has no bearing on institutional status. The choice “A registered representative’s family account” therefore does not fit the rule or facts tested in this question."
+    "Wrong: family relationship has no bearing on institutional status."
    ]
   },
   {
@@ -921,19 +969,19 @@
    "r": "7.1.2.1",
    "k": "scenario",
    "d": 3,
-   "q": "A wealthy individual with $62 million in total assets is solicited by a rep. The individual says she makes her own decisions and the rep agrees she can assess the risks. Which statement is TRUE?",
+   "q": "Under FINRA Rule 2111, a wealthy individual with $62 million in total assets is solicited by a rep. She says she makes her own decisions and the rep agrees she can assess the risks. Which statement is TRUE?",
    "o": [
-    "Reg BI applies because she is an individual",
-    "Suitability does not apply at all",
+    "Rule 2111 does not apply to her because she is an individual",
+    "Customer-specific suitability may be waived, but reasonable-basis and quantitative still apply",
     "Only quantitative suitability is waived",
-    "Customer-specific suitability may be waived, but reasonable-basis and quantitative still apply"
+    "Suitability does not apply at all"
    ],
-   "a": 3,
+   "a": 1,
    "w": [
-    "Wrong: she exceeds the $50 million threshold and is treated as institutional, so Rule 2111 applies.",
-    "Wrong: the exemption is partial; reasonable-basis and quantitative suitability remain. The choice “Suitability does not apply at all” therefore does not fit the rule or facts tested in this question.",
-    "Wrong: quantitative suitability is not the exempted element; customer-specific is. The choice “Only quantitative suitability is waived” therefore does not fit the rule or facts tested in this question.",
-    "Correct: assets above $50 million make her institutional and both exemption criteria are met, which relieves only customer-specific suitability."
+    "Wrong: she exceeds the $50 million asset threshold, so she is treated as institutional and Rule 2111 applies.",
+    "Correct: assets above $50 million make her institutional and both exemption criteria are met, which relieves only customer-specific suitability.",
+    "Wrong: quantitative suitability is not the exempted element; customer-specific is.",
+    "Wrong: the exemption is partial; reasonable-basis and quantitative suitability remain."
    ]
   },
   {
@@ -943,17 +991,17 @@
    "d": 2,
    "q": "A client with a long-term horizon and high risk tolerance holds a diversified equity portfolio, but the rep repeatedly sells and re-buys similar large-cap positions. Each holding fits the client’s objectives. Which test is most likely violated?",
    "o": [
-    "Quantitative suitability",
+    "Reg BI disclosure obligation",
     "Reasonable-basis suitability",
     "Customer-specific suitability",
-    "Reg BI disclosure obligation"
+    "Quantitative suitability"
    ],
-   "a": 0,
+   "a": 3,
    "w": [
-    "Correct: excessive turnover and in-and-out trading are judged on frequency and volume, even if every position fits.",
+    "Wrong: the facts describe over-trading, not a failure to deliver Form CRS.",
     "Wrong: large-cap equities are suitable for some investors, so this test is passed.",
     "Wrong: each position fits the client’s profile; the problem is how much trading occurs.",
-    "Wrong: the facts describe over-trading, not a failure to deliver Form CRS."
+    "Correct: excessive turnover and in-and-out trading are judged on frequency and volume, even if every position fits."
    ]
   },
   {
@@ -963,17 +1011,17 @@
    "d": 1,
    "q": "Quantitative suitability is concerned primarily with which of the following?",
    "o": [
-    "The credit rating of the securities held",
     "Turnover rate and in-and-out trading in the account",
+    "The credit rating of the securities held",
     "The client’s net worth and tax bracket",
     "Whether the firm’s policies are written"
    ],
-   "a": 1,
+   "a": 0,
    "w": [
-    "Wrong: product quality is a reasonable-basis question. The choice “The credit rating of the securities held” therefore does not fit the rule or facts tested in this question.",
-    "Correct: it looks at timing, frequency and quantity of transactions. It is the only choice that fits the rule or facts being tested in this question.",
-    "Wrong: client profile facts belong to customer-specific suitability and KYC. The choice “The client’s net worth and tax bracket” therefore does not fit the rule or facts tested in this question.",
-    "Wrong: written policies relate to Reg BI conflict and compliance obligations. The choice “Whether the firm’s policies are written” therefore does not fit the rule or facts tested in this question."
+    "Correct: it looks at timing, frequency and quantity of transactions.",
+    "Wrong: product quality is a reasonable-basis question.",
+    "Wrong: client profile facts belong to customer-specific suitability and KYC.",
+    "Wrong: written policies relate to Reg BI conflict and compliance obligations."
    ]
   },
   {
@@ -993,7 +1041,7 @@
     "Wrong: institutional recommendations are governed by FINRA Rule 2111, which is a different standard.",
     "Wrong: the MSRB has its own rules; Reg BI is an SEC rule for retail customers.",
     "Correct: Reg BI is an SEC rule passed in 2019 that raises the standard for retail recommendations.",
-    "Wrong: institutional customers remain under FINRA suitability. The choice “The SEC, for institutional customers” therefore does not fit the rule or facts tested in this question."
+    "Wrong: institutional customers remain under FINRA suitability."
    ]
   },
   {
@@ -1010,7 +1058,7 @@
    ],
    "a": 3,
    "w": [
-    "Wrong: this is one of the four and includes Form CRS. The choice “Disclosure obligation” therefore does not fit the rule or facts tested in this question.",
+    "Wrong: this is one of the four and includes Form CRS.",
     "Wrong: this is one of the four and requires diligence, care and skill.",
     "Wrong: this is one of the four and requires written policies to achieve compliance.",
     "Correct: the four obligations are disclosure, care, conflict of interest and compliance; suitability is the older FINRA standard."
@@ -1023,17 +1071,17 @@
    "d": 2,
    "q": "A customer relationship summary (Form CRS) must be provided to a retail customer",
    "o": [
-    "at or prior to the time of the recommendation",
     "within 24 hours after the recommendation",
+    "at or prior to the time of the recommendation",
     "when the trade confirmation is sent",
     "at delivery of a prospectus only"
    ],
-   "a": 0,
+   "a": 1,
    "w": [
-    "Correct: Reg BI requires delivery no later than the recommendation. It is the only choice that fits the rule or facts being tested in this question.",
-    "Wrong: delivery after the recommendation is too late. The choice “within 24 hours after the recommendation” therefore does not fit the rule or facts tested in this question.",
-    "Wrong: the confirmation comes after the transaction, well after the recommendation. The choice “when the trade confirmation is sent” therefore does not fit the rule or facts tested in this question.",
-    "Wrong: timing is tied to the recommendation, not to prospectus delivery. The choice “at delivery of a prospectus only” therefore does not fit the rule or facts tested in this question."
+    "Wrong: delivery after the recommendation is too late.",
+    "Correct: Reg BI requires delivery no later than the recommendation.",
+    "Wrong: the confirmation comes after the transaction, well after the recommendation.",
+    "Wrong: timing is tied to the recommendation, not to prospectus delivery."
    ]
   },
   {
@@ -1052,7 +1100,7 @@
    "w": [
     "Wrong: Reg BI also covers account types and rollovers, not just specific securities.",
     "Correct: rollovers and transfers are recommendations covered by Reg BI for retail customers.",
-    "Wrong: recommendations of account types and rollovers are expressly covered. The choice “Reg BI does not apply because no security is being bought” therefore does not fit the rule or facts tested in this question.",
+    "Wrong: recommendations of account types and rollovers are expressly covered.",
     "Wrong: the MSRB governs municipal activity and is not the relevant authority for this recommendation."
    ]
   },
@@ -1065,15 +1113,15 @@
    "o": [
     "Only written research reports",
     "Only unsolicited trades entered by the customer",
-    "Any communication that could be viewed as a call to action and would influence investor behavior",
-    "Only communications delivered to institutions"
+    "Only communications delivered to institutions",
+    "Any communication that could be viewed as a call to action and would influence investor behavior"
    ],
-   "a": 2,
+   "a": 3,
    "w": [
-    "Wrong: spoken or written, any call-to-action communication can qualify. The choice “Only written research reports” therefore does not fit the rule or facts tested in this question.",
+    "Wrong: spoken or written, any call-to-action communication can qualify.",
     "Wrong: unsolicited orders are not recommendations; a call to action by the firm or rep is.",
-    "Correct: this is the book’s definition covering securities, account types and rollovers.",
-    "Wrong: Reg BI is directed at retail customers. The choice “Only communications delivered to institutions” therefore does not fit the rule or facts tested in this question."
+    "Wrong: Reg BI is directed at retail customers.",
+    "Correct: this is the book’s definition covering securities, account types and rollovers."
    ]
   },
   {
@@ -1083,17 +1131,17 @@
    "d": 3,
    "q": "I. Proprietary products  II. Payments from third parties  III. Compensation programs  IV. The customer’s tax bracket\nWhich of these are conflicts of interest on which Reg BI requires disclosure of material facts?",
    "o": [
-    "I and II only",
+    "I, II and III only",
     "II, III and IV only",
     "I, II, III and IV",
-    "I, II and III only"
+    "I and II only"
    ],
-   "a": 3,
+   "a": 0,
    "w": [
-    "Wrong: compensation programs are also a named conflict source. The choice “I and II only” therefore does not fit the rule or facts tested in this question.",
+    "Correct: proprietary products, third-party payments and compensation programs are the conflicts specifically named.",
     "Wrong: a customer’s tax bracket is a profile fact, not a conflict of interest, and proprietary products are omitted.",
     "Wrong: the tax bracket is not a conflict of interest of the firm.",
-    "Correct: proprietary products, third-party payments and compensation programs are the conflicts specifically named."
+    "Wrong: compensation programs are also a named conflict source."
    ]
   },
   {
@@ -1103,16 +1151,16 @@
    "d": 1,
    "q": "The know-your-customer rule, FINRA Rule 2090, requires a firm to",
    "o": [
-    "learn the essential facts concerning every customer",
-    "know only the facts of customers who receive recommendations",
     "obtain facts only after the first trade",
+    "know only the facts of customers who receive recommendations",
+    "learn the essential facts concerning every customer",
     "disclose the firm’s conflicts to every customer"
    ],
-   "a": 0,
+   "a": 2,
    "w": [
+    "Wrong: the obligation begins at the start of the relationship.",
+    "Wrong: the obligation covers every customer.",
     "Correct: the goal is to service the account and make appropriate recommendations.",
-    "Wrong: the obligation covers every customer. The choice “know only the facts of customers who receive recommendations” therefore does not fit the rule or facts tested in this question.",
-    "Wrong: the obligation begins at the start of the relationship. The choice “obtain facts only after the first trade” therefore does not fit the rule or facts tested in this question.",
     "Wrong: conflict disclosure is a Reg BI matter, not the KYC rule."
    ]
   },
@@ -1124,16 +1172,16 @@
    "q": "Call risk is greatest for an investor holding a bond when interest rates are",
    "o": [
     "rising",
-    "falling",
     "unchanged and inflation is falling",
+    "falling",
     "rising and the issuer’s credit improves"
    ],
-   "a": 1,
+   "a": 2,
    "w": [
     "Wrong: when rates rise, issuers have no incentive to call old, cheaper debt.",
-    "Correct: issuers call securities in falling-rate environments to refinance at lower cost, so the investor loses a relatively high rate.",
     "Wrong: call risk arises when rates fall, not when they are flat.",
-    "Wrong: rising rates make calls unattractive to issuers. The choice “rising and the issuer’s credit improves” therefore does not fit the rule or facts tested in this question."
+    "Correct: issuers call securities in falling-rate environments to refinance at lower cost, so the investor loses a relatively high rate.",
+    "Wrong: rising rates make calls unattractive to issuers."
    ]
   },
   {
@@ -1144,16 +1192,16 @@
    "q": "Which of the following reduces call risk?",
    "o": [
     "Buying callable preferred stock",
-    "Buying options on a broad index",
     "Buying non-callable securities",
+    "Buying options on a broad index",
     "Buying a mortgage-backed security"
    ],
-   "a": 2,
+   "a": 1,
    "w": [
     "Wrong: callable preferred is one of the investments most exposed to call risk.",
-    "Wrong: index puts hedge systematic risk, not call risk. The choice “Buying options on a broad index” therefore does not fit the rule or facts tested in this question.",
     "Correct: a security that cannot be called removes the issuer’s ability to redeem early.",
-    "Wrong: MBS carry prepayment risk, which is a similar early-return problem. The choice “Buying a mortgage-backed security” therefore does not fit the rule or facts tested in this question."
+    "Wrong: index puts hedge systematic risk, not call risk.",
+    "Wrong: MBS carry prepayment risk, which is a similar early-return problem."
    ]
   },
   {
@@ -1172,7 +1220,7 @@
    "w": [
     "Wrong: this subtracts 5 from 8 and treats the result as dollars on a $100 base, which is not the amount invested.",
     "Wrong: this is only the income at 5%, not the shortfall versus 8%.",
-    "Wrong: this is the income at 8%, not the difference. The choice “$6.40” therefore does not fit the rule or facts tested in this question.",
+    "Wrong: this is the income at 8%, not the difference.",
     "Correct: at 8% the $80 earns $6.40; at 5% it earns $4.00; the difference is $2.40."
    ]
   },
@@ -1192,8 +1240,8 @@
    "w": [
     "Correct: a zero-coupon bond pays no periodic interest, so there is nothing to reinvest.",
     "Wrong: a callable bond pays coupons and may be called, creating reinvestment risk.",
-    "Wrong: MBS pay interest and principal that must be reinvested. The choice “Mortgage-backed security” therefore does not fit the rule or facts tested in this question.",
-    "Wrong: preferred pays regular dividends that must be reinvested. The choice “Preferred stock” therefore does not fit the rule or facts tested in this question."
+    "Wrong: MBS pay interest and principal that must be reinvested.",
+    "Wrong: preferred pays regular dividends that must be reinvested."
    ]
   },
   {
@@ -1213,7 +1261,7 @@
     "Wrong: credit risk is the risk of an issuer defaulting, not necessarily total loss of the investment.",
     "Correct: capital risk is the possibility that the full amount invested is wiped out.",
     "Wrong: liquidity risk is about the inability to sell, not total loss.",
-    "Wrong: interest rate risk is a price change from moving rates. The choice “interest rate risk” therefore does not fit the rule or facts tested in this question."
+    "Wrong: interest rate risk is a price change from moving rates."
    ]
   },
   {
@@ -1225,15 +1273,15 @@
    "o": [
     "Reinvestment rate risk",
     "Prepayment risk",
-    "Capital risk",
-    "Inflationary risk"
+    "Inflationary risk",
+    "Capital risk"
    ],
-   "a": 2,
+   "a": 3,
    "w": [
     "Wrong: there is no income stream to reinvest in an expired option.",
-    "Wrong: prepayment risk applies to mortgage-backed securities only. The choice “Prepayment risk” therefore does not fit the rule or facts tested in this question.",
-    "Correct: the entire premium paid is lost when an option expires worthless.",
-    "Wrong: the loss comes from expiration worthless, not from purchasing power erosion."
+    "Wrong: prepayment risk applies to mortgage-backed securities only.",
+    "Wrong: the loss comes from expiration worthless, not from purchasing power erosion.",
+    "Correct: the entire premium paid is lost when an option expires worthless."
    ]
   },
   {
@@ -1245,15 +1293,15 @@
    "o": [
     "Treasury bills",
     "Redeemable mutual funds",
-    "Money market funds",
-    "Penny stocks"
+    "Penny stocks",
+    "Money market funds"
    ],
-   "a": 3,
+   "a": 2,
    "w": [
     "Wrong: Treasuries are among the safest investments with little chance of total loss.",
     "Wrong: a diversified redeemable fund is unlikely to lose its entire value.",
-    "Wrong: money market funds aim to preserve principal. The choice “Money market funds” therefore does not fit the rule or facts tested in this question.",
-    "Correct: penny stocks, options and DPPs are the speculative investments most exposed to total loss."
+    "Correct: penny stocks, options and DPPs are the speculative investments most exposed to total loss.",
+    "Wrong: money market funds aim to preserve principal."
    ]
   },
   {
@@ -1272,7 +1320,7 @@
    "w": [
     "Correct: issuers with higher default risk must pay higher interest, and high-yield bonds are the book’s example.",
     "Wrong: Treasuries are backed by the US government and have little credit risk.",
-    "Wrong: these invest in short-term high-quality instruments. The choice “Money market mutual funds” therefore does not fit the rule or facts tested in this question.",
+    "Wrong: these invest in short-term high-quality instruments.",
     "Wrong: stock has no promised payments to default on in the same way as bonds."
    ]
   },
@@ -1284,16 +1332,16 @@
    "q": "Compared with a creditworthy issuer, an issuer with a higher default risk generally must",
    "o": [
     "offer a lower interest rate because investors want safety",
-    "offer a higher interest rate to attract investors",
     "issue only zero-coupon bonds",
+    "offer a higher interest rate to attract investors",
     "issue only callable bonds"
    ],
-   "a": 1,
+   "a": 2,
    "w": [
-    "Wrong: lower-quality issuers pay more, not less. The choice “offer a lower interest rate because investors want safety” therefore does not fit the rule or facts tested in this question.",
-    "Correct: investors demand more yield for bearing more credit risk. It is the only choice that fits the rule or facts being tested in this question.",
-    "Wrong: credit quality does not dictate the coupon structure. The choice “issue only zero-coupon bonds” therefore does not fit the rule or facts tested in this question.",
-    "Wrong: credit quality does not determine whether bonds are callable. The choice “issue only callable bonds” therefore does not fit the rule or facts tested in this question."
+    "Wrong: lower-quality issuers pay more, not less.",
+    "Wrong: credit quality does not dictate the coupon structure.",
+    "Correct: investors demand more yield for bearing more credit risk.",
+    "Wrong: credit quality does not determine whether bonds are callable."
    ]
   },
   {
@@ -1305,15 +1353,15 @@
    "o": [
     "marketability risk",
     "business risk",
-    "purchasing power risk",
-    "systematic risk"
+    "systematic risk",
+    "purchasing power risk"
    ],
-   "a": 2,
+   "a": 3,
    "w": [
-    "Wrong: marketability risk is another name for liquidity risk. The choice “marketability risk” therefore does not fit the rule or facts tested in this question.",
-    "Wrong: business risk is non-systematic risk specific to a company. The choice “business risk” therefore does not fit the rule or facts tested in this question.",
-    "Correct: the risk is that fixed payments buy fewer goods and services over time.",
-    "Wrong: systematic risk refers to market-wide movements. The choice “systematic risk” therefore does not fit the rule or facts tested in this question."
+    "Wrong: marketability risk is another name for liquidity risk.",
+    "Wrong: business risk is non-systematic risk specific to a company.",
+    "Wrong: systematic risk refers to market-wide movements.",
+    "Correct: the risk is that fixed payments buy fewer goods and services over time."
    ]
   },
   {
@@ -1323,17 +1371,17 @@
    "d": 2,
    "q": "A client who is very concerned about inflationary risk should be MOST cautious about which investment?",
    "o": [
-    "Common stock",
+    "Long-term fixed-rate US Treasury bonds",
     "TIPS",
     "REITs",
-    "Long-term fixed-rate US Treasury bonds"
+    "Common stock"
    ],
-   "a": 3,
+   "a": 0,
    "w": [
-    "Wrong: stocks have historically offered potential to offset inflation. The choice “Common stock” therefore does not fit the rule or facts tested in this question.",
-    "Wrong: TIPS are designed to protect against inflation. The choice “TIPS” therefore does not fit the rule or facts tested in this question.",
-    "Wrong: real estate is regarded as an inflation-fighting option. The choice “REITs” therefore does not fit the rule or facts tested in this question.",
-    "Correct: fixed payments and fixed principal lose purchasing power, especially over a long period."
+    "Correct: fixed payments and fixed principal lose purchasing power, especially over a long period.",
+    "Wrong: TIPS are designed to protect against inflation.",
+    "Wrong: real estate is regarded as an inflation-fighting option.",
+    "Wrong: stocks have historically offered potential to offset inflation."
    ]
   },
   {
@@ -1343,17 +1391,17 @@
    "d": 2,
    "q": "Which of the following would help an investor who is worried about inflationary risk?",
    "o": [
-    "TIPS",
     "A 30-year fixed-rate corporate bond",
+    "TIPS",
     "Non-callable preferred stock",
     "A long-dated zero-coupon bond"
    ],
-   "a": 0,
+   "a": 1,
    "w": [
-    "Correct: Treasury Inflation Protected Securities mitigate purchasing power risk. It is the only choice that fits the rule or facts being tested in this question.",
-    "Wrong: fixed coupons are exactly what inflation erodes. The choice “A 30-year fixed-rate corporate bond” therefore does not fit the rule or facts tested in this question.",
-    "Wrong: fixed preferred dividends remain constant while prices rise. The choice “Non-callable preferred stock” therefore does not fit the rule or facts tested in this question.",
-    "Wrong: a fixed payoff at maturity is also eroded by inflation. The choice “A long-dated zero-coupon bond” therefore does not fit the rule or facts tested in this question."
+    "Wrong: fixed coupons are exactly what inflation erodes.",
+    "Correct: Treasury Inflation Protected Securities mitigate purchasing power risk.",
+    "Wrong: fixed preferred dividends remain constant while prices rise.",
+    "Wrong: a fixed payoff at maturity is also eroded by inflation."
    ]
   },
   {
@@ -1370,9 +1418,9 @@
    ],
    "a": 1,
    "w": [
-    "Wrong: a rise would occur if rates fell. The choice “rise” therefore does not fit the rule or facts tested in this question.",
-    "Correct: bond prices and interest rates move inversely. It is the only choice that fits the rule or facts being tested in this question.",
-    "Wrong: fixed-income prices are directly affected by rate changes. The choice “remain unchanged” therefore does not fit the rule or facts tested in this question.",
+    "Wrong: a rise would occur if rates fell.",
+    "Correct: bond prices and interest rates move inversely.",
+    "Wrong: fixed-income prices are directly affected by rate changes.",
     "Wrong: there is no basis for a doubling; the relationship is inverse, not multiplicative."
    ]
   },
@@ -1383,17 +1431,17 @@
    "d": 2,
    "q": "Which of the following bonds has the MOST interest rate risk?",
    "o": [
-    "A short-maturity bond with a high coupon",
-    "A short-maturity bond with a low coupon",
     "A long-maturity bond with a low coupon",
+    "A short-maturity bond with a low coupon",
+    "A short-maturity bond with a high coupon",
     "A long-maturity bond with a high coupon"
    ],
-   "a": 2,
+   "a": 0,
    "w": [
-    "Wrong: short maturity and high coupon reduce price sensitivity. The choice “A short-maturity bond with a high coupon” therefore does not fit the rule or facts tested in this question.",
-    "Wrong: short maturity reduces the exposure, even with a low coupon. The choice “A short-maturity bond with a low coupon” therefore does not fit the rule or facts tested in this question.",
-    "Correct: lower coupon and longer maturity increase price sensitivity. It is the only choice that fits the rule or facts being tested in this question.",
-    "Wrong: the high coupon reduces sensitivity compared with a low coupon. The choice “A long-maturity bond with a high coupon” therefore does not fit the rule or facts tested in this question."
+    "Correct: lower coupon and longer maturity increase price sensitivity.",
+    "Wrong: short maturity reduces the exposure, even with a low coupon.",
+    "Wrong: short maturity and high coupon reduce price sensitivity.",
+    "Wrong: the high coupon reduces sensitivity compared with a low coupon."
    ]
   },
   {
@@ -1401,7 +1449,7 @@
    "r": "7.2.6",
    "k": "scenario",
    "d": 3,
-   "q": "A retiree lives on coupon payments from bonds. Inflation is high and the central bank raises rates to cut it. Which TWO risks are hurting her?",
+   "q": "A retiree lives on the coupon payments of her bonds. Prices are rising quickly and the central bank raises interest rates to slow them. Which TWO risks are hurting her?",
    "o": [
     "Call risk and prepayment risk",
     "Capital risk and liquidity risk",
@@ -1410,9 +1458,9 @@
    ],
    "a": 3,
    "w": [
-    "Wrong: higher rates reduce calls and prepayments. The choice “Call risk and prepayment risk” therefore does not fit the rule or facts tested in this question.",
+    "Wrong: higher rates reduce calls and prepayments.",
     "Wrong: the scenario does not describe total loss or inability to sell.",
-    "Wrong: nothing in the facts involves foreign investments. The choice “Currency risk and political risk” therefore does not fit the rule or facts tested in this question.",
+    "Wrong: nothing in the facts involves foreign investments.",
     "Correct: coupons buy less, and bond market values fall as rates rise."
    ]
   },
@@ -1423,17 +1471,17 @@
    "d": 3,
    "q": "For an investor who wants to mitigate interest rate risk, which of the following is the BEST suggestion?",
    "o": [
-    "Convertible bonds",
-    "Long-term low-coupon bonds",
     "Callable preferred stock",
+    "Long-term low-coupon bonds",
+    "Convertible bonds",
     "Zero-coupon bonds with long maturity"
    ],
-   "a": 0,
+   "a": 2,
    "w": [
+    "Wrong: preferred is a fixed product directly exposed to rate changes.",
+    "Wrong: these are the most sensitive to interest rate changes.",
     "Correct: the book lists common stock and convertible bonds as mitigation for interest rate risk.",
-    "Wrong: these are the most sensitive to interest rate changes. The choice “Long-term low-coupon bonds” therefore does not fit the rule or facts tested in this question.",
-    "Wrong: preferred is a fixed product directly exposed to rate changes. The choice “Callable preferred stock” therefore does not fit the rule or facts tested in this question.",
-    "Wrong: long zeros fluctuate strongly as rates change. The choice “Zero-coupon bonds with long maturity” therefore does not fit the rule or facts tested in this question."
+    "Wrong: long zeros fluctuate strongly as rates change."
    ]
   },
   {
@@ -1444,16 +1492,16 @@
    "q": "Prepayment risk is MOST closely associated with which product?",
    "o": [
     "Treasury Inflation Protected Securities",
-    "Mortgage-backed securities",
+    "Zero-coupon municipal bonds",
     "Callable corporate bonds",
-    "Zero-coupon municipal bonds"
+    "Mortgage-backed securities"
    ],
-   "a": 1,
+   "a": 3,
    "w": [
     "Wrong: TIPS are exposed to rate risk but not to homeowner prepayments.",
-    "Correct: homeowners who refinance at lower rates return principal early to MBS holders.",
-    "Wrong: these have call risk, which is a different cause. The choice “Callable corporate bonds” therefore does not fit the rule or facts tested in this question.",
-    "Wrong: these have no mortgage pool that can prepay. The choice “Zero-coupon municipal bonds” therefore does not fit the rule or facts tested in this question."
+    "Wrong: these have no mortgage pool that can prepay.",
+    "Wrong: these have call risk, which is a different cause.",
+    "Correct: homeowners who refinance at lower rates return principal early to MBS holders."
    ]
   },
   {
@@ -1463,16 +1511,16 @@
    "d": 2,
    "q": "Mortgage rates fall sharply and many homeowners refinance. Holders of a mortgage-backed security are MOST likely to experience",
    "o": [
-    "delayed return of principal and higher yields",
-    "an increase in the coupon rate",
     "early return of principal that must be reinvested at lower rates",
+    "an increase in the coupon rate",
+    "delayed return of principal and higher yields",
     "loss of all invested capital"
    ],
-   "a": 2,
+   "a": 0,
    "w": [
-    "Wrong: falling rates speed up, not slow, repayments. The choice “delayed return of principal and higher yields” therefore does not fit the rule or facts tested in this question.",
-    "Wrong: the investors face lower reinvestment rates, not a higher coupon. The choice “an increase in the coupon rate” therefore does not fit the rule or facts tested in this question.",
-    "Correct: this is prepayment risk, a type of reinvestment rate risk. It is the only choice that fits the rule or facts being tested in this question.",
+    "Correct: this is prepayment risk, a type of reinvestment rate risk.",
+    "Wrong: the investors face lower reinvestment rates, not a higher coupon.",
+    "Wrong: falling rates speed up, not slow, repayments.",
     "Wrong: early repayment returns principal; it does not wipe out the investment."
    ]
   },
@@ -1484,16 +1532,16 @@
    "q": "An investment that cannot be readily sold or converted to cash is said to have",
    "o": [
     "capital risk",
-    "systematic risk",
+    "liquidity risk",
     "call risk",
-    "liquidity risk"
+    "systematic risk"
    ],
-   "a": 3,
+   "a": 1,
    "w": [
-    "Wrong: capital risk is the chance of total loss. The choice “capital risk” therefore does not fit the rule or facts tested in this question.",
-    "Wrong: this relates to overall market movements. The choice “systematic risk” therefore does not fit the rule or facts tested in this question.",
-    "Wrong: this relates to issuers redeeming securities early. The choice “call risk” therefore does not fit the rule or facts tested in this question.",
-    "Correct: this is also called marketability risk. It is the only choice that fits the rule or facts being tested in this question."
+    "Wrong: capital risk is the chance of total loss.",
+    "Correct: this is also called marketability risk.",
+    "Wrong: this relates to issuers redeeming securities early.",
+    "Wrong: this relates to overall market movements."
    ]
   },
   {
@@ -1503,16 +1551,16 @@
    "d": 2,
    "q": "All of the following are examples of investments with significant liquidity risk EXCEPT",
    "o": [
-    "Treasury securities",
-    "Direct participation program interests",
     "Hedge funds",
+    "Direct participation program interests",
+    "Treasury securities",
     "Penny stocks"
    ],
-   "a": 0,
+   "a": 2,
    "w": [
-    "Correct: Treasuries are widely traded and have very little liquidity risk. It is the only choice that fits the rule or facts being tested in this question.",
-    "Wrong: DPP interests are not readily marketable. The choice “Direct participation program interests” therefore does not fit the rule or facts tested in this question.",
-    "Wrong: hedge funds appear on the book’s list of illiquid investments. The choice “Hedge funds” therefore does not fit the rule or facts tested in this question.",
+    "Wrong: hedge funds appear on the book’s list of illiquid investments.",
+    "Wrong: DPP interests are not readily marketable.",
+    "Correct: Treasuries are widely traded and have very little liquidity risk.",
     "Wrong: penny stocks are on the list of investments most at risk of illiquidity."
    ]
   },
@@ -1530,10 +1578,10 @@
    ],
    "a": 1,
    "w": [
-    "Wrong: index puts hedge market risk, not the inability to sell. The choice “Buy put options on a broad index” therefore does not fit the rule or facts tested in this question.",
+    "Wrong: index puts hedge market risk, not the inability to sell.",
     "Correct: illiquidity of the asset cannot be changed, so the client should hold other liquid assets.",
-    "Wrong: adding illiquid investments increases the liquidity problem. The choice “Increase the portfolio’s exposure to other DPPs” therefore does not fit the rule or facts tested in this question.",
-    "Wrong: callable bonds do not provide liquidity and add call risk. The choice “Buy callable bonds” therefore does not fit the rule or facts tested in this question."
+    "Wrong: adding illiquid investments increases the liquidity problem.",
+    "Wrong: callable bonds do not provide liquidity and add call risk."
    ]
   },
   {
@@ -1543,17 +1591,17 @@
    "d": 1,
    "q": "Political risk is MOST significant for an investor who owns",
    "o": [
-    "US Treasury bills",
-    "Money market funds",
     "ADRs",
+    "Money market funds",
+    "US Treasury bills",
     "Domestic zero-coupon bonds"
    ],
-   "a": 2,
+   "a": 0,
    "w": [
-    "Wrong: the book treats US government securities as having little political risk.",
-    "Wrong: these are short-term domestic instruments. The choice “Money market funds” therefore does not fit the rule or facts tested in this question.",
     "Correct: foreign securities such as ADRs are exposed to foreign governments and politics.",
-    "Wrong: domestic securities carry less political risk than foreign ones. The choice “Domestic zero-coupon bonds” therefore does not fit the rule or facts tested in this question."
+    "Wrong: these are short-term domestic instruments.",
+    "Wrong: the book treats US government securities as having little political risk.",
+    "Wrong: domestic securities carry less political risk than foreign ones."
    ]
   },
   {
@@ -1565,15 +1613,15 @@
    "o": [
     "an increase in the dollar value of the investment",
     "no change, since ADRs trade in dollars",
-    "prepayment of principal",
-    "a decline in the dollar value of the investment, even if the company is doing well"
+    "a decline in the dollar value of the investment, even if the company is doing well",
+    "prepayment of principal"
    ],
-   "a": 3,
+   "a": 2,
    "w": [
-    "Wrong: a stronger dollar reduces the dollar value of foreign holdings. The choice “an increase in the dollar value of the investment” therefore does not fit the rule or facts tested in this question.",
+    "Wrong: a stronger dollar reduces the dollar value of foreign holdings.",
     "Wrong: the investment is exposed to the foreign currency in the scenario.",
-    "Wrong: prepayment is a feature of mortgage pools. The choice “prepayment of principal” therefore does not fit the rule or facts tested in this question.",
-    "Correct: fewer US dollars are received on sale or dividends when the dollar strengthens."
+    "Correct: fewer US dollars are received on sale or dividends when the dollar strengthens.",
+    "Wrong: prepayment is a feature of mortgage pools."
    ]
   },
   {
@@ -1583,17 +1631,17 @@
    "d": 2,
    "q": "Which statement about hedging currency risk is TRUE?",
    "o": [
-    "Foreign currency options exist only on foreign currencies, not on the US dollar",
+    "Currency risk is highest in a weak-dollar environment",
     "Options exist on the US dollar but not foreign currencies",
     "Currency risk cannot be reduced by investing domestically",
-    "Currency risk is highest in a weak-dollar environment"
+    "Foreign currency options exist only on foreign currencies, not on the US dollar"
    ],
-   "a": 0,
+   "a": 3,
    "w": [
-    "Correct: you cannot buy or sell an option on the US dollar.",
-    "Wrong: the reverse is true. The choice “Options exist on the US dollar but not foreign currencies” therefore does not fit the rule or facts tested in this question.",
-    "Wrong: domestic securities eliminate foreign currency exposure. The choice “Currency risk cannot be reduced by investing domestically” therefore does not fit the rule or facts tested in this question.",
-    "Wrong: the book links currency risk to a strengthening dollar. The choice “Currency risk is highest in a weak-dollar environment” therefore does not fit the rule or facts tested in this question."
+    "Wrong: the book links currency risk to a strengthening dollar.",
+    "Wrong: the reverse is true.",
+    "Wrong: domestic securities eliminate foreign currency exposure.",
+    "Correct: you cannot buy or sell an option on the US dollar."
    ]
   },
   {
@@ -1604,16 +1652,16 @@
    "q": "In which macroeconomic environment would currency risk be MOST important to a US investor’s suitability analysis of a foreign stock?",
    "o": [
     "A weakening US dollar",
-    "A strengthening US dollar",
     "A period of falling bond yields",
+    "A strengthening US dollar",
     "A period of rising domestic dividends"
    ],
-   "a": 1,
+   "a": 2,
    "w": [
-    "Wrong: this generally reduces currency risk for foreign holdings. The choice “A weakening US dollar” therefore does not fit the rule or facts tested in this question.",
-    "Correct: a strong dollar reduces the dollar value of foreign-currency investments. It is the only choice that fits the rule or facts being tested in this question.",
-    "Wrong: this does not by itself drive currency risk. The choice “A period of falling bond yields” therefore does not fit the rule or facts tested in this question.",
-    "Wrong: dividend levels are not the driver of currency exposure. The choice “A period of rising domestic dividends” therefore does not fit the rule or facts tested in this question."
+    "Wrong: this generally reduces currency risk for foreign holdings.",
+    "Wrong: this does not by itself drive currency risk.",
+    "Correct: a strong dollar reduces the dollar value of foreign-currency investments.",
+    "Wrong: dividend levels are not the driver of currency exposure."
    ]
   },
   {
@@ -1623,16 +1671,16 @@
    "d": 3,
    "q": "Systematic risk can BEST be hedged with",
    "o": [
-    "diversifying across many stocks",
-    "buying callable bonds",
     "put options on a broad-based index",
+    "buying callable bonds",
+    "diversifying across many stocks",
     "buying zero-coupon bonds"
    ],
-   "a": 2,
+   "a": 0,
    "w": [
-    "Wrong: systematic risk cannot be avoided through diversification. The choice “diversifying across many stocks” therefore does not fit the rule or facts tested in this question.",
-    "Wrong: this adds call risk and does not hedge the market. The choice “buying callable bonds” therefore does not fit the rule or facts tested in this question.",
     "Correct: index puts offset broad market declines; diversification cannot remove this risk.",
+    "Wrong: this adds call risk and does not hedge the market.",
+    "Wrong: systematic risk cannot be avoided through diversification.",
     "Wrong: this changes the asset mix but does not hedge market risk the way index puts do."
    ]
   },
@@ -1644,16 +1692,16 @@
    "q": "For an investor who owns a large stock portfolio, systematic risk is MOST likely to hurt in which condition?",
    "o": [
     "A bull market for stocks",
-    "A period of low volatility with steady prices",
+    "A bear market for stocks",
     "A period in which one company recalls a product",
-    "A bear market for stocks"
+    "A period of low volatility with steady prices"
    ],
-   "a": 3,
+   "a": 1,
    "w": [
     "Wrong: systematic risk is symmetrical, but in a bull market it helps the investor.",
-    "Wrong: low volatility does not produce market-wide losses. The choice “A period of low volatility with steady prices” therefore does not fit the rule or facts tested in this question.",
-    "Wrong: that is non-systematic, company-specific risk. The choice “A period in which one company recalls a product” therefore does not fit the rule or facts tested in this question.",
-    "Correct: falling markets drag down individual securities regardless of company fundamentals. It is the only choice that fits the rule or facts being tested in this question."
+    "Correct: falling markets drag down individual securities regardless of company fundamentals.",
+    "Wrong: that is non-systematic, company-specific risk.",
+    "Wrong: low volatility does not produce market-wide losses."
    ]
   },
   {
@@ -1663,17 +1711,17 @@
    "d": 2,
    "q": "A company announces a product recall and a management scandal, and its stock falls while the overall market is unchanged. This is an example of",
    "o": [
-    "non-systematic (business) risk",
+    "prepayment risk",
     "systematic risk",
     "currency risk",
-    "prepayment risk"
+    "non-systematic (business) risk"
    ],
-   "a": 0,
+   "a": 3,
    "w": [
-    "Correct: the loss comes from issues specific to one company. It is the only choice that fits the rule or facts being tested in this question.",
-    "Wrong: systematic risk affects the whole market. The choice “systematic risk” therefore does not fit the rule or facts tested in this question.",
-    "Wrong: there is no foreign currency involved. The choice “currency risk” therefore does not fit the rule or facts tested in this question.",
-    "Wrong: this applies to mortgage-backed securities. The choice “prepayment risk” therefore does not fit the rule or facts tested in this question."
+    "Wrong: this applies to mortgage-backed securities.",
+    "Wrong: systematic risk affects the whole market.",
+    "Wrong: there is no foreign currency involved.",
+    "Correct: the loss comes from issues specific to one company."
    ]
   },
   {
@@ -1683,17 +1731,17 @@
    "d": 2,
    "q": "The BEST protection against non-systematic risk is",
    "o": [
-    "buying index puts",
     "diversification",
+    "buying index puts",
     "buying only one large-cap stock",
     "holding only callable bonds"
    ],
-   "a": 1,
+   "a": 0,
    "w": [
-    "Wrong: index puts hedge systematic risk. The choice “buying index puts” therefore does not fit the rule or facts tested in this question.",
     "Correct: with many positions, no single investment materially affects the overall return.",
-    "Wrong: concentration increases non-systematic risk. The choice “buying only one large-cap stock” therefore does not fit the rule or facts tested in this question.",
-    "Wrong: this adds call risk without addressing company-specific risk. The choice “holding only callable bonds” therefore does not fit the rule or facts tested in this question."
+    "Wrong: index puts hedge systematic risk.",
+    "Wrong: concentration increases non-systematic risk.",
+    "Wrong: this adds call risk without addressing company-specific risk."
    ]
   },
   {
@@ -1704,16 +1752,16 @@
    "q": "Match risk to the investments MOST at risk. I. Prepayment risk – MBS  II. Capital risk – options  III. Liquidity risk – Treasury bills  IV. Systematic risk – common stock and ETFs\nWhich pairings are correct?",
    "o": [
     "I and II only",
-    "II, III and IV only",
     "I, II and IV only",
+    "II, III and IV only",
     "I, II, III and IV"
    ],
-   "a": 2,
+   "a": 1,
    "w": [
-    "Wrong: systematic risk for common stock and ETFs is also correct. The choice “I and II only” therefore does not fit the rule or facts tested in this question.",
-    "Wrong: Treasury bills have very little liquidity risk, so III is wrong and I is omitted.",
+    "Wrong: systematic risk for common stock and ETFs is also correct.",
     "Correct: MBS carry prepayment risk, options carry capital risk, and stock and ETFs carry systematic risk.",
-    "Wrong: Treasury bills are not a liquidity-risk example. The choice “I, II, III and IV” therefore does not fit the rule or facts tested in this question."
+    "Wrong: Treasury bills have very little liquidity risk, so III is wrong and I is omitted.",
+    "Wrong: Treasury bills are not a liquidity-risk example."
    ]
   },
   {
@@ -1725,15 +1773,15 @@
    "o": [
     "High-yield bonds",
     "Penny stocks",
-    "Direct participation programs",
-    "Treasury securities"
+    "Treasury securities",
+    "Direct participation programs"
    ],
-   "a": 3,
+   "a": 2,
    "w": [
-    "Wrong: these are the investments most at risk of credit risk. The choice “High-yield bonds” therefore does not fit the rule or facts tested in this question.",
-    "Wrong: these are speculative and carry capital risk. The choice “Penny stocks” therefore does not fit the rule or facts tested in this question.",
-    "Wrong: these carry liquidity and capital risk. The choice “Direct participation programs” therefore does not fit the rule or facts tested in this question.",
-    "Correct: highly rated and Treasury fixed income reduces default risk. It is the only choice that fits the rule or facts being tested in this question."
+    "Wrong: these are the investments most at risk of credit risk.",
+    "Wrong: these are speculative and carry capital risk.",
+    "Correct: highly rated and Treasury fixed income reduces default risk.",
+    "Wrong: these carry liquidity and capital risk."
    ]
   },
   {
@@ -1743,17 +1791,17 @@
    "d": 1,
    "q": "An investor who seeks no decline in the value of her portfolio has which objective?",
    "o": [
-    "Preservation of capital",
+    "Current income",
     "Growth",
     "Speculation",
-    "Current income"
+    "Preservation of capital"
    ],
-   "a": 0,
+   "a": 3,
    "w": [
-    "Correct: this objective aims for zero decline in value. It is the only choice that fits the rule or facts being tested in this question.",
-    "Wrong: growth seeks appreciation and accepts more risk. The choice “Growth” therefore does not fit the rule or facts tested in this question.",
-    "Wrong: speculation accepts outsized risk for outsized return. The choice “Speculation” therefore does not fit the rule or facts tested in this question.",
-    "Wrong: current income targets cash flow rather than protection from any decline."
+    "Wrong: current income targets cash flow rather than protection from any decline.",
+    "Wrong: growth seeks appreciation and accepts more risk.",
+    "Wrong: speculation accepts outsized risk for outsized return.",
+    "Correct: this objective aims for zero decline in value."
    ]
   },
   {
@@ -1761,19 +1809,19 @@
    "r": "7.3.1",
    "k": "concept",
    "d": 2,
-   "q": "Which of the following investments would NOT be compatible with a preservation of capital objective?",
+   "q": "Which of the following would NOT fit an investor whose objective is preservation of capital?",
    "o": [
-    "Short-term Treasury securities",
-    "Dividend-paying common stock",
-    "Bank CDs",
-    "Money market mutual funds"
+    "Money market mutual fund",
+    "Bank certificates of deposit",
+    "Short-term Treasury bills",
+    "Dividend-paying common stock"
    ],
-   "a": 1,
+   "a": 3,
    "w": [
-    "Wrong: these have very stable principal and are suitable. The choice “Short-term Treasury securities” therefore does not fit the rule or facts tested in this question.",
-    "Correct: stocks can decline in value, so they are inappropriate for no-decline objectives.",
-    "Wrong: these are listed as suitable for preservation of capital. The choice “Bank CDs” therefore does not fit the rule or facts tested in this question.",
-    "Wrong: these seek to preserve principal and are suitable. The choice “Money market mutual funds” therefore does not fit the rule or facts tested in this question."
+    "Wrong: money market funds seek to preserve principal and are suitable.",
+    "Wrong: CDs have stable principal and are listed as suitable.",
+    "Wrong: short-term Treasuries have very stable principal and are suitable.",
+    "Correct: stock prices can decline, so stocks do not fit a no-decline objective."
    ]
   },
   {
@@ -1790,10 +1838,10 @@
    ],
    "a": 2,
    "w": [
-    "Wrong: the strategy is chosen to avoid these. The choice “Capital risk and market risk” therefore does not fit the rule or facts tested in this question.",
+    "Wrong: the strategy is chosen to avoid these.",
     "Wrong: these apply to MBS and callable securities, not the safest products.",
-    "Correct: safe products pay low rates that may not outpace inflation. It is the only choice that fits the rule or facts being tested in this question.",
-    "Wrong: these apply to foreign securities. The choice “Political risk and currency risk” therefore does not fit the rule or facts tested in this question."
+    "Correct: safe products pay low rates that may not outpace inflation.",
+    "Wrong: these apply to foreign securities."
    ]
   },
   {
@@ -1804,16 +1852,16 @@
    "q": "Which investment is MOST suitable for an investor with a current income objective?",
    "o": [
     "Zero-coupon bond",
-    "Non-dividend-paying common stock",
+    "Preferred stock",
     "Broad-based ETF aimed at growth",
-    "Preferred stock"
+    "Non-dividend-paying common stock"
    ],
-   "a": 3,
+   "a": 1,
    "w": [
-    "Wrong: it pays no current income. The choice “Zero-coupon bond” therefore does not fit the rule or facts tested in this question.",
-    "Wrong: it generates no current income. The choice “Non-dividend-paying common stock” therefore does not fit the rule or facts tested in this question.",
-    "Wrong: ETFs are listed as inappropriate for the income objective. The choice “Broad-based ETF aimed at growth” therefore does not fit the rule or facts tested in this question.",
-    "Correct: preferred stocks pay fixed dividends and fit income-oriented investors. It is the only choice that fits the rule or facts being tested in this question."
+    "Wrong: it pays no current income.",
+    "Correct: preferred stocks pay fixed dividends and fit income-oriented investors.",
+    "Wrong: ETFs are listed as inappropriate for the income objective.",
+    "Wrong: it generates no current income."
    ]
   },
   {
@@ -1831,9 +1879,9 @@
    "a": 0,
    "w": [
     "Correct: less aggressive income investors use Treasuries, agencies and highly rated corporates; more aggressive use high-yield.",
-    "Wrong: this reverses the matching. The choice “Conservative: high-yield bonds; aggressive: Treasuries” therefore does not fit the rule or facts tested in this question.",
-    "Wrong: options are speculative, and money market securities have low yield. The choice “Conservative: options; aggressive: money market” therefore does not fit the rule or facts tested in this question.",
-    "Wrong: penny stocks are speculative and not appropriate for conservative income. The choice “Conservative: penny stocks; aggressive: bank CDs” therefore does not fit the rule or facts tested in this question."
+    "Wrong: this reverses the matching.",
+    "Wrong: options are speculative, and money market securities have low yield.",
+    "Wrong: penny stocks are speculative and not appropriate for conservative income."
    ]
   },
   {
@@ -1844,16 +1892,16 @@
    "q": "Which investment objective is appropriate only for investors in high tax brackets?",
    "o": [
     "Liquidity",
-    "Tax-free income",
+    "Preservation of capital",
     "Growth",
-    "Preservation of capital"
+    "Tax-free income"
    ],
-   "a": 1,
+   "a": 3,
    "w": [
-    "Wrong: this is about access to cash. The choice “Liquidity” therefore does not fit the rule or facts tested in this question.",
-    "Correct: municipal bonds yield federally tax-free income that benefits high-bracket investors. It is the only choice that fits the rule or facts being tested in this question.",
-    "Wrong: growth is not tied to a tax bracket. The choice “Growth” therefore does not fit the rule or facts tested in this question.",
-    "Wrong: this is about protecting principal. The choice “Preservation of capital” therefore does not fit the rule or facts tested in this question."
+    "Wrong: this is about access to cash.",
+    "Wrong: this is about protecting principal.",
+    "Wrong: growth is not tied to a tax bracket.",
+    "Correct: municipal bonds yield federally tax-free income that benefits high-bracket investors."
    ]
   },
   {
@@ -1861,19 +1909,19 @@
    "r": "7.3.3",
    "k": "scenario",
    "d": 2,
-   "q": "Paul has an objective of tax-free income, and his broker proposes a mutual fund. What will determine whether it is appropriate?",
+   "q": "A client whose goal is tax-free income is offered a mutual fund by his rep. Which factor decides whether the fund is an appropriate recommendation?",
    "o": [
-    "The fund’s track record",
-    "The fees and expenses of the fund",
-    "The type of securities the fund holds",
-    "The rate of income the fund pays"
+    "How much income the fund distributes",
+    "What kinds of securities the fund holds",
+    "The expense ratio and sales charges of the fund",
+    "The fund’s past performance record"
    ],
-   "a": 2,
+   "a": 1,
    "w": [
-    "Wrong: performance does not make a taxable fund tax-free. The choice “The fund’s track record” therefore does not fit the rule or facts tested in this question.",
-    "Wrong: costs matter but do not decide whether income is tax-free. The choice “The fees and expenses of the fund” therefore does not fit the rule or facts tested in this question.",
-    "Correct: a municipal bond fund fits; other funds do not. It is the only choice that fits the rule or facts being tested in this question.",
-    "Wrong: a high payout does not make income tax-free. The choice “The rate of income the fund pays” therefore does not fit the rule or facts tested in this question."
+    "Wrong: a high payout does not make income tax-free.",
+    "Correct: only a fund holding municipal bonds fits a tax-free objective; funds holding other securities do not.",
+    "Wrong: costs matter but do not decide whether the income is tax-free.",
+    "Wrong: performance does not turn taxable income into tax-free income."
    ]
   },
   {
@@ -1883,17 +1931,17 @@
    "d": 2,
    "q": "A long-term investor seeks growth of capital with little need for current income. All of the following are suitable EXCEPT",
    "o": [
-    "Large-cap common stock",
+    "Preferred stock",
     "Small-cap common stock",
     "Common stock mutual funds",
-    "Preferred stock"
+    "Large-cap common stock"
    ],
-   "a": 3,
+   "a": 0,
    "w": [
-    "Wrong: this is suitable for a less aggressive growth investor. The choice “Large-cap common stock” therefore does not fit the rule or facts tested in this question.",
-    "Wrong: this is suitable for a more aggressive growth investor. The choice “Small-cap common stock” therefore does not fit the rule or facts tested in this question.",
-    "Wrong: these are suitable for growth. The choice “Common stock mutual funds” therefore does not fit the rule or facts tested in this question.",
-    "Correct: fixed-income and preferred stock are inappropriate for the growth objective. It is the only choice that fits the rule or facts being tested in this question."
+    "Correct: fixed-income and preferred stock are inappropriate for the growth objective.",
+    "Wrong: this is suitable for a more aggressive growth investor.",
+    "Wrong: these are suitable for growth.",
+    "Wrong: this is suitable for a less aggressive growth investor."
    ]
   },
   {
@@ -1903,17 +1951,17 @@
    "d": 1,
    "q": "A client will need her money within the next year to buy a home and wants immediate access at all times. Which investment is MOST appropriate?",
    "o": [
-    "Money market fund",
-    "Direct participation program",
     "Real estate limited partnership",
+    "Direct participation program",
+    "Money market fund",
     "Small-cap growth stock"
    ],
-   "a": 0,
+   "a": 2,
    "w": [
-    "Correct: money market securities and funds meet the liquidity objective. It is the only choice that fits the rule or facts being tested in this question.",
-    "Wrong: DPPs are illiquid and inappropriate. The choice “Direct participation program” therefore does not fit the rule or facts tested in this question.",
-    "Wrong: real estate holdings are not readily convertible to cash. The choice “Real estate limited partnership” therefore does not fit the rule or facts tested in this question.",
-    "Wrong: its price can decline just when the cash is needed. The choice “Small-cap growth stock” therefore does not fit the rule or facts tested in this question."
+    "Wrong: real estate holdings are not readily convertible to cash.",
+    "Wrong: DPPs are illiquid and inappropriate.",
+    "Correct: money market securities and funds meet the liquidity objective.",
+    "Wrong: its price can decline just when the cash is needed."
    ]
   },
   {
@@ -1930,9 +1978,9 @@
    ],
    "a": 1,
    "w": [
-    "Wrong: US government securities are inappropriate for speculation. The choice “Treasury bills” therefore does not fit the rule or facts tested in this question.",
-    "Correct: penny stocks, high-yield bonds, options and DPPs fit speculation. It is the only choice that fits the rule or facts being tested in this question.",
-    "Wrong: large-cap common stock is inappropriate for speculation. The choice “Large-cap blue-chip stock” therefore does not fit the rule or facts tested in this question.",
+    "Wrong: US government securities are inappropriate for speculation.",
+    "Correct: penny stocks, high-yield bonds, options and DPPs fit speculation.",
+    "Wrong: large-cap common stock is inappropriate for speculation.",
     "Wrong: money market securities offer low returns and are inappropriate for speculation."
    ]
   },
@@ -1941,7 +1989,7 @@
    "r": "7.3",
    "k": "scenario",
    "d": 3,
-   "q": "Patrick is investing for retirement in 20 years and wants capital appreciation with high predictability and safety. Which investment BEST meets both needs?",
+   "q": "A 45-year-old saving for retirement in 20 years wants his money to appreciate with a high degree of predictability and safety. Which investment BEST meets both needs?",
    "o": [
     "Money market mutual funds",
     "Penny stocks",
@@ -1950,10 +1998,10 @@
    ],
    "a": 2,
    "w": [
-    "Wrong: safe, but they offer little appreciation. The choice “Money market mutual funds” therefore does not fit the rule or facts tested in this question.",
-    "Wrong: these are speculative and unpredictable. The choice “Penny stocks” therefore does not fit the rule or facts tested in this question.",
+    "Wrong: safe, but they offer little appreciation.",
+    "Wrong: these are speculative and unpredictable.",
     "Correct: accreting interest is a form of appreciation, and zero-coupons avoid reinvestment risk.",
-    "Wrong: fixed income with call risk and little predictability of growth. The choice “Callable preferred stock” therefore does not fit the rule or facts tested in this question."
+    "Wrong: fixed income with call risk and little predictability of growth."
    ]
   },
   {
@@ -1970,9 +2018,9 @@
    ],
    "a": 3,
    "w": [
-    "Wrong: this reverses the relationship. The choice “The shorter the horizon, the more growth stock exposure is appropriate” therefore does not fit the rule or facts tested in this question.",
-    "Wrong: risk tolerance often declines with age. The choice “Risk tolerance generally rises as an investor ages” therefore does not fit the rule or facts tested in this question.",
-    "Wrong: time horizon is a core factor in suitability analysis. The choice “Time horizon has no effect on suitability” therefore does not fit the rule or facts tested in this question.",
+    "Wrong: this reverses the relationship.",
+    "Wrong: risk tolerance often declines with age.",
+    "Wrong: time horizon is a core factor in suitability analysis.",
     "Correct: longer horizons allow more risk, and shorter horizons call for bonds and safer assets."
    ]
   },
@@ -1992,8 +2040,8 @@
    "w": [
     "Correct: an ETN gives equity exposure but depends on the issuer’s ability to pay.",
     "Wrong: an ETF holds a portfolio of securities and is not the issuer’s unsecured debt.",
-    "Wrong: a UIT holds a fixed portfolio of underlying securities. The choice “Unit investment trust” therefore does not fit the rule or facts tested in this question.",
-    "Wrong: its shares represent an interest in a managed portfolio. The choice “Closed-end fund” therefore does not fit the rule or facts tested in this question."
+    "Wrong: a UIT holds a fixed portfolio of underlying securities.",
+    "Wrong: its shares represent an interest in a managed portfolio."
    ]
   },
   {
@@ -2004,16 +2052,16 @@
    "q": "A unit investment trust has all of the following characteristics EXCEPT",
    "o": [
     "a fixed portfolio with no active management",
-    "an active secondary market on an exchange",
     "lower fees than many other investment companies",
+    "an active secondary market on an exchange",
     "diversification"
    ],
-   "a": 1,
+   "a": 2,
    "w": [
-    "Wrong: this is a defining feature of a UIT. The choice “a fixed portfolio with no active management” therefore does not fit the rule or facts tested in this question.",
+    "Wrong: this is a defining feature of a UIT.",
+    "Wrong: the lack of active management keeps fees low.",
     "Correct: UITs have no secondary market and are redeemable only with the issuer.",
-    "Wrong: the lack of active management keeps fees low. The choice “lower fees than many other investment companies” therefore does not fit the rule or facts tested in this question.",
-    "Wrong: the fixed portfolio offers diversification. The choice “diversification” therefore does not fit the rule or facts tested in this question."
+    "Wrong: the fixed portfolio offers diversification."
    ]
   },
   {
@@ -2024,16 +2072,16 @@
    "q": "A client wants a diversified, professionally managed investment that can always be redeemed with the issuer, and accepts management fees, sales charges and 12b-1 fees. Which product fits?",
    "o": [
     "Exchange-traded fund",
-    "Unit investment trust",
     "Open-end mutual fund",
+    "Unit investment trust",
     "Exchange-traded note"
    ],
-   "a": 2,
+   "a": 1,
    "w": [
     "Wrong: ETFs trade on an exchange and typically have lower fees without sales charges.",
-    "Wrong: UITs are not actively managed. The choice “Unit investment trust” therefore does not fit the rule or facts tested in this question.",
     "Correct: these can be redeemed with the issuer and carry fees including sales charges and 12b-1 fees.",
-    "Wrong: an ETN is unsecured debt rather than a managed portfolio. The choice “Exchange-traded note” therefore does not fit the rule or facts tested in this question."
+    "Wrong: UITs are not actively managed.",
+    "Wrong: an ETN is unsecured debt rather than a managed portfolio."
    ]
   },
   {
@@ -2041,19 +2089,19 @@
    "r": "7.5.1",
    "k": "scenario",
    "d": 2,
-   "q": "Mildred’s financial planner suggests an asset allocation program. What is the MOST important benefit?",
+   "q": "A planner proposes an asset allocation program to a client. What is the MOST important benefit of such a program?",
    "o": [
-    "Guaranteed capital appreciation",
+    "Diversification",
     "Elimination of systematic risk",
     "Tax-free income",
-    "Diversification"
+    "Guaranteed capital appreciation"
    ],
-   "a": 3,
+   "a": 0,
    "w": [
-    "Wrong: allocation lowers risk but guarantees nothing. The choice “Guaranteed capital appreciation” therefore does not fit the rule or facts tested in this question.",
-    "Wrong: diversification cannot eliminate systematic risk. The choice “Elimination of systematic risk” therefore does not fit the rule or facts tested in this question.",
-    "Wrong: asset allocation is not designed to generate tax-free income. The choice “Tax-free income” therefore does not fit the rule or facts tested in this question.",
-    "Correct: the mix of asset classes reacts differently to market conditions, reducing risk."
+    "Correct: the mix of asset classes reacts differently to market conditions, reducing risk.",
+    "Wrong: diversification cannot eliminate systematic risk.",
+    "Wrong: asset allocation is not designed to generate tax-free income.",
+    "Wrong: allocation lowers risk but guarantees nothing."
    ]
   },
   {
@@ -2061,19 +2109,19 @@
    "r": "7.5.1",
    "k": "scenario",
    "d": 3,
-   "q": "The Morrisons’ college portfolio has stocks performing well and bonds performing poorly. If it is rebalanced, what is the effect on the asset mix?",
+   "q": "A couple’s college-savings portfolio has an allocation program. Stocks have recently risen sharply while bonds have lagged. When the portfolio is rebalanced, what happens to the asset mix?",
    "o": [
-    "Stocks are sold and bonds are bought",
+    "No change, since each class performs differently",
     "Stocks are bought and bonds are sold",
     "Both stocks and bonds are sold",
-    "No change, since each class performs differently"
+    "Stocks are sold and bonds are bought"
    ],
-   "a": 0,
+   "a": 3,
    "w": [
-    "Correct: rebalancing returns classes to target weights, selling recent winners and buying losers.",
-    "Wrong: this would increase the overweight further. The choice “Stocks are bought and bonds are sold” therefore does not fit the rule or facts tested in this question.",
-    "Wrong: rebalancing does not require liquidating both classes. The choice “Both stocks and bonds are sold” therefore does not fit the rule or facts tested in this question.",
-    "Wrong: the purpose is to restore the original weights. The choice “No change, since each class performs differently” therefore does not fit the rule or facts tested in this question."
+    "Wrong: the purpose is to restore the original weights.",
+    "Wrong: this would increase the overweight further.",
+    "Wrong: rebalancing does not require liquidating both classes.",
+    "Correct: rebalancing returns classes to target weights, selling recent winners and buying losers."
    ]
   },
   {
@@ -2084,16 +2132,16 @@
    "q": "An analyst evaluates a company’s financial statements, management and industry trends to predict its future value. This is",
    "o": [
     "technical analysis",
-    "fundamental analysis",
     "quantitative suitability",
+    "fundamental analysis",
     "asset allocation"
    ],
-   "a": 1,
+   "a": 2,
    "w": [
-    "Wrong: technical analysis relies on historical price and trading patterns. The choice “technical analysis” therefore does not fit the rule or facts tested in this question.",
-    "Correct: it values a company based on business fundamentals. It is the only choice that fits the rule or facts being tested in this question.",
-    "Wrong: this concerns excessive trading in an account. The choice “quantitative suitability” therefore does not fit the rule or facts tested in this question.",
-    "Wrong: this is the mix of stocks, bonds and cash. The choice “asset allocation” therefore does not fit the rule or facts tested in this question."
+    "Wrong: technical analysis relies on historical price and trading patterns.",
+    "Wrong: this concerns excessive trading in an account.",
+    "Correct: it values a company based on business fundamentals.",
+    "Wrong: this is the mix of stocks, bonds and cash."
    ]
   },
   {
@@ -2104,15 +2152,15 @@
    "q": "A stock bought at $50 is sold at $56 after the investor received four quarterly dividends of $0.25 each. What is the total return?",
    "o": [
     "12%",
-    "2%",
     "14%",
+    "2%",
     "16%"
    ],
-   "a": 2,
+   "a": 1,
    "w": [
     "Wrong: $6 ÷ $50 counts only the capital gain and leaves out dividends.",
-    "Wrong: $1 ÷ $50 counts only the dividends. The choice “2%” therefore does not fit the rule or facts tested in this question.",
     "Correct: dividends 4 x $0.25 = $1; gain $6; ($1 + $6) ÷ $50 = $7 ÷ $50 = 14%.",
+    "Wrong: $1 ÷ $50 counts only the dividends.",
     "Wrong: this wrongly adds $2 of dividends; the four quarterly payments total $1."
    ]
   },
@@ -2130,7 +2178,7 @@
    ],
    "a": 3,
    "w": [
-    "Wrong: this fails to annualize the quarterly dividend: $0.45 ÷ $36. The choice “1.25%” therefore does not fit the rule or facts tested in this question.",
+    "Wrong: this fails to annualize the quarterly dividend: $0.45 ÷ $36.",
     "Wrong: this divides the price by the dividend incorrectly or uses $4.50.",
     "Wrong: this multiplies by 16 instead of 4 and misstates the yield.",
     "Correct: annual dividend $0.45 x 4 = $1.80; $1.80 ÷ $36 = 5%."
@@ -2151,8 +2199,8 @@
    "a": 0,
    "w": [
     "Correct: dividends 4 x $0.75 = $3; capital loss $6; (-$6 + $3) ÷ $60 = -$3 ÷ $60 = -5%.",
-    "Wrong: -$6 ÷ $60 ignores the dividends received. The choice “-10%” therefore does not fit the rule or facts tested in this question.",
-    "Wrong: this ignores that the capital loss exceeds the dividends. The choice “+5%” therefore does not fit the rule or facts tested in this question.",
+    "Wrong: -$6 ÷ $60 ignores the dividends received.",
+    "Wrong: this ignores that the capital loss exceeds the dividends.",
     "Wrong: this does not match any valid computation and ignores the price decline."
    ]
   },
@@ -2163,16 +2211,16 @@
    "d": 3,
    "q": "Dana buys a bond for $980. It matures at par of $1,000 after she collected a total of $150 in interest. What is her total return over the full holding period?",
    "o": [
-    "15.3%",
     "17.3%",
+    "15.3%",
     "19.4%",
     "13.3%"
    ],
-   "a": 1,
+   "a": 0,
    "w": [
-    "Wrong: $150 ÷ $980 leaves out the $20 gain from purchase price to par.",
     "Correct: ($150 interest + $20 gain to par) ÷ $980 = $170 ÷ $980 = 17.3%.",
-    "Wrong: this adds $40, double-counting the gain: $190 ÷ $980. The choice “19.4%” therefore does not fit the rule or facts tested in this question.",
+    "Wrong: $150 ÷ $980 leaves out the $20 gain from purchase price to par.",
+    "Wrong: this adds $40, double-counting the gain: $190 ÷ $980.",
     "Wrong: this subtracts the $20 instead of adding it: $130 ÷ $980."
    ]
   },
@@ -2184,16 +2232,16 @@
    "q": "A bond bought at $1,100 matures at $1,000 par after paying $150 total in interest. What is the total return?",
    "o": [
     "13.6%",
-    "22.7%",
     "4.5%",
+    "22.7%",
     "-9.1%"
    ],
-   "a": 2,
+   "a": 1,
    "w": [
-    "Wrong: $150 ÷ $1,100 ignores the $100 premium paid. The choice “13.6%” therefore does not fit the rule or facts tested in this question.",
-    "Wrong: this wrongly adds the $100 premium as a gain: $250 ÷ $1,100.",
+    "Wrong: $150 ÷ $1,100 ignores the $100 premium paid.",
     "Correct: ($150 interest - $100 loss to par) ÷ $1,100 = $50 ÷ $1,100 = 4.5%.",
-    "Wrong: -$100 ÷ $1,100 ignores the interest received. The choice “-9.1%” therefore does not fit the rule or facts tested in this question."
+    "Wrong: this wrongly adds the $100 premium as a gain: $250 ÷ $1,100.",
+    "Wrong: -$100 ÷ $1,100 ignores the interest received."
    ]
   },
   {
@@ -2205,15 +2253,15 @@
    "o": [
     "10.5%",
     "7.8%",
-    "2.9%",
-    "10.8%"
+    "10.8%",
+    "2.9%"
    ],
-   "a": 3,
+   "a": 2,
    "w": [
     "Wrong: this divides by the sale price of $1,050 instead of the initial purchase price.",
-    "Wrong: $80 ÷ $1,020 omits the $30 capital gain. The choice “7.8%” therefore does not fit the rule or facts tested in this question.",
-    "Wrong: $30 ÷ $1,020 omits the interest income. The choice “2.9%” therefore does not fit the rule or facts tested in this question.",
-    "Correct: ($80 + $30 gain) ÷ $1,020 = $110 ÷ $1,020 = 10.8%."
+    "Wrong: $80 ÷ $1,020 omits the $30 capital gain.",
+    "Correct: ($80 + $30 gain) ÷ $1,020 = $110 ÷ $1,020 = 10.8%.",
+    "Wrong: $30 ÷ $1,020 omits the interest income."
    ]
   },
   {
@@ -2223,17 +2271,17 @@
    "d": 3,
    "q": "A $200,000 portfolio has a target of 50% stocks and 50% bonds. After a rally, stocks are worth $120,000. To rebalance to target, the investor should",
    "o": [
-    "sell $20,000 of stock and buy $20,000 of bonds",
+    "buy $20,000 of stock and sell $20,000 of bonds",
     "sell $10,000 of stock and buy $10,000 of bonds",
     "sell $40,000 of stock and buy $40,000 of bonds",
-    "buy $20,000 of stock and sell $20,000 of bonds"
+    "sell $20,000 of stock and buy $20,000 of bonds"
    ],
-   "a": 0,
+   "a": 3,
    "w": [
-    "Correct: target stock is $100,000, so $20,000 is sold; $80,000 + $20,000 = $100,000 in bonds.",
-    "Wrong: this moves only halfway to the $100,000 target. The choice “sell $10,000 of stock and buy $10,000 of bonds” therefore does not fit the rule or facts tested in this question.",
-    "Wrong: this would overshoot, leaving stocks at $80,000. The choice “sell $40,000 of stock and buy $40,000 of bonds” therefore does not fit the rule or facts tested in this question.",
-    "Wrong: this makes the overweight stock position larger. The choice “buy $20,000 of stock and sell $20,000 of bonds” therefore does not fit the rule or facts tested in this question."
+    "Wrong: this makes the overweight stock position larger.",
+    "Wrong: this moves only halfway to the $100,000 target.",
+    "Wrong: this would overshoot, leaving stocks at $80,000.",
+    "Correct: target stock is $100,000, so $20,000 is sold; $80,000 + $20,000 = $100,000 in bonds."
    ]
   },
   {
@@ -2243,17 +2291,17 @@
    "d": 3,
    "q": "A $400,000 portfolio has a target of 60% stocks and 40% bonds. Stocks have grown to 70% of the portfolio. How much stock must be sold to restore the target?",
    "o": [
-    "$20,000",
     "$40,000",
+    "$20,000",
     "$80,000",
     "$120,000"
    ],
-   "a": 1,
+   "a": 0,
    "w": [
-    "Wrong: this is only half the excess. The choice “$20,000” therefore does not fit the rule or facts tested in this question.",
     "Correct: stocks are $280,000; target is 60% x $400,000 = $240,000; $280,000 - $240,000 = $40,000.",
-    "Wrong: this doubles the excess; the target is $240,000, not $200,000. The choice “$80,000” therefore does not fit the rule or facts tested in this question.",
-    "Wrong: this equals the bond holding, not the stock excess. The choice “$120,000” therefore does not fit the rule or facts tested in this question."
+    "Wrong: this is only half the excess.",
+    "Wrong: this doubles the excess; the target is $240,000, not $200,000.",
+    "Wrong: this equals the bond holding, not the stock excess."
    ]
   },
   {
@@ -2270,10 +2318,10 @@
    ],
    "a": 2,
    "w": [
-    "Wrong: the yield changes when the dividend changes. The choice “6% to 6%” therefore does not fit the rule or facts tested in this question.",
-    "Wrong: this reverses the direction; a cut lowers the yield. The choice “5% to 6%” therefore does not fit the rule or facts tested in this question.",
-    "Correct: $3 ÷ $50 = 6%; $2.50 ÷ $50 = 5%. It is the only choice that fits the rule or facts being tested in this question.",
-    "Wrong: these are dividend dollars, not yields on a $50 price. The choice “3% to 2.5%” therefore does not fit the rule or facts tested in this question."
+    "Wrong: the yield changes when the dividend changes.",
+    "Wrong: this reverses the direction; a cut lowers the yield.",
+    "Correct: $3 ÷ $50 = 6%; $2.50 ÷ $50 = 5%.",
+    "Wrong: these are dividend dollars, not yields on a $50 price."
    ]
   },
   {
@@ -2290,10 +2338,130 @@
    ],
    "a": 3,
    "w": [
-    "Wrong: this is the annual dividend, not the quarterly. The choice “$2.40” therefore does not fit the rule or facts tested in this question.",
-    "Wrong: this divides the annual dividend by 8. The choice “$0.30” therefore does not fit the rule or facts tested in this question.",
-    "Wrong: this divides the annual dividend by 2, a semiannual payment. The choice “$1.20” therefore does not fit the rule or facts tested in this question.",
+    "Wrong: this is the annual dividend, not the quarterly.",
+    "Wrong: this divides the annual dividend by 8.",
+    "Wrong: this divides the annual dividend by 2, a semiannual payment.",
     "Correct: annual dividend = 5% x $48 = $2.40; quarterly = $2.40 ÷ 4 = $0.60."
+   ]
+  },
+  {
+   "id": "7-q76",
+   "r": "7.5.3",
+   "k": "concept",
+   "d": 2,
+   "q": "A 20-day moving average is compared with a 200-day moving average of the same stock. Which statement is TRUE?",
+   "o": [
+    "The 200-day average reacts faster to price changes",
+    "The 20-day average is more sensitive to recent price changes",
+    "Both react identically because they track the same stock",
+    "Moving averages are used in fundamental analysis"
+   ],
+   "a": 1,
+   "w": [
+    "Wrong: the longer the timeframe, the less sensitive the average is to price changes.",
+    "Correct: a shorter timeframe makes the average more sensitive to price changes.",
+    "Wrong: the length of the window changes how sensitive the average is.",
+    "Wrong: moving averages track price data and belong to technical analysis."
+   ]
+  },
+  {
+   "id": "7-q77",
+   "r": "7.5.1",
+   "k": "concept",
+   "d": 1,
+   "q": "Among the three major asset classes, which offers the safest holdings but the lowest potential return?",
+   "o": [
+    "Long-term bonds",
+    "Common stocks",
+    "Cash and cash equivalents",
+    "Growth mutual funds"
+   ],
+   "a": 2,
+   "w": [
+    "Wrong: bonds are less volatile than stocks but are not the safest class.",
+    "Wrong: stocks historically offer the highest potential reward and the greatest risk.",
+    "Correct: savings, CDs, T-bills and money market funds carry little risk of loss and the lowest returns.",
+    "Wrong: growth funds hold stocks, the riskiest of the three major classes."
+   ]
+  },
+  {
+   "id": "7-q78",
+   "r": "7.4",
+   "k": "concept",
+   "d": 2,
+   "q": "Which investment strategy exposes an investor to unlimited risk?",
+   "o": [
+    "Buying a call option",
+    "Writing an uncovered call",
+    "Buying a put option",
+    "Buying a zero-coupon bond"
+   ],
+   "a": 1,
+   "w": [
+    "Wrong: a long call can lose at most the premium paid.",
+    "Correct: a writer of an uncovered call faces unlimited risk if the stock price keeps rising.",
+    "Wrong: a long put can lose at most the premium paid.",
+    "Wrong: a zero-coupon bond carries price volatility but not unlimited loss."
+   ]
+  },
+  {
+   "id": "7-q79",
+   "r": "7.4",
+   "k": "concept",
+   "d": 2,
+   "q": "Which risk is listed specifically for municipal bonds in the product summary?",
+   "o": [
+    "Possible alternative minimum tax (AMT) implications",
+    "Unlimited risk from uncovered writing",
+    "Lack of a secondary market",
+    "Sales charges and 12b-1 fees"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: besides credit, inflation and interest rate risk, some municipal interest can carry AMT implications.",
+    "Wrong: unlimited risk belongs to writing uncovered calls.",
+    "Wrong: lack of a secondary market is a UIT and open-end fund feature.",
+    "Wrong: sales charges and 12b-1 fees relate to mutual funds."
+   ]
+  },
+  {
+   "id": "7-q80",
+   "r": "7.2.6",
+   "k": "concept",
+   "d": 2,
+   "q": "When interest rates rise, which type of company is described as benefiting because it can earn more on loans?",
+   "o": [
+    "A utility with large fixed-rate debt",
+    "A mortgage-backed security issuer",
+    "A holder of long-term bonds",
+    "A bank or other financial services company"
+   ],
+   "a": 3,
+   "w": [
+    "Wrong: higher rates do not help a borrower; the benefit goes to lenders.",
+    "Wrong: rising rates do not improve MBS holders’ position and slow refinancing.",
+    "Wrong: long-term bond holders see their bond prices fall as rates rise.",
+    "Correct: lenders can earn a higher return and widen the spread between what they pay to borrow and what they charge."
+   ]
+  },
+  {
+   "id": "7-q81",
+   "r": "7.1.6",
+   "k": "scenario",
+   "d": 2,
+   "q": "A customer places an unsolicited order to buy a municipal bond in the secondary market. Under MSRB Rule G-47, the firm must",
+   "o": [
+    "disclose all material information known about the bond that is reasonably accessible to the market, at or prior to the trade",
+    "make the disclosure only if the trade was recommended",
+    "disclose only on primary market transactions",
+    "provide the disclosure after the trade settles"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: G-47 time-of-trade disclosure covers primary and secondary trades, solicited and unsolicited.",
+    "Wrong: the rule applies to unsolicited transactions too.",
+    "Wrong: the rule applies to both primary and secondary market transactions.",
+    "Wrong: disclosure is due at or prior to the transaction, not afterward."
    ]
   }
  ]

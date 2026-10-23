@@ -107,7 +107,7 @@
   },
   {
    "t": "Derivative",
-   "d": "A contract whose value is derived from the price of another asset."
+   "d": "A financial contract that takes its value from the price movement of another asset."
   },
   {
    "t": "Underlying asset",
@@ -115,11 +115,11 @@
   },
   {
    "t": "Call option",
-   "d": "Gives the buyer the right to buy at the strike and obligates the seller to sell at the strike if exercised."
+   "d": "Contract giving its buyer the right to purchase at the strike price; the seller must deliver at that price if exercised."
   },
   {
    "t": "Put option",
-   "d": "Gives the buyer the right to sell at the strike and obligates the seller to buy at the strike if exercised."
+   "d": "Contract giving its buyer the right to sell at the strike price; the seller must buy at that price if exercised."
   },
   {
    "t": "Premium",
@@ -179,7 +179,7 @@
   },
   {
    "t": "In-the-money (ITM)",
-   "d": "Call with market above strike, or put with market below strike; the option has exercisable value."
+   "d": "Call with market above strike, or put with market below strike; exercising would have value."
   },
   {
    "t": "At-the-money (ATM)",
@@ -195,7 +195,7 @@
   },
   {
    "t": "Time value",
-   "d": "The part of the premium that reflects time remaining until expiration; decays rapidly near expiry."
+   "d": "The portion of an option’s price tied to how long remains before it expires; it decays rapidly near expiry."
   },
   {
    "t": "Breakeven",
@@ -227,7 +227,7 @@
   },
   {
    "t": "Hedge",
-   "d": "A position with the opposite outlook taken to protect an existing investment."
+   "d": "A position with an opposing outlook taken to offset the risk of an investment already held."
   },
   {
    "t": "Index option",
@@ -622,6 +622,36 @@
    "f": "Which cash flows are computed when several option trades are netted?",
    "b": "Premium × 100 × contracts only. **Strike prices are ignored.**",
    "r": "6.1.1"
+  },
+  {
+   "id": "6-c59",
+   "f": "When does the option premium actually change hands?",
+   "b": "On **settlement**, the next business day (T+1) after the trade. The buyer pays and the writer receives the premium then.",
+   "r": "6.7.3"
+  },
+  {
+   "id": "6-c60",
+   "f": "Can a call or put writer be assigned and still make money?",
+   "b": "**Yes.** Between the strike and the breakeven the premium received more than covers the loss on assignment. Example: short 50 call at 3, stock 51 → −$1 + $3 = **+$2**.",
+   "r": "6.2.2.1"
+  },
+  {
+   "id": "6-c61",
+   "f": "Are naked calls legal?",
+   "b": "**Yes**, but they carry unlimited risk and may require the seller to post **collateral** so obligations can be met.",
+   "r": "6.2.2.2"
+  },
+  {
+   "id": "6-c62",
+   "f": "Advantages of buying a put instead of selling stock short",
+   "b": "Less money tied up (just the premium) and a **known, limited maximum loss**. Both can profit if the stock falls to zero, and neither earns the stock’s dividends.",
+   "r": "6.3.1"
+  },
+  {
+   "id": "6-c63",
+   "f": "Three ways an option position can end",
+   "b": "**Exercise**, **expiration**, or **trading it out** with a closing transaction (the most frequent).",
+   "r": "6.7"
   }
  ],
  "questions": [
@@ -672,15 +702,15 @@
    "d": 1,
    "q": "An investor buys 6 ABC calls at a quoted premium of 2.50. What total premium does the investor pay, ignoring commissions?",
    "o": [
-    "$250",
     "$1,500",
+    "$250",
     "$150",
     "$600"
    ],
-   "a": 1,
+   "a": 0,
    "w": [
-    "Wrong: $250 is the cost of a single contract at that premium, ignoring the number of contracts purchased.",
     "Correct: 2.50 × 100 shares × 6 contracts = $1,500 paid by the buyer to the seller.",
+    "Wrong: $250 is the cost of a single contract at that premium, ignoring the number of contracts purchased.",
     "Wrong: $150 results from multiplying the premium by six contracts but forgetting the 100-share contract size.",
     "Wrong: $600 multiplies 100 shares by six contracts but never applies the 2.50 premium quoted per share."
    ]
@@ -693,16 +723,16 @@
    "q": "Consider these four option contracts on ZZZ stock. Which statements are TRUE?\nI. ZZZ Sept 60 calls and ZZZ Dec 60 calls are in the same class\nII. ZZZ Sept 60 calls and ZZZ Sept 65 calls are in the same series\nIII. ZZZ Sept 60 calls and ZZZ Sept 60 puts are in the same class\nIV. ZZZ Sept 65 calls and ZZZ Dec 60 calls are in the same class",
    "o": [
     "I and II only",
-    "I and IV only",
+    "III and IV only",
     "II and III only",
-    "III and IV only"
+    "I and IV only"
    ],
-   "a": 1,
+   "a": 3,
    "w": [
     "Wrong: statement II fails because a series requires identical strike prices and expiration dates, and the strikes differ here.",
-    "Correct: class means the same type and underlying, so the calls in I and IV qualify regardless of strike or month.",
+    "Wrong: III is false because calls and puts are separate classes, even when strike and expiration match.",
     "Wrong: II is false because the strikes differ, and III is false because a call and a put are different classes.",
-    "Wrong: III is false because calls and puts are separate classes, even when strike and expiration match."
+    "Correct: class means the same type and underlying, so the calls in I and IV qualify regardless of strike or month."
    ]
   },
   {
@@ -713,15 +743,15 @@
    "q": "Listed equity options expire on which day of the expiration month?",
    "o": [
     "The first Friday",
-    "The third Friday",
     "The last business day",
+    "The third Friday",
     "The third Thursday"
    ],
-   "a": 1,
+   "a": 2,
    "w": [
     "Wrong: the first Friday is far too early; listed options run until later in the month.",
-    "Correct: listed options contracts expire on the third Friday of the expiration month.",
     "Wrong: the last business day of the month is not the standard listed options expiration date.",
+    "Correct: listed options contracts expire on the third Friday of the expiration month.",
     "Wrong: Thursday is not the expiration day; it is the third Friday that applies to listed options."
    ]
   },
@@ -732,15 +762,15 @@
    "d": 2,
    "q": "Which of the following statements about exercise style is accurate?",
    "o": [
-    "An American-style option can be exercised only on the expiration date",
     "A European-style option can be exercised only on the expiration date",
+    "An American-style option can be exercised only on the expiration date",
     "Most stock index options are American-style while single-stock options are European-style",
     "A European-style option can be exercised at any time during its final month"
    ],
-   "a": 1,
+   "a": 0,
    "w": [
-    "Wrong: that describes the European style; American-style options are exercisable at any time before expiration.",
     "Correct: European-style contracts allow exercise only on the expiration date, while American-style allow it any time before.",
+    "Wrong: that describes the European style; American-style options are exercisable at any time before expiration.",
     "Wrong: this reverses the usual pattern, since most single-stock options are American and index options are often European.",
     "Wrong: there is no final-month window; European style means only the expiration date itself is available."
    ]
@@ -773,16 +803,16 @@
    "q": "An investor owns a DEF 35 put that cost $1.50. DEF is trading at $38. How is the option best described?",
    "o": [
     "In-the-money by $3",
-    "Out-of-the-money by $3",
+    "Out-of-the-money by $1.50",
     "In-the-money by $1.50",
-    "Out-of-the-money by $1.50"
+    "Out-of-the-money by $3"
    ],
-   "a": 1,
+   "a": 3,
    "w": [
     "Wrong: a put is in-the-money only when the stock trades below its strike, and 38 is above 35.",
-    "Correct: with market 38 above the 35 strike, the put is out-of-the-money by 38 − 35 = $3.",
+    "Wrong: the premium is ignored when measuring moneyness, so the amount is the $3 gap to the strike.",
     "Wrong: this is both the wrong direction for a put and an amount that wrongly uses the premium.",
-    "Wrong: the premium is ignored when measuring moneyness, so the amount is the $3 gap to the strike."
+    "Correct: with market 38 above the 35 strike, the put is out-of-the-money by 38 − 35 = $3."
    ]
   },
   {
@@ -793,15 +823,15 @@
    "q": "An investor buys 1 QRS Aug 40 call at 2.50. What is the breakeven point?",
    "o": [
     "$37.50",
-    "$40.00",
     "$42.50",
+    "$40.00",
     "$44.00"
    ],
-   "a": 2,
+   "a": 1,
    "w": [
     "Wrong: subtracting the premium is the put formula; for a call the premium is added to the strike.",
-    "Wrong: at the strike alone the call is only at-the-money and the premium paid has not been recovered.",
     "Correct: call breakeven is strike plus premium, so 40 + 2.50 = $42.50.",
+    "Wrong: at the strike alone the call is only at-the-money and the premium paid has not been recovered.",
     "Wrong: this adds an unrelated amount; the breakeven depends only on strike and premium, giving 42.50."
    ]
   },
@@ -812,15 +842,15 @@
    "d": 2,
    "q": "An investor sells 1 TUV Oct 55 put at 4. What is the maximum possible loss on the position?",
    "o": [
-    "$400",
     "$5,100",
+    "$400",
     "$5,500",
     "Unlimited"
    ],
-   "a": 1,
+   "a": 0,
    "w": [
-    "Wrong: $400 is the maximum gain, equal to the premium received, rather than the maximum loss.",
     "Correct: worst case TUV falls to zero, so the loss is (55 − 4) × 100 = $5,100.",
+    "Wrong: $400 is the maximum gain, equal to the premium received, rather than the maximum loss.",
     "Wrong: $5,500 ignores the premium received, which offsets part of the loss on the assigned stock.",
     "Wrong: put loss is capped because a stock cannot fall below zero; only uncovered calls carry unlimited risk."
    ]
@@ -833,16 +863,16 @@
    "q": "An investor buys 3 GHI Mar 30 calls at 2. At expiration GHI trades at $36 and the investor exercises. What is the overall profit?",
    "o": [
     "$600",
-    "$1,200",
     "$1,800",
+    "$1,200",
     "$2,400"
    ],
-   "a": 1,
+   "a": 2,
    "w": [
     "Wrong: $600 is only the total premium paid for three contracts; it is not the net result of exercise.",
-    "Correct: (36 − 30 − 2) = $4 per share × 100 shares × 3 contracts = $1,200 profit.",
     "Wrong: $1,800 is the intrinsic gain of $6 per share on 300 shares, forgetting to deduct the premium.",
-    "Wrong: $2,400 overstates the result; it is not supported by any combination of strike, market and premium."
+    "Correct: (36 − 30 − 2) = $4 per share × 100 shares × 3 contracts = $1,200 profit.",
+    "Wrong: $2,400 overstates the result; it equals $8 per share on 300 shares, which no combination of strike, market and premium produces here."
    ]
   },
   {
@@ -853,16 +883,16 @@
    "q": "An investor writes one uncovered JKL 25 call at 1.50. JKL rises to $31 and the call is exercised against the investor. What is the result, ignoring commissions?",
    "o": [
     "$150 profit",
-    "$450 loss",
+    "$750 loss",
     "$600 loss",
-    "$750 loss"
+    "$450 loss"
    ],
-   "a": 1,
+   "a": 3,
    "w": [
     "Wrong: $150 would be the profit if the option expired worthless, but here it was exercised at a loss.",
-    "Correct: buy at 31 and deliver at 25 loses $6, offset by $1.50 premium: −$4.50 × 100 = $450 loss.",
+    "Wrong: $750 adds the premium to the loss instead of subtracting it from the loss.",
     "Wrong: $600 ignores the $1.50 per share premium that the writer received at the start.",
-    "Wrong: $750 adds the premium to the loss instead of subtracting it from the loss."
+    "Correct: buy at 31 and deliver at 25 loses $6, offset by $1.50 premium: −$4.50 × 100 = $450 loss."
    ]
   },
   {
@@ -872,16 +902,16 @@
    "d": 2,
    "q": "All of the following are characteristics of a covered call writing strategy EXCEPT:",
    "o": [
-    "The writer owns 100 shares of the underlying for each call written",
-    "The strategy generates current income from premiums",
     "The writer keeps unlimited participation in a rising stock price",
+    "The strategy generates current income from premiums",
+    "The writer owns 100 shares of the underlying for each call written",
     "The premium received provides limited protection against a price decline"
    ],
-   "a": 2,
+   "a": 0,
    "w": [
-    "Wrong: this is true; to be fully covered, 100 shares must collateralize each contract written.",
-    "Wrong: this is true; investors write covered calls precisely to earn the premium income.",
     "Correct: this is not a feature; above the strike the stock is called away so upside is capped.",
+    "Wrong: this is true; investors write covered calls precisely to earn the premium income.",
+    "Wrong: this is true; to be fully covered, 100 shares must collateralize each contract written.",
     "Wrong: this is true; the premium cushions a decline, though only by the amount received."
    ]
   },
@@ -894,15 +924,15 @@
    "o": [
     "$300",
     "$700",
-    "$1,000",
-    "Unlimited"
+    "Unlimited",
+    "$1,000"
    ],
-   "a": 2,
+   "a": 3,
    "w": [
     "Wrong: $300 counts only the premium and ignores the stock appreciation from 48 up to the strike.",
     "Wrong: $700 captures only the 48 to 55 stock gain and leaves out the $3 premium received.",
-    "Correct: (55 − 48 + 3) = $10 per share × 100 shares = $1,000 once the stock is called away.",
-    "Wrong: a covered call caps the gain at the strike; gains above 55 are lost to the call holder."
+    "Wrong: a covered call caps the gain at the strike; gains above 55 are lost to the call holder.",
+    "Correct: (55 − 48 + 3) = $10 per share × 100 shares = $1,000 once the stock is called away."
    ]
   },
   {
@@ -912,15 +942,15 @@
    "d": 2,
    "q": "An investor bought 200 shares of PQR at $72 and wrote 2 PQR 80 calls at 4. What is the breakeven price per share?",
    "o": [
-    "$68",
     "$72",
+    "$68",
     "$76",
     "$84"
    ],
-   "a": 0,
+   "a": 1,
    "w": [
-    "Correct: covered call breakeven is stock cost minus premium received: 72 − 4 = $68.",
     "Wrong: $72 is the stock’s purchase price; it ignores the $4 premium that cushions the position.",
+    "Correct: covered call breakeven is stock cost minus premium received: 72 − 4 = $68.",
     "Wrong: $76 would add the premium to the cost, which is the method for a protective put.",
     "Wrong: $84 is the strike plus the premium, the breakeven for a bare call and not for stock plus a short call."
    ]
@@ -932,16 +962,16 @@
    "d": 3,
    "q": "An investor buys a stock at $50 and simultaneously buys a 45 put for $3. What is the maximum loss per share?",
    "o": [
-    "$8",
-    "$5",
     "$3",
+    "$5",
+    "$8",
     "$50"
    ],
-   "a": 0,
+   "a": 2,
    "w": [
-    "Correct: the put locks in a sale at 45, so loss is (50 − 45) + 3 premium = $8 per share.",
-    "Wrong: $5 is only the difference between purchase price and strike; the premium paid is also lost.",
     "Wrong: $3 is just the premium; the stock itself can fall from 50 to the 45 strike before the put protects.",
+    "Wrong: $5 is only the difference between purchase price and strike; the premium paid is also lost.",
+    "Correct: the put locks in a sale at 45, so loss is (50 − 45) + 3 premium = $8 per share.",
     "Wrong: $50 is the loss if the stock went to zero with no put, which the protective put prevents."
    ]
   },
@@ -953,15 +983,15 @@
    "q": "A customer is short 500 shares of a stock and is afraid of a sharp rally. Which action would best limit the customer’s risk?",
    "o": [
     "Sell 5 calls",
-    "Buy 5 puts",
     "Buy 5 calls",
+    "Buy 5 puts",
     "Sell 5 puts"
    ],
-   "a": 2,
+   "a": 1,
    "w": [
     "Wrong: selling calls adds an obligation to sell and offers no protection against a rising price on the short stock.",
-    "Wrong: puts gain when the stock falls, so they would add to gains but not protect against a rally.",
     "Correct: calls give the right to buy at the strike, fixing a maximum cost to cover the short position.",
+    "Wrong: puts gain when the stock falls, so they would add to gains but not protect against a rally.",
     "Wrong: selling puts is a bullish income position that adds risk when the stock moves in the wrong direction."
    ]
   },
@@ -972,16 +1002,16 @@
    "d": 3,
    "q": "An investor sells 100 shares of STU short at $80 and buys 1 STU 90 call at 4. What is the maximum loss on the combined position?",
    "o": [
-    "$400",
-    "$1,000",
     "$1,400",
+    "$1,000",
+    "$400",
     "$7,600"
    ],
-   "a": 2,
+   "a": 0,
    "w": [
-    "Wrong: $400 is only the premium paid; it leaves out the loss between the short sale price and the strike.",
-    "Wrong: $1,000 covers the move from 80 to 90 only and omits the premium paid for protection.",
     "Correct: loss is (90 − 80) + 4 premium = $14 per share × 100 = $1,400, however high the stock goes.",
+    "Wrong: $1,000 covers the move from 80 to 90 only and omits the premium paid for protection.",
+    "Wrong: $400 is only the premium paid; it leaves out the loss between the short sale price and the strike.",
     "Wrong: $7,600 is the maximum gain if the stock falls to zero (80 − 4), not the maximum loss."
    ]
   },
@@ -992,17 +1022,17 @@
    "d": 3,
    "q": "An investor sells short 100 shares of VWX at $62 and buys 1 VWX 70 call at 3. At what market price does the position break even?",
    "o": [
-    "$59",
+    "$73",
     "$62",
     "$65",
-    "$73"
+    "$59"
    ],
-   "a": 0,
+   "a": 3,
    "w": [
-    "Correct: with stock plus option, the short stock drives the view; breakeven is sale price minus premium: 62 − 3 = $59.",
+    "Wrong: $73 is the call’s strike plus premium, which ignores the short stock position that sets the breakeven.",
     "Wrong: $62 would be breakeven without the call; the premium paid must be earned back on the short first.",
     "Wrong: $65 adds the premium to the sale price, which is the wrong direction for a short seller.",
-    "Wrong: $73 is the call’s strike plus premium, which ignores the short stock position that sets the breakeven."
+    "Correct: with stock plus option, the short stock drives the view; breakeven is sale price minus premium: 62 − 3 = $59."
    ]
   },
   {
@@ -1013,15 +1043,15 @@
    "q": "Which of the following best describes what happens when a holder exercises an in-the-money index option?",
    "o": [
     "The holder receives one share of every stock in the index",
-    "The holder receives cash based on the difference between the index level and the strike price",
     "The holder receives 100 shares of an index tracking fund",
+    "The holder receives cash based on the difference between the index level and the strike price",
     "The contract cannot be exercised before the market closes on expiration day"
    ],
-   "a": 1,
+   "a": 2,
    "w": [
     "Wrong: delivering a share of every component would be impractical, which is why index options avoid physical delivery.",
-    "Correct: index options settle in cash, equal to the in-the-money amount times a multiplier, often $100.",
     "Wrong: no fund shares are delivered; there is no physical delivery of any securities on exercise.",
+    "Correct: index options settle in cash, equal to the in-the-money amount times a multiplier, often $100.",
     "Wrong: this describes a European restriction that applies to some index options only, not a settlement rule."
    ]
   },
@@ -1034,15 +1064,15 @@
    "o": [
     "$38",
     "$380",
-    "$3,800",
-    "$4,138"
+    "$4,138",
+    "$3,800"
    ],
-   "a": 2,
+   "a": 3,
    "w": [
     "Wrong: $38 is the index point difference only, before applying the $100 multiplier.",
     "Wrong: $380 uses a multiplier of 10, not the $100 stated in the question.",
-    "Correct: (4,138 − 4,100) = 38 points × $100 = $3,800 paid in cash.",
-    "Wrong: 4,138 is the index level itself, not the cash settlement amount owed on a single option."
+    "Wrong: 4,138 is the index level itself, not the cash settlement amount owed on a single option.",
+    "Correct: (4,138 − 4,100) = 38 points × $100 = $3,800 paid in cash."
    ]
   },
   {
@@ -1112,15 +1142,15 @@
    "d": 2,
    "q": "A call with a strike of 60 is priced at a premium of 9.25 while the underlying stock trades at $67. What is the option’s time value?",
    "o": [
-    "$0",
     "$2.25",
+    "$0",
     "$7.00",
     "$9.25"
    ],
-   "a": 1,
+   "a": 0,
    "w": [
-    "Wrong: time value is not zero because the premium of 9.25 exceeds the intrinsic value of the option.",
     "Correct: intrinsic value is 67 − 60 = 7.00, so time value is 9.25 − 7.00 = $2.25.",
+    "Wrong: time value is not zero because the premium of 9.25 exceeds the intrinsic value of the option.",
     "Wrong: $7.00 is the intrinsic value, which is the in-the-money amount, not the time value.",
     "Wrong: $9.25 is the whole premium, which includes both intrinsic and time value."
    ]
@@ -1132,16 +1162,16 @@
    "d": 1,
    "q": "A put has a strike price of 40 and the underlying stock trades at $46. What is the put’s intrinsic value?",
    "o": [
-    "$0",
-    "$6",
     "−$6",
+    "$6",
+    "$0",
     "$40"
    ],
-   "a": 0,
+   "a": 2,
    "w": [
-    "Correct: the put is out-of-the-money, and out-of-the-money options always have an intrinsic value of zero.",
-    "Wrong: $6 is how far the stock is above the strike, which makes the put out-of-the-money, not valuable.",
     "Wrong: intrinsic value can never be negative; its lowest possible value is zero.",
+    "Wrong: $6 is how far the stock is above the strike, which makes the put out-of-the-money, not valuable.",
+    "Correct: the put is out-of-the-money, and out-of-the-money options always have an intrinsic value of zero.",
     "Wrong: the strike price is a contract term and is not the intrinsic value of the option."
    ]
   },
@@ -1153,16 +1183,16 @@
    "q": "In March, four calls on the same stock have the same strike price. Which will most likely have the highest premium?",
    "o": [
     "The April call",
-    "The June call",
+    "The September call",
     "The July call",
-    "The September call"
+    "The June call"
    ],
-   "a": 3,
+   "a": 1,
    "w": [
     "Wrong: April has the least time remaining, so it carries the least time value of the four.",
-    "Wrong: June has more time than April but less than July and September, so its premium is lower.",
+    "Correct: all else equal, the longest time to expiration means the most time value and the highest premium.",
     "Wrong: July has more time than June, but September still offers a longer window to move in-the-money.",
-    "Correct: all else equal, the longest time to expiration means the most time value and the highest premium."
+    "Wrong: June has more time than April but less than July and September, so its premium is lower."
    ]
   },
   {
@@ -1174,15 +1204,15 @@
    "o": [
     "The company whose stock is the underlying",
     "The call writer who originally sold the option",
-    "The Options Clearing Corporation",
-    "The exchange where the option trades"
+    "The exchange where the option trades",
+    "The Options Clearing Corporation"
    ],
-   "a": 2,
+   "a": 3,
    "w": [
     "Wrong: the underlying company does not issue or stand behind listed options.",
     "Wrong: the original writer is a party to the trade, but the OCC steps in as seller to every buyer.",
-    "Correct: the OCC is the buyer to every seller and seller to every buyer, so it is the legal counterparty.",
-    "Wrong: the exchange provides the trading venue, while clearing and guarantee are handled by the OCC."
+    "Wrong: the exchange provides the trading venue, while clearing and guarantee are handled by the OCC.",
+    "Correct: the OCC is the buyer to every seller and seller to every buyer, so it is the legal counterparty."
    ]
   },
   {
@@ -1233,15 +1263,15 @@
    "q": "When a holder exercises a listed option, how does the OCC choose which writer to assign?",
    "o": [
     "It always assigns the most recent writer",
-    "It assigns randomly or on a first-in, first-out basis among short positions in the same series",
     "The holder chooses the writer",
+    "It assigns randomly or on a first-in, first-out basis among short positions in the same series",
     "It assigns the underlying corporation"
    ],
-   "a": 1,
+   "a": 2,
    "w": [
     "Wrong: assignment never targets the newest writer by rule; if anything, the oldest short may be picked under first-in, first-out.",
-    "Correct: the OCC assigns notices to clearing members with matching shorts through a random process or first-in, first-out.",
     "Wrong: holders have no say in which writer is assigned; the OCC runs the process as the middleman.",
+    "Correct: the OCC assigns notices to clearing members with matching shorts through a random process or first-in, first-out.",
     "Wrong: the underlying corporation is not a party to listed options and can never be assigned an exercise."
    ]
   },
@@ -1272,15 +1302,15 @@
    "d": 2,
    "q": "An investor wrote 3 RST Jan 50 calls and now wants to eliminate the obligation. Which transaction does this?",
    "o": [
-    "A closing sale of 3 RST Jan 50 calls",
     "A closing purchase of 3 RST Jan 50 calls",
+    "A closing sale of 3 RST Jan 50 calls",
     "A closing sale of 3 RST Jan 50 puts",
     "An opening purchase of 3 RST Jan 55 calls"
    ],
-   "a": 1,
+   "a": 0,
    "w": [
-    "Wrong: a closing sale is for investors who bought the option; this investor originally sold it.",
     "Correct: buying back the same series and quantity reverses the original opening sale, and the OCC cancels the positions.",
+    "Wrong: a closing sale is for investors who bought the option; this investor originally sold it.",
     "Wrong: puts are a different class, so they cannot offset the written calls.",
     "Wrong: a different strike is a different series and opens a new position instead of closing the old one."
    ]
@@ -1313,15 +1343,15 @@
    "q": "What is the settlement time frame for a trade in a listed option?",
    "o": [
     "Same day",
-    "The next business day",
     "Two business days after the trade",
+    "The next business day",
     "It varies by contract"
    ],
-   "a": 1,
+   "a": 2,
    "w": [
     "Wrong: same-day settlement does not apply to listed options contracts.",
-    "Correct: listed options settle T+1, the next business day, for both opening and closing trades.",
     "Wrong: two business days is not the options settlement cycle described for listed contracts.",
+    "Correct: listed options settle T+1, the next business day, for both opening and closing trades.",
     "Wrong: listed options are standardized, including their settlement, so it does not vary by contract."
    ]
   },
@@ -1333,16 +1363,16 @@
    "q": "A stock has declared a dividend payable to holders of record on Thursday. A customer holds a call and wants the dividend. What is the latest day the customer can give exercise instructions?",
    "o": [
     "Tuesday",
-    "Wednesday",
+    "Friday",
     "Thursday",
-    "Friday"
+    "Wednesday"
    ],
-   "a": 1,
+   "a": 3,
    "w": [
     "Wrong: Tuesday would work but it is not the latest day; one business day before the record date is enough.",
-    "Correct: exercising Wednesday lets the stock settle T+1 on Thursday, the record date, making the customer an owner of record.",
+    "Wrong: Friday is after the record date, so the customer would not be an owner of record in time.",
     "Wrong: exercising on the record date settles a day later, so the customer would miss the dividend.",
-    "Wrong: Friday is after the record date, so the customer would not be an owner of record in time."
+    "Correct: exercising Wednesday lets the stock settle T+1 on Thursday, the record date, making the customer an owner of record."
    ]
   },
   {
@@ -1373,15 +1403,15 @@
    "q": "An investor holds 1 ABC 80 call. ABC declares a 5% stock dividend. What is the adjusted strike price, rounded to the nearest cent?",
    "o": [
     "$76.00",
-    "$76.19",
     "$80.00",
+    "$76.19",
     "$84.00"
    ],
-   "a": 1,
+   "a": 2,
    "w": [
     "Wrong: subtracting 5% from 80 gives 76.00, but the adjustment divides the contract value by the new share count.",
-    "Correct: contract value $8,000 ÷ 105 new shares = $76.19, keeping total contract value unchanged.",
     "Wrong: the strike falls after a stock dividend rather than staying at the original level.",
+    "Correct: contract value $8,000 ÷ 105 new shares = $76.19, keeping total contract value unchanged.",
     "Wrong: the strike decreases, never increases, when the share count rises because of a stock dividend."
    ]
   },
@@ -1414,15 +1444,15 @@
    "o": [
     "$550",
     "$700",
-    "$1,100",
-    "$1,800"
+    "$1,800",
+    "$1,100"
    ],
-   "a": 2,
+   "a": 3,
    "w": [
     "Wrong: $550 is the per-contract result, not multiplied by the two contracts held.",
     "Wrong: $700 is only the total premium paid for two contracts, not the net result.",
-    "Correct: (50 − 41 − 3.50) = $5.50 per share × 100 × 2 contracts = $1,100.",
-    "Wrong: $1,800 is the intrinsic gain of $9 per share on 200 shares, with no deduction for the premium."
+    "Wrong: $1,800 is the intrinsic gain of $9 per share on 200 shares, with no deduction for the premium.",
+    "Correct: (50 − 41 − 3.50) = $5.50 per share × 100 × 2 contracts = $1,100."
    ]
   },
   {
@@ -1433,16 +1463,16 @@
    "q": "An investor writes 1 LMN 45 put at 2.50. LMN falls to $40 and the put is assigned. What is the result, ignoring commissions?",
    "o": [
     "$250 profit",
-    "$250 loss",
-    "$450 loss",
-    "$500 loss"
+    "$500 loss",
+    "$750 loss",
+    "$250 loss"
    ],
-   "a": 1,
+   "a": 3,
    "w": [
     "Wrong: a profit would require the put to expire out-of-the-money, but it was assigned with stock at 40.",
-    "Correct: MV − strike + premium = 40 − 45 + 2.50 = −$2.50 per share, a $250 loss on 100 shares.",
-    "Wrong: $450 would result from subtracting the premium incorrectly instead of offsetting the loss with it.",
-    "Wrong: $500 is the loss on the stock before the $2.50 per share premium received is applied."
+    "Wrong: $500 is the loss on the stock before the $2.50 per share premium received is applied.",
+    "Wrong: $750 adds the $2.50 premium to the $5 stock loss instead of subtracting it, which reverses the writer's cushion.",
+    "Correct: MV − strike + premium = 40 − 45 + 2.50 = −$2.50 per share, a $250 loss on 100 shares."
    ]
   },
   {
@@ -1453,16 +1483,16 @@
    "q": "What is the maximum loss for the writer of an uncovered call?",
    "o": [
     "The premium received",
-    "The strike price less the premium",
+    "Unlimited",
     "The stock price at purchase",
-    "Unlimited"
+    "The strike price less the premium"
    ],
-   "a": 3,
+   "a": 1,
    "w": [
     "Wrong: the premium received is the writer’s maximum gain on the position, not the loss.",
-    "Wrong: strike minus premium is the maximum loss on a short put, which is capped by the stock reaching zero.",
+    "Correct: the writer must buy shares at any market price to deliver at the strike, so the loss is unlimited.",
     "Wrong: the writer has not bought stock, so no purchase price caps the loss.",
-    "Correct: the writer must buy shares at any market price to deliver at the strike, so the loss is unlimited."
+    "Wrong: strike minus premium is the maximum loss on a short put, which is capped by the stock reaching zero."
    ]
   },
   {
@@ -1492,16 +1522,16 @@
    "d": 2,
    "q": "An investor owns 1,000 shares of a stock, is neutral on it for the next few months, bullish long term, and wants to generate current income. Which strategy fits best?",
    "o": [
-    "Write 10 covered calls",
-    "Buy 10 protective puts",
     "Buy 10 calls",
+    "Buy 10 protective puts",
+    "Write 10 covered calls",
     "Write 10 uncovered puts"
    ],
-   "a": 0,
+   "a": 2,
    "w": [
-    "Correct: covered calls earn premium income and suit a short-term neutral outlook with a bullish long-term view.",
-    "Wrong: buying puts costs premium rather than generating income, so it does not meet the stated goal.",
     "Wrong: buying calls requires paying premium and adds a bullish bet instead of generating income.",
+    "Wrong: buying puts costs premium rather than generating income, so it does not meet the stated goal.",
+    "Correct: covered calls earn premium income and suit a short-term neutral outlook with a bullish long-term view.",
     "Wrong: writing puts adds a separate obligation and capital need, and it is not tied to the shares already owned."
    ]
   },
@@ -1513,15 +1543,15 @@
    "q": "All of the following are true of an investor who owns stock and a protective put EXCEPT:",
    "o": [
     "The investor retains dividends and voting rights until exercising",
-    "The put locks in a minimum selling price for the stock",
     "The breakeven is the stock’s purchase price less the premium paid",
+    "The put locks in a minimum selling price for the stock",
     "The potential gain on the stock remains unlimited"
    ],
-   "a": 2,
+   "a": 1,
    "w": [
     "Wrong: this is true; protective puts let the investor keep all benefits of ownership until the put is exercised.",
-    "Wrong: this is true; the strike price acts as a floor for the sale price.",
     "Correct: this is false; with a protective put, breakeven is the cost basis plus the premium paid.",
+    "Wrong: this is true; the strike price acts as a floor for the sale price.",
     "Wrong: this is true; if the stock rises the put simply expires and the investor keeps all appreciation."
    ]
   },
@@ -1532,15 +1562,15 @@
    "d": 3,
    "q": "A customer paid a premium of $6 for a 40 call. Shortly before expiration the stock trades at $43. The customer says the call should be left alone because it must first recover the $6 premium. Which response is correct?",
    "o": [
-    "The customer is right, because exercise is only worthwhile above the breakeven of 46",
     "Exercising or selling recovers $3 per share, reducing the loss to $3 compared with $6 if the option expires",
+    "The customer is right, because exercise is only worthwhile above the breakeven of 46",
     "The premium paid must be refunded by the writer if the option is not exercised",
     "Calls are exercised only when the stock is above the strike plus the premium"
    ],
-   "a": 1,
+   "a": 0,
    "w": [
-    "Wrong: the premium is already spent and does not decide the exercise, so waiting for the breakeven would lose all $6.",
     "Correct: exercising at 43 captures $3 of intrinsic value, so the net loss is 3 − 6 = −$3 versus −$6 if left to expire.",
+    "Wrong: the premium is already spent and does not decide the exercise, so waiting for the breakeven would lose all $6.",
     "Wrong: premiums are never refunded; the writer keeps them in any outcome.",
     "Wrong: calls are exercised whenever they are in-the-money, regardless of premium or breakeven."
    ]
@@ -1552,16 +1582,16 @@
    "d": 2,
    "q": "On one day an investor sells 4 options at a premium of 2.25 (strike 70) and buys 2 options at a premium of 3.50 (strike 45). Ignoring commissions, what is the net cash position?",
    "o": [
-    "$200 received",
+    "$2 received",
     "$200 paid",
-    "$1,100 received",
+    "$200 received",
     "$1,600 received"
    ],
-   "a": 0,
+   "a": 2,
    "w": [
-    "Correct: the sale brings in 4 × 100 × 2.25 = $900; the purchase costs 2 × 100 × 3.50 = $700; net +$200.",
+    "Wrong: $2 comes from netting 4 × 2.25 and 2 × 3.50 without applying the 100-share contract size.",
     "Wrong: this reverses the direction; the sale proceeds exceed the cost of the purchase.",
-    "Wrong: $1,100 incorrectly adds the proceeds to a different amount instead of subtracting the cost.",
+    "Correct: the sale brings in 4 × 100 × 2.25 = $900; the purchase costs 2 × 100 × 3.50 = $700; net +$200.",
     "Wrong: $1,600 adds the sale proceeds and the purchase cost, instead of netting them."
    ]
   },
@@ -1592,15 +1622,15 @@
    "d": 3,
    "q": "A customer is confident a stock will stay flat or rise, wants to earn income, and wants to avoid paying out cash for an option or stock purchase. Which position is the best fit?",
    "o": [
-    "Sell a put",
     "Buy a call",
+    "Sell a put",
     "Buy a put",
     "Sell an uncovered call"
    ],
-   "a": 0,
+   "a": 1,
    "w": [
-    "Correct: a short put collects premium, needs no capital outlay to open, and profits when the stock is flat or higher.",
     "Wrong: buying a call requires a premium outlay, which the customer wants to avoid.",
+    "Correct: a short put collects premium, needs no capital outlay to open, and profits when the stock is flat or higher.",
     "Wrong: buying a put costs premium and is a bearish position, opposite to the customer’s view.",
     "Wrong: an uncovered call is bearish or flat, and it carries unlimited risk if the stock rises as expected."
    ]
@@ -1612,17 +1642,137 @@
    "d": 2,
    "q": "Which of the following is TRUE of options on the VIX?",
    "o": [
-    "They are exercised only at expiration, as European-style options",
+    "They are options on a single company’s stock",
     "They can be exercised at any time, as American-style options",
     "They require delivery of S&P 500 stocks on exercise",
-    "They are options on a single company’s stock"
+    "They are exercised only at expiration, as European-style options"
+   ],
+   "a": 3,
+   "w": [
+    "Wrong: the VIX is an index of volatility and not tied to any single company’s stock.",
+    "Wrong: American style is typical for single-stock options, but VIX options use European-style exercise.",
+    "Wrong: the VIX measures S&P 500 option volatility, and index-type options settle in cash, not in stock.",
+    "Correct: VIX options have European-style exercise, so they can be exercised only on the expiration date."
+   ]
+  },
+  {
+   "id": "6-q51",
+   "r": "6.7.3",
+   "k": "concept",
+   "d": 1,
+   "q": "In a listed option trade, when does the buyer pay the premium to the writer?",
+   "o": [
+    "On settlement, the next business day after the trade",
+    "On the trade date, before the order is executed",
+    "At expiration of the contract",
+    "Only if and when the option is exercised"
    ],
    "a": 0,
    "w": [
-    "Correct: VIX options have European-style exercise, so they can be exercised only on the expiration date.",
-    "Wrong: American style is typical for single-stock options, but VIX options use European-style exercise.",
-    "Wrong: the VIX measures S&P 500 option volatility, and index-type options settle in cash, not in stock.",
-    "Wrong: the VIX is an index of volatility and not tied to any single company’s stock."
+    "Correct: listed options settle T+1, and the premium changes hands on that settlement date.",
+    "Wrong: payment is not required before the order even executes; listed option trades follow a settlement cycle.",
+    "Wrong: the premium is paid up front to acquire the contract, not held until expiration.",
+    "Wrong: the premium is owed whether or not the option is ever exercised; the writer keeps it in every outcome."
+   ]
+  },
+  {
+   "id": "6-q52",
+   "r": "6.2.2.1",
+   "k": "calc",
+   "d": 2,
+   "q": "An investor writes one uncovered ABC 50 call at 3. ABC rises to $51 and the call is exercised against the writer. What is the result, ignoring commissions?",
+   "o": [
+    "$300 profit",
+    "$100 loss",
+    "$200 profit",
+    "$400 loss"
+   ],
+   "a": 2,
+   "w": [
+    "Wrong: $300 would be the profit only if the option had expired worthless, but here it was assigned.",
+    "Wrong: $100 is the loss on the stock alone; it ignores the $3 premium the writer received.",
+    "Correct: 50 − 51 + 3 = +$2 per share, so the $3 premium more than covers the $1 loss on assignment, for $200 on 100 shares.",
+    "Wrong: $400 adds the premium to the $1 loss instead of using it to offset the loss."
+   ]
+  },
+  {
+   "id": "6-q53",
+   "r": "6.3.1",
+   "k": "concept",
+   "d": 2,
+   "q": "Which is an advantage of buying a put rather than selling the same stock short?",
+   "o": [
+    "A put never expires",
+    "The put holder collects the stock’s dividends",
+    "Only a put can profit if the stock falls to zero",
+    "The maximum loss is limited to the premium paid"
+   ],
+   "a": 3,
+   "w": [
+    "Wrong: options have a fixed expiration, so a put does end on its expiration date.",
+    "Wrong: holding a put earns no dividends, just as a short seller pays rather than receives them.",
+    "Wrong: a short sale also profits dollar for dollar as the stock falls to zero, so this is not unique to puts.",
+    "Correct: a put buyer risks only the premium, whereas a short seller faces unlimited loss if the stock rises."
+   ]
+  },
+  {
+   "id": "6-q54",
+   "r": "6.7",
+   "k": "concept",
+   "d": 1,
+   "q": "What is the most frequent way an options position ends?",
+   "o": [
+    "Expiring worthless",
+    "Exercise by the holder",
+    "Trading it out with a closing transaction",
+    "Assignment of a writer by the OCC"
+   ],
+   "a": 2,
+   "w": [
+    "Wrong: worthless expiration happens, yet it is less frequent than closing out the position in the market.",
+    "Wrong: exercise is one of three possible outcomes but is not the most common.",
+    "Correct: most positions are liquidated in the market with an offsetting closing trade rather than exercised or left to expire.",
+    "Wrong: assignment only follows an exercise, which is itself the less common outcome."
+   ]
+  },
+  {
+   "id": "6-q55",
+   "r": "6.1.1",
+   "k": "concept",
+   "d": 1,
+   "q": "When must a firm furnish the options disclosure document to a new options customer?",
+   "o": [
+    "At or before the time a registered options principal approves the account",
+    "Within 30 days after the first options trade",
+    "On the settlement date of the first trade",
+    "Only when the customer begins writing uncovered options"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: delivery is required at or before the time the registered options principal approves the account for options trading.",
+    "Wrong: a delay until after trading begins would let the customer trade before receiving the risk disclosure.",
+    "Wrong: the trade date and settlement date come after account approval, which is too late.",
+    "Wrong: the disclosure applies to all options customers, not just those writing uncovered options."
+   ]
+  },
+  {
+   "id": "6-q56",
+   "r": "6.3.2.1",
+   "k": "calc",
+   "d": 2,
+   "q": "An investor writes 1 XYZ 30 put at 4 and XYZ falls to $28, where the put is assigned. What is the result, ignoring commissions?",
+   "o": [
+    "$200 loss",
+    "$200 profit",
+    "$400 profit",
+    "$600 loss"
+   ],
+   "a": 1,
+   "w": [
+    "Wrong: this reverses the sign; the $4 premium received exceeds the $2 purchase loss.",
+    "Correct: 28 − 30 + 4 = +$2 per share, so the premium exceeds the $2 loss on assignment, for $200 on 100 shares.",
+    "Wrong: $400 would be the profit only if the put expired worthless, but here it was assigned.",
+    "Wrong: $600 adds the premium to the $2 stock loss instead of using it to offset the loss."
    ]
   }
  ]

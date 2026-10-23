@@ -6,7 +6,7 @@
  "brief": [
   {
    "h": "Corporate bonds and the Trust Indenture Act",
-   "md": "- **Corporate bonds** = debt of commercial/industrial issuers raising money for expansion. Term usually means **maturities of at least 10 years**; **notes** = medium-term; **commercial paper** = corporate paper of **no more than 270 days**.\n- Trading is mostly **over-the-counter (OTC)**, not on exchanges.\n- **Tax**: interest is **fully taxable as ordinary income** at federal, state **and** local level.\n- **Trust Indenture Act of 1939**: corporate debt issues of **more than $50 million** need a written **trust indenture** between issuer and an **independent trustee** acting for bondholders.\n- Indenture contains **protective covenants** (promises by the issuer): submit SEC filings, pay taxes, no selling of key assets, maintain insurance, maintain a certain credit profile.\n- The **trustee** (typically a large bank) acts in the bondholders’ best interest and, on default, may **seize and sell the issuer’s assets** to repay holders.\n> **Exam tip** Covenants protect **bondholders**, never the issuer. The $50 million threshold is *more than*, and the Act covers corporate debt, not municipal bonds."
+   "md": "- **Corporate bonds** = debt of commercial/industrial issuers raising money for expansion. Term usually means **maturities of at least 10 years**; **notes** = medium-term; **commercial paper** = corporate paper of **no more than 270 days**.\n- Trading is mostly **over-the-counter (OTC)**, not on exchanges.\n- **Tax**: interest is **fully taxable as ordinary income** at federal, state **and** local level.\n- **Trust Indenture Act of 1939**: a corporate offering **above $50 million** must come with a written **trust indenture**, an agreement between the issuer and an **independent trustee** who represents bondholders.\n- Indenture contains **protective covenants** (promises by the issuer): submit SEC filings, pay taxes, no selling of key assets, maintain insurance, maintain a certain credit profile.\n- The **trustee** (typically a large bank) acts in the bondholders’ best interest and, on default, may **seize and sell the issuer’s assets** to repay holders.\n> **Exam tip** Covenants protect **bondholders**, never the issuer. The $50 million threshold is *more than*, and the Act covers corporate debt, not municipal bonds."
   },
   {
    "h": "Secured vs unsecured debt and liquidation priority",
@@ -14,11 +14,11 @@
   },
   {
    "h": "Convertible bonds",
-   "md": "- Investor may convert the bond into a **fixed number of common shares** of the issuer; terms are in the **indenture**.\n- **Lower coupon** than a comparable non-convertible bond from the same issuer (investor pays for the conversion option).\n- Issuer benefits: **lower fixed borrowing costs** and **no immediate dilution** of common shares (versus issuing equity).\n- Investor view: **safer than common stock**, can deliver stock-like returns, **less volatile than stock**. Price floor = the price at which its yield equals that of a similar non-convertible bond.\n- Because it can convert at any time it **trades more like equity**; with **stable interest rates** its price is **more volatile than other debt** because it moves with the **underlying stock**.\n- **Conversion price** = stated price per share at which conversion occurs. **Conversion ratio** = shares received, **always based on par**, regardless of market price.\n- **Parity price** = value at which the investor is **indifferent** between holding the bond and converting (no profit/loss at conversion).\n- Liquidation: ranks with **subordinated debt**.\n> **Exam tip** Conversion ratio = **$1,000 par ÷ conversion price**. The bond’s current market price is a distractor."
+   "md": "- The holder may exchange the bond for a **fixed number of the issuer’s common shares**; terms are in the **indenture**.\n- **Lower coupon** than a comparable non-convertible bond from the same issuer (investor pays for the conversion option).\n- Issuer benefits: **lower fixed borrowing costs** and **no immediate dilution** of common shares (versus issuing equity).\n- Investor view: **safer than common stock**, can deliver stock-like returns, **less volatile than stock**. Price floor = the price at which its yield equals that of a similar non-convertible bond.\n- Because it can convert at any time it **trades more like equity**; with **stable interest rates** its price is **more volatile than other debt** because it moves with the **underlying stock**.\n- **Conversion price** = stated price per share at which conversion occurs. **Conversion ratio** = shares received, **always based on par**, regardless of market price.\n- **Parity price** = value at which the investor is **indifferent** between holding the bond and converting (no profit/loss at conversion).\n- Liquidation: ranks with **subordinated debt**.\n> **Exam tip** Conversion ratio = **$1,000 par ÷ conversion price**. The bond’s current market price is a distractor."
   },
   {
    "h": "Eurodollar bonds and corporate secondary market",
-   "md": "- **Eurodollar bond**: issued **outside the US**, **denominated in US dollars**; issued and traded outside the US and **not registered with the SEC**. Used to make securities more marketable when the home currency is unstable.\n- **Eurodollar deposit**: US dollars held in a **bank abroad** (e.g., a dollar account at a Swiss bank). Different instrument!\n- The **secondary market** for fixed income is the **largest financial market in the world** and is **OTC** (banks, broker-dealers, trading by computer/phone) — unlike equities, mainly exchange-traded.\n- Large companies may have **dozens or hundreds** of different bond issues, so each bond trades **less often** than the issuer’s stock; the **bid–ask spread is wider** to compensate dealers for holding risk.\n- Liquidity differences between two corporate bonds depend more on **credit rating** than on coupon or maturity.\n> **Exam tip** Bond = issued abroad in dollars. Deposit = dollars in a foreign bank. Keep them apart."
+   "md": "- **Eurodollar bond**: issued **outside the US**, **denominated in US dollars**; issued and traded outside the US and **not registered with the SEC**. Used to make securities more marketable when the home currency is unstable.\n- **Eurodollar deposit**: US dollars held in a **bank abroad** (e.g., a dollar account at a Swiss bank). Different instrument!\n- The fixed-income **secondary market** is the **world’s biggest financial market** and is **OTC** (banks, broker-dealers, trading by computer/phone) — unlike equities, mainly exchange-traded.\n- Large companies may have **dozens or hundreds** of different bond issues, so each bond trades **less often** than the issuer’s stock; the **bid–ask spread is wider** to compensate dealers for holding risk.\n- Liquidity differences between two corporate bonds depend more on **credit rating** than on coupon or maturity.\n> **Exam tip** Bond = issued abroad in dollars. Deposit = dollars in a foreign bank. Keep them apart."
   },
   {
    "h": "US Treasury securities",
@@ -38,7 +38,7 @@
   },
   {
    "h": "Revenue bonds and short-term municipal notes",
-   "md": "- **Revenue bonds**: backed **only by revenue from the financed project** (user fees), e.g., toll road, airport, water/sewer/power system, convention center. Issuers: essential-service entities (transportation, power, sewer, water), **501(c) nonprofits**, private-sector corporations such as **hospitals**.\n- Issuer is **not obligated** to pay from any source other than pledged revenues. **No new taxes**, **no voter approval**, **outside legislative debt limits**.\n- An entity providing a **free service** (e.g., public school) **cannot** issue revenue bonds.\n- Revenue bonds come with a **bond (trust) indenture** and protective covenants. Munis are **not subject to the Trust Indenture Act of 1939**, yet indentures are standard practice.\n\n| Feature | GO | Revenue |\n|---|---|---|\n| Backing | Taxing authority, full faith and credit | Project/facility revenues |\n| Projects | “Free” to public | “Fee for use” |\n| Debt/tax limits | Apply | Do not apply |\n| Voter approval | Referendum | Not needed |\n\n- **Short-term municipal notes** (generally **one year or less**, high quality, for cash flow):\n  - **TAN**: repaid from future **tax receipts**.\n  - **RAN**: repaid from **non-tax revenues** (e.g., sales taxes, as the book uses it).\n  - **BAN**: interim financing for capital projects, repaid from **proceeds of a later long-term bond issue**.\n> **Exam tip** Match the repayment source to the letter: Tax, Revenue, Bond."
+   "md": "- **Revenue bonds**: backed **only by revenue from the financed project** (user fees), e.g., toll road, airport, water/sewer/power system, convention center. Issuers: essential-service entities (transportation, power, sewer, water), **501(c) nonprofits**, private-sector corporations such as **hospitals**.\n- Issuer is **not obligated** to pay from any source other than pledged revenues. **No new taxes**, **no voter approval**, **outside legislative debt limits**.\n- An entity providing a **free service** (e.g., public school) **cannot** issue revenue bonds.\n- Revenue bonds come with a **bond (trust) indenture** and protective covenants. The Trust Indenture Act of 1939 does **not cover munis**, yet indentures are standard practice.\n\n| Feature | GO | Revenue |\n|---|---|---|\n| Backing | Taxing authority, full faith and credit | Project/facility revenues |\n| Projects | “Free” to public | “Fee for use” |\n| Debt/tax limits | Apply | Do not apply |\n| Voter approval | Referendum | Not needed |\n\n- **Short-term municipal notes** (generally **one year or less**, high quality, for cash flow):\n  - **TAN**: repaid from future **tax receipts**.\n  - **RAN**: repaid from **non-tax revenues** (e.g., sales taxes, as the book uses it).\n  - **BAN**: interim financing for capital projects, repaid from **proceeds of a later long-term bond issue**.\n> **Exam tip** Match the repayment source to the letter: Tax, Revenue, Bond."
   },
   {
    "h": "Municipal tax treatment and tax-equivalent yield",
@@ -46,7 +46,7 @@
   },
   {
    "h": "Tax treatment summary of fixed-income securities",
-   "md": "| Issuer | Federal tax on interest | State/local tax on interest |\n|---|---|---|\n| **US Treasury securities** | Taxable | **Exempt** |\n| **Municipal bonds**, in-state buyer | Exempt | Exempt |\n| **Municipal bonds**, out-of-state buyer | Exempt | Taxable |\n| **Corporate bonds** | Taxable | Taxable |\n| **CMOs** and **foreign debt** | Taxable | Taxable |\n\n- The book states most fixed-income (except munis) is taxed by both federal and state/local governments, with **Treasuries** the exception for state/local.\n- Unit exam logic: of Treasuries, Ginnie Maes, CMOs and corporates, **only Treasuries** are state/local exempt.\n- Retirement accounts and pensions are already sheltered, so tax-free munis add nothing there.\n> **Exam tip** Ranking of tax-friendliness: municipal (public purpose) > Treasury > corporate."
+   "md": "| Issuer | Federal tax on interest | State/local tax on interest |\n|---|---|---|\n| **US Treasury securities** | Taxable | **Exempt** |\n| **Municipal bonds**, in-state buyer | Exempt | Exempt |\n| **Municipal bonds**, out-of-state buyer | Exempt | Taxable |\n| **Corporate bonds** | Taxable | Taxable |\n| **CMOs** and **foreign debt** | Taxable | Taxable |\n\n- The book states most fixed-income (except munis) is taxed by both federal and state/local governments, with **Treasuries** the exception for state/local.\n- Unit exam logic: of Treasuries, Ginnie Maes, CMOs and corporates, **only Treasuries** are state/local exempt.\n- Retirement accounts and pensions are already sheltered, so tax-free munis add nothing there.\n> **Exam tip** Only two groups escape some tax on interest: Treasuries (state/local) and public purpose munis (federal, and state if in-state)."
   },
   {
    "h": "Money market instruments",
@@ -161,11 +161,11 @@
   },
   {
    "t": "Parity price",
-   "d": "The market value at which an investor is indifferent between holding the convertible bond and converting to stock."
+   "d": "Price at which a convertible holder is financially indifferent between keeping the bond and converting it into shares."
   },
   {
    "t": "Eurodollar bond",
-   "d": "A bond issued outside the US but denominated in US dollars and not registered with the SEC."
+   "d": "Dollar-denominated bond sold and traded outside the US, with no SEC registration."
   },
   {
    "t": "Eurodollar deposit",
@@ -193,7 +193,7 @@
   },
   {
    "t": "STRIPS",
-   "d": "Separate Trading of Registered Interest and Principal Securities: zero-coupon Treasuries created by separating coupons and principal."
+   "d": "Zero-coupon Treasuries created by separating the interest and principal of notes, bonds or TIPS (Separate Trading of Registered Interest and Principal Securities)."
   },
   {
    "t": "Treasury receipt",
@@ -209,7 +209,7 @@
   },
   {
    "t": "Ginnie Mae (GNMA)",
-   "d": "Government agency whose securities carry the full faith and credit of the US government."
+   "d": "Government agency whose securities are explicitly guaranteed by the US government’s full faith and credit."
   },
   {
    "t": "Fannie Mae / Freddie Mac",
@@ -237,7 +237,7 @@
   },
   {
    "t": "General obligation (GO) bond",
-   "d": "Municipal bond backed by the issuer’s full faith, credit and taxing power, used for non-revenue-producing projects."
+   "d": "Municipal bond secured by the issuer’s full faith, credit and taxing power, used for projects that earn no revenue."
   },
   {
    "t": "Ad valorem tax",
@@ -320,7 +320,7 @@
   {
    "id": "3-c03",
    "f": "What does the Trust Indenture Act of 1939 require?",
-   "b": "Corporate debt issues of **more than $50 million** need a written trust indenture with an independent trustee.",
+   "b": "A corporate offering **above $50 million** must have a written trust indenture and an independent trustee.",
    "r": "3.1.1"
   },
   {
@@ -724,6 +724,54 @@
    "f": "Repo vs reverse repo",
    "b": "Repo: sell securities and agree to **buy back higher**. Reverse repo: the buyer’s side. Repos add reserves; reverse repos drain them.",
    "r": "3.6.4"
+  },
+  {
+   "id": "3-c71",
+   "f": "How can an individual be sure of getting Treasuries at auction?",
+   "b": "Submit a **noncompetitive tender**: the order is filled.",
+   "r": "3.2.1"
+  },
+  {
+   "id": "3-c72",
+   "f": "Municipal bond secondary market liquidity",
+   "b": "**Illiquid**: every issue is unique, so a given bond is rarely available. Trades **OTC** through dealers.",
+   "r": "3.4"
+  },
+  {
+   "id": "3-c73",
+   "f": "Corporate bond trading venue and spread",
+   "b": "Mostly **OTC**, not exchanges. A big issuer has many bond issues, so each trades rarely and the **bid–ask spread is wider**.",
+   "r": "3.1.5"
+  },
+  {
+   "id": "3-c74",
+   "f": "Agency vs Treasury yields",
+   "b": "Agency securities (other than GNMA) lack explicit Treasury backing, so they yield **more** than Treasuries.",
+   "r": "3.3"
+  },
+  {
+   "id": "3-c75",
+   "f": "Municipal advisor",
+   "b": "Person or firm advising the issuer on **what to issue** and on the **structure and terms** of the deal.",
+   "r": "3.4"
+  },
+  {
+   "id": "3-c76",
+   "f": "Convertible bond price floor",
+   "b": "Price can fall only to the level where its yield equals that of a **non-convertible bond** with the same terms.",
+   "r": "3.1.3"
+  },
+  {
+   "id": "3-c77",
+   "f": "Which Treasury reacts most to rate changes?",
+   "b": "**T-bonds**: longer maturity than T-notes or T-bills, so more rate-sensitive.",
+   "r": "3.2.1.3"
+  },
+  {
+   "id": "3-c78",
+   "f": "How do most individuals reach the money market?",
+   "b": "Through **money market mutual funds**; the market itself is mainly **institutional** with large trades.",
+   "r": "3.6"
   }
  ],
  "questions": [
@@ -734,15 +782,15 @@
    "d": 1,
    "q": "The Trust Indenture Act of 1939 requires a written trust indenture with an independent trustee for corporate debt issues of what size?",
    "o": [
-    "More than $50 million",
     "Any corporate issue, regardless of size",
+    "More than $50 million",
     "More than $5 million",
     "Only issues of $500 million or more"
    ],
-   "a": 0,
+   "a": 1,
    "w": [
-    "Correct: corporate issues above $50 million must have a trust indenture and an independent trustee for the bondholders.",
     "Wrong: the Act has a size threshold, so small issues are not automatically covered by it.",
+    "Correct: corporate issues above $50 million must have a trust indenture and an independent trustee for the bondholders.",
     "Wrong: this figure is ten times too low compared with the threshold in the Act.",
     "Wrong: this threshold is ten times too high; the Act already applies once an issue exceeds $50 million."
    ]
@@ -755,15 +803,15 @@
    "q": "Which of the following is another name for unsecured corporate debt?",
    "o": [
     "Mortgage bond",
-    "Debenture",
     "Equipment trust obligation",
+    "Debenture",
     "Collateral trust bond"
    ],
-   "a": 1,
+   "a": 2,
    "w": [
     "Wrong: a mortgage bond is secured by real estate or other real property, so it is not unsecured.",
-    "Correct: a debenture is backed only by the issuer’s good faith and credit, with no specific collateral.",
     "Wrong: equipment trust obligations are secured by physical equipment such as aircraft, trucks and trains.",
+    "Correct: a debenture is backed only by the issuer’s good faith and credit, with no specific collateral.",
     "Wrong: collateral trust bonds are secured by financial assets such as stocks or bonds owned by the issuer."
    ]
   },
@@ -776,15 +824,15 @@
    "o": [
     "Maintain insurance",
     "Pay taxes when due",
-    "Guarantee that the issuer’s stock price will rise",
-    "Submit required SEC filings"
+    "Submit required SEC filings",
+    "Guarantee that the issuer’s stock price will rise"
    ],
-   "a": 2,
+   "a": 3,
    "w": [
     "Wrong: maintaining insurance is a classic covenant that protects the value of the issuer’s assets for bondholders.",
     "Wrong: paying taxes is a standard covenant, since unpaid taxes could threaten the issuer’s assets.",
-    "Correct: an issuer cannot promise a stock price outcome; covenants are controllable promises like filings, taxes and insurance.",
-    "Wrong: submitting SEC filings is a typical covenant that keeps bondholders informed about the issuer."
+    "Wrong: submitting SEC filings is a typical covenant that keeps bondholders informed about the issuer.",
+    "Correct: an issuer cannot promise a stock price outcome; covenants are controllable promises like filings, taxes and insurance."
    ]
   },
   {
@@ -794,17 +842,17 @@
    "d": 2,
    "q": "Brightwater Corp. files for bankruptcy and liquidates. Four investors each hold a different security of the company. Which investor is paid first?",
    "o": [
-    "Preferred stockholder",
+    "Holder of a senior unsecured debenture",
     "Holder of a subordinated debenture",
     "Common stockholder",
-    "Holder of a senior unsecured debenture"
+    "Preferred stockholder"
    ],
-   "a": 3,
+   "a": 0,
    "w": [
-    "Wrong: preferred stockholders rank behind all bondholders and are paid only after debt is satisfied.",
+    "Correct: senior unsecured creditors are paid before subordinated debt, preferred stock and common stock.",
     "Wrong: subordinated debt is junior to senior unsecured debt, so it is repaid later in the waterfall.",
     "Wrong: common stockholders are last in the liquidation order and receive only what remains.",
-    "Correct: senior unsecured creditors are paid before subordinated debt, preferred stock and common stock."
+    "Wrong: preferred stockholders rank behind all bondholders and are paid only after debt is satisfied."
    ]
   },
   {
@@ -814,15 +862,15 @@
    "d": 1,
    "q": "Equipment trust obligations are secured by which of the following?",
    "o": [
-    "Airplanes, trucks or trains",
     "Real estate holdings",
+    "Airplanes, trucks or trains",
     "Stocks and bonds owned by the issuer",
     "Only the issuer’s good faith and credit"
    ],
-   "a": 0,
+   "a": 1,
    "w": [
-    "Correct: equipment trust obligations are backed by physical assets such as aircraft, trucks and railcars.",
     "Wrong: real estate collateral describes a mortgage bond, not an equipment trust obligation.",
+    "Correct: equipment trust obligations are backed by physical assets such as aircraft, trucks and railcars.",
     "Wrong: financial assets owned by the issuer secure collateral trust bonds.",
     "Wrong: backing by good faith alone describes an unsecured debenture."
    ]
@@ -834,15 +882,15 @@
    "d": 2,
    "q": "A corporation has two bonds outstanding with the same maturity: a mortgage bond and a subordinated debenture. Which statement is most accurate?",
    "o": [
-    "The mortgage bond will pay the higher yield because it is backed by real estate",
     "The subordinated debenture will generally pay the higher yield because it ranks lower in liquidation",
+    "The mortgage bond will pay the higher yield because it is backed by real estate",
     "Both pay the same yield because they have the same issuer",
     "The subordinated debenture has the higher priority because it is unsecured"
    ],
-   "a": 1,
+   "a": 0,
    "w": [
-    "Wrong: collateral lowers risk, so the secured mortgage bond generally pays less than junior debt.",
     "Correct: lower liquidation priority means greater risk, which investors are paid for with a higher yield.",
+    "Wrong: collateral lowers risk, so the secured mortgage bond generally pays less than junior debt.",
     "Wrong: same issuer does not mean same yield; the rank in the capital structure changes the risk.",
     "Wrong: secured debt is paid first and subordinated debt ranks below unsecured senior debt."
    ]
@@ -892,19 +940,19 @@
    "r": "3.1.3.1",
    "k": "calc",
    "d": 2,
-   "q": "A convertible bond has a conversion price of $12.50 and currently trades at $900. An investor holds 10 of these bonds and converts them all. How many common shares does she receive?",
+   "q": "A convertible bond carries a conversion price of $12.50 and currently trades at $900. An investor holding 10 of these bonds converts them all. How many common shares does she receive?",
    "o": [
-    "800 shares",
+    "8,000 shares",
     "720 shares",
     "80 shares",
-    "8,000 shares"
+    "800 shares"
    ],
-   "a": 0,
+   "a": 3,
    "w": [
-    "Correct: ratio = $1,000 ÷ $12.50 = 80 shares per bond; 80 × 10 bonds = 800 shares.",
+    "Wrong: this multiplies by 100 instead of 10; ten bonds at 80 shares each give 800.",
     "Wrong: this wrongly uses the $900 market price ($900 ÷ $12.50 = 72 per bond); the ratio always uses par.",
     "Wrong: this is the ratio for a single bond; she is converting ten bonds.",
-    "Wrong: this multiplies by 100 instead of 10; ten bonds at 80 shares each give 800."
+    "Correct: ratio = $1,000 ÷ $12.50 = 80 shares per bond; 80 × 10 bonds = 800 shares."
    ]
   },
   {
@@ -954,17 +1002,17 @@
    "d": 3,
    "q": "Interest rates have been stable for a year while an issuer’s common stock has risen sharply. Compared with the issuer’s straight (non-convertible) bonds, its convertible bond will most likely:",
    "o": [
-    "Behave exactly like its preferred stock",
+    "Rise with the stock and show more price volatility",
     "Remain flat because the coupon is fixed",
     "Fall in price because yields are stable",
-    "Rise with the stock and show more price volatility"
+    "Behave exactly like its preferred stock"
    ],
-   "a": 3,
+   "a": 0,
    "w": [
-    "Wrong: the bond’s price is tied to the common stock through conversion, not to preferred stock.",
+    "Correct: with stable rates the convertible follows the underlying stock, making it more volatile than other debt.",
     "Wrong: a fixed coupon does not freeze the price; the conversion feature links the bond to the stock.",
     "Wrong: stable rates give no reason for the price to fall, and the rising stock pushes the convertible up.",
-    "Correct: with stable rates the convertible follows the underlying stock, making it more volatile than other debt."
+    "Wrong: the bond’s price is tied to the common stock through conversion, not to preferred stock."
    ]
   },
   {
@@ -974,16 +1022,16 @@
    "d": 2,
    "q": "Which is a reason an issuer may sell convertible bonds rather than additional common stock?",
    "o": [
-    "It avoids immediate dilution of existing common shares and lowers fixed borrowing costs",
-    "Convertible holders have no claim on assets in bankruptcy",
     "Interest on convertibles is not owed until conversion occurs",
+    "Convertible holders have no claim on assets in bankruptcy",
+    "It avoids immediate dilution of existing common shares and lowers fixed borrowing costs",
     "The conversion price must always equal par value"
    ],
-   "a": 0,
+   "a": 2,
    "w": [
-    "Correct: debt does not add shares at issuance, and the lower coupon reduces the fixed cost of borrowing.",
-    "Wrong: convertible holders are creditors and do have a claim, ranking with subordinated debt.",
     "Wrong: convertibles pay interest like any other bond; the conversion option does not defer coupons.",
+    "Wrong: convertible holders are creditors and do have a claim, ranking with subordinated debt.",
+    "Correct: debt does not add shares at issuance, and the lower coupon reduces the fixed cost of borrowing.",
     "Wrong: the conversion price is set in the indenture and the ratio is par divided by that price, not equal to par."
    ]
   },
@@ -992,17 +1040,17 @@
    "r": "3.1.4",
    "k": "concept",
    "d": 1,
-   "q": "A bond issued outside the United States, denominated in US dollars and not registered with the SEC is called a:",
+   "q": "A dollar-denominated bond sold outside the United States and not registered with the SEC is called a:",
    "o": [
-    "Eurodollar deposit",
     "Eurodollar bond",
+    "Eurodollar deposit",
     "Treasury receipt",
     "Collateral trust bond"
    ],
-   "a": 1,
+   "a": 0,
    "w": [
-    "Wrong: a Eurodollar deposit is a dollar balance held at a bank abroad, not a bond.",
     "Correct: Eurodollar bonds are issued and traded outside the US but denominated in US dollars.",
+    "Wrong: a Eurodollar deposit is a dollar balance held at a bank abroad, not a bond.",
     "Wrong: Treasury receipts are zero-coupons created by broker-dealers from Treasury cash flows.",
     "Wrong: a collateral trust bond is secured by financial assets and has nothing to do with the place of issue."
    ]
@@ -1015,15 +1063,15 @@
    "q": "A client keeps US dollars in an account at a bank in Switzerland. How is this holding best described?",
    "o": [
     "A Eurodollar bond",
-    "A Treasury receipt",
     "A Eurodollar deposit",
+    "A Treasury receipt",
     "A foreign-currency bond"
    ],
-   "a": 2,
+   "a": 1,
    "w": [
     "Wrong: a bond is a debt security; the client simply holds a bank balance.",
-    "Wrong: Treasury receipts are broker-dealer zero-coupon securities, unrelated to a bank account.",
     "Correct: US dollars held in a bank outside the US are Eurodollar deposits.",
+    "Wrong: Treasury receipts are broker-dealer zero-coupon securities, unrelated to a bank account.",
     "Wrong: the balance is denominated in US dollars, not a foreign currency, and it is not a bond."
    ]
   },
@@ -1054,17 +1102,17 @@
    "d": 3,
    "q": "All of the following are true of Eurodollar bonds EXCEPT:",
    "o": [
-    "They are registered with the SEC",
+    "They trade outside the United States",
     "They are denominated in US dollars",
     "They are issued outside the United States",
-    "They trade outside the United States"
+    "They are registered with the SEC"
    ],
-   "a": 0,
+   "a": 3,
    "w": [
-    "Correct: Eurodollar bonds are not registered with the SEC, so this statement is the false one.",
+    "Wrong: this is true; they are issued and trade outside the United States.",
     "Wrong: this is true; the dollar denomination is what defines the instrument.",
-    "Wrong: this is true; Eurodollar bonds are issued outside the US, for example in Argentina.",
-    "Wrong: this is true; they are issued and trade outside the United States."
+    "Wrong: this is true; Eurodollar bonds are sold outside the US.",
+    "Correct: Eurodollar bonds are not registered with the SEC, so this statement is the false one."
    ]
   },
   {
@@ -1075,7 +1123,7 @@
    "q": "Interest paid on a corporate bond is generally:",
    "o": [
     "Exempt from state and local tax but taxable federally",
-    "Taxable as ordinary income at the federal, state and local levels",
+    "Taxed as ordinary income by the federal, state and local governments",
     "Exempt from federal tax but taxable by the state",
     "Taxed only when the bond is sold"
    ],
@@ -1092,18 +1140,18 @@
    "r": "3.2.1.1",
    "k": "concept",
    "d": 1,
-   "q": "Which of the following is NOT a maturity at which Treasury bills are issued?",
+   "q": "Which of these is NOT a maturity at which Treasury bills are sold?",
    "o": [
-    "4 weeks",
-    "26 weeks",
     "2 years",
+    "26 weeks",
+    "4 weeks",
     "52 weeks"
    ],
-   "a": 2,
+   "a": 0,
    "w": [
-    "Wrong: a four-week bill is one of the standard T-bill maturities.",
-    "Wrong: 26 weeks is a standard bill maturity.",
     "Correct: two years is a T-note maturity; bills mature in one year or less.",
+    "Wrong: 26 weeks is a standard bill maturity.",
+    "Wrong: a four-week bill is one of the standard T-bill maturities.",
     "Wrong: 52 weeks, one year, is the longest T-bill maturity."
    ]
   },
@@ -1116,15 +1164,15 @@
    "o": [
     "Monthly",
     "Only at maturity",
-    "Once a year",
-    "Every six months"
+    "Every six months",
+    "Once a year"
    ],
-   "a": 3,
+   "a": 2,
    "w": [
     "Wrong: monthly payments are characteristic of mortgage-backed securities.",
     "Wrong: paying only at maturity describes T-bills and zero-coupon securities such as STRIPS.",
-    "Wrong: annual payment is a common trap; Treasury coupons are paid twice a year.",
-    "Correct: T-notes and T-bonds pay interest semiannually."
+    "Correct: T-notes and T-bonds pay interest semiannually.",
+    "Wrong: annual payment is a common trap; Treasury coupons are paid twice a year."
    ]
   },
   {
@@ -1134,17 +1182,17 @@
    "d": 2,
    "q": "A Treasury note is quoted at an ask of 98.16. Assuming $1,000 par, what price in dollars will a buyer pay?",
    "o": [
-    "$985.00",
+    "$980.16",
     "$981.60",
     "$986.00",
-    "$980.16"
+    "$985.00"
    ],
-   "a": 0,
+   "a": 3,
    "w": [
-    "Correct: 98 16/32 = 98.5% of par; 98.5 × $10 = $985.00.",
+    "Wrong: this treats .16 as cents per bond; the quote is in 32nds of a point.",
     "Wrong: the digits after the decimal are 32nds, not hundredths of a dollar, so 16 is not 16 tenths.",
     "Wrong: this rounds incorrectly; 16/32 is exactly one half point, which is $5.",
-    "Wrong: this treats .16 as cents per bond; the quote is in 32nds of a point."
+    "Correct: 98 16/32 = 98.5% of par; 98.5 × $10 = $985.00."
    ]
   },
   {
@@ -1174,17 +1222,17 @@
    "d": 3,
    "q": "A dealer quotes a Treasury bond at 99.04 bid and 99.08 ask. What is the spread, in dollars, per $1,000 bond? (One 32nd equals $0.3125.)",
    "o": [
-    "$0.40",
-    "$4.00",
     "$1.25",
+    "$4.00",
+    "$0.40",
     "$12.50"
    ],
-   "a": 2,
+   "a": 0,
    "w": [
-    "Wrong: this treats the four ticks as 40 cents; each tick is $0.3125, not ten cents.",
-    "Wrong: this treats each tick as a whole dollar, which overstates the spread by more than three times.",
     "Correct: the spread is 8/32 − 4/32 = 4 ticks; 4 × $0.3125 = $1.25 per bond.",
-    "Wrong: this multiplies by 10 once too often; four ticks do not equal a full point and a quarter."
+    "Wrong: this treats each tick as a whole dollar, which overstates the spread by more than three times.",
+    "Wrong: this treats the four ticks as 40 cents; each tick is $0.3125, not ten cents.",
+    "Wrong: this is ten times too large; four ticks are only 4/32 of one point."
    ]
   },
   {
@@ -1196,15 +1244,15 @@
    "o": [
     "Quotes are based on a 365-day coupon yield",
     "The ask is higher than the bid, as with Treasury bonds",
-    "Quotes are expressed as a percentage of par in 32nds",
-    "The bid is higher than the ask because the discount is subtracted from face value"
+    "The bid is higher than the ask because the discount is subtracted from face value",
+    "Quotes are expressed as a percentage of par in 32nds"
    ],
-   "a": 3,
+   "a": 2,
    "w": [
     "Wrong: bills use a discounted yield basis on a 360-day year.",
     "Wrong: that ordering applies to notes and bonds, which are quoted by price rather than discount.",
-    "Wrong: 32nds are used for notes and bonds, while bills are quoted by annualized discount.",
-    "Correct: bills are quoted by discount yield, so the buyer’s bid is a bigger discount than the seller’s ask."
+    "Correct: bills are quoted by discount yield, so the buyer’s bid is a bigger discount than the seller’s ask.",
+    "Wrong: 32nds are used for notes and bonds, while bills are quoted by annualized discount."
    ]
   },
   {
@@ -1214,16 +1262,16 @@
    "d": 2,
    "q": "Imani wants a newly issued Treasury security that pays a fixed coupon every six months and matures in seven years. Which security fits?",
    "o": [
-    "Treasury note",
-    "Treasury bill",
     "Treasury bond",
+    "Treasury bill",
+    "Treasury note",
     "Treasury STRIP"
    ],
-   "a": 0,
+   "a": 2,
    "w": [
-    "Correct: notes are issued with 2, 3, 5, 7 or 10-year maturities and pay semiannual interest.",
-    "Wrong: bills mature in one year or less and pay no coupons.",
     "Wrong: Treasury bonds are currently issued with a 30-year maturity.",
+    "Wrong: bills mature in one year or less and pay no coupons.",
+    "Correct: notes are issued with 2, 3, 5, 7 or 10-year maturities and pay semiannual interest.",
     "Wrong: STRIPS are zero-coupon securities and pay no semiannual interest."
    ]
   },
@@ -1235,16 +1283,16 @@
    "q": "A 5-year Treasury note is stripped into separate securities, one for each interest payment and one for the principal. How many STRIPS result?",
    "o": [
     "5",
-    "11",
+    "21",
     "10",
-    "21"
+    "11"
    ],
-   "a": 1,
+   "a": 3,
    "w": [
     "Wrong: five would be annual coupons only, but Treasury notes pay twice a year and the principal needs its own strip.",
-    "Correct: 5 years × 2 = 10 coupon strips + 1 principal strip = 11 STRIPS.",
+    "Wrong: 21 is the figure for a 10-year note, not a 5-year note.",
     "Wrong: ten covers the semiannual coupons but omits the principal strip.",
-    "Wrong: 21 is the figure for a 10-year note, not a 5-year note."
+    "Correct: 5 years × 2 = 10 coupon strips + 1 principal strip = 11 STRIPS."
    ]
   },
   {
@@ -1255,15 +1303,15 @@
    "q": "What is a key advantage of a Treasury STRIP compared with a coupon-paying Treasury bond of similar maturity?",
    "o": [
     "Lower interest rate sensitivity",
-    "Higher current income",
     "No reinvestment rate risk",
+    "Higher current income",
     "Explicit covenants protecting holders"
    ],
-   "a": 2,
+   "a": 1,
    "w": [
     "Wrong: zero-coupon, long-term securities are actually more sensitive to rate changes.",
-    "Wrong: STRIPS provide no current income, since they are zero-coupon securities.",
     "Correct: STRIPS pay no coupons, so there are no payments to be reinvested at lower rates.",
+    "Wrong: STRIPS provide no current income, since they are zero-coupon securities.",
     "Wrong: Treasury securities carry the government’s backing, not indenture covenants."
    ]
   },
@@ -1274,17 +1322,17 @@
    "d": 2,
    "q": "Treasury receipts differ from Treasury STRIPS because receipts are:",
    "o": [
-    "Coupon-paying securities",
+    "Technically obligations of the broker-dealer that created them",
     "Direct obligations of the US Treasury",
     "Issued only in non-marketable form",
-    "Technically obligations of the broker-dealer that created them"
+    "Coupon-paying securities"
    ],
-   "a": 3,
+   "a": 0,
    "w": [
-    "Wrong: receipts are zero-coupon bonds, like STRIPS.",
+    "Correct: receipts are structured by broker-dealers and backed by Treasury cash flows but are the dealer’s obligation.",
     "Wrong: that describes STRIPS, which are part of the Treasury’s own program.",
     "Wrong: receipts can trade; non-marketable securities such as Series I savings bonds cannot.",
-    "Correct: receipts are structured by broker-dealers and backed by Treasury cash flows but are the dealer’s obligation."
+    "Wrong: receipts are zero-coupon bonds, like STRIPS."
    ]
   },
   {
@@ -1336,15 +1384,15 @@
    "o": [
     "Taxable at federal, state and local levels",
     "Exempt from federal tax but taxable by the state",
-    "Taxable federally but exempt from state and local income tax",
-    "Fully exempt from all income taxes"
+    "Fully exempt from all income taxes",
+    "Taxable federally but exempt from state and local income tax"
    ],
-   "a": 2,
+   "a": 3,
    "w": [
     "Wrong: that is how corporate bond interest is taxed, without the Treasury state exemption.",
     "Wrong: this reverses the actual treatment.",
-    "Correct: Treasury interest is federally taxable and exempt from state and local income tax.",
-    "Wrong: Treasury interest is subject to federal tax."
+    "Wrong: Treasury interest is subject to federal tax.",
+    "Correct: Treasury interest is federally taxable and exempt from state and local income tax."
    ]
   },
   {
@@ -1356,15 +1404,15 @@
    "o": [
     "I, III and IV only",
     "I and II only",
-    "II and III only",
-    "I only"
+    "I only",
+    "II and III only"
    ],
-   "a": 3,
+   "a": 2,
    "w": [
     "Wrong: foreign debt and CMOs are taxable by state and local authorities; only the Treasury is exempt.",
     "Wrong: corporate bond interest is fully taxable at state and local levels.",
-    "Wrong: neither corporate bonds nor foreign debt securities receive a state and local exemption.",
-    "Correct: of these, only Treasury interest is exempt from state and local tax."
+    "Correct: of these, only Treasury interest is exempt from state and local tax.",
+    "Wrong: neither corporate bonds nor foreign debt securities receive a state and local exemption."
    ]
   },
   {
@@ -1372,17 +1420,17 @@
    "r": "3.3",
    "k": "concept",
    "d": 1,
-   "q": "Which issuer’s securities are backed by the full faith and credit of the US government?",
+   "q": "Which of these issuers has securities carrying the explicit full faith and credit guarantee of the US government?",
    "o": [
-    "Ginnie Mae",
     "Freddie Mac",
+    "Ginnie Mae",
     "Fannie Mae",
     "Corporations that securitize mortgages"
    ],
-   "a": 0,
+   "a": 1,
    "w": [
-    "Correct: GNMA is a government agency whose securities carry explicit full faith and credit backing.",
     "Wrong: Freddie Mac also carries only implied backing.",
+    "Correct: GNMA is a government agency whose securities carry explicit full faith and credit backing.",
     "Wrong: Fannie Mae carries only implied government backing.",
     "Wrong: private corporations have no government guarantee."
    ]
@@ -1394,15 +1442,15 @@
    "d": 2,
    "q": "Mortgage rates fall sharply. What is the main risk to a holder of a mortgage pass-through certificate?",
    "o": [
-    "Extension risk, with maturity lengthening",
     "Prepayment risk, with principal returned early and reinvested at lower rates",
+    "Extension risk, with maturity lengthening",
     "A large price gain as the average life rises",
     "No risk, since the underlying mortgages are guaranteed"
    ],
-   "a": 1,
+   "a": 0,
    "w": [
-    "Wrong: extension risk arises when rates rise and prepayments slow.",
     "Correct: falling rates trigger refinancing, shortening the life of the pool and forcing reinvestment at lower yields.",
+    "Wrong: extension risk arises when rates rise and prepayments slow.",
     "Wrong: the average life shortens, not rises, and the price does not benefit much because it behaves like a short-term security.",
     "Wrong: pass-through holders still face prepayment risk regardless of credit support."
    ]
@@ -1416,15 +1464,15 @@
    "o": [
     "The security’s maturity shortens and its price rises",
     "Prepayments rise and the investor must reinvest at higher rates",
-    "Prepayments slow, the maturity extends and the price falls significantly",
-    "Monthly payments stop until rates fall"
+    "Monthly payments stop until rates fall",
+    "Prepayments slow, the maturity extends and the price falls significantly"
    ],
-   "a": 2,
+   "a": 3,
    "w": [
     "Wrong: maturity extends, not shortens, and prices of long-term securities fall.",
     "Wrong: prepayments fall when rates rise because there is no incentive to refinance.",
-    "Correct: borrowers keep low-rate mortgages longer, so the security lengthens and its price drops sharply.",
-    "Wrong: borrowers keep making monthly payments, which continue to pass through."
+    "Wrong: borrowers keep making monthly payments, which continue to pass through.",
+    "Correct: borrowers keep low-rate mortgages longer, so the security lengthens and its price drops sharply."
    ]
   },
   {
@@ -1436,15 +1484,15 @@
    "o": [
     "Is a direct obligation of the US Treasury",
     "Is backed by credit card receivables",
-    "Pays no principal to investors",
-    "Is divided by broker-dealers into tranches with different maturity and risk profiles"
+    "Is divided by broker-dealers into tranches with different maturity and risk profiles",
+    "Pays no principal to investors"
    ],
-   "a": 3,
+   "a": 2,
    "w": [
     "Wrong: CMOs are structured by broker-dealers and are not Treasury obligations.",
     "Wrong: credit card receivables back ABS, not CMOs.",
-    "Wrong: CMOs pay both interest and principal.",
-    "Correct: CMOs are structured into tranches to address prepayment and extension risk."
+    "Correct: CMOs are structured into tranches to address prepayment and extension risk.",
+    "Wrong: CMOs pay both interest and principal."
    ]
   },
   {
@@ -1454,17 +1502,17 @@
    "d": 2,
    "q": "An asset-backed security may be backed by all of the following EXCEPT:",
    "o": [
-    "The taxing power of a municipality",
+    "Auto loans",
     "Credit card receivables",
     "Aircraft leases",
-    "Auto loans"
+    "The taxing power of a municipality"
    ],
-   "a": 0,
+   "a": 3,
    "w": [
-    "Correct: taxing power backs general obligation municipal bonds, not asset-backed securities.",
+    "Wrong: auto loans are a common ABS asset pool.",
     "Wrong: credit card debt is a classic ABS collateral pool.",
     "Wrong: aircraft leases are an example of more complex cash flows used for ABS.",
-    "Wrong: auto loans are a common ABS asset pool."
+    "Correct: taxing power backs general obligation municipal bonds, not asset-backed securities."
    ]
   },
   {
@@ -1475,15 +1523,15 @@
    "q": "How do mortgage-backed pass-through securities typically pay investors?",
    "o": [
     "Semiannually, interest only",
-    "Monthly, with interest and a share of principal",
     "Once a year, interest only",
+    "Monthly, with interest and a share of principal",
     "Only at maturity, with a lump sum"
    ],
-   "a": 1,
+   "a": 2,
    "w": [
     "Wrong: semiannual interest-only payments describe Treasury notes and bonds.",
-    "Correct: homeowners’ monthly payments of interest and principal are passed through to investors.",
     "Wrong: MBS investors receive payments every month and also receive principal.",
+    "Correct: homeowners’ monthly payments of interest and principal are passed through to investors.",
     "Wrong: a single lump sum at maturity describes zero-coupon securities."
    ]
   },
@@ -1494,16 +1542,16 @@
    "d": 2,
    "q": "A Treasury note quote shows a bid of 105.08 and an ask of 12. What does the ask represent?",
    "o": [
-    "12/32 of par, or $375",
-    "105.12% of par, or $1,051.20 on $1,000",
     "105 12/32% of par, or $1,053.75 on $1,000",
+    "105.12% of par, or $1,051.20 on $1,000",
+    "12/32 of par, or $375",
     "105 and 12 basis points"
    ],
-   "a": 2,
+   "a": 0,
    "w": [
-    "Wrong: the 105 whole points still apply, so the price is far above 12/32 of par.",
-    "Wrong: this treats 12 as hundredths; the digits are 32nds.",
     "Correct: the ask shows only the 32nds, 105 and 12/32, which is 105.375% of par, or $1,053.75.",
+    "Wrong: this treats 12 as hundredths; the digits are 32nds.",
+    "Wrong: the 105 whole points still apply, so the price is far above 12/32 of par.",
     "Wrong: the ask is expressed in 32nds of a point, not basis points."
    ]
   },
@@ -1515,16 +1563,16 @@
    "q": "Series I savings bonds issued by the Treasury are best described as:",
    "o": [
     "Quoted in 32nds of a point",
-    "Marketable securities that trade in the secondary market",
+    "Non-marketable securities that cannot be resold",
     "Zero-coupon STRIPS",
-    "Non-marketable securities that cannot be resold"
+    "Marketable securities that trade in the secondary market"
    ],
-   "a": 3,
+   "a": 1,
    "w": [
     "Wrong: 32nd quotations are used for marketable T-notes and T-bonds.",
-    "Wrong: marketable Treasuries are bills, notes, bonds, TIPS and STRIPS.",
+    "Correct: non-marketable government securities cannot be resold and have no secondary market.",
     "Wrong: STRIPS are marketable and are created by separating interest and principal.",
-    "Correct: non-marketable government securities cannot be resold and have no secondary market."
+    "Wrong: marketable Treasuries are bills, notes, bonds, TIPS and STRIPS."
    ]
   },
   {
@@ -1534,15 +1582,15 @@
    "d": 1,
    "q": "General obligation municipal bonds are backed by which of the following?",
    "o": [
-    "The full faith, credit and taxing power of the issuer",
     "Revenue from a specific facility",
+    "The full faith, credit and taxing power of the issuer",
     "A pledge of the issuer’s equipment",
     "A guarantee from the US Treasury"
    ],
-   "a": 0,
+   "a": 1,
    "w": [
-    "Correct: GO bonds rely on the issuer’s full faith and credit, mainly its power to tax.",
     "Wrong: facility revenue backs revenue bonds, not GOs.",
+    "Correct: GO bonds rely on the issuer’s full faith and credit, mainly its power to tax.",
     "Wrong: GO bonds are not backed by specific assets or equipment.",
     "Wrong: municipal bonds are not guaranteed by the US Treasury."
    ]
@@ -1555,15 +1603,15 @@
    "q": "Principal and interest on a revenue bond are paid from which source?",
    "o": [
     "The general taxing power of the municipality",
-    "Income generated by the financed project",
     "Federal government appropriations",
+    "Income generated by the financed project",
     "Property taxes of every resident"
    ],
-   "a": 1,
+   "a": 2,
    "w": [
     "Wrong: general taxing power backs GO bonds.",
-    "Correct: revenue bonds are repaid from the user fees and income of the project they finance.",
     "Wrong: revenue bonds do not rely on federal funding.",
+    "Correct: revenue bonds are repaid from the user fees and income of the project they finance.",
     "Wrong: property taxes are a typical GO source, not a source for revenue bonds."
    ]
   },
@@ -1576,15 +1624,15 @@
    "o": [
     "Revenue bond",
     "Industrial development revenue bond",
-    "General obligation bond",
-    "Bond anticipation note only"
+    "Bond anticipation note only",
+    "General obligation bond"
    ],
-   "a": 2,
+   "a": 3,
    "w": [
     "Wrong: a free facility generates no revenue to repay a revenue bond.",
     "Wrong: IDR bonds benefit a private corporation and are taxable.",
-    "Correct: non-revenue-producing community projects are financed with GO bonds backed by taxes.",
-    "Wrong: a BAN is short-term interim financing, not the long-term financing for the library."
+    "Wrong: a BAN is short-term interim financing, not the long-term financing for the library.",
+    "Correct: non-revenue-producing community projects are financed with GO bonds backed by taxes."
    ]
   },
   {
@@ -1594,17 +1642,17 @@
    "d": 2,
    "q": "A county issues bonds to build a toll bridge, to be repaid solely from toll collections. Which statement is true?",
    "o": [
-    "The issue typically requires voter approval through a bond referendum",
-    "The bonds are subject to the Trust Indenture Act of 1939",
+    "The bonds can be issued outside the county’s legislative debt limits",
+    "The bonds must satisfy the Trust Indenture Act of 1939",
     "The bonds are backed by the county’s full taxing power",
-    "The bonds can be issued outside the county’s legislative debt limits"
+    "The issue typically requires voter approval through a bond referendum"
    ],
-   "a": 3,
+   "a": 0,
    "w": [
-    "Wrong: referendums apply to GO bonds, not to revenue bonds.",
+    "Correct: because they are not backed by taxes, revenue bonds can be issued outside legislative debt limits.",
     "Wrong: municipal issues are not subject to the Act, even though indentures are standard.",
     "Wrong: a revenue bond is repaid only from pledged revenues, not by general taxes.",
-    "Correct: because they are not backed by taxes, revenue bonds can be issued outside legislative debt limits."
+    "Wrong: referendums apply to GO bonds, not to revenue bonds."
    ]
   },
   {
@@ -1635,15 +1683,15 @@
    "q": "Property taxes used to repay GO bonds are computed on a property’s:",
    "o": [
     "Market value",
-    "Assessed value",
     "Original purchase price",
+    "Assessed value",
     "Replacement cost"
    ],
-   "a": 1,
+   "a": 2,
    "w": [
     "Wrong: the assessed value, not the market value, is used to compute the tax.",
-    "Correct: property taxes are based on assessed value, which can differ from market value.",
     "Wrong: the purchase price is not the basis for the tax computation.",
+    "Correct: property taxes are based on assessed value, which can differ from market value.",
     "Wrong: replacement cost is not the tax base."
    ]
   },
@@ -1655,15 +1703,15 @@
    "q": "Which GO issuer would generally be viewed as offering investors the greatest safety?",
    "o": [
     "One with no taxing authority",
-    "One whose debt is at its debt limit",
     "One whose outstanding debt is far below its debt limit",
+    "One whose debt is at its debt limit",
     "One that issues only revenue bonds"
    ],
-   "a": 2,
+   "a": 1,
    "w": [
     "Wrong: GO safety depends on taxing authority, which this issuer lacks.",
-    "Wrong: an issuer at its limit has no flexibility and is viewed as riskier.",
     "Correct: ample room under the debt limit signals capacity to borrow and repay.",
+    "Wrong: an issuer at its limit has no flexibility and is viewed as riskier.",
     "Wrong: an issuer of only revenue bonds is not a GO issuer, and revenue bonds rely on facility income."
    ]
   },
@@ -1694,15 +1742,15 @@
    "d": 2,
    "q": "A city needs interim funding for a capital project until it can sell long-term bonds next year. Which instrument is it most likely to issue?",
    "o": [
-    "Bond anticipation note",
     "Tax anticipation note",
+    "Bond anticipation note",
     "Revenue anticipation note",
     "Commercial paper"
    ],
-   "a": 0,
+   "a": 1,
    "w": [
-    "Correct: BANs are repaid from the proceeds of the later long-term bond issue.",
     "Wrong: TANs are repaid from future tax receipts, not from bond proceeds.",
+    "Correct: BANs are repaid from the proceeds of the later long-term bond issue.",
     "Wrong: RANs are repaid from non-tax revenues the municipality expects to receive.",
     "Wrong: commercial paper is issued by corporations, not municipalities."
    ]
@@ -1715,16 +1763,16 @@
    "q": "A county needs cash now and expects ad valorem tax receipts in six months. Which short-term obligation fits?",
    "o": [
     "Bond anticipation note",
-    "Tax anticipation note",
+    "Certificate of deposit",
     "Banker’s acceptance",
-    "Certificate of deposit"
+    "Tax anticipation note"
    ],
-   "a": 1,
+   "a": 3,
    "w": [
     "Wrong: BANs are repaid from long-term bond proceeds, not tax receipts.",
-    "Correct: a TAN is issued in anticipation of future tax receipts and repaid from them.",
+    "Wrong: CDs are bank instruments, not municipal cash-flow notes.",
     "Wrong: BAs are bank-guaranteed time drafts used in trade finance.",
-    "Wrong: CDs are bank instruments, not municipal cash-flow notes."
+    "Correct: a TAN is issued in anticipation of future tax receipts and repaid from them."
    ]
   },
   {
@@ -1754,17 +1802,17 @@
    "d": 3,
    "q": "An Ohio resident purchases a Puerto Rico public purpose bond. How is the interest taxed?",
    "o": [
-    "Fully taxable",
+    "Exempt from federal, state and local tax",
     "Exempt from federal tax only",
     "Exempt from state tax only",
-    "Exempt from federal, state and local tax"
+    "Fully taxable"
    ],
-   "a": 3,
+   "a": 0,
    "w": [
-    "Wrong: this ignores the tax exemption for public purpose and territory bonds.",
+    "Correct: territory bonds are triple-tax-free anywhere in the US.",
     "Wrong: territory bond interest is also exempt from state and local tax, so the exemption goes further.",
     "Wrong: federal exemption applies as well, and for territories the state exemption holds regardless of residence.",
-    "Correct: territory bonds are triple-tax-free anywhere in the US."
+    "Wrong: this ignores the tax exemption for public purpose and territory bonds."
    ]
   },
   {
@@ -1774,17 +1822,17 @@
    "d": 1,
    "q": "An investor owns $25,000 par of a 4% public purpose municipal bond. What is the annual federally tax-exempt interest?",
    "o": [
-    "$1,000",
+    "$4,000",
     "$250",
     "$100",
-    "$4,000"
+    "$1,000"
    ],
-   "a": 0,
+   "a": 3,
    "w": [
-    "Correct: $25,000 × 4% = $1,000 per year, exempt from federal income tax.",
+    "Wrong: $4,000 would be 16% of $25,000.",
     "Wrong: $250 is 1% of par, not 4%.",
     "Wrong: $100 is only 4% of $2,500.",
-    "Wrong: $4,000 would be 16% of $25,000."
+    "Correct: $25,000 × 4% = $1,000 per year, exempt from federal income tax."
    ]
   },
   {
@@ -1814,16 +1862,16 @@
    "d": 3,
    "q": "An investor in the 40% bracket compares a 3.6% municipal bond with a 5.5% corporate bond of similar quality. Which statement is correct?",
    "o": [
-    "The municipal bond is better; its tax-equivalent yield is 5.04%",
-    "The corporate bond is better because 5.5% exceeds 3.6%",
     "The municipal bond is better; its tax-equivalent yield is 6.00%",
+    "The corporate bond is better because 5.5% exceeds 3.6%",
+    "The municipal bond is better; its tax-equivalent yield is 5.04%",
     "They are equal after tax"
    ],
-   "a": 2,
+   "a": 0,
    "w": [
-    "Wrong: the conclusion is right but 5.04% comes from multiplying by 1.4 instead of dividing by 0.6.",
-    "Wrong: comparing nominal yields ignores the tax; the corporate yield is only 3.3% after tax.",
     "Correct: 3.6% ÷ 0.60 = 6.00%, above 5.5%; the corporate nets 5.5% × 0.60 = 3.3%, below 3.6%.",
+    "Wrong: comparing nominal yields ignores the tax; the corporate yield is only 3.3% after tax.",
+    "Wrong: the conclusion is right but 5.04% comes from multiplying by 1.4 instead of dividing by 0.6.",
     "Wrong: the two are not equal; 6.00% versus 5.5% shows the muni is better."
    ]
   },
@@ -1836,15 +1884,15 @@
    "o": [
     "They are equal",
     "The municipal bond: 4.50% versus 2.10% for the corporate",
-    "The municipal bond, since tax-free always wins",
-    "The corporate bond: 4.90% after tax versus 4.50%"
+    "The corporate bond: 4.90% after tax versus 4.50%",
+    "The municipal bond, since tax-free always wins"
    ],
-   "a": 3,
+   "a": 2,
    "w": [
     "Wrong: after tax the two returns are 4.90% and 4.50%, not equal.",
     "Wrong: 2.10% is the tax paid on the corporate interest, not what remains after tax.",
-    "Wrong: tax-free does not always win; the yield difference and the bracket matter.",
-    "Correct: corporate after tax = 7% × (1 − 0.30) = 4.90%, which beats the tax-free 4.50% (tax-equivalent yield 6.43%)."
+    "Correct: corporate after tax = 7% × (1 − 0.30) = 4.90%, which beats the tax-free 4.50% (tax-equivalent yield 6.43%).",
+    "Wrong: tax-free does not always win; the yield difference and the bracket matter."
    ]
   },
   {
@@ -1854,15 +1902,15 @@
    "d": 2,
    "q": "An industrial development revenue (IDR) bond is best described as:",
    "o": [
-    "Backed by lease payments from a private corporation, so its credit follows the corporation",
     "A GO bond backed by the issuer’s taxing power",
+    "Backed by lease payments from a private corporation, so its credit follows the corporation",
     "A bond whose interest is always federally tax-exempt",
     "A short-term note repaid by tax receipts"
    ],
-   "a": 0,
+   "a": 1,
    "w": [
-    "Correct: IDR bonds finance facilities leased to a company, and the lease payments back the debt.",
     "Wrong: taxing power does not back IDRs; they are revenue-type bonds.",
+    "Correct: IDR bonds finance facilities leased to a company, and the lease payments back the debt.",
     "Wrong: IDRs benefit a private corporation and are generally taxable.",
     "Wrong: IDRs are long-term bonds, not tax anticipation notes."
    ]
@@ -1875,16 +1923,16 @@
    "q": "Where can an investor find whether a municipal bond is subject to the alternative minimum tax (AMT)?",
    "o": [
     "In the issuer’s trust indenture only",
-    "On the front cover of the official statement",
+    "In the issuer’s annual proxy statement",
     "On the customer’s new account form",
-    "In the issuer’s annual proxy statement"
+    "On the front cover of the official statement"
    ],
-   "a": 1,
+   "a": 3,
    "w": [
-    "Wrong: AMT status is not disclosed only in the trust indenture.",
-    "Correct: the official statement’s front cover indicates AMT status, and the trade confirmation also discloses it.",
+    "Wrong: the indenture sets out issuer covenants; AMT status is shown on the official statement cover and the trade confirmation.",
+    "Wrong: proxy statements relate to shareholder voting.",
     "Wrong: a new account form records customer data, not bond tax features.",
-    "Wrong: proxy statements relate to shareholder voting."
+    "Correct: the official statement’s front cover indicates AMT status, and the trade confirmation also discloses it."
    ]
   },
   {
@@ -1894,16 +1942,16 @@
    "d": 3,
    "q": "Which investor is the LEAST suitable candidate for public purpose municipal bonds?",
    "o": [
-    "A high-income buy-and-hold investor",
-    "An executive in the highest tax bracket",
     "A pension fund that is already tax-sheltered",
+    "An executive in the highest tax bracket",
+    "A high-income buy-and-hold investor",
     "A high-income investor seeking tax-free current income"
    ],
-   "a": 2,
+   "a": 0,
    "w": [
-    "Wrong: high-income buy-and-hold investors are the typical muni buyers.",
-    "Wrong: a high-bracket investor benefits most from tax-free interest.",
     "Correct: tax-exempt interest adds nothing to an account that already shelters income, while accepting a lower yield.",
+    "Wrong: a high-bracket investor benefits most from tax-free interest.",
+    "Wrong: high-income buy-and-hold investors are the typical muni buyers.",
     "Wrong: high-income investors seeking tax-free income are the natural audience."
    ]
   },
@@ -1912,19 +1960,19 @@
    "r": "3.6.1",
    "k": "concept",
    "d": 1,
-   "q": "To be exempt from SEC registration under the Securities Act of 1933, commercial paper may have a maximum maturity of:",
+   "q": "Commercial paper is exempt from SEC registration under the Securities Act of 1933 if its maturity does not exceed:",
    "o": [
     "90 days",
     "180 days",
-    "365 days",
-    "270 days"
+    "270 days",
+    "365 days"
    ],
-   "a": 3,
+   "a": 2,
    "w": [
-    "Wrong: 90 days is shorter than the limit; commercial paper may go further.",
+    "Wrong: 90 days is well under the actual ceiling, which is longer.",
     "Wrong: 180 days is the typical maximum for banker’s acceptances, not commercial paper.",
-    "Wrong: one year is too long for the exemption.",
-    "Correct: commercial paper maturities may not exceed 270 days to qualify for the registration exemption."
+    "Correct: commercial paper maturities may not exceed 270 days to qualify for the registration exemption.",
+    "Wrong: one year is too long for the exemption."
    ]
   },
   {
@@ -1934,15 +1982,15 @@
    "d": 2,
    "q": "Which statement describes a negotiable certificate of deposit?",
    "o": [
-    "It has a minimum face value of $100,000 and can be sold to other investors",
     "It can only be redeemed at the issuing bank",
+    "It has a minimum face value of $100,000 and can be sold to other investors",
     "It is not considered a security",
     "It pays federally tax-exempt interest"
    ],
-   "a": 0,
+   "a": 1,
    "w": [
-    "Correct: negotiable CDs are transferable securities with a $100,000 minimum face value.",
     "Wrong: that describes a non-negotiable CD, which cannot be resold.",
+    "Correct: negotiable CDs are transferable securities with a $100,000 minimum face value.",
     "Wrong: negotiable CDs are securities and trade in the secondary market.",
     "Wrong: CD interest is taxable."
    ]
@@ -1955,15 +2003,15 @@
    "q": "Mia buys a retail CD from her local bank that she cannot sell to anyone else. Which statement is true?",
    "o": [
     "It is a security that trades in the money market",
-    "It is non-negotiable, is not considered a security and does not trade in the money market",
     "It is a banker’s acceptance",
+    "It is non-negotiable, is not a security and does not trade in the money market",
     "It is a short-term municipal note"
    ],
-   "a": 1,
+   "a": 2,
    "w": [
     "Wrong: because it cannot be traded, it is not a security and is not a money market instrument.",
-    "Correct: non-negotiable CDs can only be redeemed by the issuing bank and are not money market securities.",
     "Wrong: banker’s acceptances are negotiable time drafts guaranteed by a bank.",
+    "Correct: non-negotiable CDs can only be redeemed by the issuing bank and are not money market securities.",
     "Wrong: a CD is issued by a bank, not by a municipality."
    ]
   },
@@ -1974,16 +2022,16 @@
    "d": 2,
    "q": "Banker’s acceptances were traditionally used to:",
    "o": [
-    "Raise equity capital",
-    "Fund municipal capital projects",
     "Finance international trade",
+    "Fund municipal capital projects",
+    "Raise equity capital",
     "Finance mortgage pools"
    ],
-   "a": 2,
+   "a": 0,
    "w": [
-    "Wrong: BAs are debt instruments, not equity.",
-    "Wrong: municipal capital projects are financed with municipal bonds and notes.",
     "Correct: importers used BAs, guaranteed by their banks, to pay exporters.",
+    "Wrong: municipal capital projects are financed with municipal bonds and notes.",
+    "Wrong: BAs are debt instruments, not equity.",
     "Wrong: mortgage pools are financed through MBS and CMOs."
    ]
   },
@@ -2025,6 +2073,126 @@
     "Wrong: ADRs and preferred stock are equities, and no equities trade in the money market.",
     "Wrong: this wrongly includes the ADR, which is an equity.",
     "Wrong: neither ADRs nor preferred stock are money market instruments."
+   ]
+  },
+  {
+   "id": "3-q66",
+   "r": "3.2.1",
+   "k": "scenario",
+   "d": 2,
+   "q": "A retail investor wants to buy newly issued Treasury bills at auction but does not want to risk missing out on the order. What should the investor submit?",
+   "o": [
+    "A competitive bid at the lowest yield",
+    "A noncompetitive tender",
+    "A limit order on an exchange",
+    "A request through a municipal advisor"
+   ],
+   "a": 1,
+   "w": [
+    "Wrong: a competitive bid can be rejected if it is not accepted at the auction, so the fill is not assured.",
+    "Correct: a noncompetitive tender ensures the individual’s order is filled at auction.",
+    "Wrong: Treasury securities are sold through auctions and then trade over the counter, not on an exchange.",
+    "Wrong: municipal advisors work with municipal issuers and play no role in Treasury auctions."
+   ]
+  },
+  {
+   "id": "3-q67",
+   "r": "3.4",
+   "k": "concept",
+   "d": 2,
+   "q": "Compared with Treasury securities, the secondary market for municipal bonds is best described as:",
+   "o": [
+    "Highly liquid, because all issues are interchangeable",
+    "Highly liquid, because municipal bonds trade on the NYSE",
+    "Illiquid, because each issue is unique",
+    "Non-existent, because municipal bonds cannot be resold"
+   ],
+   "a": 2,
+   "w": [
+    "Wrong: municipal issues are distinct from one another, which is exactly why trading is thin.",
+    "Wrong: municipal bonds primarily trade over the counter through dealers, not on an exchange.",
+    "Correct: each municipal issue has its own credit structure and terms, so a particular bond is rarely available in the market.",
+    "Wrong: municipal bonds can be resold; the market is simply thin."
+   ]
+  },
+  {
+   "id": "3-q68",
+   "r": "3.1.5",
+   "k": "concept",
+   "d": 2,
+   "q": "Why is the bid–ask spread on a typical corporate bond wider than on the same issuer’s common stock?",
+   "o": [
+    "The bond is always unsecured",
+    "The bond trades on an exchange with fewer market makers",
+    "The bond pays interest only at maturity",
+    "The bond trades less often and dealers need compensation for the risk of holding it"
+   ],
+   "a": 3,
+   "w": [
+    "Wrong: many corporate bonds are secured, and security does not explain the spread.",
+    "Wrong: corporate bonds mostly trade over the counter, not on an exchange.",
+    "Wrong: most corporate bonds pay periodic interest, and payment timing is not the reason for a wide spread.",
+    "Correct: a large issuer may have many bond issues, so each trades infrequently and dealers charge a wider spread for carrying inventory."
+   ]
+  },
+  {
+   "id": "3-q69",
+   "r": "3.3",
+   "k": "concept",
+   "d": 2,
+   "q": "Compared with Treasury securities, agency securities (other than GNMA) generally offer:",
+   "o": [
+    "Lower yields, because they are backed by full faith and credit",
+    "Higher yields, because they lack explicit Treasury backing",
+    "The same yields, because both are government related",
+    "State and local tax exemption that Treasuries lack"
+   ],
+   "a": 1,
+   "w": [
+    "Wrong: only GNMA carries the full faith and credit guarantee; the others carry implied backing.",
+    "Correct: without explicit Treasury backing, agency debt must pay a higher yield than Treasuries.",
+    "Wrong: agency yields exceed Treasury yields because the backing is weaker.",
+    "Wrong: Treasury interest is the one exempt from state and local tax; no such advantage is given to agencies in this comparison."
+   ]
+  },
+  {
+   "id": "3-q70",
+   "r": "3.4",
+   "k": "concept",
+   "d": 1,
+   "q": "A municipal advisor to a city generally helps the city with which of the following?",
+   "o": [
+    "Underwriting the bonds as the exclusive buyer",
+    "Guaranteeing repayment of the bonds",
+    "Deciding which type of securities to issue and structuring the terms",
+    "Acting as the independent trustee for bondholders"
+   ],
+   "a": 2,
+   "w": [
+    "Wrong: advising the issuer is different from buying the bonds as a dealer.",
+    "Wrong: an advisor gives advice and does not guarantee repayment.",
+    "Correct: the advisor counsels the issuer on the type, structure and terms of the offering.",
+    "Wrong: the trustee represents bondholders, while the advisor works for the issuer."
+   ]
+  },
+  {
+   "id": "3-q71",
+   "r": "3.6",
+   "k": "scenario",
+   "d": 2,
+   "q": "An individual investor wants exposure to the money market. What is the most common way for individuals to participate?",
+   "o": [
+    "Through a money market mutual fund",
+    "By buying shares of preferred stock",
+    "By buying single negotiable CDs of $100 million",
+    "By purchasing ADRs"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: the money market is mainly institutional, so individuals typically use pooled money market funds.",
+    "Wrong: preferred stock is an equity, and equities do not trade in the money market.",
+    "Wrong: negotiable CDs have a $100,000 minimum, and an individual does not need $100 million; pooled funds are the usual route.",
+    "Wrong: ADRs are equity-related securities and do not trade in the money market."
    ]
   }
  ]

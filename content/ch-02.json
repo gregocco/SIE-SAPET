@@ -6,7 +6,7 @@
  "brief": [
   {
    "h": "Bonds and forms of ownership",
-   "md": "- A **bond** = a **loan** from the investor to the issuer (corporation, government or municipality). Bondholders are **creditors**, not owners, and rank **ahead of shareholders** in bankruptcy or liquidation.\n- Bonds and other securities paying a regular income stream are **fixed-income securities**. Issuers use bonds as an alternative to stock for raising capital (**debt financing**).\n- The investor is promised the **principal** back plus **interest**.\n\n| Form | Who holds the record | Interest | Status |\n|---|---|---|---|\n| **Bearer** | **Nobody** — issuer keeps no record | Clip **coupon**, present to a paying agent (typically any bank) | Not issued since **1983**; a few still trade; seller makes **physical delivery** |\n| **Fully registered** | Owner’s name recorded with **issuer or transfer agent** | Sent **automatically** to the owner; no coupons | Certificate may exist, but it has no coupons |\n| **Book-entry** | Recorded **electronically by a central depository** | Automatic | **Most common** method today; no physical transfer |\n\n- Registered and book-entry bonds are protected from **loss or theft** and pay principal and interest automatically.\n- Difference between registered and book-entry: **who keeps the records** (issuer/transfer agent vs central depository).\n> **Exam tip** Bearer = whoever holds it gets paid. Book-entry = most common. Any “benefit of registered/book-entry” answer never includes physical coupons."
+   "md": "- A **bond** = a **loan** from the investor to the issuer (corporation, government or municipality). Bondholders are **creditors**, not owners, and rank **ahead of shareholders** in bankruptcy or liquidation.\n- Bonds and other securities paying a regular income stream are **fixed-income securities**. Issuers use bonds as an alternative to stock for raising capital (**debt financing**).\n- The investor is promised the **principal** back plus **interest**.\n\n| Form | Who holds the record | Interest | Status |\n|---|---|---|---|\n| **Bearer** | **Nobody** — issuer keeps no record | Clip **coupon**, present to a paying agent (typically any bank) | Commonly issued until **1983**, now no longer issued; a few still trade; seller makes **physical delivery** |\n| **Fully registered** | Owner’s name recorded with **issuer or transfer agent** | Sent **automatically** to the owner; no coupons | Certificate may exist, but it has no coupons |\n| **Book-entry** | Recorded **electronically by a central depository** | Automatic | **Most common** method today; no physical transfer |\n\n- Registered and book-entry bonds are protected from **loss or theft** and pay principal and interest automatically.\n- Difference between registered and book-entry: **who keeps the records** (issuer/transfer agent vs central depository).\n> **Exam tip** Bearer = whoever holds it gets paid. Book-entry = most common. Any “benefit of registered/book-entry” answer never includes physical coupons."
   },
   {
    "h": "Par value, quotes and price conversion",
@@ -52,7 +52,7 @@
   "**Premium vs discount ladder.** Premium: NY highest, YTC lowest. Discount: NY lowest, YTC highest. At par all four are equal.",
   "**YTM above or below the coupon.** YTM greater than coupon = **discount**; YTM lower than coupon = **premium**. Do not reverse it.",
   "**Call vs put.** Call = **issuer’s** right (investor demands a higher rate). Put = **investor’s** right (investor accepts a lower rate).",
-  "**When the issuer calls.** Issuers call when rates are **falling** (refunding). Rising rates make the old low coupon attractive, so no call.",
+  "**When the issuer calls.** Issuers call when rates are **falling** (refunding): they can replace an expensive coupon with a cheaper one. When rates rise, the issuer is happy to keep its low coupon, so a call is unlikely.",
   "**Call proceeds.** Holder receives **par + final coupon + premium**, then interest stops. Quoting only par or only par plus premium is wrong.",
   "**Callable after 10 years.** Means any time from year 10 **through maturity**, not only in year 10. Call protection is the period before.",
   "**Accrued interest day count.** Include the **last coupon date**, exclude the **settlement date**. Corporate/muni/agency use **30/360**; Treasuries use **actual/365**.",
@@ -236,7 +236,7 @@
   },
   {
    "t": "Investment-grade bond",
-   "d": "A bond rated BBB/Baa3 or higher, with lower default risk and lower yield."
+   "d": "A bond rated BBB−/Baa3 or higher, with lower default risk and lower yield."
   },
   {
    "t": "High-yield (junk) bond",
@@ -287,7 +287,7 @@
   {
    "id": "2-c03",
    "f": "When did bearer bond issuance stop, and how do the few survivors trade?",
-   "b": "Not issued since **1983**; a few trade in the secondary market with **physical delivery** of the certificate.",
+   "b": "Commonly issued until **1983**, no longer issued; a few still trade in the secondary market with **physical delivery** of the certificate.",
    "r": "2.1.1"
   },
   {
@@ -613,6 +613,48 @@
    "f": "Bond bought at $920 with 8 years left. Annual accretion and basis after year 3?",
    "b": "$80 ÷ 8 = **$10** a year; basis = $920 + $30 = **$950**.",
    "r": "2.5"
+  },
+  {
+   "id": "2-c58",
+   "f": "Which bonds are generally not callable, and which usually are?",
+   "b": "**Federal government bonds are not callable.** Most corporate and municipal bonds with maturities over **10 years** are callable.",
+   "r": "2.1.9"
+  },
+  {
+   "id": "2-c59",
+   "f": "Why does a puttable bond pay less interest than a straight bond?",
+   "b": "The put protects the **investor**, so investors accept a **lower rate** than on a comparable non-puttable bond.",
+   "r": "2.1.9.1"
+  },
+  {
+   "id": "2-c60",
+   "f": "Term bonds versus serial bonds.",
+   "b": "Term: the whole issue matures on **one date**. Serial: a portion of the issue matures **each year**.",
+   "r": "2.1.8"
+  },
+  {
+   "id": "2-c61",
+   "f": "How is accrued interest received by a seller taxed, and does it affect cost basis?",
+   "b": "Taxed as **ordinary interest income**; it does **not** change the bond’s cost basis.",
+   "r": "2.4"
+  },
+  {
+   "id": "2-c62",
+   "f": "What is the dated date, and how does it affect a new issue’s first coupon?",
+   "b": "The date from which interest on a new issue is counted. The first payment runs from the dated date to the first coupon date, so it may cover an **irregular period** (longer or shorter than six months).",
+   "r": "2.4"
+  },
+  {
+   "id": "2-c63",
+   "f": "Which earns more, government or corporate bonds, and why?",
+   "b": "**Corporate.** Government bonds (especially US federal) have the **lowest default risk and lowest returns**; corporates carry more credit risk and pay more.",
+   "r": "2.3.5.1"
+  },
+  {
+   "id": "2-c64",
+   "f": "Why do floating-rate bonds have little interest rate risk?",
+   "b": "Their coupon **resets with a benchmark**, so the price does not fall much when market rates rise. This does not hold for fixed-coupon bonds.",
+   "r": "2.1.4.1"
   }
  ],
  "questions": [
@@ -623,16 +665,16 @@
    "d": 1,
    "q": "Which form of bond ownership leaves the issuer with no record of who owns the bond?",
    "o": [
-    "Bearer",
-    "Fully registered",
     "Book-entry",
+    "Fully registered",
+    "Bearer",
     "Registered to a transfer agent"
    ],
-   "a": 0,
+   "a": 2,
    "w": [
-    "Correct: the issuer keeps no ownership record, so whoever physically holds the certificate and coupons is paid.",
-    "Wrong: the owner’s name is recorded with the issuer or its transfer agent, so a record clearly exists.",
     "Wrong: a central depository records ownership electronically, so ownership is fully documented.",
+    "Wrong: the owner’s name is recorded with the issuer or its transfer agent, so a record clearly exists.",
+    "Correct: the issuer keeps no ownership record, so whoever physically holds the certificate and coupons is paid.",
     "Wrong: the transfer agent is simply the party keeping the owner’s name on record, which is the opposite of no record."
    ]
   },
@@ -644,15 +686,15 @@
    "q": "All of the following are benefits of holding bonds in registered or book-entry form EXCEPT:",
    "o": [
     "protection against lost or stolen certificates",
-    "automatic payment of interest and principal",
     "physical coupons that the holder must clip",
+    "automatic payment of interest and principal",
     "electronic ownership and transfer"
    ],
-   "a": 2,
+   "a": 1,
    "w": [
     "Wrong: this is a genuine benefit because ownership is recorded and cannot be lost with a piece of paper.",
-    "Wrong: this is a genuine benefit since the owner never has to present anything to be paid.",
     "Correct: this is the feature of bearer bonds, not registered or book-entry, so it is not a benefit of these forms.",
+    "Wrong: this is a genuine benefit since the owner never has to present anything to be paid.",
     "Wrong: this is a real benefit of book-entry, where a depository simply changes its records."
    ]
   },
@@ -664,16 +706,16 @@
    "q": "What is the main difference between a fully registered bond and a book-entry bond?",
    "o": [
     "Registered bonds pay interest by coupon; book-entry bonds do not",
-    "Book-entry ownership is recorded by a central depository rather than the issuer or transfer agent",
+    "Registered bonds cannot be sold in the secondary market",
     "Book-entry bonds are payable to whoever holds the certificate",
-    "Registered bonds cannot be sold in the secondary market"
+    "Book-entry ownership is recorded by a central depository rather than the issuer or transfer agent"
    ],
-   "a": 1,
+   "a": 3,
    "w": [
     "Wrong: neither form uses coupons, so interest delivery is not the distinguishing feature.",
-    "Correct: the difference is who keeps the ownership records, which is the depository for book-entry bonds.",
+    "Wrong: registered bonds trade freely in the secondary market; only the ownership record held by the issuer or agent is updated.",
     "Wrong: that describes a bearer bond; book-entry has no certificate at all.",
-    "Wrong: registered bonds trade freely in the secondary market; only the ownership record held by the issuer or agent is updated."
+    "Correct: the difference is who keeps the ownership records, which is the depository for book-entry bonds."
    ]
   },
   {
@@ -693,7 +735,7 @@
     "Correct: 3/8 = 0.375, so 108.375 × 10 = $1,083.75 (convert the fraction, add to the whole number, multiply by 10).",
     "Wrong: this treats the fraction as 0.038 rather than 0.375, which misconverts the eighths.",
     "Wrong: this swaps digits; 108.375 multiplied by 10 is $1,083.75, not $1,038.75.",
-    "Wrong: this adds an extra 25 points; the quote is 108 and three-eighths, which is $1,083.75."
+    "Wrong: this overstates the price by $25 (adding 2.5 points); 3/8 is only 0.375 of a point, so the price is $1,083.75."
    ]
   },
   {
@@ -710,7 +752,7 @@
    ],
    "a": 1,
    "w": [
-    "Wrong: this divides by ten instead of multiplying; a quote of 96 means 96% of par.",
+    "Wrong: this treats the quote as dollars (5 × 96); each quote point is worth $10 per bond, so a quote of 96 means $960 per bond.",
     "Correct: each bond costs 96 × 10 = $960, and 5 × $960 = $4,800.",
     "Wrong: this adds the quote to par; the bonds are at a discount, so the cost is below $5,000.",
     "Wrong: this assumes $992 per bond; a quote of 96 is $960 per bond, so five cost $4,800."
@@ -723,16 +765,16 @@
    "d": 2,
    "q": "A bond carries an 8% coupon and is marked J&J 15. How much interest does the holder of one $1,000 bond receive and when?",
    "o": [
-    "$40 on each January 1 and July 1",
-    "$80 on January 15 only",
     "$40 on each January 15 and July 15",
+    "$80 on January 15 only",
+    "$40 on each January 1 and July 1",
     "$80 on each January 15 and July 15"
    ],
-   "a": 2,
+   "a": 0,
    "w": [
-    "Wrong: the 15 after the months moves payment to the 15th, so the 1st-of-month dates are wrong.",
-    "Wrong: a bond paying 8% pays $80 a year but in two semiannual installments, not once.",
     "Correct: 8% × $1,000 = $80 a year, split into two $40 payments on the 15th of the months shown.",
+    "Wrong: a bond paying 8% pays $80 a year but in two semiannual installments, not once.",
+    "Wrong: the 15 after the months moves payment to the 15th, so the 1st-of-month dates are wrong.",
     "Wrong: $80 is the annual total; each semiannual installment is half that, or $40."
    ]
   },
@@ -743,16 +785,16 @@
    "d": 2,
    "q": "Mira buys a three-year bond with a 6% coupon at a price of 92 and holds it to maturity. What is her total cash payment on the maturity date?",
    "o": [
-    "$1,030",
-    "$1,060",
     "$1,000",
+    "$1,060",
+    "$1,030",
     "$950"
    ],
-   "a": 0,
+   "a": 2,
    "w": [
-    "Correct: at maturity she gets par $1,000 plus the final semiannual coupon of $30 (6% × $1,000 ÷ 2).",
-    "Wrong: this adds a full year of coupons; only the final semiannual payment of $30 comes with par.",
     "Wrong: this omits the final semiannual coupon, which is paid on top of par at maturity.",
+    "Wrong: this adds a full year of coupons; only the final semiannual payment of $30 comes with par.",
+    "Correct: at maturity she gets par $1,000 plus the final semiannual coupon of $30 (6% × $1,000 ÷ 2).",
     "Wrong: this adds the coupon to her purchase price of $920; the redemption is based on par, not the price paid."
    ]
   },
@@ -784,15 +826,15 @@
    "q": "A parent buys a 15-year zero-coupon bond at $620 to fund college. Which of the following are TRUE?\nI. The return is realized as the difference between $620 and par at maturity\nII. Tax may be owed each year on interest that accrues\nIII. The parent receives semiannual interest checks\nIV. There is no reinvestment risk on coupons",
    "o": [
     "I and III only",
-    "I, II and IV only",
     "II, III and IV only",
+    "I, II and IV only",
     "I, II, III and IV"
    ],
-   "a": 1,
+   "a": 2,
    "w": [
     "Wrong: statement III is false because zero-coupon bonds pay no semiannual interest, and IV is also true.",
-    "Correct: I, II and IV are all true: return comes at maturity, phantom interest is taxed yearly, and no coupons exist to reinvest.",
     "Wrong: this includes III, which is false, and leaves out the true statement I.",
+    "Correct: I, II and IV are all true: return comes at maturity, phantom interest is taxed yearly, and no coupons exist to reinvest.",
     "Wrong: statement III is false, so not every statement can be selected."
    ]
   },
@@ -825,15 +867,15 @@
    "o": [
     "I and III only",
     "II and III only",
-    "I, II and IV only",
-    "I, II and III only"
+    "I, II and III only",
+    "I, II and IV only"
    ],
-   "a": 2,
+   "a": 3,
    "w": [
     "Wrong: III is false: a rising price lowers current yield below nominal yield, not above it.",
     "Wrong: this misses that the price rose and includes the false statement III.",
-    "Correct: falling rates push the price up, the bond trades above par, and current yield falls below the 4.5% nominal yield.",
-    "Wrong: III is false for a premium bond; the current yield is below the nominal yield."
+    "Wrong: III is false for a premium bond; the current yield is below the nominal yield.",
+    "Correct: falling rates push the price up, the bond trades above par, and current yield falls below the 4.5% nominal yield."
    ]
   },
   {
@@ -903,17 +945,17 @@
    "d": 2,
    "q": "Which of the following best describes refunding?",
    "o": [
-    "An issuer calls outstanding bonds and sells cheaper new bonds after interest rates have fallen",
+    "An issuer sets money aside to repay bonds",
     "An investor reinvests coupons at a higher rate",
     "An investor sells a bond back to the issuer under a put",
-    "An issuer sets money aside to repay bonds"
+    "An issuer calls outstanding bonds and sells cheaper new bonds after interest rates have fallen"
    ],
-   "a": 0,
+   "a": 3,
    "w": [
-    "Correct: this is the refinancing logic, similar to a homeowner refinancing a mortgage.",
+    "Wrong: that describes a sinking fund, which sets money aside for retirement, and not refunding, which replaces old debt with cheaper debt.",
     "Wrong: reinvesting coupons has nothing to do with the issuer calling bonds.",
     "Wrong: a put is an investor right, and refunding is an issuer action.",
-    "Wrong: that describes a sinking fund, which sets money aside for retirement, and not refunding, which replaces old debt with cheaper debt."
+    "Correct: this is the refinancing logic, similar to a homeowner refinancing a mortgage."
    ]
   },
   {
@@ -923,15 +965,15 @@
    "d": 2,
    "q": "A $1,000 par bond with a 5.5% coupon is called on a coupon date at a call price of 104. What does the holder receive in total, assuming par, final semiannual coupon and call premium are all paid?",
    "o": [
-    "$1,040.00",
     "$1,067.50",
+    "$1,040.00",
     "$1,095.00",
     "$1,027.50"
    ],
-   "a": 1,
+   "a": 0,
    "w": [
-    "Wrong: this omits the final semiannual coupon of $27.50 that is paid along with par and the premium on a call.",
     "Correct: par $1,000 + final semiannual coupon $27.50 + call premium $40 = $1,067.50.",
+    "Wrong: this omits the final semiannual coupon of $27.50 that is paid along with par and the premium on a call.",
     "Wrong: this uses a full annual coupon of $55; only the final semiannual coupon of $27.50 is added.",
     "Wrong: this leaves out the $40 call premium that a call price of 104 implies."
    ]
@@ -943,17 +985,17 @@
    "d": 3,
    "q": "A 25-year corporate bond is callable beginning in year 12. An investor asks when the issuer may redeem it. Which answer is accurate?",
    "o": [
-    "Only during year 12",
+    "At any time from year 12 until maturity, at the stated call price",
     "Only at maturity in year 25",
     "Only on a date the investor selects",
-    "At any time from year 12 until maturity, at the stated call price"
+    "Only during year 12"
    ],
-   "a": 3,
+   "a": 0,
    "w": [
-    "Wrong: the call date marks when the right begins; it does not limit the call to that single year.",
+    "Correct: the call right begins in year 12 and stays open until maturity, at the stated call price.",
     "Wrong: redemption at maturity is not a call; the call right exists before maturity.",
     "Wrong: a call is the issuer’s option, so the investor does not choose the date.",
-    "Correct: a callable bond is usually callable at any time after the call date."
+    "Wrong: the call date marks when the right begins; it does not limit the call to that single year."
    ]
   },
   {
@@ -963,16 +1005,16 @@
    "d": 2,
    "q": "Compared with an otherwise identical straight bond, how will a callable bond and a puttable bond generally be priced for yield?",
    "o": [
-    "Callable pays a higher rate; puttable pays a lower rate",
-    "Callable pays a lower rate; puttable pays a higher rate",
     "Both pay a higher rate",
+    "Callable pays a lower rate; puttable pays a higher rate",
+    "Callable pays a higher rate; puttable pays a lower rate",
     "Both pay a lower rate"
    ],
-   "a": 0,
+   "a": 2,
    "w": [
-    "Correct: the call benefits the issuer so investors demand more, while the put benefits investors so they accept less.",
-    "Wrong: this reverses which party benefits from each feature, so the pricing consequence is backwards for both bonds.",
     "Wrong: a put protects the investor, so it lowers the required yield rather than raising it.",
+    "Wrong: this reverses which party benefits from each feature, so the pricing consequence is backwards for both bonds.",
+    "Correct: the call benefits the issuer so investors demand more, while the put benefits investors so they accept less.",
     "Wrong: a call hurts the investor, so callable bonds must pay more, not less."
    ]
   },
@@ -985,15 +1027,15 @@
    "o": [
     "A call provision",
     "A sinking fund",
-    "A put provision",
-    "A floating coupon"
+    "A floating coupon",
+    "A put provision"
    ],
-   "a": 2,
+   "a": 3,
    "w": [
     "Wrong: a call gives the issuer, not the investor, the redemption right.",
     "Wrong: a sinking fund sets money aside for retirement and gives no right to demand repayment.",
-    "Correct: a put lets the investor demand early repayment on a trigger such as a rating downgrade.",
-    "Wrong: a floating coupon changes the interest rate and does not give a redemption right."
+    "Wrong: a floating coupon changes the interest rate and does not give a redemption right.",
+    "Correct: a put lets the investor demand early repayment on a trigger such as a rating downgrade."
    ]
   },
   {
@@ -1024,15 +1066,15 @@
    "q": "A corporate bond pays $27.50 of interest every six months. What is its nominal yield?",
    "o": [
     "2.75%",
-    "11.0%",
     "5.5%",
+    "11.0%",
     "5.0%"
    ],
-   "a": 2,
+   "a": 1,
    "w": [
     "Wrong: this uses the semiannual payment alone; the yield is based on annual interest.",
-    "Wrong: this doubles the annual amount; $27.50 twice is $55, not $110.",
     "Correct: $27.50 × 2 = $55 a year ÷ $1,000 par = 5.5%.",
+    "Wrong: this doubles the annual amount; $27.50 twice is $55, not $110.",
     "Wrong: $55 of annual interest divided by $1,000 of par is 5.5%, not 5.0%, so the arithmetic is off."
    ]
   },
@@ -1044,15 +1086,15 @@
    "q": "A 6% bond is trading at 80. What is its current yield?",
    "o": [
     "6.0%",
-    "7.5%",
     "4.8%",
+    "7.5%",
     "8.0%"
    ],
-   "a": 1,
+   "a": 2,
    "w": [
     "Wrong: that is the nominal yield; current yield uses the market price of $800.",
-    "Correct: annual interest of $60 divided by the market price of $800 gives a current yield of 7.5%.",
     "Wrong: this divides $60 by $1,250, which is not the market price; a quote of 80 means $800.",
+    "Correct: annual interest of $60 divided by the market price of $800 gives a current yield of 7.5%.",
     "Wrong: $60 divided by $800 is exactly 7.5%, so 8.0% results from an arithmetic or rounding error."
    ]
   },
@@ -1063,17 +1105,17 @@
    "d": 2,
    "q": "A bond pays $22.50 every six months and is quoted at 90. What is its current yield?",
    "o": [
-    "5.0%",
+    "2.25%",
     "2.5%",
     "4.5%",
-    "2.25%"
+    "5.0%"
    ],
-   "a": 0,
+   "a": 3,
    "w": [
-    "Correct: annual interest = $22.50 × 2 = $45; $45 ÷ $900 = 5.0%.",
+    "Wrong: this divides only the semiannual $22.50 by the $1,000 par; it neither annualizes the coupon nor uses the market price.",
     "Wrong: this fails to annualize the coupon: $22.50 ÷ $900 is only 2.5%.",
     "Wrong: this divides $45 by par of $1,000 and gives the nominal yield, not current yield.",
-    "Wrong: this halves the coupon and divides by par, doubling the mistake."
+    "Correct: annual interest = $22.50 × 2 = $45; $45 ÷ $900 = 5.0%."
    ]
   },
   {
@@ -1083,16 +1125,16 @@
    "d": 3,
    "q": "Years ago an investor bought a 7% bond at 110. The bond now trades at 98. What is the current yield, rounded to two decimals?",
    "o": [
-    "6.36%",
-    "7.00%",
     "7.14%",
+    "7.00%",
+    "6.36%",
     "7.69%"
    ],
-   "a": 2,
+   "a": 0,
    "w": [
-    "Wrong: this divides $70 by the $1,100 purchase price; current yield uses today’s market price.",
-    "Wrong: that is the nominal yield and ignores the current market price.",
     "Correct: annual interest of $70 divided by today’s market price of $980 gives 7.14%, ignoring the old purchase price.",
+    "Wrong: that is the nominal yield and ignores the current market price.",
+    "Wrong: this divides $70 by the $1,100 purchase price; current yield uses today’s market price.",
     "Wrong: this divides $70 by $910, but the bond’s current market price is $980 (a quote of 98)."
    ]
   },
@@ -1103,15 +1145,15 @@
    "d": 2,
    "q": "A bond is trading at a premium. Which of the following is TRUE?",
    "o": [
-    "Its current yield is higher than its nominal yield",
     "Its current yield is lower than its nominal yield",
+    "Its current yield is higher than its nominal yield",
     "Its yield to call is higher than its yield to maturity",
     "Its nominal yield is lower than its yield to maturity"
    ],
-   "a": 1,
+   "a": 0,
    "w": [
-    "Wrong: for a premium bond the price is above par so current yield is below nominal yield.",
     "Correct: a price above par makes annual interest ÷ price smaller than the coupon rate.",
+    "Wrong: for a premium bond the price is above par so current yield is below nominal yield.",
     "Wrong: for a premium bond the premium is lost faster at call, so YTC is lower than YTM.",
     "Wrong: for a premium bond YTM is below the coupon, so nominal yield is higher."
    ]
@@ -1123,17 +1165,17 @@
    "d": 3,
    "q": "A 6% bond with 12 years to maturity is trading at 106 and is callable in three years at 102. Which of the following lists its yields from highest to lowest?",
    "o": [
-    "Nominal yield, current yield, yield to maturity, yield to call",
+    "Nominal yield, yield to maturity, current yield, yield to call",
     "Yield to call, yield to maturity, current yield, nominal yield",
     "Current yield, nominal yield, yield to maturity, yield to call",
-    "Nominal yield, yield to maturity, current yield, yield to call"
+    "Nominal yield, current yield, yield to maturity, yield to call"
    ],
-   "a": 0,
+   "a": 3,
    "w": [
-    "Correct: for a premium bond NY > CY > YTM > YTC, so yield to call is lowest.",
+    "Wrong: current yield sits above yield to maturity for a premium bond, so these are swapped.",
     "Wrong: this is the discount-bond ordering and is reversed for a premium.",
     "Wrong: nominal yield is above current yield for a premium bond, so these two are swapped.",
-    "Wrong: current yield sits above yield to maturity for a premium bond, so these are swapped."
+    "Correct: for a premium bond NY > CY > YTM > YTC, so yield to call is lowest."
    ]
   },
   {
@@ -1143,16 +1185,16 @@
    "d": 3,
    "q": "A 7% bond is described as trading on an 8 basis. Which statement is correct?",
    "o": [
-    "It is trading at a discount",
-    "It is trading at a premium",
     "It is trading at par",
+    "It is trading at a premium",
+    "It is trading at a discount",
     "The price cannot be determined without the maturity date"
    ],
-   "a": 0,
+   "a": 2,
    "w": [
-    "Correct: a yield to maturity of 8% above the 7% coupon means the bond was bought below par.",
+    "Wrong: at par the yield to maturity equals the coupon, but a YTM above the coupon means this bond trades below par.",
     "Wrong: a premium bond would have a YTM below its coupon, not above.",
-    "Wrong: at par the yield to maturity equals the coupon, but this bond trades above par, so that does not apply.",
+    "Correct: a yield to maturity of 8% above the 7% coupon means the bond was bought below par.",
     "Wrong: the relationship between YTM and coupon alone tells you whether it is a discount."
    ]
   },
@@ -1163,15 +1205,15 @@
    "d": 2,
    "q": "A bond has three possible future call dates. Which date is used to compute its yield to call?",
    "o": [
-    "The first call date",
     "The last call date",
+    "The first call date",
     "The average of the three dates",
     "The maturity date"
    ],
-   "a": 0,
+   "a": 1,
    "w": [
-    "Correct: YTC always uses the first possible call date and any call premium payable then.",
     "Wrong: the last date is not used; yield to call assumes the earliest redemption.",
+    "Correct: YTC always uses the first possible call date and any call premium payable then.",
     "Wrong: averaging the possible dates is not part of the calculation, which always uses the first possible call date.",
     "Wrong: using the maturity date would give yield to maturity, not yield to call."
    ]
@@ -1205,15 +1247,15 @@
    "o": [
     "A five-year 8% bond",
     "A five-year zero-coupon bond",
-    "A 20-year 8% bond",
-    "A 20-year zero-coupon bond"
+    "A 20-year zero-coupon bond",
+    "A 20-year 8% bond"
    ],
-   "a": 3,
+   "a": 2,
    "w": [
     "Wrong: short maturity and a high coupon make it the least rate-sensitive of these.",
     "Wrong: a zero is sensitive but its short maturity limits the price move.",
-    "Wrong: long maturity helps, but the high coupon reduces sensitivity compared with a zero.",
-    "Correct: long maturity and no coupon give the longest duration, so the largest price gain."
+    "Correct: long maturity and no coupon give the longest duration, so the largest price gain.",
+    "Wrong: long maturity helps, but the high coupon reduces sensitivity compared with a zero."
    ]
   },
   {
@@ -1224,15 +1266,15 @@
    "q": "Which of the following would INCREASE a bond’s sensitivity to interest rate changes?\nI. A longer maturity\nII. A lower coupon\nIII. A longer duration\nIV. A shorter maturity",
    "o": [
     "I and II only",
-    "II and IV only",
     "I, II and III only",
+    "II and IV only",
     "I, II, III and IV"
    ],
-   "a": 2,
+   "a": 1,
    "w": [
     "Wrong: longer duration also reflects greater sensitivity, so III belongs in the answer.",
-    "Wrong: a shorter maturity decreases rate sensitivity, so statement IV is false and cannot be part of the answer.",
     "Correct: longer maturity, lower coupon and longer duration all raise interest rate sensitivity.",
+    "Wrong: a shorter maturity decreases rate sensitivity, so statement IV is false and cannot be part of the answer.",
     "Wrong: a shorter maturity reduces interest rate risk, so IV is false and selecting every statement is incorrect."
    ]
   },
@@ -1243,15 +1285,15 @@
    "d": 2,
    "q": "An investor owns a long-term 7% bond. The Fed announces rate cuts and the investor worries that the $70 received each year can only be reinvested at lower rates. This concern is:",
    "o": [
-    "credit risk",
     "reinvestment rate risk",
+    "credit risk",
     "inflationary risk",
     "liquidity risk"
    ],
-   "a": 1,
+   "a": 0,
    "w": [
-    "Wrong: credit risk concerns the issuer’s ability to pay, which is not at issue here.",
     "Correct: the risk is that interest received must be reinvested at lower rates than the bond paid.",
+    "Wrong: credit risk concerns the issuer’s ability to pay, which is not at issue here.",
     "Wrong: inflationary risk is loss of purchasing power, not lower reinvestment rates.",
     "Wrong: the concern is about the rate earned on proceeds, not the ability to sell."
    ]
@@ -1305,15 +1347,15 @@
    "o": [
     "They are considered free of credit risk because the government can tax",
     "They are still exposed to inflationary risk",
-    "They carry lower yields than comparable corporate bonds",
-    "They have no interest rate risk"
+    "They have no interest rate risk",
+    "They carry lower yields than comparable corporate bonds"
    ],
-   "a": 3,
+   "a": 2,
    "w": [
     "Wrong: this is true and is the source of the risk-free credit label.",
     "Wrong: this is a true statement, since fixed payments lose purchasing power, so it cannot be the exception.",
-    "Wrong: lowest default risk goes with the lowest return, so this is true.",
-    "Correct: this is false because their prices fall when interest rates rise."
+    "Correct: this is false because their prices fall when interest rates rise.",
+    "Wrong: lowest default risk goes with the lowest return, so this is true."
    ]
   },
   {
@@ -1324,16 +1366,16 @@
    "q": "Which Moody’s rating is the lowest investment grade?",
    "o": [
     "Ba1",
-    "Baa3",
+    "Caa1",
     "A3",
-    "Caa1"
+    "Baa3"
    ],
-   "a": 1,
+   "a": 3,
    "w": [
     "Wrong: this is the first non-investment-grade rating, one notch below investment grade.",
-    "Correct: Baa3 corresponds to BBB− on the S&P and Fitch scale and is the lowest investment-grade rating.",
+    "Wrong: Caa1 is deep in non-investment-grade territory, far below the investment-grade cutoff at Baa3.",
     "Wrong: A3 is investment grade but sits several notches above the lowest investment-grade level of Baa3.",
-    "Wrong: Caa1 is deep in non-investment-grade territory, far below the investment-grade cutoff at Baa3."
+    "Correct: Baa3 corresponds to BBB− on the S&P and Fitch scale and is the lowest investment-grade rating."
    ]
   },
   {
@@ -1345,15 +1387,15 @@
    "o": [
     "BBB−",
     "Baa2",
-    "BB+",
-    "A−"
+    "A−",
+    "BB+"
    ],
-   "a": 2,
+   "a": 3,
    "w": [
     "Wrong: BBB− is the lowest investment-grade rating on the S&P and Fitch scale.",
     "Wrong: Baa2 is a mid-level investment-grade Moody’s rating, which sits above the junk cutoff at Ba1.",
-    "Correct: BB+ is the first rung below investment grade, so the bond is junk.",
-    "Wrong: A− is an investment-grade rating well above the cutoff, so the bond is not junk."
+    "Wrong: A− is an investment-grade rating well above the cutoff, so the bond is not junk.",
+    "Correct: BB+ is the first rung below investment grade, so the bond is junk."
    ]
   },
   {
@@ -1363,15 +1405,15 @@
    "d": 3,
    "q": "Which of the following are TRUE of non-investment-grade bonds?\nI. They carry a higher chance of default\nII. They pay higher yields\nIII. They are also called high-yield bonds\nIV. They pay lower yields than investment-grade bonds",
    "o": [
-    "I, II and III only",
     "I and IV only",
+    "I, II and III only",
     "II and IV only",
     "I, II, III and IV"
    ],
-   "a": 0,
+   "a": 1,
    "w": [
-    "Correct: junk bonds carry more credit risk, pay more, and are known as high-yield bonds.",
     "Wrong: IV is false and II and III are true, so this misses two correct statements.",
+    "Correct: junk bonds carry more credit risk, pay more, and are known as high-yield bonds.",
     "Wrong: II is true but IV contradicts it, and I and III are also true.",
     "Wrong: IV is false because junk bonds must pay more, not less."
    ]
@@ -1403,17 +1445,17 @@
    "d": 2,
    "q": "A customer buys a 6% corporate bond that pays interest on January 1 and July 1. The trade is on March 10 and settles the next business day, March 11. How much accrued interest does the buyer owe per $1,000 bond?",
    "o": [
-    "$10.00",
     "$11.67",
+    "$10.00",
     "$11.33",
     "$12.00"
    ],
-   "a": 1,
+   "a": 0,
    "w": [
-    "Wrong: this uses 60 days; the count must run from January 1 through March 10, which is 70 days.",
     "Correct: Jan 30 + Feb 30 + Mar 10 = 70 days; $60 × 70 ÷ 360 = $11.67.",
+    "Wrong: this uses 60 days; the count must run from January 1 through March 10, which is 70 days.",
     "Wrong: this counts 68 days; the days from January 1 through March 10 total 70.",
-    "Wrong: this counts 72 days, which wrongly includes the settlement date and an extra day."
+    "Wrong: this counts 72 days, which is two days too many for the Jan 1 to Mar 10 period."
    ]
   },
   {
@@ -1423,16 +1465,16 @@
    "d": 3,
    "q": "A 3% Treasury note pays interest on May 15 and November 15. The investor buys on August 12 for regular-way settlement on August 13. Accrued interest runs from May 15 to August 12 inclusive, which is 90 days. What accrued interest is due per $1,000 note?",
    "o": [
-    "$7.40",
-    "$7.50",
     "$7.32",
+    "$7.50",
+    "$7.40",
     "$7.48"
    ],
-   "a": 0,
+   "a": 2,
    "w": [
-    "Correct: Treasuries use actual days and a 365-day year: $30 × 90 ÷ 365 = $7.40.",
-    "Wrong: this applies the 360-day year used for corporate, municipal and agency bonds.",
     "Wrong: this uses 89 days, dropping a day that should be counted.",
+    "Wrong: this applies the 360-day year used for corporate, municipal and agency bonds.",
+    "Correct: Treasuries use actual days and a 365-day year: $30 × 90 ÷ 365 = $7.40.",
     "Wrong: this uses 91 days, which wrongly includes the settlement date in the count of accrued days."
    ]
   },
@@ -1443,17 +1485,17 @@
    "d": 3,
    "q": "A customer buys three corporate bonds quoted at 101 1/2 in the secondary market. Accrued interest is $9.00 per bond. What is the total amount due at settlement, ignoring commissions?",
    "o": [
-    "$3,072",
     "$3,045",
+    "$3,072",
     "$3,054",
     "$3,075"
    ],
-   "a": 0,
+   "a": 1,
    "w": [
-    "Correct: each bond is $1,015 + $9 accrued = $1,024, and 3 × $1,024 = $3,072.",
     "Wrong: this omits accrued interest, which the buyer pays on top of the price.",
+    "Correct: each bond is $1,015 + $9 accrued = $1,024, and 3 × $1,024 = $3,072.",
     "Wrong: this adds the $9 of accrued interest only once rather than for each of the three bonds.",
-    "Wrong: this treats 1/2 as 0.25, giving $1,025 per bond, so the price is overstated."
+    "Wrong: this reads 101 1/2 as 102 1/2, giving $1,025 per bond; the half point adds only $5, so the price is $1,015."
    ]
   },
   {
@@ -1464,16 +1506,16 @@
    "q": "Which of the following bonds trade flat?\nI. A zero-coupon bond\nII. A bond in default\nIII. A 5% corporate bond sold between coupon dates\nIV. A Treasury note sold between coupon dates",
    "o": [
     "I only",
-    "I and II only",
+    "III and IV only",
     "I, II and III only",
-    "III and IV only"
+    "I and II only"
    ],
-   "a": 1,
+   "a": 3,
    "w": [
     "Wrong: a bond in default also trades flat, so selecting only the zero-coupon bond leaves out a correct item.",
-    "Correct: zero-coupon bonds and bonds in default trade flat, with no accrued interest added to the price.",
+    "Wrong: these are bonds that trade with accrued interest, the opposite of flat, so III and IV do not qualify.",
     "Wrong: bonds sold between coupon dates trade with accrued interest, so III is wrong.",
-    "Wrong: these are bonds that trade with accrued interest, the opposite of flat, so III and IV do not qualify."
+    "Correct: zero-coupon bonds and bonds in default trade flat, with no accrued interest added to the price."
    ]
   },
   {
@@ -1483,17 +1525,17 @@
    "d": 2,
    "q": "Which pairing of bond type and accrued-interest day count is correct?",
    "o": [
-    "Treasury bond: 360-day year, 30-day months",
+    "Agency bond: 360-day year, 30-day months",
     "Corporate bond: 365-day year, actual days",
     "Municipal bond: 365-day year, actual days",
-    "Agency bond: 360-day year, 30-day months"
+    "Treasury bond: 360-day year, 30-day months"
    ],
-   "a": 3,
+   "a": 0,
    "w": [
-    "Wrong: Treasuries use actual days and a 365-day year, not the 360-day convention shown in this option.",
+    "Correct: corporate, municipal and agency bonds all use a 360-day year with 30-day months.",
     "Wrong: corporate bonds use a 360-day year with 30-day months, not a 365-day actual-day count.",
     "Wrong: municipal bonds follow the same 360-day, 30-day-month convention as corporates, not actual days.",
-    "Correct: corporate, municipal and agency bonds all use a 360-day year with 30-day months."
+    "Wrong: Treasuries use actual days and a 365-day year, not the 360-day convention shown in this option."
    ]
   },
   {
@@ -1510,7 +1552,7 @@
    ],
    "a": 2,
    "w": [
-    "Wrong: trade date plus settlement matters; interest runs to the day before settlement, which is later than Friday.",
+    "Wrong: interest keeps running after the trade date until the day before the Monday settlement, so Friday alone is too early.",
     "Wrong: interest continues over the weekend, so Saturday is counted, but so is Sunday.",
     "Correct: T+1 from a Friday settles on Monday, and interest counts up to but not including settlement, so through Sunday.",
     "Wrong: the settlement date itself is excluded from the count, so interest stops the day before settlement."
@@ -1523,17 +1565,17 @@
    "d": 1,
    "q": "A customer buys a bond between coupon dates. Who pays accrued interest and to whom?",
    "o": [
-    "The buyer pays the seller",
+    "The buyer pays the issuer",
     "The seller pays the buyer",
     "The issuer pays the buyer",
-    "The buyer pays the issuer"
+    "The buyer pays the seller"
    ],
-   "a": 0,
+   "a": 3,
    "w": [
-    "Correct: accrued interest is added to the price so the seller receives the interest earned during his ownership.",
+    "Wrong: the payment goes between buyer and seller, not to the issuer.",
     "Wrong: the seller is owed the interest, not the other way around.",
     "Wrong: the issuer’s coupon is paid on the coupon date and is unrelated to the trade payment.",
-    "Wrong: the payment goes between buyer and seller, not to the issuer."
+    "Correct: accrued interest is added to the price so the seller receives the interest earned during his ownership."
    ]
   },
   {
@@ -1543,17 +1585,17 @@
    "d": 2,
    "q": "A seller receives accrued interest in a bond trade. How is this amount treated?",
    "o": [
-    "Capital gain that increases cost basis",
+    "Ordinary interest income that does not affect cost basis",
     "Tax-free return of principal",
     "Interest income that increases cost basis",
-    "Ordinary interest income that does not affect cost basis"
+    "Capital gain that increases cost basis"
    ],
-   "a": 3,
+   "a": 0,
    "w": [
-    "Wrong: accrued interest is interest income taxed at ordinary rates, not a capital gain, and it leaves cost basis alone.",
+    "Correct: it is taxed at ordinary income rates and leaves cost basis unchanged.",
     "Wrong: accrued interest is taxable and is not a return of principal.",
     "Wrong: accrued interest does not change the bond’s cost basis, so it cannot increase basis at all.",
-    "Correct: it is taxed at ordinary income rates and leaves cost basis unchanged."
+    "Wrong: accrued interest is interest income taxed at ordinary rates, not a capital gain, and it leaves cost basis alone."
    ]
   },
   {
@@ -1585,15 +1627,15 @@
    "o": [
     "$1,200",
     "$1,100",
-    "$1,040",
-    "$1,060"
+    "$1,060",
+    "$1,040"
    ],
-   "a": 2,
+   "a": 3,
    "w": [
     "Wrong: this adds to the basis, but a premium bond’s basis falls toward par.",
     "Wrong: this uses one year of amortization of $20, not four years.",
-    "Correct: the premium of $120 ÷ 6 years = $20 a year; after four years $1,120 − $80 = $1,040.",
-    "Wrong: this subtracts only three years of amortization, $60, from $1,120 instead of the four years asked."
+    "Wrong: this subtracts only three years of amortization, $60, from $1,120 instead of the four years asked.",
+    "Correct: the premium of $120 ÷ 6 years = $20 a year; after four years $1,120 − $80 = $1,040."
    ]
   },
   {
@@ -1605,15 +1647,15 @@
    "o": [
     "accreted upward toward par",
     "increased by accrued interest",
-    "left unchanged until the bond is sold",
-    "amortized downward toward par"
+    "amortized downward toward par",
+    "left unchanged until the bond is sold"
    ],
-   "a": 3,
+   "a": 2,
    "w": [
     "Wrong: accretion upward toward par applies to bonds bought at a discount, but this bond was bought at a premium.",
     "Wrong: accrued interest does not change cost basis, so it plays no role in the premium adjustment.",
-    "Wrong: the IRS requires an annual straight-line adjustment toward par, so leaving the basis unchanged is incorrect.",
-    "Correct: premium bonds are amortized on a straight-line basis so that the basis equals par at maturity."
+    "Correct: premium bonds are amortized on a straight-line basis so that the basis equals par at maturity.",
+    "Wrong: the IRS requires an annual straight-line adjustment toward par, so leaving the basis unchanged is incorrect."
    ]
   },
   {
@@ -1623,15 +1665,15 @@
    "d": 3,
    "q": "A customer expects interest rates to climb and wants the bond type that is least likely to lose market value as a result. Which choice best fits?",
    "o": [
-    "A 30-year zero-coupon bond",
     "A floating-rate bond tied to the Treasury bill rate",
+    "A 30-year zero-coupon bond",
     "A 20-year 4% fixed-rate bond",
     "A 10-year 6% fixed-rate bond"
    ],
-   "a": 1,
+   "a": 0,
    "w": [
-    "Wrong: this has the greatest price sensitivity and would be hurt the most.",
     "Correct: the coupon adjusts with the benchmark, so it has little or no interest rate risk.",
+    "Wrong: this has the greatest price sensitivity and would be hurt the most.",
     "Wrong: a long maturity with a low coupon is highly rate-sensitive, so it would lose value if rates climb.",
     "Wrong: a fixed coupon still loses market value when rates rise, because new bonds would offer better rates."
    ]
@@ -1644,16 +1686,136 @@
    "q": "A corporate issuer misses a scheduled interest payment on an outstanding bond. What is the result?",
    "o": [
     "The bond is automatically called at par",
-    "The bond’s maturity date moves",
     "The bond is in default",
+    "The bond’s maturity date moves",
     "The bond’s coupon is increased"
+   ],
+   "a": 1,
+   "w": [
+    "Wrong: a missed payment is not a call, which is the issuer’s option.",
+    "Correct: a missed interest payment on an outstanding obligation is a default; credit risk has materialized.",
+    "Wrong: a missed payment does not extend the maturity date; it simply means the issuer has defaulted on its obligation.",
+    "Wrong: there is no automatic increase in the coupon after a missed payment."
+   ]
+  },
+  {
+   "id": "2-q53",
+   "r": "2.1.8",
+   "k": "concept",
+   "d": 2,
+   "q": "A municipal issue is structured so that a portion of the bonds matures each year until the last portion matures. What type of issue is this?",
+   "o": [
+    "Term bond",
+    "Callable bond",
+    "Serial bond",
+    "Zero-coupon bond"
    ],
    "a": 2,
    "w": [
-    "Wrong: a missed payment is not a call, which is the issuer’s option.",
-    "Wrong: a missed payment does not extend the maturity date; it simply means the issuer has defaulted on its obligation.",
-    "Correct: a missed interest payment on an outstanding obligation is a default; credit risk has materialized.",
-    "Wrong: there is no automatic increase in the coupon after a missed payment."
+    "Wrong: a term issue matures entirely on one date in the future, not in annual portions.",
+    "Wrong: a call feature lets the issuer redeem early and says nothing about how maturities are staggered.",
+    "Correct: serial bonds mature in installments over several years, with part of the issue coming due each year.",
+    "Wrong: a zero-coupon bond is defined by the absence of interest payments, not by staggered maturities."
+   ]
+  },
+  {
+   "id": "2-q54",
+   "r": "2.4",
+   "k": "concept",
+   "d": 2,
+   "q": "A newly issued corporate bond has no prior interest payment date. From which date does the first accrued interest calculation begin?",
+   "o": [
+    "The settlement date",
+    "The dated date",
+    "The maturity date",
+    "The first coupon date"
+   ],
+   "a": 1,
+   "w": [
+    "Wrong: the settlement date is where the count stops, because it is excluded from the accrued days.",
+    "Correct: with no earlier coupon date, interest is counted from the dated date, so the first period can be longer or shorter than six months.",
+    "Wrong: maturity is the end of the bond’s life and has nothing to do with where accrual starts.",
+    "Wrong: the first coupon date is when the first payment is made, and the count has to start before it."
+   ]
+  },
+  {
+   "id": "2-q55",
+   "r": "2.1.9",
+   "k": "concept",
+   "d": 1,
+   "q": "Which of the following bonds is NOT subject to being called by the issuer?",
+   "o": [
+    "A bond issued by the federal government",
+    "A 15-year municipal bond with a call feature",
+    "A 12-year agency bond with a call feature",
+    "A 20-year corporate bond with a call feature"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: bonds issued by the federal government are not callable, so holders do not face call risk on them.",
+    "Wrong: municipal bonds over ten years are frequently callable, so early redemption is possible here.",
+    "Wrong: this bond is stated to have a call feature, so the issuer holds the right to redeem it.",
+    "Wrong: long-term corporate bonds commonly carry a call feature, so this one can be redeemed early."
+   ]
+  },
+  {
+   "id": "2-q56",
+   "r": "2.4",
+   "k": "calc",
+   "d": 3,
+   "q": "A customer buys a 6% corporate bond that pays interest on March 1 and September 1. The trade takes place on Monday, June 20, for regular-way settlement. How much accrued interest does the buyer owe per $1,000 bond?",
+   "o": [
+    "$17.50",
+    "$19.17",
+    "$18.50",
+    "$18.33"
+   ],
+   "a": 3,
+   "w": [
+    "Wrong: this counts 105 days, which stops five days short of the correct June 20 end of the count.",
+    "Wrong: this counts 115 days, which is five days too many for the period.",
+    "Wrong: this counts 111 days, which wrongly includes the June 21 settlement date.",
+    "Correct: settlement is June 21, so the count runs March 1 to June 20: 30 + 30 + 30 + 20 = 110 days; $60 × 110 ÷ 360 = $18.33."
+   ]
+  },
+  {
+   "id": "2-q57",
+   "r": "2.2.3",
+   "k": "scenario",
+   "d": 2,
+   "q": "Hannah buys a zero-coupon bond for her daughter’s education fund. Which yield is the most meaningful measure of her expected return?",
+   "o": [
+    "Nominal yield",
+    "Current yield",
+    "Yield to maturity",
+    "Yield to call"
+   ],
+   "a": 2,
+   "w": [
+    "Wrong: a zero pays no coupon, so there is no coupon rate to speak of.",
+    "Wrong: with no annual interest, the numerator of current yield is zero, so it tells her nothing.",
+    "Correct: her whole return is the gain from the discounted price up to par, which only yield to maturity captures.",
+    "Wrong: a zero-coupon bond is held for its full term, and call-based yield is not the standard measure of her return."
+   ]
+  },
+  {
+   "id": "2-q58",
+   "r": "2.2.5",
+   "k": "scenario",
+   "d": 2,
+   "q": "A 7% bond is yielding 6.2% to maturity. Which statement is TRUE?",
+   "o": [
+    "It trades at a discount and its current yield is above 7%",
+    "It trades at par and its current yield is 7%",
+    "It trades at a premium and its current yield is above 7%",
+    "It trades at a premium and its current yield is below 7%"
+   ],
+   "a": 3,
+   "w": [
+    "Wrong: a YTM below the coupon points to a premium, not a discount, and a discount is what would push current yield above the coupon.",
+    "Wrong: at par the yield to maturity would equal the 7% coupon, but here it is lower.",
+    "Wrong: the premium reading is right, but a price above par pushes current yield below the coupon, not above it.",
+    "Correct: YTM under the coupon means a premium, and annual interest divided by a price above par is less than 7%."
    ]
   }
  ]

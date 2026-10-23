@@ -1,0 +1,1882 @@
+{
+ "id": 8,
+ "title": "Issuing Securities",
+ "section": "Capital Markets",
+ "minutes": 55,
+ "brief": [
+  {
+   "h": "The ’33 Act and the SEC’s role",
+   "md": "- **Securities Act of 1933** (Truth in Securities Act): every security must be **SEC-registered** unless the **security** is exempt or sold in an **exempt transaction**.\n- Two goals: (1) investors get **material information**; (2) **no deceit, misrepresentation or fraud** in selling securities to the public.\n- Disclosure tool = the **prospectus**, given to buyers **at or before the sale**.\n- The SEC **never approves, disapproves or verifies** the information. It **clears** (declares effective) the registration so sales can start.\n- **Anti-fraud provisions apply to everything**, exempt securities and exempt transactions included.\n- **FINRA corporate financing rules (5110, 2310, 5121)** impose three duties on participating firms:\n\n| Requirement | Content |\n|---|---|\n| **Filing** | Registration statements, offering circulars, exhibits and amendments go to FINRA **within 3 business days** of the SEC filing; kept **confidential** |\n| **Unfair terms** | No unfair terms or arrangements: excessive fees, unreasonable compensation, unfair allocations |\n| **Conflicts of interest** | Disclose conflicts; may need extra disclosure or an **independent valuation** |\n\n> **Exam tip** The SEC *clears*; it does not *approve*. Any answer saying the SEC approves, guarantees or verifies accuracy is wrong."
+  },
+  {
+   "h": "Pre-filing and cooling-off periods; communications",
+   "md": "- **Registration statement**: filed by the issuer with the SEC (form **S-1** for an IPO). Contents:\n  - issuer name, address, description of business\n  - **insiders**: officers (CEO, CFO), directors, **>10% holders**\n  - names of **underwriters and legal counsel**\n  - **amount and planned use of proceeds**\n  - **legal proceedings** against the issuer\n  - recent **certified financial statements**\n- **Pre-filing (quiet) period**: before the S-1 is filed. **No marketing, no offers, no sales.** The offering has no legal standing yet.\n- Pre-registration work: **bake-off** (pitch), **mandate** via engagement letter, drafting the S-1 and prospectus, **due diligence** that the content is accurate, complete and truthful.\n\n- **Cooling-off period**: runs from the **filing date** until the SEC declares the registration **effective**; typically **at least 20 days**.\n- Two parallel tracks: the **SEC reviews disclosure**; the **bankers gauge demand and price**.\n- **Permitted**: marketing. **Prohibited**: **sales** (and binding orders).\n\n| Tool | What it is |\n|---|---|\n| **Preliminary prospectus (red herring)** | Red-ink legend: not an offer, sales only via final prospectus. Has a **price range**; **no final price or share count** |\n| **Road show** | Issuer + lead underwriter present to prospective investors |\n| **Indication of interest (IOI)** | **Non-binding**; usually becomes an order on the effective date unless cancelled; many IOIs mean a higher price |\n| **Tombstone ad** | Bare facts: issuer, short business description, underwriters, security type; states that shares cannot be bought until effective. The **only advertisement** allowed |\n| **Free writing prospectus (FWP)** | Written or graphic update beyond the prospectus (e.g. CEO press interview, recorded online road show) with no need to redo the filing |\n\n> **Exam tip** Cooling-off = **market yes, sell no**. IOIs are the most important driver of the offering price."
+  },
+  {
+   "h": "Effective date, final prospectus and the timeline",
+   "md": "- On the **effective date** the securities can be sold lawfully; bankers **confirm IOIs** and **allocate** shares; trading then starts in the **secondary market**.\n- **Final prospectus** = all registration information **plus final price and share count**; it is an actual **offer**. Red-herring warnings are gone.\n- Every buyer must receive it **no later than settlement**. **Access equals delivery**: OK if the final prospectus is filed with the SEC **and** a notice telling where to access it is sent to each purchaser by settlement. Hard copy not required.\n- For **25 days after an IPO**, a prospectus (or notice of its availability) must accompany sales.\n\n| Order | Phase | Events |\n|---|---|---|\n| 1 | Pre-registration | Bake-off, mandate, S-1 drafting, due diligence |\n| 2 | Filing date | S-1 filed with SEC |\n| 3 | Cooling-off (~20 days) | SEC review, red herring, road show, IOIs |\n| 4 | Effective date | SEC clears; sales allowed; IOIs confirmed; allocation |\n| 5 | Post-effective | Secondary trading, stabilization |\n\n> **Exam tip** Know the sequence cold: bake-off, filing, red herring delivered, effective date."
+  },
+  {
+   "h": "Exempt securities (no registration, whatever the sale method)",
+   "md": "- **US government and agency securities**\n- **Municipal bonds**\n- **Nonprofit** issuers\n- **Commercial paper / short-term corporate debt**, maturity **270 days or less**\n- **Commercial bank securities** only. Investment-bank and bank-holding-company securities are **not** exempt.\n- **Everything else is non-exempt**: corporate bonds, stocks, ADRs, REITs, exchange-traded securities, and **investment company securities** (mutual funds, ETFs) even if the fund holds munis or Treasuries.\n- Exempt securities still need no prospectus but remain under **anti-fraud** rules.\n\n> **Exam tip** A muni bond **fund** is non-exempt; the individual muni bond is exempt. The test is the *security itself*, not what it holds."
+  },
+  {
+   "h": "Exempt transactions: Rule 147, Reg S, Reg D, Reg A+",
+   "md": "- **Exempt transaction** = security normally needs registration, but the *manner of sale* is exempt. No registration statement or prospectus, but buyers get an **offering memorandum / offering circular**.\n- **Rule 147 (intrastate)**: issuer’s **principal place of business in the state** plus at least one of: **80% of gross revenue in-state**, **80% of assets in-state**, **80% of net proceeds used in-state**, or **majority of employees in-state**. **100% of buyers are state residents** (one out-of-state buyer can sink it). Resale to residents: immediately. Resale out of state: **6-month wait**. No cap on size or buyer count.\n- **Regulation S**: raising capital **overseas** (e.g. selling in Europe) avoids SEC registration.\n- **Regulation D (private placement)**: no public offering, **unlimited dollars**, unlimited **accredited** investors, generally **max 35 non-accredited**; resale restricted.\n  - **Accredited**: net worth **≥ $1 million excl. primary home**; income **> $200,000** (individual) or **> $300,000 joint** in each of the last **2 years** with a reasonable expectation of the same this year; **officers, partners, directors** of the issuer; **institutions with $5 million** in assets.\n  - A **retiree** with past high income is **not** accredited (no expected income).\n  - **PIPE** = a public company raising capital via private placement.\n- **Regulation A+ (JOBS Act)**: offering statement filed with the SEC.\n\n| | Tier 1 | Tier 2 |\n|---|---|---|\n| Max in 12 months | **$20 million** | **$75 million** |\n| Max affiliate secondary sales | **$6 million** | **$22.5 million** |\n| Financials | 2 years, generally **unaudited** | 2 years, **audited** |\n| Ongoing reports | Generally none | **Annual (audited) + semiannual** |\n| State blue sky review | **Yes** | **No** (anti-fraud still applies) |\n\n> **Exam tip** Rule 147 = one state; Reg S = abroad; Reg D = private; Reg A+ = small public-ish raise. Match the scenario keyword."
+  },
+  {
+   "h": "Rule 144, 144A, 145 and tender offers",
+   "md": "- **Rule 144** governs resale of **restricted** and **control** securities.\n- **Restricted stock**: never registered (private placement, employee benefit plans, pay for services, seed/start-up money). Needs **6-month holding period** (reporting company) **and** adequate current public information, so only **public-company** shares qualify. Volume limits do **not** apply to a non-affiliate selling restricted stock.\n- **Control stock**: held by an **affiliate** (officer, director, **>10% voting holder**). No holding period if the shares are registered; **volume limit** per **90 days** = the **greater of 1% of outstanding shares of the class** or **average weekly volume over the prior 4 weeks**. If control shares are also restricted, the 6-month hold applies too.\n- **Form 144** filed before selling control shares, unless the sales total **$50,000 or less over three months**.\n\n| Shares | Holding period | Volume limit |\n|---|---|---|\n| Restricted (non-affiliate) | **6 months** | No |\n| Control, registered | No | **Yes** |\n| Control + restricted | **6 months** | **Yes** |\n\n- **Rule 144A**: unregistered securities traded among **QIBs**. QIB = institution managing **≥ $100 million** of securities; **broker-dealer ≥ $10 million**. Common uses: **high-yield debt**, **pre-IPO shares**. Adds liquidity to private placements.\n- **Rule 145**: when holders receive a **new security** through a **reclassification** (swap one security for another, *not* a split, reverse split or par change), **merger/acquisition**, or **transfer of assets**, they get registration and a prospectus. Exchange offers with the same issuer, no extra consideration, no solicitation fee, limited to existing holders (stock splits, stock dividends) may be exempt.\n\n- **Tender offer**: offer by the issuer or an outsider to buy **at least 5%** of shares **directly from holders**, for cash or securities (**exchange offer**), usually at a **premium**. Holders tender **only shares they own** (no shorting into a tender). Offeror may set a **minimum**; if unmet, **no purchases**. **Oversubscribed** → **pro rata** acceptance. **Same price** for all holders.\n\n> **Exam tip** Restricted = **time** limit; control = **volume** limit; a Rule 144 sale needs a **public** issuer. Tender 100 million for 10 million sought → **10%** accepted."
+  },
+  {
+   "h": "Types of offerings and shelf registration",
+   "md": "- **IPO**: an issuer’s initial sale of securities to the public. **Follow-on**: a later offering by an issuer whose securities already trade publicly.\n- **Primary**: issuer sells **new shares**, keeps **all proceeds**. **Secondary**: **existing shareholders** sell; **they** get the proceeds, no new shares, issuer’s net worth unchanged. **Split**: both combined.\n- The prospectus cover discloses IPO vs follow-on and primary / secondary / split.\n- **Shelf registration**: pre-register equity or debt now, sell later; valid up to **3 years**; **follow-on only, never an IPO**; no new registration or prospectus at each sale.\n\n> **Exam tip** *Follow-on* (issuer already public) and *secondary* (selling holders get the cash) answer different questions; an offering can be both."
+  },
+  {
+   "h": "Underwriting: selection, commitment types, syndicate roles, spread",
+   "md": "- **Negotiated**: issuer picks one underwriter after a **bake-off / pitch** (price, sector expertise, rapport); most corporate deals. **Competitive bid**: sealed bids, **best price wins**; select municipal deals.\n- **Underwriting agreement** = issuer-underwriter contract.\n\n| Commitment | Underwriter risk | Notes |\n|---|---|---|\n| **Firm commitment** | **Buys all shares**; liable for unsold | Most common; unsold shares split among syndicate |\n| **Standby** | Buys what shareholders don’t take in a **rights offering** | Type of firm commitment |\n| **Best efforts** | **None**, acts as **agent** | Private placements, risky issues |\n| **All-or-none** | None | Entire deal cancelled if not all sold in the time period |\n| **Mini-max** | None | Cancelled unless minimum raised, then ordinary best efforts |\n\n| Participant | Role | Liability / document |\n|---|---|---|\n| **Lead (managing) underwriter** | Wins the bake-off, issuer liaison, forms syndicate | Liable for unsold; **AAU** |\n| **Syndicate members** | Commit to a percentage of the offering | Liable for unsold share; **AAU** |\n| **Selling group** | Sells an allotment as **agents** | **No liability**; unsold returns to syndicate; **selected dealer agreement** |\n\n- The syndicate is **temporary**, dissolving when the sale is complete.\n- **Book building** during cooling-off: collect IOIs by phone, meetings, road shows.\n- **Underwriting spread** = **public offering price − price paid to issuer**; bigger with more risk; disclosed in the prospectus.\n- Selling group buys at a **mark-up from the syndicate’s price but a discount from the POP**.\n\n> **Exam tip** Risk lives with the manager and members. The selling group only sells."
+  },
+  {
+   "h": "IPO restrictions (Rule 5130), stabilization, Reg M",
+   "md": "- **FINRA Rule 5130** protects the integrity of **equity IPOs** (bona fide public offering): **restricted persons cannot buy the IPO of common stock**, but may buy once it trades in the **secondary market**.\n- **Restricted persons**: **FINRA member firms and their employees**; **finders and fiduciaries** (attorneys, accountants) of the **managing underwriter**; **portfolio managers** in personal accounts; **immediate family** of any of these.\n- **Immediate family**: spouse, parents, in-laws, siblings, children, anyone receiving **material support** (> **25% of income**). **Not** family: aunts/uncles, grandparents, nieces/nephews, cousins, ex-spouses.\n- **Stabilization**: underwriter (normally the syndicate manager) **bids in the secondary market** to prevent a price drop. **Never above the public offering price**; announced in advance; disclosed in the prospectus.\n- **SEC Regulation M** prevents manipulation of IPOs and follow-ons by broker-dealers.\n\n> **Exam tip** Stabilizing bid ceiling = **POP**."
+  },
+  {
+   "h": "Municipal bond underwriting",
+   "md": "- Munis are **exempt** from registration, yet underwriting is similar (syndicate, spread).\n- **MSRB Rule G-11 order priority** (applies when orders exceed bonds); syndicates can take orders **before** being awarded the deal:\n\n| Priority | Order | Benefits |\n|---|---|---|\n| 1 | **Presale** | Entered **before award**; pro rata to **all** members |\n| 2 | **Group** | First after award, before allocations; pro rata to **all** members |\n| 3 | **Designated** | Names the member(s) getting credit (often institutions) |\n| 4 | **Member** | Members’ own inventory/related accounts (lowest) |\n\n- Syndicate account **settled within 30 calendar days** after delivery of securities; the manager pays members by participation.\n- **SEC Rule 15c2-12**: SEC and MSRB cannot regulate issuers directly, so **broker-dealers** must (1) obtain, review and distribute the **official statement** and file it with the MSRB; (2) not underwrite unless the issuer **agreed in writing** to continuing disclosure: **annual financial information** (audited if available) and **material event notices** (rating changes, defaults, tax-status events) to the MSRB within **10 business days**.\n- **MSRB G-32**: investors receive the **official statement by settlement**; a **preliminary official statement** (like a red herring) may precede it, but the final is still required.\n- **MSRB G-34 CUSIP**: **negotiated** → underwriter requests by **pricing**; **competitive** → municipal advisor applies **within 1 business day** of sending the notice of sale; no advisor → underwriter applies **immediately** upon award notice.\n\n> **Exam tip** Remember the order **P-G-D-M** (presale, group, designated, member): club benefit first, single-firm benefit last."
+  }
+ ],
+ "traps": [
+  "**Clears vs approves.** The SEC *clears* a registration for sale. It never approves, disapproves, guarantees or verifies the accuracy of the securities or the filing.",
+  "**Pre-filing vs cooling-off.** Before filing: no marketing, no offers, no sales. After filing (cooling-off): marketing allowed, **sales still forbidden**. Sales start on the effective date.",
+  "**Red herring vs final prospectus.** The red herring has a price range and no final price or share count, and is not an offer. The final prospectus has both and is an actual offer; buyers must get it by settlement.",
+  "**Exempt security vs exempt transaction.** Treasuries and munis are exempt whatever the sale method. Private placements and intrastate offerings are exempt only because of how they are sold.",
+  "**Rule 147 vs Regulation S.** Rule 147 = sold only to residents of one state. Reg S = raised overseas. Both avoid SEC registration.",
+  "**Accredited income tests.** $200,000 individual or $300,000 joint, for each of the last two years plus expectation this year. A retiree is not accredited on past income. Net worth $1 million excludes the home.",
+  "**Rule 144 restricted vs control.** Restricted stock = holding period (6 months), no volume cap for non-affiliates. Control stock = volume cap (greater of 1% or 4-week average weekly volume per 90 days), no holding period unless also restricted.",
+  "**Rule 144 vs 144A.** Rule 144 lets individuals resell restricted or control stock of a public issuer. Rule 144A lets QIBs ($100 million) trade unregistered securities among themselves.",
+  "**Reg A+ tiers.** Tier 1: $20 million, state review, no audit, no ongoing reports. Tier 2: $75 million, audited, annual and semiannual reports, no state review.",
+  "**Follow-on vs secondary.** Follow-on = the issuer is already public. Secondary = existing holders sell and keep the proceeds. Split = primary plus secondary.",
+  "**Firm commitment vs best efforts.** Firm: underwriters buy and bear unsold risk. Best efforts: agents, no liability. All-or-none and mini-max are best-efforts variants, not firm commitments.",
+  "**Syndicate vs selling group.** Syndicate members share the risk under the AAU. The selling group takes no risk and operates under the selected dealer agreement.",
+  "**Restricted person family.** Spouse, parents, in-laws, siblings, children and anyone you support at more than 25% of their income are restricted. Cousins, grandparents, aunts and ex-spouses are not.",
+  "**Muni order priority.** Presale, group, designated, member. Orders benefiting the whole syndicate beat orders benefiting one firm."
+ ],
+ "formulas": [
+  {
+   "name": "Underwriting spread",
+   "rule": "Spread per share = public offering price − price paid to issuer. Total spread = spread × shares sold. Issuer proceeds = price paid to issuer × shares.",
+   "example": "Syndicate pays the issuer $18.50 and offers at $20.00 → spread **$1.50**. On 4,000,000 shares: spread **$6,000,000**; issuer receives **$74,000,000**."
+  },
+  {
+   "name": "Rule 144 control-stock volume limit (per 90 days)",
+   "rule": "Max sale = greater of (1% of outstanding shares of the class) or (average weekly volume over the preceding 4 weeks).",
+   "example": "8,000,000 shares outstanding, average weekly volume 60,000 → 1% = 80,000; average volume = 60,000; limit **80,000 shares per 90 days**. Sales of $50,000 or less in 3 months need no Form 144."
+  },
+  {
+   "name": "Rule 144 decision table",
+   "rule": "Restricted (non-affiliate): 6-month hold, public issuer, no volume cap. Control (registered): no hold, volume cap. Control + restricted: both.",
+   "example": "Non-affiliate employee holds restricted shares of a public company for 9 months → can sell, no volume cap. Same shares held 4 months → must wait **2 more months**."
+  },
+  {
+   "name": "Accredited investor tests (Reg D)",
+   "rule": "Net worth ≥ $1 million excluding primary home; OR income > $200,000 (> $300,000 joint) in each of last 2 years with same expected this year; OR issuer officer/partner/director; OR institution with $5 million assets. Max 35 non-accredited.",
+   "example": "Couple earned $310,000, $320,000 and expects $305,000 this year → accredited. Same couple’s $1.1 million net worth that includes a $400,000 home counts only **$700,000**."
+  },
+  {
+   "name": "Tender offer proration",
+   "rule": "Acceptance % = shares sought ÷ shares tendered. Each holder’s accepted shares = shares tendered × that %. Minimum not met → no purchases.",
+   "example": "Bidder wants 6 million, holders tender 24 million → **25%**. A holder tendering 2,000 shares sells **500**."
+  },
+  {
+   "name": "Key deadlines and thresholds",
+   "rule": "FINRA filing: 3 business days after SEC filing. Cooling-off: ~20 days. Prospectus tail after IPO: 25 days. Shelf: 3 years. Rule 147 resale out of state: 6 months. Syndicate settlement: 30 calendar days. Material event notice: 10 business days.",
+   "example": "Rule 5130 material support test: > **25%** of the person’s income. Tender offer: **≥ 5%** of shares."
+  }
+ ],
+ "glossary": [
+  {
+   "t": "Securities Act of 1933",
+   "d": "Federal law requiring securities to be SEC-registered unless the security or transaction is exempt, aimed at disclosure and fraud prevention."
+  },
+  {
+   "t": "Registration statement",
+   "d": "Document the issuer files with the SEC (S-1 for an IPO) containing all material information about the company and the securities."
+  },
+  {
+   "t": "Prospectus",
+   "d": "Disclosure document given to buyers at or before sale, containing the registration information."
+  },
+  {
+   "t": "Preliminary prospectus (red herring)",
+   "d": "Cooling-off period prospectus with a price range, no final price or share count, and a red legend saying it is not an offer."
+  },
+  {
+   "t": "Final prospectus",
+   "d": "Prospectus with final price and share count; it is an actual offer and must reach buyers by settlement."
+  },
+  {
+   "t": "Access equals delivery",
+   "d": "Prospectus delivery is satisfied by SEC filing plus a notice to each purchaser saying where to access it."
+  },
+  {
+   "t": "Pre-filing (quiet) period",
+   "d": "Time before the registration statement is filed; no marketing, offers or sales."
+  },
+  {
+   "t": "Cooling-off period",
+   "d": "Time from SEC filing to the effective date, typically 20 days or more; marketing allowed, sales not."
+  },
+  {
+   "t": "Effective date",
+   "d": "Date the SEC declares registration effective and securities can lawfully be sold."
+  },
+  {
+   "t": "Road show",
+   "d": "Presentation by issuer and lead underwriter to prospective investors during cooling-off."
+  },
+  {
+   "t": "Indication of interest (IOI)",
+   "d": "Non-binding expression of buying interest that usually becomes an order on the effective date."
+  },
+  {
+   "t": "Tombstone ad",
+   "d": "Basic announcement of an offering naming issuer, business, underwriters and security type."
+  },
+  {
+   "t": "Free writing prospectus (FWP)",
+   "d": "Written or graphic communication that supplements the registration without redoing it."
+  },
+  {
+   "t": "Bake-off",
+   "d": "Competition among investment banks pitching to win an issuer’s mandate."
+  },
+  {
+   "t": "Exempt security",
+   "d": "Security that need not be registered whatever the sale method, such as Treasuries, munis, commercial paper of 270 days or less."
+  },
+  {
+   "t": "Exempt transaction",
+   "d": "Sale method, such as a private placement or intrastate offering, that avoids SEC registration."
+  },
+  {
+   "t": "Rule 147",
+   "d": "Intrastate exemption allowing sales only to residents of the issuer’s home state."
+  },
+  {
+   "t": "Regulation S",
+   "d": "Exemption for capital raised overseas."
+  },
+  {
+   "t": "Regulation D",
+   "d": "Rules governing private placements and the types of permitted investors."
+  },
+  {
+   "t": "Accredited investor",
+   "d": "Investor assumed sophisticated, meeting net worth, income, insider or institutional tests, allowed in unlimited numbers."
+  },
+  {
+   "t": "Non-accredited investor",
+   "d": "Investor who fails the accredited tests; generally no more than 35 may join a private placement."
+  },
+  {
+   "t": "PIPE",
+   "d": "Private investment in public equity: a public company raising capital through a private placement."
+  },
+  {
+   "t": "Regulation A+",
+   "d": "JOBS Act exemption letting smaller issuers raise up to $20 million (Tier 1) or $75 million (Tier 2)."
+  },
+  {
+   "t": "Restricted stock",
+   "d": "Stock never SEC-registered, acquired in private placements, benefit plans or for services, with a 6-month hold under Rule 144."
+  },
+  {
+   "t": "Control stock",
+   "d": "Shares held by an affiliate of the issuer, subject to Rule 144 volume limits."
+  },
+  {
+   "t": "Form 144",
+   "d": "Filing required before selling control stock, unless sales total $50,000 or less over three months."
+  },
+  {
+   "t": "Qualified institutional buyer (QIB)",
+   "d": "Institution managing at least $100 million in securities, or a broker-dealer with at least $10 million."
+  },
+  {
+   "t": "Rule 144A",
+   "d": "Allows unregistered securities to be sold to QIBs without registration."
+  },
+  {
+   "t": "Rule 145",
+   "d": "Gives holders registration protection when they receive new securities in a reclassification, merger or asset transfer."
+  },
+  {
+   "t": "Tender offer",
+   "d": "Offer to buy at least 5% of a company’s shares directly from shareholders, usually at a premium."
+  },
+  {
+   "t": "IPO",
+   "d": "An issuer’s initial sale of its securities to the public."
+  },
+  {
+   "t": "Follow-on offering",
+   "d": "Later public sale of additional securities by an issuer whose securities already trade publicly."
+  },
+  {
+   "t": "Primary offering",
+   "d": "Issuer sells new shares and receives all proceeds."
+  },
+  {
+   "t": "Secondary offering",
+   "d": "Existing shareholders sell and receive the proceeds; no new shares are created."
+  },
+  {
+   "t": "Split offering",
+   "d": "Offering combining primary and secondary shares."
+  },
+  {
+   "t": "Shelf registration",
+   "d": "Pre-registration of securities to be sold later, valid up to three years, follow-on only."
+  },
+  {
+   "t": "Firm commitment",
+   "d": "Underwriters buy the whole issue and bear the risk of unsold securities."
+  },
+  {
+   "t": "Best efforts",
+   "d": "Underwriters act as agents with no liability for unsold securities."
+  },
+  {
+   "t": "Underwriting spread",
+   "d": "Difference between the public offering price and what underwriters pay the issuer."
+  },
+  {
+   "t": "Restricted person (Rule 5130)",
+   "d": "Person barred from buying an equity IPO, such as FINRA firm employees and their immediate family."
+  },
+  {
+   "t": "Stabilization",
+   "d": "Underwriter bidding in the secondary market, never above the public offering price, to prevent a price decline."
+  },
+  {
+   "t": "Official statement",
+   "d": "Municipal bond disclosure document similar to a prospectus, due to investors by settlement."
+  },
+  {
+   "t": "SEC Rule 15c2-12",
+   "d": "Requires dealers to deliver official statements and obtain issuers’ written continuing-disclosure commitments."
+  }
+ ],
+ "cards": [
+  {
+   "id": "8-c01",
+   "f": "What are the two goals of the Securities Act of 1933?",
+   "b": "(1) Investors receive **material information**; (2) **no fraud or misrepresentation** in selling to the public.",
+   "r": "8.1"
+  },
+  {
+   "id": "8-c02",
+   "f": "Does the SEC approve a new issue?",
+   "b": "**No.** It never approves, disapproves or verifies accuracy; it **clears** the registration for sale.",
+   "r": "8.1"
+  },
+  {
+   "id": "8-c03",
+   "f": "When must the prospectus reach a buyer?",
+   "b": "**At or before** the sale; the final prospectus no later than **settlement**.",
+   "r": "8.1"
+  },
+  {
+   "id": "8-c04",
+   "f": "FINRA corporate financing filing deadline",
+   "b": "Documents go to FINRA within **3 business days** after the SEC filing, treated **confidentially**.",
+   "r": "8.1"
+  },
+  {
+   "id": "8-c05",
+   "f": "Three FINRA corporate financing requirements",
+   "b": "**Filing**, **no unfair terms/arrangements**, and **conflict-of-interest** disclosure and mitigation.",
+   "r": "8.1"
+  },
+  {
+   "id": "8-c06",
+   "f": "Name five items in a registration statement",
+   "b": "Business description, **insiders**, **underwriters and counsel**, **use of proceeds**, **legal proceedings**, certified financials.",
+   "r": "8.1.1"
+  },
+  {
+   "id": "8-c07",
+   "f": "Who are insiders on the registration statement?",
+   "b": "Officers (CEO, CFO), directors, and **>10% stockholders**.",
+   "r": "8.1.1"
+  },
+  {
+   "id": "8-c08",
+   "f": "What may be done in the pre-filing (quiet) period?",
+   "b": "**No marketing and no offers or sales** to the public.",
+   "r": "8.1.1"
+  },
+  {
+   "id": "8-c09",
+   "f": "Cooling-off period: start, end, length",
+   "b": "Starts at **SEC filing**, ends at the **effective date**; typically **at least 20 days**.",
+   "r": "8.1.2"
+  },
+  {
+   "id": "8-c10",
+   "f": "Marketing and sales during cooling-off",
+   "b": "Marketing **allowed**; **sales prohibited**.",
+   "r": "8.1.2"
+  },
+  {
+   "id": "8-c11",
+   "f": "What is a red herring?",
+   "b": "The **preliminary prospectus**, with a red legend that it is **not an offer**; sales only via the final prospectus.",
+   "r": "8.1.2"
+  },
+  {
+   "id": "8-c12",
+   "f": "What does the red herring omit?",
+   "b": "The **final offer price** and **number of shares** (it shows a price range).",
+   "r": "8.1.2"
+  },
+  {
+   "id": "8-c13",
+   "f": "What is a road show?",
+   "b": "Issuer and **lead underwriter** present the offering to prospective investors in the cooling-off period.",
+   "r": "8.1.2"
+  },
+  {
+   "id": "8-c14",
+   "f": "What is an indication of interest?",
+   "b": "A **non-binding** sign of buying interest; usually becomes an order on the effective date unless cancelled.",
+   "r": "8.1.2"
+  },
+  {
+   "id": "8-c15",
+   "f": "What do many IOIs imply for pricing?",
+   "b": "Strong demand, so a **higher** offering price; weak IOIs push the price down.",
+   "r": "8.1.2"
+  },
+  {
+   "id": "8-c16",
+   "f": "What does a tombstone ad contain?",
+   "b": "Issuer name, brief business description, underwriters, type of security; it is the **only ad** permitted in cooling-off.",
+   "r": "8.1.2"
+  },
+  {
+   "id": "8-c17",
+   "f": "What is a free writing prospectus?",
+   "b": "Written or graphic **update beyond the prospectus** (e.g. CEO interview, recorded online road show) without redoing the filing.",
+   "r": "8.1.2"
+  },
+  {
+   "id": "8-c18",
+   "f": "What happens on the effective date?",
+   "b": "SEC declares the registration effective; shares can be **lawfully sold**, IOIs are confirmed, shares allocated.",
+   "r": "8.1.3"
+  },
+  {
+   "id": "8-c19",
+   "f": "How does a final prospectus differ from a red herring?",
+   "b": "It includes the **final price and share count** and is an **actual offer**.",
+   "r": "8.1.3"
+  },
+  {
+   "id": "8-c20",
+   "f": "Access equals delivery: what two conditions?",
+   "b": "Final prospectus **filed with the SEC** and a **notice** to each purchaser saying where to access it, by settlement.",
+   "r": "8.1.3"
+  },
+  {
+   "id": "8-c21",
+   "f": "Prospectus requirement after an IPO",
+   "b": "A prospectus or notice of availability must accompany sales for **25 days** after the IPO.",
+   "r": "8.1.3"
+  },
+  {
+   "id": "8-c22",
+   "f": "Order of events: bake-off, filing, red herring, effective date",
+   "b": "**Bake-off → filing → red herring delivery → effective date.**",
+   "r": "8.1.4"
+  },
+  {
+   "id": "8-c23",
+   "f": "Which exempt securities are listed?",
+   "b": "**US government/agency**, **municipal bonds**, **nonprofits**, **commercial paper (≤270 days)**, **commercial bank** securities.",
+   "r": "8.2.1"
+  },
+  {
+   "id": "8-c24",
+   "f": "Maximum maturity for exempt short-term corporate debt",
+   "b": "**270 days**.",
+   "r": "8.2.1"
+  },
+  {
+   "id": "8-c25",
+   "f": "Is a muni bond mutual fund exempt?",
+   "b": "**No.** Investment company securities (mutual funds, ETFs) are **non-exempt** even if they hold exempt bonds.",
+   "r": "8.2.1"
+  },
+  {
+   "id": "8-c26",
+   "f": "Are bank holding company securities exempt?",
+   "b": "**No.** Only **commercial bank** securities are exempt.",
+   "r": "8.2.1"
+  },
+  {
+   "id": "8-c27",
+   "f": "Rule 147: where can securities be sold?",
+   "b": "Only to **residents of the issuer’s home state** (100% of buyers).",
+   "r": "8.2.2"
+  },
+  {
+   "id": "8-c28",
+   "f": "Rule 147: the 80% tests",
+   "b": "80% of **gross revenue**, **assets**, or **net proceeds used** in-state, or a **majority of employees** in-state (need one), plus principal place of business there.",
+   "r": "8.2.2"
+  },
+  {
+   "id": "8-c29",
+   "f": "Rule 147 resale restriction",
+   "b": "In-state resale: **immediate**. Out-of-state resale: wait **6 months**.",
+   "r": "8.2.2"
+  },
+  {
+   "id": "8-c30",
+   "f": "Which exemption covers raising capital in Europe?",
+   "b": "**Regulation S** (overseas offering).",
+   "r": "8.2.2"
+  },
+  {
+   "id": "8-c31",
+   "f": "Reg D private placement: dollar limit",
+   "b": "**None**; unlimited capital, but resale is restricted.",
+   "r": "8.2.3"
+  },
+  {
+   "id": "8-c32",
+   "f": "Accredited investor: net worth test",
+   "b": "**$1 million** net worth excluding the primary residence.",
+   "r": "8.2.3"
+  },
+  {
+   "id": "8-c33",
+   "f": "Accredited investor: income test",
+   "b": "> **$200,000** individual or > **$300,000** joint, each of the last **2 years**, with same expected this year.",
+   "r": "8.2.3"
+  },
+  {
+   "id": "8-c34",
+   "f": "Other accredited investors",
+   "b": "**Officers, partners, directors** of the issuer and **institutions with $5 million** in assets.",
+   "r": "8.2.3"
+  },
+  {
+   "id": "8-c35",
+   "f": "Why is a retiree not accredited on past income?",
+   "b": "No **reasonable expectation** of the same income this year.",
+   "r": "8.2.3"
+  },
+  {
+   "id": "8-c36",
+   "f": "Maximum non-accredited investors in a private placement",
+   "b": "Generally **35**; accredited investors are unlimited.",
+   "r": "8.2.3"
+  },
+  {
+   "id": "8-c37",
+   "f": "What is a PIPE?",
+   "b": "**Public company** raising capital via a **private placement**, to move fast and avoid registration.",
+   "r": "8.2.3"
+  },
+  {
+   "id": "8-c38",
+   "f": "What is restricted stock?",
+   "b": "Stock **never SEC-registered**, from private placements, benefit plans, pay for services or seed money.",
+   "r": "8.2.4.1"
+  },
+  {
+   "id": "8-c39",
+   "f": "Rule 144 restricted stock holding period",
+   "b": "**6 months** for reporting companies, and the issuer must be **public** with current information.",
+   "r": "8.2.4.1"
+  },
+  {
+   "id": "8-c40",
+   "f": "Who is an affiliate (control person)?",
+   "b": "An **officer**, **director**, or holder of **>10% of voting shares**.",
+   "r": "8.2.4.2"
+  },
+  {
+   "id": "8-c41",
+   "f": "Rule 144 control stock volume limit",
+   "b": "Per **90 days**, the **greater of 1% of the class outstanding** or the **4-week average weekly volume**.",
+   "r": "8.2.4.2"
+  },
+  {
+   "id": "8-c42",
+   "f": "When is Form 144 not required?",
+   "b": "If sales total **$50,000 or less** over three months.",
+   "r": "8.2.4.2"
+  },
+  {
+   "id": "8-c43",
+   "f": "Restricted vs control under Rule 144",
+   "b": "Restricted: **holding period**, no volume cap. Control: **volume cap**, no holding period (unless also restricted).",
+   "r": "8.2.4.3"
+  },
+  {
+   "id": "8-c44",
+   "f": "Who is a QIB?",
+   "b": "Institution managing **≥ $100 million** of securities; broker-dealer **≥ $10 million**.",
+   "r": "8.2.5"
+  },
+  {
+   "id": "8-c45",
+   "f": "Typical Rule 144A uses",
+   "b": "**High-yield debt** and **pre-IPO shares**; QIBs trade freely among themselves.",
+   "r": "8.2.5"
+  },
+  {
+   "id": "8-c46",
+   "f": "Reg A+ Tier 1 vs Tier 2 limits",
+   "b": "Tier 1 **$20 million** (affiliate secondary $6 million); Tier 2 **$75 million** (affiliate secondary $22.5 million), per 12 months.",
+   "r": "8.2.6"
+  },
+  {
+   "id": "8-c47",
+   "f": "Reg A+ Tier 2 vs Tier 1: audit, reports, state review",
+   "b": "Tier 2: **audited**, annual + semiannual reports, **no state review**. Tier 1: generally unaudited, no reports, **state review**.",
+   "r": "8.2.6"
+  },
+  {
+   "id": "8-c48",
+   "f": "What does Rule 145 cover?",
+   "b": "**Reclassifications, mergers/acquisitions, transfers of assets**: holders get registration and a prospectus.",
+   "r": "8.2.7"
+  },
+  {
+   "id": "8-c49",
+   "f": "Is a stock split a Rule 145 reclassification?",
+   "b": "**No.** Splits, reverse splits and par-value changes are excluded.",
+   "r": "8.2.7"
+  },
+  {
+   "id": "8-c50",
+   "f": "Tender offer minimum size",
+   "b": "An offer to buy **at least 5%** of a company’s shares directly from holders.",
+   "r": "8.2.7.1"
+  },
+  {
+   "id": "8-c51",
+   "f": "Can a holder short into a tender offer?",
+   "b": "**No**; only shares **actually owned** can be tendered.",
+   "r": "8.2.7.1"
+  },
+  {
+   "id": "8-c52",
+   "f": "Oversubscribed tender offer",
+   "b": "Shares accepted **pro rata** from all tendering holders, all at the **same price**.",
+   "r": "8.2.7.1"
+  },
+  {
+   "id": "8-c53",
+   "f": "Tender offer with a minimum and the minimum isn’t met",
+   "b": "The offeror **purchases nothing**.",
+   "r": "8.2.7.1"
+  },
+  {
+   "id": "8-c54",
+   "f": "IPO vs follow-on",
+   "b": "IPO = the issuer’s **initial** public sale. Follow-on = an issuer **already public** sells more.",
+   "r": "8.3.1"
+  },
+  {
+   "id": "8-c55",
+   "f": "Primary vs secondary vs split",
+   "b": "Primary: **issuer** gets proceeds, new shares. Secondary: **holders** get proceeds. Split: **both**.",
+   "r": "8.3.1"
+  },
+  {
+   "id": "8-c56",
+   "f": "Shelf registration validity and limits",
+   "b": "Up to **3 years**; **follow-on only, never an IPO**; equity or debt.",
+   "r": "8.3.1"
+  },
+  {
+   "id": "8-c57",
+   "f": "Negotiated vs competitive underwriting",
+   "b": "Negotiated: **one chosen underwriter** (most corporate deals). Competitive: **sealed bids**, best price wins (select munis).",
+   "r": "8.3.2"
+  },
+  {
+   "id": "8-c58",
+   "f": "Firm commitment: who bears the risk?",
+   "b": "**Underwriters** buy all shares and are **liable for unsold** ones.",
+   "r": "8.3.3"
+  },
+  {
+   "id": "8-c59",
+   "f": "Standby commitment",
+   "b": "Firm commitment tied to a **rights offering**: underwriter buys shares **existing holders don’t**.",
+   "r": "8.3.3"
+  },
+  {
+   "id": "8-c60",
+   "f": "Best efforts, all-or-none, mini-max",
+   "b": "Agent role with **no liability**. All-or-none cancels unless **all** sold; mini-max cancels unless a **minimum** is raised.",
+   "r": "8.3.3"
+  },
+  {
+   "id": "8-c61",
+   "f": "Underwriting spread: how calculated?",
+   "b": "**Public offering price − price paid to the issuer**, per share. Larger when the underwriters take more risk; disclosed in the prospectus.",
+   "r": "8.3.5"
+  },
+  {
+   "id": "8-c62",
+   "f": "Who is a restricted person under Rule 5130?",
+   "b": "**FINRA member firms and employees**, finders and fiduciaries (attorneys, accountants) of the **managing underwriter**, portfolio managers buying for themselves, and their **immediate family**.",
+   "r": "8.3.6"
+  },
+  {
+   "id": "8-c63",
+   "f": "Immediate family under Rule 5130",
+   "b": "Spouse, parents, in-laws, siblings, children, and anyone receiving **material support** (> **25%** of income). Not aunts/uncles, grandparents, nieces/nephews, cousins, ex-spouses.",
+   "r": "8.3.6"
+  },
+  {
+   "id": "8-c64",
+   "f": "Stabilization: what and limit",
+   "b": "Underwriter (usually the manager) **bids in the secondary market** to resist a price drop; **never above the POP**; announced in advance and disclosed in the prospectus (Reg M).",
+   "r": "8.3.7.1"
+  },
+  {
+   "id": "8-c65",
+   "f": "MSRB G-11 order priority",
+   "b": "**Presale, group, designated, member.** Whole-syndicate benefit first, single-firm benefit last.",
+   "r": "8.4.1.1"
+  },
+  {
+   "id": "8-c66",
+   "f": "SEC Rule 15c2-12 requirements",
+   "b": "Underwriters obtain, review and distribute the **official statement** and file it with the MSRB, and need the issuer’s **written continuing-disclosure** promise (annual information, event notices within **10 business days**).",
+   "r": "8.4.2"
+  },
+  {
+   "id": "8-c67",
+   "f": "Which agreements bind syndicate and selling group?",
+   "b": "Syndicate members: **agreement among underwriters (AAU)**. Selling group: **selected dealer agreement**. The syndicate is temporary.",
+   "r": "8.3.4"
+  },
+  {
+   "id": "8-c68",
+   "f": "CUSIP application deadlines for new muni issues",
+   "b": "Negotiated: underwriter by **pricing**. Competitive: advisor within **1 business day** of the notice of sale; no advisor, underwriter **immediately** on award notice.",
+   "r": "8.4.4"
+  }
+ ],
+ "questions": [
+  {
+   "id": "8-q01",
+   "r": "8.1",
+   "k": "concept",
+   "d": 1,
+   "q": "Which statement best describes the SEC’s role in a new securities offering?",
+   "o": [
+    "It verifies every statement in the registration statement",
+    "It approves the securities as a sound investment",
+    "It reviews disclosure and clears the registration for sale without approving the securities",
+    "It guarantees investors against loss on the issue"
+   ],
+   "a": 2,
+   "w": [
+    "Wrong: the SEC does not fact-check the filing; the issuer remains liable for accuracy and completeness.",
+    "Wrong: the SEC never approves or disapproves securities; investors judge merit from the disclosure provided.",
+    "Correct: the SEC checks that required disclosure is present and declares registration effective, but never approves the issue or its merits.",
+    "Wrong: no regulator guarantees an issue; clearance only means disclosure requirements were met."
+   ]
+  },
+  {
+   "id": "8-q02",
+   "r": "8.1.1",
+   "k": "scenario",
+   "d": 1,
+   "q": "A bank is preparing an S-1 for a client that has not yet filed. May the bank’s salespeople begin calling investors to market the shares?",
+   "o": [
+    "Yes, as long as no orders are taken",
+    "Yes, but only to institutional investors",
+    "Yes, if only a tombstone is used",
+    "No, because no marketing or sales may occur before the registration statement is filed"
+   ],
+   "a": 3,
+   "w": [
+    "Wrong: marketing itself is not allowed before filing, so avoiding orders does not cure it.",
+    "Wrong: investor type makes no difference during the pre-filing period; marketing is prohibited.",
+    "Wrong: even a tombstone ad is not permitted before the filing; it is a cooling-off tool.",
+    "Correct: the pre-filing (quiet) period bars marketing, offers and sales; marketing begins only after the filing."
+   ]
+  },
+  {
+   "id": "8-q03",
+   "r": "8.1.2",
+   "k": "concept",
+   "d": 1,
+   "q": "Which of the following activities is prohibited during the cooling-off period?",
+   "o": [
+    "Distributing a red herring",
+    "Selling shares to the public",
+    "Conducting a road show",
+    "Collecting indications of interest"
+   ],
+   "a": 1,
+   "w": [
+    "Wrong: the preliminary prospectus is distributed precisely during cooling-off.",
+    "Correct: marketing is allowed in cooling-off, but sales cannot occur until the SEC declares the registration effective.",
+    "Wrong: road shows are a standard marketing tool of the cooling-off period.",
+    "Wrong: non-binding IOIs are gathered in cooling-off to gauge demand and pricing."
+   ]
+  },
+  {
+   "id": "8-q04",
+   "r": "8.1.2",
+   "k": "concept",
+   "d": 2,
+   "q": "A preliminary prospectus normally does NOT contain:",
+   "o": [
+    "The final offering price and number of shares",
+    "Business and financial information on the issuer",
+    "A red-ink legend stating it is not an offer",
+    "A range of expected prices"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: these details are fixed after demand is gauged and appear only in the final prospectus.",
+    "Wrong: it contains information similar to the registration statement.",
+    "Wrong: that legend is the reason for the red herring nickname and is present.",
+    "Wrong: the red herring typically shows a price range rather than a final price."
+   ]
+  },
+  {
+   "id": "8-q05",
+   "r": "8.1.2",
+   "k": "concept",
+   "d": 2,
+   "q": "Which of the following may be used to promote an offering during the cooling-off period?\nI. Red herring\nII. Tombstone advertisement\nIII. Free writing prospectus\nIV. Confirmation of a sale",
+   "o": [
+    "I, II and III only",
+    "I and II only",
+    "II, III and IV only",
+    "I, II, III and IV"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: the red herring, tombstone ad and free writing prospectus are permitted marketing tools, but sales confirmations are not.",
+    "Wrong: this omits the free writing prospectus, which is also permitted during cooling-off.",
+    "Wrong: a sale confirmation is a sale, and sales cannot happen before the effective date.",
+    "Wrong: item IV cannot be included because no sales are permitted until effectiveness."
+   ]
+  },
+  {
+   "id": "8-q06",
+   "r": "8.1.2",
+   "k": "scenario",
+   "d": 2,
+   "q": "During the cooling-off period an issuer’s CEO gives a recorded online interview that adds new information beyond the preliminary prospectus. This is best classified as a:",
+   "o": [
+    "Tombstone ad",
+    "Final prospectus",
+    "Free writing prospectus",
+    "Official statement"
+   ],
+   "a": 2,
+   "w": [
+    "Wrong: a tombstone is a bare factual announcement of issuer, underwriters and security type, not a new-information interview.",
+    "Wrong: a final prospectus has the final price and share count and comes only after effectiveness.",
+    "Correct: written or graphic communications, including recorded online road shows and CEO interviews, update investors without redoing the filing.",
+    "Wrong: an official statement is the municipal bond disclosure document, not a corporate offering tool."
+   ]
+  },
+  {
+   "id": "8-q07",
+   "r": "8.1.2",
+   "k": "scenario",
+   "d": 2,
+   "q": "A lead underwriter has received a large number of indications of interest well above the shares available. What is the most likely consequence?",
+   "o": [
+    "The underwriter must cancel the offering",
+    "The IOIs become binding orders immediately",
+    "The SEC must lower the price",
+    "The underwriter will likely set a higher offering price"
+   ],
+   "a": 3,
+   "w": [
+    "Wrong: strong demand is a positive signal; nothing requires cancelling the deal.",
+    "Wrong: IOIs are non-binding and only usually become orders on the effective date.",
+    "Wrong: the SEC does not set prices; underwriters and the issuer do.",
+    "Correct: heavy IOIs signal strong demand, which supports a higher price; weak interest would force a lower one."
+   ]
+  },
+  {
+   "id": "8-q08",
+   "r": "8.1.3",
+   "k": "scenario",
+   "d": 2,
+   "q": "The effective date of an IPO is Tuesday. A customer buys shares that day. A final prospectus has been filed with the SEC, and the firm emails a notice of where it can be accessed online before settlement. Has the firm met its delivery obligation?",
+   "o": [
+    "No, because a hard copy must always be mailed",
+    "Yes, because access equals delivery when the final prospectus is filed and notice is sent by settlement",
+    "No, because the red herring was not re-sent",
+    "No, because delivery must occur before the order is placed"
+   ],
+   "a": 1,
+   "w": [
+    "Wrong: physical delivery is not required under access equals delivery.",
+    "Correct: no hard copy is needed; filing plus a timely notice to the purchaser satisfies delivery.",
+    "Wrong: the red herring does not satisfy final prospectus delivery, and re-sending it is not required.",
+    "Wrong: the final prospectus is due no later than settlement, not before the order."
+   ]
+  },
+  {
+   "id": "8-q09",
+   "r": "8.1.3",
+   "k": "concept",
+   "d": 2,
+   "q": "For how long after an IPO must a prospectus, or a notice of its availability, accompany sales of the shares?",
+   "o": [
+    "90 days",
+    "20 days",
+    "30 days",
+    "25 days"
+   ],
+   "a": 3,
+   "w": [
+    "Wrong: 90 days is the Rule 144 volume-measurement period for control stock, unrelated to prospectus delivery.",
+    "Wrong: 20 days is the typical minimum length of the cooling-off period, not this delivery period.",
+    "Wrong: 30 days appears in other contexts, such as final syndicate settlement in munis, not here.",
+    "Correct: a prospectus or notice of availability must accompany sales for 25 days following an IPO."
+   ]
+  },
+  {
+   "id": "8-q10",
+   "r": "8.1.4",
+   "k": "concept",
+   "d": 1,
+   "q": "Place the following in order, earliest to latest: I. Bake-off  II. Filing of the registration statement  III. Effective date  IV. Delivery of the preliminary prospectus",
+   "o": [
+    "I, II, IV, III",
+    "I, IV, II, III",
+    "II, I, IV, III",
+    "I, II, III, IV"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: pitch first, then the filing, then red herring delivery during cooling-off, and finally the effective date.",
+    "Wrong: the preliminary prospectus cannot be distributed before the registration statement is filed.",
+    "Wrong: the bake-off to win the mandate precedes the S-1 filing.",
+    "Wrong: the red herring is a cooling-off document and comes before the effective date."
+   ]
+  },
+  {
+   "id": "8-q11",
+   "r": "8.1",
+   "k": "concept",
+   "d": 2,
+   "q": "Under FINRA’s corporate financing rules, public offering documents must be filed with FINRA no later than:",
+   "o": [
+    "Ten business days after filing with the SEC",
+    "Three business days after filing with the SEC",
+    "The effective date",
+    "Thirty calendar days after filing"
+   ],
+   "a": 1,
+   "w": [
+    "Wrong: ten business days is the muni material event notice deadline, not the FINRA filing deadline.",
+    "Correct: documents are due within three business days of the SEC filing and are treated confidentially.",
+    "Wrong: the requirement is tied to the SEC filing, not the effective date.",
+    "Wrong: thirty calendar days relates to muni syndicate account settlement."
+   ]
+  },
+  {
+   "id": "8-q12",
+   "r": "8.2.1",
+   "k": "concept",
+   "d": 1,
+   "q": "Which of the following securities is exempt from SEC registration?",
+   "o": [
+    "A corporate bond maturing in ten years",
+    "Common stock of a commercial company",
+    "Commercial paper with a 120-day maturity",
+    "Shares of an open-end mutual fund"
+   ],
+   "a": 2,
+   "w": [
+    "Wrong: corporate bonds are non-exempt and must be registered.",
+    "Wrong: stocks are non-exempt and must be registered.",
+    "Correct: short-term corporate debt with a maximum maturity of 270 days is exempt.",
+    "Wrong: investment company securities are non-exempt, even for funds holding exempt bonds."
+   ]
+  },
+  {
+   "id": "8-q13",
+   "r": "8.2.1",
+   "k": "concept",
+   "d": 2,
+   "q": "All of the following are exempt from SEC registration EXCEPT:",
+   "o": [
+    "Obligations of a nonprofit issuer",
+    "Securities issued by a commercial bank",
+    "Securities issued by a bank holding company",
+    "US Treasury bonds"
+   ],
+   "a": 2,
+   "w": [
+    "Wrong: nonprofit securities are on the exempt list.",
+    "Wrong: commercial bank securities are specifically exempt.",
+    "Correct: only commercial bank securities are exempt; holding company and investment bank securities must be registered.",
+    "Wrong: US government securities are exempt."
+   ]
+  },
+  {
+   "id": "8-q14",
+   "r": "8.2.1",
+   "k": "scenario",
+   "d": 2,
+   "q": "A customer asks whether a mutual fund that invests only in municipal bonds is exempt from registration because the underlying bonds are exempt. The correct answer is:",
+   "o": [
+    "No, the fund shares are an investment company security and must be registered",
+    "Yes, because exemption passes through to the fund",
+    "Yes, but only if the fund is closed-end",
+    "Yes, but only if the fund holds Treasuries"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: exemption attaches to the security itself, and mutual fund shares are non-exempt even if holdings are exempt.",
+    "Wrong: there is no pass-through of exemption to the fund’s own shares.",
+    "Wrong: closed-end and open-end fund securities are both non-exempt investment company securities.",
+    "Wrong: a Treasury fund is also non-exempt for the same reason."
+   ]
+  },
+  {
+   "id": "8-q15",
+   "r": "8.2.2",
+   "k": "scenario",
+   "d": 2,
+   "q": "A Texas company with most employees in Texas wants to sell stock only to Texas residents without SEC registration. Which rule applies, and what is the resale restriction for a buyer who wants to sell to an Ohio resident?",
+   "o": [
+    "Rule 147; the buyer may sell immediately",
+    "Rule 147; the buyer must wait six months",
+    "Regulation S; the buyer must wait one year",
+    "Rule 144A; the buyer must wait six months"
+   ],
+   "a": 1,
+   "w": [
+    "Wrong: immediate resale applies only to other state residents, not to an Ohio buyer.",
+    "Correct: Rule 147 allows an intrastate offering and out-of-state resale requires a six-month wait; in-state resale has no holding period.",
+    "Wrong: Regulation S covers offerings made overseas, not a single-state offering.",
+    "Wrong: Rule 144A covers resale to qualified institutional buyers, not intrastate offerings."
+   ]
+  },
+  {
+   "id": "8-q16",
+   "r": "8.2.2",
+   "k": "scenario",
+   "d": 3,
+   "q": "An issuer relying on Rule 147 sells 99% of an offering to state residents but one share to an out-of-state investor. What is the effect?",
+   "o": [
+    "Nothing, because 80% is enough",
+    "The exemption stays but a six-month hold applies to the issuer",
+    "The offering becomes a Regulation A+ Tier 1 automatically",
+    "The exemption is jeopardized because 100% of buyers must be residents"
+   ],
+   "a": 3,
+   "w": [
+    "Wrong: the 80% tests concern revenue, assets or proceeds, not the buyer residency, which must be 100%.",
+    "Wrong: the holding period applies to purchasers reselling out of state, not as a cure for the issuer.",
+    "Wrong: exemptions do not convert automatically; Reg A+ requires its own filing.",
+    "Correct: Rule 147 requires all securities to be sold to state residents, so a single out-of-state buyer can sink it."
+   ]
+  },
+  {
+   "id": "8-q17",
+   "r": "8.2.2",
+   "k": "concept",
+   "d": 3,
+   "q": "Which of the following is NOT an alternative qualifying test for the Rule 147 intrastate exemption (in addition to the principal place of business)?",
+   "o": [
+    "At least 80% of gross revenues earned in the state",
+    "At least 80% of the issuer’s shareholders live in the state",
+    "At least 80% of net proceeds used in the state",
+    "A majority of employees located in the state"
+   ],
+   "a": 1,
+   "w": [
+    "Wrong: this is one of the listed qualifying tests.",
+    "Correct: shareholder residency is not one of the listed tests; the issuer must meet one of revenue, assets, proceeds or employee tests.",
+    "Wrong: this is one of the listed qualifying tests.",
+    "Wrong: this is one of the listed qualifying tests."
+   ]
+  },
+  {
+   "id": "8-q18",
+   "r": "8.2.3",
+   "k": "calc",
+   "d": 2,
+   "q": "Alma’s home is worth $700,000 and her other net assets total $850,000. She earned $120,000 this year and each of the last two years. Is she an accredited investor?",
+   "o": [
+    "No, because her net worth excluding her home is $850,000, below $1 million, and her income is under $200,000",
+    "Yes, because her net worth excluding her home is $850,000",
+    "Yes, because net worth including her home is $1,550,000",
+    "Yes, because $120,000 for three years qualifies"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: the net worth test excludes the primary residence ($850,000 < $1,000,000) and $120,000 is below the $200,000 income test, so she fails both.",
+    "Wrong: $850,000 is below the $1 million net worth threshold, so this reasoning does not make her accredited.",
+    "Wrong: the primary residence is excluded from the $1 million net worth test, so this overstates it.",
+    "Wrong: the income test requires more than $200,000 individually in each of the last two years."
+   ]
+  },
+  {
+   "id": "8-q19",
+   "r": "8.2.3",
+   "k": "calc",
+   "d": 3,
+   "q": "Which couple qualifies as accredited on income alone? (Each has no other qualifying status.)",
+   "o": [
+    "Joint income of $290,000 in each of the last two years",
+    "Joint income of $320,000 last year and $250,000 the year before",
+    "Joint income of $320,000 in each of the last two years but expected to drop to $150,000",
+    "Joint income of $310,000 in each of the last two years, expected to continue"
+   ],
+   "a": 3,
+   "w": [
+    "Wrong: $290,000 is below the $300,000 joint income threshold.",
+    "Wrong: the threshold must be met in each of the two most recent years, and $250,000 fails.",
+    "Wrong: a reasonable expectation of the same income this year is required, and a known drop defeats it.",
+    "Correct: joint income above $300,000 for the last two years, plus a reasonable expectation of the same, meets the test."
+   ]
+  },
+  {
+   "id": "8-q20",
+   "r": "8.2.3",
+   "k": "concept",
+   "d": 1,
+   "q": "Which of the following are accredited investors?\nI. A director of the issuer\nII. An institution with $5 million in assets\nIII. A retiree who earned $300,000 a year until last year\nIV. A person with $1.2 million net worth excluding his home",
+   "o": [
+    "I and II only",
+    "II, III and IV only",
+    "I, II and IV only",
+    "I, II, III and IV"
+   ],
+   "a": 2,
+   "w": [
+    "Wrong: this omits the person with a $1.2 million net worth excluding his home, who qualifies.",
+    "Wrong: the retiree is not accredited because he lacks a reasonable expectation of similar income.",
+    "Correct: issuer directors, $5 million institutions and $1 million net worth excluding the home are accredited; the retiree has no expected income.",
+    "Wrong: item III fails because retired income does not create an expectation of the same current income."
+   ]
+  },
+  {
+   "id": "8-q21",
+   "r": "8.2.3",
+   "k": "concept",
+   "d": 1,
+   "q": "In a Regulation D private placement, which statement is correct?",
+   "o": [
+    "No more than 35 investors of any kind may participate",
+    "An unlimited amount may be raised, with generally no more than 35 non-accredited investors",
+    "Capital raised is capped at $20 million",
+    "The securities can be resold freely the next day"
+   ],
+   "a": 1,
+   "w": [
+    "Wrong: the cap of 35 applies only to non-accredited investors.",
+    "Correct: there is no dollar cap, accredited investors are unlimited, and non-accredited investors are generally capped at 35.",
+    "Wrong: $20 million is the Regulation A+ Tier 1 cap, not a private placement limit.",
+    "Wrong: private placement securities carry resale restrictions and cannot be sold without registration or an exemption."
+   ]
+  },
+  {
+   "id": "8-q22",
+   "r": "8.2.3",
+   "k": "scenario",
+   "d": 2,
+   "q": "A public company needs capital quickly and sells new shares in a Regulation D offering to a handful of institutions. This transaction is called a:",
+   "o": [
+    "PIPE",
+    "Follow-on shelf takedown",
+    "Tender offer",
+    "Rule 145 exchange"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: a private investment in public equity is a public company raising capital through a private placement.",
+    "Wrong: a shelf takedown is a registered sale from a pre-filed registration, not a private placement.",
+    "Wrong: a tender offer is a purchase of shares from shareholders, not a sale of new shares.",
+    "Wrong: Rule 145 covers reclassifications, mergers and asset transfers."
+   ]
+  },
+  {
+   "id": "8-q23",
+   "r": "8.2.4",
+   "k": "scenario",
+   "d": 2,
+   "q": "A former employee of a private start-up holds restricted shares acquired five years ago. The company has never gone public. May he sell them under Rule 144?",
+   "o": [
+    "Yes, because he has held them over six months",
+    "Yes, because he is not an affiliate",
+    "No, because Rule 144 requires a public company with adequate current information",
+    "Yes, but only up to 1% of outstanding shares"
+   ],
+   "a": 2,
+   "w": [
+    "Wrong: the holding period is necessary but not enough; the issuer must also be a public reporting company.",
+    "Wrong: non-affiliate status avoids volume limits but does not remove the public-issuer requirement.",
+    "Correct: only shares of a public issuer can be sold under Rule 144, regardless of how long they were held.",
+    "Wrong: the 1% volume limit applies to control stock and does not create eligibility here."
+   ]
+  },
+  {
+   "id": "8-q24",
+   "r": "8.2.4.1",
+   "k": "calc",
+   "d": 2,
+   "q": "Dana received restricted shares through her employer’s benefit plan three months ago. The employer is a public reporting company and she is not an affiliate. How much longer must she wait before selling under Rule 144?",
+   "o": [
+    "Zero, because the issuer is public",
+    "Nine more months",
+    "Twelve more months",
+    "Three more months"
+   ],
+   "a": 3,
+   "w": [
+    "Wrong: a public issuer is needed but the six-month holding period must still be met.",
+    "Wrong: this adds the elapsed time to the requirement instead of subtracting it.",
+    "Wrong: a one-year period does not apply to restricted stock of a reporting company; six months does.",
+    "Correct: the required holding period is six months, so 6 − 3 = 3 months remain."
+   ]
+  },
+  {
+   "id": "8-q25",
+   "r": "8.2.4.2",
+   "k": "calc",
+   "d": 3,
+   "q": "A director owns control stock that is registered (not restricted). The company has 4,000,000 shares outstanding and average weekly trading volume over the prior four weeks of 30,000 shares. What is the maximum she may sell in a 90-day period?",
+   "o": [
+    "400,000 shares",
+    "30,000 shares",
+    "70,000 shares",
+    "40,000 shares"
+   ],
+   "a": 3,
+   "w": [
+    "Wrong: this uses 10% rather than 1% of outstanding shares.",
+    "Wrong: average weekly volume is the lower of the two measures here, and the limit is the greater.",
+    "Wrong: the two measures are alternatives, not added together.",
+    "Correct: 1% of 4,000,000 = 40,000, which exceeds the 30,000 average weekly volume, and the greater figure applies."
+   ]
+  },
+  {
+   "id": "8-q26",
+   "r": "8.2.4.2",
+   "k": "calc",
+   "d": 3,
+   "q": "An affiliate with registered control stock wants to sell shares. Outstanding shares are 900,000 and average weekly volume over the last four weeks is 12,000. Which volume limit applies per 90 days, and why?",
+   "o": [
+    "12,000 shares, because the average weekly volume exceeds 1% (9,000)",
+    "9,000 shares, because 1% always governs",
+    "21,000 shares, the sum of both",
+    "48,000 shares, four weeks of volume"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: 1% of 900,000 = 9,000 is less than 12,000, and the rule takes the greater of the two measures.",
+    "Wrong: 1% governs only when it is the greater figure, which it is not here.",
+    "Wrong: the measures are alternatives; they are never combined.",
+    "Wrong: the average weekly figure is used, not the four-week total."
+   ]
+  },
+  {
+   "id": "8-q27",
+   "r": "8.2.4.3",
+   "k": "concept",
+   "d": 3,
+   "q": "Which statement about Rule 144 is correct?",
+   "o": [
+    "Control stock must be held six months in every case",
+    "Control stock is subject to a volume limit, while restricted stock is subject to a holding period",
+    "Restricted stock sold by a non-affiliate is subject to the volume limit",
+    "Neither is subject to any limit once the issuer is public"
+   ],
+   "a": 1,
+   "w": [
+    "Wrong: registered control stock has no holding period; the six months applies to restricted shares.",
+    "Correct: control stock is limited by volume per 90 days; restricted stock must be held six months with no volume cap for non-affiliates.",
+    "Wrong: volume limits do not apply to non-affiliates selling restricted securities.",
+    "Wrong: going public satisfies the information condition only; holding and volume limits remain."
+   ]
+  },
+  {
+   "id": "8-q28",
+   "r": "8.2.5",
+   "k": "concept",
+   "d": 1,
+   "q": "Which of the following is a qualified institutional buyer under Rule 144A?",
+   "o": [
+    "A pension fund managing a $70 million portfolio",
+    "A wealthy individual with $50 million",
+    "A broker-dealer with a $12 million securities portfolio",
+    "An insurance company with $90 million in securities"
+   ],
+   "a": 2,
+   "w": [
+    "Wrong: institutions need at least $100 million in securities to qualify.",
+    "Wrong: QIBs are institutions, not individuals.",
+    "Correct: broker-dealers need only $10 million in securities to be QIBs.",
+    "Wrong: this is below the $100 million institutional requirement."
+   ]
+  },
+  {
+   "id": "8-q29",
+   "r": "8.2.5",
+   "k": "scenario",
+   "d": 2,
+   "q": "A private company’s early investor, a hedge fund, wants to sell its unregistered pre-IPO shares to a large asset manager managing $2 billion. Which exemption best facilitates this?",
+   "o": [
+    "Rule 147",
+    "Rule 144A",
+    "Rule 145",
+    "Regulation A+"
+   ],
+   "a": 1,
+   "w": [
+    "Wrong: Rule 147 is an intrastate offering exemption for issuers selling to residents of one state.",
+    "Correct: Rule 144A lets unregistered securities be sold to QIBs, and pre-IPO shares are a common use.",
+    "Wrong: Rule 145 deals with reclassifications, mergers and asset transfers.",
+    "Wrong: Regulation A+ is an issuer capital-raising exemption, not a resale venue among institutions."
+   ]
+  },
+  {
+   "id": "8-q30",
+   "r": "8.2.6",
+   "k": "calc",
+   "d": 2,
+   "q": "An issuer wants to raise $40 million in 12 months under Regulation A+. Which statement is correct?",
+   "o": [
+    "It may use Tier 1, whose cap is $75 million",
+    "It may use either tier, as both allow $40 million",
+    "It must use Tier 2, since Tier 1 is capped at $20 million",
+    "It cannot use Regulation A+ at all"
+   ],
+   "a": 2,
+   "w": [
+    "Wrong: the $75 million cap belongs to Tier 2.",
+    "Wrong: Tier 1 is capped at $20 million.",
+    "Correct: Tier 1 allows up to $20 million and Tier 2 up to $75 million, so $40 million requires Tier 2.",
+    "Wrong: $40 million is within the $75 million Tier 2 limit."
+   ]
+  },
+  {
+   "id": "8-q31",
+   "r": "8.2.6",
+   "k": "concept",
+   "d": 2,
+   "q": "Which of the following describes a Regulation A+ Tier 2 offering?",
+   "o": [
+    "Unaudited financials, no ongoing reports and state review",
+    "A $20 million cap with $6 million of affiliate secondary sales",
+    "No offering statement filed with the SEC",
+    "Audited financials, annual and semiannual reports, and no state securities review"
+   ],
+   "a": 3,
+   "w": [
+    "Wrong: this describes Tier 1.",
+    "Wrong: those are Tier 1 limits.",
+    "Wrong: both tiers require an offering statement filed with the SEC.",
+    "Correct: Tier 2 issuers provide audited statements and ongoing reports, and are not subject to state blue sky review."
+   ]
+  },
+  {
+   "id": "8-q32",
+   "r": "8.2.7",
+   "k": "scenario",
+   "d": 2,
+   "q": "Company A offers its shareholders shares of Company B in a merger of the two businesses. Which rule provides shareholders the protections of a new securities offering?",
+   "o": [
+    "Rule 145",
+    "Rule 147",
+    "Regulation S",
+    "Rule 144"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: mergers and acquisitions in which holders receive new securities are covered by Rule 145, entitling them to registration and a prospectus.",
+    "Wrong: Rule 147 is an intrastate offering exemption.",
+    "Wrong: Regulation S concerns offerings made overseas.",
+    "Wrong: Rule 144 governs resales of restricted and control stock."
+   ]
+  },
+  {
+   "id": "8-q33",
+   "r": "8.2.7.1",
+   "k": "calc",
+   "d": 2,
+   "q": "A bidder offers to buy 5 million shares in a tender offer. Shareholders tender 40 million shares. If a holder tendered 4,000 shares, how many are accepted?",
+   "o": [
+    "4,000 shares",
+    "1,250 shares",
+    "2,000 shares",
+    "500 shares"
+   ],
+   "a": 3,
+   "w": [
+    "Wrong: an oversubscribed tender is prorated, so not all tendered shares are taken.",
+    "Wrong: this treats the acceptance rate as 31.25% rather than 12.5%.",
+    "Wrong: this assumes half of the tendered shares are accepted, which ignores the proration ratio.",
+    "Correct: 5 million ÷ 40 million = 12.5%, and 12.5% of 4,000 = 500."
+   ]
+  },
+  {
+   "id": "8-q34",
+   "r": "8.2.7.1",
+   "k": "scenario",
+   "d": 2,
+   "q": "A bidder offers $33 per share for up to 12 million shares of Target Co. and sets a 9 million-share minimum. Only 7 million shares are tendered. What happens?",
+   "o": [
+    "The bidder purchases no shares",
+    "The bidder buys all 7 million shares",
+    "The bidder buys 7 million at a lower price",
+    "The bidder must raise the price until 9 million are tendered"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: if the minimum is not reached, the offeror does not go through with any purchases.",
+    "Wrong: the minimum qualification means no purchases are made below 9 million.",
+    "Wrong: all holders get the same price and the deal fails if the minimum is unmet.",
+    "Wrong: nothing requires the bidder to raise the price; the offer simply lapses."
+   ]
+  },
+  {
+   "id": "8-q35",
+   "r": "8.3.1",
+   "k": "scenario",
+   "d": 3,
+   "q": "A company with publicly traded stock registers a sale in which only its founder and a venture firm sell existing shares; no new shares are issued. Which description is accurate?",
+   "o": [
+    "An IPO that is a primary offering",
+    "A split offering because two sellers participate",
+    "A follow-on offering that is also a secondary offering",
+    "A standby commitment"
+   ],
+   "a": 2,
+   "w": [
+    "Wrong: the issuer already has publicly traded stock and no new shares are sold.",
+    "Wrong: a split offering combines primary and secondary shares, and there are no primary shares here.",
+    "Correct: the issuer is already public (follow-on) and only existing holders sell and receive the proceeds (secondary).",
+    "Wrong: a standby accompanies a rights offering to existing holders."
+   ]
+  },
+  {
+   "id": "8-q36",
+   "r": "8.3.1",
+   "k": "concept",
+   "d": 2,
+   "q": "Which of the following is true of a shelf registration?\nI. It is valid for up to three years\nII. It may be used for an IPO\nIII. It may cover debt as well as equity\nIV. It lets the issuer sell later without a new registration",
+   "o": [
+    "I, II and IV only",
+    "I, III and IV only",
+    "I and III only",
+    "II and III only"
+   ],
+   "a": 1,
+   "w": [
+    "Wrong: item II is false because shelf registration can only be used for follow-on offerings.",
+    "Correct: a shelf lasts up to three years, covers equity or debt, and permits later sales without a fresh registration, but never an IPO.",
+    "Wrong: this omits item IV, which is also true of a shelf.",
+    "Wrong: this includes the false statement about IPOs and omits two true statements."
+   ]
+  },
+  {
+   "id": "8-q37",
+   "r": "8.3.2",
+   "k": "concept",
+   "d": 1,
+   "q": "Which statement about selecting an underwriter is correct?",
+   "o": [
+    "Most corporate underwritings are competitive bids",
+    "In a competitive bid, the issuer picks based on rapport",
+    "In a negotiated underwriting, the issuer selects one underwriter after a bake-off",
+    "The underwriting agreement is signed among syndicate members"
+   ],
+   "a": 2,
+   "w": [
+    "Wrong: most corporate deals are negotiated; select municipal deals use competitive bids.",
+    "Wrong: a competitive bid goes to the underwriter with the best price from sealed bids.",
+    "Correct: the issuer chooses based on factors such as pricing, expertise and rapport, and most corporate deals are negotiated.",
+    "Wrong: the agreement among underwriters covers syndicate members; the underwriting agreement is between issuer and underwriter."
+   ]
+  },
+  {
+   "id": "8-q38",
+   "r": "8.3.3",
+   "k": "scenario",
+   "d": 2,
+   "q": "A company offers a rights offering and engages an underwriter to purchase any shares not subscribed to by existing shareholders. This arrangement is a:",
+   "o": [
+    "Standby commitment",
+    "Best efforts commitment",
+    "Mini-max commitment",
+    "All-or-none commitment"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: a standby is a firm commitment used with a rights offering, ensuring every share sells.",
+    "Wrong: best efforts has no obligation to buy unsold shares.",
+    "Wrong: mini-max is a best efforts variant that cancels unless a minimum is raised.",
+    "Wrong: all-or-none is a best efforts variant that cancels the deal if not fully sold."
+   ]
+  },
+  {
+   "id": "8-q39",
+   "r": "8.3.3",
+   "k": "calc",
+   "d": 2,
+   "q": "A syndicate has a firm commitment to buy 2,000,000 shares at $25 and offer them at $27. The syndicate sells 1,800,000 shares at $27, and the rest cannot be sold. What is the syndicate’s gross spread revenue on the shares sold?",
+   "o": [
+    "$4,000,000",
+    "$48,600,000",
+    "$1,800,000",
+    "$3,600,000"
+   ],
+   "a": 3,
+   "w": [
+    "Wrong: this applies the spread to all 2,000,000 shares, including those not sold.",
+    "Wrong: this is total sale proceeds on 1,800,000 shares at $27, not the spread.",
+    "Wrong: this uses a $1 spread rather than $2 per share.",
+    "Correct: the spread is $27 − $25 = $2 per share, and 1,800,000 × $2 = $3,600,000."
+   ]
+  },
+  {
+   "id": "8-q40",
+   "r": "8.3.4",
+   "k": "concept",
+   "d": 1,
+   "q": "Which participant in an underwritten offering has NO financial liability for unsold securities?",
+   "o": [
+    "Lead underwriter",
+    "Selling group member",
+    "Any underwriter in a firm commitment deal",
+    "Syndicate member"
+   ],
+   "a": 1,
+   "w": [
+    "Wrong: the lead underwriter bears risk for unsold shares in a firm commitment.",
+    "Correct: the selling group acts as agent; unsold shares go back to the syndicate.",
+    "Wrong: underwriters in a firm commitment buy the shares and carry the risk of unsold ones.",
+    "Wrong: syndicate members are financially responsible for unsold portions."
+   ]
+  },
+  {
+   "id": "8-q41",
+   "r": "8.3.4.2",
+   "k": "calc",
+   "d": 3,
+   "q": "A syndicate buys an issue from the issuer at $48. The public offering price is $50. A selling group member buys from the syndicate. Which price is most consistent with the selling group’s purchase price?",
+   "o": [
+    "$50.80",
+    "$47.50",
+    "$50.00",
+    "$49.20"
+   ],
+   "a": 3,
+   "w": [
+    "Wrong: this exceeds the public offering price, which is impossible for a discounted dealer price.",
+    "Wrong: this is below the $48 syndicate price, but the selling group pays a mark-up above it.",
+    "Wrong: that equals the public offering price, but the group buys at a discount from the POP.",
+    "Correct: the selling group buys at a mark-up from the syndicate’s $48 but below the $50 public offering price, so a price between them like $49.20 fits."
+   ]
+  },
+  {
+   "id": "8-q42",
+   "r": "8.3.5",
+   "k": "calc",
+   "d": 1,
+   "q": "A syndicate buys 500,000 shares from an issuer at $31 per share and offers them to the public at $33.50. What is the total underwriting spread if all shares are sold?",
+   "o": [
+    "$1,250,000",
+    "$1,000,000",
+    "$16,750,000",
+    "$15,500,000"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: the spread is $33.50 − $31 = $2.50 per share, and 500,000 × $2.50 = $1,250,000.",
+    "Wrong: this uses a $2 spread instead of $2.50.",
+    "Wrong: this is total public proceeds, not the spread.",
+    "Wrong: this is the amount paid to the issuer, not the spread."
+   ]
+  },
+  {
+   "id": "8-q43",
+   "r": "8.3.6",
+   "k": "concept",
+   "d": 1,
+   "q": "Which of the following may NOT purchase an IPO of common stock under FINRA Rule 5130?",
+   "o": [
+    "A retired teacher with no industry ties",
+    "An employee of a FINRA member firm",
+    "A cousin of a FINRA employee not supported by him",
+    "A grandparent of a FINRA employee"
+   ],
+   "a": 1,
+   "w": [
+    "Wrong: the public at large is the intended buyer of an IPO.",
+    "Correct: FINRA member firms and their employees are restricted persons and cannot buy an equity IPO.",
+    "Wrong: cousins are not within the immediate family definition.",
+    "Wrong: grandparents are excluded from the immediate family definition."
+   ]
+  },
+  {
+   "id": "8-q44",
+   "r": "8.3.6",
+   "k": "scenario",
+   "d": 3,
+   "q": "Mark works at a FINRA member firm. His brother-in-law lives separately and has his own income, his aunt receives no support from Mark, and his adult daughter has her own apartment. Besides Mark himself, which of these relatives can NOT buy a hot IPO of common stock?",
+   "o": [
+    "The aunt only",
+    "The daughter only",
+    "The brother-in-law and the daughter",
+    "None of them; only Mark is restricted"
+   ],
+   "a": 2,
+   "w": [
+    "Wrong: aunts and uncles are not part of the immediate family definition.",
+    "Wrong: the brother-in-law is an in-law and is therefore also restricted.",
+    "Correct: in-laws and children are immediate family and so are restricted; an aunt is outside the definition unless Mark supports her at more than 25% of her income.",
+    "Wrong: immediate family members of a restricted person are restricted too."
+   ]
+  },
+  {
+   "id": "8-q45",
+   "r": "8.3.6",
+   "k": "calc",
+   "d": 3,
+   "q": "A restricted person (an attorney for the managing underwriter) provides 30% of the income of his nephew, who is a college student. May the nephew buy shares in the IPO of common stock?",
+   "o": [
+    "Yes, because nephews are never covered",
+    "No, because support above 25% of income makes him immediate family",
+    "Yes, because support must be at least 50%",
+    "Yes, if the attorney does not manage the account"
+   ],
+   "a": 1,
+   "w": [
+    "Wrong: nephews are excluded only when not materially supported; a person getting more than 25% of income from a restricted person is covered.",
+    "Correct: material support is more than 25% of income; 30% exceeds it, so the nephew is restricted even though nephews are not otherwise family.",
+    "Wrong: the threshold in the book is more than 25%.",
+    "Wrong: control of the account is irrelevant; the support test determines the restriction."
+   ]
+  },
+  {
+   "id": "8-q46",
+   "r": "8.3.7.1",
+   "k": "concept",
+   "d": 2,
+   "q": "A syndicate manager stabilizing an offering may place a bid:",
+   "o": [
+    "At a price above the POP to push the price up",
+    "Without any prior announcement",
+    "Only during the cooling-off period",
+    "At or below the public offering price"
+   ],
+   "a": 3,
+   "w": [
+    "Wrong: stabilization cannot be designed to manipulate a higher price.",
+    "Wrong: stabilizing bids are regulated under Regulation M and must be announced in advance.",
+    "Wrong: stabilization happens after the effective date in the secondary market.",
+    "Correct: stabilization defends the price but may never go above the public offering price."
+   ]
+  },
+  {
+   "id": "8-q47",
+   "r": "8.4.1.1",
+   "k": "concept",
+   "d": 2,
+   "q": "Under MSRB Rule G-11, which sequence correctly lists the order priority from first to last?",
+   "o": [
+    "Designated, presale, group, member",
+    "Group, presale, member, designated",
+    "Presale, group, designated, member",
+    "Member, designated, group, presale"
+   ],
+   "a": 2,
+   "w": [
+    "Wrong: designated orders benefit only specified firms, so they rank below presale and group.",
+    "Wrong: presale orders come first and designated outranks member orders.",
+    "Correct: orders that benefit the whole syndicate come first and orders benefiting only one firm come last.",
+    "Wrong: this reverses the order priority."
+   ]
+  },
+  {
+   "id": "8-q48",
+   "r": "8.4.1.1",
+   "k": "scenario",
+   "d": 3,
+   "q": "A municipal syndicate has more orders than bonds. It holds a presale order from an institution, a designated order from a pension fund naming Firm X, and an order from Firm Y for its own inventory. After the award it also receives a group order. Which is filled last?",
+   "o": [
+    "Firm Y’s order for its own inventory",
+    "The presale order",
+    "The group order",
+    "The designated order naming Firm X"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: a member order benefits only one firm and has the lowest priority.",
+    "Wrong: presale orders are first priority.",
+    "Wrong: group orders rank second.",
+    "Wrong: designated orders rank third, ahead of member orders."
+   ]
+  },
+  {
+   "id": "8-q49",
+   "r": "8.4.1.2",
+   "k": "calc",
+   "d": 2,
+   "q": "Bonds are delivered to a municipal syndicate on March 1. By what date must the syndicate account be finally settled?",
+   "o": [
+    "April 15",
+    "March 15",
+    "March 31",
+    "May 30"
+   ],
+   "a": 2,
+   "w": [
+    "Wrong: this is 45 days after delivery, beyond the 30-day limit.",
+    "Wrong: this is only 14 days; the standard is 30 calendar days.",
+    "Correct: settlement is due within 30 calendar days of delivery, and March 1 plus 30 days is March 31.",
+    "Wrong: this treats the deadline as 90 days, not 30 calendar days."
+   ]
+  },
+  {
+   "id": "8-q50",
+   "r": "8.4.2",
+   "k": "concept",
+   "d": 2,
+   "q": "Why does SEC Rule 15c2-12 place its requirements on broker-dealers rather than on municipal issuers?",
+   "o": [
+    "Because the SEC and MSRB cannot directly impose disclosure rules on municipal issuers",
+    "Because municipal issuers must register with FINRA",
+    "Because dealers choose which issuers to regulate",
+    "Because municipal bonds require a prospectus"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: the rule regulates issuers indirectly through the dealers who underwrite and recommend their bonds.",
+    "Wrong: municipal issuers are not registered with FINRA, and the issue is the lack of regulatory authority over them.",
+    "Wrong: dealers do not select regulators; the rule is a roundabout way to enforce disclosure.",
+    "Wrong: munis are exempt from registration and need no prospectus."
+   ]
+  },
+  {
+   "id": "8-q51",
+   "r": "8.4.2.2",
+   "k": "scenario",
+   "d": 2,
+   "q": "A municipal issuer is downgraded by a rating agency on Monday the 3rd. The issuer promised continuing disclosure under Rule 15c2-12. Within what time must the material event notice be submitted to the MSRB?",
+   "o": [
+    "3 business days",
+    "10 business days",
+    "30 calendar days",
+    "One year"
+   ],
+   "a": 1,
+   "w": [
+    "Wrong: three business days is the FINRA filing deadline for offering documents.",
+    "Correct: material event notices such as rating changes, defaults and tax-status events go to the MSRB within 10 business days.",
+    "Wrong: 30 calendar days relates to syndicate account settlement.",
+    "Wrong: annual financial information is annual, but event notices are due within 10 business days."
+   ]
+  },
+  {
+   "id": "8-q52",
+   "r": "8.4.2.1",
+   "k": "concept",
+   "d": 2,
+   "q": "Under SEC Rule 15c2-12, a broker-dealer may NOT underwrite a municipal issue unless:\nI. The issuer has agreed in writing to provide continuing disclosure\nII. The underwriter obtains and reviews the official statement\nIII. The issue has been registered with the SEC\nIV. The underwriter files the official statement with the MSRB",
+   "o": [
+    "I and III only",
+    "II, III and IV only",
+    "I, II, III and IV",
+    "I, II and IV only"
+   ],
+   "a": 3,
+   "w": [
+    "Wrong: municipal securities are exempt, so SEC registration is not required.",
+    "Wrong: this includes the false registration requirement and omits the continuing-disclosure agreement.",
+    "Wrong: munis are exempt from registration, so item III is not a requirement.",
+    "Correct: the rule requires a written continuing-disclosure agreement and underwriter review, distribution and MSRB filing of the official statement; munis are not SEC-registered."
+   ]
+  },
+  {
+   "id": "8-q53",
+   "r": "8.4.3",
+   "k": "scenario",
+   "d": 2,
+   "q": "A customer buys new-issue municipal bonds and received the preliminary official statement before the sale. Which statement about the dealer’s delivery obligation is correct?",
+   "o": [
+    "A prospectus must be delivered instead",
+    "The preliminary official statement is enough",
+    "The customer must still receive the final official statement by settlement",
+    "Delivery is due 25 days after settlement"
+   ],
+   "a": 2,
+   "w": [
+    "Wrong: munis are exempt and use the official statement, not a prospectus.",
+    "Wrong: a preliminary statement does not replace the final official statement.",
+    "Correct: even after a preliminary official statement, investors must receive the final version no later than settlement.",
+    "Wrong: the 25-day tail applies to corporate IPO prospectus delivery, not to municipal official statements."
+   ]
+  },
+  {
+   "id": "8-q54",
+   "r": "8.4.4",
+   "k": "scenario",
+   "d": 3,
+   "q": "A municipal issuer sells bonds by competitive bid and uses a municipal advisor. The advisor sends the notice of sale on Tuesday. By when must the advisor apply for the CUSIP number?",
+   "o": [
+    "Immediately upon receiving the award notice",
+    "Wednesday, one business day later",
+    "By pricing",
+    "Within 10 business days"
+   ],
+   "a": 1,
+   "w": [
+    "Wrong: that timing applies when there is no municipal advisor, and then the underwriter applies.",
+    "Correct: in a competitive sale with an advisor the application is due no later than one business day after the notice of sale.",
+    "Wrong: that is the deadline for the underwriter in a negotiated sale.",
+    "Wrong: ten business days is the material event notice deadline."
+   ]
+  },
+  {
+   "id": "8-q55",
+   "r": "8.2.2",
+   "k": "scenario",
+   "d": 1,
+   "q": "A US software company plans to raise capital by selling shares only to investors in Europe. Which exempt transaction applies?",
+   "o": [
+    "Regulation S",
+    "Rule 147",
+    "Rule 144A",
+    "Regulation A+"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: Regulation S exempts capital raised overseas from SEC registration.",
+    "Wrong: Rule 147 is limited to sales within a single US state.",
+    "Wrong: Rule 144A permits resales among qualified institutional buyers, not an overseas offering.",
+    "Wrong: Regulation A+ is a filed offering with its own dollar caps, not the overseas exemption."
+   ]
+  },
+  {
+   "id": "8-q56",
+   "r": "8.3.4",
+   "k": "concept",
+   "d": 2,
+   "q": "Which document sets the terms under which selling group members distribute a new issue?",
+   "o": [
+    "Agreement among underwriters",
+    "Underwriting agreement",
+    "Official statement",
+    "Selected dealer agreement"
+   ],
+   "a": 3,
+   "w": [
+    "Wrong: the agreement among underwriters binds the syndicate members, not the selling group.",
+    "Wrong: the underwriting agreement is the contract between issuer and underwriter.",
+    "Wrong: an official statement is a municipal disclosure document, not a distribution contract.",
+    "Correct: the selected dealer agreement stipulates the terms for selling group members."
+   ]
+  },
+  {
+   "id": "8-q57",
+   "r": "8.2.7",
+   "k": "scenario",
+   "d": 2,
+   "q": "Which transaction is covered by Rule 145, giving affected shareholders registration and a prospectus?",
+   "o": [
+    "A merger in which target holders receive acquirer stock",
+    "A change in par value",
+    "A 2-for-1 stock split",
+    "A shareholder selling shares in the open market"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: holders exchanging into a new security in a merger or acquisition are treated like buyers of a new offering.",
+    "Wrong: a par value change is also excluded.",
+    "Wrong: stock splits are specifically excluded from reclassifications.",
+    "Wrong: an ordinary market sale involves no new security being issued to holders."
+   ]
+  },
+  {
+   "id": "8-q58",
+   "r": "8.3.3",
+   "k": "scenario",
+   "d": 2,
+   "q": "An all-or-none underwriting is to be completed within 30 days. At the deadline, 85% of the shares have been sold. What happens?",
+   "o": [
+    "The underwriters must buy the remaining 15%",
+    "The entire offering is cancelled",
+    "The deal continues as a normal best efforts offering",
+    "The unsold shares go to the selling group"
+   ],
+   "a": 1,
+   "w": [
+    "Wrong: all-or-none is a best efforts type, so underwriters have no obligation to buy unsold shares.",
+    "Correct: if not every share is sold in the stated period, the whole deal is cancelled.",
+    "Wrong: conversion to ordinary best efforts is a feature of a mini-max after the minimum is raised, not all-or-none.",
+    "Wrong: the selling group has no liability and is not a buyer of last resort."
+   ]
+  },
+  {
+   "id": "8-q59",
+   "r": "8.2.4.2",
+   "k": "scenario",
+   "d": 2,
+   "q": "An officer plans to sell $40,000 of registered control stock over the next three months. Is a Form 144 required?",
+   "o": [
+    "Yes, always for control stock",
+    "Yes, because she is an officer",
+    "No, because aggregate sales do not exceed $50,000 in three months",
+    "No, because Form 144 applies only to restricted stock"
+   ],
+   "a": 2,
+   "w": [
+    "Wrong: the form is waived when aggregate sales stay within the $50,000 three-month threshold.",
+    "Wrong: officer status makes her an affiliate but does not override the dollar threshold.",
+    "Correct: sales of $50,000 or less over three months need no Form 144, though volume limits still apply.",
+    "Wrong: Form 144 is filed for control stock sales above the threshold, not just restricted stock."
+   ]
+  },
+  {
+   "id": "8-q60",
+   "r": "8.2.7.1",
+   "k": "concept",
+   "d": 1,
+   "q": "What is a tender offer?",
+   "o": [
+    "A sale of new shares by the issuer in an IPO",
+    "A bid placed by the syndicate manager to stabilize the price",
+    "A sealed bid to win a municipal underwriting",
+    "An offer to buy at least 5% of a company’s shares directly from shareholders"
+   ],
+   "a": 3,
+   "w": [
+    "Wrong: that describes a primary offering, not a purchase from holders.",
+    "Wrong: that describes stabilization in the secondary market.",
+    "Wrong: that describes a competitive bid for an underwriting mandate.",
+    "Correct: an issuer or outside investor invites shareholders to sell, often at a premium, for cash or securities."
+   ]
+  }
+ ]
+}

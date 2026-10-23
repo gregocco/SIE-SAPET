@@ -1,0 +1,2052 @@
+{
+ "id": 14,
+ "title": "Business Conduct Rules",
+ "section": "Regulation",
+ "minutes": 50,
+ "brief": [
+  {
+   "h": "High standards and insider trading",
+   "md": "- **FINRA 2010 and 2020, MSRB G-2 and G-17**: firms and reps must observe **high standards of commercial honor and just and equitable principles of trade**. Charging a client for a non-business expense (e.g. your spouse’s dinner) violates them.\n- **Insider trading** = trading (or tipping) on **material, nonpublic information**. Material = meaningful, market-moving. Nonpublic = not yet widely released.\n- **Insiders**: officers, directors, **>10% shareholders** — but liability reaches **anyone** who trades on MNPI.\n- **Tipper and tippee** both have potential liability.\n- **Misappropriation theory**: stealing information from your employer and trading **any** stock on it (not only the employer’s) is insider trading. Example: a journalist trading on a takeover story.\n- **Duty of trust** (SEC Rule 10b5-2): a history of sharing confidences means the recipient should know the information is confidential, even if nobody said so.\n- The **SEC pays rewards** to people who report violations; harmed investors can **sue** to recover losses.\n- **Penalties** (’33 Act, ’34 Act, Insider Trading and Securities Fraud Enforcement Act of 1988): both civil **and** criminal.\n\n| Penalty | Limit |\n|---|---|\n| **Civil** | **3x the profit gained or loss avoided** (treble damages); supervisors who knew or should have known can also be hit |\n| **Criminal (individual)** | **$5 million** fine, **20 years** prison |\n| **Criminal (corporation)** | **$25 million** fine |\n\n- **Firm controls**: written supervisory procedures, **information barriers** (physical separation of departments that receive inside information from the trading desk), **restricted list** and **watch list**, and review of trades by the **firm, employees and employees’ family members**. Suspicious trades → prompt internal investigation.\n- **Restricted list**: trading by proprietary, employee and some solicited customer accounts is restricted or prohibited. **Watch list**: no automatic restriction, but compliance scrutinises the trading. Both record **date/time added or removed** and a **contact person**.\n- While holding MNPI, a firm or rep **may still accept an unsolicited order**.\n> **Exam tip** Insider trading = both civil and criminal exposure. Treble damages is civil; $5M/20 years is criminal."
+  },
+  {
+   "h": "Anti-money laundering: phases, CTRs and SARs",
+   "md": "- **Money laundering** = making illicit funds look legitimate. Three phases:\n\n| Phase | What happens |\n|---|---|\n| **Placement** | Illegal cash enters financial institutions; the **easiest to detect** |\n| **Layering** | Funds moved through complex transactions (e.g. wires) to hide the source |\n| **Integration** | Illegal funds mixed with legitimate funds |\n\n- **Bank Secrecy Act (BSA)**, adopted **1970**: firms must monitor, keep records and report suspicious activity. Administered by **FinCEN**, a Treasury bureau. The **IRS** and **OCC** are also Treasury bureaus that help fight laundering.\n\n| Report | Trigger | Filed with | Deadline |\n|---|---|---|---|\n| **CTR** | Cash deposit **over $10,000** in a **single business day** from one customer (one or several transactions) | **FinCEN** | **15 days** |\n| **SAR** | Suspicious activity by a customer | **FinCEN** | **30 days** after discovery |\n\n- CTR cash includes currency, traveler’s checks, cashier’s checks and money orders (e.g. $3,000 money order + $8,000 traveler’s check = CTR). A **personal check** over $10,000 does not trigger a CTR.\n- **SAR red flags**: asking to shred account information, frequent wires between unrelated accounts, indifference to churning or high fees, deposits just under $10,000 (e.g. $9,900), insufficient or questionable account information, avoiding recordkeeping, sudden pattern changes, inconsistent business activity.\n- A rep **must never tell the customer a SAR was filed**. The rep reports suspicious activity **to a supervisor**, who takes the action.\n> **Exam tip** Deposits of $9,900 are not a CTR (under $10,000) but they are a SAR red flag."
+  },
+  {
+   "h": "USA PATRIOT Act: AML program, CIP and OFAC",
+   "md": "- Enacted **2001** after 9/11; amended and strengthened the BSA and put AML duties **directly on broker-dealers**.\n- **AML compliance program** — must be **written** and include:\n  - written policies and internal controls built to meet the BSA\n  - procedures to **detect and report suspicious transactions**\n  - **ongoing employee training** (generally annual)\n  - an **AML compliance officer** (need not be a registered rep) whose name and contact information go to FINRA; changes reported within **30 days**\n  - **independent testing**, typically **annual**, by someone who does not run the tested functions (an employee) **or** a qualified outsider\n  - **written approval** of the program and changes by **senior management**\n- Distributing AML literature to clients is **not** required.\n- **Customer Identification Program (CIP)** — written; must:\n  - obtain identifying information **before account opening** (no exceptions, even for well-known customers)\n  - **verify identity within a reasonable period** around opening\n  - keep a **record** of the verification\n  - check whether the customer is on a **Treasury list of known or suspected terrorists**\n  - give **notice** to the customer before opening that information will be requested\n- **SDN List** (Specially Designated Nationals), maintained by **OFAC** (Treasury): no dealings allowed. The transaction must be **blocked** and reported to **OFAC within 10 (business) days**. The rep tells the **principal**.\n- **Information sharing** with federal law enforcement on request is mandatory.\n> **Exam tip** Three agencies: FinCEN receives CTRs and SARs; OFAC receives blocked-transaction reports."
+  },
+  {
+   "h": "Other members, unregistered persons, continuing commissions",
+   "md": "- **Rule 3210 (accounts at another member)**: an associated person opening an account at another broker-dealer needs **prior written consent of the employer** and must **tell the opening firm** of the association before opening.\n  - Same for **immediate family** (spouses, children), unless the person can show **no financial benefit or control**.\n  - New hire with existing outside accounts: written consent from the new employer within **30 calendar days** of association.\n  - The opening firm must send **duplicate statements and confirmations** to the employer on written request.\n  - **Exempt**: accounts holding only **mutual funds, UITs or variable annuities**.\n- **Rule 2040 (payments to unregistered persons)**: no compensation to unregistered persons for securities business (e.g. 2% of commissions to the receptionist; rebating fees for client referrals). Commissions may be split only with **registered reps of the same firm or affiliated firms**. Referral compensation or referrals to outside services (CPAs, insurance agents) need **firm approval and disclosure**.\n- **Continuing commissions**: a retired rep may keep receiving commissions on accounts opened **before retirement** if:\n  - a **written contract** (signed while still registered) sets it out\n  - the retiree **does not solicit new business or service accounts**\n  - the retiree is **out of the securities industry** — re-joining any broker-dealer ends it\n  - the estate can also receive them\n> **Exam tip** Payments to the unlicensed are the violation; the answer is always ‘only registered persons’."
+  },
+  {
+   "h": "Notify vs permission: OBAs and private securities transactions",
+   "md": "- **Outside business activity (OBA)** — Rule 3270: any business activity **outside the scope of the relationship with the firm** (second job, consulting, tax-return prep for a fee, selling a non-security product, bartending, running an unpaid own business).\n  - Requires **written notice** to the firm, not permission (firms may impose stricter policies, but the exam tests the FINRA rule).\n  - Triggers a **prompt Form U4 update**.\n  - **Passive investments** (e.g. limited partner in real estate) need **no** notice.\n  - Pay is **not** the only test; unpaid work can still be an OBA.\n- **Private securities transaction (selling away)** — Rule 3280: transaction in a security **not approved by the firm**.\n  - Always requires **prior written notice**: details, the rep’s role, and whether compensation will be received.\n  - **No compensation** → notice only.\n  - **Any compensation** (even non-cash, such as deal flow) → **written firm approval** too.\n  - If the firm refuses, the rep cannot participate **directly or indirectly**.\n  - If approved for compensation, it goes on the firm’s **books and records** and is supervised like firm business.\n\n| Activity | Notice | Permission |\n|---|---|---|\n| OBA (job/business) | **Yes**, written | No (rule minimum) |\n| Private securities transaction, no pay | **Yes** | No |\n| Private securities transaction, paid | **Yes** | **Yes** |\n| Outside account at another member | Tell opening firm | **Yes**, employer’s written consent |\n> **Exam tip** OBA = notice. Selling away = notice always, permission **only when paid**."
+  },
+  {
+   "h": "Guarantees, gifts, sharing, borrowing and lending",
+   "md": "- **Guarantee against loss** (FINRA 2150, MSRB G-25): prohibited. No promising to make a client whole, refund fees, or buy securities back if they fall. **Allowed**: error-correction payments, settlement payments, **repos** and **put features**. Reps must also disclose material facts, not only the positives.\n- **Gifts** (FINRA 3220, MSRB G-20): **$300 per person per year** (calendar year unless the firm’s procedures define it differently) to employees of other firms.\n  - Value tickets at the **higher of cost or face value**.\n  - **Not subject to $300**: entertainment the rep **attends** (meals, sporting events) unless egregious; bona fide **employment or compensation contracts** with a written agreement and records.\n  - Tickets given away **without the rep attending** are gifts.\n- **Sharing in customer accounts** (Rule 2150): needs **(1) firm’s prior written authorisation, (2) customer’s prior written authorisation, (3) sharing in direct proportion to financial contribution**. **Immediate family** accounts: proportion rule waived (parents, in-laws, spouse, children, or relatives the rep supports) but approvals still apply. MSRB G-25: only **reps**, not municipal firms, may share in joint accounts.\n- **Rule 3241**: a rep being named **beneficiary, executor, trustee or holding power of attorney** for a customer needs **firm review and approval** after written notice; not required for **immediate family**.\n- **Borrowing/lending with customers** (Rule 3240): generally prohibited; allowed only if firm procedures permit and:\n  - customer is **immediate family** (broad: parents, in-laws, spouse, children, grandparents, grandchildren, cousins, aunts, uncles, nieces, nephews, anyone materially supported)\n  - customer is a **bank/financial institution** regularly lending (market terms)\n  - based on a **personal or business relationship outside the brokerage relationship**\n  - **Written pre-approval** required except for standard public commercial terms and family. Loans between two registered people at the **same firm** also need no permission.\n  - A discounted loan from a bank that is the rep’s client is **prohibited**.\n  - Book note: Rule 3240 is being revised (**April 28, 2025**) to a stricter ‘Prohibition on Borrowing from or Lending to Customers’.\n> **Exam tip** Family and standard bank loans = no permission. Friend-customer loan = firm’s written approval."
+  },
+  {
+   "h": "Complaints, fiduciary information and conflicts of interest",
+   "md": "- **Customer complaint** (Rule 4513): a **written** grievance from a customer or someone acting for the customer about a rep or firm in connection with a securities transaction.\n  - **Written** complaints go to a **principal** — even if the rep thinks they are meritless. **Verbal** complaints need not be forwarded.\n  - Firm keeps a record of the complaint and any action taken.\n  - **Rule 4530**: firm reports to FINRA by the **15th day of the month following the calendar quarter** in which complaints were received.\n- **MSRB G-10 investor brochure**: **each year**, muni firms tell investors in writing that they are **registered with the SEC and MSRB**, give the **MSRB website address**, and note the **investor brochure** (protections and how to complain). Muni complaint records kept **6 years**.\n- **Rule 2060 (fiduciary information)**: a firm acting as **trustee, paying agent or transfer agent** cannot use information learned (e.g. bondholder identities) for solicitation or financial gain without the **issuer’s consent**.\n- **Conflicts of interest**: not all can be removed, but firms must **identify, mitigate and manage** them. Required disclosure: **verbal before the trade** and **written on the confirmation**.\n  - **Rule 2269**: compensation practices that push recommendations away from suitability (e.g. extra commission on a fund).\n  - **Rule 2262**: **control relationship** — the selling firm controls, is controlled by, or is under common control with the issuer (e.g. recommending the firm’s own stock).\n- All registered employees attend an **annual compliance meeting** run by the chief compliance officer.\n> **Exam tip** A written complaint is forwarded even if it is frivolous."
+  },
+  {
+   "h": "Political contributions: MSRB Rule G-37 (pay-to-play)",
+   "md": "- **Pay-to-play**: political contributions to issuer officials in exchange for municipal business.\n- **Covered**: municipal securities firms, **PACs they control**, and **municipal finance professionals (MFPs)**.\n- **MFP** includes: associated persons in **sales, trading, underwriting, research to issuers**; persons **soliciting** muni business in any capacity; their **direct supervisors**; and **executives/management** of dealers or bank muni departments. **Excludes** persons involved **only in retail sales** to individual customers.\n- **Penalty**: a contribution to an official of an issuer (incumbent or candidate who can influence or appoint those who influence awards) → **2-year ban** on **negotiated** municipal business with that issuer.\n- **De minimis exception**: an MFP may give up to **$250 per election** (primary and general separately) to a candidate they are **entitled to vote for**. Over $250, or any contribution to a candidate they cannot vote for, is a violation. The exception does **not** cover the **firm or its PAC** — they may give nothing.\n- **Application details**:\n  - **Competitive** (price-based) underwriting is **not** banned; only negotiated.\n  - If the donor leaves, the **old firm stays banned** for the rest of the 2 years; a new firm is banned if the donor is an MFP there.\n  - **2-year look-back** for someone who later becomes an MFP.\n  - **Spouse’s** contributions don’t count unless **directed by the MFP**.\n  - Joint-account check signed by MFP only = full contribution; signed by two = half.\n  - Issuer official running for **federal office** (e.g. state governor running for president) is covered; unrelated federal candidates are not.\n- Records kept **6 years**; also applies to municipal advisors.\n> **Exam tip** $250 per election. $251 or a candidate you cannot vote for triggers the ban."
+  },
+  {
+   "h": "Communications with the public",
+   "md": "- **FINRA Rule 2210** categories (written or electronic; purely oral conversation is not covered):\n\n| Type | Audience | Principal duty |\n|---|---|---|\n| **Retail communication** | **More than 25 retail investors** in **30 calendar days** | **Approval before first use** (signed and dated) |\n| **Correspondence** | **25 or fewer retail investors** in 30 days (plus any institutional) | Supervision and spot-checks; **no** pre-approval |\n| **Institutional communication** | **Only institutional** investors | Supervision and spot-checks; no pre-approval |\n\n- If even **one retail investor** can receive it, it is not institutional. Then apply the 25 test (10 retail + 20 institutional = correspondence).\n- Unknown audience (radio ad script, lobby reprints, password-protected website) → **retail communication**.\n- Content standards: **fair, balanced, not misleading**; no predictions or projections of performance, no implying past performance forecasts the future, no exaggeration.\n- **Allowed**: a hypothetical illustration of mathematical principles (not projecting a specific investment); a **price target only in a research report**.\n- Retail communication records: **3 years after final use**.\n- **Social media**: **static** content (website, profile, blog post) = **retail communication**, prior principal review. **Interactive** real-time content (tweets, comments, replies) = **no prior review**, but supervised and spot-checked; firms must train staff. Personal email for client communication needs **prior supervisor permission** and firm monitoring.\n- **MSRB G-21**: **correspondence** = **25 or fewer persons in 90 days**, reviewed but not pre-approved. **Advertisement** = all other published or promotional material (press releases, official statement summaries, newsletters), **principal written approval before first use**, no retail/institutional split. **Official statements** are excluded; issuer-prepared ads are exempt, firm-prepared ads for issuers are not. Records **4 years**.\n> **Exam tip** FINRA 30 days / 3 years; MSRB 90 days / 4 years."
+  },
+  {
+   "h": "Business continuity plans",
+   "md": "- **FINRA Rule 4370**: every broker-dealer keeps a **written business continuity plan (BCP)** so critical functions stay available after disruptions (fire, force majeure).\n- **Tailored** to firm size and scope; **backup copies** stored securely; available to **FINRA staff promptly on request**.\n- **Disclosure**: summary to customers **at account opening**, posted on the **website**, and **mailed on request**.\n- **Updates**: on any **material change** to operations, structure, business or location. A **senior manager who is a registered principal** reviews the plan **annually**.\n- **Emergency contacts**: **two** associated persons, at least **one** a member of **senior management and a registered principal**. Reported to FINRA; changes within **30 days**.\n> **Exam tip** Two emergency contacts, one of whom is senior management AND a principal."
+  }
+ ],
+ "traps": [
+  "**CTR vs SAR.** CTR = cash deposit **over $10,000** in a business day, filed with FinCEN in **15 days**. SAR = suspicious behaviour of any size, filed with FinCEN in **30 days** of discovery, and the customer must never be told.",
+  "**$9,900 deposits.** Under the CTR threshold, so no CTR — but structuring around the limit is a classic **SAR** red flag and typical **layering**.",
+  "**Personal check over $10,000.** It comes from a bank, so it does **not** trigger a CTR; cash, traveler’s checks, cashier’s checks and money orders count.",
+  "**FinCEN vs OFAC.** FinCEN gets CTRs and SARs. OFAC maintains the SDN list and receives reports of **blocked** transactions within **10 days**.",
+  "**Placement vs layering vs integration.** Placement = cash goes in (easiest to spot). Layering = moving it around to hide origin. Integration = mixed with clean money.",
+  "**Civil vs criminal insider-trading penalties.** Civil = treble the profit gained/loss avoided. Criminal = $5M and 20 years (corporations $25M). An individual can face **both**.",
+  "**Restricted vs watch list.** Restricted = trading prohibited or restricted. Watch = trading allowed but monitored closely by compliance.",
+  "**Unsolicited orders and MNPI.** A firm in possession of inside information may still accept a customer’s **unsolicited** order; it may not solicit or recommend.",
+  "**OBA vs selling away.** OBA = notice of outside job/business, no permission under the rule. Private securities transaction = always notice; **permission only if any compensation**.",
+  "**Passive investments.** A limited-partner stake is passive: no OBA notice needed. Being employed by or compensated by an outside entity is an OBA.",
+  "**Gifts vs entertainment.** $300 limit applies to gifts; a meal or game the rep **attends** is entertainment (not limited unless egregious). Hand over the tickets without attending and it becomes a gift valued at the higher of cost or face.",
+  "**Retail vs correspondence.** More than 25 retail recipients in 30 days = retail (pre-approval). 25 or fewer = correspondence. Institutional recipients don’t count toward the 25, but one retail recipient kills ‘institutional’.",
+  "**FINRA vs MSRB communications.** FINRA correspondence window = **30 days**, records **3 years**. MSRB G-21 window = **90 days**, ad records **4 years**.",
+  "**$250 under G-37.** The allowance is per election and only for a candidate the MFP can vote for. The firm and its PAC may give **nothing**. Retail-only municipal salespeople are not MFPs."
+ ],
+ "formulas": [
+  {
+   "name": "AML report decision rules",
+   "rule": "CTR: cash > $10,000 in one business day → FinCEN, 15 days.  SAR: suspicious activity → FinCEN, 30 days from discovery, no tipping off.  SDN hit: block + OFAC, 10 days.",
+   "example": "A customer deposits a $4,000 cashier’s check and $6,500 in cash on one day = $10,500 → **CTR within 15 days**. Another customer deposits $9,800 on Monday and $9,700 on Tuesday → no CTR, but a **SAR within 30 days** of discovery."
+  },
+  {
+   "name": "Notice vs permission matrix",
+   "rule": "OBA: written notice.  Private securities transaction: notice always; written approval if any compensation.  Outside account at another member: employer’s prior written consent + tell the other firm.  Joint account with a customer: firm AND customer written approval.",
+   "example": "A rep helps a friend’s start-up raise money from the rep’s clients and is promised deal flow = private securities transaction with compensation → **notice and written firm approval**. Weekend bartending job → **notice only**."
+  },
+  {
+   "name": "Classifying a communication (FINRA 2210)",
+   "rule": "Any retail recipient? No → institutional. Yes → more than 25 retail in 30 days (or unknown audience) → retail communication; 25 or fewer → correspondence.",
+   "example": "A newsletter goes to 12 retail clients and 60 institutions in a month = **correspondence** (retail count 12 ≤ 25). Sent to 40 retail clients = **retail communication**, principal approval before first use."
+  },
+  {
+   "name": "Insider trading civil penalty",
+   "rule": "Civil limit = 3 x (profit gained or loss avoided).  Criminal: $5M / 20 yrs individual; $25M corporation.",
+   "example": "Insider’s tip lets a tippee avoid a loss of $40,000 → civil limit = 3 x $40,000 = **$120,000** (criminal penalties are separate)."
+  },
+  {
+   "name": "G-37 contribution test",
+   "rule": "MFP gives ≤ $250 per election to a candidate they may vote for → no ban. Otherwise → 2-year ban on negotiated business with that issuer.",
+   "example": "An MFP who lives in the city gives $250 to the primary and $250 to the general = **no violation**. Giving $300 once, or $100 to a mayoral candidate in a town where the MFP cannot vote, = **2-year ban on negotiated business**."
+  },
+  {
+   "name": "Record retention and filing clocks",
+   "rule": "CTR 15 days · SAR 30 days · OFAC 10 days · AML officer change 30 days · BCP contact change 30 days · outside accounts after hire 30 days · FINRA retail comms 3 yrs · MSRB ads 4 yrs · G-37 and muni complaints 6 yrs · MSRB correspondence 90 days · FINRA 30 days.",
+   "example": "A retail communication last used 15 March 2024 must be kept until **15 March 2027** under FINRA; a municipal advertisement last used on the same date until **15 March 2028**."
+  }
+ ],
+ "glossary": [
+  {
+   "t": "Insider trading",
+   "d": "Illegally trading or tipping on material nonpublic information."
+  },
+  {
+   "t": "Material information",
+   "d": "Meaningful information likely to move the price of a security."
+  },
+  {
+   "t": "Tipper / tippee",
+   "d": "The person who passes on inside information and the person who receives and trades on it; both can be liable."
+  },
+  {
+   "t": "Misappropriation theory",
+   "d": "Liability for stealing information from an employer and trading any security on it."
+  },
+  {
+   "t": "Rule 10b5-2 duty of trust",
+   "d": "Duty arising when people share confidences regularly so the recipient should know the information is confidential."
+  },
+  {
+   "t": "Treble damages",
+   "d": "Civil penalty of up to three times the profit made or loss avoided."
+  },
+  {
+   "t": "Information barrier",
+   "d": "Written procedures plus physical separation that keep inside information away from trading areas."
+  },
+  {
+   "t": "Restricted list",
+   "d": "List of securities in which firm, employee or some customer trading is restricted or prohibited."
+  },
+  {
+   "t": "Watch list",
+   "d": "List of securities carrying no trading restriction but under close compliance scrutiny."
+  },
+  {
+   "t": "Money laundering",
+   "d": "Process of making illicit funds appear legal."
+  },
+  {
+   "t": "Placement",
+   "d": "First laundering phase: depositing illegal funds into financial institutions."
+  },
+  {
+   "t": "Layering",
+   "d": "Moving funds through complex transactions to separate them from their illegal origin."
+  },
+  {
+   "t": "Integration",
+   "d": "Mixing laundered funds with legitimate funds."
+  },
+  {
+   "t": "Bank Secrecy Act (BSA)",
+   "d": "1970 law requiring firms to keep records and report suspicious or large financial activity."
+  },
+  {
+   "t": "FinCEN",
+   "d": "Treasury bureau that administers the BSA and receives CTRs and SARs."
+  },
+  {
+   "t": "Currency transaction report (CTR)",
+   "d": "Report to FinCEN within 15 days when one customer deposits more than $10,000 in cash in a business day."
+  },
+  {
+   "t": "Suspicious activity report (SAR)",
+   "d": "Report to FinCEN within 30 days of discovering suspicious activity; the customer may not be told."
+  },
+  {
+   "t": "USA PATRIOT Act",
+   "d": "2001 law that strengthened the BSA and imposed AML program and CIP duties on broker-dealers."
+  },
+  {
+   "t": "AML compliance officer",
+   "d": "Person who runs the day-to-day AML program; name reported to FINRA and need not be a registered rep."
+  },
+  {
+   "t": "Independent test",
+   "d": "Typically annual review of the AML program by someone who does not perform the tested functions, or by a qualified outsider."
+  },
+  {
+   "t": "Customer identification program (CIP)",
+   "d": "Written program to collect and verify customer identity and check terrorist lists."
+  },
+  {
+   "t": "OFAC",
+   "d": "Specially Designated Nationals list; dealings are blocked and the hit reported to OFAC within 10 days."
+  },
+  {
+   "t": "SDN list",
+   "d": "Specially Designated Nationals list; transactions must be blocked and reported to OFAC within 10 days."
+  },
+  {
+   "t": "Rule 3210",
+   "d": "Requires employer consent and notice to the opening firm when an associated person opens an account at another member."
+  },
+  {
+   "t": "Rule 2040",
+   "d": "Prohibits paying securities-related compensation to unregistered persons; also governs continuing commissions."
+  },
+  {
+   "t": "Continuing commissions",
+   "d": "Post-retirement commissions on pre-retirement accounts, allowed under a prior written contract if the retiree leaves the industry."
+  },
+  {
+   "t": "Outside business activity (OBA)",
+   "d": "Work or business away from the firm that requires written notice under Rule 3270."
+  },
+  {
+   "t": "Private securities transaction",
+   "d": "Securities deal outside the firm’s approved products (selling away); notice required, permission if compensated."
+  },
+  {
+   "t": "Guarantee against loss",
+   "d": "Prohibited promise to reimburse, indemnify or repurchase to protect a customer from loss."
+  },
+  {
+   "t": "Gift limit",
+   "d": "$300 per person per year for gifts to employees of other firms (FINRA 3220, MSRB G-20)."
+  },
+  {
+   "t": "Sharing in accounts",
+   "d": "Splitting profits or losses with a customer; needs firm and customer written approval and proportionality."
+  },
+  {
+   "t": "Customer complaint",
+   "d": "Written grievance from or for a customer about a rep or firm; must go to a principal."
+  },
+  {
+   "t": "Rule 4530",
+   "d": "Requires quarterly complaint reporting to FINRA by the 15th day of the month after the quarter."
+  },
+  {
+   "t": "MSRB Rule G-10 brochure",
+   "d": "Annual written notice to muni investors about SEC/MSRB registration, the MSRB website and the investor brochure."
+  },
+  {
+   "t": "Control relationship",
+   "d": "Selling firm controls, is controlled by, or is under common control with the issuer; requires disclosure (Rule 2262)."
+  },
+  {
+   "t": "Pay-to-play",
+   "d": "Political contributions made to win municipal business; restricted by MSRB G-37."
+  },
+  {
+   "t": "Municipal finance professional (MFP)",
+   "d": "Person soliciting or providing muni underwriting, trading, sales or research to issuers, plus their supervisors and executives; not retail-only sellers."
+  },
+  {
+   "t": "Retail communication",
+   "d": "Written or electronic communication to more than 25 retail investors in 30 days; needs principal approval before first use."
+  },
+  {
+   "t": "Correspondence",
+   "d": "Written communication to 25 or fewer retail investors in 30 days (FINRA) or 90 days (MSRB); supervised, not pre-approved."
+  },
+  {
+   "t": "Institutional communication",
+   "d": "Communication made available exclusively to institutional investors; supervised, not pre-approved."
+  },
+  {
+   "t": "Static vs interactive content",
+   "d": "Static online content is treated as a retail communication; interactive real-time content is supervised without prior approval."
+  },
+  {
+   "t": "MSRB advertisement",
+   "d": "Muni promotional material not deemed correspondence; needs written principal approval before first use and 4-year records."
+  },
+  {
+   "t": "Business continuity plan (BCP)",
+   "d": "Written plan under Rule 4370 keeping critical functions available during disruptions."
+  }
+ ],
+ "cards": [
+  {
+   "id": "14-c01",
+   "f": "Which rules require high standards of commercial honor and just and equitable principles of trade?",
+   "b": "FINRA **2010 and 2020**; MSRB **G-2 and G-17**.",
+   "r": "14.1"
+  },
+  {
+   "id": "14-c02",
+   "f": "A rep takes a spouse to dinner and bills it to a client as a business expense. Violation?",
+   "b": "**Yes** — charging a non-business expense breaches standards of commercial honor.",
+   "r": "14.1"
+  },
+  {
+   "id": "14-c03",
+   "f": "Define insider trading.",
+   "b": "Trading (or tipping) on **material, nonpublic information**.",
+   "r": "14.2"
+  },
+  {
+   "id": "14-c04",
+   "f": "Who counts as an insider?",
+   "b": "Officers, directors, **>10% shareholders** — and anyone with access to MNPI who trades on it.",
+   "r": "14.2"
+  },
+  {
+   "id": "14-c05",
+   "f": "Tipper and tippee: who is liable?",
+   "b": "**Both** potentially. A friend who trades on a tip is in violation.",
+   "r": "14.2"
+  },
+  {
+   "id": "14-c06",
+   "f": "Misappropriation theory",
+   "b": "Stealing information from your employer and trading **any** stock on it is insider trading (journalist example).",
+   "r": "14.2"
+  },
+  {
+   "id": "14-c07",
+   "f": "SEC Rule 10b5-2 duty of trust applies when…",
+   "b": "People have a **history of sharing confidences**, so the recipient should know the information is confidential.",
+   "r": "14.2.1"
+  },
+  {
+   "id": "14-c08",
+   "f": "Maximum civil penalty for insider trading",
+   "b": "**3x the profit gained or loss avoided** (treble damages); supervisors can be liable too.",
+   "r": "14.2.2.1"
+  },
+  {
+   "id": "14-c09",
+   "f": "Criminal penalty for an individual insider trader",
+   "b": "Up to **$5 million** fine and **20 years** in prison.",
+   "r": "14.2.2.2"
+  },
+  {
+   "id": "14-c10",
+   "f": "Maximum criminal fine for a corporation",
+   "b": "**$25 million**.",
+   "r": "14.2.2.2"
+  },
+  {
+   "id": "14-c11",
+   "f": "Can an individual face both civil and criminal penalties for insider trading?",
+   "b": "**Yes**, both.",
+   "r": "14.2.2.2"
+  },
+  {
+   "id": "14-c12",
+   "f": "Which 1988 law added supervisory duties on insider trading?",
+   "b": "**Insider Trading and Securities Fraud Enforcement Act of 1988**.",
+   "r": "14.2.2"
+  },
+  {
+   "id": "14-c13",
+   "f": "Information barrier",
+   "b": "Written procedures plus **physical separation** between departments with inside information and the trading desk.",
+   "r": "14.2.3"
+  },
+  {
+   "id": "14-c14",
+   "f": "Restricted list vs watch list",
+   "b": "Restricted = trading **restricted or prohibited**. Watch = **no restriction**, but close compliance scrutiny.",
+   "r": "14.2.3"
+  },
+  {
+   "id": "14-c15",
+   "f": "What must be recorded for each restricted/watch list entry?",
+   "b": "**Date and time** added/removed and a **contact person**.",
+   "r": "14.2.3"
+  },
+  {
+   "id": "14-c16",
+   "f": "Whose trades must a firm review for insider trading?",
+   "b": "The **firm**, its **employees**, and employees’ **family members**.",
+   "r": "14.2.3.1"
+  },
+  {
+   "id": "14-c17",
+   "f": "A firm holds takeover MNPI. A customer places an unsolicited buy order. Allowed?",
+   "b": "**Yes** — unsolicited orders may be accepted.",
+   "r": "14.2.3.1"
+  },
+  {
+   "id": "14-c18",
+   "f": "Three phases of money laundering",
+   "b": "**Placement, layering, integration**.",
+   "r": "14.3"
+  },
+  {
+   "id": "14-c19",
+   "f": "Which laundering phase is easiest to detect?",
+   "b": "**Placement** — cash entering financial institutions.",
+   "r": "14.3"
+  },
+  {
+   "id": "14-c20",
+   "f": "Layering",
+   "b": "Moving funds through complex transactions (e.g. **wires**) to hide the illegal origin.",
+   "r": "14.3"
+  },
+  {
+   "id": "14-c21",
+   "f": "Integration",
+   "b": "Illegal funds are **mixed with legitimate funds**.",
+   "r": "14.3"
+  },
+  {
+   "id": "14-c22",
+   "f": "Bank Secrecy Act: year and administrator",
+   "b": "Adopted **1970**; administered by **FinCEN** (Treasury).",
+   "r": "14.3"
+  },
+  {
+   "id": "14-c23",
+   "f": "Other Treasury bureaus fighting money laundering besides FinCEN",
+   "b": "**IRS** and **OCC**.",
+   "r": "14.3"
+  },
+  {
+   "id": "14-c24",
+   "f": "CTR trigger",
+   "b": "Cash deposit **over $10,000** in a **single business day** from one customer (one or several transactions).",
+   "r": "14.3.1"
+  },
+  {
+   "id": "14-c25",
+   "f": "CTR deadline and recipient",
+   "b": "Filed with **FinCEN** within **15 days**.",
+   "r": "14.3.1"
+  },
+  {
+   "id": "14-c26",
+   "f": "In one day a customer brings a $3,000 money order and an $8,000 traveler’s check. Report?",
+   "b": "**CTR** — the cash-type instruments total $11,000, above the threshold.",
+   "r": "14.3.1"
+  },
+  {
+   "id": "14-c27",
+   "f": "Does a personal check over $10,000 trigger a CTR?",
+   "b": "**No** — it originates from a bank.",
+   "r": "14.3.1"
+  },
+  {
+   "id": "14-c28",
+   "f": "SAR deadline and recipient",
+   "b": "Filed with **FinCEN** within **30 days** of discovery.",
+   "r": "14.3.2"
+  },
+  {
+   "id": "14-c29",
+   "f": "Name four SAR red flags",
+   "b": "Shredding requests; wires between unrelated accounts; **deposits just under $10,000**; indifference to churning/high fees (also questionable account info, pattern changes).",
+   "r": "14.3.2"
+  },
+  {
+   "id": "14-c30",
+   "f": "May a rep tell a customer a SAR was filed?",
+   "b": "**Never.** The rep tells a supervisor, who acts.",
+   "r": "14.3.2"
+  },
+  {
+   "id": "14-c31",
+   "f": "USA PATRIOT Act: year and effect on broker-dealers",
+   "b": "**2001**; required an AML program and a **CIP**, SDN-list compliance and information sharing.",
+   "r": "14.3.3"
+  },
+  {
+   "id": "14-c32",
+   "f": "What must a written AML program contain?",
+   "b": "Policies/controls, **suspicious-transaction detection**, **ongoing training**, **AML officer**, **independent test**, **senior management approval**.",
+   "r": "14.3.3.1"
+  },
+  {
+   "id": "14-c33",
+   "f": "AML compliance officer: reporting and registration",
+   "b": "Name goes to **FINRA**, changes within **30 days**; need **not** be a registered rep.",
+   "r": "14.3.3.1"
+  },
+  {
+   "id": "14-c34",
+   "f": "Who may perform the independent AML test?",
+   "b": "An employee who doesn’t perform the tested functions **or** a qualified outside party; typically **annual**.",
+   "r": "14.3.3.1"
+  },
+  {
+   "id": "14-c35",
+   "f": "Who must approve the AML program in writing?",
+   "b": "A member of **senior management**.",
+   "r": "14.3.3.1"
+  },
+  {
+   "id": "14-c36",
+   "f": "Is distributing AML literature to clients required?",
+   "b": "**No** — it is optional.",
+   "r": "14.3.3.1"
+  },
+  {
+   "id": "14-c37",
+   "f": "CIP: when must identifying information be obtained?",
+   "b": "**Before account opening**; verify identity within a **reasonable time** before or after.",
+   "r": "14.3.3.2"
+  },
+  {
+   "id": "14-c38",
+   "f": "Other CIP duties besides collecting and verifying identity",
+   "b": "Keep a **record**, check **terrorist lists**, give customers **prior notice**.",
+   "r": "14.3.3.2"
+  },
+  {
+   "id": "14-c39",
+   "f": "SDN list: who maintains it and what to do on a hit?",
+   "b": "**OFAC**; **block** the transaction and report to OFAC within **10 days**; rep informs the principal.",
+   "r": "14.3.3"
+  },
+  {
+   "id": "14-c40",
+   "f": "Rule 3210 requirements for opening an outside account",
+   "b": "**Employer’s prior written consent** and **notify the opening firm** of the association.",
+   "r": "14.4.1"
+  },
+  {
+   "id": "14-c41",
+   "f": "Rule 3210 accounts that are exempt",
+   "b": "Accounts holding only **mutual funds, UITs or variable annuities**.",
+   "r": "14.4.1"
+  },
+  {
+   "id": "14-c42",
+   "f": "Rep joins a new firm with accounts elsewhere: deadline for consent?",
+   "b": "New employer’s written consent within **30 calendar days**.",
+   "r": "14.4.1"
+  },
+  {
+   "id": "14-c43",
+   "f": "What must the opening firm send the employer?",
+   "b": "**Duplicate statements and confirmations**, on written request.",
+   "r": "14.4.1"
+  },
+  {
+   "id": "14-c44",
+   "f": "Rule 2040: whom can reps share commissions with?",
+   "b": "**Registered reps** of the same or affiliated firms only; never unregistered persons.",
+   "r": "14.4.2"
+  },
+  {
+   "id": "14-c45",
+   "f": "Continuing commissions conditions",
+   "b": "**Written contract before retirement**, no soliciting/servicing, and **leave the industry** (re-joining ends them).",
+   "r": "14.4.3"
+  },
+  {
+   "id": "14-c46",
+   "f": "OBA: notice or permission under FINRA 3270?",
+   "b": "**Written notice** (plus prompt **Form U4 update**).",
+   "r": "14.4.4"
+  },
+  {
+   "id": "14-c47",
+   "f": "Is a passive investment (limited partner) an OBA?",
+   "b": "**No** — no notification needed.",
+   "r": "14.4.4"
+  },
+  {
+   "id": "14-c48",
+   "f": "Private securities transaction — what is the nickname and rule?",
+   "b": "**Selling away**; FINRA Rule **3280**.",
+   "r": "14.4.5"
+  },
+  {
+   "id": "14-c49",
+   "f": "Selling away with no compensation: notice or permission?",
+   "b": "**Notice only.** Any compensation (even deal flow) adds **written approval**.",
+   "r": "14.4.5"
+  },
+  {
+   "id": "14-c50",
+   "f": "Firm denies a private securities transaction. Can the rep help indirectly?",
+   "b": "**No** — no participation directly or indirectly.",
+   "r": "14.4.5"
+  },
+  {
+   "id": "14-c51",
+   "f": "Approved compensated private securities transaction: firm duties",
+   "b": "Record on **books and records** and **supervise** as firm business.",
+   "r": "14.4.5"
+  },
+  {
+   "id": "14-c52",
+   "f": "Guarantee against loss: allowed exceptions",
+   "b": "Error corrections/settlements, **repos**, **put features**.",
+   "r": "14.4.6"
+  },
+  {
+   "id": "14-c53",
+   "f": "Gift limit under FINRA 3220 / MSRB G-20",
+   "b": "**$300** per person per year.",
+   "r": "14.4.7"
+  },
+  {
+   "id": "14-c54",
+   "f": "How are tickets valued under the gift limit?",
+   "b": "At the **higher of cost or face value**.",
+   "r": "14.4.7"
+  },
+  {
+   "id": "14-c55",
+   "f": "Is a dinner the rep attends subject to the $300 gift limit?",
+   "b": "**No**, unless egregious — it is entertainment.",
+   "r": "14.4.7"
+  },
+  {
+   "id": "14-c56",
+   "f": "Sharing in a customer account: three requirements",
+   "b": "**Firm** written OK, **customer** written OK, sharing **proportionate to contributions**.",
+   "r": "14.4.8"
+  },
+  {
+   "id": "14-c57",
+   "f": "Immediate-family joint account with a rep: which requirement is waived?",
+   "b": "The **proportionate-share** rule; firm and customer approvals still apply.",
+   "r": "14.4.8"
+  },
+  {
+   "id": "14-c58",
+   "f": "Rule 3241: rep named beneficiary, executor, trustee or POA for a customer",
+   "b": "Requires **firm review and approval** after written notice; not for immediate family.",
+   "r": "14.4.8"
+  },
+  {
+   "id": "14-c59",
+   "f": "Rep borrowing from or lending to customers: general rule",
+   "b": "Generally **prohibited**; exceptions for family, banks on market terms, outside personal/business relationships.",
+   "r": "14.4.9"
+  },
+  {
+   "id": "14-c60",
+   "f": "Loan to a friend-customer based on an outside personal relationship",
+   "b": "Needs the firm’s **prior written approval**.",
+   "r": "14.4.9"
+  },
+  {
+   "id": "14-c61",
+   "f": "Which written customer complaints go to a principal?",
+   "b": "**All written ones**, even if the rep thinks they have no merit; verbal ones need not.",
+   "r": "14.4.10"
+  },
+  {
+   "id": "14-c62",
+   "f": "Rule 4530 complaint reporting deadline",
+   "b": "By the **15th day of the month after the calendar quarter**.",
+   "r": "14.4.10.1"
+  },
+  {
+   "id": "14-c63",
+   "f": "MSRB G-10 annual notice contents",
+   "b": "SEC/MSRB registration, **MSRB website**, and availability of the **investor brochure**.",
+   "r": "14.4.10.2"
+  },
+  {
+   "id": "14-c64",
+   "f": "Rule 2060 — fiduciary-capacity information",
+   "b": "Trustee/paying agent/transfer agent can’t use learned information for gain without the **issuer’s consent**.",
+   "r": "14.4.11"
+  },
+  {
+   "id": "14-c65",
+   "f": "How must a conflict of interest be disclosed?",
+   "b": "**Verbally before the trade** and **in writing on the confirmation**.",
+   "r": "14.4.12"
+  },
+  {
+   "id": "14-c66",
+   "f": "Rule 2262 control relationship",
+   "b": "Selling firm **controls, is controlled by, or is under common control** with the issuer — disclose.",
+   "r": "14.4.12"
+  },
+  {
+   "id": "14-c67",
+   "f": "Pay-to-play rule",
+   "b": "MSRB **Rule G-37**.",
+   "r": "14.4.13"
+  },
+  {
+   "id": "14-c68",
+   "f": "G-37 penalty for a prohibited contribution",
+   "b": "**2-year ban** on **negotiated** municipal business with that issuer.",
+   "r": "14.4.13.1"
+  },
+  {
+   "id": "14-c69",
+   "f": "G-37 de minimis exception",
+   "b": "MFP may give **$250 per election** to a candidate they are **entitled to vote for**.",
+   "r": "14.4.13.1"
+  },
+  {
+   "id": "14-c70",
+   "f": "Can a firm’s PAC contribute under the G-37 exception?",
+   "b": "**No** — the firm and its PAC may give nothing.",
+   "r": "14.4.13.1"
+  },
+  {
+   "id": "14-c71",
+   "f": "Does the G-37 ban apply to competitive underwritings?",
+   "b": "**No** — only negotiated business.",
+   "r": "14.4.13.2"
+  },
+  {
+   "id": "14-c72",
+   "f": "Are retail-only municipal salespeople MFPs?",
+   "b": "**No**.",
+   "r": "14.4.13"
+  },
+  {
+   "id": "14-c73",
+   "f": "MFP’s spouse makes a contribution — counted?",
+   "b": "Only if **directed by the MFP**.",
+   "r": "14.4.13.2"
+  },
+  {
+   "id": "14-c74",
+   "f": "Contributor becomes an MFP later: what applies?",
+   "b": "A **2-year look-back** at prior contributions.",
+   "r": "14.4.13.2"
+  },
+  {
+   "id": "14-c75",
+   "f": "Retail communication definition",
+   "b": "More than **25 retail investors** in **30 calendar days**; principal approval **before first use**.",
+   "r": "14.5.1"
+  },
+  {
+   "id": "14-c76",
+   "f": "Correspondence definition under FINRA",
+   "b": "**25 or fewer** retail investors in 30 days; supervised, not pre-approved.",
+   "r": "14.5.1"
+  },
+  {
+   "id": "14-c77",
+   "f": "Sent to 10 retail clients and 20 institutions: category?",
+   "b": "**Correspondence**.",
+   "r": "14.5.1"
+  },
+  {
+   "id": "14-c78",
+   "f": "Are purely oral conversations communications with the public?",
+   "b": "**No**.",
+   "r": "14.5.1"
+  },
+  {
+   "id": "14-c79",
+   "f": "Retail communication record retention (FINRA)",
+   "b": "**3 years** after final use.",
+   "r": "14.5.2"
+  },
+  {
+   "id": "14-c80",
+   "f": "Allowed in retail communications: hypothetical illustration and price target",
+   "b": "Math-principle illustration (no projection); price target **only in a research report**.",
+   "r": "14.5.2"
+  },
+  {
+   "id": "14-c81",
+   "f": "Static vs interactive social media",
+   "b": "Static (website, profile, blog) = **retail comm**, pre-approved. Interactive (tweets, comments) = **supervised only**.",
+   "r": "14.5.3"
+  },
+  {
+   "id": "14-c82",
+   "f": "MSRB G-21 correspondence definition",
+   "b": "**25 or fewer** persons in **90 days**.",
+   "r": "14.5.4"
+  },
+  {
+   "id": "14-c83",
+   "f": "MSRB advertisement record retention",
+   "b": "**4 years** after final use; principal written approval before first use.",
+   "r": "14.5.4"
+  },
+  {
+   "id": "14-c84",
+   "f": "Business continuity plan rule and disclosure",
+   "b": "FINRA **4370**; summary at **account opening**, on **website**, mailed on request.",
+   "r": "14.6"
+  },
+  {
+   "id": "14-c85",
+   "f": "BCP emergency contacts",
+   "b": "**Two** associated persons, at least one **senior management and registered principal**; changes reported within **30 days**.",
+   "r": "14.6.1"
+  },
+  {
+   "id": "14-c86",
+   "f": "Who runs the annual compliance meeting that all registered employees must attend?",
+   "b": "The firm’s **chief compliance officer**.",
+   "r": "14.4"
+  },
+  {
+   "id": "14-c87",
+   "f": "MSRB G-25 and joint accounts: who may share in one with a customer?",
+   "b": "Only **registered reps**, not the municipal firm itself.",
+   "r": "14.4.8"
+  },
+  {
+   "id": "14-c88",
+   "f": "Gift-limit exclusions besides attended entertainment",
+   "b": "Bona fide **employment or compensation contracts** with a written agreement and payment records.",
+   "r": "14.4.7"
+  },
+  {
+   "id": "14-c89",
+   "f": "Joint-account check for a political contribution: how does G-37 count it?",
+   "b": "Signed by the MFP alone = **full** amount is the MFP’s; signed by two people = **half**.",
+   "r": "14.4.13.2"
+  },
+  {
+   "id": "14-c90",
+   "f": "Contributor leaves the firm after a prohibited G-37 contribution. Effect?",
+   "b": "The **original firm** stays banned for the rest of the 2 years; a new firm is banned too if the donor is an MFP there.",
+   "r": "14.4.13.2"
+  },
+  {
+   "id": "14-c91",
+   "f": "G-37 and federal office: whose candidacy counts?",
+   "b": "Candidacy of an **issuer official** (e.g. a governor running for president). An unrelated incumbent president seeking re-election does not count.",
+   "r": "14.4.13.2"
+  },
+  {
+   "id": "14-c92",
+   "f": "How long are MFP and political contribution records kept under G-37?",
+   "b": "**6 years**.",
+   "r": "14.4.13"
+  },
+  {
+   "id": "14-c93",
+   "f": "May a rep use personal email with clients?",
+   "b": "Only with **prior supervisor permission** and with the **firm monitoring** the messages.",
+   "r": "14.5.3"
+  }
+ ],
+ "questions": [
+  {
+   "id": "14-q01",
+   "r": "14.2",
+   "k": "concept",
+   "d": 1,
+   "q": "A securities trade is most likely illegal insider trading when it is based on information that is:",
+   "o": [
+    "Public but not yet verified by the company",
+    "Material and widely reported in the press",
+    "Immaterial and nonpublic",
+    "Material and nonpublic"
+   ],
+   "a": 3,
+   "w": [
+    "Wrong: information that is already public cannot support an insider trading violation, verified or not.",
+    "Wrong: widely reported information is public, so trading on it is not a violation.",
+    "Wrong: immaterial information would not move the price, so trading on it is not insider trading.",
+    "Correct: insider trading is trading on material, nonpublic information; both elements must be present."
+   ]
+  },
+  {
+   "id": "14-q02",
+   "r": "14.2",
+   "k": "concept",
+   "d": 2,
+   "q": "Which of the following persons could be held liable for insider trading? I. A director who buys shares ahead of an undisclosed merger announcement II. A friend who buys shares after the director tips him III. A journalist who buys shares of a company, any company, using nonpublic details of a takeover she is investigating IV. A 2% shareholder who trades on earnings the company has already published",
+   "o": [
+    "I, II and III only",
+    "I and II only",
+    "II and IV only",
+    "I, II, III and IV"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: the director, the tippee and the journalist all trade on material nonpublic information; the 2% holder trades on public data.",
+    "Wrong: this leaves out the journalist, who is liable under the misappropriation theory even though the stock is not her employer’s.",
+    "Wrong: the tippee is liable but the 2% shareholder is trading on published information and is not.",
+    "Wrong: trading on already published earnings is not insider trading, so the fourth person is not liable."
+   ]
+  },
+  {
+   "id": "14-q03",
+   "r": "14.2.2.1",
+   "k": "calc",
+   "d": 2,
+   "q": "A tippee, acting on a leak about a pending lawsuit loss, sells before the news and avoids a loss of $75,000. What is the maximum civil penalty under the treble damages provision?",
+   "o": [
+    "$75,000",
+    "$150,000",
+    "$225,000",
+    "$375,000"
+   ],
+   "a": 2,
+   "w": [
+    "Wrong: this is only the loss avoided, not the penalty multiple of three.",
+    "Wrong: this is double the loss avoided; the civil limit is three times.",
+    "Correct: 3 x $75,000 loss avoided = $225,000, the treble damages limit.",
+    "Wrong: this multiplies the loss by five; the statutory civil multiple is three."
+   ]
+  },
+  {
+   "id": "14-q04",
+   "r": "14.2.2.2",
+   "k": "concept",
+   "d": 1,
+   "q": "What is the maximum criminal penalty for an individual convicted of willful insider trading?",
+   "o": [
+    "$1 million fine and 10 years in prison",
+    "$5 million fine and 20 years in prison",
+    "$25 million fine and 20 years in prison",
+    "Three times the profit and 5 years in prison"
+   ],
+   "a": 1,
+   "w": [
+    "Wrong: both the dollar limit and the prison term are understated.",
+    "Correct: an individual faces fines of up to $5 million together with a prison term of up to 20 years.",
+    "Wrong: $25 million is the higher fine cap for corporations, not individuals.",
+    "Wrong: treble the profit is the civil measure, and the prison term is also wrong."
+   ]
+  },
+  {
+   "id": "14-q05",
+   "r": "14.2.1",
+   "k": "scenario",
+   "d": 2,
+   "q": "An analyst takes a colleague’s deal file from a desk, learns an acquisition is pending, and buys the target’s stock. Nobody told him the file was confidential. Which statement is most accurate?",
+   "o": [
+    "He is potentially liable because he should reasonably understand the information is nonpublic and confidential",
+    "He is not liable because he is not a corporate officer or director",
+    "He is liable only if the colleague also trades",
+    "He is not liable because no one expressly told him the information was nonpublic"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: Rule 10b5-2 and the misappropriation theory reach someone who should know the information was confidential.",
+    "Wrong: insider trading liability is not limited to officers and directors.",
+    "Wrong: his liability does not depend on the colleague trading.",
+    "Wrong: a duty of trust does not require an express statement; he is expected to know the information was confidential."
+   ]
+  },
+  {
+   "id": "14-q06",
+   "r": "14.2.3",
+   "k": "concept",
+   "d": 1,
+   "q": "A firm keeps a list of securities that carry no automatic trading restriction but whose trading compliance scrutinizes closely. This list is called a:",
+   "o": [
+    "Restricted list",
+    "Blacklist",
+    "Watch list",
+    "Suitability list"
+   ],
+   "a": 2,
+   "w": [
+    "Wrong: a restricted list restricts or prohibits proprietary, employee and certain customer trading.",
+    "Wrong: a blacklist is not a recognized supervisory list in this chapter.",
+    "Correct: a watch list is not a trading prohibition, but its securities get close compliance monitoring.",
+    "Wrong: no suitability list is part of the insider trading controls."
+   ]
+  },
+  {
+   "id": "14-q07",
+   "r": "14.2.3.1",
+   "k": "scenario",
+   "d": 2,
+   "q": "An equity trader at a broker-dealer learns that XYZ Corp. will shortly be taken over. A customer independently phones and enters an order to buy XYZ common stock. The firm:",
+   "o": [
+    "May accept it only after the trader buys XYZ for the firm account",
+    "Must reject the order because the firm holds material nonpublic information",
+    "May accept it only after recommending XYZ to other customers",
+    "May accept the order because it is unsolicited"
+   ],
+   "a": 3,
+   "w": [
+    "Wrong: buying for the firm account on inside information would be a violation.",
+    "Wrong: possession of the information does not bar an unsolicited customer order.",
+    "Wrong: recommending XYZ to others while holding the information would itself be abusive.",
+    "Correct: a firm or employee holding nonpublic information may still accept an unsolicited order."
+   ]
+  },
+  {
+   "id": "14-q08",
+   "r": "14.3",
+   "k": "concept",
+   "d": 1,
+   "q": "Which stage of money laundering is the easiest to detect?",
+   "o": [
+    "Layering",
+    "Placement",
+    "Integration",
+    "Structuring after integration"
+   ],
+   "a": 1,
+   "w": [
+    "Wrong: layering uses complex transfers designed to hide the trail, so it is harder to see.",
+    "Correct: placement is when illegal funds first enter financial institutions, which is the most visible point.",
+    "Wrong: at integration the funds are already mixed with legitimate money.",
+    "Wrong: this is not one of the three phases identified in the chapter."
+   ]
+  },
+  {
+   "id": "14-q09",
+   "r": "14.3",
+   "k": "scenario",
+   "d": 2,
+   "q": "A customer repeatedly wires funds between several seemingly unrelated accounts to separate the money from its illegal source. Which phase of money laundering is this?",
+   "o": [
+    "Placement",
+    "Layering",
+    "Integration",
+    "Reconciliation"
+   ],
+   "a": 1,
+   "w": [
+    "Wrong: placement is the initial deposit of illegal funds into the system.",
+    "Correct: moving funds through complex transactions such as wires to hide the origin is layering.",
+    "Wrong: integration is the mixing of illegal funds with legitimate funds.",
+    "Wrong: reconciliation is not a phase of money laundering."
+   ]
+  },
+  {
+   "id": "14-q10",
+   "r": "14.3.1",
+   "k": "calc",
+   "d": 2,
+   "q": "On a single business day, a customer deposits $4,500 in currency and a $5,800 money order into a brokerage account. What must the firm do?",
+   "o": [
+    "File a SAR within 30 days because the amounts are individually under $10,000",
+    "Nothing, because each deposit is under $10,000",
+    "File a CTR with FinCEN within 30 days",
+    "File a CTR with FinCEN within 15 days"
+   ],
+   "a": 3,
+   "w": [
+    "Wrong: a SAR depends on suspicious behavior; these amounts together trigger a CTR regardless.",
+    "Wrong: multiple same-day deposits from one customer are combined, and the total is $10,300.",
+    "Wrong: the CTR deadline is 15 days; 30 days is the SAR deadline.",
+    "Correct: $4,500 + $5,800 = $10,300, which exceeds $10,000 in one business day, so a CTR is due to FinCEN within 15 days."
+   ]
+  },
+  {
+   "id": "14-q11",
+   "r": "14.3.1",
+   "k": "calc",
+   "d": 3,
+   "q": "A customer deposits $6,000 in currency on Monday and another $6,000 in currency on Tuesday. Which statement is correct about CTR filing?",
+   "o": [
+    "A CTR is required because the two-day total is $12,000",
+    "A CTR is required on Tuesday because the account exceeded $10,000 cumulatively",
+    "No CTR is triggered by these deposits alone because neither business day exceeds $10,000",
+    "A CTR is required, filed with the IRS within 15 days"
+   ],
+   "a": 2,
+   "w": [
+    "Wrong: the CTR test aggregates deposits within a single business day, not across days.",
+    "Wrong: cumulative account totals over several days are not the CTR test.",
+    "Correct: each day’s cash total is $6,000, below the $10,000 trigger, although the pattern could still deserve a suspicious activity review.",
+    "Wrong: CTRs go to FinCEN, and no CTR is required for these deposits."
+   ]
+  },
+  {
+   "id": "14-q12",
+   "r": "14.3.1",
+   "k": "concept",
+   "d": 1,
+   "q": "A customer deposits a $25,000 personal check drawn on the customer’s own bank account. Is a CTR required?",
+   "o": [
+    "No, because a personal check originates from a bank and is not a cash deposit",
+    "Yes, because the amount exceeds $10,000",
+    "Yes, but only if the customer is a new account holder",
+    "Yes, but only if the check is from a joint account"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: a personal check comes through a bank, so it does not trigger a CTR.",
+    "Wrong: the size alone does not trigger a CTR; the instrument must be cash or a cash equivalent.",
+    "Wrong: new account status does not change the CTR test.",
+    "Wrong: joint ownership does not make a personal check a reportable cash deposit."
+   ]
+  },
+  {
+   "id": "14-q13",
+   "r": "14.3.2",
+   "k": "scenario",
+   "d": 2,
+   "q": "A customer asks a registered rep to shred statements and then starts wiring funds frequently between unrelated accounts. What should the rep do?",
+   "o": [
+    "File a SAR directly with FinCEN within 30 days",
+    "Report the activity to a supervisor, who takes the appropriate action",
+    "Inform the customer that the activity looks suspicious and ask for an explanation",
+    "Do nothing, since the customer’s instructions are lawful"
+   ],
+   "a": 1,
+   "w": [
+    "Wrong: the rep brings the matter to a supervisor, who is responsible for the filing process.",
+    "Correct: reps who encounter reportable activity inform their supervisors, who then act.",
+    "Wrong: warning the customer risks tipping off and is not the prescribed step.",
+    "Wrong: shredding requests and wires between unrelated accounts are classic red flags that must be escalated."
+   ]
+  },
+  {
+   "id": "14-q14",
+   "r": "14.3.2",
+   "k": "concept",
+   "d": 3,
+   "q": "Which of the following are true of suspicious activity reports? I. They are filed with FinCEN II. They are filed within 30 days of discovering the suspicious activity III. The customer must be told once the report is filed IV. The registered rep may not disclose the filing to the customer",
+   "o": [
+    "I and II only",
+    "I and III only",
+    "II, III and IV only",
+    "I, II and IV only"
+   ],
+   "a": 3,
+   "w": [
+    "Wrong: this omits the prohibition on telling the customer.",
+    "Wrong: telling the customer is prohibited, so the third statement is false.",
+    "Wrong: SARs are never disclosed to the customer, and this option also drops the FinCEN filing fact.",
+    "Correct: SARs go to FinCEN within 30 days of discovery, and the customer cannot be told."
+   ]
+  },
+  {
+   "id": "14-q15",
+   "r": "14.3.3.1",
+   "k": "concept",
+   "d": 2,
+   "q": "All of the following are required elements of a broker-dealer’s AML compliance program EXCEPT:",
+   "o": [
+    "Ongoing employee training",
+    "Procedures to detect and report suspicious transactions",
+    "Distribution of AML educational literature to customers",
+    "Independent testing of the program"
+   ],
+   "a": 2,
+   "w": [
+    "Wrong: ongoing AML employee training is required, generally annually.",
+    "Wrong: policies that detect and cause reporting of suspicious transactions are required.",
+    "Correct: customer-facing AML literature is optional, not a required program element.",
+    "Wrong: independent testing, typically annual, is required."
+   ]
+  },
+  {
+   "id": "14-q16",
+   "r": "14.3.3.2",
+   "k": "scenario",
+   "d": 2,
+   "q": "A rep opens a new account for a retired couple who are well known throughout the community. Under the customer identification program:",
+   "o": [
+    "Identifying information must be obtained before the account is opened, and identity verified within a reasonable time",
+    "Identification may be skipped because the couple is well known",
+    "Identifying information may be gathered any time within 10 days after opening",
+    "Verification is required only before the first trade"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: the CIP requires identifying information before opening and verification within a reasonable time before or after.",
+    "Wrong: the CIP has no exception for customers who are well known.",
+    "Wrong: collection is required before opening; no fixed 10-day post-opening window exists for it.",
+    "Wrong: the timing rule is tied to account opening, not the first trade."
+   ]
+  },
+  {
+   "id": "14-q17",
+   "r": "14.3.3",
+   "k": "scenario",
+   "d": 2,
+   "q": "While processing an order, a rep discovers that the buyer is on the Specially Designated Nationals list. What is the correct course of action?",
+   "o": [
+    "Report to a principal; the firm blocks the transaction and reports to OFAC within 10 days",
+    "Complete the trade and file a SAR within 30 days",
+    "File a CTR with FinCEN within 15 days and continue",
+    "Complete the trade and notify the customer of the report"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: the rep informs the principal, and the firm blocks the transaction and reports it to OFAC within 10 days.",
+    "Wrong: transactions with SDN-listed persons must be blocked, not completed.",
+    "Wrong: a CTR concerns large cash deposits, not SDN matches.",
+    "Wrong: the transaction must be blocked rather than completed."
+   ]
+  },
+  {
+   "id": "14-q18",
+   "r": "14.3.3.1",
+   "k": "concept",
+   "d": 2,
+   "q": "Which statement about a broker-dealer’s AML compliance officer is correct?",
+   "o": [
+    "The officer must be a registered principal",
+    "The officer’s name and contact information go to FINRA, with changes reported within 30 days",
+    "The officer’s name is kept internally and not reported to FINRA",
+    "The officer’s contact changes must be reported within 15 days"
+   ],
+   "a": 1,
+   "w": [
+    "Wrong: the role does not have to be filled by a registered representative or a principal.",
+    "Correct: FINRA is given the officer's name and contact details, and any change must be communicated within 30 days.",
+    "Wrong: the name and contact information must be forwarded to FINRA.",
+    "Wrong: the change notification period is 30 days."
+   ]
+  },
+  {
+   "id": "14-q19",
+   "r": "14.3.3.1",
+   "k": "concept",
+   "d": 3,
+   "q": "Which of the following may conduct the independent test of a firm’s AML program?",
+   "o": [
+    "The AML compliance officer reviewing the program they run",
+    "The employee who prepares the firm’s suspicious activity reports",
+    "A qualified outside consultant who knows the requirements",
+    "The employee who monitors customer transactions every day"
+   ],
+   "a": 2,
+   "w": [
+    "Wrong: the tester cannot be the person who performs the functions being tested.",
+    "Wrong: someone who prepares SARs performs a tested function and so is not independent.",
+    "Correct: an outside firm that understands the rules is an acceptable independent tester.",
+    "Wrong: daily monitoring is a tested function, so that employee would not be independent."
+   ]
+  },
+  {
+   "id": "14-q20",
+   "r": "14.4.1",
+   "k": "scenario",
+   "d": 2,
+   "q": "A registered rep at Firm A wants to open a personal brokerage account at Firm B. Which is required under Rule 3210?",
+   "o": [
+    "Firm B’s prior written consent only",
+    "Notice to Firm A within 30 days after the account is opened",
+    "FINRA’s prior written approval",
+    "Firm A’s prior written consent, and the rep must tell Firm B of the association with Firm A"
+   ],
+   "a": 3,
+   "w": [
+    "Wrong: the employer’s consent is the key requirement, not the opening firm’s.",
+    "Wrong: consent must come before opening, not after.",
+    "Wrong: FINRA does not pre-approve these accounts; the employer does.",
+    "Correct: the employer must consent in writing beforehand and the opening firm must be told of the association."
+   ]
+  },
+  {
+   "id": "14-q21",
+   "r": "14.4.1",
+   "k": "scenario",
+   "d": 3,
+   "q": "A registered rep wants to open an account at another firm that will hold only mutual fund shares and variable annuities. Rule 3210 requirements:",
+   "o": [
+    "Apply in full, including the employer’s written consent",
+    "Apply only if the account is also in a spouse’s name",
+    "Apply, but consent may be given orally",
+    "Do not apply to an account holding only those products"
+   ],
+   "a": 3,
+   "w": [
+    "Wrong: accounts holding solely mutual funds, UITs or variable annuities are outside the rule.",
+    "Wrong: a spouse’s name does not change the exemption for these product-only accounts.",
+    "Wrong: the exemption makes consent unnecessary; the rule requires written consent when it applies.",
+    "Correct: the rule does not apply to accounts containing only mutual funds, UITs or variable annuities."
+   ]
+  },
+  {
+   "id": "14-q22",
+   "r": "14.4.2",
+   "k": "scenario",
+   "d": 1,
+   "q": "A rep proposes paying the firm’s unregistered receptionist 2% of the commissions on accounts the receptionist refers. This is:",
+   "o": [
+    "Permitted if the firm’s principal approves",
+    "Permitted because the percentage is small",
+    "Prohibited because unregistered persons cannot be compensated for securities business",
+    "Permitted only if the receptionist passes the SIE"
+   ],
+   "a": 2,
+   "w": [
+    "Wrong: principal approval does not override the prohibition under Rule 2040.",
+    "Wrong: no percentage is acceptable; the issue is the recipient’s status.",
+    "Correct: Rule 2040 prohibits compensating unregistered persons in connection with securities business.",
+    "Wrong: passing the SIE alone does not make a person registered."
+   ]
+  },
+  {
+   "id": "14-q23",
+   "r": "14.4.3",
+   "k": "scenario",
+   "d": 2,
+   "q": "A rep retires under a continuing commissions contract signed while still registered. Which event would end the right to receive the commissions?",
+   "o": [
+    "Dying while the contract is in force",
+    "Joining another broker-dealer as an associated person",
+    "Failing to solicit new accounts",
+    "Receiving trailing commissions on accounts opened before retirement"
+   ],
+   "a": 1,
+   "w": [
+    "Wrong: the rep’s estate can continue receiving the commissions.",
+    "Correct: re-associating with any broker-dealer ends the right to continuing commissions.",
+    "Wrong: soliciting new business is prohibited; not soliciting is required.",
+    "Wrong: commissions on pre-retirement accounts are exactly what the arrangement allows."
+   ]
+  },
+  {
+   "id": "14-q24",
+   "r": "14.4.4",
+   "k": "scenario",
+   "d": 1,
+   "q": "A registered rep takes a weekend bartending job. What does FINRA Rule 3270 require?",
+   "o": [
+    "Written notice to the firm",
+    "Nothing, because bartending has no connection to securities",
+    "Written approval from FINRA",
+    "Notice only if the job pays more than the rep’s securities income"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: any outside activity involving compensation requires written notice to the employing firm.",
+    "Wrong: an outside business activity need not relate to securities to require notice.",
+    "Wrong: FINRA does not approve outside jobs; the rule requires notice to the firm.",
+    "Wrong: no income comparison applies to the notice requirement."
+   ]
+  },
+  {
+   "id": "14-q25",
+   "r": "14.4.4",
+   "k": "concept",
+   "d": 1,
+   "q": "Which of the following would NOT require notice to the firm as an outside business activity?",
+   "o": [
+    "Being a limited partner in a real estate deal",
+    "Starting an unpaid personal business",
+    "Preparing tax returns for clients for a fee",
+    "Consulting work on the side"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: a passive investment, such as a limited partner interest, requires no notification.",
+    "Wrong: compensation is not the only test, so an unpaid business may still be reportable.",
+    "Wrong: preparing returns for pay is a standard example of an outside activity.",
+    "Wrong: side consulting is an outside business activity."
+   ]
+  },
+  {
+   "id": "14-q26",
+   "r": "14.4.5",
+   "k": "scenario",
+   "d": 2,
+   "q": "A rep wants to help a family friend’s start-up find investors among the rep’s clients and will receive no compensation of any kind. What does the rep owe the firm?",
+   "o": [
+    "Nothing, because there is no pay",
+    "Prior written notice only",
+    "Prior written notice and written approval",
+    "Approval from FINRA only"
+   ],
+   "a": 1,
+   "w": [
+    "Wrong: selling away always requires notice even without compensation.",
+    "Correct: without compensation only notice is required; permission is triggered by compensation.",
+    "Wrong: written approval is needed only when compensation will be received.",
+    "Wrong: the approval and notice go through the firm, not FINRA."
+   ]
+  },
+  {
+   "id": "14-q27",
+   "r": "14.4.5",
+   "k": "scenario",
+   "d": 3,
+   "q": "A rep is offered no cash for helping a company sell shares to the rep’s clients, but the company promises to send the rep future deal flow. What is required under Rule 3280?",
+   "o": [
+    "No notice, since no cash is received",
+    "Notice only, since non-cash benefits are not compensation",
+    "Written notice and written firm approval, because any compensation including deal flow triggers permission",
+    "Written approval from FINRA only"
+   ],
+   "a": 2,
+   "w": [
+    "Wrong: private securities transactions always require notice.",
+    "Wrong: non-cash compensation such as deal flow counts as compensation for this purpose.",
+    "Correct: any compensation, including non-cash, adds the requirement of written firm approval.",
+    "Wrong: the firm, not FINRA, approves the participation."
+   ]
+  },
+  {
+   "id": "14-q28",
+   "r": "14.4.5",
+   "k": "concept",
+   "d": 3,
+   "q": "Which of the following statements about private securities transactions are true? I. Any compensation, including non-cash, requires written approval from the firm II. Without compensation, only notice is required III. If the firm denies participation, the rep may still help indirectly IV. An approved compensated transaction must be recorded on the firm’s books and supervised",
+   "o": [
+    "I and II only",
+    "I, III and IV only",
+    "II and III only",
+    "I, II and IV only"
+   ],
+   "a": 3,
+   "w": [
+    "Wrong: this leaves out the recording and supervision requirement for approved transactions.",
+    "Wrong: this includes the false indirect participation statement and omits the notice-only rule.",
+    "Wrong: a denied rep cannot participate directly or indirectly, so the third statement is false.",
+    "Correct: compensation requires approval, no compensation requires notice only, and approved deals are recorded and supervised."
+   ]
+  },
+  {
+   "id": "14-q29",
+   "r": "14.4.5",
+   "k": "concept",
+   "d": 2,
+   "q": "Which of the following activities requires the firm’s written permission, rather than only notice, under FINRA rules?",
+   "o": [
+    "Working weekends at a shoe store",
+    "Participating in a private securities transaction for compensation",
+    "Taking part in an unpaid private securities transaction",
+    "Owning a passive limited partner interest"
+   ],
+   "a": 1,
+   "w": [
+    "Wrong: an outside job is an OBA, which requires notice only.",
+    "Correct: compensated selling away requires both notice and the firm’s written approval.",
+    "Wrong: an unpaid private securities transaction requires notice, not permission.",
+    "Wrong: a passive investment needs neither notice nor permission."
+   ]
+  },
+  {
+   "id": "14-q30",
+   "r": "14.4.6",
+   "k": "scenario",
+   "d": 2,
+   "q": "A rep tells a nervous client, off the record, that if the portfolio declines over the next year, the rep will personally refund the commissions paid. This promise is:",
+   "o": [
+    "Permitted if the client agrees in writing",
+    "Permitted if the amount is small",
+    "A prohibited guarantee against loss",
+    "Permitted because it only affects fees"
+   ],
+   "a": 2,
+   "w": [
+    "Wrong: a client’s consent does not make a guarantee against loss lawful.",
+    "Wrong: no size threshold exists; any guarantee is prohibited.",
+    "Correct: promising to reimburse any part of a loss is a guarantee against loss, strictly prohibited.",
+    "Wrong: refunding fees to offset losses is exactly the kind of promise the rule bars."
+   ]
+  },
+  {
+   "id": "14-q31",
+   "r": "14.4.6",
+   "k": "concept",
+   "d": 3,
+   "q": "Which of the following is NOT treated as a prohibited guarantee against loss?",
+   "o": [
+    "A promise to refund fees if the account loses money",
+    "A promise to buy a security back if it declines",
+    "A promise to indemnify the client for losses",
+    "A put feature on a security"
+   ],
+   "a": 3,
+   "w": [
+    "Wrong: reimbursing a customer through a fee refund tied to losses is prohibited.",
+    "Wrong: promising to repurchase securities that decline is a prohibited guarantee.",
+    "Wrong: indemnifying a client against loss is prohibited.",
+    "Correct: repurchase agreements and put features are not considered guarantees against loss."
+   ]
+  },
+  {
+   "id": "14-q32",
+   "r": "14.4.7",
+   "k": "calc",
+   "d": 2,
+   "q": "In one calendar year a rep has already given a client a $120 gift in March and a $110 gift in September. Assuming no other gifts, what is the most the rep may still give that same person this year without violating the gift rule?",
+   "o": [
+    "$70",
+    "$180",
+    "$190",
+    "$0"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: $120 + $110 = $230 given; $300 - $230 = $70 remaining.",
+    "Wrong: $180 subtracts only the March gift from $300 and ignores the September one.",
+    "Wrong: $190 subtracts only the September gift and ignores the March gift.",
+    "Wrong: the limit has not yet been reached, so $70 of capacity remains."
+   ]
+  },
+  {
+   "id": "14-q33",
+   "r": "14.4.7",
+   "k": "calc",
+   "d": 3,
+   "q": "A rep buys a ticket to a sporting event for $340 (face value $250) and gives it to a client without attending. The rep gave this person no other gifts this year. Is this a violation?",
+   "o": [
+    "No, because the face value of $250 is under $300",
+    "No, because tickets are entertainment",
+    "Yes, because gift tickets are valued at the higher of cost or face value, and $340 exceeds $300",
+    "Yes, because tickets can never be given as gifts"
+   ],
+   "a": 2,
+   "w": [
+    "Wrong: the rule uses the higher of cost or face value, which is $340.",
+    "Wrong: the entertainment exception applies only when the rep attends the event.",
+    "Correct: with no attendance it is a gift valued at the higher figure, $340, which exceeds the $300 limit.",
+    "Wrong: tickets are permitted gifts within the limit; the problem is the value."
+   ]
+  },
+  {
+   "id": "14-q34",
+   "r": "14.4.7",
+   "k": "scenario",
+   "d": 1,
+   "q": "A rep takes a client to dinner at a local restaurant at a cost of $180 per person, and the rep attends. How is this treated under the gift rule?",
+   "o": [
+    "A gift that violates the $300 limit",
+    "A gift that counts toward the $300 limit",
+    "Prohibited because it exceeds $100",
+    "Entertainment that is not subject to the $300 limit, provided it is not egregious"
+   ],
+   "a": 3,
+   "w": [
+    "Wrong: a meal the rep attends is not counted as a gift.",
+    "Wrong: attended entertainment does not count toward the $300 limit.",
+    "Wrong: no $100 limit applies in the rule.",
+    "Correct: entertainment the rep attends, such as a meal, is outside the limit unless excessive."
+   ]
+  },
+  {
+   "id": "14-q35",
+   "r": "14.4.8",
+   "k": "concept",
+   "d": 2,
+   "q": "A rep wishes to open a joint account with a client who is not a family member. Which are required? I. The firm’s prior written authorization II. The customer’s prior written authorization III. FINRA’s prior written approval IV. Sharing in profits and losses in proportion to each person’s financial contribution",
+   "o": [
+    "I, II and IV only",
+    "I and II only",
+    "I, II, III and IV",
+    "II and IV only"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: firm approval, customer approval and proportionate sharing are the three conditions; FINRA approval is not required.",
+    "Wrong: proportionate sharing is also required for non-family accounts.",
+    "Wrong: FINRA does not approve the arrangement, so including it makes the statement false.",
+    "Wrong: the firm’s written authorization is also required."
+   ]
+  },
+  {
+   "id": "14-q36",
+   "r": "14.4.8",
+   "k": "calc",
+   "d": 3,
+   "q": "A rep and a non-family client have a jointly approved account to which the rep contributed $20,000 and the client contributed $80,000. The account earns a $15,000 profit. What is the maximum share of the profit the rep may take?",
+   "o": [
+    "$1,500",
+    "$3,000",
+    "$7,500",
+    "$15,000"
+   ],
+   "a": 1,
+   "w": [
+    "Wrong: this treats the rep as owning 10% instead of 20%.",
+    "Correct: the rep contributed $20,000 of $100,000 = 20%; 20% x $15,000 = $3,000.",
+    "Wrong: a 50/50 split ignores the proportionality requirement.",
+    "Wrong: taking the whole profit would not be proportionate to contributions."
+   ]
+  },
+  {
+   "id": "14-q37",
+   "r": "14.4.8",
+   "k": "scenario",
+   "d": 3,
+   "q": "A rep opens a joint account with his father, who is a client. Which requirement for sharing in a customer’s account does NOT apply?",
+   "o": [
+    "The firm’s prior written authorization",
+    "Sharing in direct proportion to each person’s contributions",
+    "The customer’s prior written authorization",
+    "All requirements apply to family members as well"
+   ],
+   "a": 1,
+   "w": [
+    "Wrong: even for family members, the firm’s approval still applies.",
+    "Correct: immediate family accounts are exempt from the proportionate-share requirement.",
+    "Wrong: the customer’s approval still applies when the customer is family.",
+    "Wrong: the proportion rule is waived for immediate family, which includes parents."
+   ]
+  },
+  {
+   "id": "14-q38",
+   "r": "14.4.8",
+   "k": "scenario",
+   "d": 2,
+   "q": "A customer who is not a relative asks a rep to serve as trustee of her trust. Under Rule 3241, the rep must:",
+   "o": [
+    "Accept, since the customer asked",
+    "Notify the firm only after accepting",
+    "Obtain approval from FINRA",
+    "Give the firm written notice and receive the firm’s approval or disapproval before serving"
+   ],
+   "a": 3,
+   "w": [
+    "Wrong: acting as trustee for a non-family customer is limited and needs firm review.",
+    "Wrong: notice must come before assuming the role.",
+    "Wrong: the firm reviews these appointments, not FINRA.",
+    "Correct: the rep gives written notice and the firm reviews and approves or disapproves."
+   ]
+  },
+  {
+   "id": "14-q39",
+   "r": "14.4.9",
+   "k": "scenario",
+   "d": 2,
+   "q": "A rep borrows $400 from a customer who is also a long-time friend, not a relative, with the loan arising from their personal friendship. What is required, assuming firm procedures allow such loans?",
+   "o": [
+    "The firm’s prior written approval",
+    "Nothing, since the loan is small",
+    "FINRA’s prior approval",
+    "A promissory note filed with the firm after repayment"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: loans based on an outside personal relationship need the firm’s written pre-approval.",
+    "Wrong: no minimum amount exempts a customer loan based on a personal relationship.",
+    "Wrong: the firm, not FINRA, gives approval.",
+    "Wrong: a note is not the requirement; approval comes beforehand."
+   ]
+  },
+  {
+   "id": "14-q40",
+   "r": "14.4.9",
+   "k": "scenario",
+   "d": 1,
+   "q": "A rep gets a loan, on market terms available to the public, from a bank that is also a customer of the rep. What is required?",
+   "o": [
+    "Written pre-approval by the firm",
+    "FINRA approval",
+    "No notice or permission, because it is a standard bank loan on market terms",
+    "The loan is prohibited"
+   ],
+   "a": 2,
+   "w": [
+    "Wrong: standard commercial terms available to the general public remove the pre-approval need.",
+    "Wrong: FINRA approval is not part of the rule.",
+    "Correct: a bank customer lending on market terms requires no notice or permission.",
+    "Wrong: lending by a bank customer on market terms is an exception to the general prohibition."
+   ]
+  },
+  {
+   "id": "14-q41",
+   "r": "14.4.10",
+   "k": "scenario",
+   "d": 1,
+   "q": "A rep receives a written letter from a customer complaining about how an order was handled. The rep believes the complaint has no merit. The rep must:",
+   "o": [
+    "Handle it personally and keep a note",
+    "Forward it to a principal",
+    "Ignore it since no loss occurred",
+    "Forward it only if the customer mentions a lawsuit"
+   ],
+   "a": 1,
+   "w": [
+    "Wrong: written complaints cannot be resolved privately; they must be sent to a principal.",
+    "Correct: every written complaint must be forwarded to a principal, regardless of merit.",
+    "Wrong: absence of a loss does not remove the requirement.",
+    "Wrong: no litigation threat is required to trigger forwarding."
+   ]
+  },
+  {
+   "id": "14-q42",
+   "r": "14.4.10.1",
+   "k": "calc",
+   "d": 2,
+   "q": "A firm receives customer complaints during May. Under Rule 4530, by what date must the firm report them to FINRA?",
+   "o": [
+    "June 15",
+    "June 30",
+    "July 15",
+    "August 15"
+   ],
+   "a": 2,
+   "w": [
+    "Wrong: the deadline is tied to the end of the calendar quarter, not the month received.",
+    "Wrong: June 30 is the end of the quarter, not the reporting date.",
+    "Correct: May falls in the quarter ending June 30, so the report is due the 15th day of the following month, July 15.",
+    "Wrong: this is a month later than the rule requires."
+   ]
+  },
+  {
+   "id": "14-q43",
+   "r": "14.4.12",
+   "k": "scenario",
+   "d": 2,
+   "q": "A rep recommends a mutual fund that pays the rep an additional sales commission. How must the conflict be disclosed?",
+   "o": [
+    "No disclosure is needed if the fund is suitable",
+    "Only on the confirmation",
+    "Only verbally after the trade",
+    "Verbally before the trade and in writing on the confirmation"
+   ],
+   "a": 3,
+   "w": [
+    "Wrong: suitability does not remove the duty to disclose a conflict.",
+    "Wrong: written disclosure alone omits the required verbal disclosure beforehand.",
+    "Wrong: verbal disclosure after the trade comes too late and omits writing.",
+    "Correct: conflicts require verbal disclosure before the trade and written disclosure on the confirmation."
+   ]
+  },
+  {
+   "id": "14-q44",
+   "r": "14.4.12",
+   "k": "scenario",
+   "d": 2,
+   "q": "Which situation involves a control relationship that must be disclosed under Rule 2262?",
+   "o": [
+    "A rep recommends shares of a company under common control with the rep’s firm",
+    "A rep recommends a competitor’s bond",
+    "A rep recommends Treasury securities",
+    "A rep recommends a security held in the rep’s personal account"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: recommending an issuer that controls, is controlled by or is under common control with the firm is a control relationship.",
+    "Wrong: a competitor’s bond has no control tie to the selling firm.",
+    "Wrong: Treasuries have no relationship to the firm.",
+    "Wrong: a personal holding is a different issue and not a control relationship under this rule."
+   ]
+  },
+  {
+   "id": "14-q45",
+   "r": "14.4.11",
+   "k": "scenario",
+   "d": 3,
+   "q": "A bank acts as trustee for a bond issuer and wants to use bondholder names it learned in that role to market its own brokerage services. Under Rule 2060:",
+   "o": [
+    "This is permitted because the bank owns the records",
+    "This is permitted if the bondholders do not object",
+    "This is permitted only with the issuer’s consent",
+    "This is prohibited even with the issuer’s consent"
+   ],
+   "a": 2,
+   "w": [
+    "Wrong: information learned in a fiduciary capacity belongs to the relationship and cannot be freely used.",
+    "Wrong: bondholder silence is not the required consent; it must come from the issuer.",
+    "Correct: the information may be used for solicitation only after the issuer gives consent.",
+    "Wrong: the rule allows the use if the issuer consents."
+   ]
+  },
+  {
+   "id": "14-q46",
+   "r": "14.4.13",
+   "k": "concept",
+   "d": 2,
+   "q": "Under MSRB Rule G-37, which of the following would be considered a municipal finance professional (MFP)?",
+   "o": [
+    "A representative who only sells municipal bonds to individual customers",
+    "A representative who recommends local municipal bonds to retail customers",
+    "A representative who manages retail clients’ municipal bond portfolios",
+    "A banker who solicits underwriting business from a city"
+   ],
+   "a": 3,
+   "w": [
+    "Wrong: persons involved only in retail sales to individuals are excluded from the MFP definition.",
+    "Wrong: retail recommendations alone do not make someone an MFP.",
+    "Wrong: managing retail portfolios is retail client service, which is not an MFP function.",
+    "Correct: soliciting municipal securities business in any capacity makes the person an MFP."
+   ]
+  },
+  {
+   "id": "14-q47",
+   "r": "14.4.13.1",
+   "k": "scenario",
+   "d": 2,
+   "q": "An MFP who is entitled to vote in Springfield contributes $200 to a mayoral candidate’s primary and $200 to the same candidate’s general election. Springfield issues bonds through negotiated underwriting. What is the result?",
+   "o": [
+    "A two-year ban because the total exceeds $250",
+    "No ban, because each contribution is within $250 per election for a candidate the MFP can vote for",
+    "A two-year ban because contributions to two elections are not permitted",
+    "No ban only if the firm’s PAC matches the amount"
+   ],
+   "a": 1,
+   "w": [
+    "Wrong: the limit is $250 per election, applied separately to primary and general.",
+    "Correct: $200 per election is under $250 and the MFP can vote for the candidate, so the exception applies.",
+    "Wrong: contributions to both the primary and general elections are each allowed within the limit.",
+    "Wrong: a firm PAC may not contribute under the exception."
+   ]
+  },
+  {
+   "id": "14-q48",
+   "r": "14.4.13.1",
+   "k": "scenario",
+   "d": 3,
+   "q": "An MFP entitled to vote for a state treasurer candidate contributes $300 to the candidate’s election. The treasurer influences the awarding of state bond business, and the firm does negotiated underwriting for the state. What follows?",
+   "o": [
+    "The firm is barred from negotiated municipal business with the state for two years",
+    "No consequence because the MFP can vote for the candidate",
+    "The firm is barred from all municipal business with the state for one year",
+    "Only the MFP is barred, not the firm"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: $300 exceeds $250, so the firm cannot engage in negotiated municipal securities business with the issuer for two years.",
+    "Wrong: being entitled to vote helps only if the contribution stays within $250 per election.",
+    "Wrong: the ban lasts two years and covers negotiated business, not all business.",
+    "Wrong: the ban applies to the firm."
+   ]
+  },
+  {
+   "id": "14-q49",
+   "r": "14.4.13.2",
+   "k": "concept",
+   "d": 3,
+   "q": "During the two-year ban triggered by a prohibited contribution to an issuer official, which activity with that issuer may the firm still conduct?",
+   "o": [
+    "Competitive bid underwritings",
+    "Negotiated underwritings",
+    "Advisory work in a negotiated deal",
+    "Any negotiated remarketing agreement"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: competitive underwritings are awarded on price, so G-37’s ban does not reach them.",
+    "Wrong: negotiated municipal securities business is exactly what the ban prohibits.",
+    "Wrong: this describes negotiated-type business that falls within the prohibition.",
+    "Wrong: negotiated business of any kind with the issuer is subject to the ban."
+   ]
+  },
+  {
+   "id": "14-q50",
+   "r": "14.4.13.1",
+   "k": "scenario",
+   "d": 2,
+   "q": "A political action committee controlled by a municipal securities firm gives $100 to a candidate who can influence awards of bond business. What is the consequence?",
+   "o": [
+    "None, since $100 is under $250",
+    "The firm is barred from negotiated business with that issuer for two years",
+    "None, if the candidate is local",
+    "The firm is barred for one year"
+   ],
+   "a": 1,
+   "w": [
+    "Wrong: the $250 exception is for MFPs only and does not apply to the firm or its PAC.",
+    "Correct: a firm or PAC contribution of any amount triggers the two-year ban on negotiated business.",
+    "Wrong: the candidate’s locality does not matter; a PAC cannot use the exception.",
+    "Wrong: the ban period is two years."
+   ]
+  },
+  {
+   "id": "14-q51",
+   "r": "14.5.1",
+   "k": "calc",
+   "d": 2,
+   "q": "Within a 30-calendar-day period, a firm sends a market commentary to 12 retail clients and 60 institutional clients. How is it classified under FINRA rules?",
+   "o": [
+    "Retail communication",
+    "Institutional communication",
+    "Correspondence",
+    "Advertisement"
+   ],
+   "a": 2,
+   "w": [
+    "Wrong: there are only 12 retail recipients, not more than 25.",
+    "Wrong: it is not exclusively institutional because retail clients also receive it.",
+    "Correct: a retail investor is included so it is not institutional, and 12 retail recipients is 25 or fewer, so it is correspondence.",
+    "Wrong: advertisement is the MSRB term, not the FINRA classification used here."
+   ]
+  },
+  {
+   "id": "14-q52",
+   "r": "14.5.2",
+   "k": "scenario",
+   "d": 1,
+   "q": "A firm mails a promotional flyer to 40 retail clients within one month. Which principal obligation applies?",
+   "o": [
+    "Filing with the MSRB before use",
+    "Review within 30 days after first use",
+    "No review is necessary",
+    "Approval before first use"
+   ],
+   "a": 3,
+   "w": [
+    "Wrong: the MSRB is not involved in this FINRA-defined communication.",
+    "Wrong: post-use spot-checks apply to correspondence, not retail communications.",
+    "Wrong: retail communications always need prior approval, unless an exception applies.",
+    "Correct: more than 25 retail recipients makes it a retail communication requiring principal approval before first use."
+   ]
+  },
+  {
+   "id": "14-q53",
+   "r": "14.5.3",
+   "k": "concept",
+   "d": 2,
+   "q": "Which of the following online communications generally requires principal approval before posting?",
+   "o": [
+    "A static page on the firm’s website describing its services",
+    "A real-time tweet in response to a follower’s question",
+    "A reply to a comment on a blog post",
+    "A real-time comment in a chat discussion"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: static content, such as website copy, is treated as a retail communication needing prior principal review.",
+    "Wrong: a real-time interactive tweet needs no prior review, only supervision.",
+    "Wrong: a reply is interactive content, which is supervised after the fact.",
+    "Wrong: real-time chat comments are interactive content and do not require prior approval."
+   ]
+  },
+  {
+   "id": "14-q54",
+   "r": "14.5.4",
+   "k": "concept",
+   "d": 3,
+   "q": "Which of the following correctly compares FINRA and MSRB communications rules?",
+   "o": [
+    "MSRB correspondence uses a 30-day window and FINRA uses 90 days",
+    "Both require 3-year record retention for advertising",
+    "FINRA retail communication records are kept 3 years and MSRB advertising records 4 years",
+    "MSRB advertisements need no principal approval"
+   ],
+   "a": 2,
+   "w": [
+    "Wrong: the windows are reversed; FINRA uses 30 days and MSRB G-21 uses 90 days.",
+    "Wrong: MSRB advertising records are kept 4 years, not 3.",
+    "Correct: FINRA retail communications are retained for 3 years after final use and MSRB advertisements for 4 years.",
+    "Wrong: MSRB advertisements require written principal approval before first use."
+   ]
+  },
+  {
+   "id": "14-q55",
+   "r": "14.6",
+   "k": "concept",
+   "d": 2,
+   "q": "Which of the following are true of a broker-dealer’s business continuity plan? I. Customers must receive a summary at account opening II. The plan must be posted on the firm’s website III. A senior manager who is a registered principal reviews it annually IV. The firm designates three emergency contacts",
+   "o": [
+    "I and II only",
+    "I, III and IV only",
+    "II, III and IV only",
+    "I, II and III only"
+   ],
+   "a": 3,
+   "w": [
+    "Wrong: this omits the annual review by a senior manager who is a registered principal.",
+    "Wrong: this includes the false three-contact statement and omits website posting.",
+    "Wrong: the firm designates two emergency contacts, so the fourth statement is false.",
+    "Correct: the summary at opening, website posting and annual senior-principal review are all required; the firm designates two contacts, not three."
+   ]
+  },
+  {
+   "id": "14-q56",
+   "r": "14.4.13.2",
+   "k": "scenario",
+   "d": 3,
+   "q": "An MFP who is entitled to vote for the candidate writes a $300 check to a mayoral campaign from a joint account with a friend. Only the MFP signs the check. How is the contribution treated under G-37?",
+   "o": [
+    "Half is attributed to the MFP, so $150 is within the limit",
+    "The full $300 is attributed to the MFP, exceeding $250, so the firm faces the ban",
+    "Attributed to the MFP only if the friend is a spouse",
+    "None is attributed to the MFP because the account is joint"
+   ],
+   "a": 1,
+   "w": [
+    "Wrong: splitting the amount applies only when two people sign the check.",
+    "Correct: a sole signature by the MFP means the entire $300 is the MFP’s, above the $250 per-election limit, so negotiated business with that issuer is barred for two years.",
+    "Wrong: the signature, not the relationship, decides how the amount is attributed.",
+    "Wrong: joint ownership does not shield a contribution that the MFP alone signed."
+   ]
+  },
+  {
+   "id": "14-q57",
+   "r": "14.4.13.2",
+   "k": "scenario",
+   "d": 3,
+   "q": "A representative makes a prohibited contribution to an issuer official and then leaves for another municipal firm, where the representative is also an MFP. What is the result?",
+   "o": [
+    "Only the new firm is subject to the ban",
+    "Neither firm is banned because the contribution was made while at the first firm",
+    "The original firm remains banned for the rest of the two years, and the new firm is banned as well",
+    "Only the original firm is banned and the ban ends when the representative leaves"
+   ],
+   "a": 2,
+   "w": [
+    "Wrong: the firm that employed the person at the time stays banned too.",
+    "Wrong: moving to a new employer does not erase the consequence for either firm.",
+    "Correct: the first firm stays banned for the remainder of the period, and the new firm is also barred because the donor is an MFP there.",
+    "Wrong: the departure does not lift the original firm’s ban."
+   ]
+  },
+  {
+   "id": "14-q58",
+   "r": "14.4.13.2",
+   "k": "concept",
+   "d": 2,
+   "q": "Under G-37, a contribution of more than $250 per election would violate the rule if made by an MFP to which candidate?",
+   "o": [
+    "The incumbent US president seeking re-election",
+    "Any candidate for federal office, regardless of ties to municipal issuers",
+    "A candidate for a federal office who holds no municipal issuer post",
+    "A state governor who is running for US president"
+   ],
+   "a": 3,
+   "w": [
+    "Wrong: a sitting president has no tie to a municipal issuer, so the rule does not reach this candidate.",
+    "Wrong: only federal candidates who are issuer officials are covered, not all of them.",
+    "Wrong: without a municipal issuer post the candidate is outside the rule.",
+    "Correct: a governor is an official of a municipal issuer, so the rule still applies when that person seeks federal office."
+   ]
+  },
+  {
+   "id": "14-q59",
+   "r": "14.5.3",
+   "k": "scenario",
+   "d": 2,
+   "q": "A registered rep wants to exchange emails with clients using a personal email address instead of the firm’s system. What is required?",
+   "o": [
+    "Nothing, because email is not a communication with the public",
+    "Prior permission from the rep’s supervisor and monitoring of the messages by the firm",
+    "Prior approval from FINRA",
+    "The clients’ written consent only"
+   ],
+   "a": 1,
+   "w": [
+    "Wrong: written electronic messages are communications and fall under the firm’s supervision.",
+    "Correct: personal email use is allowed only when the supervisor agrees beforehand and the firm monitors the messages.",
+    "Wrong: the firm, not FINRA, controls this permission.",
+    "Wrong: customer consent does not replace the firm’s permission and oversight."
+   ]
+  },
+  {
+   "id": "14-q60",
+   "r": "14.4",
+   "k": "concept",
+   "d": 1,
+   "q": "Who conducts the annual compliance meeting that all registered employees of a firm must attend?",
+   "o": [
+    "The firm’s chief compliance officer",
+    "A FINRA examiner",
+    "The firm’s outside auditor",
+    "The SEC"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: the chief compliance officer runs the yearly meeting on supervisory procedures and FINRA rules.",
+    "Wrong: regulators do not run a member firm’s own internal compliance meeting.",
+    "Wrong: auditors do not lead the required compliance meeting.",
+    "Wrong: the SEC does not conduct it."
+   ]
+  },
+  {
+   "id": "14-q61",
+   "r": "14.4.13.2",
+   "k": "scenario",
+   "d": 2,
+   "q": "The spouse of an MFP independently gives $500 to a candidate for issuer office, and the MFP did not direct or suggest the gift. What is the consequence for the MFP’s firm under G-37?",
+   "o": [
+    "A two-year ban on negotiated business with that issuer",
+    "A one-year ban on all municipal business with that issuer",
+    "A fine only, with no ban",
+    "No ban, because a spouse’s gift counts only if the MFP directed it"
+   ],
+   "a": 3,
+   "w": [
+    "Wrong: the ban would apply to the MFP’s own gifts or gifts directed by the MFP, not to this one.",
+    "Wrong: the ban is two years and limited to negotiated business, and does not arise here.",
+    "Wrong: a fine is not the consequence described in the rule for this situation.",
+    "Correct: a spouse’s contribution is attributed to the MFP only when the MFP directed it."
+   ]
+  }
+ ]
+}

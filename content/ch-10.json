@@ -1,0 +1,1798 @@
+{
+ "id": 10,
+ "title": "Economics and Monetary Policy",
+ "section": "Capital Markets",
+ "minutes": 55,
+ "brief": [
+  {
+   "h": "Consumer spending, inflation, unemployment, elasticity",
+   "md": "- **Economy** = production and consumption of goods and services in an area. Drivers: supply and demand, business cycles, changes in the money supply, industry earnings and output.\n- **Consumer spending**: attitudes matter. Negative sentiment = people hold back; positive = they spend and invest, which lifts income and economic health.\n- **Velocity of money** = how fast money turns over; usually **GDP ÷ money supply**. **Low velocity = people are saving, not spending.**\n- **Interest rates** = the cost of capital / price of credit, set by supply and demand. **High rates** deter capital investment and spending but attract savers. **Low rates** stimulate investment but are unattractive to savers.\n- **Inflation** = general rise in prices; money buys less, so **purchasing power erodes**. Measured in the US by the **CPI**, calculated by the **Department of Labor**.\n- **PPI** (Producer Price Index) = change in the **selling prices received by domestic producers** (e.g., manufacturers). CPI = the **purchaser’s** perspective.\n- Moderate inflation is viewed as healthy (drives spending); the Fed targets a controlled annual rate. Harms: uncertainty discourages saving and investment; high inflation can cause **hoarding and shortages**. High inflation is generally blamed on **excessive growth of the money supply**.\n\n| Type | Cause |\n|---|---|\n| **Cost-push inflation** | Higher production costs / raw-material prices **cut supply** |\n| **Demand-pull inflation** | Consumer driven: **demand exceeds aggregate supply** |\n\n- **Unemployment rate** = % of the labor force without work. Some unemployment is seen as inevitable (a necessary evil to prevent inflation). High unemployment is a negative factor and usually accompanies downturns. Causes: insufficient demand or structural mismatches (skills).\n- **Elasticity** = sensitivity of supply and demand of a commodity to a price change. **Demand elastic**: demand moves when price moves (price up, demand down). **Demand inelastic**: a price change has no impact on demand.\n> **Exam tip** Cost-push = supply side (costs). Demand-pull = demand side (consumers). CPI = buyer’s prices; PPI = seller’s prices."
+  },
+  {
+   "h": "GDP, GNP and the business cycle",
+   "md": "- **GDP** = total market value of goods and services produced **within a country, regardless of who produces them**. **GDP = C + I + G + NX** (Consumption, Investment, Government spending, Net exports = exports − imports).\n  - **C** = household spending; **I** = business spending on capital goods (equipment, machinery, buildings) and inventories; **G** = government spending on goods and services.\n- **GNP** = value produced by a country’s **residents, even if living abroad**. A US resident’s overseas investment income is in **GNP, not GDP**; goods made by a **foreign-owned business inside the US** are in **GDP, not GNP**.\n- GDP is the primary metric of US economic growth (year-over-year change). Headlines use **real GDP** = growth **adjusted for inflation**.\n- In a recession the government acts to **increase GDP** (an *economic stabilizer*).\n- **Business cycle** (economic cycle): four phases in order: **expansion, peak, contraction, trough**. Length and severity are random and unpredictable.\n\n| Phase | Features |\n|---|---|\n| **Expansion** | More activity and goods; **unemployment falls**; **GDP rises**; borrowing rises; Fed gradually raises rates; risk = inflation if growth is too fast |\n| **Peak** | Expansion at its highest point; expansion turns into contraction |\n| **Contraction** | GDP, employment, investment, manufacturing, incomes, profits may fall; bankruptcies and high unemployment |\n| **Trough** | Contraction at its lowest point; contraction turns into expansion |\n\n- **Recession** = prolonged contraction; **GDP declines for two or more consecutive quarters**.\n- **Depression** = sustained long-term downturn, more severe: **real GDP decline exceeding 10%**, or **at least six consecutive quarters** of negative GDP growth.\n- **Stagflation** = slow growth **with** rising prices (high inflation plus relatively high unemployment); blamed on sharp essential-commodity price jumps (e.g., oil) or poor economic policy. It is **not** a phase of the cycle.\n> **Exam tip** Recession = 2+ quarters of falling GDP. Depression = real GDP down more than 10% or 6+ quarters. Stagflation is a condition, not a cycle phase."
+  },
+  {
+   "h": "Economic indicators: leading, coincident, lagging",
+   "md": "Indicators show whether a change comes **before, during or after** a change in the business cycle.\n\n| Type | Examples |\n|---|---|\n| **Leading** (change first) | **Bond yields**, building permits (new private housing), manufacturing activity, **stock market indices (S&P 500)**, **Producer Price Index**, layoff rates, average weekly unemployment insurance claims, changes in business inventories |\n| **Coincident** (move with the cycle) | **GDP**, Industrial Production Index and Capacity Utilization Index, **non-farm payrolls**, **personal income**, **consumer spending**, retail and manufacturing sales |\n| **Lagging** (change after the trend starts) | **Interest rates (esp. prime rate)**, **unemployment rate**, corporate profits, **balance of trade**, inventory/sales ratio, labor cost per unit of output, commercial and industrial loans outstanding |\n\n- The **first sign** of a turn in the cycle comes from **leading** indicators.\n- The book adds that the unemployment rate typically lags by roughly three to six months.\n> **Exam tip** GDP = coincident. Unemployment rate, prime rate, balance of trade = lagging. Bond yields, stock indices, PPI = leading. Expect a match-the-indicator question."
+  },
+  {
+   "h": "Bond markets, yield curve and yield spreads",
+   "md": "- **Bull market**: extended rise in prices (stocks, bonds, commodities), several months, rising volume, confidence. **Bear market**: prolonged decline, widespread pessimism, rising selling.\n- Rising rates = falling bond prices, so bonds react **negatively to strong, inflationary growth news**; weak economic news (lower inflation, rate cuts) is generally **positive for bond prices**.\n- **Flight to quality**: in downturns investors sell equities and lower-quality bonds to buy safer assets such as **Treasury bills**, lifting the price of some Treasuries.\n- **Yield curve**: plots **yield (Y axis) vs time to maturity (X axis)**. Most-quoted curve uses **3-month, 2-year, 5-year, 10-year and 30-year Treasuries**; it benchmarks mortgage and bank lending rates. It signals interest rate expectations and future output and growth.\n\n| Shape | Description | Signal |\n|---|---|---|\n| **Normal** | Long yields > short yields (compensation for time risk) | **Most common** shape |\n| **Inverted** | **Short yields > long yields** | May signal an **upcoming recession** / weakening economy |\n| **Flat (humped)** | Short and long yields very close | Predicts an **economic transition** |\n\n- The greater the **slope**, the greater the gap between short- and long-term rates.\n- **Yield spread** = difference in yield between two bonds (maturity, credit rating, liquidity, risk). It is the **risk premium**. Non-Treasury bonds are compared with **Treasuries of comparable maturity**. Example: 5% vs 4% = 1% = **100 basis points**.\n- Higher risk = **higher spread**. A strong large corporate trades at a low spread; a weaker smaller issuer at a higher one.\n- **Widening spreads** between quality tiers = market forecasts **more default risk** = **slowing economy** (spreads usually rise in recessions). **Narrowing spreads** = less risk, growing economy, rising confidence (spreads usually fall in expansions).\n> **Exam tip** Inverted = short above long = recession warning. Widening spread = investors demanding more for risk = weakening economy / flight to quality."
+  },
+  {
+   "h": "Equity markets, stock types and inflation",
+   "md": "- Positive for stocks: strong business performance, confidence, political stability, **falling interest rates**, strong employment, **moderate inflation**, **rising GDP**.\n- Individual stocks follow the market **and** their own earnings (good earnings/expansion up; poor sales and profits down).\n- Stock performance feeds back into the economy: a collapse can cause panic; strength makes people feel wealthier and more willing to take risk.\n- **High inflation → higher rates** → investors may prefer bonds (issuers pay more) → weaker stock demand.\n\n| Stock type | Behavior | Examples |\n|---|---|---|\n| **Cyclical** | **Mirrors the economy**; up in growth, down in contraction | Capital equipment, cars, large appliances (high-ticket items). Best bought at the bottom, sold at a peak (hard to time) |\n| **Defensive** | **Resistant** to cycles; supply basic needs, cost savings or lowest prices | Utilities, consumer staples, discount retailers (Wal-Mart), “sin” stocks (alcohol, tobacco) |\n| **Countercyclical** | **Rises during a contraction** | |\n| **Interest-rate sensitive** | Stable dividends make them act like fixed income | Utilities, real estate stocks, **preferred stock**, **REITs**; also home builders, and heavily indebted companies (utilities are among the most indebted) |\n\n**Inflation by asset class**\n\n| Asset | Effect of inflation |\n|---|---|\n| **Cash** | Rates rise so savers earn more, but **purchasing power falls** (inflationary risk) |\n| **Bonds** | Fixed payments lose purchasing power; rates rise, **prices fall** |\n| **Stocks** | Moderate inflation can lift asset values; high, unpredictable inflation raises costs and hurts profits |\n| **Real estate** | Positive relationship (higher cash flows and values) |\n\n- Inflation up → interest rates up → **bond prices down**. **Deflation** → rates fall → bond prices rise.\n> **Exam tip** Cyclical = mirrors the economy. Defensive = basic needs, holds up in recessions. Dividend-heavy stocks (utilities, REITs, preferred) are the rate-sensitive ones."
+  },
+  {
+   "h": "Company financial statements",
+   "md": "- **Income statement** (profit and loss statement): revenues, expenses, net income **over a period** (quarter or year).\n  - **Revenue** = total dollars from sales. **Expenses**: **variable costs** (raw materials, labor, direct production inputs) and **fixed costs** (administration, marketing, rent).\n  - **Net income** = bottom line after all expenses, taxes and interest to bondholders. Dividends come out of net income; the unpaid portion is **retained earnings** (reinvestment).\n- **EPS** = net income ÷ total shares outstanding. Often quoted by research analysts. A **reverse split** raises EPS (same earnings, fewer shares).\n- **P/E ratio** = stock price ÷ EPS. **PEG ratio** = P/E adjusted for **expected growth**; seen as the more enhanced measure. PEG, **current (dividend) yield** and **cash flow yield** are used to evaluate and compare stocks.\n- **Balance sheet**: a **snapshot at a moment** (usually last day of a quarter/year).\n  - **Assets = Liabilities + Shareholders’ equity**, so **Equity = Assets − Liabilities** (also called net worth).\n  - Assets = everything owned (cash, securities, inventory, property). Liabilities = everything owed (debt, vendors, taxes).\n- **Working capital** = **current assets − current liabilities** (cash needed to finance current operations). Total assets and total liabilities are **not** used.\n\n| Statement | Period | Bottom line |\n|---|---|---|\n| Income statement | Over time | **Net income** |\n| Balance sheet | Single moment | **Shareholders’ equity** |\n\n> **Exam tip** Working capital ignores total assets and total liabilities. Net income is NOT equity. Reverse split raises EPS."
+  },
+  {
+   "h": "Economic theories: classical, Keynesian, monetarist",
+   "md": "- **Economic policy** = government intervention to stimulate out of recession or restrain excessive growth and inflation.\n- **Oligopoly** = few sellers, each supplying a large share of the market; hard to enter, few new firms (examples: automobile makers, airlines).\n\n| School | Founder / era | Belief | Tools to stimulate | Tools to fight inflation |\n|---|---|---|---|---|\n| **Classical** | **Adam Smith** (1723-1790), *The Wealth of Nations* (1776) | Self-regulating economy; **invisible hand**; free market reaches full employment; **laissez-faire**, no fiscal or monetary policy | None | None |\n| **Keynesian** | **John Maynard Keynes**; born in the **Great Depression** (unemployment above 25%) | Government should stabilize **aggregate demand** through **taxation and spending** | **Increase spending, cut taxes** | **Decrease spending, raise taxes** |\n| **Monetarist** | **Milton Friedman** | Money supply and central banks drive output and prices | **Increase money supply** | **Decrease money supply** |\n\n- Modern Keynesians add monetary policy to fiscal policy (2008: big Congress spending package plus aggressive Fed credit efforts).\n- **Fiscal policy** = government spending and taxation (Congress / government); follows Keynes. **Monetary policy** = money in circulation, interest rates and inflation, run by the central bank (the Fed).\n> **Exam tip** Spending + tax cuts = Keynesian. Do nothing = classical. Money supply = monetarist. Adam Smith founded classical economics."
+  },
+  {
+   "h": "The Fed and monetary policy tools",
+   "md": "- **Central bank**: controls the money supply, can create currency, controls lending/interest rates, lends to banks in crises, and often oversees other banks. In the US this is the **Federal Reserve Board (the Fed)**; it also **audits member banks** for rule compliance.\n- Fed influences growth, inflation, exchange rates and unemployment. Tools: **open market operations, discount rate, reserve and margin requirements**.\n- Growth raises spending, borrowing and demand for money, putting **upward pressure on rates**. Weak borrowing = slowing economy, so the Fed pushes rates **down**. If demand will greatly outpace supply, the Fed **raises** rates. Most economists favor low, steady inflation.\n- **Open market operations** = **primary tool**; run by the **FOMC** (Federal Open Market Committee) trading **Treasury securities with primary dealers** (e.g., J.P. Morgan Securities LLC, Citigroup Global Markets Inc.).\n\n| Fed tool | EASE (loosen) money supply | TIGHTEN money supply |\n|---|---|---|\n| **Open market** | **Buy** government securities | **Sell** government securities |\n| **Discount rate** | **Lower** the rate | **Raise** the rate |\n| **Reserve requirement** | **Lower** the requirement | **Raise** the requirement |\n\n- **Ease**: Fed pays cash to dealers → more money to lend → rates fall → spurs growth, exits recession (can push inflation up). **Tighten**: dealers pay cash → money leaves circulation → rates rise → curbs inflation.\n- **Discount rate** = rate Federal Reserve Banks charge depository institutions for (short-term) loans. **Federal funds rate** = rate banks charge **each other overnight**; **set by supply and demand, not by the Fed** (though heavily influenced by open market operations); the **most volatile** rate. The **prime rate** (banks to customers) moves with the fed funds rate.\n- **Reserve requirement** = share of deposits banks may not lend. Example: **10%** requirement, $100 deposit → bank can lend **$90**; the loan is redeposited and re-lent, creating new money.\n- **Margin requirement**: Reg T lets the Fed set the **initial margin**; set at **50% in 1974** and never changed. **Broker call rate** = what a broker-dealer pays a bank to borrow money so a customer can buy on margin; it is the basis for margin interest.\n- **Interest rate order, lowest to highest** (Knopman Note): **fed funds → discount rate → broker call rate → prime rate**.\n> **Exam tip** Easy = buy securities, lower rates, lower reserves. Tight = sell securities, raise rates, raise reserves. The Fed trades with primary dealers, not the public."
+  },
+  {
+   "h": "Balance of trade and balance of payments",
+   "md": "- **Export** = sold to another country; **import** = bought from another country.\n- **Balance of trade** = **Credit items − Debit items**.\n\n| Debit items | Credit items |\n|---|---|\n| **Imported goods**, foreign aid, domestic spending abroad, domestic investment abroad | **Exported goods**, foreign spending in the domestic economy, foreign investment in the domestic economy |\n\n- **Trade deficit** = debits exceed credits (**imports > exports**, money flows out). **Trade surplus** = credits exceed debits (**exports > imports**).\n- In a **recession** countries try to **export more** (jobs, demand); a deficit does not help. In a **strong expansion** they prefer to **import more** (price competition limits inflation, supplies goods beyond domestic capacity); a deficit may then help.\n- **US**: trade deficit **every year since the mid-1970s** (energy imports such as oil, consumer products demand). **China** nearly always runs a surplus.\n- **Balance of payments (BoP)** = comprehensive record of **all** a country’s economic transactions with the rest of the world over a period (quarter or year): all payments and receipts between residents and foreign entities. Trade is just part of it.\n> **Exam tip** Debit = money out (imports, foreign aid, spending/investing abroad). Credit = money in. Trade deficit = imports exceed exports."
+  },
+  {
+   "h": "Exchange rates and foreign vs domestic interest rates",
+   "md": "- **Exchange rate** = value of one currency in terms of another. Example: Canadian dollar quoted at **1.07** means it takes **1.07 CAD to buy 1 USD**.\n- **Purchasing power parity (PPP)**: compares the cost of the **same basket of goods** in two countries to determine currency strength and exchange rates.\n\n| | **Weaker US dollar** | **Stronger US dollar** |\n|---|---|---|\n| Foreign currency | Worth more dollars | Dollar buys more foreign currency |\n| Foreign investment in US | **Declines** | **Increases** |\n| US imports | **Decline** (costlier) | **Increase** (cheaper) |\n| US exports | **Increase** (US goods cheaper abroad) | **Decrease** (US goods expensive abroad) |\n\n- A country that **devalues** its currency makes its goods more attractive, so its **exports increase**.\n- **Moderate inflation**: the dollar typically **strengthens**; rates and bond yields rise (bond prices fall). High inflation can hurt a currency, but some inflation is healthy for growth.\n- **Rising US interest rates** → investors move assets into dollars (e.g., Treasuries) → **dollar value up** → US goods pricier, imports cheaper → **exports down, imports up**, output and prices may be restrained; **foreign investment in the US rises**.\n- **Rising foreign interest rates** → demand for that currency rises → **dollar value falls**; US output and prices tend to rise; investment may flow to the higher-rate foreign country. The opposite of a US rate rise.\n- The Fed also trades currency to counter disorderly markets: **buys dollars (sells foreign currency)** to support a falling dollar; **sells dollars (buys foreign currency)** to counter upward pressure.\n> **Exam tip** US rates up → dollar up → exports down, imports up, foreign investment up. US rates down → the reverse."
+  }
+ ],
+ "traps": [
+  "**Recession vs depression.** Recession = GDP down **two or more consecutive quarters**. Depression = real GDP decline **over 10%** or **six or more** consecutive negative quarters. Don’t swap them.",
+  "**GDP vs GNP.** GDP = production **inside the borders** (any nationality). GNP = production by a country’s **residents anywhere**. A foreign-owned US factory counts in GDP only; a US resident’s overseas investment counts in GNP only.",
+  "**CPI vs PPI.** CPI = consumer prices (purchaser’s view, Department of Labor). PPI = producers’ selling prices. PPI is also a **leading** indicator.",
+  "**Cost-push vs demand-pull.** Cost-push = rising costs cut supply. Demand-pull = demand exceeds aggregate supply. The word *pull* = consumers.",
+  "**Leading vs lagging.** Bond yields, stock indices and PPI lead. Unemployment rate, prime rate and balance of trade lag. **GDP is coincident**. Classic swap: calling unemployment a leading indicator.",
+  "**Inverted vs normal curve.** Normal = long above short (most common). Inverted = **short above long** = possible recession. Flat/humped = transition. Don’t confuse an inverted curve with rising rates.",
+  "**Widening spreads are not good news.** Wider spreads mean more perceived default risk and a slowing economy (flight to quality); narrowing spreads signal a growing economy.",
+  "**Cyclical vs defensive vs countercyclical.** Cyclical mirrors the economy; defensive resists it (basic needs); countercyclical *rises* in a contraction.",
+  "**Easy vs tight money.** Fed **buys** securities, **lowers** discount rate or reserve requirement = EASE. **Sells**, raises = TIGHTEN. Selling securities is contractionary, never expansionary.",
+  "**Discount rate vs fed funds rate.** Discount rate = Fed to banks. Fed funds = bank to bank overnight, **market-determined, not set by the Fed**, and the most volatile. Order low to high: fed funds, discount, broker call, prime.",
+  "**Open market operations are separate from the discount rate.** The Fed executes open market operations by buying/selling securities with **primary dealers**, not by changing the discount rate and not with the public.",
+  "**Fiscal vs monetary policy.** Fiscal = government spending and taxes (Keynes). Monetary = money supply and rates (the Fed). A tax cut is fiscal; selling Treasuries is monetary.",
+  "**Working capital and equity.** Working capital = **current** assets − **current** liabilities (totals are irrelevant). Equity = **total** assets − **total** liabilities. Net income is not equity.",
+  "**Trade deficit direction.** Deficit = imports exceed exports (more debit items). A **stronger dollar** increases imports and cuts exports; a weaker dollar does the opposite."
+ ],
+ "formulas": [
+  {
+   "name": "GDP (expenditure approach)",
+   "rule": "GDP = C + I + G + NX, where NX = Exports − Imports. C = household spending; I = business capital goods and inventories; G = government spending on goods and services.",
+   "example": "C = $14 tn, I = $4 tn, G = $3 tn, exports $2 tn, imports $3 tn → NX = −$1 tn → GDP = 14 + 4 + 3 − 1 = **$20 tn**."
+  },
+  {
+   "name": "Balance of trade",
+   "rule": "Balance of trade = Credit items − Debit items. Positive = surplus (exports > imports); negative = deficit (imports > exports).",
+   "example": "Credits (exports and foreign investment in) $400 bn; debits (imports, foreign aid, spending abroad) $450 bn → 400 − 450 = **−$50 bn, a deficit**."
+  },
+  {
+   "name": "Balance sheet equation and working capital",
+   "rule": "Assets = Liabilities + Shareholders’ equity. Working capital = Current assets − Current liabilities.",
+   "example": "Total assets $8m, total liabilities $5m, current assets $2.4m, current liabilities $1.1m → equity = 8 − 5 = **$3m**; working capital = 2.4 − 1.1 = **$1.3m**."
+  },
+  {
+   "name": "EPS, P/E and reverse split",
+   "rule": "EPS = Net income ÷ Shares outstanding. P/E = Price ÷ EPS. PEG adjusts P/E for expected growth.",
+   "example": "Net income $20m, 10m shares → EPS $2.00. Price $30 → P/E = **15**. After a 1-for-2 reverse split: 5m shares → EPS **$4.00** (same earnings, fewer shares)."
+  },
+  {
+   "name": "Yield spread",
+   "rule": "Spread = yield of the riskier bond − yield of the benchmark (Treasury of comparable maturity). 1% = 100 basis points. Widening = more default risk; narrowing = less.",
+   "example": "10-year Treasury 4.00%; 10-year non-investment-grade 6.00% → spread = **2.00% = 200 bp**. If the spread widens to 4.00% (400 bp), the market is pricing a greater default risk."
+  },
+  {
+   "name": "Fed tools: ease vs tighten",
+   "rule": "Ease: buy securities / lower discount rate / lower reserve requirement. Tighten: sell securities / raise discount rate / raise reserve requirement. Fed trades with primary dealers (FOMC).",
+   "example": "Reserve requirement 10%: a $100 deposit lets the bank lend **$90**. Raise it to 20% and the bank can lend only **$80** (tightening)."
+  }
+ ],
+ "glossary": [
+  {
+   "t": "Velocity of money",
+   "d": "The rate at which money turns over, usually measured as GDP divided by the money supply; low velocity means people are saving rather than spending."
+  },
+  {
+   "t": "Inflation",
+   "d": "A rise in the general price level over time that erodes purchasing power, measured in the US by the CPI."
+  },
+  {
+   "t": "Consumer Price Index (CPI)",
+   "d": "Department of Labor measure of price change for consumer goods and services, from the purchaser’s perspective."
+  },
+  {
+   "t": "Producer Price Index (PPI)",
+   "d": "Measure of the average change in selling prices received by domestic producers for their output; a leading indicator."
+  },
+  {
+   "t": "Elasticity",
+   "d": "The sensitivity of the supply and demand of a commodity to a change in its price."
+  },
+  {
+   "t": "Gross domestic product (GDP)",
+   "d": "Total market value of goods and services produced within a country regardless of the producers’ nationality; C + I + G + NX."
+  },
+  {
+   "t": "Gross national product (GNP)",
+   "d": "Total market value of goods and services produced by a country’s residents, even if living abroad."
+  },
+  {
+   "t": "Business cycle",
+   "d": "A recurring, irregular pattern of economic fluctuation with four phases: expansion, peak, contraction, trough."
+  },
+  {
+   "t": "Recession",
+   "d": "A prolonged contraction, defined as a decline in GDP for two or more consecutive quarters."
+  },
+  {
+   "t": "Depression",
+   "d": "A severe, sustained downturn with real GDP falling more than 10% or at least six consecutive quarters of negative growth."
+  },
+  {
+   "t": "Stagflation",
+   "d": "Slow economic growth accompanied by rising prices and relatively high unemployment."
+  },
+  {
+   "t": "Leading indicator",
+   "d": "An economic measure that changes before the economy follows a trend, such as bond yields or stock indices."
+  },
+  {
+   "t": "Coincident indicator",
+   "d": "An economic measure that moves simultaneously with the business cycle, such as GDP or personal income."
+  },
+  {
+   "t": "Lagging indicator",
+   "d": "An economic measure that changes after the economy has begun a trend, such as the unemployment rate or prime rate."
+  },
+  {
+   "t": "Flight to quality",
+   "d": "Investors selling equities and low-quality bonds to buy safer instruments like Treasury bills during downturns."
+  },
+  {
+   "t": "Yield curve",
+   "d": "A graph of yield against time to maturity, typically for 3-month to 30-year Treasuries."
+  },
+  {
+   "t": "Inverted yield curve",
+   "d": "A curve where short-term yields exceed long-term yields, which may signal a coming recession."
+  },
+  {
+   "t": "Flat (humped) yield curve",
+   "d": "A curve where short- and long-term yields are very close, predicting an economic transition."
+  },
+  {
+   "t": "Yield spread",
+   "d": "The difference in yield between two bonds, representing the risk premium over a benchmark such as Treasuries."
+  },
+  {
+   "t": "Cyclical stock",
+   "d": "A stock that mirrors the economy, strengthening in growth and declining in contraction."
+  },
+  {
+   "t": "Defensive stock",
+   "d": "A stock resistant to economic cycles because the company supplies basic needs, cost savings or the lowest prices."
+  },
+  {
+   "t": "Interest-rate-sensitive stock",
+   "d": "A dividend-oriented stock, such as a utility, REIT or preferred, that behaves like fixed income and reacts to rate changes."
+  },
+  {
+   "t": "Income statement",
+   "d": "Report of revenues, expenses and net income over a period such as a quarter or year."
+  },
+  {
+   "t": "Net income",
+   "d": "A company’s bottom-line profit after all expenses, taxes and interest; the source of dividends."
+  },
+  {
+   "t": "Earnings per share (EPS)",
+   "d": "Net income divided by total shares outstanding."
+  },
+  {
+   "t": "PEG ratio",
+   "d": "The P/E ratio adjusted for a company’s expected growth rate."
+  },
+  {
+   "t": "Balance sheet",
+   "d": "A snapshot at one moment of assets, liabilities and shareholders’ equity (Assets = Liabilities + Equity)."
+  },
+  {
+   "t": "Shareholders’ equity",
+   "d": "Net worth of a company: assets minus liabilities."
+  },
+  {
+   "t": "Working capital",
+   "d": "Current assets minus current liabilities; a measure of cash needed to finance current operations."
+  },
+  {
+   "t": "Classical economics",
+   "d": "School founded by Adam Smith holding that the free market self-regulates (invisible hand) with no government intervention (laissez-faire)."
+  },
+  {
+   "t": "Keynesian economics",
+   "d": "School that favors government intervention through spending and taxation to stabilize aggregate demand."
+  },
+  {
+   "t": "Monetarism",
+   "d": "School popularized by Milton Friedman that stresses control of the money supply as the key to output and prices."
+  },
+  {
+   "t": "Fiscal policy",
+   "d": "Use of government spending and taxation to influence the economy."
+  },
+  {
+   "t": "Monetary policy",
+   "d": "Control of the money supply, interest rates and inflation by the central bank, the Fed in the US."
+  },
+  {
+   "t": "Federal Open Market Committee (FOMC)",
+   "d": "The arm of the Fed that conducts open market operations with primary dealers."
+  },
+  {
+   "t": "Open market operations",
+   "d": "The Fed’s primary tool: buying and selling Treasury securities with primary dealers to change the money supply."
+  },
+  {
+   "t": "Discount rate",
+   "d": "The rate at which Federal Reserve Banks lend to depository institutions."
+  },
+  {
+   "t": "Federal funds rate",
+   "d": "The overnight rate banks charge each other, market-driven and the most volatile rate."
+  },
+  {
+   "t": "Reserve requirement",
+   "d": "The portion of deposits banks must hold on hand or at a Federal Reserve Bank and may not lend."
+  },
+  {
+   "t": "Broker call rate",
+   "d": "The rate a broker-dealer pays a bank to borrow money for customer margin purchases; basis for margin interest."
+  },
+  {
+   "t": "Balance of trade",
+   "d": "Credit items minus debit items, i.e., broadly exports versus imports."
+  },
+  {
+   "t": "Purchasing power parity",
+   "d": "A method of comparing the cost of the same basket of goods across countries to determine exchange rates."
+  }
+ ],
+ "cards": [
+  {
+   "id": "10-c01",
+   "f": "Velocity of money: definition and formula",
+   "b": "How fast money is spent/turned over; usually **GDP ÷ money supply**.",
+   "r": "10.1.1"
+  },
+  {
+   "id": "10-c02",
+   "f": "What does low money velocity indicate?",
+   "b": "People are **saving rather than spending**.",
+   "r": "10.1.1"
+  },
+  {
+   "id": "10-c03",
+   "f": "Effect of high interest rates on spenders vs savers",
+   "b": "Deter capital investment and spending (**high cost of credit**) but are **attractive to savers**.",
+   "r": "10.1.1.1"
+  },
+  {
+   "id": "10-c04",
+   "f": "Who calculates the CPI and what does it measure?",
+   "b": "The **Department of Labor**; the rate of change in consumer goods and services prices (the purchaser’s view).",
+   "r": "10.1.1.2"
+  },
+  {
+   "id": "10-c05",
+   "f": "Producer Price Index (PPI) vs CPI",
+   "b": "PPI = change in **selling prices received by domestic producers**; CPI = change from the **purchaser’s** perspective.",
+   "r": "10.1.1.2"
+  },
+  {
+   "id": "10-c06",
+   "f": "Cost-push inflation",
+   "b": "Caused by **higher production costs / raw-material prices** that reduce supply.",
+   "r": "10.1.1.2"
+  },
+  {
+   "id": "10-c07",
+   "f": "Demand-pull inflation",
+   "b": "Consumer driven: **demand exceeds aggregate supply**.",
+   "r": "10.1.1.2"
+  },
+  {
+   "id": "10-c08",
+   "f": "Main cause of high inflation according to economists",
+   "b": "**Excessive growth of the money supply**.",
+   "r": "10.1.1.2"
+  },
+  {
+   "id": "10-c09",
+   "f": "Elasticity (definition)",
+   "b": "The **sensitivity of supply and demand of a commodity to a change in price**.",
+   "r": "10.1.1.4"
+  },
+  {
+   "id": "10-c10",
+   "f": "GDP formula",
+   "b": "**C + I + G + NX** (consumption, investment, government spending, net exports).",
+   "r": "10.1.2"
+  },
+  {
+   "id": "10-c11",
+   "f": "GDP vs GNP",
+   "b": "GDP = produced **within the country** by anyone. GNP = produced by the country’s **residents, even abroad**.",
+   "r": "10.1.2"
+  },
+  {
+   "id": "10-c12",
+   "f": "Which measure is the primary gauge of US economic growth?",
+   "b": "**GDP** (year-over-year change; headlines cite **real** GDP, adjusted for inflation).",
+   "r": "10.1.2"
+  },
+  {
+   "id": "10-c13",
+   "f": "The four phases of the business cycle, in order",
+   "b": "**Expansion, peak, contraction, trough**.",
+   "r": "10.1.3"
+  },
+  {
+   "id": "10-c14",
+   "f": "What happens to unemployment and GDP in an expansion?",
+   "b": "Unemployment **declines**; GDP **rises**.",
+   "r": "10.1.3"
+  },
+  {
+   "id": "10-c15",
+   "f": "Stagflation",
+   "b": "Slow growth **with rising prices** (high inflation plus relatively high unemployment); not a cycle phase.",
+   "r": "10.1.3"
+  },
+  {
+   "id": "10-c16",
+   "f": "Definition of a recession",
+   "b": "GDP declines for **two or more consecutive quarters**.",
+   "r": "10.1.3.1"
+  },
+  {
+   "id": "10-c17",
+   "f": "Definition of a depression",
+   "b": "Real GDP decline **over 10%** or **at least six consecutive quarters** of negative GDP growth.",
+   "r": "10.1.3.1"
+  },
+  {
+   "id": "10-c18",
+   "f": "Leading indicators (list)",
+   "b": "**Bond yields**, building permits, manufacturing activity, **stock indices**, **PPI**, layoff rates, weekly unemployment claims, business inventory changes.",
+   "r": "10.1.4.1"
+  },
+  {
+   "id": "10-c19",
+   "f": "Lagging indicators (list)",
+   "b": "**Prime rate/interest rates**, **unemployment rate**, corporate profits, **balance of trade**, inventory/sales ratio, unit labor cost, C&I loans.",
+   "r": "10.1.4.2"
+  },
+  {
+   "id": "10-c20",
+   "f": "Coincident indicators (list)",
+   "b": "**GDP**, industrial production/capacity utilization, non-farm payrolls, **personal income**, consumer spending, retail/manufacturing sales.",
+   "r": "10.1.4.3"
+  },
+  {
+   "id": "10-c21",
+   "f": "Is GDP leading, lagging or coincident?",
+   "b": "**Coincident**.",
+   "r": "10.1.4.3"
+  },
+  {
+   "id": "10-c22",
+   "f": "Is the stock market (S&P 500) an economic indicator?",
+   "b": "Yes, a **leading** indicator.",
+   "r": "10.1.4.1"
+  },
+  {
+   "id": "10-c23",
+   "f": "Bull market vs bear market",
+   "b": "Bull = extended **rise** in prices, confidence. Bear = prolonged **decline**, pessimism, fear of slowdown.",
+   "r": "10.2"
+  },
+  {
+   "id": "10-c24",
+   "f": "How do bonds react to strong, inflationary growth reports?",
+   "b": "**Negatively**: rising rates push bond prices down.",
+   "r": "10.2.1"
+  },
+  {
+   "id": "10-c25",
+   "f": "Flight to quality",
+   "b": "In downturns investors sell stocks and low-quality bonds to buy safer assets like **Treasury bills**.",
+   "r": "10.2.1"
+  },
+  {
+   "id": "10-c26",
+   "f": "Yield curve axes",
+   "b": "Y axis = **yield / interest rate**; X axis = **time to maturity**.",
+   "r": "10.2.2"
+  },
+  {
+   "id": "10-c27",
+   "f": "Normal yield curve",
+   "b": "**Longer maturities yield more** than shorter ones; the most common shape.",
+   "r": "10.2.2"
+  },
+  {
+   "id": "10-c28",
+   "f": "Inverted yield curve",
+   "b": "**Short-term yields above long-term yields**; may signal an upcoming recession.",
+   "r": "10.2.2"
+  },
+  {
+   "id": "10-c29",
+   "f": "Flat (humped) yield curve",
+   "b": "Short and long yields **very close**; predicts an **economic transition**.",
+   "r": "10.2.2"
+  },
+  {
+   "id": "10-c30",
+   "f": "Meaning of a steeper yield curve slope",
+   "b": "A **greater gap** between short- and long-term rates.",
+   "r": "10.2.2"
+  },
+  {
+   "id": "10-c31",
+   "f": "Yield spread: what it represents and how a non-Treasury is measured",
+   "b": "The **risk premium**; compared with a **Treasury of comparable maturity**. 5% vs 4% = 1% = **100 bp**.",
+   "r": "10.2.3"
+  },
+  {
+   "id": "10-c32",
+   "f": "What do widening yield spreads between quality tiers forecast?",
+   "b": "**More default risk** and a **slowing economy**.",
+   "r": "10.2.4"
+  },
+  {
+   "id": "10-c33",
+   "f": "When do yield spreads usually increase?",
+   "b": "During **recessions** (they decrease in expansions).",
+   "r": "10.2.4"
+  },
+  {
+   "id": "10-c34",
+   "f": "Cyclical stocks",
+   "b": "**Mirror the economy**: strong in growth, weak in contraction (capital equipment, cars, large appliances).",
+   "r": "10.2.5.1"
+  },
+  {
+   "id": "10-c35",
+   "f": "Defensive stocks",
+   "b": "**Resist downturns** because they supply basic needs: utilities, staples, discount retailers, “sin” stocks.",
+   "r": "10.2.5.1"
+  },
+  {
+   "id": "10-c36",
+   "f": "Countercyclical stock",
+   "b": "A stock that **increases during a contraction**.",
+   "r": "10.2.5.1"
+  },
+  {
+   "id": "10-c37",
+   "f": "Which equities are highly sensitive to interest rates?",
+   "b": "**Utilities, real estate stocks, preferred stock, REITs** (stable dividends act like fixed income).",
+   "r": "10.2.5.1"
+  },
+  {
+   "id": "10-c38",
+   "f": "Effect of inflation on bonds",
+   "b": "Fixed payments lose purchasing power; rates rise so **bond prices fall**.",
+   "r": "10.2.5.2"
+  },
+  {
+   "id": "10-c39",
+   "f": "Income statement vs balance sheet timing",
+   "b": "Income statement = **over a period**; balance sheet = **snapshot at a moment**.",
+   "r": "10.2.6"
+  },
+  {
+   "id": "10-c40",
+   "f": "EPS formula and effect of a reverse split",
+   "b": "EPS = **net income ÷ shares outstanding**; reverse split **raises** EPS.",
+   "r": "10.2.6.1"
+  },
+  {
+   "id": "10-c41",
+   "f": "P/E ratio and PEG ratio",
+   "b": "P/E = **price ÷ EPS**; PEG = P/E factoring in **expected growth**.",
+   "r": "10.2.6.1"
+  },
+  {
+   "id": "10-c42",
+   "f": "Balance sheet equation",
+   "b": "**Assets = Liabilities + Shareholders’ equity.**",
+   "r": "10.2.6.2"
+  },
+  {
+   "id": "10-c43",
+   "f": "Working capital",
+   "b": "**Current assets − current liabilities**; total assets/liabilities are not used.",
+   "r": "10.2.6.2"
+  },
+  {
+   "id": "10-c44",
+   "f": "Who founded classical economics and what is the invisible hand?",
+   "b": "**Adam Smith** (*Wealth of Nations*, 1776); the economy **self-regulates** without government.",
+   "r": "10.3.1.1"
+  },
+  {
+   "id": "10-c45",
+   "f": "Keynesian policy to stimulate growth vs control inflation",
+   "b": "Stimulate: **raise spending, cut taxes**. Inflation: **cut spending, raise taxes**.",
+   "r": "10.3.1.2"
+  },
+  {
+   "id": "10-c46",
+   "f": "Monetarism: who and what tool",
+   "b": "**Milton Friedman**; control of the **money supply**.",
+   "r": "10.3.1.3"
+  },
+  {
+   "id": "10-c47",
+   "f": "The Fed’s three main monetary tools",
+   "b": "**Open market operations, discount rate, reserve (and margin) requirements**.",
+   "r": "10.3.3"
+  },
+  {
+   "id": "10-c48",
+   "f": "Who executes open market operations, and with whom?",
+   "b": "The **FOMC**, trading Treasury securities with **primary dealers**.",
+   "r": "10.3.3.2"
+  },
+  {
+   "id": "10-c49",
+   "f": "Fed sells securities: effect on money supply and rates",
+   "b": "Cash leaves the banking system: money supply **tightens**, rates **rise**; used to curb inflation.",
+   "r": "10.3.3.2"
+  },
+  {
+   "id": "10-c50",
+   "f": "Fed buys securities: effect on money supply and rates",
+   "b": "Cash flows to dealers: money supply **eases**, rates **fall**; used to spur lending and exit recession.",
+   "r": "10.3.3.2"
+  },
+  {
+   "id": "10-c51",
+   "f": "Discount rate vs federal funds rate",
+   "b": "Discount = **Fed lends to banks**. Fed funds = **banks lend to each other overnight**; market-set, **most volatile**.",
+   "r": "10.3.3.3"
+  },
+  {
+   "id": "10-c52",
+   "f": "Is the fed funds rate set by the Fed?",
+   "b": "**No**: it is determined by supply and demand, though heavily influenced by open market operations.",
+   "r": "10.3.3.3"
+  },
+  {
+   "id": "10-c53",
+   "f": "Reserve requirement example: 10% and a $100 deposit",
+   "b": "Bank keeps $10 and may lend **$90**; the loan is redeposited and relent, creating new money.",
+   "r": "10.3.3.4"
+  },
+  {
+   "id": "10-c54",
+   "f": "Raising the reserve requirement: easing or tightening?",
+   "b": "**Tightening**: banks must keep more on deposit and lend less. Lowering it is expansionary.",
+   "r": "10.3.3.4"
+  },
+  {
+   "id": "10-c55",
+   "f": "Fed ease-money checklist",
+   "b": "**Buy** securities, **lower** discount rate, **lower** reserve requirement. (Tighten = the reverse.)",
+   "r": "10.3.3.4"
+  },
+  {
+   "id": "10-c56",
+   "f": "Initial margin requirement set by the Fed under Reg T",
+   "b": "**50%**, established in **1974** and never changed.",
+   "r": "10.3.3.5"
+  },
+  {
+   "id": "10-c57",
+   "f": "Order of rates lowest to highest (Knopman Note)",
+   "b": "**Fed funds → discount rate → broker call rate → prime rate**.",
+   "r": "10.3.3.5"
+  },
+  {
+   "id": "10-c58",
+   "f": "Balance of trade formula and debit items",
+   "b": "**Credit items − Debit items**. Debits: imports, foreign aid, domestic spending/investment abroad.",
+   "r": "10.4.1"
+  },
+  {
+   "id": "10-c59",
+   "f": "Trade deficit vs trade surplus",
+   "b": "Deficit = **imports exceed exports** (larger debit balance); surplus = exports exceed imports.",
+   "r": "10.4.1"
+  },
+  {
+   "id": "10-c60",
+   "f": "Strong US dollar: effect on exports, imports, foreign investment",
+   "b": "Exports **decrease**, imports **increase**, foreign investment **increases**. Weak dollar = the reverse.",
+   "r": "10.4.2"
+  },
+  {
+   "id": "10-c61",
+   "f": "Net income, dividends and retained earnings",
+   "b": "Dividends are paid out of **net income**; the portion **not paid** to shareholders is **retained earnings**, reinvested to grow the business.",
+   "r": "10.2.6.1"
+  },
+  {
+   "id": "10-c62",
+   "f": "Balance of payments vs balance of trade",
+   "b": "BoP = **comprehensive record of all** economic transactions (payments and receipts) with the rest of the world over a quarter or year; balance of trade covers only exports vs imports.",
+   "r": "10.4.1"
+  },
+  {
+   "id": "10-c63",
+   "f": "How the Fed supports a falling dollar vs counters a rising one",
+   "b": "Falling dollar: Fed **buys dollars (sells foreign currency)**. Upward pressure: Fed **sells dollars (buys foreign currency)**.",
+   "r": "10.4.3"
+  },
+  {
+   "id": "10-c64",
+   "f": "Demand elastic vs demand inelastic",
+   "b": "Elastic: demand **changes** when price changes (price up, demand down). Inelastic: a price change has **no impact** on demand.",
+   "r": "10.1.1.4"
+  },
+  {
+   "id": "10-c65",
+   "f": "Trade preference in a recession vs a strong expansion",
+   "b": "Recession: **export more** (jobs, demand). Strong expansion: **import more** (price competition limits inflation, supplies extra goods).",
+   "r": "10.4.1"
+  },
+  {
+   "id": "10-c66",
+   "f": "Effect of devaluing a currency",
+   "b": "The country’s goods become more attractive abroad, so its **exports increase**.",
+   "r": "10.4.2"
+  },
+  {
+   "id": "10-c67",
+   "f": "Unemployment rate: definition and indicator type",
+   "b": "Percentage of the **labor force without work**; a **lagging** indicator (turns months after the cycle).",
+   "r": "10.1.1.3"
+  },
+  {
+   "id": "10-c68",
+   "f": "Which Treasuries make up the most-reported yield curve?",
+   "b": "**3-month, 2-year, 5-year, 10-year and 30-year**; it benchmarks mortgage and bank lending rates.",
+   "r": "10.2.2"
+  }
+ ],
+ "questions": [
+  {
+   "id": "10-q01",
+   "r": "10.1.1.2",
+   "k": "concept",
+   "d": 1,
+   "q": "Which US agency calculates the Consumer Price Index?",
+   "o": [
+    "The Department of the Treasury",
+    "The Federal Reserve Board",
+    "The Department of Labor",
+    "The Securities and Exchange Commission"
+   ],
+   "a": 2,
+   "w": [
+    "Wrong: the Treasury issues government debt and collects taxes; it does not compute the CPI.",
+    "Wrong: the Fed monitors the CPI to guide policy, but it does not calculate the index itself.",
+    "Correct: the CPI is calculated by the Department of Labor and tracks consumer goods and services price changes.",
+    "Wrong: the SEC regulates securities markets and has no role in measuring consumer prices."
+   ]
+  },
+  {
+   "id": "10-q02",
+   "r": "10.1.1.2",
+   "k": "concept",
+   "d": 2,
+   "q": "The Producer Price Index differs from the Consumer Price Index because the PPI measures:",
+   "o": [
+    "Average changes in the selling prices received by domestic producers for their output",
+    "Price changes from the purchaser’s perspective",
+    "Changes in the unemployment rate among manufacturers",
+    "The cost of capital to businesses"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: the PPI captures what domestic producers, such as manufacturers, receive when they sell their output.",
+    "Wrong: the purchaser’s perspective describes the CPI, which is the contrast the PPI is drawn against.",
+    "Wrong: unemployment is measured by the unemployment rate, not by any producer price index.",
+    "Wrong: the cost of capital is the interest rate, which is a separate concept from producer prices."
+   ]
+  },
+  {
+   "id": "10-q03",
+   "r": "10.1.1.2",
+   "k": "scenario",
+   "d": 2,
+   "q": "A sharp jump in the price of steel and other raw materials forces manufacturers to cut output and raise prices, even though consumer demand has not changed. This is best described as:",
+   "o": [
+    "Demand-pull inflation",
+    "Deflation",
+    "Stagflation caused by weak GDP",
+    "Cost-push inflation"
+   ],
+   "a": 3,
+   "w": [
+    "Wrong: demand-pull requires demand to exceed aggregate supply, but here demand is unchanged.",
+    "Wrong: deflation is falling prices, while this scenario describes rising prices.",
+    "Wrong: stagflation needs high unemployment and slow growth, which the scenario does not describe; the cause shown is cost-push.",
+    "Correct: higher production and raw-material costs that reduce supply and raise prices are cost-push inflation."
+   ]
+  },
+  {
+   "id": "10-q04",
+   "r": "10.1.2",
+   "k": "calc",
+   "d": 2,
+   "q": "In a given year a country records household consumption of $9 trillion, business investment of $2 trillion, government spending of $2.5 trillion, exports of $1.5 trillion and imports of $2 trillion. What is its GDP?",
+   "o": [
+    "$13.5 trillion",
+    "$13.0 trillion",
+    "$14.0 trillion",
+    "$15.0 trillion"
+   ],
+   "a": 1,
+   "w": [
+    "Wrong: this ignores net exports entirely (9 + 2 + 2.5); the trade deficit of 0.5 must be subtracted.",
+    "Correct: NX = 1.5 − 2 = −0.5; GDP = C + I + G + NX = 9 + 2 + 2.5 − 0.5 = $13.0 trillion.",
+    "Wrong: this adds the 0.5 trade deficit as a positive number, but a deficit in net exports subtracts from GDP.",
+    "Wrong: this adds exports of 1.5 without subtracting imports, so it ignores that net exports means exports minus imports."
+   ]
+  },
+  {
+   "id": "10-q05",
+   "r": "10.1.2",
+   "k": "scenario",
+   "d": 2,
+   "q": "A German automaker operates a factory in South Carolina that produces vehicles worth $3 billion this year. For the United States, this output is included in:",
+   "o": [
+    "GNP only",
+    "Neither GDP nor GNP",
+    "Both GDP and GNP",
+    "GDP only"
+   ],
+   "a": 3,
+   "w": [
+    "Wrong: GNP counts output by US residents; a foreign-owned business’s output inside the US is excluded from US GNP.",
+    "Wrong: production inside US borders is always captured in US GDP.",
+    "Wrong: because the owner is foreign, it fails the residency test for GNP, so it cannot be in both.",
+    "Correct: GDP counts production within the country’s borders regardless of the owner’s nationality."
+   ]
+  },
+  {
+   "id": "10-q06",
+   "r": "10.1.3",
+   "k": "concept",
+   "d": 1,
+   "q": "Which of the following is NOT one of the four phases of the business cycle?",
+   "o": [
+    "Stagflation",
+    "Contraction",
+    "Trough",
+    "Expansion"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: stagflation is a condition of slow growth with inflation, not one of the four phases.",
+    "Wrong: contraction is the phase in which economic activity slows, so it is a true phase.",
+    "Wrong: the trough is the lowest point of a contraction and a named phase of the cycle.",
+    "Wrong: expansion is the first phase, with rising GDP and falling unemployment."
+   ]
+  },
+  {
+   "id": "10-q07",
+   "r": "10.1.3",
+   "k": "concept",
+   "d": 1,
+   "q": "At which point does an expansion end and a contraction begin?",
+   "o": [
+    "Trough",
+    "Peak",
+    "Recession",
+    "Stagflation"
+   ],
+   "a": 1,
+   "w": [
+    "Wrong: the trough is where a contraction ends and an expansion begins.",
+    "Correct: a peak is the highest point of an expansion and marks the turn into contraction.",
+    "Wrong: a recession is a prolonged contraction, not the turning point itself.",
+    "Wrong: stagflation is a combination of weak growth and inflation, not a turning point."
+   ]
+  },
+  {
+   "id": "10-q08",
+   "r": "10.1.3.1",
+   "k": "scenario",
+   "d": 2,
+   "q": "Real GDP of a country has fallen in each of the last two quarters, and the decline in total real output so far is about 3%. The economy is best described as being in:",
+   "o": [
+    "A depression",
+    "A trough that has already ended",
+    "A recession",
+    "An expansion"
+   ],
+   "a": 2,
+   "w": [
+    "Wrong: a depression requires a real GDP decline exceeding 10% or at least six consecutive negative quarters.",
+    "Wrong: a trough is a single turning point, and nothing shows that the economy has begun to recover.",
+    "Correct: GDP declining for two or more consecutive quarters is the book’s definition of a recession.",
+    "Wrong: an expansion features a measurable rise in GDP, the opposite of this situation."
+   ]
+  },
+  {
+   "id": "10-q09",
+   "r": "10.1.3.1",
+   "k": "concept",
+   "d": 2,
+   "q": "Which of the following would qualify an economic downturn as a depression rather than a recession?",
+   "o": [
+    "Real GDP falling for two consecutive quarters",
+    "Real GDP falling by more than 10%",
+    "Real GDP falling for three consecutive quarters",
+    "Unemployment rising above 5%"
+   ],
+   "a": 1,
+   "w": [
+    "Wrong: two consecutive quarters of decline is the definition of a recession.",
+    "Correct: a real GDP decline exceeding 10%, or six or more negative quarters, defines a depression.",
+    "Wrong: three consecutive quarters is longer than a recession minimum but still short of the six quarters needed.",
+    "Wrong: no unemployment threshold is used in the book’s definition of a depression."
+   ]
+  },
+  {
+   "id": "10-q10",
+   "r": "10.1.4",
+   "k": "concept",
+   "d": 2,
+   "q": "Which of the following is considered a coincident economic indicator?",
+   "o": [
+    "Gross domestic product",
+    "Unemployment rate",
+    "Stock market indices",
+    "Balance of trade"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: GDP moves simultaneously with the business cycle, so it is coincident.",
+    "Wrong: the unemployment rate is a lagging indicator that turns after the cycle has changed.",
+    "Wrong: stock market indices such as the S&P 500 are leading indicators.",
+    "Wrong: the balance of trade is a lagging indicator."
+   ]
+  },
+  {
+   "id": "10-q11",
+   "r": "10.1.4",
+   "k": "scenario",
+   "d": 2,
+   "q": "An economist wants the earliest possible warning that a recession may be approaching. Which of the following would she watch most closely?",
+   "o": [
+    "Unemployment rate and prime rate",
+    "Corporate profits and balance of trade",
+    "Personal income and retail sales",
+    "Bond yields and building permits"
+   ],
+   "a": 3,
+   "w": [
+    "Wrong: both unemployment and the prime rate are lagging indicators that confirm a trend after it starts.",
+    "Wrong: corporate profits and balance of trade are lagging indicators.",
+    "Wrong: personal income and retail sales are coincident indicators that move with the cycle.",
+    "Correct: bond yields and building permits are leading indicators that change before the cycle turns."
+   ]
+  },
+  {
+   "id": "10-q12",
+   "r": "10.1.4",
+   "k": "concept",
+   "d": 3,
+   "q": "Which of the following are LAGGING economic indicators? I. Prime rate II. Layoff rates III. Corporate profits IV. Non-farm payrolls",
+   "o": [
+    "I, II and III only",
+    "II and IV only",
+    "I and III only",
+    "II, III and IV only"
+   ],
+   "a": 2,
+   "w": [
+    "Wrong: layoff rates are a leading indicator, so including item II makes this wrong.",
+    "Wrong: layoff rates are leading and non-farm payrolls are coincident, so neither is lagging.",
+    "Correct: the prime rate and corporate profits are lagging; layoff rates lead and non-farm payrolls move with the cycle.",
+    "Wrong: layoff rates lead and non-farm payrolls are coincident, so only corporate profits among these is lagging."
+   ]
+  },
+  {
+   "id": "10-q13",
+   "r": "10.2.2",
+   "k": "concept",
+   "d": 1,
+   "q": "A yield curve in which short-term yields are higher than long-term yields is called:",
+   "o": [
+    "Normal",
+    "Flat",
+    "Inverted",
+    "Positively sloped"
+   ],
+   "a": 2,
+   "w": [
+    "Wrong: a normal curve has long-term yields above short-term yields.",
+    "Wrong: a flat curve has short- and long-term yields very close together.",
+    "Correct: short-term yields above long-term yields describe an inverted curve, often a recession signal.",
+    "Wrong: a positive slope is the normal shape, where yields rise as maturity lengthens."
+   ]
+  },
+  {
+   "id": "10-q14",
+   "r": "10.2.2",
+   "k": "scenario",
+   "d": 3,
+   "q": "The 3-month Treasury yields 5.1% while the 10-year Treasury yields 4.2%. A strategist reading this curve would most likely conclude that:",
+   "o": [
+    "The economy is entering a strong expansion",
+    "Investors are demanding extra compensation for long-term inflation risk",
+    "Credit spreads must be narrowing",
+    "The shape may be signaling an upcoming recession"
+   ],
+   "a": 3,
+   "w": [
+    "Wrong: strong expansion is associated with a normal upward-sloping curve rather than this shape.",
+    "Wrong: extra compensation for holding long bonds appears in a normal curve, where long yields are higher.",
+    "Wrong: nothing in the quoted Treasury yields reveals corporate credit spread behavior.",
+    "Correct: short yields above long yields is an inverted curve, which may signal an upcoming recession."
+   ]
+  },
+  {
+   "id": "10-q15",
+   "r": "10.2.3",
+   "k": "calc",
+   "d": 1,
+   "q": "A 10-year corporate bond yields 5.75% and a 10-year Treasury yields 4.50%. What is the yield spread in basis points?",
+   "o": [
+    "75 bp",
+    "125 bp",
+    "175 bp",
+    "1,025 bp"
+   ],
+   "a": 1,
+   "w": [
+    "The gap is 1.25 percentage points, which is 125 bp, not 75 bp.",
+    "Correct: 5.75% − 4.50% = 1.25%, and since 1% equals 100 basis points, the spread is 125 bp.",
+    "Subtracting 4.50 from 5.75 gives 1.25 points, not 1.75, so 175 bp overstates the spread.",
+    "Wrong: this adds the yields (5.75 + 4.50 = 10.25) instead of subtracting them."
+   ]
+  },
+  {
+   "id": "10-q16",
+   "r": "10.2.4",
+   "k": "scenario",
+   "d": 3,
+   "q": "Over the past year the spread between 10-year Treasury notes and 10-year non-investment-grade bonds has widened from 2 percentage points to 4 percentage points. This most likely indicates that the market:",
+   "o": [
+    "Is forecasting greater default risk and a slowing economy",
+    "Expects stronger growth and rising consumer confidence",
+    "Has begun a flight away from Treasury securities",
+    "Expects the yield curve to turn normal"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: widening spreads between quality tiers signal greater default risk and an economy that is slowing.",
+    "Wrong: strong growth and confidence are associated with narrowing spreads, not widening ones.",
+    "Wrong: widening spreads usually reflect a flight to quality, meaning demand for Treasuries rises.",
+    "Wrong: spread behavior across credit quality says nothing direct about the curve’s shape."
+   ]
+  },
+  {
+   "id": "10-q17",
+   "r": "10.2.1",
+   "k": "concept",
+   "d": 2,
+   "q": "During a significant stock market downturn, investors who sell equities and lower-quality bonds in order to buy Treasury bills are demonstrating:",
+   "o": [
+    "A bull market rally",
+    "Cost-push behavior",
+    "Countercyclical investing",
+    "A flight to quality"
+   ],
+   "a": 3,
+   "w": [
+    "Wrong: a bull market is an extended price rise with investor confidence, the opposite of this behavior.",
+    "Wrong: cost-push describes a type of inflation, not an investor behavior.",
+    "Wrong: countercyclical describes a stock that rises in contractions, not the act of moving into Treasuries.",
+    "Correct: moving from riskier holdings to safer instruments like T-bills during turmoil is called a flight to quality."
+   ]
+  },
+  {
+   "id": "10-q18",
+   "r": "10.2.5.1",
+   "k": "concept",
+   "d": 1,
+   "q": "Which of the following best describes a cyclical stock?",
+   "o": [
+    "One that is resistant to changes in the economy because it supplies basic needs",
+    "One that always pays a high dividend",
+    "One that mirrors the economy, strengthening in growth and declining in contraction",
+    "One whose price rises only when inflation falls"
+   ],
+   "a": 2,
+   "w": [
+    "Wrong: resistance to economic changes through basic needs describes a defensive stock.",
+    "Wrong: dividend level does not define cyclical status.",
+    "Correct: cyclical stocks follow the economy up in expansions and down in contractions.",
+    "Wrong: no link to falling inflation defines a cyclical stock."
+   ]
+  },
+  {
+   "id": "10-q19",
+   "r": "10.2.5.1",
+   "k": "scenario",
+   "d": 2,
+   "q": "An investor expects a prolonged contraction and wants to hold stocks that are most likely to retain value. Which holding best fits that goal?",
+   "o": [
+    "A discount retailer of everyday consumer staples",
+    "A maker of large household appliances",
+    "A manufacturer of heavy capital equipment",
+    "A luxury automobile maker"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: discount retailers of staples are defensive; buyers trade down and still need basic items in a downturn.",
+    "Wrong: large appliances are high-ticket items, so makers are cyclical and fall in contractions.",
+    "Wrong: capital equipment suppliers are cyclical and weaken when businesses cut investment spending.",
+    "Wrong: luxury automobiles are high-ticket consumer items and a classic cyclical stock."
+   ]
+  },
+  {
+   "id": "10-q20",
+   "r": "10.2.5.1",
+   "k": "concept",
+   "d": 3,
+   "q": "Which of the following equity investments are highly sensitive to changes in interest rates? I. Utility stocks II. Preferred stock III. REITs IV. Capital equipment makers",
+   "o": [
+    "I and II only",
+    "I, II and III only",
+    "II and IV only",
+    "I, II, III and IV"
+   ],
+   "a": 1,
+   "w": [
+    "Wrong: this leaves out REITs, which also deliver stable income and react to rates.",
+    "Correct: utilities, preferred shares and REITs behave like fixed income because of stable dividends.",
+    "Wrong: this includes capital equipment makers, which are cyclical stocks rather than a dividend-driven, rate-sensitive group.",
+    "Wrong: capital equipment makers are cyclical, not named as rate-sensitive income vehicles."
+   ]
+  },
+  {
+   "id": "10-q21",
+   "r": "10.2.5.2",
+   "k": "concept",
+   "d": 1,
+   "q": "If inflation rises, which of the following is the most likely effect on a fixed-rate bond already held by an investor?",
+   "o": [
+    "Its market value falls because interest rates tend to rise",
+    "Its market value rises because coupons become more valuable",
+    "Its market value is unaffected because the coupon is fixed",
+    "Its credit rating is automatically upgraded"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: inflation generally pushes interest rates up and bond prices move inversely to rates.",
+    "Wrong: fixed coupons lose purchasing power under inflation, so they are less valuable.",
+    "Wrong: although the coupon is fixed, market value reprices as rates change.",
+    "Wrong: inflation does not trigger rating upgrades."
+   ]
+  },
+  {
+   "id": "10-q22",
+   "r": "10.2.6.1",
+   "k": "calc",
+   "d": 1,
+   "q": "A company reports net income of $48 million and has 12 million shares outstanding. What is its earnings per share?",
+   "o": [
+    "$0.25",
+    "$60.00",
+    "$36.00",
+    "$4.00"
+   ],
+   "a": 3,
+   "w": [
+    "Wrong: $0.25 inverts the division, giving shares divided by net income.",
+    "Wrong: $60 adds the two numbers instead of dividing.",
+    "Wrong: $36 subtracts the share count from net income instead of dividing.",
+    "Correct: EPS = net income ÷ shares outstanding = $48 million ÷ 12 million = $4.00."
+   ]
+  },
+  {
+   "id": "10-q23",
+   "r": "10.2.6.1",
+   "k": "calc",
+   "d": 3,
+   "q": "A company earned $30 million and has 10 million shares outstanding. It then completes a 1-for-5 reverse split, with earnings unchanged. What is EPS after the split?",
+   "o": [
+    "$0.60",
+    "$15.00",
+    "$6.00",
+    "$3.00"
+   ],
+   "a": 1,
+   "w": [
+    "Wrong: $0.60 results from a 5-for-1 forward split, which multiplies shares to 50 million rather than reducing them.",
+    "Correct: shares fall to 10 ÷ 5 = 2 million; EPS = $30 million ÷ 2 million = $15.00, up from $3.00.",
+    "Wrong: $6.00 would arise from a 1-for-2 reverse split, not one for 5.",
+    "Wrong: $3.00 is the EPS before the reverse split ($30 million ÷ 10 million)."
+   ]
+  },
+  {
+   "id": "10-q24",
+   "r": "10.2.6.2",
+   "k": "calc",
+   "d": 1,
+   "q": "A company’s balance sheet shows total assets of $750 million and total liabilities of $420 million, while its income statement shows net income of $60 million. What is shareholders’ equity?",
+   "o": [
+    "$270 million",
+    "$390 million",
+    "$330 million",
+    "$1,170 million"
+   ],
+   "a": 2,
+   "w": [
+    "Wrong: $270 million wrongly deducts net income from the correct figure.",
+    "Wrong: $390 million wrongly adds net income to the correct figure.",
+    "Correct: equity = assets − liabilities = $750 million − $420 million = $330 million; net income is irrelevant.",
+    "Wrong: $1,170 million adds assets and liabilities instead of subtracting."
+   ]
+  },
+  {
+   "id": "10-q25",
+   "r": "10.2.6.2",
+   "k": "calc",
+   "d": 2,
+   "q": "Company ABC has total assets of $20 million, current assets of $6.5 million, total liabilities of $12 million and current liabilities of $4 million. What is its working capital?",
+   "o": [
+    "$8.0 million",
+    "$2.5 million",
+    "$13.5 million",
+    "$16.0 million"
+   ],
+   "a": 1,
+   "w": [
+    "Wrong: $8 million is total assets minus total liabilities, which is shareholders’ equity.",
+    "Correct: working capital = current assets − current liabilities = $6.5 million − $4 million = $2.5 million.",
+    "$13.5 million subtracts current assets from total assets ($20 million − $6.5 million), which is not working capital.",
+    "Wrong: $16 million subtracts only current liabilities from total assets; working capital uses current assets, not total assets."
+   ]
+  },
+  {
+   "id": "10-q26",
+   "r": "10.2.6",
+   "k": "concept",
+   "d": 2,
+   "q": "Which statement correctly contrasts a company’s income statement and balance sheet?",
+   "o": [
+    "The income statement is a snapshot at a point in time; the balance sheet covers a period",
+    "Both cover a period of time, but only the income statement shows liabilities",
+    "Both are snapshots, but only the balance sheet shows revenue",
+    "The income statement covers a period and ends in net income; the balance sheet is a snapshot showing assets, liabilities and equity"
+   ],
+   "a": 3,
+   "w": [
+    "Wrong: this reverses the two statements.",
+    "Wrong: the balance sheet is a snapshot, not a period report, and liabilities appear on the balance sheet.",
+    "Wrong: the income statement is not a snapshot and revenue is reported on the income statement.",
+    "Correct: the income statement measures revenue, expenses and net income over a period; the balance sheet is a moment-in-time view."
+   ]
+  },
+  {
+   "id": "10-q27",
+   "r": "10.2.6.1",
+   "k": "calc",
+   "d": 2,
+   "q": "A stock trades at $45. The issuer has net income of $60 million and 20 million shares outstanding. What is the stock’s price/earnings ratio?",
+   "o": [
+    "15",
+    "10",
+    "25",
+    "45"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: EPS = $60 million ÷ 20 million = $3.00; P/E = $45 ÷ $3.00 = 15.",
+    "A ratio of 10 would require EPS of $4.50, but EPS here is $3.00.",
+    "A ratio of 25 would require EPS of $1.80; the actual EPS of $3.00 gives a different result.",
+    "Wrong: $45 is the share price itself, not the ratio."
+   ]
+  },
+  {
+   "id": "10-q28",
+   "r": "10.3.1.1",
+   "k": "concept",
+   "d": 1,
+   "q": "Which economist is considered the founder of classical economics and introduced the idea of the invisible hand?",
+   "o": [
+    "John Maynard Keynes",
+    "Milton Friedman",
+    "Adam Smith",
+    "Alan Greenspan"
+   ],
+   "a": 2,
+   "w": [
+    "Wrong: Keynes founded Keynesian economics, which argues for intervention.",
+    "Wrong: Friedman popularized monetarism, which focuses on the money supply.",
+    "Correct: Adam Smith wrote The Wealth of Nations and described the self-regulating invisible hand.",
+    "Wrong: this name is not discussed in the chapter as a founder of any school."
+   ]
+  },
+  {
+   "id": "10-q29",
+   "r": "10.3.1.2",
+   "k": "scenario",
+   "d": 2,
+   "q": "During a severe downturn, a policy adviser urges Congress to raise government spending and cut taxes to restore aggregate demand and create jobs. Her view is most consistent with which school?",
+   "o": [
+    "Classical",
+    "Laissez-faire",
+    "Monetarist",
+    "Keynesian"
+   ],
+   "a": 3,
+   "w": [
+    "Wrong: classical economists recommend neither fiscal nor monetary intervention.",
+    "Wrong: laissez-faire is the hands-off approach of classical economists.",
+    "Wrong: monetarists would work through the money supply rather than spending and taxation.",
+    "Correct: Keynesians use higher spending and lower taxes to make up a shortfall in aggregate demand."
+   ]
+  },
+  {
+   "id": "10-q30",
+   "r": "10.3.1.3",
+   "k": "scenario",
+   "d": 2,
+   "q": "An economist argues that the best way to curb inflation is to shrink the amount of money in circulation, and that fiscal measures are ineffective at holding down prices. Which school does she follow?",
+   "o": [
+    "Monetarism",
+    "Keynesian",
+    "Classical",
+    "Mercantilism"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: monetarists, popularized by Milton Friedman, believe the money supply drives output and price levels.",
+    "Wrong: Keynesians would fight inflation by cutting spending and raising taxes.",
+    "Wrong: classical economists favor no intervention at all.",
+    "Wrong: mercantilism is not one of the schools covered in the chapter."
+   ]
+  },
+  {
+   "id": "10-q31",
+   "r": "10.3.1.2",
+   "k": "concept",
+   "d": 3,
+   "q": "To control inflation, a Keynesian economist would recommend which of the following? I. Decreasing government spending II. Increasing taxes III. Increasing government spending IV. Cutting taxes",
+   "o": [
+    "I and IV only",
+    "I and II only",
+    "II and III only",
+    "III and IV only"
+   ],
+   "a": 1,
+   "w": [
+    "Wrong: cutting taxes is a stimulus tool that would add to inflationary pressure.",
+    "Correct: Keynesians restrain inflation by decreasing spending and raising taxes, the reverse of their stimulus tools.",
+    "Wrong: increasing government spending stimulates demand and is the stimulus remedy.",
+    "Wrong: both of these are stimulus measures used for recessions, not for controlling inflation."
+   ]
+  },
+  {
+   "id": "10-q32",
+   "r": "10.3.2",
+   "k": "concept",
+   "d": 2,
+   "q": "Which of the following is an example of monetary policy rather than fiscal policy?",
+   "o": [
+    "Congress passing an infrastructure spending package",
+    "Lowering the federal income tax rate",
+    "The Fed buying Treasury securities from primary dealers",
+    "The Treasury increasing its budget for defense"
+   ],
+   "a": 2,
+   "w": [
+    "Wrong: government spending packages are fiscal policy.",
+    "Wrong: tax changes are a fiscal policy tool.",
+    "Correct: the Fed buying securities changes the money supply, which is monetary policy.",
+    "Wrong: budget changes are government spending, which is fiscal policy."
+   ]
+  },
+  {
+   "id": "10-q33",
+   "r": "10.3.1",
+   "k": "concept",
+   "d": 1,
+   "q": "An oligopoly is a market in which:",
+   "o": [
+    "There are few sellers, each supplying a large portion of the products sold",
+    "There is a single seller",
+    "There are many small sellers and entry is easy",
+    "The government sets all prices"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: few sellers each hold a large share, making it hard for new firms to enter, as in autos and airlines.",
+    "Wrong: a single seller describes a monopoly, which the chapter does not define as an oligopoly.",
+    "Wrong: many sellers with easy entry is the opposite of an oligopoly.",
+    "Wrong: government price setting is not part of the definition."
+   ]
+  },
+  {
+   "id": "10-q34",
+   "r": "10.2.6.1",
+   "k": "concept",
+   "d": 3,
+   "q": "Compared with the P/E ratio, the PEG ratio is considered a more enhanced valuation metric because it:",
+   "o": [
+    "Replaces earnings with cash flow",
+    "Uses the dividend instead of earnings",
+    "Factors in the company’s expected growth rate",
+    "Is calculated from the balance sheet"
+   ],
+   "a": 2,
+   "w": [
+    "Wrong: cash flow yield is a separate measure that is not what makes the PEG different.",
+    "Wrong: current or dividend yield is a separate evaluation method.",
+    "Correct: the PEG uses the P/E ratio while also factoring in expected growth.",
+    "Wrong: P/E and PEG both derive from the price and earnings, not from balance sheet items."
+   ]
+  },
+  {
+   "id": "10-q35",
+   "r": "10.3.3.2",
+   "k": "concept",
+   "d": 1,
+   "q": "Which of the following is an example of the Federal Reserve easing the money supply?",
+   "o": [
+    "Selling Treasury securities to primary dealers",
+    "Raising the discount rate",
+    "Raising the reserve requirement",
+    "Buying Treasury securities from primary dealers"
+   ],
+   "a": 3,
+   "w": [
+    "Wrong: selling securities removes cash from the banking system and tightens the money supply.",
+    "Wrong: a higher discount rate makes borrowing from the Fed costlier and tightens policy.",
+    "Wrong: a higher reserve requirement forces banks to hold more and lend less, which tightens.",
+    "Correct: when the Fed buys securities it pays cash to dealers, increasing the money supply and lowering rates."
+   ]
+  },
+  {
+   "id": "10-q36",
+   "r": "10.3.3.2",
+   "k": "concept",
+   "d": 1,
+   "q": "The FOMC conducts open market operations by trading government securities with:",
+   "o": [
+    "The general public",
+    "Primary dealers",
+    "Member banks only through the discount window",
+    "The Treasury’s retail auction participants"
+   ],
+   "a": 1,
+   "w": [
+    "Wrong: the Fed does not execute open market operations with retail investors.",
+    "Correct: the FOMC trades Treasury securities with primary dealers, large financial institutions.",
+    "Wrong: discount window lending is a different tool from open market operations.",
+    "Wrong: the Fed’s open market trades are with dealers, not auction participants."
+   ]
+  },
+  {
+   "id": "10-q37",
+   "r": "10.3.3.2",
+   "k": "scenario",
+   "d": 2,
+   "q": "The Fed concludes that demand is likely to greatly outpace supply and inflation is a risk. It sells a large amount of Treasury securities to primary dealers. What is the expected result?",
+   "o": [
+    "Cash enters the banking system and interest rates fall",
+    "The discount rate automatically falls",
+    "Cash leaves the banking system, the money supply tightens and interest rates rise",
+    "The reserve requirement is cut"
+   ],
+   "a": 2,
+   "w": [
+    "Wrong: cash entering the system and falling rates is what a purchase of securities would do.",
+    "Wrong: the discount rate is a separate tool and does not change automatically with open market sales.",
+    "Correct: dealers pay cash for the securities, which removes money from the banking system and pushes rates up.",
+    "Wrong: reserve requirements are a separate tool and a cut would be easing, not tightening."
+   ]
+  },
+  {
+   "id": "10-q38",
+   "r": "10.3.3.4",
+   "k": "concept",
+   "d": 3,
+   "q": "Which of the following actions by the Fed would tighten the money supply? I. Selling government securities II. Raising the discount rate III. Lowering the reserve requirement IV. Raising the reserve requirement",
+   "o": [
+    "I, II and IV only",
+    "I and II only",
+    "II and III only",
+    "III and IV only"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: selling securities, raising the discount rate and raising reserve requirements all tighten.",
+    "Wrong: this omits the higher reserve requirement, which also tightens.",
+    "Wrong: lowering the reserve requirement is easing.",
+    "Wrong: lowering reserves is easing, so pairing it with raising them is wrong."
+   ]
+  },
+  {
+   "id": "10-q39",
+   "r": "10.3.3.4",
+   "k": "calc",
+   "d": 3,
+   "q": "The Fed sets a reserve requirement of 20% on transaction deposits. A customer deposits $400. Assuming the bank lends the maximum permitted, how much may the bank lend from that deposit?",
+   "o": [
+    "$80",
+    "$200",
+    "$380",
+    "$320"
+   ],
+   "a": 3,
+   "w": [
+    "Wrong: $80 is the required reserve (20% × $400), the amount the bank must keep, not the amount it can lend.",
+    "Wrong: $200 would correspond to a 50% requirement, not 20%.",
+    "Wrong: $380 would correspond to a 5% reserve requirement.",
+    "Correct: required reserve = 20% × $400 = $80; the bank can lend $400 − $80 = $320."
+   ]
+  },
+  {
+   "id": "10-q40",
+   "r": "10.3.3.3",
+   "k": "concept",
+   "d": 3,
+   "q": "All of the following statements about the federal funds rate are true EXCEPT:",
+   "o": [
+    "It is the rate banks charge one another for overnight loans",
+    "It is directly set by the Fed each month by decree",
+    "It is determined by supply and demand in the market",
+    "It is considered the most volatile interest rate in the market"
+   ],
+   "a": 1,
+   "w": [
+    "Wrong: this statement is true; the fed funds rate is the overnight interbank lending rate.",
+    "Correct: this statement is false; the Fed influences the rate through open market operations but does not set it.",
+    "Wrong: this statement is true; the rate is market driven even though open market operations heavily influence it.",
+    "Wrong: this statement is true; the book calls it the most volatile rate in the market."
+   ]
+  },
+  {
+   "id": "10-q41",
+   "r": "10.3.3.5",
+   "k": "concept",
+   "d": 3,
+   "q": "Which choice lists these rates from LOWEST to HIGHEST?",
+   "o": [
+    "Prime rate, broker call rate, discount rate, fed funds rate",
+    "Fed funds rate, discount rate, broker call rate, prime rate",
+    "Discount rate, fed funds rate, prime rate, broker call rate",
+    "Fed funds rate, broker call rate, discount rate, prime rate"
+   ],
+   "a": 1,
+   "w": [
+    "Wrong: this is exactly the reverse, highest to lowest.",
+    "Correct: the Knopman Note orders them fed funds, discount rate, broker call rate, prime rate.",
+    "Wrong: the fed funds rate sits below the discount rate and the call rate sits below the prime rate.",
+    "Wrong: the broker call rate is above, not below, the discount rate."
+   ]
+  },
+  {
+   "id": "10-q42",
+   "r": "10.3.3.5",
+   "k": "concept",
+   "d": 2,
+   "q": "The interest that a customer pays in a margin account is based on the:",
+   "o": [
+    "Federal funds rate",
+    "Discount rate",
+    "Broker call rate",
+    "Reserve requirement"
+   ],
+   "a": 2,
+   "w": [
+    "Wrong: the fed funds rate is the overnight rate between banks and is not the basis of customer margin interest.",
+    "Wrong: the discount rate is what the Fed charges banks, not what a customer margin loan is based on.",
+    "Correct: the broker call rate is what a broker-dealer pays a bank to fund customer margin purchases and it underlies margin interest.",
+    "Wrong: a reserve requirement is a percentage of deposits and not an interest rate."
+   ]
+  },
+  {
+   "id": "10-q43",
+   "r": "10.3.3.5",
+   "k": "concept",
+   "d": 1,
+   "q": "The Federal Reserve’s initial margin requirement under Regulation T was set at what level in 1974, and has it been changed since?",
+   "o": [
+    "50%, and the Fed has not modified it",
+    "25%, and it has been raised several times",
+    "50%, and it is adjusted every year",
+    "30%, and it has been lowered"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: the initial requirement was set at 50% in 1974 and the Fed has not deemed it necessary to modify it.",
+    "Wrong: the initial requirement was 50%, and the book never says it has been raised, so a 25% figure that was raised repeatedly is incorrect.",
+    "Wrong: the 50% figure is right but it is not adjusted annually.",
+    "Wrong: 30% is not the initial requirement and it has not been lowered."
+   ]
+  },
+  {
+   "id": "10-q44",
+   "r": "10.4.1",
+   "k": "concept",
+   "d": 2,
+   "q": "Which of the following describes the balance of payments?",
+   "o": [
+    "The difference between a country’s exports and imports of goods only",
+    "The sum of consumer spending in a quarter",
+    "The gap between government spending and tax revenue",
+    "A comprehensive record of a country’s economic transactions with the rest of the world over a period"
+   ],
+   "a": 3,
+   "w": [
+    "Wrong: exports minus imports describes the balance of trade, which is only a part of the balance of payments.",
+    "Wrong: consumer spending is the C component of GDP.",
+    "Wrong: the gap between spending and tax revenue is a budget concept, not part of this definition.",
+    "Correct: the balance of payments records all payments and receipts between residents and foreign entities over a quarter or year."
+   ]
+  },
+  {
+   "id": "10-q45",
+   "r": "10.4.1",
+   "k": "calc",
+   "d": 3,
+   "q": "A country’s credit items for the year are exports of $120 billion and foreign investment in its economy of $30 billion. Its debit items are imports of $140 billion, foreign aid of $10 billion and domestic investment abroad of $20 billion. What is the balance of trade?",
+   "o": [
+    "A surplus of $20 billion",
+    "A deficit of $50 billion",
+    "A deficit of $20 billion",
+    "A deficit of $10 billion"
+   ],
+   "a": 2,
+   "w": [
+    "Wrong: the sign is reversed; debits exceed credits, so the result is a deficit.",
+    "This ignores the $30 billion of foreign investment, which is a credit item (120 − 170 = −50); all credits must be counted.",
+    "Correct: credits = 120 + 30 = 150; debits = 140 + 10 + 20 = 170; 150 − 170 = −$20 billion, a deficit.",
+    "Wrong: this leaves out one of the debit items, so the deficit is understated."
+   ]
+  },
+  {
+   "id": "10-q46",
+   "r": "10.4.1",
+   "k": "scenario",
+   "d": 3,
+   "q": "A country in a deep recession is trying to create jobs and increase demand for domestic output. Which approach is it most likely to prefer in its trade policy?",
+   "o": [
+    "Exporting more to create new jobs",
+    "Importing more to increase price competition",
+    "Running larger imports to lower unemployment",
+    "Reducing exports to limit inflation"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: in a recession countries try to export more, to create jobs and boost demand.",
+    "Wrong: encouraging imports is preferred in a strong expansion to limit inflation, not in a recession.",
+    "Wrong: higher imports do not help create domestic jobs, and a trade deficit is not helpful in a recession.",
+    "Wrong: curbing inflation is not the concern in a recession, and cutting exports would reduce demand further."
+   ]
+  },
+  {
+   "id": "10-q47",
+   "r": "10.4.2",
+   "k": "scenario",
+   "d": 2,
+   "q": "The US dollar weakens significantly against the euro. Which of the following is the most likely result?",
+   "o": [
+    "US exports decrease and US imports increase",
+    "US exports increase and US imports decrease",
+    "Foreign investment in the US increases",
+    "Both US exports and imports increase"
+   ],
+   "a": 1,
+   "w": [
+    "Wrong: this describes the effect of a stronger dollar.",
+    "Correct: a weaker dollar makes US goods cheaper abroad, so exports rise, and imports become more expensive, so they fall.",
+    "Wrong: foreign investment in the dollar declines when the dollar weakens.",
+    "Wrong: imports decline when the dollar weakens, so they cannot rise with exports."
+   ]
+  },
+  {
+   "id": "10-q48",
+   "r": "10.4.3",
+   "k": "concept",
+   "d": 3,
+   "q": "Assume the Fed’s actions cause US interest rates to rise, all else equal. Which of the following are likely effects? I. The foreign exchange value of the dollar rises II. US exports decrease III. US imports increase IV. Foreign investment in the US decreases",
+   "o": [
+    "I and II only",
+    "I and IV only",
+    "II, III and IV only",
+    "I, II and III only"
+   ],
+   "a": 3,
+   "w": [
+    "Wrong: this omits the increase in US imports, which also follows from a stronger dollar.",
+    "Wrong: foreign investment would increase, so item IV is incorrect.",
+    "Wrong: foreign investment increases, not decreases, when US rates rise, and the dollar’s rise is omitted.",
+    "Correct: higher US rates attract investors into dollars, raising its value, which restrains exports and boosts imports."
+   ]
+  },
+  {
+   "id": "10-q49",
+   "r": "10.4.2",
+   "k": "concept",
+   "d": 2,
+   "q": "Purchasing power parity is used to:",
+   "o": [
+    "Compare the cost of the same basket of goods in different countries to help determine exchange rates",
+    "Measure the unemployment rate in each country",
+    "Set the Fed’s discount rate",
+    "Calculate a country’s balance of trade"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: PPP compares what the same basket of goods costs in two countries to gauge currency strength and exchange rates.",
+    "Wrong: PPP is unrelated to unemployment measurement.",
+    "Wrong: the discount rate is set by the Fed as a policy tool, independently of PPP.",
+    "Wrong: balance of trade is credits minus debits and does not rely on PPP."
+   ]
+  },
+  {
+   "id": "10-q50",
+   "r": "10.4.3",
+   "k": "scenario",
+   "d": 3,
+   "q": "Interest rates in a major foreign country rise sharply while US rates stay unchanged. All else being equal, which outcome is most consistent with the chapter?",
+   "o": [
+    "The dollar strengthens and US exports drop",
+    "Demand for the dollar rises and US prices fall",
+    "Investment flows from the foreign country into the US",
+    "Demand for the foreign currency rises, the dollar’s value falls, and US output and prices tend to increase"
+   ],
+   "a": 3,
+   "w": [
+    "Wrong: a stronger dollar is the result of rising US rates, not rising foreign rates.",
+    "Wrong: this is the opposite; a dollar demand increase would follow a rise in US rates.",
+    "Wrong: investment may flow from the US to the foreign country offering higher rates.",
+    "Correct: higher foreign rates raise demand for assets in that currency, reducing the dollar’s value, and US output and prices tend to rise."
+   ]
+  },
+  {
+   "id": "10-q51",
+   "k": "concept",
+   "d": 2,
+   "r": "10.4.3",
+   "q": "During downward pressure on the dollar in foreign exchange markets, the Federal Reserve may support its price by:",
+   "o": [
+    "Raising the margin requirement on customers",
+    "Selling dollars and purchasing foreign currency",
+    "Purchasing dollars and selling foreign currency",
+    "Selling Treasury securities to the public"
+   ],
+   "a": 2,
+   "w": [
+    "Margin requirements govern credit extended to securities customers and do not act on exchange rates.",
+    "Selling dollars would add supply, which is the response to upward pressure on the dollar, not downward pressure.",
+    "Correct: buying dollars with foreign currency adds demand for the dollar and helps support its price.",
+    "The Fed deals in securities with primary dealers, not the public, and this does not address currency pressure."
+   ]
+  },
+  {
+   "id": "10-q52",
+   "k": "concept",
+   "d": 2,
+   "r": "10.2.6.1",
+   "q": "The portion of a company’s net income that is not paid to shareholders as dividends is called:",
+   "o": [
+    "Working capital",
+    "Retained earnings",
+    "Revenue",
+    "Shareholders’ equity"
+   ],
+   "a": 1,
+   "w": [
+    "Working capital is current assets minus current liabilities, not an undistributed profit measure.",
+    "Correct: net income not distributed as dividends is retained earnings, reinvested to grow the business.",
+    "Revenue is total sales before expenses, so it is not what remains after dividends.",
+    "Shareholders’ equity is assets minus liabilities, a balance sheet figure rather than the unpaid portion of income."
+   ]
+  },
+  {
+   "id": "10-q53",
+   "k": "scenario",
+   "d": 2,
+   "r": "10.4.2",
+   "q": "A country deliberately devalues its currency. Which result is most likely?",
+   "o": [
+    "Foreign demand for its goods is unchanged",
+    "Its exports decrease because its goods become more expensive abroad",
+    "Its imports become cheaper for domestic consumers",
+    "Its exports increase because its goods become more attractive to foreign buyers"
+   ],
+   "a": 3,
+   "w": [
+    "Cheaper prices abroad raise foreign demand rather than leaving it unchanged.",
+    "Devaluation lowers, not raises, the foreign price of its goods.",
+    "Devaluation makes foreign goods costlier in the home currency, so imports become more expensive.",
+    "Correct: a devalued currency makes the country’s goods cheaper for foreign buyers, so exports rise."
+   ]
+  },
+  {
+   "id": "10-q54",
+   "k": "scenario",
+   "d": 2,
+   "r": "10.4.1",
+   "q": "During a strong economic expansion, a country is most likely to prefer to:",
+   "o": [
+    "Reduce imports to protect jobs",
+    "Import more, adding price competition that helps limit inflation",
+    "Run a trade surplus to stimulate demand",
+    "Impose a ban on foreign aid"
+   ],
+   "a": 1,
+   "w": [
+    "Restricting imports is the recession-era preference for boosting domestic jobs, not the expansion-era one.",
+    "Correct: extra imports supply goods beyond domestic capacity and keep prices in check, so a deficit may help in an expansion.",
+    "Stimulating demand is the recession objective; an overheating expansion does not need it.",
+    "Foreign aid has no link to the expansion-era trade preference described in the chapter."
+   ]
+  },
+  {
+   "id": "10-q55",
+   "k": "concept",
+   "d": 1,
+   "r": "10.1.1.4",
+   "q": "A commodity whose demand is inelastic is one for which:",
+   "o": [
+    "Demand falls sharply whenever its price rises",
+    "Supply cannot respond to price",
+    "A change in price has no impact on demand",
+    "Demand rises whenever its price rises"
+   ],
+   "a": 2,
+   "w": [
+    "That describes elastic demand, where quantity demanded moves opposite to price.",
+    "Inelastic describes demand reacting to price, not the supplier’s ability to respond.",
+    "Correct: with inelastic demand, a price change leaves demand essentially unchanged.",
+    "Demand rising with price is not how elasticity is defined in the chapter."
+   ]
+  },
+  {
+   "id": "10-q56",
+   "k": "concept",
+   "d": 2,
+   "r": "10.4.1",
+   "q": "Which of the following is a DEBIT item in a country’s balance of trade?",
+   "o": [
+    "Domestic investment abroad",
+    "Exported goods",
+    "Foreign investment in the domestic economy",
+    "Foreign spending in the domestic economy"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: domestic investment abroad sends money out of the country, so it is a debit item.",
+    "Exports bring in payment from abroad, so they are credit items.",
+    "Money coming in from foreign investors is a credit item.",
+    "Foreigners spending in the home economy brings money in, which makes it a credit item."
+   ]
+  }
+ ]
+}

@@ -703,6 +703,54 @@
    "f": "Document a dealer must give an LGIP investor",
    "b": "The issuer’s **official statement**, at or before settlement.",
    "r": "5.6.1.3"
+  },
+  {
+   "id": "5-c71",
+   "f": "LGIP investment objectives",
+   "b": "Most LGIPs resemble **money market funds** (short-term securities, stability, liquidity, little price volatility). Some seek **maximum return** with longer-term securities, adding market and liquidity risk.",
+   "r": "5.6.1.1"
+  },
+  {
+   "id": "5-c72",
+   "f": "Who pays LGIP fees?",
+   "b": "Manager and other charges come **out of pool assets**, lowering returns and share values; a dealer may add a commission or sales charge.",
+   "r": "5.6.1.4"
+  },
+  {
+   "id": "5-c73",
+   "f": "Three benefits of REITs",
+   "b": "**Diversification** (low correlation with stocks and bonds), **dividends** (steady income) and **liquidity** (exchange-listed shares).",
+   "r": "5.1.6"
+  },
+  {
+   "id": "5-c74",
+   "f": "How hedge fund investors buy in and what they own",
+   "b": "Most funds are **open-ended**: additions and withdrawals **monthly or quarterly**. The investor owns a share of the fund’s **NAV**.",
+   "r": "5.3.3"
+  },
+  {
+   "id": "5-c75",
+   "f": "Why are hedge funds often set up as LPs?",
+   "b": "Investor protection: if the fund fails, creditors cannot pursue investors for **more than they invested**.",
+   "r": "5.3"
+  },
+  {
+   "id": "5-c76",
+   "f": "ETN vs ETF: liquidity and suitability",
+   "b": "ETNs have a **more limited secondary market** and are more complex, so ETFs are **more liquid** and suit a **wider range** of investors.",
+   "r": "5.5.1.1"
+  },
+  {
+   "id": "5-c77",
+   "f": "Who can invest in private equity funds?",
+   "b": "Only **wealthy individuals and institutions** able to commit large sums for long periods; PE is **one of the riskiest** investments.",
+   "r": "5.4.2"
+  },
+  {
+   "id": "5-c78",
+   "f": "Prime brokerage",
+   "b": "**Bundled services** from banks and wealth firms that help hedge funds **consolidate positions** held across different executing firms.",
+   "r": "5.3.2"
   }
  ],
  "questions": [
@@ -754,15 +802,15 @@
    "q": "A REIT reports taxable income of $8,000,000 for the year. What is the minimum amount it must distribute to shareholders to keep its pass-through status?",
    "o": [
     "$6,000,000",
-    "$7,600,000",
     "$7,200,000",
+    "$7,600,000",
     "$8,000,000"
    ],
-   "a": 2,
+   "a": 1,
    "w": [
     "Wrong: $6,000,000 is 75% of taxable income, which is the asset and income test percentage, not the payout test.",
-    "Wrong: $7,600,000 is 95% of taxable income, a figure that does not appear in the REIT requirements.",
     "Correct: the distribution test requires 90% of taxable income, so 0.90 × $8,000,000 = $7,200,000.",
+    "Wrong: $7,600,000 is 95% of taxable income, a figure that does not appear in the REIT requirements.",
     "Wrong: distributing 100% would satisfy the test but is not the minimum; only 90% is required."
    ]
   },
@@ -774,15 +822,15 @@
    "q": "Which of the following does a REIT that meets all IRS requirements pass through to its shareholders?",
    "o": [
     "Income, capital gains and losses",
-    "Income and capital gains, but not losses",
     "Capital losses only",
+    "Income and capital gains, but not losses",
     "Losses and deductions but not gains"
    ],
-   "a": 1,
+   "a": 2,
    "w": [
     "Wrong: losses are not passed through by a REIT; that feature belongs to direct participation programs.",
-    "Correct: REITs pass through income and gains; losses are not passed through and instead lower the share price.",
     "Wrong: a REIT never passes capital losses to shareholders, who see losses only as lower share price.",
+    "Correct: REITs pass through income and gains; losses are not passed through and instead lower the share price.",
     "Wrong: this reverses the rule; REITs pass through gains and income, not losses or deductions."
    ]
   },
@@ -793,16 +841,16 @@
    "d": 1,
    "q": "A publicly traded REIT’s shares usually trade at",
    "o": [
-    "a price set by supply and demand, which may be above or below NAV",
-    "exactly net asset value per share",
     "net asset value plus a front-end sales charge",
+    "exactly net asset value per share",
+    "a price set by supply and demand, which may be above or below NAV",
     "net asset value less a redemption fee"
    ],
-   "a": 0,
+   "a": 2,
    "w": [
-    "Correct: like closed-end fund shares, listed REIT shares trade at a market price that can be at a premium or discount to NAV.",
-    "Wrong: only open-end funds are priced at NAV; exchange-traded REIT shares are priced by the market.",
     "Wrong: a front-end sales charge on NAV is an open-end mutual fund feature, not how listed REIT shares trade.",
+    "Wrong: only open-end funds are priced at NAV; exchange-traded REIT shares are priced by the market.",
+    "Correct: like closed-end fund shares, listed REIT shares trade at a market price that can be at a premium or discount to NAV.",
     "Wrong: redemption at NAV less a fee is an open-end fund feature; REIT holders sell on the exchange instead."
    ]
   },
@@ -833,16 +881,16 @@
    "d": 1,
    "q": "Which type of REIT is registered with the SEC but is NOT listed on an exchange?",
    "o": [
-    "Publicly traded REIT",
-    "Private REIT",
     "Public non-traded REIT",
+    "Private REIT",
+    "Publicly traded REIT",
     "Hybrid REIT listed on Nasdaq"
    ],
-   "a": 2,
+   "a": 0,
    "w": [
-    "Wrong: a publicly traded REIT is both registered with the SEC and exchange-listed, unlike this one.",
-    "Wrong: a private REIT is neither registered nor listed; it is exempt from SEC registration.",
     "Correct: a non-traded REIT is registered under the 1933 Act and files reports, but its shares do not trade on an exchange.",
+    "Wrong: a private REIT is neither registered nor listed; it is exempt from SEC registration.",
+    "Wrong: a publicly traded REIT is both registered with the SEC and exchange-listed, unlike this one.",
     "Wrong: a REIT listed on Nasdaq is exchange-traded by definition, regardless of whether it is a hybrid."
    ]
   },
@@ -873,15 +921,15 @@
    "d": 2,
    "q": "Which of the following is true of private REITs?",
    "o": [
-    "They are generally exempt from SEC registration and may be sold only to accredited investors and institutions",
     "They file annual and quarterly reports and a prospectus with the SEC",
+    "They are generally exempt from SEC registration and may be sold only to accredited investors and institutions",
     "They are listed on the major exchanges",
     "They are the most appropriate REIT for retail investors"
    ],
-   "a": 0,
+   "a": 1,
    "w": [
-    "Correct: private REITs are exempt from SEC registration and disclosure and are limited to accredited and institutional buyers.",
     "Wrong: annual and quarterly reports and a prospectus are required of public and non-traded REITs, not private ones.",
+    "Correct: private REITs are exempt from SEC registration and disclosure and are limited to accredited and institutional buyers.",
     "Wrong: private REITs do not trade on exchanges; listing is what separates public REITs.",
     "Wrong: publicly traded REITs, not private ones, are the most appropriate REIT form for retail clients."
    ]
@@ -933,15 +981,15 @@
    "d": 2,
    "q": "A REIT holds hospitals, a mortgage portfolio on apartment buildings, and receives both rent and interest. How is it classified?",
    "o": [
-    "Equity REIT",
     "Hybrid REIT",
+    "Equity REIT",
     "Mortgage REIT",
     "Master limited partnership"
    ],
-   "a": 1,
+   "a": 0,
    "w": [
-    "Wrong: an equity REIT holds only real property and earns rent and property-sale gains.",
     "Correct: holding both real property and mortgage debt, with income from rent and interest, defines a hybrid REIT.",
+    "Wrong: an equity REIT holds only real property and earns rent and property-sale gains.",
     "Wrong: a mortgage REIT holds only mortgages and MBS; this REIT also owns real property.",
     "Wrong: an MLP is a publicly traded limited partnership, not a REIT."
    ]
@@ -974,16 +1022,16 @@
    "q": "Dividends paid by a REIT to its shareholders are generally taxed",
    "o": [
     "at the lower rate if held more than 60 days",
-    "as a tax-free return of capital in all cases",
+    "as ordinary income at the shareholder’s tax bracket",
     "at the corporate level only, not to the shareholder",
-    "as ordinary income at the shareholder’s tax bracket"
+    "as a tax-free return of capital in all cases"
    ],
-   "a": 3,
+   "a": 1,
    "w": [
     "Wrong: the lower rate with a 60-day holding period applies to dividends of traditional corporations, not REITs.",
-    "Wrong: REIT dividends are not tax-free; they are taxed as ordinary income.",
+    "Correct: because the REIT passes through gains and avoids corporate tax, its dividends are always taxed as ordinary income to the investor.",
     "Wrong: a qualifying REIT avoids corporate tax on what it distributes; the shareholder bears the tax.",
-    "Correct: because the REIT passes through gains and avoids corporate tax, its dividends are always taxed as ordinary income to the investor."
+    "Wrong: REIT dividends are not tax-free; they are taxed as ordinary income."
    ]
   },
   {
@@ -1014,16 +1062,16 @@
    "q": "Which investor objective is a REIT most appropriate for?",
    "o": [
     "Tax shelter through loss pass-through",
-    "Current income",
+    "Avoiding all market risk",
     "Capital preservation with a guaranteed return",
-    "Avoiding all market risk"
+    "Current income"
    ],
-   "a": 1,
+   "a": 3,
    "w": [
     "Wrong: tax shelter is a DPP feature; REITs do not pass losses through.",
-    "Correct: REITs are among the most popular equity choices for investors whose primary objective is current income.",
+    "Wrong: REIT values fall with property values and rising rates, so market risk remains.",
     "Wrong: REITs carry real estate market and interest-rate risk and offer no guarantee.",
-    "Wrong: REIT values fall with property values and rising rates, so market risk remains."
+    "Correct: REITs are among the most popular equity choices for investors whose primary objective is current income."
    ]
   },
   {
@@ -1033,16 +1081,16 @@
    "d": 3,
    "q": "A client invests in an equity REIT. Which development poses the GREATEST threat to the REIT’s profitability according to the chapter?",
    "o": [
-    "A rise in interest rates that increases the REIT’s borrowing costs",
-    "An increase in occupancy rates across its buildings",
     "A rise in demand for new space",
+    "An increase in occupancy rates across its buildings",
+    "A rise in interest rates that increases the REIT’s borrowing costs",
     "A decline in the REIT’s correlation with stocks and bonds"
    ],
-   "a": 0,
+   "a": 2,
    "w": [
-    "Correct: higher interest rates raise borrowing costs and can drive down an equity REIT’s profitability.",
-    "Wrong: rising occupancy lifts rents and property values, which helps rather than hurts the REIT.",
     "Wrong: greater demand for space supports rents and values, which benefits the REIT.",
+    "Wrong: rising occupancy lifts rents and property values, which helps rather than hurts the REIT.",
+    "Correct: higher interest rates raise borrowing costs and can drive down an equity REIT’s profitability.",
     "Wrong: low correlation is a diversification benefit, not a threat to profitability."
    ]
   },
@@ -1053,17 +1101,17 @@
    "d": 3,
    "q": "A 40-year-old client with an IRA wants income and appreciation and is comfortable with real estate risk. Which statement best supports recommending a publicly traded REIT inside the IRA?",
    "o": [
-    "REIT losses will offset other IRA income",
+    "The REIT dividends are not currently taxed inside the IRA; tax is deferred until withdrawal",
     "The IRA will receive the lower qualified dividend rate",
     "REITs are guaranteed not to fall in value",
-    "The REIT dividends are not currently taxed inside the IRA; tax is deferred until withdrawal"
+    "REIT losses will offset other IRA income"
    ],
-   "a": 3,
+   "a": 0,
    "w": [
-    "Wrong: REITs do not pass through losses, so there is nothing to offset against other IRA income.",
+    "Correct: the IRA shelters the ordinary-income dividends, which are deferred until the client withdraws.",
     "Wrong: REIT dividends are always ordinary income and never earn the lower qualified rate.",
     "Wrong: REIT shares can fall with property values, interest rates and demand.",
-    "Correct: the IRA shelters the ordinary-income dividends, which are deferred until the client withdraws."
+    "Wrong: REITs do not pass through losses, so there is nothing to offset against other IRA income."
    ]
   },
   {
@@ -1075,15 +1123,15 @@
    "o": [
     "Publicly traded REIT",
     "Exchange-traded note",
-    "Direct participation program",
-    "Local government investment pool"
+    "Local government investment pool",
+    "Direct participation program"
    ],
-   "a": 2,
+   "a": 3,
    "w": [
     "Wrong: REITs pass through gains but not losses and cannot shelter income.",
     "Wrong: an ETN is unsecured debt of its issuer and passes through no losses.",
-    "Correct: DPPs pass through income, gains and passive losses, so they can shelter certain taxable income.",
-    "Wrong: an LGIP is a municipal fund security and offers no tax shelter through losses."
+    "Wrong: an LGIP is a municipal fund security and offers no tax shelter through losses.",
+    "Correct: DPPs pass through income, gains and passive losses, so they can shelter certain taxable income."
    ]
   },
   {
@@ -1113,16 +1161,16 @@
    "d": 2,
    "q": "A direct participation program described as a blind pool is one that",
    "o": [
-    "does not disclose the specific investments it will make",
-    "does not disclose the investors’ names to the SEC",
     "is prohibited from selling any assets in its first five years",
+    "does not disclose the investors’ names to the SEC",
+    "does not disclose the specific investments it will make",
     "does not require investors to disclose their income"
    ],
-   "a": 0,
+   "a": 2,
    "w": [
-    "Correct: in a blind pool the specific business activities or holdings are not yet identified, so investors cannot evaluate risk or return.",
-    "Wrong: a blind pool concerns hidden investments, not the privacy of the investors’ identities.",
     "Wrong: no five-year asset-sale prohibition defines a blind pool; the term is about undisclosed holdings.",
+    "Wrong: a blind pool concerns hidden investments, not the privacy of the investors’ identities.",
+    "Correct: in a blind pool the specific business activities or holdings are not yet identified, so investors cannot evaluate risk or return.",
     "Wrong: investor income disclosure has nothing to do with the term blind pool."
    ]
   },
@@ -1134,16 +1182,16 @@
    "q": "Which of the following are reasons DPPs are generally suitable only for sophisticated investors? I. Frequent blind-pool structure II. Highly illiquid with no guaranteed secondary market III. Daily redemption at NAV IV. High risk",
    "o": [
     "I and II only",
-    "II and III only",
+    "I, II and IV only",
     "I, III and IV only",
-    "I, II and IV only"
+    "II and III only"
    ],
-   "a": 3,
+   "a": 1,
    "w": [
     "Wrong: this omits high risk, which the chapter also cites as a reason for limited suitability.",
-    "Wrong: daily redemption at NAV is an open-end fund feature, so statement III cannot be a DPP risk.",
+    "Correct: blind pools, illiquidity and high risk all limit suitability, while daily NAV redemption is not a DPP feature.",
     "Wrong: statement III is false for DPPs and this choice drops the illiquidity point, so it cannot be correct.",
-    "Correct: blind pools, illiquidity and high risk all limit suitability, while daily NAV redemption is not a DPP feature."
+    "Wrong: daily redemption at NAV is an open-end fund feature, so statement III cannot be a DPP risk."
    ]
   },
   {
@@ -1155,15 +1203,15 @@
    "o": [
     "C corporation",
     "open-end investment company",
-    "limited partnership",
-    "unit investment trust"
+    "unit investment trust",
+    "limited partnership"
    ],
-   "a": 2,
+   "a": 3,
    "w": [
     "Wrong: a C corporation is taxable and subject to double taxation, so it is not a DPP.",
     "Wrong: an open-end investment company is a mutual fund, which is not a DPP.",
-    "Correct: the limited partnership is the most common form, with general and limited partners.",
-    "Wrong: a unit investment trust is an investment company product and not the usual DPP structure."
+    "Wrong: a unit investment trust is an investment company product and not the usual DPP structure.",
+    "Correct: the limited partnership is the most common form, with general and limited partners."
    ]
   },
   {
@@ -1173,15 +1221,15 @@
    "d": 2,
    "q": "A client owns shares in a small business organized as an S corporation. Compared with a client who owns Apple stock, the S corporation shareholder",
    "o": [
-    "pays tax only at the corporate level",
     "receives a pass-through of income and losses and is not subject to double taxation",
+    "pays tax only at the corporate level",
     "is subject to double taxation on dividends",
     "cannot deduct any losses of the business"
    ],
-   "a": 1,
+   "a": 0,
    "w": [
-    "Wrong: the S corp entity is not taxed at all; tax is paid by the shareholder on the passed-through amounts.",
     "Correct: an S corp is a type of DPP, so income and losses pass through to shareholders and the entity itself is not taxed.",
+    "Wrong: the S corp entity is not taxed at all; tax is paid by the shareholder on the passed-through amounts.",
     "Wrong: double taxation is the C corporation problem, as with Apple, not the S corporation.",
     "Wrong: losses pass through to S corp shareholders just as they do for other DPPs."
    ]
@@ -1193,16 +1241,16 @@
    "d": 1,
    "q": "Which of the following is a general partner in a limited partnership?",
    "o": [
-    "The partner who manages the business and may have unlimited personal liability",
-    "The passive investor whose liability is limited to the amount invested",
     "The partner who is paid ahead of all creditors on dissolution",
+    "The passive investor whose liability is limited to the amount invested",
+    "The partner who manages the business and may have unlimited personal liability",
     "The partner who is prohibited from making any decision"
    ],
-   "a": 0,
+   "a": 2,
    "w": [
-    "Correct: general partners actively manage and usually bear personal liability along with all management authority.",
-    "Wrong: that describes a limited partner, who is passive and has liability limited to the investment.",
     "Wrong: general partners are paid last, not ahead of creditors, and management authority and liability define them.",
+    "Wrong: that describes a limited partner, who is passive and has liability limited to the investment.",
+    "Correct: general partners actively manage and usually bear personal liability along with all management authority.",
     "Wrong: general partners hold the management authority, so they are not barred from decisions."
    ]
   },
@@ -1234,15 +1282,15 @@
    "q": "Which statement about the partnership agreement is correct?",
    "o": [
     "Only the general partners receive a copy",
-    "Only the limited partners receive a copy",
     "Every partner, both general and limited, must receive a copy",
+    "Only the limited partners receive a copy",
     "It is optional if the partnership has fewer than ten limited partners"
    ],
-   "a": 2,
+   "a": 1,
    "w": [
     "Wrong: limited partners also receive a copy, since the agreement defines their rights and roles.",
-    "Wrong: general partners also receive it; the agreement is not restricted to the limited partners.",
     "Correct: all partners, general and limited, must be given a copy of the partnership agreement.",
+    "Wrong: general partners also receive it; the agreement is not restricted to the limited partners.",
     "Wrong: establishing an LP requires a partnership agreement, and no exemption based on investor count exists."
    ]
   },
@@ -1253,15 +1301,15 @@
    "d": 2,
    "q": "An interest in a limited partnership is classified as",
    "o": [
-    "a debt security, because the partner lends money to the business",
     "an equity security, because the partner owns a piece of the partnership",
+    "a debt security, because the partner lends money to the business",
     "a municipal fund security",
     "a money market instrument"
    ],
-   "a": 1,
+   "a": 0,
    "w": [
-    "Wrong: limited partners are owners, not creditors, so the interest is not debt.",
     "Correct: a partner holds an ownership stake, so the interest is an equity security.",
+    "Wrong: limited partners are owners, not creditors, so the interest is not debt.",
     "Wrong: municipal fund securities are pools issued by government entities, not business partnerships.",
     "Wrong: a money market instrument is short-term debt, which does not describe an ownership interest."
    ]
@@ -1273,16 +1321,16 @@
    "d": 2,
    "q": "Which of the following is a RIGHT of a general partner?",
    "o": [
-    "Determining the timing and amount of cash distributions",
-    "Competing against the partnership for personal gain",
     "Borrowing money from the partnership",
+    "Competing against the partnership for personal gain",
+    "Determining the timing and amount of cash distributions",
     "Mixing personal funds with partnership funds"
    ],
-   "a": 0,
+   "a": 2,
    "w": [
-    "Correct: the general partner decides when and how much cash is distributed, along with rights to bind the partnership and charge a fee.",
-    "Wrong: competing with the partnership for personal gain is expressly prohibited for a general partner.",
     "Wrong: borrowing from the partnership is a prohibited activity for general partners.",
+    "Wrong: competing with the partnership for personal gain is expressly prohibited for a general partner.",
+    "Correct: the general partner decides when and how much cash is distributed, along with rights to bind the partnership and charge a fee.",
     "Wrong: commingling personal and partnership funds is something a general partner is prohibited from doing."
    ]
   },
@@ -1314,15 +1362,15 @@
    "q": "The general partner of a real estate LP proposes selling the partnership’s main building at a price the limited partners believe is too low. Which statement is most accurate?",
    "o": [
     "Limited partners have no rights because they are passive investors",
-    "Limited partners can personally run the building’s day-to-day operations",
     "Limited partners can vote on the sale of partnership property and may sue if the general partner acts against the partnership’s interest",
+    "Limited partners can personally run the building’s day-to-day operations",
     "The general partner may sell freely because limited partners may only inspect books"
    ],
-   "a": 2,
+   "a": 1,
    "w": [
     "Wrong: passive investors still hold voting, inspection and suit rights, so they are not powerless.",
-    "Wrong: limited partners do not take part in day-to-day management, as they are passive investors.",
     "Correct: sale or refinancing of partnership property is a matter on which limited partners vote, and they can sue a general partner who breaches duties.",
+    "Wrong: limited partners do not take part in day-to-day management, as they are passive investors.",
     "Wrong: inspection is only one limited partner right; they also vote on a sale of property."
    ]
   },
@@ -1333,15 +1381,15 @@
    "d": 3,
    "q": "A general partner in an LP is NOT permitted to",
    "o": [
-    "charge the partnership a management fee",
     "continue the partnership after another general partner leaves unless the agreement authorizes it",
+    "charge the partnership a management fee",
     "accept or reject new limited partners",
     "settle accounts upon dissolution"
    ],
-   "a": 1,
+   "a": 0,
    "w": [
-    "Wrong: charging a management fee for overseeing the partnership is a general partner right.",
     "Correct: continuing after a GP’s departure is restricted unless the partnership agreement has authorized it.",
+    "Wrong: charging a management fee for overseeing the partnership is a general partner right.",
     "Wrong: accepting or rejecting new limited partners is a general partner right.",
     "Wrong: settling accounts upon dissolution of the partnership is a duty of the general partner."
    ]
@@ -1353,15 +1401,15 @@
    "d": 1,
    "q": "In the liquidation of a limited partnership, which group is paid LAST?",
    "o": [
-    "General partners",
     "Limited partners",
+    "General partners",
     "General creditors",
     "Secured lenders"
    ],
-   "a": 0,
+   "a": 1,
    "w": [
-    "Correct: general partners are last in line, behind lenders, creditors and even the limited partners.",
     "Wrong: limited partners are paid ahead of general partners but after creditors.",
+    "Correct: general partners are last in line, behind lenders, creditors and even the limited partners.",
     "Wrong: general creditors are paid after secured lenders but before any partners.",
     "Wrong: secured lenders are first in line for payment, so they are certainly not paid last."
    ]
@@ -1375,15 +1423,15 @@
    "o": [
     "$0",
     "$1,000,000",
-    "$4,000,000",
-    "$500,000"
+    "$500,000",
+    "$4,000,000"
    ],
-   "a": 3,
+   "a": 2,
    "w": [
     "Wrong: the claims total $9,500,000, which is less than $10,000,000, so something remains for partners.",
     "Wrong: $1,000,000 would remain only if unsecured creditors were owed $3,000,000, but their claim is $3,500,000.",
-    "Wrong: this subtracts only the secured lenders’ $6,000,000 and forgets the general creditors’ claims.",
-    "Correct: lenders take $6,000,000, creditors $3,500,000, leaving $10,000,000 − $6,000,000 − $3,500,000 = $500,000 for the partners."
+    "Correct: lenders take $6,000,000, creditors $3,500,000, leaving $10,000,000 − $6,000,000 − $3,500,000 = $500,000 for the partners.",
+    "Wrong: this subtracts only the secured lenders’ $6,000,000 and forgets the general creditors’ claims."
    ]
   },
   {
@@ -1393,16 +1441,16 @@
    "d": 3,
    "q": "Which is the correct order in which claims are satisfied on dissolution of a limited partnership? I. Limited partners II. Secured lenders III. General partners IV. General creditors",
    "o": [
-    "II, I, IV, III",
-    "IV, II, I, III",
     "II, IV, I, III",
+    "IV, II, I, III",
+    "II, I, IV, III",
     "II, IV, III, I"
    ],
-   "a": 2,
+   "a": 0,
    "w": [
-    "Wrong: this puts limited partners ahead of general creditors, but creditors come before any partner.",
-    "Wrong: this puts general creditors ahead of secured lenders, which reverses the first two ranks.",
     "Correct: secured lenders, then general creditors, then limited partners, and finally general partners.",
+    "Wrong: this puts general creditors ahead of secured lenders, which reverses the first two ranks.",
+    "Wrong: this puts limited partners ahead of general creditors, but creditors come before any partner.",
     "Wrong: this puts general partners ahead of limited partners, but general partners are always last."
    ]
   },
@@ -1414,16 +1462,16 @@
    "q": "Which of the following is passed through to the partners of a qualifying limited partnership? I. Income II. Gains III. Losses IV. Depreciation and depletion deductions",
    "o": [
     "I and II only",
-    "I, II, III and IV",
+    "II, III and IV only",
     "I, II and III only",
-    "II, III and IV only"
+    "I, II, III and IV"
    ],
-   "a": 1,
+   "a": 3,
    "w": [
     "Wrong: this omits losses and deductions, which also pass through to partners.",
-    "Correct: the partnership is not a taxpayer, so income, gains, losses and deductions all flow to the partners.",
+    "Wrong: this omits income, which is a core item passed through to each partner.",
     "Wrong: this omits the depreciation and depletion deductions, which are also passed through.",
-    "Wrong: this omits income, which is a core item passed through to each partner."
+    "Correct: the partnership is not a taxpayer, so income, gains, losses and deductions all flow to the partners."
    ]
   },
   {
@@ -1433,16 +1481,16 @@
    "d": 2,
    "q": "A limited partnership drills for natural gas. Which tax deduction compensates it for using up the gas in the ground?",
    "o": [
-    "Depletion",
-    "Depreciation",
     "Appreciation",
+    "Depreciation",
+    "Depletion",
     "Amortization of raw land"
    ],
-   "a": 0,
+   "a": 2,
    "w": [
-    "Correct: depletion is the deduction for using up a natural resource such as oil or gas.",
-    "Wrong: depreciation applies to the loss of value of hard assets like buildings, not natural resources.",
     "Wrong: appreciation is a rise in an asset’s value, not a tax deduction, so it cannot compensate depletion.",
+    "Wrong: depreciation applies to the loss of value of hard assets like buildings, not natural resources.",
+    "Correct: depletion is the deduction for using up a natural resource such as oil or gas.",
     "Wrong: raw land is not a deductible hard asset and amortization is not the resource deduction described here."
    ]
   },
@@ -1453,17 +1501,17 @@
    "d": 3,
    "q": "A limited partnership buys undeveloped land hoping to sell it later at a higher price. Which statement is correct?",
    "o": [
-    "The partnership may depreciate the land each year",
+    "The partnership cannot depreciate the land because raw land is not a hard asset; investors seek appreciation",
     "The partnership may deplete the land like a natural resource",
     "The land produces no value unless a building is built",
-    "The partnership cannot depreciate the land because raw land is not a hard asset; investors seek appreciation"
+    "The partnership may depreciate the land each year"
    ],
-   "a": 3,
+   "a": 0,
    "w": [
-    "Wrong: depreciation requires a hard asset, and raw land does not qualify.",
+    "Correct: raw land is not a hard asset, so it earns no depreciation, and investors rely on appreciation in value.",
     "Wrong: depletion is for natural resources such as oil and gas, and real estate cannot be depleted.",
     "Wrong: land can appreciate without any building, which is the investors’ goal here.",
-    "Correct: raw land is not a hard asset, so it earns no depreciation, and investors rely on appreciation in value."
+    "Wrong: depreciation requires a hard asset, and raw land does not qualify."
    ]
   },
   {
@@ -1473,15 +1521,15 @@
    "d": 1,
    "q": "A master limited partnership differs from a regular limited partnership in that an MLP",
    "o": [
-    "is offered to the public and traded on exchanges",
     "gives its limited partners unlimited liability",
+    "is offered to the public and traded on exchanges",
     "is taxed as a C corporation",
     "is never allowed to invest in natural resources"
    ],
-   "a": 0,
+   "a": 1,
    "w": [
-    "Correct: an MLP is a limited partnership whose interests are publicly offered and exchange-traded, so they are more liquid.",
     "Wrong: MLP investors keep limited liability, much like corporate shareholders, so liability is not unlimited.",
+    "Correct: an MLP is a limited partnership whose interests are publicly offered and exchange-traded, so they are more liquid.",
     "Wrong: MLPs pass income through, avoiding the double taxation of a C corporation.",
     "Wrong: MLPs are particularly common in natural resources, financial services and real estate."
    ]
@@ -1491,7 +1539,7 @@
    "r": "5.2.6",
    "k": "scenario",
    "d": 2,
-   "q": "Jack is considering an oil and gas limited partnership, and his representative suggests an oil and gas MLP instead. What advantage does the MLP offer that the regular LP lacks?",
+   "q": "A client is weighing a private oil and gas limited partnership against an oil and gas MLP with the same drilling projects. Which advantage does the MLP have over the regular LP?",
    "o": [
     "Pass-through of depletion deductions",
     "Limited liability for investors",
@@ -1513,16 +1561,16 @@
    "d": 2,
    "q": "Which statement about MLPs is correct?",
    "o": [
-    "They are suitable only for institutional and accredited investors",
-    "They are subject to double taxation like a corporation",
     "Because they are exchange-traded, they are more liquid and less risky than other DPPs and can suit retail investors",
+    "They are subject to double taxation like a corporation",
+    "They are suitable only for institutional and accredited investors",
     "They must have a single limited partner"
    ],
-   "a": 2,
+   "a": 0,
    "w": [
-    "Wrong: that suitability limit describes illiquid non-traded DPPs in general, not exchange-traded MLPs.",
-    "Wrong: MLPs avoid double taxation through pass-through treatment of income, unlike a corporation.",
     "Correct: exchange trading makes MLPs more liquid and suitable for a wider range of investors, including retail.",
+    "Wrong: MLPs avoid double taxation through pass-through treatment of income, unlike a corporation.",
+    "Wrong: that suitability limit describes illiquid non-traded DPPs in general, not exchange-traded MLPs.",
     "Wrong: MLPs may have hundreds of limited partners, so a single limited partner is not required."
    ]
   },
@@ -1535,15 +1583,15 @@
    "o": [
     "a 20% annual management fee plus 2% of profits",
     "a 2% annual management fee plus 20% of profits",
-    "a 2% sales charge for twenty years",
-    "a 2% fee for twenty months after purchase"
+    "a 2% front-end load that is waived after twenty years",
+    "a 2% fee on profits once the fund has gained a cumulative 20%"
    ],
    "a": 1,
    "w": [
     "Wrong: this reverses the percentages; the management fee is the smaller number.",
     "Correct: two and twenty means roughly a 2% management fee on assets plus a 20% performance fee on profits.",
-    "Wrong: two and twenty is not a sales-charge schedule and has nothing to do with a twenty-year period.",
-    "Wrong: twenty does not refer to months; it is the percentage of profits taken as a performance fee."
+    "Wrong: two and twenty is a management-plus-performance fee model, not a sales-charge schedule with any waiting period.",
+    "Wrong: the twenty is the share of profits taken as a performance fee, not a cumulative-gain threshold for a 2% fee."
    ]
   },
   {
@@ -1553,17 +1601,17 @@
    "d": 2,
    "q": "A hedge fund with $40,000,000 in assets earns a $5,000,000 profit for the year and charges two and twenty. What total fee does the manager earn?",
    "o": [
-    "$1,800,000",
+    "$800,000",
     "$1,000,000",
-    "$2,800,000",
-    "$9,000,000"
+    "$1,800,000",
+    "$8,100,000"
    ],
-   "a": 0,
+   "a": 2,
    "w": [
-    "Correct: the management fee is 2% × $40,000,000 = $800,000 and the performance fee is 20% × $5,000,000 = $1,000,000, totaling $1,800,000.",
+    "Wrong: $800,000 is only the 2% management fee on $40,000,000 and leaves out the 20% performance fee on the $5,000,000 profit.",
     "Wrong: $1,000,000 is only the performance fee and omits the 2% management fee of $800,000.",
-    "Wrong: this applies 2% and 20% to the wrong bases; 20% of the $5,000,000 profit is $1,000,000, not $2,000,000.",
-    "Wrong: this applies 20% to the whole asset base and 2% to profit, reversing the fee structure."
+    "Correct: the management fee is 2% × $40,000,000 = $800,000 and the performance fee is 20% × $5,000,000 = $1,000,000, totaling $1,800,000.",
+    "Wrong: this applies 20% to the whole $40,000,000 asset base and 2% to the profit, which reverses the fee structure."
    ]
   },
   {
@@ -1595,15 +1643,15 @@
    "o": [
     "Hedge funds must register under the Investment Company Act of 1940",
     "Hedge funds are exempt from anti-fraud provisions",
-    "Hedge funds are exempt from the Investment Company Act of 1940",
-    "Hedge fund managers owe no fiduciary duty to investors"
+    "Hedge fund managers owe no fiduciary duty to investors",
+    "Hedge funds are exempt from the Investment Company Act of 1940"
    ],
-   "a": 2,
+   "a": 3,
    "w": [
     "Wrong: registration under the 1940 Act is exactly what hedge funds avoid.",
     "Wrong: hedge funds are subject to the same fraud prohibitions as other market participants.",
-    "Correct: hedge funds are exempt from the 1940 Act, giving them flexibility in structure and design.",
-    "Wrong: hedge fund managers owe a fiduciary duty to the investors in their funds."
+    "Wrong: hedge fund managers owe a fiduciary duty to the investors in their funds.",
+    "Correct: hedge funds are exempt from the 1940 Act, giving them flexibility in structure and design."
    ]
   },
   {
@@ -1613,15 +1661,15 @@
    "d": 3,
    "q": "Under the Dodd–Frank Act, which private fund manager must register with the SEC?",
    "o": [
-    "A manager of private funds with $100 million in assets",
     "A manager of private funds with $200 million in assets",
+    "A manager of private funds with $100 million in assets",
     "A manager of a fund with $150 million or less in assets",
     "No private fund manager is required to register"
    ],
-   "a": 1,
+   "a": 0,
    "w": [
-    "Wrong: $100 million is below the $150 million threshold that triggers registration.",
     "Correct: managers of private funds with more than $150 million in assets must register, and $200 million exceeds that threshold.",
+    "Wrong: $100 million is below the $150 million threshold that triggers registration.",
     "Wrong: the requirement applies above $150 million, so a fund at or below it is not caught.",
     "Wrong: Dodd–Frank added provisions requiring larger private fund managers to register with the SEC."
    ]
@@ -1633,15 +1681,15 @@
    "d": 2,
    "q": "Which of the following strategies is characteristic of hedge funds and carries unlimited loss potential in rising markets?",
    "o": [
-    "Short selling",
     "Buying securities for cash",
+    "Short selling",
     "Holding long positions only",
     "Investing in a money market fund"
    ],
-   "a": 0,
+   "a": 1,
    "w": [
-    "Correct: short positions can lose an unlimited amount when prices rise, whereas a long position can fall only to zero.",
     "Wrong: a cash purchase is a long position with loss capped at the amount invested.",
+    "Correct: short positions can lose an unlimited amount when prices rise, whereas a long position can fall only to zero.",
     "Wrong: a long position can fall no further than zero, so loss is limited.",
     "Wrong: a money market fund is a low-risk product and has no unlimited loss exposure."
    ]
@@ -1651,19 +1699,19 @@
    "r": "5.3.3.1",
    "k": "scenario",
    "d": 2,
-   "q": "A hedge fund has a $250,000 minimum and a three-year lock-up. For which client need would it be LEAST appropriate?",
+   "q": "A hedge fund requires a $500,000 minimum and imposes a four-year lock-up on new capital. Which client need would it satisfy LEAST?",
    "o": [
     "Long-term capital appreciation",
     "Diversification from stock and bond markets",
-    "Participation by a sophisticated, high-net-worth investor",
-    "Short-term access to cash"
+    "Short-term access to cash",
+    "Participation by a sophisticated, high-net-worth investor"
    ],
-   "a": 3,
+   "a": 2,
    "w": [
     "Wrong: a long-term investor is the type who can tolerate the lock-up period.",
     "Wrong: hedge funds can provide returns not closely correlated with stocks and bonds, which supports this need.",
-    "Wrong: sophisticated high-net-worth investors are the intended hedge fund audience, so this need is a good fit.",
-    "Correct: a lock-up bars withdrawals, so a client who may need cash soon faces serious liquidity risk."
+    "Correct: a lock-up bars withdrawals, so a client who may need cash soon faces serious liquidity risk.",
+    "Wrong: sophisticated high-net-worth investors are the intended hedge fund audience, so this need is a good fit."
    ]
   },
   {
@@ -1675,15 +1723,15 @@
    "o": [
     "inflation risk",
     "reinvestment risk",
-    "liquidity risk",
-    "call risk"
+    "call risk",
+    "liquidity risk"
    ],
-   "a": 2,
+   "a": 3,
    "w": [
     "Wrong: inflation risk is about purchasing power and is not what a lock-up creates.",
     "Wrong: reinvestment risk is tied to reinvesting proceeds at lower rates, not to withdrawal restrictions.",
-    "Correct: investors cannot withdraw during the lock-up, so they face liquidity risk.",
-    "Wrong: call risk relates to bonds being redeemed early by the issuer."
+    "Wrong: call risk relates to bonds being redeemed early by the issuer.",
+    "Correct: investors cannot withdraw during the lock-up, so they face liquidity risk."
    ]
   },
   {
@@ -1694,15 +1742,15 @@
    "q": "All of the following are differences between hedge funds and mutual funds EXCEPT",
    "o": [
     "hedge funds may hold non-securities such as real estate",
-    "both are open to all investors, subject to the fund’s objectives",
     "hedge funds use significant leverage while mutual funds have limited ability to trade on margin",
+    "both are open to all investors, subject to the fund’s objectives",
     "hedge funds often impose a lock-up of two years or more"
    ],
-   "a": 1,
+   "a": 2,
    "w": [
     "Wrong: holding non-securities such as real estate or jewelry is a genuine hedge fund difference.",
-    "Correct: only mutual funds are appropriate for all investors; hedge funds are limited to sophisticated high-net-worth investors.",
     "Wrong: leverage including derivatives is a genuine hedge fund difference from mutual funds.",
+    "Correct: only mutual funds are appropriate for all investors; hedge funds are limited to sophisticated high-net-worth investors.",
     "Wrong: lock-up periods of two years or more are a genuine hedge fund difference from redeemable mutual funds."
    ]
   },
@@ -1734,16 +1782,16 @@
    "q": "A private equity fund buys a majority position in a struggling manufacturer. Which statement about the fund’s investors and manager is correct?",
    "o": [
     "Investors choose the company while the manager only collects fees",
-    "The manager is paid only if the fund’s shares trade on an exchange",
+    "Investors are passive while the manager performs due diligence and is paid about 2% of invested capital plus about 20% of profits",
     "The manager earns a fixed 20% of invested capital and no share of profits",
-    "Investors are passive while the manager performs due diligence and is paid about 2% of invested capital plus about 20% of profits"
+    "The manager is paid only if the fund’s shares trade on an exchange"
    ],
-   "a": 3,
+   "a": 1,
    "w": [
     "Wrong: investors play a passive role in selecting investments; the manager does the due diligence.",
-    "Wrong: private equity funds are not exchange-traded, and compensation is not tied to listing.",
+    "Correct: the management team researches and selects investments; investors are passive, and pay mirrors hedge fund fees.",
     "Wrong: the fee is roughly 2% of invested capital plus a portion of profits, not 20% of capital.",
-    "Correct: the management team researches and selects investments; investors are passive, and pay mirrors hedge fund fees."
+    "Wrong: private equity funds are not exchange-traded, and compensation is not tied to listing."
    ]
   },
   {
@@ -1753,16 +1801,16 @@
    "d": 1,
    "q": "An exchange-traded note is best described as",
    "o": [
-    "a fund that owns the securities in its portfolio",
-    "a limited partnership offered to the public",
     "an unsecured debt instrument of its issuer whose return is tied to an equity security or market",
+    "a limited partnership offered to the public",
+    "a fund that owns the securities in its portfolio",
     "a pool issued by a state government"
    ],
-   "a": 2,
+   "a": 0,
    "w": [
-    "Wrong: owning the underlying securities is how an ETF works, not an ETN.",
-    "Wrong: that describes a master limited partnership, which is an LP and not a debt note like an ETN.",
     "Correct: an ETN is unsecured corporate debt, typically issued by a broker-dealer, with a return tied to an underlying equity or market.",
+    "Wrong: that describes a master limited partnership, which is an LP and not a debt note like an ETN.",
+    "Wrong: owning the underlying securities is how an ETF works, not an ETN.",
     "Wrong: that describes a municipal fund security, which is an equity pool and not a note like an ETN."
    ]
   },
@@ -1791,19 +1839,19 @@
    "r": "5.5.1.1",
    "k": "concept",
    "d": 2,
-   "q": "Which feature of an ETN is NOT found in an ETF?",
+   "q": "An exchange-traded note differs from an exchange-traded fund because the note",
    "o": [
-    "A maturity date",
-    "Intraday trading on an exchange",
-    "The ability to track an index",
-    "The ability to buy a few shares at a time"
+    "can be bought in small lots, such as a handful of shares",
+    "trades on an exchange during the day",
+    "can be linked to the performance of an index",
+    "has a stated maturity date at which it is paid off"
    ],
-   "a": 0,
+   "a": 3,
    "w": [
-    "Correct: ETNs are notes with a maturity date at which they are liquidated, while ETFs have no maturity.",
-    "Wrong: both ETNs and ETFs are exchange-traded products and can trade intraday.",
-    "Wrong: both products can seek to track an index, so this is not a unique ETN feature.",
-    "Wrong: both can be bought a few shares at a time on an exchange."
+    "Wrong: both can be bought in small lots on an exchange, so this does not distinguish the note from the fund.",
+    "Wrong: both products are exchange-traded, so trading during the day does not set the note apart from the fund.",
+    "Wrong: both products can be built to follow an index, so index linkage is not unique to the note.",
+    "Correct: an ETN is a debt note that matures and is liquidated on a set date, whereas an ETF is a fund with no maturity."
    ]
   },
   {
@@ -1815,15 +1863,15 @@
    "o": [
     "debt securities backed by a municipality’s taxing power",
     "investment company shares regulated by the SEC",
-    "exchange-traded notes issued by a broker-dealer",
-    "equity investment pools issued by a state or local government entity"
+    "equity investment pools issued by a state or local government entity",
+    "exchange-traded notes issued by a broker-dealer"
    ],
-   "a": 3,
+   "a": 2,
    "w": [
     "Wrong: unlike standard municipal securities, municipal fund securities are not debt securities.",
     "Wrong: they are regulated by the MSRB and are not subject to SEC registration under the 1940 Act.",
-    "Wrong: an ETN is unsecured debt of a broker-dealer and has no connection to government pools.",
-    "Correct: municipal fund securities, defined in MSRB Rule D-12, are mutual-fund-like pools in which investors own a share, so they are equity."
+    "Correct: municipal fund securities, defined in MSRB Rule D-12, are mutual-fund-like pools in which investors own a share, so they are equity.",
+    "Wrong: an ETN is unsecured debt of a broker-dealer and has no connection to government pools."
    ]
   },
   {
@@ -1834,15 +1882,15 @@
    "q": "Which feature required of a mutual fund is NOT required of a local government investment pool?",
    "o": [
     "Investment of pooled money by professional managers",
-    "Pooling of cash from many investors",
     "Daily calculation of net asset value",
+    "Pooling of cash from many investors",
     "A stated investment objective"
    ],
-   "a": 2,
+   "a": 1,
    "w": [
     "Wrong: LGIP money is managed by government employees or an outside investment management firm.",
-    "Wrong: pooling money from many participants is the essence of an LGIP.",
     "Correct: an LGIP is not required to calculate NAV daily, prepare a prospectus and SAI, or have independent directors.",
+    "Wrong: pooling money from many participants is the essence of an LGIP.",
     "Wrong: LGIPs operate under established investment objectives, such as stability or maximum return."
    ]
   },
@@ -1854,16 +1902,136 @@
    "q": "A municipal securities dealer markets shares of an LGIP to a county treasurer. What must the dealer deliver, and when?",
    "o": [
     "A prospectus, at or before the first contact",
-    "The issuer’s official statement, at or before settlement",
+    "No document, because LGIPs are unregulated",
     "The SEC registration statement, within 30 days",
-    "No document, because LGIPs are unregulated"
+    "The issuer’s official statement, at or before settlement"
+   ],
+   "a": 3,
+   "w": [
+    "Wrong: LGIPs are not SEC-registered mutual funds, so no prospectus is delivered; the disclosure is an official statement.",
+    "Wrong: LGIPs are regulated by the MSRB and are not unregulated; disclosure is required.",
+    "Wrong: LGIPs are not subject to SEC registration, so no registration statement exists to deliver.",
+    "Correct: the dealer must obtain the issuer’s official statement and give it to the governmental investor at or before settlement."
+   ]
+  },
+  {
+   "id": "5-q61",
+   "r": "5.6.1.1",
+   "k": "concept",
+   "d": 2,
+   "q": "Which statement describes the investment objective of most local government investment pools?",
+   "o": [
+    "Maximize returns by holding long-term, lower-quality securities",
+    "Replicate a stock index with full equity exposure",
+    "Resemble money market funds, emphasizing stability, liquidity and little price volatility",
+    "Generate tax losses to shelter the participants’ other income"
+   ],
+   "a": 2,
+   "w": [
+    "Wrong: only some pools chase higher returns with longer-term securities, and those carry added market and liquidity risk; they are the minority.",
+    "Wrong: pools holding public cash are not built to replicate an equity index with full stock market exposure.",
+    "Correct: most LGIPs follow the money market fund model, investing short term for stability and liquidity.",
+    "Wrong: governments are not taxed on this cash, and a pool passes through no losses as a shelter."
+   ]
+  },
+  {
+   "id": "5-q62",
+   "r": "5.6.1.4",
+   "k": "concept",
+   "d": 2,
+   "q": "How do the management fees and other charges of a local government investment pool affect participants?",
+   "o": [
+    "They are paid from the assets in the pool, which reduces returns and share values",
+    "They are billed separately to each government’s general budget and do not affect returns",
+    "They are waived because the pool is not an investment company",
+    "They are paid only by the manager out of its own profits"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: fees are deducted from pool assets, so they lower current returns and the value of shares.",
+    "Wrong: the charges come out of the pool itself, so they do reduce returns.",
+    "Wrong: not being an investment company does not remove fees; the pool and its manager still charge them.",
+    "Wrong: the manager is paid a fee from the pool’s assets rather than bearing the cost itself."
+   ]
+  },
+  {
+   "id": "5-q63",
+   "r": "5.1",
+   "k": "concept",
+   "d": 1,
+   "q": "Which characteristic of REITs makes them useful for diversifying a portfolio of stocks and bonds?",
+   "o": [
+    "Their returns are guaranteed by the issuer",
+    "They pass losses through to offset gains elsewhere in the portfolio",
+    "Their returns have relatively low correlation with those of other asset classes",
+    "They are priced at NAV like open-end funds"
+   ],
+   "a": 2,
+   "w": [
+    "Wrong: REITs carry real estate and interest-rate risk, and no issuer guarantees returns.",
+    "Wrong: REITs do not pass losses through, so they cannot offset gains elsewhere.",
+    "Correct: low correlation with stocks and bonds is what lets REITs add diversification without raising overall volatility.",
+    "Wrong: listed REITs trade at market prices that may differ from NAV, and pricing method is unrelated to diversification."
+   ]
+  },
+  {
+   "id": "5-q64",
+   "r": "5.3",
+   "k": "concept",
+   "d": 2,
+   "q": "Why are many hedge funds organized as limited partnerships?",
+   "o": [
+    "It lets the fund avoid all fiduciary duties",
+    "It prevents creditors of a failed fund from pursuing investors for more than they put in",
+    "It guarantees positive returns",
+    "It removes any requirement to pay fees"
    ],
    "a": 1,
    "w": [
-    "Wrong: LGIPs are not SEC-registered mutual funds, so no prospectus is delivered; the disclosure is an official statement.",
-    "Correct: the dealer must obtain the issuer’s official statement and give it to the governmental investor at or before settlement.",
-    "Wrong: LGIPs are not subject to SEC registration, so no registration statement exists to deliver.",
-    "Wrong: LGIPs are regulated by the MSRB and are not unregulated; disclosure is required."
+    "Wrong: managers still owe a fiduciary duty to investors in the fund.",
+    "Correct: limited liability means investors cannot lose more than their investment if the fund fails.",
+    "Wrong: no legal structure guarantees returns, and hedge funds carry heightened risk.",
+    "Wrong: the partnership form has no bearing on fees; hedge funds charge management and performance fees."
+   ]
+  },
+  {
+   "id": "5-q65",
+   "r": "5.4.2",
+   "k": "scenario",
+   "d": 2,
+   "q": "A 45-year-old client with a moderate income and limited savings asks about putting most of her portfolio into a private equity fund. What is the most appropriate response?",
+   "o": [
+    "Private equity suits only wealthy individuals and institutions that can commit large sums for long periods and accept very high risk",
+    "Private equity is a low-risk alternative to bonds and suits most investors",
+    "Private equity is appropriate because investors can redeem quickly at NAV",
+    "Private equity is suitable because the fund guarantees principal"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: private equity is one of the riskiest investments and is illiquid, so it fits only wealthy or institutional investors.",
+    "Wrong: many portfolio companies fail or underperform, so private equity is far from a low-risk bond substitute.",
+    "Wrong: private equity commitments are long term and are not redeemable at NAV on short notice.",
+    "Wrong: no principal guarantee exists; investors accept significant long-term risk for potentially high returns."
+   ]
+  },
+  {
+   "id": "5-q66",
+   "r": "5.5.1.1",
+   "k": "concept",
+   "d": 2,
+   "q": "Compared with an ETF, the secondary market for an ETN is",
+   "o": [
+    "nonexistent, because ETNs cannot be sold before maturity",
+    "deeper, so the ETN is generally more liquid",
+    "identical, because both own the same securities",
+    "more limited, so the ETN is generally less liquid"
+   ],
+   "a": 3,
+   "w": [
+    "Wrong: ETNs are exchange-traded and can be sold before maturity, although liquidity may be limited.",
+    "Wrong: it is the ETF that has the more active secondary market.",
+    "Wrong: an ETN does not own securities; it is unsecured debt of its issuer.",
+    "Correct: ETNs are a newer product with a thinner secondary market, which makes them less liquid than ETFs."
    ]
   }
  ]

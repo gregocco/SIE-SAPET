@@ -50,7 +50,7 @@
   },
   {
    "h": "Short sales",
-   "md": "- **Short sale**: sell **borrowed** shares, hoping to buy them back (**buy to cover**) at a **lower** price and return them to the lender. Motive: speculate on a **price decline** (or protect against an adverse event).\n- Profit/loss = **sale price − cover price** per share.\n- Example: short 300 at $67 (proceeds $20,100), cover at $61.50 (cost $18,450) → profit **$1,650**. Cover at $75 → loss **$2,400**.\n- Shares must be locatable (e.g., on the firm’s **easy-to-borrow** list).\n- **Unlimited risk**: the price can rise indefinitely, and the shares must still be bought back.\n> **Exam tip** Short sellers profit when the price falls and have **unlimited** loss potential. Long buyers can lose at most what they paid."
+   "md": "- **Short sale**: sell **borrowed** shares, hoping to buy them back (**buy to cover**) at a **lower** price and return them to the lender. Motive: speculate on a **price decline** (or protect against an adverse event affecting the stock).\n- Profit/loss = **sale price − cover price** per share.\n- Example: short 300 at $67 (proceeds $20,100), cover at $61.50 (cost $18,450) → profit **$1,650**. Cover at $75 → loss **$2,400**.\n- Shares must be available to borrow (e.g., on the firm’s **easy-to-borrow** list).\n- **Unlimited risk**: the price can rise indefinitely, and the shares must still be bought back.\n> **Exam tip** Short sellers profit when the price falls and have **unlimited** loss potential. Long buyers can lose at most what they paid."
   }
  ],
  "traps": [
@@ -105,11 +105,11 @@
  "glossary": [
   {
    "t": "Common stock",
-   "d": "Equity security representing ownership, with a residual claim on assets and earnings and potential for capital gains and dividends."
+   "d": "Ownership share in a corporation that carries a residual claim on assets and profits; investors seek price appreciation, dividends, or both."
   },
   {
    "t": "Preferred stock",
-   "d": "Equity security senior to common that pays a regular fixed dividend, usually has no vote, and trades like a debt security."
+   "d": "Hybrid equity that ranks ahead of common in liquidation, pays a fixed dividend set as a percentage of par, and usually carries no vote."
   },
   {
    "t": "Book-entry",
@@ -181,7 +181,7 @@
   },
   {
    "t": "Ex-rights",
-   "d": "Describes stock trading separately from its rights, worth less than stock with rights attached."
+   "d": "Status of a stock once its rights trade separately, so the stock no longer carries them and is worth less."
   },
   {
    "t": "Warrant",
@@ -724,6 +724,54 @@
    "f": "Short seller’s risk",
    "b": "**Unlimited**, because the stock price can rise indefinitely.",
    "r": "1.8"
+  },
+  {
+   "id": "1-c71",
+   "f": "Beta: risk and return trade-off",
+   "b": "**Higher beta** = higher risk but potential for higher returns. **Lower beta** = lower risk but little short-term upside.",
+   "r": "1.3.1.1"
+  },
+  {
+   "id": "1-c72",
+   "f": "Which stocks should hold up best in a bear market?",
+   "b": "**Income and defensive** stocks: dividends continue and demand for basic needs persists.",
+   "r": "1.2.1"
+  },
+  {
+   "id": "1-c73",
+   "f": "Are proxy votes counted differently from in-person votes?",
+   "b": "**No.** A proxy is an absentee ballot counted directly, like an in-person vote; no one else needs to be delegated.",
+   "r": "1.1.1.2"
+  },
+  {
+   "id": "1-c74",
+   "f": "To whom can rights and warrants be sold?",
+   "b": "**Anyone**: both trade in the secondary market independently of the underlying stock.",
+   "r": "1.1.1.8"
+  },
+  {
+   "id": "1-c75",
+   "f": "Blue chip stock",
+   "b": "Large, stable company with a long record of steady earnings and dividends; **modest growth**, steady income (e.g., Dow components).",
+   "r": "1.2.1.1"
+  },
+  {
+   "id": "1-c76",
+   "f": "Convertible preferred and its dividend",
+   "b": "Holder can swap into common (upside of common), so the dividend is **lower** than on nonconvertible preferred.",
+   "r": "1.5.2"
+  },
+  {
+   "id": "1-c77",
+   "f": "Is a preferred dividend guaranteed?",
+   "b": "**No**, but companies are reluctant to skip it, so holders can generally count on it. Usually paid **quarterly**.",
+   "r": "1.5.1.3"
+  },
+  {
+   "id": "1-c78",
+   "f": "Why do companies do forward splits?",
+   "b": "When the share price seems **too high** to attract buyers; more shares at a lower price, total value unchanged.",
+   "r": "1.7.4"
   }
  ],
  "questions": [
@@ -756,15 +804,15 @@
    "o": [
     "It receives dividends but cannot vote",
     "It is included in the outstanding share count",
-    "It has been issued and later repurchased by the company",
-    "It has been authorized but never sold"
+    "It has been authorized but never sold",
+    "It has been issued and later repurchased by the company"
    ],
-   "a": 2,
+   "a": 3,
    "w": [
     "Wrong: treasury shares are not investor owned, so they receive neither dividends nor votes.",
     "Wrong: treasury stock is specifically excluded when calculating outstanding shares.",
-    "Correct: treasury shares were issued to investors and then bought back by the issuer.",
-    "Wrong: authorized-but-unsold shares are simply unissued; treasury stock must have been issued first."
+    "Wrong: authorized-but-unsold shares are simply unissued; treasury stock must have been issued first.",
+    "Correct: treasury shares were issued to investors and then bought back by the issuer."
    ]
   },
   {
@@ -775,16 +823,16 @@
    "q": "Which statement best describes the par value of a common stock?",
    "o": [
     "It is the price at which the stock must always trade",
-    "It determines the dividend the common stockholder receives",
+    "It is a low nominal legal-capital figure that is not relevant to the investor",
     "It is the amount creditors must repay to common holders",
-    "It is a low nominal legal-capital figure that is not relevant to the investor"
+    "It determines the dividend the common stockholder receives"
    ],
-   "a": 3,
+   "a": 1,
    "w": [
     "Wrong: market price floats independently of par, and par is merely the minimum issue price.",
-    "Wrong: for common stock par does not drive dividends; that link exists only for preferred stock.",
+    "Correct: par is a nominal legal-capital figure, often $1 or less, and is irrelevant to common investors.",
     "Wrong: common holders sit behind creditors, and par is not a repayment claim owed to them.",
-    "Correct: par is a nominal legal-capital figure, often $1 or less, and is irrelevant to common investors."
+    "Wrong: for common stock par does not drive dividends; that link exists only for preferred stock."
    ]
   },
   {
@@ -815,15 +863,15 @@
    "q": "Which of the following are rights of common stockholders?\nI. Electing the board of directors\nII. Receiving dividends that the board declares\nIII. Receiving a guaranteed fixed dividend\nIV. Inspecting the books and records of the company",
    "o": [
     "I and II only",
-    "I, II and IV only",
     "II, III and IV only",
+    "I, II and IV only",
     "I, III and IV only"
    ],
-   "a": 1,
+   "a": 2,
    "w": [
     "Wrong: this list omits the right to inspect books, records and minutes, which common holders also have.",
-    "Correct: voting for directors, declared dividends and access to company records are all common-holder rights.",
     "Wrong: common dividends are never guaranteed, and this option also drops the voting right.",
+    "Correct: voting for directors, declared dividends and access to company records are all common-holder rights.",
     "Wrong: a guaranteed fixed dividend is not a right of common stock; it describes the expected profile of preferred."
    ]
   },
@@ -836,15 +884,15 @@
    "o": [
     "$12,000",
     "The amount of the company’s debts",
-    "$6,000",
-    "Unlimited"
+    "Unlimited",
+    "$6,000"
    ],
-   "a": 2,
+   "a": 3,
    "w": [
     "Wrong: 500 × $12 is $6,000, not $12,000; this option misstates the investment.",
     "Wrong: shareholders are not personally liable for corporate debts under limited liability.",
-    "Correct: loss is capped at the amount invested, 500 × $12 = $6,000.",
-    "Wrong: unlimited loss applies to short sellers, not to a long common stockholder."
+    "Wrong: unlimited loss applies to short sellers, not to a long common stockholder.",
+    "Correct: loss is capped at the amount invested, 500 × $12 = $6,000."
    ]
   },
   {
@@ -854,15 +902,15 @@
    "d": 2,
    "q": "A customer’s shares are held in street name. Which statement is correct?",
    "o": [
-    "The customer loses voting rights until the shares are moved",
     "The broker-dealer is the nominal owner and the customer is the beneficial owner",
+    "The customer loses voting rights until the shares are moved",
     "The customer is the nominal owner and the broker-dealer is the beneficial owner",
     "The issuer sends proxy materials only to the broker-dealer, which may keep them"
    ],
-   "a": 1,
+   "a": 0,
    "w": [
-    "Wrong: the beneficial owner retains all rights of ownership, including the right to vote.",
     "Correct: the firm is the nominal owner on the books, while the customer keeps beneficial ownership and its rights.",
+    "Wrong: the beneficial owner retains all rights of ownership, including the right to vote.",
     "Wrong: this reverses the roles; the registered, nominal owner is the broker-dealer.",
     "Wrong: the broker-dealer must promptly forward proxy materials to the beneficial owner."
    ]
@@ -895,15 +943,15 @@
    "q": "According to the text, within how many days of a company’s fiscal year-end must a Form 10-K typically be filed with the SEC?",
    "o": [
     "30 days",
-    "60 days",
     "90 days",
+    "60 days",
     "180 days"
    ],
-   "a": 2,
+   "a": 1,
    "w": [
     "Wrong: 30 days is far shorter than the typical annual-report filing period.",
-    "Wrong: 60 days is not the figure given for the 10-K in this chapter.",
     "Correct: a 10-K typically must be filed within 90 days of the fiscal year-end.",
+    "Wrong: 60 days is not the figure given for the 10-K in this chapter.",
     "Wrong: 180 days is longer than the deadline the text gives."
    ]
   },
@@ -915,16 +963,16 @@
    "q": "A company liquidates and, after paying its bondholders and general creditors, has some assets left. Which group is entitled to the next distribution?",
    "o": [
     "Common stockholders",
-    "Preferred stockholders",
+    "Senior management",
     "Common and preferred equally",
-    "Senior management"
+    "Preferred stockholders"
    ],
-   "a": 1,
+   "a": 3,
    "w": [
     "Wrong: common holders are paid last, only after preferred holders have been satisfied.",
-    "Correct: after bondholders and creditors, preferred stockholders are paid before any common holder.",
+    "Wrong: management has no ownership claim ahead of preferred holders in liquidation.",
     "Wrong: the two classes are not equal; preferred holds priority over common.",
-    "Wrong: management has no ownership claim ahead of preferred holders in liquidation."
+    "Correct: after bondholders and creditors, preferred stockholders are paid before any common holder."
    ]
   },
   {
@@ -936,15 +984,15 @@
    "o": [
     "4,000",
     "25,000",
-    "100,000",
-    "10,000"
+    "10,000",
+    "100,000"
    ],
-   "a": 3,
+   "a": 2,
    "w": [
     "Wrong: 4,000 is not tied to the offering size; entitlement is a percentage of the new shares.",
     "Wrong: 25,000 corresponds to 10% of the new shares, not 4%.",
-    "Wrong: 100,000 would be 40% of the offering, far beyond her 4% proportion.",
-    "Correct: 4% × 250,000 new shares = 10,000 shares, preserving her proportionate ownership."
+    "Correct: 4% × 250,000 new shares = 10,000 shares, preserving her proportionate ownership.",
+    "Wrong: 100,000 would be 40% of the offering, far beyond her 4% proportion."
    ]
   },
   {
@@ -954,15 +1002,15 @@
    "d": 2,
    "q": "Shareholders who receive subscription rights in a rights offering are typically given how long to decide whether to exercise them?",
    "o": [
-    "Same trading day",
     "About 30 to 45 days",
+    "Same trading day",
     "Six months",
     "Five years or longer"
    ],
-   "a": 1,
+   "a": 0,
    "w": [
-    "Wrong: a one-day window would not give holders time to evaluate the offering.",
     "Correct: rights are short-term, typically about 30 to 45 days.",
+    "Wrong: a one-day window would not give holders time to evaluate the offering.",
     "Wrong: six months is far longer than the short rights period described.",
     "Wrong: five years or more describes a warrant’s term, not a right’s."
    ]
@@ -976,15 +1024,15 @@
    "o": [
     "They are often attached to bonds as a sweetener",
     "They generally have a term of five years or more",
-    "They are usually issued with an exercise price below the current stock price",
-    "They may trade separately in the secondary market"
+    "They may trade separately in the secondary market",
+    "They are usually issued with an exercise price below the current stock price"
    ],
-   "a": 2,
+   "a": 3,
    "w": [
     "Wrong: this is true; warrants are commonly attached to bonds or preferred stock to make them more attractive.",
     "Wrong: this is true; warrants are long-term instruments, generally five years or more.",
-    "Correct: warrants are normally issued with an exercise price above the market, so this statement is the exception.",
-    "Wrong: this is true; warrants can trade independently of the security they came with."
+    "Wrong: this is true; warrants can trade independently of the security they came with.",
+    "Correct: warrants are normally issued with an exercise price above the market, so this statement is the exception."
    ]
   },
   {
@@ -994,17 +1042,17 @@
    "d": 3,
    "q": "An investor holds a warrant with an exercise price of $40. At which current stock price would exercising the warrant be sensible?",
    "o": [
-    "$28",
+    "$46",
     "$35",
     "$33",
-    "$46"
+    "$28"
    ],
-   "a": 3,
+   "a": 0,
    "w": [
-    "Wrong: at $28 the investor would pay $40 for stock worth $28, a clear loss versus buying in the market.",
+    "Correct: at $46 the investor buys at $40 stock worth $46, a $6 per share advantage.",
     "Wrong: at $35 the exercise price still exceeds the market price, so exercising makes no sense.",
     "Wrong: at $33 the investor would overpay by $7 per share compared to the open market.",
-    "Correct: at $46 the investor buys at $40 stock worth $46, a $6 per share advantage."
+    "Wrong: at $28 the investor would pay $40 for stock worth $28, a clear loss versus buying in the market."
    ]
   },
   {
@@ -1015,15 +1063,15 @@
    "q": "Which comparison of rights and warrants is accurate?",
    "o": [
     "Rights are long-term; warrants are short-term",
-    "Rights have an exercise price above market; warrants below market",
     "Rights are meant to prevent dilution; warrants are attached to make another security more attractive",
+    "Rights have an exercise price above market; warrants below market",
     "Rights cannot be traded; warrants can"
    ],
-   "a": 2,
+   "a": 1,
    "w": [
     "Wrong: the timeframes are reversed; rights are short-term and warrants are long-term.",
-    "Wrong: the prices are reversed; rights are priced below market and warrants above it.",
     "Correct: rights let holders maintain ownership, while warrants sweeten bonds or preferred issues.",
+    "Wrong: the prices are reversed; rights are priced below market and warrants above it.",
     "Wrong: both rights and warrants may trade separately in the secondary market."
    ]
   },
@@ -1034,16 +1082,16 @@
    "d": 1,
    "q": "A stock is described as trading ex-rights. What does this mean?",
    "o": [
-    "The stock now trades separately from its rights and is worth less than before",
-    "The stock has no voting rights",
     "The stock is delisted",
+    "The stock has no voting rights",
+    "The stock now trades separately from its rights and is worth less than before",
     "The rights have been exercised in full"
    ],
-   "a": 0,
+   "a": 2,
    "w": [
-    "Correct: once the rights trade separately, the stock no longer carries them and is worth less.",
-    "Wrong: ex-rights has nothing to do with the right to vote.",
     "Wrong: delisting is unrelated to the rights offering terminology.",
+    "Wrong: ex-rights has nothing to do with the right to vote.",
+    "Correct: once the rights trade separately, the stock no longer carries them and is worth less.",
     "Wrong: ex-rights describes the stock trading without rights attached, not that every right has been exercised."
    ]
   },
@@ -1074,15 +1122,15 @@
    "d": 2,
    "q": "A manufacturer of heavy capital equipment sees its sales and stock price rise sharply during an economic expansion and fall in a recession. How is this stock best classified?",
    "o": [
-    "Defensive",
     "Cyclical",
+    "Defensive",
     "Income",
     "Blue chip"
    ],
-   "a": 1,
+   "a": 0,
    "w": [
-    "Wrong: defensive stocks resist economic swings, the opposite of this behavior.",
     "Correct: stocks that mirror the economy, such as capital equipment makers, are cyclical.",
+    "Wrong: defensive stocks resist economic swings, the opposite of this behavior.",
     "Wrong: an income stock is defined by steady dividend payments, not by tracking the economy.",
     "Wrong: blue chip describes size and a stable record, not sensitivity to the business cycle."
    ]
@@ -1124,7 +1172,7 @@
     "Wrong: 7.7% results from dividing 10 by 1.3, but beta multiplies the index move.",
     "Wrong: a 10% rise would imply a beta of exactly 1.",
     "Correct: expected move = beta × index move = 1.3 × 10% = 13%.",
-    "Wrong: 3% subtracts 1.3 from 10 instead of multiplying them."
+    "Wrong: 3% is only the 0.3 of beta above 1 and ignores the 10% move; the expected move is beta multiplied by the index move."
    ]
   },
   {
@@ -1135,15 +1183,15 @@
    "q": "Which of the following are sources of systematic risk?\nI. A recession\nII. A product recall at one company\nIII. A change in interest rates\nIV. A war",
    "o": [
     "I and III only",
-    "II and IV only",
     "I, III and IV only",
+    "II and IV only",
     "I, II, III and IV"
    ],
-   "a": 2,
+   "a": 1,
    "w": [
     "Wrong: this omits war, which is also a market-wide event.",
-    "Wrong: a single-company recall is non-systematic, and this option excludes the recession and rate change.",
     "Correct: recessions, interest rate changes and wars hit the whole market, while a single recall is company specific.",
+    "Wrong: a single-company recall is non-systematic, and this option excludes the recession and rate change.",
     "Wrong: the product recall at one firm is non-systematic risk and does not belong with the market-wide items."
    ]
   },
@@ -1156,15 +1204,15 @@
    "o": [
     "Adding more stocks from different sectors",
     "Concentrating in one defensive company",
-    "Hedging with derivatives such as options",
-    "Buying ADRs of foreign companies"
+    "Buying ADRs of foreign companies",
+    "Hedging with derivatives such as options"
    ],
-   "a": 2,
+   "a": 3,
    "w": [
     "Wrong: diversification does not remove market risk because most sectors fall together.",
     "Wrong: concentration increases specific risk and does not remove market exposure.",
-    "Correct: systematic risk cannot be diversified, but options can create offsetting positions to limit losses.",
-    "Wrong: ADRs add currency and political risk and are still exposed to market moves."
+    "Wrong: ADRs add currency and political risk and are still exposed to market moves.",
+    "Correct: systematic risk cannot be diversified, but options can create offsetting positions to limit losses."
    ]
   },
   {
@@ -1175,15 +1223,15 @@
    "q": "An investor owns only the stock of a single video rental chain that fails to adapt to streaming and goes out of business. What is the best way to protect against this kind of loss?",
    "o": [
     "Hedge with options on the S&P 500",
-    "Diversify across many companies",
     "Buy only stocks with a beta above 1",
+    "Diversify across many companies",
     "Move the shares into street name"
    ],
-   "a": 1,
+   "a": 2,
    "w": [
     "Wrong: market hedges target systematic risk, not the failure of one company.",
-    "Correct: business risk is non-systematic, and diversification is its best protection.",
     "Wrong: a higher beta raises volatility and does nothing about company-specific failure.",
+    "Correct: business risk is non-systematic, and diversification is its best protection.",
     "Wrong: street name affects registration, not investment risk."
    ]
   },
@@ -1194,17 +1242,17 @@
    "d": 3,
    "q": "All of the following statements about beta are true EXCEPT:",
    "o": [
-    "The benchmark index is assigned a beta of 1",
+    "A beta of 0 means the stock moves in lockstep with the market",
     "A beta above 1 indicates a stock more volatile than the market",
     "A beta below 0 indicates negative correlation with the market",
-    "A beta of 0 means the stock moves in lockstep with the market"
+    "The benchmark index is assigned a beta of 1"
    ],
-   "a": 3,
+   "a": 0,
    "w": [
-    "Wrong: this is true; the benchmark index such as the S&P 500 has a beta of 1.",
+    "Correct: a beta of 0 means no correlation with the market, so this false statement is the exception.",
     "Wrong: this is true; beta above 1 means greater volatility than the benchmark.",
     "Wrong: this is true; a negative beta means the stock tends to move opposite the market.",
-    "Correct: a beta of 0 means no correlation with the market, so this false statement is the exception."
+    "Wrong: this is true; the benchmark index such as the S&P 500 has a beta of 1."
    ]
   },
   {
@@ -1215,15 +1263,15 @@
    "q": "American depositary receipts are made available to US investors by which of the following?",
    "o": [
     "The foreign government",
-    "The US Treasury",
     "Major commercial banks acting as depositary",
+    "The US Treasury",
     "The SEC"
    ],
-   "a": 2,
+   "a": 1,
    "w": [
     "Wrong: the foreign government is not the party that bundles and reissues the shares.",
-    "Wrong: the Treasury does not create depositary receipts.",
     "Correct: commercial banks buy bulk foreign shares, bundle them and reissue them as ADRs in the US.",
+    "Wrong: the Treasury does not create depositary receipts.",
     "Wrong: the SEC regulates markets but does not issue ADRs."
    ]
   },
@@ -1235,15 +1283,15 @@
    "q": "A foreign issuer declares a dividend of $1.00 per share, but a US holder of its ADRs receives only $0.85 per share in dollars. What is the most likely explanation, based on the text?",
    "o": [
     "The depositary bank keeps 15% as a call premium",
-    "The foreign government withheld a portion of the dividend for taxes",
     "The ADR is a preferred share with a lower dividend",
+    "The foreign government withheld a portion of the dividend for taxes",
     "The SEC reduces foreign dividends paid in the US"
    ],
-   "a": 1,
+   "a": 2,
    "w": [
     "Wrong: ADRs are common stock and carry no call feature or call premium.",
-    "Correct: a foreign government may withhold a percentage of the dividend for taxes, so the holder can receive less than declared.",
     "Wrong: ADRs here represent common stock, and nothing indicates a preferred share.",
+    "Correct: a foreign government may withhold a percentage of the dividend for taxes, so the holder can receive less than declared.",
     "Wrong: the SEC does not cut foreign dividends; withholding by the foreign government is the cause."
    ]
   },
@@ -1256,15 +1304,15 @@
    "o": [
     "Currency risk",
     "Political risk",
-    "Call risk",
-    "Inflation risk in the home country"
+    "Inflation risk in the home country",
+    "Call risk"
    ],
-   "a": 2,
+   "a": 3,
    "w": [
     "Wrong: currency devaluation can reduce ADR value and the converted dividend.",
     "Wrong: political instability in the home country can hurt the ADR.",
-    "Correct: ADRs represent common stock, so the issuer cannot call them away from the holder.",
-    "Wrong: high inflation can devalue the home currency and thus the ADR."
+    "Wrong: high inflation can devalue the home currency and thus the ADR.",
+    "Correct: ADRs represent common stock, so the issuer cannot call them away from the holder."
    ]
   },
   {
@@ -1294,16 +1342,16 @@
    "d": 3,
    "q": "A foreign company behind a US-traded ADR reports excellent earnings, yet its home currency is devalued sharply against the dollar. What is the most likely effect on a US holder?",
    "o": [
-    "The ADR value and the dollar dividend both tend to fall",
-    "The ADR value rises because earnings improved",
     "The ADR is called at par",
+    "The ADR value rises because earnings improved",
+    "The ADR value and the dollar dividend both tend to fall",
     "Nothing changes because the ADR trades in dollars"
    ],
-   "a": 0,
+   "a": 2,
    "w": [
-    "Correct: currency devaluation lowers the ADR’s value and reduces the dollar value of the converted dividend, despite good performance.",
-    "Wrong: strong earnings do not offset the currency impact described by the text.",
     "Wrong: ADRs are common stock and cannot be called.",
+    "Wrong: strong earnings do not offset the currency impact described by the text.",
+    "Correct: currency devaluation lowers the ADR’s value and reduces the dollar value of the converted dividend, despite good performance.",
     "Wrong: although quoted in dollars, ADR value and dividends depend on the home currency."
    ]
   },
@@ -1355,16 +1403,16 @@
    "q": "A fixed-rate preferred stock is outstanding and market interest rates rise sharply. What is the most likely effect on the preferred’s market price?",
    "o": [
     "It rises because the dividend is now more valuable",
-    "It falls because the fixed dividend is less competitive",
+    "It is called by the issuer immediately",
     "It is unchanged because dividends are based on par",
-    "It is called by the issuer immediately"
+    "It falls because the fixed dividend is less competitive"
    ],
-   "a": 1,
+   "a": 3,
    "w": [
     "Wrong: higher rates make a fixed dividend less attractive, not more.",
-    "Correct: preferred trades like a debt security, so rising rates push the price of existing lower-dividend preferred down.",
+    "Wrong: a call is the issuer’s option and tends to happen when rates fall, not rise.",
     "Wrong: the dividend stays fixed, but the market price still reacts to interest rates.",
-    "Wrong: a call is the issuer’s option and tends to happen when rates fall, not rise."
+    "Correct: preferred trades like a debt security, so rising rates push the price of existing lower-dividend preferred down."
    ]
   },
   {
@@ -1375,15 +1423,15 @@
    "q": "A company has skipped its last three quarterly dividends on an 8% cumulative preferred stock with a $100 par value. It now wants to pay a dividend to its common stockholders. What is the minimum amount per preferred share that must be paid first, including the current quarter?",
    "o": [
     "$2.00",
-    "$6.00",
     "$8.00",
+    "$6.00",
     "$10.00"
    ],
-   "a": 2,
+   "a": 1,
    "w": [
     "Wrong: $2.00 covers only the current quarter and ignores the three quarters in arrears.",
-    "Wrong: $6.00 covers the three missed quarters but leaves out the current quarter’s dividend.",
     "Correct: 8% × $100 = $8 a year, or $2.00 per quarter; three arrears plus the current quarter is 4 × $2.00 = $8.00.",
+    "Wrong: $6.00 covers the three missed quarters but leaves out the current quarter’s dividend.",
     "Wrong: $10.00 counts five quarters, which is one more than the three missed plus the current one."
    ]
   },
@@ -1415,15 +1463,15 @@
    "q": "Which of the following preferred stocks generally pay a lower dividend than comparable straight preferred from the same issuer?\nI. Callable\nII. Convertible\nIII. Participating\nIV. Cumulative",
    "o": [
     "I and II only",
-    "II, III and IV only",
     "I, III and IV only",
+    "II, III and IV only",
     "I, II, III and IV"
    ],
-   "a": 1,
+   "a": 2,
    "w": [
     "Wrong: callable favors the issuer and so pays a higher dividend, not a lower one.",
-    "Correct: features that benefit the investor, convertible, participating and cumulative, come with lower dividends.",
     "Wrong: this includes callable, which compensates the holder for call risk with a higher dividend.",
+    "Correct: features that benefit the investor, convertible, participating and cumulative, come with lower dividends.",
     "Wrong: callable preferred pays more, so not all four pay lower dividends."
    ]
   },
@@ -1434,16 +1482,16 @@
    "d": 2,
    "q": "The dividend on an adjustable-rate preferred stock is typically tied to which benchmark, and what effect does this have on the share price?",
    "o": [
-    "The prime rate, and the price swings widely",
-    "The S&P 500, and the price tracks the equity market",
     "The US Treasury bill, and the price tends to remain stable",
+    "The S&P 500, and the price tracks the equity market",
+    "The prime rate, and the price swings widely",
     "The issuer’s earnings, and the price rises when rates rise"
    ],
-   "a": 2,
+   "a": 0,
    "w": [
-    "Wrong: the text names a Treasury benchmark, and the floating rate dampens price swings.",
-    "Wrong: the dividend is not linked to an equity index, and its price is not tied to the stock market.",
     "Correct: the dividend floats with the T-bill rate, so the share price tends to stay stable.",
+    "Wrong: the dividend is not linked to an equity index, and its price is not tied to the stock market.",
+    "Wrong: the text names a Treasury benchmark, and the floating rate dampens price swings.",
     "Wrong: the dividend is not tied to issuer earnings, which is a feature of participating preferred."
    ]
   },
@@ -1454,16 +1502,16 @@
    "d": 2,
    "q": "An investor buys a preferred stock that pays an additional dividend if the dividend on the company’s common stock exceeds a stated level. What type of preferred is this?",
    "o": [
-    "Cumulative",
-    "Callable",
     "Participating",
+    "Callable",
+    "Cumulative",
     "Straight"
    ],
-   "a": 2,
+   "a": 0,
    "w": [
-    "Wrong: cumulative preferred gives the right to dividends in arrears, not an extra conditional dividend.",
-    "Wrong: callable preferred lets the issuer repurchase the shares.",
     "Correct: participating preferred pays an extra, generally conditional dividend.",
+    "Wrong: callable preferred lets the issuer repurchase the shares.",
+    "Wrong: cumulative preferred gives the right to dividends in arrears, not an extra conditional dividend.",
     "Wrong: straight preferred has none of the special features."
    ]
   },
@@ -1475,16 +1523,16 @@
    "q": "How does preferred stock compare with common stock in terms of risk and growth potential?",
    "o": [
     "Riskier and with more growth potential",
-    "Less risky and with less growth potential",
+    "Less risky and with more growth potential",
     "Riskier and with less growth potential",
-    "Less risky and with more growth potential"
+    "Less risky and with less growth potential"
    ],
-   "a": 1,
+   "a": 3,
    "w": [
     "Wrong: common stock, not preferred, is the riskier security with more upside.",
-    "Correct: preferred ranks ahead of common and has a fixed dividend, so it is less risky but its upside is limited.",
+    "Wrong: preferred’s upside is capped by the fixed dividend, so it does not have more growth potential.",
     "Wrong: preferred is not riskier than common, since it has liquidation and dividend priority.",
-    "Wrong: preferred’s upside is capped by the fixed dividend, so it does not have more growth potential."
+    "Correct: preferred ranks ahead of common and has a fixed dividend, so it is less risky but its upside is limited."
    ]
   },
   {
@@ -1514,16 +1562,16 @@
    "d": 2,
    "q": "To be negotiable, how must a physical stock certificate generally be endorsed?",
    "o": [
-    "Signed on the back exactly as the owner’s name appears on the front",
-    "Signed on the front using the owner’s initials",
     "Signed by the issuer’s transfer agent only",
+    "Signed on the front using the owner’s initials",
+    "Signed on the back exactly as the owner’s name appears on the front",
     "Signed by the broker-dealer, not the owner"
    ],
-   "a": 0,
+   "a": 2,
    "w": [
-    "Correct: the owner signs on the back exactly as the name appears on the front.",
-    "Wrong: the endorsement goes on the back and must mirror the full name, not initials.",
     "Wrong: the owner endorses; the transfer agent then updates the issuer’s records.",
+    "Wrong: the endorsement goes on the back and must mirror the full name, not initials.",
+    "Correct: the owner signs on the back exactly as the name appears on the front.",
     "Wrong: the owner’s signature is required unless the securities are already in street name."
    ]
   },
@@ -1554,15 +1602,15 @@
    "d": 1,
    "q": "Which entity establishes the ex-dividend date?",
    "o": [
-    "The company’s board of directors",
     "The exchange on which the stock trades",
+    "The company’s board of directors",
     "The issuer’s transfer agent",
     "The SEC"
    ],
-   "a": 1,
+   "a": 0,
    "w": [
-    "Wrong: the board sets the declaration, record and payable dates, not the ex-date.",
     "Correct: the exchange establishes the ex-dividend date based on settlement practice.",
+    "Wrong: the board sets the declaration, record and payable dates, not the ex-date.",
     "Wrong: the transfer agent records ownership changes and does not set dates.",
     "Wrong: the SEC does not set the ex-date for individual dividends."
    ]
@@ -1596,15 +1644,15 @@
    "o": [
     "Monday the 9th",
     "Tuesday the 10th",
-    "Wednesday the 11th",
-    "Thursday the 12th"
+    "Thursday the 12th",
+    "Wednesday the 11th"
    ],
-   "a": 2,
+   "a": 3,
    "w": [
     "Wrong: buying earlier would work, but it is not the last day to qualify.",
     "Wrong: Tuesday qualifies but is not the last day; the buyer has one more day.",
-    "Correct: regular way settles T+1, so a Wednesday trade settles on Thursday, the record date; the ex-date is Thursday.",
-    "Wrong: a trade on Thursday settles Friday, after the record date, so the seller would receive the dividend."
+    "Wrong: a trade on Thursday settles Friday, after the record date, so the seller would receive the dividend.",
+    "Correct: regular way settles T+1, so a Wednesday trade settles on Thursday, the record date; the ex-date is Thursday."
    ]
   },
   {
@@ -1654,16 +1702,16 @@
    "d": 2,
    "q": "A stock closed at $72.50 the day before its ex-dividend date. The company declared a $0.50 per share dividend. All else equal, what is the opening price on the ex-date?",
    "o": [
-    "$72.00",
-    "$72.50",
     "$73.00",
+    "$72.50",
+    "$72.00",
     "$71.50"
    ],
-   "a": 0,
+   "a": 2,
    "w": [
-    "Correct: the price drops by the dividend, so $72.50 − $0.50 = $72.00.",
-    "Wrong: this ignores the adjustment that occurs on the ex-date morning.",
     "Wrong: $73.00 adds the dividend instead of subtracting it.",
+    "Wrong: this ignores the adjustment that occurs on the ex-date morning.",
+    "Correct: the price drops by the dividend, so $72.50 − $0.50 = $72.00.",
     "Wrong: $71.50 subtracts a full dollar, double the actual dividend."
    ]
   },
@@ -1674,15 +1722,15 @@
    "d": 3,
    "q": "On the morning of the ex-dividend date, which of the following open orders are automatically reduced by the amount of the dividend?\nI. Buy limit\nII. Sell stop\nIII. Sell stop limit\nIV. Buy stop",
    "o": [
-    "I and II only",
     "I, II and III only",
+    "I and II only",
     "II, III and IV only",
     "I, III and IV only"
    ],
-   "a": 1,
+   "a": 0,
    "w": [
-    "Wrong: this omits the sell stop limit, which is also adjusted.",
     "Correct: buy limit, sell stop and sell stop limit orders at or below the market are reduced by the dividend.",
+    "Wrong: this omits the sell stop limit, which is also adjusted.",
     "Wrong: a buy stop is placed above the market and is not among the adjusted order types.",
     "Wrong: this includes the buy stop and omits the sell stop, which is adjusted."
    ]
@@ -1694,15 +1742,15 @@
    "d": 2,
    "q": "The payable date of a dividend is generally about how long after the record date?",
    "o": [
-    "One business day",
     "Three weeks",
+    "One business day",
     "Six months",
     "Ten business days"
    ],
-   "a": 1,
+   "a": 0,
    "w": [
-    "Wrong: one business day is the regular way settlement period, not the payment lag.",
     "Correct: payment is generally made about three weeks after the record date.",
+    "Wrong: one business day is the regular way settlement period, not the payment lag.",
     "Wrong: six months is far longer than the usual gap.",
     "Wrong: ten business days is the minimum notice before the record date, not the payment lag."
    ]
@@ -1715,15 +1763,15 @@
    "q": "An investor owns 80 shares of a company that declares a 25% stock dividend. How many shares does the investor own afterward?",
    "o": [
     "85",
-    "100",
     "105",
+    "100",
     "120"
    ],
-   "a": 1,
+   "a": 2,
    "w": [
     "Wrong: 85 adds only 5 shares, which would be about a 6% dividend.",
-    "Correct: 80 × 1.25 = 100 shares, and the investor’s percentage ownership is unchanged.",
     "Wrong: 105 adds 5 shares past the correct total and is not 25% of 80.",
+    "Correct: 80 × 1.25 = 100 shares, and the investor’s percentage ownership is unchanged.",
     "Wrong: 120 would be a 50% increase, not 25%."
    ]
   },
@@ -1735,16 +1783,16 @@
    "q": "An investor owns 100 shares purchased at $30 each. The company pays a 20% stock dividend. What is the investor’s adjusted cost basis per share?",
    "o": [
     "$30.00",
-    "$25.00",
+    "$36.00",
     "$24.00",
-    "$36.00"
+    "$25.00"
    ],
-   "a": 1,
+   "a": 3,
    "w": [
     "Wrong: the basis per share must be adjusted when additional shares are received.",
-    "Correct: total cost $3,000 now covers 120 shares, and $3,000 ÷ 120 = $25 per share.",
+    "Wrong: $36 raises the basis, which is how a reverse split behaves, not a stock dividend.",
     "Wrong: $24 comes from dividing by 125 shares, which is not what a 20% dividend produces.",
-    "Wrong: $36 raises the basis, which is how a reverse split behaves, not a stock dividend."
+    "Correct: total cost $3,000 now covers 120 shares, and $3,000 ÷ 120 = $25 per share."
    ]
   },
   {
@@ -1795,15 +1843,15 @@
    "q": "An investor owns 500 shares of a stock trading at $2.40. The company executes a 1-for-5 reverse split. What is the resulting position?",
    "o": [
     "2,500 shares at $0.48",
-    "100 shares at $12.00",
     "100 shares at $2.40",
+    "100 shares at $12.00",
     "500 shares at $12.00"
    ],
-   "a": 1,
+   "a": 2,
    "w": [
     "Wrong: this multiplies shares by five, which is a forward split.",
-    "Correct: shares = 500 ÷ 5 = 100; price = $2.40 × 5 = $12; value stays $1,200.",
     "Wrong: the share count drops but the price must rise to keep the value unchanged.",
+    "Correct: shares = 500 ÷ 5 = 100; price = $2.40 × 5 = $12; value stays $1,200.",
     "Wrong: the price rises, but the share count must also fall to one-fifth."
    ]
   },
@@ -1814,17 +1862,17 @@
    "d": 2,
    "q": "A company announces a reverse stock split. What happens to open orders in that stock?",
    "o": [
-    "They are all cancelled",
+    "They are converted to market orders",
     "They are adjusted by the dividend amount",
     "They remain unchanged",
-    "They are converted to market orders"
+    "They are all cancelled"
    ],
-   "a": 0,
+   "a": 3,
    "w": [
-    "Correct: whenever there is a reverse split, all open orders to trade the stock are cancelled.",
+    "Wrong: no conversion to market orders occurs.",
     "Wrong: reduction by the dividend amount applies on an ex-dividend date, not a reverse split.",
     "Wrong: orders do not survive a reverse split unchanged.",
-    "Wrong: no conversion to market orders occurs."
+    "Correct: whenever there is a reverse split, all open orders to trade the stock are cancelled."
    ]
   },
   {
@@ -1834,15 +1882,15 @@
    "d": 3,
    "q": "Which of the following is equivalent to a 2-for-1 forward stock split?",
    "o": [
-    "A 50% stock dividend",
     "A 100% stock dividend",
+    "A 50% stock dividend",
     "A 2-for-1 reverse split",
     "A 20% stock dividend"
    ],
-   "a": 1,
+   "a": 0,
    "w": [
-    "Wrong: a 50% stock dividend would be a 3-for-2 split.",
     "Correct: a 2-for-1 split doubles the shares, the same as a 100% stock dividend.",
+    "Wrong: a 50% stock dividend would be a 3-for-2 split.",
     "Wrong: a reverse split reduces shares and raises the price.",
     "Wrong: a 20% stock dividend would be a 6-for-5 split."
    ]
@@ -1855,15 +1903,15 @@
    "q": "An investor buys 100 shares of ABC at $20. ABC later splits 2-for-1, and the investor sells all of her shares at $14. What is her capital gain or loss?",
    "o": [
     "$600 loss",
-    "$800 gain",
     "$1,400 gain",
+    "$800 gain",
     "$800 loss"
    ],
-   "a": 1,
+   "a": 2,
    "w": [
     "Wrong: a $600 loss compares $14 on 100 shares to the original cost and ignores the doubled share count.",
-    "Correct: after the split she holds 200 shares with a $10 basis; sale proceeds $2,800 − cost $2,000 = $800 gain.",
     "Wrong: $1,400 does not follow from these prices; proceeds minus the adjusted cost give only $800.",
+    "Correct: after the split she holds 200 shares with a $10 basis; sale proceeds $2,800 − cost $2,000 = $800 gain.",
     "Wrong: she sold above the $10 adjusted basis, so the result is a gain, not a loss."
    ]
   },
@@ -1875,15 +1923,15 @@
    "q": "An investor owns 200 shares with a cost basis of $12 per share. The company executes a 1-for-4 reverse split. What is the adjusted cost basis per share?",
    "o": [
     "$3.00",
-    "$12.00",
     "$48.00",
+    "$12.00",
     "$24.00"
    ],
-   "a": 2,
+   "a": 1,
    "w": [
     "Wrong: $3.00 divides the basis by four, as in a forward split.",
-    "Wrong: the basis per share is adjusted after a reverse split.",
     "Correct: total cost $2,400 now spreads over 50 shares, so $2,400 ÷ 50 = $48 per share.",
+    "Wrong: the basis per share is adjusted after a reverse split.",
     "Wrong: $24 would result from a 1-for-2 reverse split, not 1-for-4."
    ]
   },
@@ -1895,16 +1943,16 @@
    "q": "A stock trades at $0.10 and risks losing its exchange listing for falling below the minimum price. What action might the issuer take?",
    "o": [
     "A 50-for-1 forward split",
-    "A 1-for-50 reverse split",
+    "A rights offering",
     "A 10% stock dividend",
-    "A rights offering"
+    "A 1-for-50 reverse split"
    ],
-   "a": 1,
+   "a": 3,
    "w": [
     "Wrong: a forward split would lower the price further.",
-    "Correct: a 1-for-50 reverse split raises the price to about $5, restoring compliance with the minimum.",
+    "Wrong: a rights offering raises capital but does not lift the share price.",
     "Wrong: a stock dividend increases the share count and lowers the price.",
-    "Wrong: a rights offering raises capital but does not lift the share price."
+    "Correct: a 1-for-50 reverse split raises the price to about $5, restoring compliance with the minimum."
    ]
   },
   {
@@ -1934,16 +1982,16 @@
    "d": 1,
    "q": "Which statement best describes the risk of selling common stock short?",
    "o": [
-    "The most that can be lost is the amount of the sale proceeds",
-    "The loss is limited to the amount borrowed",
     "The potential loss is unlimited because the stock price can rise indefinitely",
+    "The loss is limited to the amount borrowed",
+    "The most that can be lost is the amount of the sale proceeds",
     "The seller cannot lose money if the stock is on the easy-to-borrow list"
    ],
-   "a": 2,
+   "a": 0,
    "w": [
-    "Wrong: proceeds do not cap the loss; the buyback price can far exceed the sale price.",
-    "Wrong: no limit applies, since the cost to replace the shares can keep rising.",
     "Correct: a short seller must buy shares back at any price, and the price can rise without limit.",
+    "Wrong: no limit applies, since the cost to replace the shares can keep rising.",
+    "Wrong: proceeds do not cap the loss; the buyback price can far exceed the sale price.",
     "Wrong: easy-to-borrow only affects availability of shares, not market risk."
    ]
   },
@@ -1955,15 +2003,15 @@
    "q": "An investor bought stock at $40 and it now trades at $65. She has not sold. Which statement about the taxation of her gain is correct?",
    "o": [
     "The $25 gain is taxed now as a realized gain",
-    "The $25 per share is an unrealized gain and is not taxed until she sells",
     "The gain is taxed only if the company pays a dividend",
+    "The $25 per share is an unrealized gain and is not taxed until she sells",
     "The gain is never taxed"
    ],
-   "a": 1,
+   "a": 2,
    "w": [
     "Wrong: gains are taxed only when realized by a sale.",
-    "Correct: an unrealized (paper) gain has no immediate tax impact until the stock is sold.",
     "Wrong: dividends are a separate source of income and do not trigger tax on the appreciation.",
+    "Correct: an unrealized (paper) gain has no immediate tax impact until the stock is sold.",
     "Wrong: the gain is taxable once it is realized by selling."
    ]
   },
@@ -1974,17 +2022,117 @@
    "d": 1,
    "q": "Why would a company choose to do a forward stock split?",
    "o": [
-    "Because management believes the share price is too high to attract buyers",
     "To avoid falling below the minimum listing price",
+    "Because management believes the share price is too high to attract buyers",
     "To cancel all open orders",
     "To increase the total market value of the company"
    ],
-   "a": 0,
+   "a": 1,
    "w": [
-    "Correct: companies split when the price seems too high to interest buyers, creating more shares at lower prices.",
     "Wrong: avoiding the minimum listing price is a reason for a reverse split.",
+    "Correct: companies split when the price seems too high to interest buyers, creating more shares at lower prices.",
     "Wrong: cancelling orders is a side effect of a reverse split, not a goal.",
     "Wrong: a split changes share count and price but not total value."
+   ]
+  },
+  {
+   "id": "1-q64",
+   "r": "1.2.1",
+   "k": "concept",
+   "d": 2,
+   "q": "Which types of common stock would be expected to perform best, relative to the overall market, during a bear market?",
+   "o": [
+    "Cyclical and growth",
+    "Blue chip and growth",
+    "Cyclical and income",
+    "Income and defensive"
+   ],
+   "a": 3,
+   "w": [
+    "Wrong: cyclical and growth stocks tend to suffer when the economy and market weaken.",
+    "Wrong: growth stocks are risky and fall sharply when growth disappoints, so the pair is not a bear-market performer.",
+    "Wrong: cyclical stocks decline along with the economy, which offsets the strength of income stocks.",
+    "Correct: income stocks keep paying dividends and defensive stocks resist economic swings, so both hold value better in down markets."
+   ]
+  },
+  {
+   "id": "1-q65",
+   "r": "1.1.1.2",
+   "k": "scenario",
+   "d": 1,
+   "q": "A shareholder cannot attend the annual meeting but wants to vote for her preferred director candidates. What can she do?",
+   "o": [
+    "Appoint another shareholder who must attend and vote for her",
+    "Cast a proxy vote, which is counted the same as an in-person vote",
+    "Ask the SEC for permission to submit an absentee ballot",
+    "Forfeit the vote because common votes must be cast in person"
+   ],
+   "a": 1,
+   "w": [
+    "Wrong: no one has to be delegated, because proxies are counted directly.",
+    "Correct: a proxy is an absentee ballot, counted directly like a vote cast at the meeting.",
+    "Wrong: no regulatory permission is needed; the company solicits proxies under SEC disclosure rules.",
+    "Wrong: absentee voting by proxy exists precisely so that absent holders keep their vote."
+   ]
+  },
+  {
+   "id": "1-q66",
+   "r": "1.5.1.3",
+   "k": "calc",
+   "d": 2,
+   "q": "A 6% preferred stock has a par value of $25 and currently trades at $40. How much annual dividend income does an investor receive per share?",
+   "o": [
+    "$2.40",
+    "$6.00",
+    "$1.50",
+    "$0.38"
+   ],
+   "a": 2,
+   "w": [
+    "Wrong: $2.40 applies 6% to the $40 market price, but the dividend is a percentage of par.",
+    "Wrong: $6.00 would be the dividend on a $100 par value, which is not this issue.",
+    "Correct: 6% × $25 par = $1.50 per share per year, whatever the market price.",
+    "Wrong: $0.38 is only the quarterly payment, about a quarter of the annual figure."
+   ]
+  },
+  {
+   "id": "1-q67",
+   "r": "1.3.1.1",
+   "k": "concept",
+   "d": 2,
+   "q": "Compared with a stock whose beta is 0.7, a stock with a beta of 1.4 would be expected to have:",
+   "o": [
+    "Higher risk and a higher potential return",
+    "Lower risk and a higher potential return",
+    "Higher risk and a lower potential return",
+    "Lower risk and a lower potential return"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: higher beta means more volatility than the market, so more risk along with greater return potential.",
+    "Wrong: more volatility cannot come with lower risk; beta measures that very swing.",
+    "Wrong: the greater volatility carries the possibility of larger gains as well.",
+    "Wrong: a higher beta means larger price swings, which signals more risk, not less."
+   ]
+  },
+  {
+   "id": "1-q68",
+   "r": "1.7.3",
+   "k": "scenario",
+   "d": 2,
+   "q": "An investor receives a stock dividend of additional shares of the issuer. Which statement is correct?",
+   "o": [
+    "It is taxed when received, and the cost basis is unchanged",
+    "It is not taxed when received, and the investor’s ownership percentage rises",
+    "It is taxed when received, and the cost basis per share is adjusted",
+    "It is not taxed when received, and the cost basis per share is adjusted"
+   ],
+   "a": 3,
+   "w": [
+    "Wrong: this describes a cash dividend; stock dividends are not taxed on receipt, and basis must be spread over more shares.",
+    "Wrong: a pro rata stock dividend leaves every holder’s percentage ownership unchanged.",
+    "Wrong: tax is not due when shares are received, so only the basis adjustment is right in this option.",
+    "Correct: no tax is due until the shares are sold, and the original cost is spread over the larger share count."
    ]
   }
  ]

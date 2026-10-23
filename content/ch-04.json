@@ -146,7 +146,7 @@
   },
   {
    "t": "Exchange-traded fund (ETF)",
-   "d": "An exchange-traded fund, structured as a UIT or open-end fund, that passively tracks an index, sector or benchmark."
+   "d": "An investment company whose shares trade on an exchange like stocks, structured as a UIT or open-end fund, that passively tracks an index, sector or benchmark."
   },
   {
    "t": "Redeemable security",
@@ -194,7 +194,7 @@
   },
   {
    "t": "Sales charge (load)",
-   "d": "A one-time fee compensating the seller, expressed as a percentage of POP."
+   "d": "A fee compensating the seller, expressed as a percentage of POP; charged up front, on exit or as a level load depending on the share class."
   },
   {
    "t": "No-load fund",
@@ -939,6 +939,48 @@
    "f": "Which product has a continuous offering of shares?",
    "b": "The **mutual fund** only.",
    "r": "4.6"
+  },
+  {
+   "id": "4-c106",
+   "f": "What does ‘undivided interest’ mean for a mutual fund shareholder?",
+   "b": "Each holder owns a **proportionate share of every security** in the portfolio, not particular holdings.",
+   "r": "4.2.5"
+  },
+  {
+   "id": "4-c107",
+   "f": "Components of a fund’s total return",
+   "b": "**Change in NAV, dividend payments and capital gains distributions.** NAV alone understates the return.",
+   "r": "4.4.2.2"
+  },
+  {
+   "id": "4-c108",
+   "f": "Are money market mutual funds FDIC insured?",
+   "b": "**Never.** Bank money market deposit accounts can be insured; the similar-sounding mutual funds are not.",
+   "r": "4.2.4.2"
+  },
+  {
+   "id": "4-c109",
+   "f": "Bond fund for low tolerance of share-value swings but a need for income",
+   "b": "A **short-term bond fund**; longer-term funds yield more but swing more with rates.",
+   "r": "4.2.4.4"
+  },
+  {
+   "id": "4-c110",
+   "f": "Why are money market funds a poor fit for inflation protection?",
+   "b": "Their returns are **relatively low**; they suit safety, stability and liquidity, not keeping pace with inflation.",
+   "r": "4.2.4.2"
+  },
+  {
+   "id": "4-c111",
+   "f": "Which mutual fund features are shared by closed-end funds, UITs and ETFs?",
+   "b": "**Diversification, low minimum investment and a clearly stated objective.** Only mutual funds offer a continuous offering of new shares and breakpoints.",
+   "r": "4.6"
+  },
+  {
+   "id": "4-c112",
+   "f": "Can a UIT investor move to another trust cheaply?",
+   "b": "Some UITs allow an **exchange into a different UIT at a reduced sales charge**.",
+   "r": "4.4.2.1"
   }
  ],
  "questions": [
@@ -949,17 +991,17 @@
    "d": 1,
    "q": "Which of the following is NOT one of the three categories of investment company recognized by the Investment Company Act of 1940?",
    "o": [
-    "Face-amount certificate company",
+    "Real estate operating company",
     "Unit investment trust",
     "Management company",
-    "Real estate operating company"
+    "Face-amount certificate company"
    ],
-   "a": 3,
+   "a": 0,
    "w": [
-    "Wrong: face-amount certificate companies are one of the three 1940 Act categories, even though they are rare today.",
+    "Correct: a real estate operating company is not a 1940 Act investment company category, so it is the exception.",
     "Wrong: unit investment trusts are expressly one of the three categories regulated by the 1940 Act.",
     "Wrong: management companies, covering both open-end and closed-end funds, are a core 1940 Act category.",
-    "Correct: a real estate operating company is not a 1940 Act investment company category, so it is the exception."
+    "Wrong: face-amount certificate companies are one of the three 1940 Act categories, even though they are rare today."
    ]
   },
   {
@@ -989,16 +1031,16 @@
    "d": 2,
    "q": "A fund’s representative hands a prospective investor a summary prospectus at the time of sale. Which statement is correct?",
    "o": [
-    "The fund must also make the full prospectus and supplemental information available on request",
-    "The delivery is improper because the full prospectus must always be delivered before the sale",
     "The summary prospectus must be replaced by a full prospectus within seven calendar days",
+    "The delivery is improper because the full prospectus must always be delivered before the sale",
+    "The fund must also make the full prospectus and supplemental information available on request",
     "The summary prospectus is acceptable only for funds with no sales charge"
    ],
-   "a": 0,
+   "a": 2,
    "w": [
-    "Correct: the SEC allows a summary prospectus, but the fund must make the full document available on request, on paper or electronically.",
-    "Wrong: the SEC permits delivering a summary prospectus prior to or at the time of sale, so delivery here is proper.",
     "Wrong: no rule requires replacing the summary with the full document within seven days; seven days relates to redemption payments.",
+    "Wrong: the SEC permits delivering a summary prospectus prior to or at the time of sale, so delivery here is proper.",
+    "Correct: the SEC allows a summary prospectus, but the fund must make the full document available on request, on paper or electronically.",
     "Wrong: the summary prospectus option is not restricted by whether a fund has a sales charge."
    ]
   },
@@ -1030,15 +1072,15 @@
    "q": "How often must a mutual fund send financial reports (balance sheet, income statement and portfolio snapshot) to its shareholders?",
    "o": [
     "Quarterly",
-    "Semiannually",
     "Annually",
+    "Semiannually",
     "Monthly"
    ],
-   "a": 1,
+   "a": 2,
    "w": [
-    "Wrong: quarterly is the account statement frequency for customers at a brokerage, not the fund shareholder report requirement.",
-    "Correct: mutual funds must send shareholders financial reports semiannually, meaning twice a year.",
+    "Wrong: quarterly is not the schedule the chapter gives for fund shareholder reports; the requirement is twice a year.",
     "Wrong: the prospectus is updated annually, but the financial reports are required more often, twice a year.",
+    "Correct: mutual funds must send shareholders financial reports semiannually, meaning twice a year.",
     "Wrong: monthly reports are not required of mutual funds under the chapter’s rules."
    ]
   },
@@ -1090,16 +1132,16 @@
    "q": "A shareholder in a mutual fund has not received her year-end capital gains distribution. Which service provider is responsible for distributing dividends and capital gains to shareholders?",
    "o": [
     "Custodian",
-    "Transfer agent",
+    "Board of directors",
     "Investment adviser",
-    "Board of directors"
+    "Transfer agent"
    ],
-   "a": 1,
+   "a": 3,
    "w": [
     "Wrong: the custodian only holds the fund’s securities in safekeeping and does not pay out distributions.",
-    "Correct: the transfer agent issues and redeems shares, sends confirmations and handles dividend and capital gains payouts.",
+    "Wrong: the board oversees the fund generally and is not involved in day-to-day payment mechanics.",
     "Wrong: the adviser invests the portfolio and trades, but does not process shareholder payments.",
-    "Wrong: the board oversees the fund generally and is not involved in day-to-day payment mechanics."
+    "Correct: the transfer agent issues and redeems shares, sends confirmations and handles dividend and capital gains payouts."
    ]
   },
   {
@@ -1110,15 +1152,15 @@
    "q": "A mutual fund sponsor (distributor) normally buys fund shares from the fund at ______ and resells them to the public at ______.",
    "o": [
     "the public offering price; net asset value",
-    "net asset value; the public offering price",
     "net asset value less a discount; net asset value",
+    "net asset value; the public offering price",
     "the public offering price; the public offering price plus the 12b-1 fee"
    ],
-   "a": 1,
+   "a": 2,
    "w": [
     "Wrong: this reverses the flow; the sponsor’s margin comes from selling above the price it pays.",
-    "Correct: the sponsor buys at NAV and resells at POP, which is NAV plus the sales charge.",
     "Wrong: the sponsor does not get a discount to NAV; the discount to POP applies to dealers buying from the sponsor.",
+    "Correct: the sponsor buys at NAV and resells at POP, which is NAV plus the sales charge.",
     "Wrong: the 12b-1 fee is an annual charge, not part of the public offering price."
    ]
   },
@@ -1130,15 +1172,15 @@
    "q": "Which of the following activities is a mutual fund permitted to engage in?",
    "o": [
     "Selling securities short",
-    "Buying securities on margin",
     "Redeeming its own shares directly from investors",
+    "Buying securities on margin",
     "Issuing preferred stock to raise capital"
    ],
-   "a": 2,
+   "a": 1,
    "w": [
     "Wrong: the SEC generally prohibits mutual funds from selling securities short.",
-    "Wrong: mutual funds may not buy securities with borrowed funds on margin.",
     "Correct: redeeming shares directly from investors is what open-end funds do; they have no secondary market.",
+    "Wrong: mutual funds may not buy securities with borrowed funds on margin.",
     "Wrong: mutual funds are limited to a single class of common shares and cannot issue senior securities."
    ]
   },
@@ -1150,16 +1192,16 @@
    "q": "Which of the following activities are generally prohibited for a mutual fund?\n\nI. Selling securities short\nII. Participating in joint investment or trading accounts\nIII. Redeeming its shares within seven calendar days\nIV. Buying securities on margin",
    "o": [
     "I and II only",
-    "I, II and IV only",
+    "I, III and IV only",
     "II, III and IV only",
-    "I, III and IV only"
+    "I, II and IV only"
    ],
-   "a": 1,
+   "a": 3,
    "w": [
     "Wrong: this omits buying on margin, which is also on the prohibited list for mutual funds.",
-    "Correct: short selling, joint accounts and margin purchases are barred, while redeeming shares promptly is an obligation.",
+    "Wrong: item III is a requirement, and this combination also drops the prohibited joint-account activity.",
     "Wrong: redemption within seven days is required of mutual funds, not prohibited, so including it is incorrect.",
-    "Wrong: item III is a requirement, and this combination also drops the prohibited joint-account activity."
+    "Correct: short selling, joint accounts and margin purchases are barred, while redeeming shares promptly is an obligation."
    ]
   },
   {
@@ -1169,16 +1211,16 @@
    "d": 2,
    "q": "The 1940 Act limits money market funds to high-quality debt instruments with remaining maturities of no more than:",
    "o": [
-    "90 days",
-    "6 months",
     "13 months",
+    "6 months",
+    "90 days",
     "5 years"
    ],
-   "a": 2,
+   "a": 0,
    "w": [
-    "Wrong: 90 days is shorter than the limit the chapter gives for money market fund holdings.",
-    "Wrong: six months is not the stated maximum remaining maturity for these funds.",
     "Correct: money market fund holdings are limited to debt with remaining maturities of not more than 13 months.",
+    "Wrong: six months is not the stated maximum remaining maturity for these funds.",
+    "Wrong: 90 days is shorter than the limit the chapter gives for money market fund holdings.",
     "Wrong: five years is an intermediate-term horizon, far beyond a cash-equivalent fund’s permitted maturities."
    ]
   },
@@ -1211,15 +1253,15 @@
    "o": [
     "75",
     "750",
-    "7,500",
-    "75,000"
+    "75,000",
+    "7,500"
    ],
-   "a": 2,
+   "a": 3,
    "w": [
     "Wrong: this would imply a share price of $100, far from the $1 stable NAV.",
     "Wrong: this would imply a $10 share price, which is not how money market funds are priced.",
-    "Correct: $7,500 ÷ $1.00 per share = 7,500 shares, since the fund aims for a constant $1 NAV and has no load.",
-    "Wrong: 75,000 shares would imply a price of $0.10 per share, which is not the stable NAV."
+    "Wrong: 75,000 shares would imply a price of $0.10 per share, which is not the stable NAV.",
+    "Correct: $7,500 ÷ $1.00 per share = 7,500 shares, since the fund aims for a constant $1 NAV and has no load."
    ]
   },
   {
@@ -1231,15 +1273,15 @@
    "o": [
     "It is insured up to $250,000 because a bank sold it",
     "It is insured only if the sponsor is an FDIC-insured bank",
-    "It is insured only for US individual investors",
-    "It is not FDIC insured, and its $1 NAV is a goal that is not guaranteed"
+    "It is not FDIC insured, and its $1 NAV is a goal that is not guaranteed",
+    "It is insured only for US individual investors"
    ],
-   "a": 3,
+   "a": 2,
    "w": [
     "Wrong: the selling channel does not create FDIC coverage; money market mutual funds are never covered.",
     "Wrong: even a fund sponsored by an insured bank is not itself covered by FDIC insurance.",
-    "Wrong: investor type is irrelevant; money market mutual funds are not FDIC insured for anyone.",
-    "Correct: money market funds are not covered by FDIC insurance and can break the buck below $1 per share."
+    "Correct: money market funds are not covered by FDIC insurance and can break the buck below $1 per share.",
+    "Wrong: investor type is irrelevant; money market mutual funds are not FDIC insured for anyone."
    ]
   },
   {
@@ -1250,15 +1292,15 @@
    "q": "A retiree wants a stock fund that stresses steady dividend income over capital appreciation and may hold preferred, blue chip and utility stocks. Which fund type is most appropriate?",
    "o": [
     "Sector fund",
-    "Growth stock fund",
     "Income stock fund",
+    "Growth stock fund",
     "Small-cap fund"
    ],
-   "a": 2,
+   "a": 1,
    "w": [
     "Wrong: sector funds concentrate in one industry and are not designed around steady income.",
-    "Wrong: growth companies rarely pay dividends because they reinvest earnings into research and expansion, which conflicts with an income goal.",
     "Correct: income stock funds invest in dividend payers such as preferred, blue chip and utility stocks.",
+    "Wrong: growth companies rarely pay dividends because they reinvest earnings into research and expansion, which conflicts with an income goal.",
     "Wrong: small-cap funds seek greater appreciation with greater risk, not steady dividends."
    ]
   },
@@ -1269,16 +1311,16 @@
    "d": 2,
    "q": "A high-net-worth investor in the highest federal tax bracket wants a bond fund whose interest income is free from federal income tax. Which fund is most appropriate?",
    "o": [
-    "Municipal bond fund",
-    "Corporate bond fund",
     "High-yield bond fund",
+    "Corporate bond fund",
+    "Municipal bond fund",
     "Growth stock fund"
    ],
-   "a": 0,
+   "a": 2,
    "w": [
-    "Correct: municipal bond funds pass through interest that is free from federal income tax, suiting high-bracket investors.",
-    "Wrong: corporate bond interest is taxable at the federal level, so it does not meet the tax goal.",
     "Wrong: high-yield bond fund income is taxable and carries elevated default risk.",
+    "Wrong: corporate bond interest is taxable at the federal level, so it does not meet the tax goal.",
+    "Correct: municipal bond funds pass through interest that is free from federal income tax, suiting high-bracket investors.",
     "Wrong: a growth stock fund is an equity fund that rarely pays dividends and is not a bond fund."
    ]
   },
@@ -1289,15 +1331,15 @@
    "d": 3,
    "q": "A municipal bond fund pays a shareholder a dividend of $0.50 per share, representing tax-free interest, and a year-end capital gains distribution of $0.20 per share. Which statement about federal taxation is correct?",
    "o": [
-    "Both distributions are exempt from federal income tax",
     "The dividend is exempt, while the capital gains distribution is taxable",
+    "Both distributions are exempt from federal income tax",
     "The capital gains distribution is exempt, while the dividend is taxable",
     "Both distributions are taxable"
    ],
-   "a": 1,
+   "a": 0,
    "w": [
-    "Wrong: the tax benefit of munis extends only to the interest income, not to capital gains.",
     "Correct: dividends reflecting muni interest are tax-exempt, but capital gains distributions remain taxable.",
+    "Wrong: the tax benefit of munis extends only to the interest income, not to capital gains.",
     "Wrong: this reverses the treatment; interest is what the exemption covers.",
     "Wrong: the muni interest dividend is exempt, so taxing both ignores the fund’s main benefit."
    ]
@@ -1310,16 +1352,16 @@
    "q": "Which type of mutual fund is the only one that is NOT actively managed?",
    "o": [
     "Asset allocation fund",
-    "Index fund",
+    "Bond fund",
     "Sector fund",
-    "Bond fund"
+    "Index fund"
    ],
-   "a": 1,
+   "a": 3,
    "w": [
     "Wrong: asset allocation funds have managers who shift the mix of stocks, bonds and cash as markets change.",
-    "Correct: an index fund buys most or all securities of an index and is not actively managed after assembly.",
+    "Wrong: bond funds are professionally managed to select bonds that meet an income objective.",
     "Wrong: sector funds are actively managed, concentrating on a chosen industry.",
-    "Wrong: bond funds are professionally managed to select bonds that meet an income objective."
+    "Correct: an index fund buys most or all securities of an index and is not actively managed after assembly."
    ]
   },
   {
@@ -1330,16 +1372,16 @@
    "q": "An investor says she wants one diversified fund in which a professional decides how much to hold in stocks, bonds and cash as conditions change. Which fund type best matches?",
    "o": [
     "Index fund",
-    "Sector fund",
+    "Asset allocation fund",
     "Money market fund",
-    "Asset allocation fund"
+    "Sector fund"
    ],
-   "a": 3,
+   "a": 1,
    "w": [
     "Wrong: an index fund passively replicates an index and does not shift among asset classes.",
-    "Wrong: a sector fund concentrates in one industry rather than spreading across asset classes.",
+    "Correct: asset allocation funds combine stocks, bonds and cash, and the manager has discretion to adjust the mix.",
     "Wrong: a money market fund holds only short-term debt and offers no stock or bond exposure.",
-    "Correct: asset allocation funds combine stocks, bonds and cash, and the manager has discretion to adjust the mix."
+    "Wrong: a sector fund concentrates in one industry rather than spreading across asset classes."
    ]
   },
   {
@@ -1350,16 +1392,16 @@
    "q": "A mutual fund has total assets of $480 million, total liabilities of $80 million and 20 million shares outstanding. What is its NAV per share?",
    "o": [
     "$24.00",
-    "$20.00",
+    "$28.00",
     "$4.00",
-    "$28.00"
+    "$20.00"
    ],
-   "a": 1,
+   "a": 3,
    "w": [
     "Wrong: $480 million ÷ 20 million ignores the fund’s liabilities, which must be subtracted first.",
-    "Correct: ($480M − $80M) = $400M NAV; $400M ÷ 20M shares = $20.00 per share.",
+    "Wrong: $560M ÷ 20M adds the liabilities instead of subtracting them.",
     "Wrong: $4.00 is the liabilities per share ($80M ÷ 20M), not the net asset value per share.",
-    "Wrong: $560M ÷ 20M adds the liabilities instead of subtracting them."
+    "Correct: ($480M − $80M) = $400M NAV; $400M ÷ 20M shares = $20.00 per share."
    ]
   },
   {
@@ -1369,15 +1411,15 @@
    "d": 2,
    "q": "A mutual fund’s NAV is $15.00 per share. It pays a distribution of $0.60 per share. Assuming no change in the market value of the portfolio, what is the NAV per share immediately afterward?",
    "o": [
-    "$15.60",
     "$14.40",
+    "$15.60",
     "$15.00",
     "$14.00"
    ],
-   "a": 1,
+   "a": 0,
    "w": [
-    "Wrong: a payout removes cash from the fund; it cannot raise the NAV per share.",
     "Correct: NAV falls by the amount distributed: $15.00 − $0.60 = $14.40 per share.",
+    "Wrong: a payout removes cash from the fund; it cannot raise the NAV per share.",
     "Wrong: NAV does not stay the same, because cash leaves the fund when a distribution is paid.",
     "Wrong: $14.00 subtracts more than the $0.60 distribution actually paid."
    ]
@@ -1390,15 +1432,15 @@
    "q": "Assuming the market value of the portfolio securities is unchanged, which of the following events would cause a mutual fund’s NAV per share to decrease?",
    "o": [
     "The fund redeems a large block of shares",
-    "The fund sells a large number of new shares",
     "The fund pays a dividend to shareholders",
+    "The fund sells a large number of new shares",
     "The sponsor sells shares to dealers at a discount"
    ],
-   "a": 2,
+   "a": 1,
    "w": [
     "Wrong: cash paid out on redemption is offset by fewer shares outstanding, so NAV per share is unchanged.",
-    "Wrong: cash coming in from new shares is offset by the new shares issued, so NAV per share is unchanged.",
     "Correct: a distribution sends cash out to shareholders without reducing share count, so NAV per share falls.",
+    "Wrong: cash coming in from new shares is offset by the new shares issued, so NAV per share is unchanged.",
     "Wrong: dealer discounts affect the sponsor’s compensation, not the fund’s NAV per share."
    ]
   },
@@ -1410,15 +1452,15 @@
    "q": "A customer enters an order to buy mutual fund shares at 4:45 pm on Wednesday. The fund calculates NAV at the 4:00 pm close each business day. At which price will the order be filled?",
    "o": [
     "Wednesday’s closing NAV",
-    "Thursday’s closing NAV",
     "Thursday’s opening price",
+    "Thursday’s closing NAV",
     "Tuesday’s closing NAV"
    ],
-   "a": 1,
+   "a": 2,
    "w": [
     "Wrong: filling at a close already passed is late trading, which is prohibited.",
-    "Correct: forward pricing fills the order at the next NAV calculated after receipt, which is Thursday’s close.",
     "Wrong: mutual funds do not use opening prices; they are priced at the next calculated NAV.",
+    "Correct: forward pricing fills the order at the next NAV calculated after receipt, which is Thursday’s close.",
     "Wrong: using an earlier NAV would give the customer a known price, which forward pricing prevents."
    ]
   },
@@ -1429,15 +1471,15 @@
    "d": 2,
    "q": "A mutual fund has an NAV of $18.80 and charges a front-end sales charge of 6% of the public offering price. What is the public offering price?",
    "o": [
-    "$19.93",
     "$20.00",
+    "$19.93",
     "$17.67",
     "$18.80"
    ],
-   "a": 1,
+   "a": 0,
    "w": [
-    "Wrong: $18.80 × 1.06 applies the 6% to NAV, but the charge is a percentage of POP.",
     "Correct: POP = NAV ÷ (1 − 0.06) = $18.80 ÷ 0.94 = $20.00; check: $1.20 charge ÷ $20.00 = 6%.",
+    "Wrong: $18.80 × 1.06 applies the 6% to NAV, but the charge is a percentage of POP.",
     "Wrong: $18.80 × 0.94 subtracts the charge from NAV, moving in the wrong direction.",
     "Wrong: that is the NAV; the POP must exceed NAV when a sales charge applies."
    ]
@@ -1449,15 +1491,15 @@
    "d": 2,
    "q": "A mutual fund has an NAV of $24.00 and a public offering price of $25.00. What is the sales charge expressed as a percentage?",
    "o": [
-    "4.00%",
     "4.17%",
+    "4.00%",
     "1.00%",
     "4.50%"
    ],
-   "a": 0,
+   "a": 1,
    "w": [
-    "Correct: sales charge = $25.00 − $24.00 = $1.00; $1.00 ÷ $25.00 POP = 4.00%.",
     "Wrong: $1.00 ÷ $24.00 divides by NAV, but a sales charge is always a percentage of POP.",
+    "Correct: sales charge = $25.00 − $24.00 = $1.00; $1.00 ÷ $25.00 POP = 4.00%.",
     "Wrong: $1.00 is the dollar sales charge, not the percentage.",
     "Wrong: 4.50% does not result from the figures given; the calculation yields 4.00%."
    ]
@@ -1470,15 +1512,15 @@
    "q": "A fund has an NAV of $47.50 and a sales charge of 5% of the public offering price. What is the dollar amount of the sales charge per share?",
    "o": [
     "$2.38",
-    "$2.50",
     "$2.75",
+    "$2.50",
     "$5.00"
    ],
-   "a": 1,
+   "a": 2,
    "w": [
     "Wrong: $2.38 is 5% of NAV ($47.50 × 0.05), but the charge is based on POP, not NAV.",
-    "Correct: POP = $47.50 ÷ 0.95 = $50.00; sales charge = $50.00 − $47.50 = $2.50, which is 5% of $50.00.",
     "Wrong: $2.75 does not follow from either a NAV-based or POP-based calculation here.",
+    "Correct: POP = $47.50 ÷ 0.95 = $50.00; sales charge = $50.00 − $47.50 = $2.50, which is 5% of $50.00.",
     "Wrong: $5.00 is 10% of $50, double the actual charge."
    ]
   },
@@ -1489,17 +1531,17 @@
    "d": 2,
    "q": "Which of the following are characteristics of Class B mutual fund shares?\n\nI. A contingent deferred sales charge\nII. Breakpoint discounts\nIII. A 12b-1 fee higher than Class A shares\nIV. A front-end sales load",
    "o": [
-    "I and III only",
+    "I, III and IV only",
     "I and II only",
     "II and IV only",
-    "I, III and IV only"
+    "I and III only"
    ],
-   "a": 0,
+   "a": 3,
    "w": [
-    "Correct: Class B shares carry a back-end CDSC and a higher 12b-1 fee than Class A, with no breakpoints or front load.",
+    "Wrong: a front-end load is a Class A feature; Class B charges on redemption instead.",
     "Wrong: Class B shares do not offer breakpoints; only Class A does.",
     "Wrong: neither breakpoints nor a front-end load applies to Class B shares.",
-    "Wrong: a front-end load is a Class A feature; Class B charges on redemption instead."
+    "Correct: Class B shares carry a back-end CDSC and a higher 12b-1 fee than Class A, with no breakpoints or front load."
    ]
   },
   {
@@ -1509,15 +1551,15 @@
    "d": 2,
    "q": "To charge the maximum permitted sales charge, a mutual fund must offer which of the following?\n\nI. Breakpoints\nII. Rights of accumulation\nIII. Automatic reinvestment of dividends at NAV\nIV. A contingent deferred sales charge waiver",
    "o": [
-    "I and II only",
     "I, II and III only",
+    "I and II only",
     "II, III and IV only",
     "I, II, III and IV"
    ],
-   "a": 1,
+   "a": 0,
    "w": [
-    "Wrong: this leaves out reinvestment at NAV, the third required feature.",
     "Correct: the three features are breakpoints, rights of accumulation and reinvestment of dividends at NAV.",
+    "Wrong: this leaves out reinvestment at NAV, the third required feature.",
     "Wrong: this omits breakpoints and adds a CDSC waiver, which is not a required feature.",
     "Wrong: a CDSC waiver is not one of the three required features, so including it is incorrect."
    ]
@@ -1530,16 +1572,16 @@
    "q": "A mutual fund offers breakpoints and rights of accumulation but does not allow shareholders to reinvest dividends at NAV. What is the maximum sales charge it may impose?",
    "o": [
     "8.50%",
-    "6.25%",
+    "4.50%",
     "5.75%",
-    "4.50%"
+    "6.25%"
    ],
-   "a": 1,
+   "a": 3,
    "w": [
     "Wrong: the 8.5% maximum requires all three features, and this fund lacks NAV reinvestment.",
-    "Correct: a fund missing any of the three features is limited to a maximum sales charge of 6.25%.",
+    "Wrong: 4.50% is a sample tier in a breakpoint schedule, not a maximum sales charge.",
     "Wrong: 5.75% appears in a sample breakpoint chart but is not the regulatory cap for this fund.",
-    "Wrong: 4.50% is a sample tier in a breakpoint schedule, not a maximum sales charge."
+    "Correct: a fund missing any of the three features is limited to a maximum sales charge of 6.25%."
    ]
   },
   {
@@ -1550,15 +1592,15 @@
    "q": "A mutual fund wants to advertise itself as no-load. What is the maximum annual 12b-1 fee it may charge?",
    "o": [
     "0.10% of average net assets",
-    "0.25% of average net assets",
     "0.50% of average net assets",
+    "0.25% of average net assets",
     "0.75% of average net assets"
    ],
-   "a": 1,
+   "a": 2,
    "w": [
     "Wrong: 0.10% is below the actual cap; the permitted maximum is higher.",
-    "Correct: a fund calling itself no-load can charge a 12b-1 fee of no more than 0.25% of average net assets.",
     "Wrong: 0.50% exceeds the 0.25% ceiling that applies to any fund advertising itself as no-load.",
+    "Correct: a fund calling itself no-load can charge a 12b-1 fee of no more than 0.25% of average net assets.",
     "Wrong: 0.75% is the overall maximum 12b-1 fee for any share class, not the no-load cap."
    ]
   },
@@ -1590,16 +1632,16 @@
    "q": "A mutual fund paid management fees of $1.8 million and other operating expenses of $0.7 million during a year in which its average net assets were $250 million. What is its expense ratio?",
    "o": [
     "0.72%",
-    "1.00%",
+    "0.28%",
     "2.50%",
-    "0.28%"
+    "1.00%"
    ],
-   "a": 1,
+   "a": 3,
    "w": [
     "Wrong: $1.8M ÷ $250M counts only management fees and omits operating expenses.",
-    "Correct: ($1.8M + $0.7M) = $2.5M; $2.5M ÷ $250M = 1.00% of average net assets.",
+    "Wrong: $0.7M ÷ $250M counts only operating expenses and omits management fees.",
     "Wrong: 2.50 is the dollar total in millions; it was never divided by average net assets.",
-    "Wrong: $0.7M ÷ $250M counts only operating expenses and omits management fees."
+    "Correct: ($1.8M + $0.7M) = $2.5M; $2.5M ÷ $250M = 1.00% of average net assets."
    ]
   },
   {
@@ -1629,16 +1671,16 @@
    "d": 3,
    "q": "An investor plans to invest $300,000 in a fund family and hold the shares for many years. She wants the benefit of sales charge discounts for large purchases. Which share class is the best fit?",
    "o": [
-    "Class A shares",
-    "Class B shares",
     "Class C shares",
+    "Class B shares",
+    "Class A shares",
     "Any class, because all of them offer breakpoints"
    ],
-   "a": 0,
+   "a": 2,
    "w": [
-    "Correct: Class A has a front-end load that suits long holders and is the only class offering breakpoints.",
-    "Wrong: Class B shares do not offer breakpoints and carry higher 12b-1 fees, suiting investors with little cash.",
     "Wrong: Class C shares have no breakpoints and the highest annual costs, which grow the longer they are held.",
+    "Wrong: Class B shares do not offer breakpoints and carry higher 12b-1 fees, suiting investors with little cash.",
+    "Correct: Class A has a front-end load that suits long holders and is the only class offering breakpoints.",
     "Wrong: only Class A shares offer breakpoints, so the classes are not interchangeable."
    ]
   },
@@ -1650,15 +1692,15 @@
    "q": "An investor wants a short-term mutual fund investment and is willing to pay a level sales charge and relatively high annual fees. Which share class was designed for this kind of investor?",
    "o": [
     "Class A shares",
-    "Class B shares",
     "Class C shares",
+    "Class B shares",
     "A closed-end fund share class"
    ],
-   "a": 2,
+   "a": 1,
    "w": [
     "Wrong: Class A shares have front-end loads that are most beneficial for long-term holders and large purchases.",
-    "Wrong: Class B shares suit investors with little cash and a long horizon, not short-term holders.",
     "Correct: Class C shares carry a level load and high annual costs, designed for short-term investments.",
+    "Wrong: Class B shares suit investors with little cash and a long horizon, not short-term holders.",
     "Wrong: closed-end funds have a single share class and no A, B or C structure."
    ]
   },
@@ -1667,7 +1709,7 @@
    "r": "4.2.5.3",
    "k": "concept",
    "d": 2,
-   "q": "A fund’s Class B shares follow the typical CDSC schedule of 5%, 4%, 3%, 3%, 2%, 1% and 0% for years 1 through 7 and later. What percentage applies to shares redeemed in year 5?",
+   "q": "A fund’s Class B shares follow a typical CDSC schedule of 5%, 4%, 3%, 3%, 2% and 1% for years 1 through 6, then 0% from year 7 onward. What percentage applies to shares redeemed in year 5?",
    "o": [
     "3%",
     "2%",
@@ -1689,17 +1731,17 @@
    "d": 3,
    "q": "A fund’s Class A schedule is: under $25,000, 5.50%; $25,000 to $74,999, 4.50%; $75,000 to $149,999, 3.50%; $150,000 and over, 2.00%. An investor makes a single $80,000 purchase. What is the dollar sales charge?",
    "o": [
-    "$2,800",
+    "$4,400",
     "$3,800",
     "$3,600",
-    "$4,400"
+    "$2,800"
    ],
-   "a": 0,
+   "a": 3,
    "w": [
-    "Correct: breakpoints apply to the whole purchase, so 3.50% × $80,000 = $2,800.",
+    "Wrong: $4,400 applies the top 5.50% rate, ignoring the breakpoint discount.",
     "Wrong: $3,800 treats the tiers as incremental ($1,375 + $2,250 + $175), but breakpoints are not incremental.",
     "Wrong: $3,600 applies the 4.50% tier, which is the bracket below the one that $80,000 reaches.",
-    "Wrong: $4,400 applies the top 5.50% rate, ignoring the breakpoint discount."
+    "Correct: breakpoints apply to the whole purchase, so 3.50% × $80,000 = $2,800."
    ]
   },
   {
@@ -1729,16 +1771,16 @@
    "d": 3,
    "q": "A fund’s schedule is: under $25,000, 5.50%; $25,000 to $74,999, 4.50%; $75,000 to $149,999, 3.50%; $150,000 and over, 2.00%. An investor signs a letter of intent for $150,000 over 13 months and makes a first purchase of $20,000. What is the dollar sales charge on that first purchase?",
    "o": [
-    "$400",
-    "$700",
     "$1,100",
+    "$700",
+    "$400",
     "$900"
    ],
-   "a": 0,
+   "a": 2,
    "w": [
-    "Correct: the LOI sets the rate by the promised total, so the 2.00% rate applies: 2.00% × $20,000 = $400.",
-    "Wrong: $700 uses 3.50%, the bracket below the $150,000 promised under the LOI.",
     "Wrong: $1,100 applies 5.50%, the rate that would apply to the first purchase alone without the LOI.",
+    "Wrong: $700 uses 3.50%, the bracket below the $150,000 promised under the LOI.",
+    "Correct: the LOI sets the rate by the promised total, so the 2.00% rate applies: 2.00% × $20,000 = $400.",
     "Wrong: $900 applies 4.50%, which is the bracket for $25,000 to $74,999 and not the promised total."
    ]
   },
@@ -1750,15 +1792,15 @@
    "q": "An investor signs a letter of intent to invest $100,000 over 13 months and receives a reduced sales charge, but invests only $70,000 by the deadline. What happens?",
    "o": [
     "The LOI is automatically extended by 90 days",
-    "The fund liquidates escrowed shares to pay the higher sales charge that now applies",
     "The investor receives a refund of the sales charge already paid",
+    "The fund liquidates escrowed shares to pay the higher sales charge that now applies",
     "The investor keeps the lower sales charge on the $70,000 already invested"
    ],
-   "a": 1,
+   "a": 2,
    "w": [
     "Wrong: 90 days is the backdating window for earlier purchases, not an extension of the commitment period.",
-    "Correct: the additional shares bought with the reduced charge are held in escrow and liquidated to pay the higher charge.",
     "Wrong: no refund is provided; the shortfall leads to a higher charge, not a reduction.",
+    "Correct: the additional shares bought with the reduced charge are held in escrow and liquidated to pay the higher charge.",
     "Wrong: the lower rate depends on completing the commitment, so the otherwise applicable charge is collected."
    ]
   },
@@ -1829,15 +1871,15 @@
    "d": 3,
    "q": "For purposes of reaching a breakpoint, which of the following may generally be combined?\n\nI. A husband’s and wife’s investments in the same fund\nII. A parent’s and minor child’s investments in the same fund\nIII. Investments in several funds within the same fund family\nIV. An investor’s purchase and an unrelated friend’s purchase",
    "o": [
-    "I and II only",
     "I, II and III only",
+    "I and II only",
     "II and III only",
     "I, II, III and IV"
    ],
-   "a": 1,
+   "a": 0,
    "w": [
-    "Wrong: this leaves out combination purchases across a fund family, which are allowed.",
     "Correct: spouses, minor children and funds in the same family can combine, while unrelated friends cannot.",
+    "Wrong: this leaves out combination purchases across a fund family, which are allowed.",
     "Wrong: this excludes spouses, who may combine their investments in the same fund with the investor to reach a breakpoint.",
     "Wrong: an unrelated friend’s purchase cannot be aggregated for the discount."
    ]
@@ -1870,16 +1912,16 @@
    "q": "An investor bought 200 shares of a mutual fund at $12 per share and later 100 more shares at $18 per share. What is her average cost basis per share?",
    "o": [
     "$15.00",
-    "$14.00",
+    "$12.00",
     "$13.50",
-    "$12.00"
+    "$14.00"
    ],
-   "a": 1,
+   "a": 3,
    "w": [
     "Wrong: $15.00 is the simple average of the two prices and ignores that more shares were bought at the lower price.",
-    "Correct: total cost $2,400 + $1,800 = $4,200; total shares 300; $4,200 ÷ 300 = $14.00 per share.",
+    "Wrong: $12.00 is the first purchase price only and ignores the later, higher-priced shares.",
     "Wrong: $13.50 does not result from the cost and share totals.",
-    "Wrong: $12.00 is the first purchase price only and ignores the later, higher-priced shares."
+    "Correct: total cost $2,400 + $1,800 = $4,200; total shares 300; $4,200 ÷ 300 = $14.00 per share."
    ]
   },
   {
@@ -1889,16 +1931,16 @@
    "d": 3,
    "q": "An investor owns 250 mutual fund shares bought at $8 and 150 shares bought at $16. Using average cost basis, she redeems 100 shares at $14. What is her capital gain on the redemption?",
    "o": [
-    "$300",
-    "$600",
     "$200",
+    "$600",
+    "$300",
     "$(200)"
    ],
-   "a": 0,
+   "a": 2,
    "w": [
-    "Correct: total cost $2,000 + $2,400 = $4,400 ÷ 400 shares = $11.00 average; ($14 − $11) × 100 = $300 gain.",
-    "Wrong: $600 compares the sale price to the $8 first lot, which is not how average cost works.",
     "Wrong: $200 uses $12, the simple mean of the two prices, instead of the share-weighted average.",
+    "Wrong: $600 compares the sale price to the $8 first lot, which is not how average cost works.",
+    "Correct: total cost $2,000 + $2,400 = $4,400 ÷ 400 shares = $11.00 average; ($14 − $11) × 100 = $300 gain.",
     "Wrong: a loss of $200 compares the sale price to the $16 lot only, ignoring the average."
    ]
   },
@@ -1910,15 +1952,15 @@
    "q": "A representative accepts a customer’s mutual fund purchase order at 4:20 pm and has it filled at the 4:00 pm NAV so that the customer can benefit from news released after the close. Which prohibited practice does this describe?",
    "o": [
     "Switching",
-    "Selling dividends",
     "Late trading",
+    "Selling dividends",
     "Breakpoint sale"
    ],
-   "a": 2,
+   "a": 1,
    "w": [
     "Wrong: switching involves moving a client between similar funds for no legitimate purpose.",
-    "Wrong: selling dividends is selling shares just before a payout, which is not what happened here.",
     "Correct: filling an order received after the close at that day’s price instead of the next NAV is late trading.",
+    "Wrong: selling dividends is selling shares just before a payout, which is not what happened here.",
     "Wrong: a breakpoint sale concerns purchases sized just below a sales charge discount level."
    ]
   },
@@ -1929,16 +1971,16 @@
    "d": 2,
    "q": "A representative persuades a client to sell shares of a growth fund from one fund family and buy a growth fund from another family with nearly identical objectives, earning a new sales charge. This is an example of:",
    "o": [
-    "Late trading",
-    "Rights of accumulation",
     "Switching",
+    "Rights of accumulation",
+    "Late trading",
     "Forward pricing"
    ],
-   "a": 2,
+   "a": 0,
    "w": [
-    "Wrong: late trading concerns the timing of order pricing relative to the NAV calculation.",
-    "Wrong: rights of accumulation is a legitimate discount feature, not a violation.",
     "Correct: moving a client between similar funds for no legitimate purpose generates costs and taxes and is switching.",
+    "Wrong: rights of accumulation is a legitimate discount feature, not a violation.",
+    "Wrong: late trading concerns the timing of order pricing relative to the NAV calculation.",
     "Wrong: forward pricing is the proper method for pricing fund orders, not a violation."
    ]
   },
@@ -1949,16 +1991,16 @@
    "d": 2,
    "q": "A representative urges a client to buy a mutual fund two days before the fund pays a large dividend. Why is this practice prohibited?",
    "o": [
-    "The dividend lowers NAV and creates a tax liability for the client, who gives up the chance to buy at the lower NAV",
-    "The fund would be unable to pay the dividend to a new shareholder",
     "The sales charge doubles when shares are purchased before a dividend",
+    "The fund would be unable to pay the dividend to a new shareholder",
+    "The dividend lowers NAV and creates a tax liability for the client, who gives up the chance to buy at the lower NAV",
     "The dividend is forfeited by shareholders who purchase within five days"
    ],
-   "a": 0,
+   "a": 2,
    "w": [
-    "Correct: the payout reduces NAV by the amount paid and is taxable, so waiting to buy after the distribution avoids the tax.",
-    "Wrong: new shareholders do receive the dividend; the problem is the tax and the lower NAV.",
     "Wrong: the sales charge is not affected by the timing of a dividend.",
+    "Wrong: new shareholders do receive the dividend; the problem is the tax and the lower NAV.",
+    "Correct: the payout reduces NAV by the amount paid and is taxable, so waiting to buy after the distribution avoids the tax.",
     "Wrong: no forfeiture rule applies, and the harm lies in the NAV drop and taxation."
    ]
   },
@@ -1970,16 +2012,16 @@
    "q": "A client buys 1,000 shares of a mutual fund at $20.00 per share the day before the fund pays a $1.50 per share dividend. Ignoring market moves, how much taxable dividend income does the client receive?",
    "o": [
     "$0",
-    "$1,500",
+    "$20,000",
     "$18,500",
-    "$20,000"
+    "$1,500"
    ],
-   "a": 1,
+   "a": 3,
    "w": [
     "Wrong: the dividend is taxable income even though NAV falls by the same amount per share.",
-    "Correct: 1,000 shares × $1.50 = $1,500 of taxable dividend income, while the shares drop to $18.50 each.",
+    "Wrong: $20,000 is the amount the client paid, not the dividend.",
     "Wrong: $18,500 is the value of the shares after the payout, not the dividend received.",
-    "Wrong: $20,000 is the amount the client paid, not the dividend."
+    "Correct: 1,000 shares × $1.50 = $1,500 of taxable dividend income, while the shares drop to $18.50 each."
    ]
   },
   {
@@ -1991,15 +2033,15 @@
    "o": [
     "Redeem them with the fund at NAV",
     "Sell them to the sponsor at the public offering price",
-    "Sell them to another investor on an exchange",
-    "Only after the fund’s termination date"
+    "Only after the fund’s termination date",
+    "Sell them to another investor on an exchange"
    ],
-   "a": 2,
+   "a": 3,
    "w": [
     "Wrong: closed-end funds do not redeem shares; redemption is a mutual fund feature.",
     "Wrong: the sponsor does not repurchase closed-end shares at a public offering price.",
-    "Correct: closed-end shares trade investor-to-investor on an exchange, like stocks.",
-    "Wrong: closed-end funds have no stated termination date that restricts selling."
+    "Wrong: closed-end funds have no stated termination date that restricts selling.",
+    "Correct: closed-end shares trade investor-to-investor on an exchange, like stocks."
    ]
   },
   {
@@ -2009,16 +2051,16 @@
    "d": 2,
    "q": "All of the following are true of closed-end funds EXCEPT:",
    "o": [
-    "Investors pay a commission when buying or selling shares",
-    "Shares may trade at a discount to NAV",
     "The fund charges an annual 12b-1 fee",
+    "Shares may trade at a discount to NAV",
+    "Investors pay a commission when buying or selling shares",
     "The fund may issue preferred stock"
    ],
-   "a": 2,
+   "a": 0,
    "w": [
-    "Wrong: closed-end shares trade like stocks, so commissions apply; this statement is true.",
-    "Wrong: market supply and demand can push shares below NAV; this statement is true.",
     "Correct: closed-end funds do not charge sales charges or 12b-1 fees, so this statement is false.",
+    "Wrong: market supply and demand can push shares below NAV; this statement is true.",
+    "Wrong: closed-end shares trade like stocks, so commissions apply; this statement is true.",
     "Wrong: closed-end funds may issue senior securities such as preferred stock; this statement is true."
    ]
   },
@@ -2050,15 +2092,15 @@
    "q": "A fund’s NAV is $30.00 per share and the price an investor pays is $30.00. Which of the following could the fund be?\n\nI. A no-load mutual fund\nII. A mutual fund with a front-end sales charge\nIII. A closed-end fund",
    "o": [
     "I only",
-    "I and III only",
     "II and III only",
+    "I and III only",
     "I, II and III"
    ],
-   "a": 1,
+   "a": 2,
    "w": [
     "Wrong: a closed-end fund can also trade exactly at NAV, so this omits a valid possibility.",
-    "Correct: a no-load mutual fund is sold at NAV and a closed-end fund can trade at NAV; a front-end load would put POP above NAV.",
     "Wrong: a mutual fund with a front-end sales charge is priced above NAV, so it is not consistent with the facts.",
+    "Correct: a no-load mutual fund is sold at NAV and a closed-end fund can trade at NAV; a front-end load would put POP above NAV.",
     "Wrong: a front-end load would make the price exceed NAV, so item II cannot apply."
    ]
   },
@@ -2090,16 +2132,16 @@
    "q": "A closed-end fund’s shares are trading 4% above its NAV. What best explains this?",
    "o": [
     "The fund is required to redeem shares at a premium",
-    "Investor demand for the shares is strong relative to the supply",
+    "The fund added a front-end sales charge",
     "The fund did not calculate NAV that day",
-    "The fund added a front-end sales charge"
+    "Investor demand for the shares is strong relative to the supply"
    ],
-   "a": 1,
+   "a": 3,
    "w": [
     "Wrong: closed-end funds do not redeem their shares at all.",
-    "Correct: closed-end shares are priced by supply and demand, so strong demand can push the price above NAV.",
+    "Wrong: closed-end funds charge commissions on exchange trades, not sales charges, so a sales charge cannot explain a premium.",
     "Wrong: missing a NAV calculation does not itself create a premium; NAV need not be computed daily.",
-    "Wrong: closed-end funds charge commissions on exchange trades, not sales charges, so a sales charge cannot explain a premium."
+    "Correct: closed-end shares are priced by supply and demand, so strong demand can push the price above NAV."
    ]
   },
   {
@@ -2129,15 +2171,15 @@
    "d": 3,
    "q": "Which of the following describe a unit investment trust?\n\nI. A fixed portfolio of securities\nII. A termination date set at creation\nIII. Active management by an investment adviser\nIV. Units that are redeemable with the trust",
    "o": [
-    "I and II only",
     "I, II and IV only",
+    "I and II only",
     "II, III and IV only",
     "I, III and IV only"
    ],
-   "a": 1,
+   "a": 0,
    "w": [
-    "Wrong: this leaves out redeemability of units, which is a UIT feature.",
     "Correct: UITs hold a supervised fixed portfolio, have a set end date and redeem units, with no active manager.",
+    "Wrong: this leaves out redeemability of units, which is a UIT feature.",
     "Wrong: UITs have no investment adviser, so item III is false.",
     "Wrong: UITs are not actively managed, so item III disqualifies this choice."
    ]
@@ -2150,15 +2192,15 @@
    "q": "An investor wants a pooled product with known holdings that never change in style, a set end date tied to bond maturities and predictable monthly distributions. Which product fits best?",
    "o": [
     "Open-end mutual fund",
-    "Unit investment trust",
     "Closed-end fund",
+    "Unit investment trust",
     "Asset allocation fund"
    ],
-   "a": 1,
+   "a": 2,
    "w": [
     "Wrong: a mutual fund is actively managed with a changing portfolio and no termination date.",
-    "Correct: UITs have fixed portfolios, no style drift, a set termination date and predictable distributions.",
     "Wrong: closed-end funds are actively managed and have no fixed termination date.",
+    "Correct: UITs have fixed portfolios, no style drift, a set termination date and predictable distributions.",
     "Wrong: an asset allocation fund is managed and shifts its mix, so holdings are not fixed."
    ]
   },
@@ -2169,16 +2211,16 @@
    "d": 2,
    "q": "An investor expects interest rates to rise sharply. Which of the following funds is most likely to suffer the largest decline in NAV?",
    "o": [
-    "A money market fund",
-    "A short-term bond fund",
     "A long-term bond fund",
+    "A short-term bond fund",
+    "A money market fund",
     "A cash-equivalent fund"
    ],
-   "a": 2,
+   "a": 0,
    "w": [
-    "Wrong: money market funds hold very short maturities and target a stable $1 NAV.",
-    "Wrong: short-term bond funds are less sensitive to rate moves than longer-term funds.",
     "Correct: bond fund values move inversely with rates, and longer average maturities mean greater NAV volatility.",
+    "Wrong: short-term bond funds are less sensitive to rate moves than longer-term funds.",
+    "Wrong: money market funds hold very short maturities and target a stable $1 NAV.",
     "Wrong: cash-equivalent funds hold liquid short-term debt and are the least rate-sensitive."
    ]
   },
@@ -2210,16 +2252,16 @@
    "q": "For a typical exchange-traded fund tracking an index, what usually causes its portfolio holdings to change?",
    "o": [
     "The manager’s view that a stock is overvalued",
-    "A change in the composition of the underlying index",
+    "Redemption requests from retail investors",
     "A vote by the fund’s shareholders",
-    "Redemption requests from retail investors"
+    "A change in the composition of the underlying index"
    ],
-   "a": 1,
+   "a": 3,
    "w": [
     "Wrong: ETFs are treated as passive vehicles and are not run on a manager’s market views.",
-    "Correct: ETFs only change holdings when the index changes, a process called reconstitution.",
+    "Wrong: retail investors do not redeem with the fund; they sell on the exchange.",
     "Wrong: shareholders do not vote on individual portfolio changes for an index-tracking ETF.",
-    "Wrong: retail investors do not redeem with the fund; they sell on the exchange."
+    "Correct: ETFs only change holdings when the index changes, a process called reconstitution."
    ]
   },
   {
@@ -2230,16 +2272,16 @@
    "q": "An investor wants index exposure with low costs and wants to place a limit order at midday. Which product fits best?",
    "o": [
     "Index mutual fund",
-    "Exchange-traded fund",
+    "Asset allocation fund",
     "Unit investment trust",
-    "Asset allocation fund"
+    "Exchange-traded fund"
    ],
-   "a": 1,
+   "a": 3,
    "w": [
     "Wrong: mutual fund orders are priced at the next calculated NAV and cannot be limit orders during the day.",
-    "Correct: ETFs track an index at low cost and trade like stocks, allowing limit orders throughout the day.",
+    "Wrong: asset allocation funds are actively managed and are not index trackers.",
     "Wrong: UIT units are redeemable with the trust and do not trade on an exchange.",
-    "Wrong: asset allocation funds are actively managed and are not index trackers."
+    "Correct: ETFs track an index at low cost and trade like stocks, allowing limit orders throughout the day."
    ]
   },
   {
@@ -2249,17 +2291,17 @@
    "d": 3,
    "q": "All of the following are features of exchange-traded funds EXCEPT:",
    "o": [
-    "Market price set by supply and demand",
+    "A termination date fixed when the fund is created",
     "Commissions paid on purchases and sales",
     "Short selling and margin purchases are available",
-    "A termination date fixed when the fund is created"
+    "Market price set by supply and demand"
    ],
-   "a": 3,
+   "a": 0,
    "w": [
-    "Wrong: ETF prices fluctuate on supply and demand, so shares can trade at a premium or discount; this is a feature.",
+    "Correct: ETFs do not have fixed termination dates, unlike UITs, so this is the exception.",
     "Wrong: ETFs are exchange-traded, so commissions apply; this is a feature.",
     "Wrong: ETFs allow short selling, margin and stop or limit orders; this is a feature.",
-    "Correct: ETFs do not have fixed termination dates, unlike UITs, so this is the exception."
+    "Wrong: ETF prices fluctuate on supply and demand, so shares can trade at a premium or discount; this is a feature."
    ]
   },
   {
@@ -2289,15 +2331,15 @@
    "d": 1,
    "q": "Which of the following trade on the secondary market during the day?\n\nI. Mutual funds\nII. Closed-end funds\nIII. Unit investment trusts\nIV. Exchange-traded funds",
    "o": [
-    "II and IV only",
     "I and II only",
+    "II and IV only",
     "I, II and IV only",
     "III and IV only"
    ],
-   "a": 0,
+   "a": 1,
    "w": [
-    "Correct: closed-end funds and ETFs trade intraday on exchanges, while mutual funds and UITs are redeemed.",
     "Wrong: mutual funds do not trade on the secondary market; they are redeemed by the fund.",
+    "Correct: closed-end funds and ETFs trade intraday on exchanges, while mutual funds and UITs are redeemed.",
     "Wrong: this wrongly includes mutual funds, which have no secondary market.",
     "Wrong: UITs are not traded in the secondary market; they are redeemed by the trust."
    ]
@@ -2330,16 +2372,116 @@
    "q": "Which of the following can an investor buy with borrowed funds in a margin account?",
    "o": [
     "Newly issued mutual fund shares",
-    "Closed-end fund shares trading on an exchange",
     "Shares of a no-load money market fund",
+    "Closed-end fund shares trading on an exchange",
     "Shares of an index mutual fund"
+   ],
+   "a": 2,
+   "w": [
+    "Wrong: mutual funds cannot be purchased on margin; the investor must pay 100% in cash.",
+    "Wrong: money market funds are mutual funds and so cannot be purchased on margin.",
+    "Correct: closed-end fund shares are exchange-traded and may be bought on margin.",
+    "Wrong: index mutual funds are still mutual funds and cannot be bought with borrowed funds."
+   ]
+  },
+  {
+   "id": "4-q71",
+   "r": "4.4.2.2",
+   "k": "concept",
+   "d": 2,
+   "q": "Which of the following are components of a mutual fund’s total return?\n\nI. Change in NAV\nII. Dividend payments\nIII. Capital gains distributions\nIV. The sales charge paid at purchase",
+   "o": [
+    "I, II, III and IV",
+    "I and II only",
+    "II and III only",
+    "I, II and III only"
+   ],
+   "a": 3,
+   "w": [
+    "Wrong: the sales charge is a cost of buying, not a source of return.",
+    "Wrong: this leaves out capital gains distributions, which are part of what the investor earns.",
+    "Wrong: this leaves out the change in NAV, which is the most important component.",
+    "Correct: total return combines the change in NAV with dividends and capital gains distributions received."
+   ]
+  },
+  {
+   "id": "4-q72",
+   "r": "4.2.4.4",
+   "k": "scenario",
+   "d": 2,
+   "q": "An investor needs current income from a bond fund but has a low tolerance for changes in share value. Which fund is the best fit?",
+   "o": [
+    "Short-term bond fund",
+    "Long-term bond fund",
+    "High-yield bond fund",
+    "Sector stock fund"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: short-term bond funds provide income with less NAV fluctuation than longer-term funds.",
+    "Wrong: longer maturities pay more yield but cause the largest NAV swings when rates move.",
+    "Wrong: junk bonds carry default risk and volatility, the opposite of the investor’s tolerance.",
+    "Wrong: a sector stock fund is a concentrated equity fund, not an income-oriented bond fund."
+   ]
+  },
+  {
+   "id": "4-q73",
+   "r": "4.2.5",
+   "k": "concept",
+   "d": 2,
+   "q": "A mutual fund shareholder is said to hold an undivided interest in the fund. What does this mean?",
+   "o": [
+    "Ownership of the specific securities the shareholder chooses",
+    "Ownership of a proportionate share of every security in the portfolio",
+    "A creditor’s claim for repayment of principal from the fund",
+    "The right to vote on each trade the adviser makes"
    ],
    "a": 1,
    "w": [
-    "Wrong: mutual funds cannot be purchased on margin; the investor must pay 100% in cash.",
-    "Correct: closed-end fund shares are exchange-traded and may be bought on margin.",
-    "Wrong: money market funds are mutual funds and so cannot be purchased on margin.",
-    "Wrong: index mutual funds are still mutual funds and cannot be bought with borrowed funds."
+    "Wrong: shareholders cannot pick individual holdings inside a pooled fund.",
+    "Correct: each share represents a proportionate slice of the entire portfolio.",
+    "Wrong: shareholders are owners of the fund, not lenders to it.",
+    "Wrong: the adviser makes trading decisions; shareholders do not vote on trades."
+   ]
+  },
+  {
+   "id": "4-q74",
+   "r": "4.6",
+   "k": "concept",
+   "d": 3,
+   "q": "Which feature is offered by mutual funds but NOT by closed-end funds, unit investment trusts or exchange-traded funds?",
+   "o": [
+    "Diversification among many securities",
+    "A clearly stated investment objective",
+    "A low minimum investment",
+    "A continuous offering of new shares"
+   ],
+   "a": 3,
+   "w": [
+    "Wrong: all of these pooled products spread money across many securities.",
+    "Wrong: each type of investment company states its objective.",
+    "Wrong: the other products are also affordable for small investors.",
+    "Correct: only mutual funds keep creating new shares; the others sell a fixed number of shares or units."
+   ]
+  },
+  {
+   "id": "4-q75",
+   "r": "4.2.4.2",
+   "k": "scenario",
+   "d": 2,
+   "q": "Which investor is LEAST well served by a money market fund?",
+   "o": [
+    "A saver who wants growth that outpaces inflation over 25 years",
+    "A buyer holding a down payment for a home purchase",
+    "An investor who needs to access cash quickly",
+    "A client who values price stability above all else"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: money market returns are relatively low and may not keep pace with inflation.",
+    "Wrong: safety and liquidity for a near-term purchase is the classic use.",
+    "Wrong: high liquidity is a main strength of these funds.",
+    "Wrong: a stable $1 NAV target serves this investor well."
    ]
   }
  ]
