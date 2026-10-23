@@ -1,0 +1,67 @@
+[
+  {
+    "title": "Pre-filing vs cooling-off",
+    "a": "Pre-filing period",
+    "b": "Cooling-off period",
+    "items": [
+      {"s": "No marketing of the securities and no offers or sales to the public may occur.", "v": "a", "w": "Before the registration statement is filed, the offering legally does not exist, so no marketing is allowed."},
+      {"s": "A road show may be held to present the offering to prospective investors.", "v": "b", "w": "Road shows promote the deal after filing, while the SEC reviews the registration statement for disclosure."},
+      {"s": "Investors may be asked for non-binding indications of interest.", "v": "b", "w": "Underwriters collect IOIs after filing to gauge demand and help determine where to price the issue."},
+      {"s": "The period lasts until the registration statement is filed with the SEC.", "v": "a", "w": "The pre-filing or quiet period ends at filing, which is when the cooling-off period begins."},
+      {"s": "A preliminary prospectus without the final price may be distributed.", "v": "b", "w": "The red herring is distributed during the cooling-off period and omits the offer price and share count."},
+      {"s": "The bake-off, the mandate and due diligence on the S-1 take place here.", "v": "a", "w": "The pitch, engagement letter and S-1 preparation all occur before the registration statement is filed."}
+    ]
+  },
+  {
+    "title": "Restricted stock vs control stock",
+    "a": "Restricted stock",
+    "b": "Control stock",
+    "items": [
+      {"s": "Subject to a six-month holding period when the issuer is a reporting company.", "v": "a", "w": "Restricted stock has never been registered, so Rule 144 requires holding it six months before resale."},
+      {"s": "Sales are capped at the greater of 1% of outstanding shares or average weekly volume.", "v": "b", "w": "The volume limit applies to affiliates selling control stock over any 90-day period."},
+      {"s": "Held by an officer, a director or an owner of more than 10% of voting shares.", "v": "b", "w": "Control stock is defined by the holder being an affiliate or corporate insider of the issuer."},
+      {"s": "Acquired through a private placement, an employee benefit plan or as seed capital.", "v": "a", "w": "Restricted stock arises from unregistered acquisitions such as private placements and compensation or start-up funding."},
+      {"s": "Requires adequate current public information about the issuer before the sale.", "v": "a", "w": "Restricted stock can only be resold under Rule 144 when the issuer is a public reporting company."},
+      {"s": "The holder files Form 144 before selling unless sales stay at or below $50,000 over three months.", "v": "b", "w": "Insiders must file Form 144 before selling control shares in the open market, subject to that dollar threshold."}
+    ]
+  },
+  {
+    "title": "Firm commitment vs best efforts",
+    "a": "Firm commitment",
+    "b": "Best efforts",
+    "items": [
+      {"s": "The syndicate buys the whole issue from the issuer and resells it to the public.", "v": "a", "w": "Underwriters purchase all shares, taking financial liability for whatever they cannot resell."},
+      {"s": "Underwriters act as agents and bear no financial liability for unsold securities.", "v": "b", "w": "In best efforts the underwriter only attempts to sell and has no obligation to buy unsold shares."},
+      {"s": "A standby commitment used with a rights offering is a type of this underwriting.", "v": "a", "w": "A standby commitment is a firm commitment under which underwriters buy shares existing shareholders do not subscribe to."},
+      {"s": "All-or-none and mini-max arrangements are forms of this underwriting.", "v": "b", "w": "All-or-none and mini-max are both variations of best efforts that can cancel a deal if targets are missed."},
+      {"s": "Usually used for private placements and offerings of risky securities.", "v": "b", "w": "Best efforts suits riskier deals where underwriters will not take on the risk of unsold securities."},
+      {"s": "Unsold shares are distributed among the members of the syndicate.", "v": "a", "w": "Syndicate members share financial responsibility for any shares left unsold in a firm commitment."}
+    ]
+  },
+  {
+    "title": "Follow-on vs secondary offering",
+    "a": "Follow-on offering",
+    "b": "Secondary offering",
+    "items": [
+      {"s": "An already-public issuer sells additional stock to the public after its IPO.", "v": "a", "w": "A follow-on is any later offering by an issuer that already has publicly traded securities."},
+      {"s": "All proceeds belong to existing shareholders who sell their own shares.", "v": "b", "w": "In a secondary offering the selling shareholders receive the proceeds, not the issuing company."},
+      {"s": "No new shares are created, so the issuer’s net worth is unchanged.", "v": "b", "w": "Because only existing shares are sold, the company’s net worth stays the same in a secondary offering."},
+      {"s": "The label depends on the issuer already having publicly traded securities.", "v": "a", "w": "Follow-on versus IPO turns on whether the issuer is already public, not on who receives the proceeds."},
+      {"s": "Apple, already public, issues more stock to raise capital for the company.", "v": "a", "w": "A publicly traded company doing another stock offering is the book’s example of a follow-on."},
+      {"s": "A founder and a venture firm sell positions while the company sells no shares.", "v": "b", "w": "A registration covering only existing shareholders’ shares is identified in the prospectus as a secondary offering."}
+    ]
+  },
+  {
+    "title": "Regulation D vs Rule 144A",
+    "a": "Regulation D",
+    "b": "Rule 144A",
+    "items": [
+      {"s": "Governs private placements and defines accredited investors.", "v": "a", "w": "Regulation D is the rule that governs private placements and the types of permitted investors."},
+      {"s": "Permits resale of unregistered securities freely among qualified institutional buyers.", "v": "b", "w": "Rule 144A lets QIBs trade unregistered securities among themselves, increasing institutional resale liquidity."},
+      {"s": "Generally allows a maximum of 35 non-accredited investors to participate.", "v": "a", "w": "Private placements under Regulation D generally permit up to 35 non-accredited investors alongside unlimited accredited ones."},
+      {"s": "A broker-dealer with a $10 million securities portfolio can qualify as a buyer.", "v": "b", "w": "Broker-dealers with at least $10 million in securities are QIBs, versus $100 million for other institutions."},
+      {"s": "An individual with a net worth of $1 million excluding the primary residence qualifies.", "v": "a", "w": "That net worth test defines an accredited investor, not a qualified institutional buyer."},
+      {"s": "An institution must manage at least $100 million in securities to qualify.", "v": "b", "w": "QIB status requires managing a securities portfolio of at least $100 million, a far higher bar than accredited status."}
+    ]
+  }
+]

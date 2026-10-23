@@ -1,0 +1,107 @@
+[
+  {
+    "title": "SEP-IRA vs SIMPLE IRA",
+    "a": "SEP-IRA",
+    "b": "SIMPLE IRA",
+    "items": [
+      {"s": "Only the employer may contribute; employees cannot add their own money to the account.", "v": "a", "w": "Only the employer, not the employee, can contribute to a SEP-IRA."},
+      {"s": "Employees may elect salary-reduction contributions in addition to the employer’s money.", "v": "b", "w": "A SIMPLE IRA lets employees make their own salary-reduction contributions on top of the employer’s."},
+      {"s": "Employer contributions are required.", "v": "b", "w": "SIMPLE IRA employer contributions are required, whereas a SEP-IRA is at the employer’s option."},
+      {"s": "Employer contributions are never required; the employer may fund the plan at its option.", "v": "a", "w": "SEP-IRAs are at the option of the employer and are never required."},
+      {"s": "Available to companies with no more than 100 eligible employees.", "v": "b", "w": "The SIMPLE IRA is the plan limited to companies with 100 employees or fewer."},
+      {"s": "An employer wants a plan in which employee paychecks can never be reduced for retirement savings.", "v": "a", "w": "Because only the employer contributes to a SEP-IRA, employees cannot defer any of their pay."},
+      {"s": "A 60-employee firm wants workers able to defer salary while the firm is obliged to contribute.", "v": "b", "w": "Required employer money plus optional employee deferrals describes a SIMPLE IRA for small firms."},
+      {"s": "Inexpensive for small businesses to maintain, with the employer alone funding each participant’s IRA.", "v": "a", "w": "A SEP-IRA is cheap to set up and is funded only by the employer."}
+    ]
+  },
+  {
+    "title": "Defined benefit vs defined contribution",
+    "a": "Defined benefit",
+    "b": "Defined contribution",
+    "items": [
+      {"s": "The employer bears the investment risk and must add money if returns fall short.", "v": "a", "w": "In a defined benefit plan the employer carries all investment responsibility and funds any shortfall."},
+      {"s": "The participant bears the investment risk of the investments chosen.", "v": "b", "w": "In defined contribution plans such as the 401(k), employees bear the investment risk."},
+      {"s": "An actuary calculates the annual contributions needed to fund promised future benefits.", "v": "a", "w": "Defined benefit plans require an actuary to determine the funding for promised benefits."},
+      {"s": "No minimum benefit is promised; income depends on contributions and investment performance.", "v": "b", "w": "Defined contribution plans promise no minimum benefit, only what the account has grown to."},
+      {"s": "Assets sit in one professionally managed trust with no individual employee accounts.", "v": "a", "w": "Defined benefit plans pool company contributions in a trust rather than individual accounts."},
+      {"s": "The employee may defer part of salary and direct his own investment choices.", "v": "b", "w": "Elective deferrals and participant-directed investing are features of 401(k)-type defined contribution plans."},
+      {"s": "The plan can become underfunded, with too few assets to pay promised retirement obligations.", "v": "a", "w": "An underfunded pension is a defined benefit risk because the benefit is promised in advance."},
+      {"s": "The employer may match deferrals or add optional profit-sharing amounts to workers’ accounts.", "v": "b", "w": "Matching and profit-sharing contributions go into individual accounts in defined contribution plans."}
+    ]
+  },
+  {
+    "title": "Traditional IRA vs Roth IRA",
+    "a": "Traditional IRA",
+    "b": "Roth IRA",
+    "items": [
+      {"s": "The first required minimum distribution is due by April 1 after the owner turns 73.", "v": "a", "w": "Traditional IRA owners must start RMDs by April 1 of the year after turning 73."},
+      {"s": "No required minimum distributions are due during the owner’s lifetime.", "v": "b", "w": "Roth IRAs never require RMDs while the owner is alive; death triggers the requirement."},
+      {"s": "Contributions are allowed only if the taxpayer’s income is below a stated limit.", "v": "b", "w": "Roth IRA contributions are limited to taxpayers with income below a certain level."},
+      {"s": "Contributions may be tax-deductible, depending on workplace plan coverage and income.", "v": "a", "w": "A traditional IRA can be pre-tax or after-tax depending on plan eligibility and income."},
+      {"s": "Contributions are always made with after-tax dollars.", "v": "b", "w": "Roth IRA contributions are never deductible and are always after-tax."},
+      {"s": "When contributions were pre-tax, every dollar distributed is taxed as ordinary income.", "v": "a", "w": "Deductible traditional IRAs work like qualified plans, so all distributions are ordinary income."},
+      {"s": "Distributions are tax-free only after the five-year period and age 59½.", "v": "b", "w": "Qualified Roth distributions must meet both the five-year test and the age 59½ test."},
+      {"s": "Failing to take a required distribution triggers a 25% excise tax on the shortfall.", "v": "a", "w": "Because Roth owners have no lifetime RMDs, the 25% missed-RMD tax concerns traditional IRAs."}
+    ]
+  },
+  {
+    "title": "529 plan vs Coverdell ESA",
+    "a": "529 plan",
+    "b": "Coverdell ESA",
+    "items": [
+      {"s": "The maximum contribution is set by each state and varies from state to state.", "v": "a", "w": "529 plans are state-sponsored, so maximum contributions differ across states."},
+      {"s": "Contributions are limited to $2,000 per beneficiary per year.", "v": "b", "w": "The Coverdell has a low $2,000 annual limit per beneficiary, unlike 529 plans."},
+      {"s": "It is a municipal fund security offered through a state program.", "v": "a", "w": "529 plans are municipal fund securities; the Coverdell is not one."},
+      {"s": "Funds must be spent or moved to a family member by the time the beneficiary turns 30.", "v": "b", "w": "Coverdell assets unused by age 30 face income tax plus a 10% penalty."},
+      {"s": "There is no age limit on the beneficiary.", "v": "a", "w": "Unlike a Coverdell, a 529 plan has no age limit on its beneficiary."},
+      {"s": "Available only to families whose income is below a certain level.", "v": "b", "w": "Coverdell availability is restricted by an income limit; 529 plans carry no such restriction."},
+      {"s": "Any adult can open one for an existing child, with no earned income requirement.", "v": "a", "w": "A 529 plan can be opened by any adult without earned income for an existing child."},
+      {"s": "Can be opened for a student under the age of 18.", "v": "b", "w": "A Coverdell can be opened for any student under 18, with assets withdrawn by 30."}
+    ]
+  },
+  {
+    "title": "10% early penalty vs 25% RMD excise tax",
+    "a": "10% early penalty",
+    "b": "25% RMD excise tax",
+    "items": [
+      {"s": "Applies to a withdrawal taken before age 59½ unless an exception applies.", "v": "a", "w": "The 10% penalty targets early distributions made before age 59½ without an exception."},
+      {"s": "Applies when an owner fails to take a required minimum distribution.", "v": "b", "w": "Missing an RMD triggers the excise tax on the under-distributed amount."},
+      {"s": "Calculated on the amount withdrawn; a $20,000 withdrawal costs $2,000.", "v": "a", "w": "The early withdrawal penalty is 10% of the withdrawal, so $20,000 yields $2,000."},
+      {"s": "Calculated on the under-distributed amount; a $4,000 shortfall left uncorrected costs $1,000.", "v": "b", "w": "The excise tax is 25% of the shortfall, so $4,000 uncorrected costs $1,000."},
+      {"s": "Waived for disability, first-time home purchase up to $10,000, or birth or adoption up to $5,000.", "v": "a", "w": "These are listed exceptions to the 10% early withdrawal penalty."},
+      {"s": "Reduced to 10% if the shortfall is corrected within the next two years.", "v": "b", "w": "The excise tax falls from 25% to 10% when the under-distribution is corrected within two years."},
+      {"s": "A 52-year-old who withdraws IRA money to buy a boat owes this on top of income tax.", "v": "a", "w": "A pre-59½ withdrawal with no exception triggers the 10% penalty plus ordinary income tax."},
+      {"s": "A 75-year-old who withdraws less than the calculated amount owes this tax on the difference.", "v": "b", "w": "An owner past the RMD age who under-distributes owes the excise tax on the shortfall."}
+    ]
+  },
+  {
+    "title": "Straight life vs life with period certain",
+    "a": "Straight life",
+    "b": "Life with period certain",
+    "items": [
+      {"s": "Pays the highest monthly amount of the payout options because it carries the most risk.", "v": "a", "w": "Straight life has the shortest expected duration and therefore the highest monthly income."},
+      {"s": "A beneficiary can still receive payments if the annuitant dies early in the contract.", "v": "b", "w": "The period certain guarantees payments to the annuitant or the beneficiary for a minimum time."},
+      {"s": "Nothing is ever paid to a beneficiary after the annuitant’s death.", "v": "a", "w": "Under straight life no payments are made to the beneficiary upon death."},
+      {"s": "The beneficiary is protected only during the guaranteed period, commonly 10 or 15 years.", "v": "b", "w": "Beneficiary protection under this option lasts only for the period certain, often 10 or 15 years."},
+      {"s": "If the annuitant dies after a single payment, the insurer owes nothing further.", "v": "a", "w": "Even after only one payment, the insurer has no further obligation under straight life."},
+      {"s": "Guarantees a minimum number of years of payments, whoever receives them.", "v": "b", "w": "The period certain sets a minimum payment period to the annuitant or the beneficiary."},
+      {"s": "The annuitant dies in year 2 of the contract and the beneficiary receives no further money.", "v": "a", "w": "With no period certain, death ends all payments and the beneficiary gets nothing."},
+      {"s": "With a 10-year guarantee, an annuitant who dies after year 6 leaves the beneficiary four more years of payments.", "v": "b", "w": "The beneficiary collects the remaining four years of the 10-year period certain."}
+    ]
+  },
+  {
+    "title": "Qualified vs non-qualified plan",
+    "a": "Qualified plan",
+    "b": "Non-qualified plan",
+    "items": [
+      {"s": "Must meet ERISA requirements, including a fiduciary and a vesting schedule.", "v": "a", "w": "Qualified plans must satisfy ERISA, which requires a fiduciary, non-discrimination and vesting."},
+      {"s": "The employer chooses which employees participate, often favoring key executives.", "v": "b", "w": "Non-qualified plans are outside ERISA, so employers pick participants and reward executives."},
+      {"s": "Contributions are pre-tax and tax-deductible.", "v": "a", "w": "Qualified plans allow pre-tax contributions, giving the immediate tax deduction."},
+      {"s": "Contributions are after-tax and non-deductible to the company.", "v": "b", "w": "Non-qualified plans use after-tax contributions and give no immediate deduction."},
+      {"s": "Every dollar distributed is taxed as ordinary income.", "v": "a", "w": "With pre-tax contributions, the whole distribution is ordinary income in a qualified plan."},
+      {"s": "Only the growth above the contributions is taxed as ordinary income at distribution.", "v": "b", "w": "Because contributions were after-tax, only the growth is taxed in a non-qualified plan."},
+      {"s": "If the employer becomes insolvent, plan assets can be claimed by creditors.", "v": "b", "w": "Non-qualified plan assets are unprotected in bankruptcy, creating credit risk for the employee."},
+      {"s": "Must be offered on a non-discriminatory basis to full-time employees age 21 with one year of service.", "v": "a", "w": "ERISA’s non-discrimination rule applies to qualified plans, not to non-qualified plans."}
+    ]
+  }
+]

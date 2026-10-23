@@ -1,0 +1,56 @@
+[
+  {"title":"REIT vs DPP","a":"REIT","b":"DPP","items":[
+    {"s":"Passes through gains to investors but never passes through losses.","v":"a","w":"REITs pass through gains only; any losses show up as a lower share price on the exchange."},
+    {"s":"Passes through both passive gains and passive losses to investors.","v":"b","w":"DPPs flow income, gains, losses and deductions to partners, which is why they can act as tax shelters."},
+    {"s":"Investing in it offers no tax shelter benefit because losses are not passed through.","v":"a","w":"Unlike direct real estate ownership or a DPP, a REIT does not pass losses to investors, so no shelter."},
+    {"s":"Losses received may be used only to offset passive gains, not ordinary income or capital gains.","v":"b","w":"The passive-loss limitation applies to DPP investors: passive losses can only offset passive gains."},
+    {"s":"Dividends are always taxed as ordinary income at the investor’s own tax bracket.","v":"a","w":"REIT dividends never get the lower qualified-dividend rate that traditional corporate dividends can receive."},
+    {"s":"Generally appropriate only for institutional and accredited investors because of high risk and illiquidity.","v":"b","w":"DPPs often operate as blind pools with no guaranteed secondary market, so only sophisticated investors suit them."},
+    {"s":"Must distribute at least 90% of taxable income to shareholders each year to keep pass-through status.","v":"a","w":"The 90% annual distribution requirement is one of the three IRS tests applied to REITs."}
+  ]},
+  {"title":"General partner vs limited partner","a":"General partner","b":"Limited partner","items":[
+    {"s":"Has potentially unlimited personal liability for the debts of the partnership.","v":"a","w":"The general partner actively manages the business and so carries unlimited personal liability for partnership debts."},
+    {"s":"Liability is limited to the amount invested in the partnership.","v":"b","w":"Limited partners trade a passive role for protection of personal assets beyond their ownership interest."},
+    {"s":"Stands last in line, behind limited partners, when assets are distributed on dissolution.","v":"a","w":"Liquidation order is secured lenders, general creditors, limited partners, then general partners last."},
+    {"s":"Has the right to inspect the books and records and to sue the managing partner for acting against the partnership’s interest.","v":"b","w":"Inspection and the right to sue the general partner are listed rights of limited partners."},
+    {"s":"Has the right to accept or reject new limited partners and to bind the partnership in contracts.","v":"a","w":"Accepting new limited partners and binding the partnership are management rights held by the general partner."},
+    {"s":"May vote on admitting a new general partner or on the sale of partnership property.","v":"b","w":"This infrequent voting right is called partnership democracy and belongs to limited partners, not to management."},
+    {"s":"Owes a fiduciary responsibility to act in the best interest of the limited partners.","v":"a","w":"Because the general partner invests the capital and runs the partnership, it carries fiduciary responsibility."}
+  ]},
+  {"title":"Non-traded REIT vs private REIT","a":"Non-traded REIT","b":"Private REIT","items":[
+    {"s":"Registered under the ’33 Act and subject to a prospectus and annual and quarterly reports.","v":"a","w":"Public non-traded REITs are registered securities with SEC disclosure filings, unlike private-placement REITs."},
+    {"s":"Sold only to accredited investors and institutional clients.","v":"b","w":"Private REITs are exempt from registration and restricted to accredited investors and institutions."},
+    {"s":"Generally exempt from SEC registration and the related disclosure requirements.","v":"b","w":"Private or private-placement REITs avoid registration, which is why they lack disclosure documents."},
+    {"s":"Distributed through broker-dealers, with early redemption limited and holding periods of eight years or more not uncommon.","v":"a","w":"Non-traded REITs are public offerings sold through broker-dealers, but their shares are generally illiquid."},
+    {"s":"Lack of disclosure documents makes it hard for investors to make an informed decision.","v":"b","w":"Without registration there is no prospectus, so informed analysis is difficult for private REIT buyers."},
+    {"s":"Registered securities that are simply not listed on any exchange.","v":"a","w":"The registration table shows non-traded REITs as registered but not exchange-listed, while private ones are neither."},
+    {"s":"Neither registered under the ’33 Act nor listed on an exchange.","v":"b","w":"The book’s table gives private REITs a No for registration and a No for exchange listing."}
+  ]},
+  {"title":"ETN vs ETF","a":"ETN","b":"ETF","items":[
+    {"s":"Is an unsecured debt instrument, typically issued by a broker-dealer.","v":"a","w":"An ETN is unsecured corporate debt backed by its issuer, not a pool of securities."},
+    {"s":"Actually owns the securities held in its portfolio.","v":"b","w":"ETFs own their portfolio securities, whereas ETNs only track the performance of an underlying security."},
+    {"s":"Credit quality depends on the creditworthiness of the issuing bank, not the underlying asset.","v":"a","w":"ETN investors face issuer default risk because the note is a debt obligation of the sponsor."},
+    {"s":"Has a maturity date at which the instrument is liquidated.","v":"a","w":"Because it is a note, an ETN matures, which is a feature an ETF does not have."},
+    {"s":"Has a deeper secondary market and is more liquid.","v":"b","w":"The secondary market for ETNs is much more limited, so ETFs are the more liquid product."},
+    {"s":"Suitable for a wider range of investors because it tracks an index without complex products.","v":"b","w":"ETFs are simpler and track an index, making them more suitable than ETNs for most investors."},
+    {"s":"Combines a bond that protects principal with a derivative that provides equity exposure.","v":"a","w":"This structure describes the ETN: most of the investment is a bond and the remainder a derivative."}
+  ]},
+  {"title":"Hedge fund vs mutual fund","a":"Hedge fund","b":"Mutual fund","items":[
+    {"s":"Usually carries a lock-up period of two years or more.","v":"a","w":"Hedge funds are highly illiquid and often impose lock-ups that prevent withdrawals for extended periods."},
+    {"s":"Can be redeemed with the issuer, so it is highly liquid.","v":"b","w":"Mutual fund shares can be redeemed with the issuer, in contrast to the illiquidity of hedge funds."},
+    {"s":"May invest in non-securities such as real estate and jewelry.","v":"a","w":"Hedge funds have broad authority to hold non-securities and tangible investments in addition to securities."},
+    {"s":"Has only a limited ability to trade on margin.","v":"b","w":"Mutual funds are restricted in margin use, while hedge funds generally take on significant leverage."},
+    {"s":"Expense ratio is usually about 1% or less.","v":"b","w":"Hedge funds charge about a 2% management fee plus a share of profits, far above a typical mutual fund."},
+    {"s":"Exempt from the Investment Company Act of 1940, giving more flexibility in structure.","v":"a","w":"Hedge funds are exempt from the ’40 Act, whereas mutual funds are regulated under it."},
+    {"s":"Generally takes on significant leverage, including through derivatives.","v":"a","w":"Significant leverage and derivatives are characteristic of hedge funds and not of mutual funds."}
+  ]},
+  {"title":"MLP vs regular LP","a":"MLP","b":"Regular LP","items":[
+    {"s":"Offered to the public and traded on exchanges.","v":"a","w":"A master limited partnership is a limited partnership that is publicly traded on exchanges."},
+    {"s":"Does not generally trade on an exchange.","v":"b","w":"Regular limited partnerships lack an active exchange market, which makes them less liquid than other products."},
+    {"s":"Considered more liquid and less risky than other DPP investments.","v":"a","w":"Exchange trading makes the MLP more liquid and therefore less risky than other DPP investments."},
+    {"s":"Generally suitable only for institutional and sophisticated investors.","v":"b","w":"Like other DPPs, a regular LP carries high risk and illiquidity that limits it to sophisticated investors."},
+    {"s":"Interests are freely transferable, much like shares of a corporation.","v":"a","w":"Free transferability of interests is one of the advantages MLPs offer over ordinary limited partnerships."},
+    {"s":"Offers no guarantee that a secondary market will exist for resale of the interest.","v":"b","w":"DPPs without exchange listing have no guaranteed secondary market, unlike exchange-traded MLP interests."},
+    {"s":"Appropriate for a wider range of investors, including retail investors.","v":"a","w":"Because MLPs are exchange-traded, they suit retail investors and not just institutional or accredited investors."}
+  ]}
+]

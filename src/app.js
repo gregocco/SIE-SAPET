@@ -541,7 +541,7 @@ function settingsSheet() {
   s.innerHTML = `<div><div class="row"><h2 style="flex:1">Settings</h2><button class="icon-btn" data-act="closesheet" aria-label="Close">✕</button></div>
   <div class="field"><label for="sd">Exam date</label><input type="date" id="sd" value="${S.examDate || ''}"></div>
   <div class="field"><label for="st">Theme</label><select id="st"><option value="auto">Automatic</option><option value="light">Light</option><option value="dark">Dark</option></select></div>
-  <div class="row wrapx" style="margin-top:18px"><button class="btn primary" data-act="savesettings">Save</button><button class="btn" data-act="export">Export progress</button><label class="btn" style="cursor:pointer">Import<input type="file" id="imp" accept="application/json" hidden></label></div>
+  <div class="row wrapx" style="margin-top:18px"><button class="btn primary" data-act="savesettings">Save</button><button class="btn" data-act="export">Export progress</button><button class="btn" data-act="flagsout">Flagged questions</button><label class="btn" style="cursor:pointer">Import<input type="file" id="imp" accept="application/json" hidden></label></div>
   <p class="tiny muted" style="margin-top:14px">Progress is stored on this device only. Export it now and then as a backup.</p>
   <button class="btn ghost sm" data-act="reset" style="margin-top:8px;color:var(--bad)">Reset all progress</button></div>`;
   document.body.appendChild(s); $('#st').value = S.theme;
@@ -585,6 +585,13 @@ document.addEventListener('click', e => {
     case 'closesheet': $('#sheet').remove(); break;
     case 'savesettings': S.examDate = $('#sd').value || null; S.theme = $('#st').value; save(); applyTheme(); $('#sheet').remove(); render(); break;
     case 'export': { const b = new Blob([JSON.stringify(S)], { type: 'application/json' }), u = URL.createObjectURL(b), l = document.createElement('a'); l.href = u; l.download = 'sie-prep-progress.json'; l.click(); break; }
+    case 'flagsout': {
+      const ids = Object.keys(S.flags).filter(k => S.flags[k]); if (!ids.length) { toast('No flagged questions yet.'); break; }
+      const txt = ids.map(id => { const it = BYID[id]; if (!it || !it.x.o) return id; const q = it.x; return `[${id}] §${q.r}\n${q.q}\n` + q.o.map((o, k) => `${LET[k]}. ${o}`).join('\n') + `\nKey: ${LET[q.a]}`; }).join('\n\n');
+      const done = () => toast(ids.length + ' flagged question(s) copied — paste them to your helper.');
+      if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(txt).then(done, () => dl(txt)); else dl(txt);
+      function dl(t) { const b = new Blob([t], { type: 'text/plain' }), u = URL.createObjectURL(b), l = document.createElement('a'); l.href = u; l.download = 'flagged-questions.txt'; l.click(); toast('Saved as flagged-questions.txt'); }
+      break; }
     case 'reset': if (confirm('Erase all progress on this device?')) { S = { used: {}, act: S.act, checks: {}, rec: {}, exams: [], examDate: '2026-11-30', theme: 'auto', log: {}, flags: {} }; save(); applyTheme(); $('#sheet').remove(); go('#/'); render(); } break;
     case 'review': startRun('Daily review', sessionReview(), { back: '#/' }); break;
     case 'weak': startRun('Weak spots', weakItems(), { back: '#/practice' }); break;

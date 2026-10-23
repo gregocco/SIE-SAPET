@@ -1,0 +1,187 @@
+[
+  {
+    "id": "8-x01",
+    "r": "8.2.1",
+    "k": "concept",
+    "d": 2,
+    "q": "Which of the following securities are exempt from SEC registration?\nI. Debt issued by a commercial bank\nII. Debt issued by a bank holding company\nIII. A corporate note with a 200-day maturity\nIV. Bonds issued by an investment bank",
+    "o": ["I and II only", "I and III only", "III and IV only", "I, III and IV only"],
+    "a": 1,
+    "w": [
+      "Wrong: bank holding company securities are not exempt, so including them makes this combination incorrect even though commercial bank debt is exempt.",
+      "Correct: commercial bank securities and short-term corporate debt of no more than 270 days are exempt, while holding company and investment bank securities are not.",
+      "Wrong: investment bank bonds are not exempt and must be registered, and this choice also leaves out the exempt commercial bank debt.",
+      "Wrong: this adds investment bank bonds, which are non-exempt because only commercial bank securities qualify for the bank exemption."
+    ]
+  },
+  {
+    "id": "8-x02",
+    "r": "8.3.3",
+    "k": "scenario",
+    "d": 3,
+    "q": "An issuer offers $80 million of notes through an underwriter on a mini-max best efforts basis with a $50 million minimum. Investors have now bought $56 million. Which statement is correct?",
+    "o": [
+      "The deal is cancelled because the full $80 million was not sold",
+      "The underwriter must now purchase the remaining $24 million for its own account",
+      "The minimum is met, so it continues as a traditional best efforts offering with no obligation on the underwriter to buy the rest",
+      "The offering continues only if a second, higher minimum is reached"
+    ],
+    "a": 2,
+    "w": [
+      "Wrong: cancellation for failing to sell everything describes an all-or-none, not a mini-max, where only the minimum must be raised.",
+      "Wrong: a best efforts underwriter acts as an agent and never has to buy unsold securities, which is the firm commitment feature.",
+      "Correct: once the minimum threshold is reached, a mini-max becomes a traditional best efforts offering and the underwriter carries no liability for unsold notes.",
+      "Wrong: the book describes only a single minimum threshold, and meeting it ends the cancellation risk rather than creating a further hurdle."
+    ]
+  },
+  {
+    "id": "8-x03",
+    "r": "8.3.4.1",
+    "k": "concept",
+    "d": 2,
+    "q": "Each of the following describes syndicate members in a firm commitment underwriting EXCEPT:",
+    "o": [
+      "They usually commit to distributing a set percentage of the entire offering",
+      "They share the risk of unsold shares with the managing underwriter",
+      "Their relationship with the lead underwriter is governed by the agreement among underwriters",
+      "They may return any unsold shares to the syndicate without financial responsibility"
+    ],
+    "a": 3,
+    "w": [
+      "Wrong: syndicate members do usually commit to distributing a stated percentage of the offering, so this is a true description.",
+      "Wrong: members share the underwriting risk alongside the managing underwriter, so this statement is accurate and not the exception.",
+      "Wrong: the agreement among underwriters sets the terms between the lead and syndicate members, so this statement is true.",
+      "Correct: returning unsold shares without liability describes the selling group acting as agents; syndicate members are financially responsible for their unsold portions."
+    ]
+  },
+  {
+    "id": "8-x04",
+    "r": "8.1",
+    "k": "concept",
+    "d": 2,
+    "q": "Which of the following are among the requirements of FINRA’s corporate financing rules (5110, 2310 and 5121) for public offerings?\nI. Offering documents must be filed with FINRA within three business days after they are filed with the SEC\nII. Firms may not engage in unfair terms or arrangements in connection with the offering\nIII. Specific requirements, such as disclosure, apply when a conflict of interest exists\nIV. FINRA makes the filed documents publicly available",
+    "o": ["I and II only", "II and III only", "I, II and III", "I, II, III and IV"],
+    "a": 2,
+    "w": [
+      "Wrong: this leaves out the conflict of interest requirement, which is one of the three listed requirements of the corporate financing rules.",
+      "Wrong: this omits the document filing requirement, which is the first of the three requirements and carries a three-business-day deadline.",
+      "Correct: document filing, a ban on unfair terms and arrangements, and conflict of interest requirements are the three requirements, while FINRA keeps filings confidential.",
+      "Wrong: FINRA accords confidential treatment to all filed documents, so statement IV is false and cannot be included."
+    ]
+  },
+  {
+    "id": "8-x05",
+    "r": "8.1.2",
+    "k": "concept",
+    "d": 3,
+    "q": "All of the following are true of indications of interest (IOIs) collected during the cooling-off period EXCEPT:",
+    "o": [
+      "They are non-binding expressions of potential interest in the shares",
+      "They help the underwriters gauge demand and set the public offering price",
+      "They typically become orders on the effective date unless the investor cancels",
+      "Orders may be confirmed during the cooling-off period once the investor reconfirms the IOI"
+    ],
+    "a": 3,
+    "w": [
+      "Wrong: IOIs are indeed non-binding, so this statement is accurate and is not the exception being asked for.",
+      "Wrong: the strength of IOIs informs both the size of demand and the price, so this statement is true.",
+      "Wrong: IOIs usually convert into orders on the effective date unless cancelled, so this is a correct statement.",
+      "Correct: orders cannot be confirmed during the cooling-off period because the SEC has not yet declared the registration effective, so no sales can occur."
+    ]
+  },
+  {
+    "id": "8-x06",
+    "r": "8.2.4.3",
+    "k": "calc",
+    "d": 3,
+    "q": "Priya, who is not an affiliate, received restricted shares of a reporting public company in a private placement eight months ago. The company has 30,000,000 shares outstanding and average weekly volume of 100,000 shares. She wants to sell 600,000 shares under Rule 144. What is the result?",
+    "o": [
+      "The sale is permitted in full because the holding period is met and volume limits do not apply to non-affiliates",
+      "She may sell only 300,000 shares, which is 1% of the outstanding shares, in a 90-day period",
+      "She may sell only 100,000 shares, the average weekly volume, in a 90-day period",
+      "She may not sell because restricted stock must be held longer than eight months"
+    ],
+    "a": 0,
+    "w": [
+      "Correct: restricted securities held by non-affiliates need only the six-month holding period for a public reporting issuer, and the volume formula does not apply to them.",
+      "Wrong: the 1% limit applies to affiliates selling control stock, not to a non-affiliate selling restricted shares after the holding period.",
+      "Wrong: the weekly volume alternative is part of the affiliate volume formula, which does not restrict a non-affiliate here.",
+      "Wrong: the required holding period for a reporting company is six months, and eight months of holding already satisfies it."
+    ]
+  },
+  {
+    "id": "8-x07",
+    "r": "8.2.4.2",
+    "k": "calc",
+    "d": 3,
+    "q": "A director of a public company acquired restricted shares in a private placement seven months ago. The company has 2,000,000 shares outstanding, and average reported weekly trading volume over the four weeks before the sale is 31,000 shares. What is the most she may sell under Rule 144 over a 90-day period?",
+    "o": [
+      "20,000 shares",
+      "31,000 shares",
+      "51,000 shares",
+      "None, because the holding period is not satisfied"
+    ],
+    "a": 1,
+    "w": [
+      "Wrong: 20,000 shares is 1% of the outstanding shares, but the limit is the greater of that and the average weekly volume.",
+      "Correct: she is an affiliate, so the cap is the greater of 1% (20,000) or the four-week average weekly volume (31,000), and seven months satisfies the holding period.",
+      "Wrong: the two measures are alternatives and are never added together; only the greater of the two applies.",
+      "Wrong: restricted stock needs a six-month holding period for a reporting issuer, and seven months already satisfies that requirement."
+    ]
+  },
+  {
+    "id": "8-x08",
+    "r": "8.2.6",
+    "k": "calc",
+    "d": 3,
+    "q": "Under Regulation A+, which proposed 12-month offering is within the permitted limits?",
+    "o": [
+      "A Tier 1 offering of $20 million, of which $8 million is secondary sales by affiliates",
+      "A Tier 2 offering of $80 million",
+      "A Tier 1 offering of $22 million",
+      "A Tier 2 offering of $70 million, of which $20 million is secondary sales by affiliates"
+    ],
+    "a": 3,
+    "w": [
+      "Wrong: Tier 1 allows up to $20 million, but no more than $6 million of it may be secondary sales by affiliates, so $8 million exceeds the cap.",
+      "Wrong: Tier 2 is capped at $75 million in a 12-month period, so $80 million is too large.",
+      "Wrong: Tier 1 is limited to $20 million in total over 12 months, so $22 million exceeds that ceiling.",
+      "Correct: $70 million is under the $75 million Tier 2 cap, and $20 million of secondary sales is under the $22.5 million affiliate limit."
+    ]
+  },
+  {
+    "id": "8-x09",
+    "r": "8.3.7.1",
+    "k": "concept",
+    "d": 2,
+    "q": "Which of the following are true of stabilization?\nI. The syndicate manager may bid above the public offering price if demand is strong\nII. Stabilizing bids must be announced in advance\nIII. The prospectus must disclose that the underwriters may stabilize\nIV. The activity is regulated under SEC Regulation M",
+    "o": ["II and III only", "II, III and IV", "I, II and III", "I and IV only"],
+    "a": 1,
+    "w": [
+      "Wrong: this leaves out Regulation M, which heavily regulates stabilization bids, so it is incomplete even though the other two statements are true.",
+      "Correct: stabilization bids must be announced, disclosed in the prospectus and regulated by Regulation M, and can never be placed above the public offering price.",
+      "Wrong: statement I is false because a stabilizing bid may never exceed the public offering price, so this combination cannot be right.",
+      "Wrong: statement I is false, and this choice also omits the advance announcement and prospectus disclosure that are true."
+    ]
+  },
+  {
+    "id": "8-x10",
+    "r": "8.4.4",
+    "k": "scenario",
+    "d": 2,
+    "q": "A county sells bonds by competitive bid and has no municipal advisor. The issuer notifies the winning underwriter of the award on Thursday. When must the underwriter apply for the CUSIP number?",
+    "o": [
+      "By the time the bonds are priced in the deal",
+      "No later than one business day after the notice of sale was sent",
+      "Immediately after receiving notification of the award",
+      "Within 30 calendar days after delivery of the bonds"
+    ],
+    "a": 2,
+    "w": [
+      "Wrong: applying by pricing is the rule for a negotiated sale, where the underwriter requests the number, not for a competitive sale.",
+      "Wrong: the one-business-day deadline after the notice of sale applies to a municipal advisor, and this issuer has none.",
+      "Correct: in a competitive sale with no municipal advisor, the underwriter applies immediately after it receives notification of the award from the issuer.",
+      "Wrong: thirty calendar days is the deadline for settling the syndicate account, not for obtaining a CUSIP number."
+    ]
+  }
+]

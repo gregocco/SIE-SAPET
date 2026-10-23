@@ -1,0 +1,42 @@
+[
+  {"title":"Call vs Put","a":"Call","b":"Put","items":[
+    {"s":"The option is in-the-money when the underlying stock trades above the strike price.","v":"a","w":"Remember call up, put down: calls are in-the-money when market value is above the strike price."},
+    {"s":"The buyer’s breakeven is the strike price minus the premium paid.","v":"b","w":"Put down means subtract the premium from the strike to find the breakeven, for long and short alike."},
+    {"s":"Buying one protects an investor who is short the underlying stock.","v":"a","w":"A purchased call locks in a fixed buying price, which caps the unlimited risk of a short sale."},
+    {"s":"Buying one protects an investor who owns the underlying stock against a falling market.","v":"b","w":"A protective put lets the owner sell at the strike no matter how low the stock falls."},
+    {"s":"An uncovered writer faces unlimited loss if the stock keeps rising.","v":"a","w":"A naked call writer must buy at any market price and deliver at the strike, so the loss is unlimited."},
+    {"s":"The writer is obligated to buy the stock at the strike price if the option is exercised.","v":"b","w":"A put writer is put the shares, meaning he must purchase them at the strike when the holder exercises."}
+  ]},
+  {"title":"Protective put vs Covered call","a":"Protective put","b":"Covered call","items":[
+    {"s":"The investor owns the stock and pays a premium for the option as downside insurance.","v":"a","w":"A protective put is a purchased option, so the investor pays a premium to hedge a long stock position."},
+    {"s":"The investor owns the stock and receives a premium, giving up gains above the strike.","v":"b","w":"A covered call writer collects premium income but loses profit when the stock trades above the strike."},
+    {"s":"Maximum gain is unlimited as the stock price continues to rise.","v":"a","w":"The put simply expires if the stock rises, so the stock’s appreciation is uncapped beyond the premium cost."},
+    {"s":"Maximum gain is limited to the premium plus strike price minus the stock’s cost basis.","v":"b","w":"Above the strike the call is exercised and the stock is called away, which caps the position’s gain."},
+    {"s":"Breakeven is the cost basis of the stock plus the premium paid.","v":"a","w":"The stock must rise enough to recover the premium paid for the put before the position shows a profit."},
+    {"s":"Breakeven is the stock purchase price minus the premium received.","v":"b","w":"The premium received cushions a decline, so the position breaks even below the original purchase price."}
+  ]},
+  {"title":"Equity vs Index options","a":"Equity option","b":"Index option","items":[
+    {"s":"Exercise results in the actual purchase or sale of 100 shares of stock per contract.","v":"a","w":"Equity options have physical settlement, so shares change hands when the contract is exercised."},
+    {"s":"Exercise results in a cash payment of the index-to-strike difference times a multiplier, often $100.","v":"b","w":"Index options settle in cash because no securities change hands when the contract is exercised."},
+    {"s":"Its value derives from the closing value of a benchmark such as the S&P 500.","v":"b","w":"Index options are based on the closing index level rather than on the price of any one stock."},
+    {"s":"Its value is tied to the performance of one single underlying company’s stock.","v":"a","w":"Equity options derive value from a single stock, unlike index options that track a basket of stocks."},
+    {"s":"Buying a put on it is the best option-based hedge for an entire diversified portfolio.","v":"b","w":"An index put gains when the broad market falls, offsetting losses across a diversified stock portfolio."},
+    {"s":"The seller of the underlying must make good delivery of 100 shares when the option is exercised.","v":"a","w":"Equity option exercise requires delivery of shares, with the call seller or put buyer delivering the stock."}
+  ]},
+  {"title":"American vs European style","a":"American-style","b":"European-style","items":[
+    {"s":"The buyer may exercise on any business day up to and including expiration.","v":"a","w":"American-style contracts can be exercised any time the buyer chooses prior to the expiration date."},
+    {"s":"The buyer may exercise only on the expiration date itself.","v":"b","w":"European-style contracts allow exercise solely on the expiration date, never before it."},
+    {"s":"Most single stock options use this exercise style.","v":"a","w":"The book states that most single stock options are American-style, unlike many index options."},
+    {"s":"Stock index options are often this exercise style.","v":"b","w":"Index options are frequently European-style, so they are exercised only on the expiration date."},
+    {"s":"Options on the VIX volatility index use this exercise style.","v":"b","w":"The Knopman Note says VIX options have European-style exercises, meaning exercise only at expiration."},
+    {"s":"The holder’s exercise window runs from purchase through the expiration date.","v":"a","w":"Because exercise is allowed at any time before expiration, the holder controls timing across the contract’s life."}
+  ]},
+  {"title":"Intrinsic value vs Time value","a":"Intrinsic value","b":"Time value","items":[
+    {"s":"The amount by which an option is in-the-money.","v":"a","w":"Intrinsic value measures how far the option is in-the-money, and it is zero when out-of-the-money."},
+    {"s":"The entire premium of an out-of-the-money option consists of this component.","v":"b","w":"An out-of-the-money option has zero intrinsic value, so its whole premium is time value."},
+    {"s":"For a 60 call with the stock at $68, this component is $8.","v":"a","w":"A call’s intrinsic value is market value minus strike, which is $68 minus $60, or $8."},
+    {"s":"For a 60 call quoted at 9.50 with the stock at $68, this component is $1.50.","v":"b","w":"Time value is the premium less intrinsic value, so $9.50 minus the $8 intrinsic value is $1.50."},
+    {"s":"It reflects the remaining time to expiration and shrinks quickly in the final weeks.","v":"b","w":"Time value is highest with more time remaining and quickly declines as expiration approaches."},
+    {"s":"For a put, it equals the strike price minus the stock price, and can never be negative.","v":"a","w":"A put’s intrinsic value is strike less market value, with a floor of zero for out-of-the-money puts."}
+  ]}
+]

@@ -1,0 +1,42 @@
+[
+  {"title":"CTR vs SAR","a":"CTR","b":"SAR","items":[
+    {"s":"Triggered when a customer deposits more than $10,000 in currency during a single business day.","v":"a","w":"A currency transaction report is triggered by cash deposits in excess of $10,000 in one business day."},
+    {"s":"Filed with FinCEN within 30 days after the suspicious activity is discovered.","v":"b","w":"Suspicious activity reports are filed with FinCEN within 30 days of discovering the suspicious activity."},
+    {"s":"A customer brings a $3,000 money order and an $8,000 traveler’s check to the firm on the same day.","v":"a","w":"Combined cash-type instruments of $11,000 in one day exceed $10,000, so a currency transaction report is filed."},
+    {"s":"A customer makes repeated $9,900 deposits that seem designed to stay just under the reporting threshold.","v":"b","w":"Deposits just under $10,000 are a listed red flag, so a suspicious activity report is the correct filing."},
+    {"s":"Must be filed with FinCEN within 15 days of the cash deposit.","v":"a","w":"The 15-day filing window applies to currency transaction reports, not to suspicious activity reports."},
+    {"s":"The representative is forbidden to tell the customer that this report has been filed.","v":"b","w":"A rep may never disclose to the customer that a suspicious activity report was filed about them."}
+  ]},
+  {"title":"OBA vs Private Securities Transaction","a":"Outside business activity","b":"Private securities transaction","items":[
+    {"s":"A rep takes a second job managing an apartment building on weekends.","v":"a","w":"A second job away from the firm is an outside business activity, even though it involves no securities."},
+    {"s":"A rep helps a friend’s start-up raise capital by contacting the rep’s own clients on evenings.","v":"b","w":"Raising capital from clients for a deal the firm has not approved is selling away, a private securities transaction."},
+    {"s":"The rep must promptly update Form U4 after taking on the activity.","v":"a","w":"Outside business activity notice carries a requirement to promptly update the associated person’s Form U4."},
+    {"s":"The activity involves securities that the firm has not approved for sale or placed on its product list.","v":"b","w":"A private securities transaction involves securities not approved for sale by the firm, which is why it is called selling away."},
+    {"s":"A rep does consulting work on the side for a local business.","v":"a","w":"Side consulting is a listed example of an outside business activity requiring written notice to the firm."},
+    {"s":"If the firm approves the compensated deal, it must be recorded on the firm’s books and supervised like firm business.","v":"b","w":"An approved compensated private securities transaction must be on the books and records and supervised by the firm."}
+  ]},
+  {"title":"FINRA vs MSRB Communications","a":"FINRA","b":"MSRB","items":[
+    {"s":"Correspondence is a written message sent to 25 or fewer persons within a 30-day period.","v":"a","w":"FINRA measures correspondence over a 30-calendar-day window, whereas the MSRB uses a longer 90-day window."},
+    {"s":"Correspondence is a written message sent to 25 or fewer persons within a 90-day period.","v":"b","w":"MSRB Rule G-21 defines correspondence using a 90-day period, which differs from the FINRA 30-day period."},
+    {"s":"Records of retail communications must be kept for three years after final use.","v":"a","w":"FINRA requires retail communication records, including approvals, to be retained three years after final use."},
+    {"s":"Records of advertising and advertising approvals must be kept for at least four years.","v":"b","w":"Municipal securities firms keep advertising records for four years under MSRB rules, one year longer than FINRA."},
+    {"s":"Communications are sorted into retail, correspondence, and institutional categories under Rule 2210.","v":"a","w":"FINRA Rule 2210 defines three types of communications with the public, based on audience and distribution numbers."},
+    {"s":"A newsletter or press release is an advertisement needing written principal approval, whether sent to retail or institutional investors.","v":"b","w":"MSRB rules do not distinguish retail from institutional audiences; any advertisement needs principal approval before first use."}
+  ]},
+  {"title":"MFP vs Firm or Its PAC (G-37)","a":"Municipal finance professional","b":"Firm or its PAC","items":[
+    {"s":"May contribute up to $250 per election to a candidate the contributor is entitled to vote for.","v":"a","w":"The G-37 de minimis exception covers only MFPs giving $250 or less to candidates they can vote for."},
+    {"s":"Cannot make a political contribution of any amount to an issuer official without triggering the two-year ban.","v":"b","w":"The G-37 exception does not apply to the firm or a PAC controlled by it; no amount is permitted."},
+    {"s":"Includes municipal underwriters, traders, and their direct supervisors who deal with municipal issuers.","v":"a","w":"MFPs include associated persons in sales, trading, underwriting, and research for issuers, plus their direct supervisors."},
+    {"s":"A PAC controlled by the municipal securities firm gives $50 to an issuer official’s campaign.","v":"b","w":"A firm-controlled PAC has no exception, so even a small contribution triggers the two-year negotiated business ban."},
+    {"s":"May give $250 to the primary and another $250 to the general election for a candidate the contributor can vote for.","v":"a","w":"The $250 limit applies separately to each election, both the primary and the general, for an eligible voter."},
+    {"s":"Even a small gift to a candidate in the firm’s own home district cannot use the voter-based $250 exception.","v":"b","w":"The residence-based voting exception exists only for individual MFPs, never for the firm or its political action committee."}
+  ]},
+  {"title":"Notice Only vs Written Approval","a":"Notice only","b":"Written approval","items":[
+    {"s":"A rep takes a weekend bartending job for extra income.","v":"a","w":"Under FINRA Rule 3270 an outside business activity requires written notice to the firm, not permission."},
+    {"s":"A rep wants to open a stock brokerage account at another firm.","v":"b","w":"Rule 3210 requires the employer’s prior written consent before an associated person opens an outside brokerage account."},
+    {"s":"A rep helps a friend’s start-up raise money from clients and will receive no compensation of any kind.","v":"a","w":"An uncompensated private securities transaction requires only notice, while any compensation would add the permission requirement."},
+    {"s":"A rep asks to be named trustee of a non-family customer’s trust.","v":"b","w":"Rule 3241 requires the firm to review and approve a rep serving as trustee for a non-family customer."},
+    {"s":"A rep prepares clients’ tax returns for a fee away from the firm.","v":"a","w":"Preparing tax returns for a fee is a listed outside business activity requiring notice to the employing firm."},
+    {"s":"A rep borrows money from a close friend who is a customer, based on their personal relationship.","v":"b","w":"A personal-relationship loan with a customer is permitted only with the firm’s prior written approval."}
+  ]}
+]

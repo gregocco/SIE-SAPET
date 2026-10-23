@@ -2123,10 +2123,10 @@
     "automatically reporting transaction data",
     "deciding which stocks an individual investor should buy"
    ],
-   "a": 0,
+   "a": 3,
    "w": [
-    "Wrong: guaranteeing payment and delivering shares are clearinghouse-type services that exchanges perform.",
-    "Wrong: providing liquidity, the ability to sell quickly and easily, is a core benefit of an exchange.",
+    "Wrong: exchanges act as clearinghouses, guaranteeing payment to the seller and delivering the purchased shares to the buyer, so this is a service they provide.",
+    "Wrong: providing liquidity, the ability to sell quickly and easily, is a core service of an exchange.",
     "Wrong: exchanges automatically report transaction data to the appropriate reporting facility.",
     "Correct: choosing what to buy is an investment decision for the investor and adviser, not a service an exchange performs."
    ]

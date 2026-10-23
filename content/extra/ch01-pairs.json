@@ -1,0 +1,86 @@
+[
+  {
+    "title": "Statutory vs cumulative voting",
+    "a": "Statutory voting",
+    "b": "Cumulative voting",
+    "items": [
+      {"s": "A holder of 100 shares with three seats open may cast at most 100 votes for any one nominee.", "v": "a", "w": "Statutory voting limits the holder to one vote per share for each seat, so votes cannot be stacked."},
+      {"s": "A holder of 100 shares with three seats open may cast all 300 of her votes for a single nominee.", "v": "b", "w": "Cumulative voting pools shares times seats into one pot that can be placed on one candidate."},
+      {"s": "Each share votes once per seat, and votes may never be combined onto one director.", "v": "a", "w": "Under statutory voting each seat is a separate vote of one vote per share."},
+      {"s": "The shareholder pools her total votes and may split them, such as 15 for one candidate and 5 for another.", "v": "b", "w": "Cumulative voting lets the holder allocate the pooled votes in any manner she chooses."},
+      {"s": "A holder of 200 shares and five open seats can never give one nominee more than 200 votes.", "v": "a", "w": "Statutory voting caps the votes for any one nominee at the number of shares owned."},
+      {"s": "A holder of 200 shares and five open seats has a total pool of 1,000 votes to allocate.", "v": "b", "w": "The cumulative pool equals shares times open seats, here 200 times 5, which is 1,000 votes."},
+      {"s": "With 10 shares and two seats, the holder may cast 10 votes for each of two directors but not 20 for one.", "v": "a", "w": "Statutory voting allows up to 10 votes for each seat and forbids moving votes between seats."}
+    ]
+  },
+  {
+    "title": "Rights vs warrants",
+    "a": "Rights",
+    "b": "Warrants",
+    "items": [
+      {"s": "The exercise price is set below the current market value of the stock.", "v": "a", "w": "Rights are sold at a discount, which is why they have value and trade separately."},
+      {"s": "The exercise price is set above the stock’s market price when issued, so there is no intrinsic value at issue.", "v": "b", "w": "Warrants are generally issued out of the money and become valuable only if the stock rises."},
+      {"s": "Short-term instrument; holders typically have 30 to 45 days to decide whether to exercise.", "v": "a", "w": "A rights offering gives shareholders a short window, typically 30 to 45 days, to exercise."},
+      {"s": "Long-term instrument that generally lasts five years or more.", "v": "b", "w": "Warrants typically remain outstanding much longer than rights, generally five years or more."},
+      {"s": "Lets existing shareholders keep their proportionate ownership when the company issues new shares.", "v": "a", "w": "Pre-emptive rights exist to prevent dilution by letting owners buy their pro rata share."},
+      {"s": "Attached to a bond or preferred stock as a sweetener so the issuer can pay a lower rate or dividend.", "v": "b", "w": "Warrants make another security more attractive, allowing the issuer to pay less interest or dividend."},
+      {"s": "Does not prevent dilution of existing shareholders when exercised.", "v": "b", "w": "Unlike pre-emptive rights, warrants are not designed to protect proportionate ownership against dilution."}
+    ]
+  },
+  {
+    "title": "Systematic vs non-systematic risk",
+    "a": "Systematic risk",
+    "b": "Non-systematic risk",
+    "items": [
+      {"s": "Cannot be eliminated by spreading a portfolio across many different stocks.", "v": "a", "w": "Market risk hits nearly all securities together, so diversification does not remove it."},
+      {"s": "The best protection is diversification, so the investor does not put all eggs in one basket.", "v": "b", "w": "Company-specific risk is reduced by holding many issuers, since one failure is muted."},
+      {"s": "A product recall or management change at one single company.", "v": "b", "w": "Events affecting a single company are business or specific risk, not market-wide risk."},
+      {"s": "A recession or war that pushes down most stocks at the same time.", "v": "a", "w": "Recessions and wars are named sources of systematic risk affecting the whole market."},
+      {"s": "Can be hedged with derivatives such as options that create offsetting positions.", "v": "a", "w": "Though not diversifiable, market risk can be hedged with options to limit loss."},
+      {"s": "Also called business risk or specific risk because it generally will not hit the entire portfolio.", "v": "b", "w": "Non-systematic risk is called business or specific risk because it is limited to one company."},
+      {"s": "Interest rate changes that move prices across the entire market.", "v": "a", "w": "Interest rate changes are listed among the common sources of systematic risk."}
+    ]
+  },
+  {
+    "title": "Callable vs convertible preferred",
+    "a": "Callable preferred",
+    "b": "Convertible preferred",
+    "items": [
+      {"s": "The issuer may repurchase the shares at its discretion, and the investor must sell them back.", "v": "a", "w": "Callable preferred can be called by the issuing company, forcing the holder to sell."},
+      {"s": "The holder, not the issuer, chooses whether to exchange the shares for common stock at a fixed ratio.", "v": "b", "w": "Convertible preferred gives the investor the option to exchange into common stock."},
+      {"s": "Generally pays a higher dividend than non-callable preferred from the same issuer.", "v": "a", "w": "The higher dividend compensates the investor for the risk that the shares will be called."},
+      {"s": "Generally pays a lower dividend than nonconvertible preferred because it offers common stock upside.", "v": "b", "w": "Investors trade away dividend income for the upside potential of the common stock."},
+      {"s": "The company is likely to use this feature when interest rates fall and cheaper capital is available.", "v": "a", "w": "The issuer redeems when it can replace the shares with new ones paying a lower dividend."},
+      {"s": "A $100 par share exchangeable at $20 per common share has a conversion ratio of five.", "v": "b", "w": "The ratio is par divided by the conversion price, here 100 divided by 20, which equals five."},
+      {"s": "A feature that advantages the issuer rather than the investor.", "v": "a", "w": "Callable is the issuer-favorable feature, while convertible, cumulative and participating favor the investor."}
+    ]
+  },
+  {
+    "title": "Forward vs reverse split",
+    "a": "Forward split",
+    "b": "Reverse split",
+    "items": [
+      {"s": "Used by a company that believes its share price is too high to attract buyers.", "v": "a", "w": "Forward splits create more, lower-priced shares to make the stock look more affordable."},
+      {"s": "Used by an issuer whose $0.10 stock risks falling below the minimum price for exchange listing.", "v": "b", "w": "A reverse split lifts the price to help the issuer stay above the exchange minimum."},
+      {"s": "In a 2-for-1 split, the investor ends up with twice the shares at half the price.", "v": "a", "w": "A 2-for-1 forward split doubles the share count and halves the price, leaving value unchanged."},
+      {"s": "In a 1-for-5 split, five $4 shares become one $20 share.", "v": "b", "w": "A reverse split converts positions into proportionately fewer, higher-priced shares with no value change."},
+      {"s": "The investor’s per-share cost basis is adjusted upward.", "v": "b", "w": "With fewer shares representing the same total cost, the basis per share increases."},
+      {"s": "All open orders in the stock are cancelled when it occurs.", "v": "b", "w": "Anytime there is a reverse split, all open orders to trade the stock are cancelled."},
+      {"s": "Technically the same event as a stock dividend, such as a 10% dividend equaling an 11-for-10 split.", "v": "a", "w": "A forward split and a stock dividend both give extra shares at a proportionately lower price."}
+    ]
+  },
+  {
+    "title": "Regular way vs cash settlement",
+    "a": "Regular way",
+    "b": "Cash settlement",
+    "items": [
+      {"s": "The trade settles one business day after the trade date (T + 1).", "v": "a", "w": "Regular way equity trades settle T + 1, meaning one business day after trade date."},
+      {"s": "Same-day payment and same-day settlement of the trade.", "v": "b", "w": "Cash settlement entails payment and delivery on the very day the trade is executed."},
+      {"s": "The ex-dividend date falls on the same day as the record date.", "v": "a", "w": "Because settlement takes one business day, regular way ex-date equals the record date."},
+      {"s": "The ex-dividend date is the business day after the record date.", "v": "b", "w": "A same-day settled trade on the record date still gets the dividend, so ex-date is the next day."},
+      {"s": "A buyer purchasing on the record date is too late and does not receive the dividend.", "v": "a", "w": "The trade settles after the record date, so the seller keeps the dividend."},
+      {"s": "A buyer purchasing on the record date settles that same day and does receive the dividend.", "v": "b", "w": "Same-day settlement puts the buyer on the books by the record date."},
+      {"s": "The way the majority of equity transactions settle.", "v": "a", "w": "Most equity trades settle regular way rather than through cash settlement."}
+    ]
+  }
+]

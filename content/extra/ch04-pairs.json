@@ -1,0 +1,107 @@
+[
+  {
+    "title": "Mutual fund vs closed-end fund",
+    "a": "Mutual fund",
+    "b": "Closed-end fund",
+    "items": [
+      {"s": "Creates brand-new shares for any investor who wants to buy, so the number of shares outstanding keeps changing.", "v": "a", "w": "Mutual funds make a continuous primary offering, so their share count constantly changes."},
+      {"s": "Raises capital in an initial public offering, after which the number of shares is generally fixed.", "v": "b", "w": "A closed-end fund’s capital structure and share count are generally fixed after its IPO."},
+      {"s": "An investor exits by redeeming shares with the issuing fund; no secondary market exists.", "v": "a", "w": "Mutual fund shares are redeemable only by the issuer and cannot be sold to other investors."},
+      {"s": "An investor exits by selling shares to another investor on an exchange at a market-determined price.", "v": "b", "w": "Closed-end shares trade investor to investor in the secondary market and are not redeemed by the fund."},
+      {"s": "May issue only common shares, never preferred stock or bonds, and cannot use leverage.", "v": "a", "w": "Mutual funds are limited to a single type of equity share and may not use leverage."},
+      {"s": "May issue preferred stock or bonds and borrow money to leverage its investment positions.", "v": "b", "w": "Closed-end funds may issue senior securities and borrow, which mutual funds cannot do."},
+      {"s": "Must calculate its net asset value at least once every business day.", "v": "a", "w": "Open-end funds must compute NAV daily, while closed-end funds are not required to do so."},
+      {"s": "Shares may be bought on margin or sold short because they trade on an exchange.", "v": "b", "w": "The comparison chart permits short selling and margin purchases only for closed-end fund shares."}
+    ]
+  },
+  {
+    "title": "Class A vs Class B shares",
+    "a": "Class A",
+    "b": "Class B",
+    "items": [
+      {"s": "The sales charge is paid at the time of the initial purchase.", "v": "a", "w": "Class A shares normally carry a front-end sales charge paid when the shares are first purchased."},
+      {"s": "The sales charge is a contingent deferred charge paid only if shares are redeemed within a set number of years.", "v": "b", "w": "Class B shares impose a back-end CDSC when investors redeem within a specified period."},
+      {"s": "Offers breakpoint discounts for large purchases.", "v": "a", "w": "Class A is the share class that offers breakpoints, which discount the sales charge by dollar amount."},
+      {"s": "Does not offer breakpoints, so a large investment earns no discount on the charge.", "v": "b", "w": "Class B shares, like Class C, do not offer breakpoints."},
+      {"s": "Tends to carry the lowest 12b-1 fee among the share classes.", "v": "a", "w": "Class A typically has a lower 12b-1 fee than other share classes."},
+      {"s": "Typically imposes a 12b-1 fee that is higher than the fee on the front-end load class.", "v": "b", "w": "Class B shares usually charge a higher 12b-1 fee than Class A shares."},
+      {"s": "On a typical schedule the charge steps down each period and reaches zero beginning in year seven.", "v": "b", "w": "The typical CDSC schedule runs 5%, 4%, 3%, 3%, 2%, 1% and then 0 from year seven."},
+      {"s": "A good fit for an investor making a large purchase who wants sales charge discounts.", "v": "a", "w": "Large purchasers benefit from Class A breakpoints, making the front-end load worthwhile."}
+    ]
+  },
+  {
+    "title": "Letter of intent vs rights of accumulation",
+    "a": "Letter of intent",
+    "b": "Rights of accumulation",
+    "items": [
+      {"s": "The investor signs a written promise to invest a stated total amount within 13 months.", "v": "a", "w": "An LOI is a contract promising a specified purchase amount over the next 13-month period."},
+      {"s": "The discount applies only to subsequent purchases, never to the initial transaction.", "v": "b", "w": "Under rights of accumulation the reduced sales charge is available only on later purchases."},
+      {"s": "May be backdated 90 days to reduce the sales charge on a prior purchase.", "v": "a", "w": "An LOI can be backdated for 90 days to lower the charge on an earlier purchase."},
+      {"s": "There is no time limit on how long the existing position may have been accumulating.", "v": "b", "w": "Rights of accumulation have no time limits, so old holdings still count toward the discount."},
+      {"s": "If the promised amount is not reached, extra shares held in escrow are liquidated to pay the higher sales charge.", "v": "a", "w": "The fund escrows the additional shares and liquidates them if the LOI is not completed."},
+      {"s": "Share appreciation and reinvested dividends may be counted when determining the value that earns the discount.", "v": "b", "w": "Rights of accumulation let appreciation and reinvested dividends count toward the position value."},
+      {"s": "Appreciation and reinvested dividends and capital gains do not count toward completing the commitment.", "v": "a", "w": "Only actual purchases count toward completing an LOI, not appreciation or reinvestments."},
+      {"s": "A position grown by market gains to just under a breakpoint earns a lower charge on the next add-on purchase.", "v": "b", "w": "Under rights of accumulation, appreciation can lift a position to a new breakpoint for later purchases."}
+    ]
+  },
+  {
+    "title": "UIT vs ETF",
+    "a": "UIT",
+    "b": "ETF",
+    "items": [
+      {"s": "Has a termination date set at the time the trust is created.", "v": "a", "w": "A UIT is created for a specific length of time with a termination date fixed at inception."},
+      {"s": "Has no fixed termination date.", "v": "b", "w": "ETFs begin with fixed portfolios but, unlike UITs, they do not have fixed termination dates."},
+      {"s": "An investor wanting out must redeem units with the trust because there is no secondary market.", "v": "a", "w": "UIT units are not traded in the secondary market and must be redeemed by the trust."},
+      {"s": "An investor can place a limit or stop order at midday and trade throughout the session.", "v": "b", "w": "ETFs are exchange-traded, so they trade intraday with the same orders used for stocks."},
+      {"s": "Administered by a trustee named in the indenture, with no board of directors or investment adviser.", "v": "a", "w": "UITs have a trustee and lack a board, corporate officers and investment advisers."},
+      {"s": "Its portfolio changes through reconstitution when the underlying index changes.", "v": "b", "w": "An ETF typically changes holdings only to mirror changes in the index it tracks."},
+      {"s": "Units of a new trust are offered only once, in the initial public offering.", "v": "a", "w": "A UIT sells units in an IPO and does not continuously offer new units."},
+      {"s": "Shares may be sold short or purchased on margin, and investors pay commissions.", "v": "b", "w": "ETFs trade like stocks, permitting short sales and margin, and they involve commissions."}
+    ]
+  },
+  {
+    "title": "Transfer agent vs custodian",
+    "a": "Transfer agent",
+    "b": "Custodian",
+    "items": [
+      {"s": "Issues, redeems and cancels fund shares.", "v": "a", "w": "Issuing, redeeming and cancelling fund shares is a core transfer agent duty."},
+      {"s": "Holds in safekeeping all of the securities purchased for the fund’s portfolio.", "v": "b", "w": "The custodian is the institution that acts as caretaker of the fund’s securities."},
+      {"s": "Sends trade confirmations when fund shares are purchased or sold.", "v": "a", "w": "Trade confirmations to customers are a transfer agent responsibility, not a custodian task."},
+      {"s": "A bank or trust company responsible for safekeeping the fund’s assets and securities.", "v": "b", "w": "The Knopman Note describes the custodian as a bank or trust company safekeeping fund assets."},
+      {"s": "A shareholder missing a year-end capital gains distribution should contact this service provider.", "v": "a", "w": "The transfer agent handles distributing dividends and capital gains to shareholders."},
+      {"s": "Acts as caretaker of what the fund owns rather than dealing with customer transactions.", "v": "b", "w": "The custodian protects fund assets, while the transfer agent handles customer transactions."},
+      {"s": "Processes investor mailings and issues or cancels certificates.", "v": "a", "w": "The Knopman Note assigns certificates and investor mailings to the transfer agent."},
+      {"s": "Takes custody of the securities the fund buys, rather than serving customers who transact in fund shares.", "v": "b", "w": "The custodian safekeeps the securities purchased for the portfolio, a role distinct from customer transactions."}
+    ]
+  },
+  {
+    "title": "Switching vs selling dividends",
+    "a": "Switching",
+    "b": "Selling dividends",
+    "items": [
+      {"s": "A rep moves a client from one fund to another with a similar objective for no legitimate investment purpose.", "v": "a", "w": "Switching means moving a customer between similar funds without a legitimate investment reason."},
+      {"s": "A rep sells a fund to an investor right before the fund pays out a dividend.", "v": "b", "w": "Selling dividends is selling a fund just ahead of its dividend payment."},
+      {"s": "Sometimes called churning because it creates extra transaction costs and possible tax liability.", "v": "a", "w": "Switching is referred to as churning since it adds transaction costs and potential taxes."},
+      {"s": "The payout lowers the NAV by the amount of the distribution and gives the client a taxable event.", "v": "b", "w": "The dividend reduces NAV and creates tax liability, so the client gains nothing real."},
+      {"s": "Liquidating one family’s growth fund to buy another family’s nearly identical growth fund is an example.", "v": "a", "w": "The chapter’s example is trading a Fidelity growth fund for a Janus fund with the same objectives."},
+      {"s": "The client is better off waiting to invest at the lower NAV after the dividend has been paid.", "v": "b", "w": "Buying after the distribution avoids the immediate tax liability on the dividend."},
+      {"s": "The violation lies in selling one fund to buy another, regardless of when dividends are paid.", "v": "a", "w": "Switching turns on the exchange between similar funds, not on dividend timing."},
+      {"s": "The timing of the purchase relative to the fund’s distribution is what makes the sale improper.", "v": "b", "w": "Selling dividends is defined by buying shortly before a distribution is paid."}
+    ]
+  },
+  {
+    "title": "Sales charge vs 12b-1 fee",
+    "a": "Sales charge",
+    "b": "12b-1 fee",
+    "items": [
+      {"s": "The maximum is 8.5% of the POP when the fund offers all three pricing privileges.", "v": "a", "w": "Maximum front-end sales charge is 8.5% only if breakpoints, rights of accumulation and NAV reinvestment are offered."},
+      {"s": "The maximum is 0.75% of a fund’s average net assets for any share class.", "v": "b", "w": "The cap on 12b-1 fees for all mutual fund share classes is 0.75% of average net assets."},
+      {"s": "Expressed as a percentage of the public offering price, never of NAV.", "v": "a", "w": "A mutual fund sales load is always a percentage of the POP, not of NAV."},
+      {"s": "A fund that advertises itself as no-load may charge no more than 0.25% of average net assets.", "v": "b", "w": "No-load funds are limited to 12b-1 fees of 0.25% of average net assets."},
+      {"s": "Compensates the salesperson for the expertise needed to select the appropriate fund for the customer.", "v": "a", "w": "The sales charge pays the salesperson for expertise in choosing a suitable fund."},
+      {"s": "Covers marketing and distribution expenses but not management fees or trading expenses.", "v": "b", "w": "12b-1 fees pay marketing and administrative costs, not management fees or trading costs."},
+      {"s": "A fund lacking breakpoints, rights of accumulation or NAV reinvestment is capped at 6.25% for this charge.", "v": "a", "w": "Funds without the three pricing features may charge a maximum sales charge of 6.25%."},
+      {"s": "Must be approved originally and annually by both shareholders and the board of directors.", "v": "b", "w": "A 12b-1 fee needs original and annual approval from shareholders and the fund’s board."}
+    ]
+  }
+]

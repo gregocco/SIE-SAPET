@@ -1,0 +1,107 @@
+[
+  {
+    "title": "JTIC vs JTWROS",
+    "a": "JTIC",
+    "b": "JTWROS",
+    "items": [
+      {"s": "Each owner holds a specified percentage based on his or her contributions to the account.", "v": "a", "w": "JTIC ownership is divided into percentages tied to each owner’s contributions, unlike the undivided JTWROS interest."},
+      {"s": "At one owner’s death, that owner’s share goes to his or her designated beneficiary.", "v": "a", "w": "In a JTIC account the deceased owner’s portion goes to that owner’s beneficiary or estate, not the survivors."},
+      {"s": "Two siblings want their shares to pass to their own spouses at death.", "v": "a", "w": "Only JTIC lets each owner leave a separate share to a personally chosen beneficiary such as a spouse."},
+      {"s": "The account assets are subject to probate when an owner dies.", "v": "a", "w": "The book states JTIC assets are subject to probate and are distributed as part of the deceased’s estate."},
+      {"s": "All owners own 100% of the assets through an undivided interest.", "v": "b", "w": "JTWROS gives each owner an undivided interest in the entire account, so every owner owns 100% of the assets."},
+      {"s": "A deceased owner’s interest passes automatically to the surviving owners.", "v": "b", "w": "The right of survivorship means the deceased owner’s interest goes directly to the surviving account owners."},
+      {"s": "This title avoids probate and is common for married couples or a parent and adult child.", "v": "b", "w": "JTWROS avoids probate because assets transfer directly to survivors, which is why spouses commonly choose this title."},
+      {"s": "A married couple wants the survivor to receive the full account value after one spouse dies.", "v": "b", "w": "Survivorship gives the surviving spouse the entire account, while a JTIC title would split the value."}
+    ]
+  },
+  {
+    "title": "Long vs Short Margin",
+    "a": "Long margin",
+    "b": "Short margin",
+    "items": [
+      {"s": "The FINRA minimum maintenance requirement is 25% of market value.", "v": "a", "w": "FINRA sets maintenance at 25% of long market value, compared with 30% on short positions."},
+      {"s": "Buying $1,500 of stock requires an initial deposit of the full $1,500.", "v": "a", "w": "For a long purchase of $2,000 or less the deposit is 100% of the purchase price."},
+      {"s": "The initial minimum is the lesser of $2,000 or 100% of the purchase price.", "v": "a", "w": "The long-side FINRA minimum equity rule is the lesser of $2,000 or the full purchase price."},
+      {"s": "A position with $60,000 of market value must keep at least $15,000 of equity.", "v": "a", "w": "Long maintenance is 25% of $60,000, which equals $15,000 of required equity."},
+      {"s": "The FINRA maintenance requirement is 30% of market value.", "v": "b", "w": "FINRA sets short maintenance at 30% of short market value, higher than the 25% on long positions."},
+      {"s": "Selling $1,500 of stock requires a $2,000 deposit even though that exceeds the sale value.", "v": "b", "w": "Short sales need at least $2,000 even when 100% of the sale price is less than that."},
+      {"s": "A position with $60,000 of market value must keep at least $18,000 of equity.", "v": "b", "w": "Short maintenance is 30% of $60,000, which equals $18,000 of required equity."},
+      {"s": "The $2,000 minimum applies to sales up to $4,000, with no 100%-of-price alternative.", "v": "b", "w": "Short sales have a flat $2,000 minimum up to $4,000 and never use the lesser-of test."}
+    ]
+  },
+  {
+    "title": "Marginable vs Not marginable",
+    "a": "Can be bought on margin",
+    "b": "Cannot be bought on margin",
+    "items": [
+      {"s": "Exchange-traded fund shares.", "v": "a", "w": "ETFs are listed on the exchanges and appear on the list of securities the Federal Reserve permits on margin."},
+      {"s": "A closed-end fund trading on an exchange.", "v": "a", "w": "Closed-end funds are exchange-traded, so the Federal Reserve Board allows them to be purchased on margin."},
+      {"s": "A LEAPS option with 18 months until expiration.", "v": "a", "w": "LEAPS options with more than nine months to expiration are eligible to be purchased on margin."},
+      {"s": "Treasury bonds.", "v": "a", "w": "Bonds and fixed-income securities such as Treasury bonds are on the list of margin-eligible securities."},
+      {"s": "Mutual fund shares, even though they may later serve as collateral.", "v": "b", "w": "Mutual funds cannot be purchased on margin, though they can be pledged as collateral after 30 days."},
+      {"s": "Shares of a new IPO during the first 30 days after the effective date.", "v": "b", "w": "The Federal Reserve Board restricts IPO purchases on margin for the first 30 days after the effective date."},
+      {"s": "An option contract with six months until expiration.", "v": "b", "w": "Options with nine months or less until expiration cannot be purchased on margin."},
+      {"s": "Annuities.", "v": "b", "w": "Annuities appear on the Federal Reserve’s list of products that may not be purchased on margin."}
+    ]
+  },
+  {
+    "title": "UGMA/UTMA vs Trust",
+    "a": "UGMA/UTMA custodial account",
+    "b": "Trust account",
+    "items": [
+      {"s": "The account has exactly one custodian and one minor beneficiary.", "v": "a", "w": "Custodial accounts can have only one custodian and one minor beneficiary, unlike a trust with several beneficiaries."},
+      {"s": "The minor’s Social Security number appears on the account, and the minor owes the taxes.", "v": "a", "w": "The minor owns the assets, so the minor’s SSN is used and the minor bears the tax liability."},
+      {"s": "Gifts to the account are irrevocable and cannot be taken back by the donor.", "v": "a", "w": "Any gift to a UGMA or UTMA account is irrevocable, so neither donor nor minor can reverse it."},
+      {"s": "Margin trading is not permitted in the account.", "v": "a", "w": "The book states margin trading is not permitted in UGMA or UTMA accounts."},
+      {"s": "The firm must receive a copy of the agreement, usually written by an attorney, to open the account.", "v": "b", "w": "Trust clients must give the broker-dealer a copy of the trust agreement, which is usually drafted by an attorney."},
+      {"s": "The creator may restrict the assets, such as allowing use for educational expenses only.", "v": "b", "w": "A trust lets its creator limit or restrict how the assets are used, which custodial accounts do not."},
+      {"s": "It may be revocable, meaning the creator can alter or cancel it.", "v": "b", "w": "Trusts may be revocable or irrevocable, and only a revocable trust can be changed or cancelled by the trustor."},
+      {"s": "The controlling person acts under powers and limits written in an agreement and may also be the beneficiary.", "v": "b", "w": "A trustee acts under the trust agreement’s powers, and the trustee and beneficiary may even be the same person."}
+    ]
+  },
+  {
+    "title": "Cash vs Margin account",
+    "a": "Cash account",
+    "b": "Margin account",
+    "items": [
+      {"s": "The customer must pay in full for securities purchased.", "v": "a", "w": "A cash account requires full payment, so purchases cannot exceed the cash the customer has deposited."},
+      {"s": "Failing to pay by the Reg T deadline leads to a sell-out and a 90-day freeze.", "v": "a", "w": "Unpaid cash purchases without an extension are sold out and the account is frozen for 90 days."},
+      {"s": "Buying and selling a security without ever paying for it is free-riding here.", "v": "a", "w": "Free-riding is the cash account violation of selling shares that were never paid for."},
+      {"s": "The customer may withdraw cash balances at any time, in whole or in part.", "v": "a", "w": "The book says customers have the right to withdraw cash balances held in a cash account at any time."},
+      {"s": "The customer signs a hypothecation agreement pledging securities as collateral.", "v": "b", "w": "Hypothecation of account securities as loan collateral is part of the margin agreement, not a cash account requirement."},
+      {"s": "Every short sale must be executed here.", "v": "b", "w": "All short sales must be placed in a margin account because the shares are borrowed."},
+      {"s": "The account is marked to the market daily, and falling equity triggers maintenance calls.", "v": "b", "w": "Margin accounts, long and short, are marked to market daily to test the maintenance requirement."},
+      {"s": "A margin disclosure statement must be delivered at opening and annually.", "v": "b", "w": "FINRA Rule 2264 requires the margin disclosure statement before or at opening and every year."}
+    ]
+  },
+  {
+    "title": "Confirmation vs Statement",
+    "a": "Trade confirmation",
+    "b": "Account statement",
+    "items": [
+      {"s": "Must be delivered to the customer at or before settlement of the trade.", "v": "a", "w": "Confirmations are due at or before completion of the transaction, which the rule defines as settlement."},
+      {"s": "Shows the mark-up or mark-down when the firm acted as principal.", "v": "a", "w": "Principal trades require the confirmation to show the mark-up or mark-down; agency trades show commission."},
+      {"s": "Identifies the security traded by its CUSIP number.", "v": "a", "w": "The CUSIP ID uniquely identifying the security is a required confirmation item for the trade."},
+      {"s": "A municipal bond version must show yield to worst and accrued interest.", "v": "a", "w": "MSRB Rule G-15 adds yield to worst, accrued interest, and call features to municipal trade confirmations."},
+      {"s": "Sent at least quarterly to customers with positions, a money balance, or activity.", "v": "b", "w": "FINRA Rule 2231 requires quarterly statements for any account with securities, a money balance, or activity."},
+      {"s": "Must be sent monthly when the account holds options or penny stocks.", "v": "b", "w": "Holding options or penny stocks raises the required statement frequency from quarterly to monthly."},
+      {"s": "Provides a snapshot of the account as of the closing date.", "v": "b", "w": "The statement is a snapshot of the account’s status on its closing date, letting customers spot errors."},
+      {"s": "Not required for an inactive account holding no securities and no money balance.", "v": "b", "w": "Statements go only to customers with a position, balance, or activity since the last statement."}
+    ]
+  },
+  {
+    "title": "SIPC vs FDIC",
+    "a": "SIPC",
+    "b": "FDIC",
+    "items": [
+      {"s": "Protects up to $500,000 per separate customer, with no more than $250,000 in cash.", "v": "a", "w": "SIPC limits are $500,000 per separate customer including at most $250,000 in cash."},
+      {"s": "A nonprofit membership corporation that is not an agency of the US government.", "v": "a", "w": "SIPC is a not-for-profit corporation created by Congress and funded by broker-dealer assessments."},
+      {"s": "Coverage depends on the account title, so one person can be several separate customers.", "v": "a", "w": "Individual, joint, trust, IRA, Roth IRA, and minor accounts each count as separate customers for SIPC."},
+      {"s": "A customer whose claim exceeds the limit becomes a general creditor of the failed firm.", "v": "a", "w": "Once SIPC limits are exceeded, the customer holds only a general creditor claim against the broker-dealer."},
+      {"s": "Insures checking, savings, and bank-issued CDs at banks and thrifts.", "v": "b", "w": "FDIC coverage is limited to bank deposit products such as checking, savings, money market accounts, and CDs."},
+      {"s": "Coverage is $250,000 per depositor in each bank, backed by US government full faith and credit.", "v": "b", "w": "FDIC insurance of at least $250,000 per depositor is backed by the full faith and credit of the government."},
+      {"s": "Does not cover mutual funds or stocks, even when they are purchased through a bank.", "v": "b", "w": "Securities and mutual funds are not FDIC insured, even if sold by a bank branch."},
+      {"s": "An independent agency created by Congress in 1933 that also supervises failed banks.", "v": "b", "w": "The FDIC was created in 1933 and also examines institutions and manages receiverships of failed banks."}
+    ]
+  }
+]

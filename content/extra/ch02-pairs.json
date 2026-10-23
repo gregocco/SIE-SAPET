@@ -1,0 +1,42 @@
+[
+  {"title":"Nominal yield vs Current yield","a":"Nominal yield","b":"Current yield","items":[
+    {"s":"Equals the coupon rate and stays fixed for the whole life of the bond.","v":"a","w":"Nominal yield is locked in at issuance and equals the coupon, so it never changes."},
+    {"s":"Annual interest divided by par value.","v":"a","w":"The nominal yield uses par value, a constant, as its denominator, so it stays unchanged."},
+    {"s":"A bond paying $25 semiannually on $1,000 par is always described by this 5% figure.","v":"a","w":"Coupon dollars over par give the nominal yield regardless of the price the bond trades at."},
+    {"s":"Annual interest divided by the bond’s current market price.","v":"b","w":"Current yield uses the market price as its denominator, unlike the nominal yield which uses par."},
+    {"s":"Rises when the bond’s market price suddenly drops.","v":"b","w":"With annual interest fixed, a lower market price in the denominator raises the current yield."},
+    {"s":"On a premium bond, this is the lower of the two yields.","v":"b","w":"For a premium bond the current yield falls below the nominal yield because the price exceeds par."}
+  ]},
+  {"title":"YTM vs YTC","a":"Yield to maturity","b":"Yield to call","items":[
+    {"s":"Described as trading on a 9.5 basis or yielding 9.5%.","v":"a","w":"Those expressions are the book’s alternative ways of quoting a bond’s yield to maturity."},
+    {"s":"The most widely quoted yield, built on the years remaining until the bond matures.","v":"a","w":"YTM is the most widely quoted bond yield and uses the time remaining until maturity."},
+    {"s":"The only meaningful yield for a zero-coupon bond bought for a college fund.","v":"a","w":"A zero has no current interest, so yield to maturity is its only meaningful yield quote."},
+    {"s":"Replaces the years to maturity in the formula with the years to the first possible call date.","v":"b","w":"YTC is calculated like YTM but substitutes the years to the first call date for maturity."},
+    {"s":"Includes any call premium payable on the call date in the calculation.","v":"b","w":"Yield to call counts the call premium paid at the first call date, which YTM never includes."},
+    {"s":"On a discount bond, this is the highest of the yields.","v":"b","w":"For a discount bond the investor recovers the discount faster if called, so YTC exceeds YTM."}
+  ]},
+  {"title":"Call feature vs Put feature","a":"Call feature","b":"Put feature","items":[
+    {"s":"Benefits the issuer, so the bond generally pays a higher rate than a straight bond.","v":"a","w":"Callable bonds are riskier for investors and therefore pay more than comparable non-callable bonds."},
+    {"s":"The issuer is most likely to use it when interest rates are declining.","v":"a","w":"Issuers call high-coupon bonds to refund at lower rates, as a homeowner refinances a mortgage."},
+    {"s":"Federal government bonds do not carry this feature.","v":"a","w":"The book states bonds issued by the federal government are not callable by the issuer."},
+    {"s":"The investor may demand early repayment if the bond’s rating falls.","v":"b","w":"A put lets the investor sell the bond back to the issuer when a predetermined event occurs."},
+    {"s":"Benefits the investor, so the bond pays less interest than a similar straight bond.","v":"b","w":"Because puttable bonds favor investors, they pay less interest than comparable non-puttable bonds."},
+    {"s":"Attractive in rising-rate environments because the holder can reinvest the repaid principal at higher yields.","v":"b","w":"A put allows investors to demand repayment early and reinvest in higher-yielding bonds when rates rise."}
+  ]},
+  {"title":"Accretion vs Amortization","a":"Accretion","b":"Amortization","items":[
+    {"s":"Applied to a bond bought at 88, so the cost basis rises toward par.","v":"a","w":"A bond bought at a discount has its cost basis adjusted upward each year toward par."},
+    {"s":"An investor buys at $940 with six years left, and the basis is $950 after one year.","v":"a","w":"Straight-line accretion adds the $60 discount divided by six years, or $10, to the basis yearly."},
+    {"s":"Used for a bond purchased below par, increasing the basis until it equals $1,000 at maturity.","v":"a","w":"Accretion moves the basis of a discount bond upward so it equals par at maturity."},
+    {"s":"Applied to a bond bought at 108, so the cost basis falls toward par.","v":"b","w":"A bond bought at a premium has its cost basis adjusted downward each year toward par."},
+    {"s":"An investor buys at $1,100 with five years left, and the basis is $1,080 after one year.","v":"b","w":"Straight-line amortization subtracts the $100 premium divided by five years, or $20, from the basis yearly."},
+    {"s":"Used for a bond purchased above par, decreasing the basis until it equals $1,000 at maturity.","v":"b","w":"Amortization moves the basis of a premium bond downward so it equals par at maturity."}
+  ]},
+  {"title":"Interest rate risk vs Reinvestment risk","a":"Interest rate risk","b":"Reinvestment risk","items":[
+    {"s":"A 30-year zero-coupon bond carries more of this risk than a 5-year 7% coupon bond.","v":"a","w":"Longer maturity and lower or zero coupons make a bond’s price more sensitive to rate changes."},
+    {"s":"Duration is the measure of how sensitive a bond is to this risk.","v":"a","w":"Duration measures bond sensitivity to changing interest rates, and longer duration means greater price sensitivity."},
+    {"s":"Rates rise sharply and the market price of an outstanding fixed-rate bond falls.","v":"a","w":"The inverse price and rate relationship is interest rate risk, the risk bond prices fall as rates rise."},
+    {"s":"The Fed cuts rates, so the investor must reinvest the $80 received each year at a lower return.","v":"b","w":"The book’s example shows periodic interest being reinvested at lower rates as reinvestment rate risk."},
+    {"s":"A zero-coupon bond has none of this risk, since there is no interest to reinvest.","v":"b","w":"Zero-coupon bonds pay no coupons, so they have no reinvestment rate risk."},
+    {"s":"A bond is called after rates fall and no available investment offers a similar return.","v":"b","w":"Call risk leads to the risk that no investment can match the return of the called bond."}
+  ]}
+]

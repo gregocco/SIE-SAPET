@@ -1,0 +1,72 @@
+[
+  {"title":"Reasonable-Basis vs Customer-Specific Suitability","a":"Reasonable-basis","b":"Customer-specific","items":[
+    {"s":"The rep must understand the product and believe it is suitable for at least some investors.","v":"a","w":"Reasonable-basis suitability is about product understanding and suitability for at least some investors, not one client."},
+    {"s":"A fraud or manipulative device fails this test no matter who the client is.","v":"a","w":"A fraudulent or manipulative product cannot be suitable for anyone, so it fails the reasonable-basis test outright."},
+    {"s":"It focuses on the rep’s understanding of the product rather than on any individual customer.","v":"a","w":"The book says reasonable-basis suitability does not consider each customer individually but the rep’s product knowledge."},
+    {"s":"A rep recommends a product she does not fully understand, so this test is failed.","v":"a","w":"Recommending a product without understanding its features fails the reasonable-basis test according to the chapter."},
+    {"s":"The rep must analyze the client’s financial situation and investment profile before recommending.","v":"b","w":"Customer-specific suitability requires analyzing a broad array of factors, including the client’s financial situation."},
+    {"s":"An institution that affirmatively exercises independent judgment may be exempt from this obligation.","v":"b","w":"The institutional account exemption relieves only the customer-specific obligation, when two stated criteria are satisfied."},
+    {"s":"It asks whether a recommendation fits one particular institutional customer.","v":"b","w":"Customer-specific suitability looks at the particular institutional customer’s profile, unlike the product-level reasonable-basis test."},
+    {"s":"The rep must obtain and analyze a broad array of client factors to support the determination.","v":"b","w":"Gathering and analyzing client-specific factors is the defining requirement of customer-specific suitability, per the chapter."}
+  ]},
+  {"title":"FINRA Suitability vs Regulation Best Interest","a":"FINRA Rule 2111","b":"Reg BI","items":[
+    {"s":"Recommendations to institutional customers are judged under this standard.","v":"a","w":"Rule 2111 suitability applies to institutional customers, while recommendations to retail customers fall under Reg BI."},
+    {"s":"It is composed of reasonable-basis, customer-specific and quantitative suitability obligations.","v":"a","w":"Those three obligations make up the Rule 2111 suitability analysis and must each be met on every recommendation."},
+    {"s":"A recommendation must fall within the zone of what is appropriate for the customer.","v":"a","w":"The chapter contrasts suitability’s zone of what is appropriate with Reg BI’s higher best-interest standard."},
+    {"s":"This standard is set by FINRA rather than adopted by the SEC.","v":"a","w":"Rule 2111 is FINRA’s suitability rule, whereas Regulation Best Interest was passed by the SEC."},
+    {"s":"The SEC passed it in 2019 to enhance protection for retail investors.","v":"b","w":"Regulation Best Interest was passed by the SEC in 2019 to raise standards of retail investor protection."},
+    {"s":"The customer’s interests must be placed ahead of the firm’s and the representative’s interests.","v":"b","w":"Putting the customer’s interests ahead of the firm and rep is the heightened standard Reg BI established."},
+    {"s":"A customer relationship summary must be provided at or prior to the recommendation.","v":"b","w":"Form CRS delivery at or before the recommendation is part of the Reg BI disclosure obligation."},
+    {"s":"Its four obligations are disclosure, care, conflict of interest and compliance.","v":"b","w":"Reg BI firms must address disclosure, care, conflict of interest and compliance obligations as listed in the chapter."}
+  ]},
+  {"title":"Call Risk vs Prepayment Risk","a":"Call risk","b":"Prepayment risk","items":[
+    {"s":"The issuer buys back the security when interest rates fall in order to reissue at lower rates.","v":"a","w":"Call risk is the issuer exercising its call feature in falling rate environments to re-issue cheaper securities."},
+    {"s":"Callable bonds and callable preferred stock are the investments most at risk.","v":"a","w":"The chapter names callable bonds and callable preferred stock as the investments most exposed to call risk."},
+    {"s":"Purchasing non-callable securities mitigates this risk.","v":"a","w":"Non-callable securities cannot be redeemed early by the issuer, which is the strategy listed to reduce call risk."},
+    {"s":"Call protection prevents the issuer from redeeming the security for a set period.","v":"a","w":"Call protection bars the issuer from calling the security for a certain period, which protects bondholders."},
+    {"s":"Homeowners refinance to a lower rate and return principal to the holders early.","v":"b","w":"Mortgage refinancing in falling rate environments gives MBS holders an early return of principal, which is prepayment risk."},
+    {"s":"Mortgage-backed securities are the investments most at risk.","v":"b","w":"Prepayment risk is distinctly linked to mortgage-backed securities, which the chapter lists as most at risk."},
+    {"s":"Investing in other fixed-income securities and equities mitigates this risk.","v":"b","w":"The listed strategy for prepayment risk is investing in other types of fixed-income securities and in equities."},
+    {"s":"Principal comes back faster than anticipated as mortgage holders pay down their loans.","v":"b","w":"Faster-than-expected principal paydown by mortgage holders is the defining feature of prepayment risk in MBS."}
+  ]},
+  {"title":"Systematic Risk vs Non-Systematic Risk","a":"Systematic risk","b":"Non-systematic risk","items":[
+    {"s":"A recession or war that pushes down the overall market is an example.","v":"a","w":"Recessions, wars and significant political events are named sources of systematic, market-wide risk."},
+    {"s":"It cannot be avoided through diversification but can be hedged with derivatives such as options.","v":"a","w":"Systematic risk survives diversification, though the chapter says it can be hedged with options contracts."},
+    {"s":"Buying put options on a broad-based index is the listed strategy to mitigate it.","v":"a","w":"Puts on a broad index are the strategy given for hedging market-wide systematic risk in the chapter."},
+    {"s":"For owners of stocks, it is highest in a falling bear market.","v":"a","w":"The unit exam solution states that systematic risk for stock owners is highest in a bear market."},
+    {"s":"It is also called business risk and generally does not affect the investor’s entire portfolio.","v":"b","w":"Non-systematic risk is also called business risk and does not usually hit every holding in a portfolio."},
+    {"s":"A product recall or a management change at a single company is an example.","v":"b","w":"Company-specific events such as recalls and management changes are the chapter’s examples of non-systematic risk."},
+    {"s":"The best protection is diversifying across many individual stocks or broad-based funds.","v":"b","w":"Diversification is the best protection against non-systematic risk because no one position dominates the portfolio."},
+    {"s":"Volkswagen’s emissions scandal, which hurt one company’s stock, is a typical example.","v":"b","w":"The chapter cites the Volkswagen emissions scandal as a well-known example of company-specific business risk."}
+  ]},
+  {"title":"Inflationary Risk vs Interest Rate Risk","a":"Inflationary risk","b":"Interest rate risk","items":[
+    {"s":"It is also known as purchasing power risk.","v":"a","w":"The chapter states inflationary risk is also referred to as purchasing power risk."},
+    {"s":"A fixed coupon stays the same while the cost of goods and services rises.","v":"a","w":"Fixed payments buy less over time when prices rise, which is the essence of inflationary risk."},
+    {"s":"Investing in TIPS and REITs is a listed way to reduce it.","v":"a","w":"TIPS, REITs and common stock are the strategies the chapter lists for mitigating inflationary risk."},
+    {"s":"The return of par at maturity buys fewer real goods because prices have risen.","v":"a","w":"The chapter notes the returned principal at maturity has reduced purchasing power in an inflationary environment."},
+    {"s":"Bond prices fall when rates rise, because of the inverse relationship between prices and rates.","v":"b","w":"The inverse price and rate relationship is the definition of interest rate risk for fixed-income securities."},
+    {"s":"Bonds with a lower coupon and longer maturity are especially exposed.","v":"b","w":"The Knopman Note says lower coupon and longer maturity bonds are especially exposed to interest rate risk."},
+    {"s":"An investor buying Treasury securities would be most concerned with this risk.","v":"b","w":"Treasuries have little credit or political risk, so the buyer’s main concern is interest rate risk."},
+    {"s":"Convertible bonds and common stock are listed strategies to reduce it.","v":"b","w":"Common stock and convertible bonds are the strategies listed for mitigating interest rate risk in the chapter."}
+  ]},
+  {"title":"Current Income vs Growth Objective","a":"Current income","b":"Growth","items":[
+    {"s":"Utility stocks and REITs are listed as suitable investments.","v":"a","w":"Utility stocks, REITs and preferred stock are named suitable investments for generating current cash."},
+    {"s":"Zero-coupon bonds are inappropriate because they pay no current interest.","v":"a","w":"Zero-coupon bonds are listed as inappropriate for current income since they generate no cash payments now."},
+    {"s":"Its biggest risks include call risk and reinvestment rate risk.","v":"a","w":"Interest rate, credit, call, reinvestment and prepayment risks are the listed biggest risks of the income strategy."},
+    {"s":"Treasuries, agencies and highly rated corporate bonds suit the less aggressive investors with this objective.","v":"a","w":"Less aggressive income investors use Treasuries, agencies and highly rated corporates, while aggressive ones use high-yield bonds."},
+    {"s":"Small-cap stocks are suitable for the more aggressive investors with this objective.","v":"b","w":"Small-cap common stock is listed for more aggressive growth investors, with large-cap for the less aggressive."},
+    {"s":"Fixed-income securities and preferred stock are inappropriate investments.","v":"b","w":"The chapter lists fixed-income and preferred stock as inappropriate for a pure growth objective."},
+    {"s":"Its biggest risks are market risk and business risk.","v":"b","w":"Growth investors hold stocks, so market risk and business risk are the biggest risks of the strategy."},
+    {"s":"The investor has little focus on generating cash and is often younger.","v":"b","w":"Growth investors pursue appreciation with little focus on income and are often younger investors who can weather volatility."}
+  ]},
+  {"title":"Fundamental vs Technical Analysis","a":"Fundamental analysis","b":"Technical analysis","items":[
+    {"s":"It predicts a company’s future value from its business fundamentals.","v":"a","w":"Fundamental analysis forecasts a company’s value from the business fundamentals described in the chapter."},
+    {"s":"It examines the annual and quarterly financial statements companies file with the SEC.","v":"a","w":"Financial statements filed with the SEC are a core input of fundamental analysis according to the chapter."},
+    {"s":"It evaluates the quality of company management and trends in the industry.","v":"a","w":"Management and industry trends are named business fundamentals, alongside financial statements, in fundamental analysis."},
+    {"s":"The analyst relies on company financial reports rather than past price movements.","v":"a","w":"Fundamental analysis centers on company information, contrasted with technical analysis that studies historical market data."},
+    {"s":"It relies on historical market data, trading trends or price patterns.","v":"b","w":"Technical analysis uses historical market data and price patterns rather than a company’s business fundamentals."},
+    {"s":"A moving average tracks a security’s price data over a period of time.","v":"b","w":"The moving average is the technical tool the chapter uses to track a security’s price over time."},
+    {"s":"A shorter moving average timeframe is more sensitive to price changes.","v":"b","w":"A moving average over a shorter timeframe reacts faster to price changes, as the chapter explains."},
+    {"s":"A longer moving average timeframe makes the average less sensitive to price changes.","v":"b","w":"Longer moving average timeframes smooth the data and are less sensitive to price changes, per the chapter."}
+  ]}
+]
