@@ -44,14 +44,20 @@ const shuffle = a => { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { c
 const pick = a => a[Math.floor(Math.random() * a.length)];
 const money = n => (n < 0 ? '-$' : '$') + Math.round(Math.abs(n)).toLocaleString('en-US');
 const LET = ['A', 'B', 'C', 'D'];
+function bookRef(r) { const P = DATA.pages || {}; let k = String(r); while (k && !(k in P)) { const i = k.lastIndexOf('.'); k = i < 0 ? '' : k.slice(0, i); } return k ? { sec: k, page: P[k], pdf: P[k] + 12 } : null; }
+const refPill = r => { const b = bookRef(r); return `<span class="pill">Book §${esc(r)}${b ? ' · p.' + b.page + ' (PDF p.' + b.pdf + ')' : ''}</span>`; };
 const clean = w => { const t = w.replace(/^(Correct|Wrong)(: |\.|—)?\s*/i, ''); return t.length > 3 ? t.charAt(0).toUpperCase() + t.slice(1) : w; };
 const today = () => Math.floor((Date.now() - new Date().getTimezoneOffset() * 6e4) / 864e5);
+
+/* ---------- activation (a joke licence, not security) ---------- */
+const cyrb53 = (s, seed = 7) => { let h1 = 0xdeadbeef ^ seed, h2 = 0x41c6ce57 ^ seed; for (let i = 0, c; i < s.length; i++) { c = s.charCodeAt(i); h1 = Math.imul(h1 ^ c, 2654435761); h2 = Math.imul(h2 ^ c, 1597334677); } h1 = Math.imul(h1 ^ (h1 >>> 16), 2246822507) ^ Math.imul(h2 ^ (h2 >>> 13), 3266489909); h2 = Math.imul(h2 ^ (h2 >>> 16), 2246822507) ^ Math.imul(h1 ^ (h1 >>> 13), 3266489909); return 4294967296 * (2097151 & h2) + (h1 >>> 0); };
+const KEYHASH = 1660197817701199;
 
 /* ---------- store ---------- */
 const KEY = 'sie-prep.v1';
 let S = null;
 try { S = JSON.parse(localStorage.getItem(KEY)); } catch (e) { }
-S = Object.assign({ rec: {}, exams: [], examDate: '2026-11-30', theme: 'auto', log: {}, flags: {} }, S || {});
+S = Object.assign({ act: false, checks: {}, rec: {}, exams: [], examDate: '2026-11-30', theme: 'auto', log: {}, flags: {} }, S || {});
 const save = () => { try { localStorage.setItem(KEY, JSON.stringify(S)); } catch (e) { } };
 function applyTheme() { const r = document.documentElement; if (S.theme === 'auto') r.removeAttribute('data-theme'); else r.setAttribute('data-theme', S.theme); }
 
@@ -223,6 +229,22 @@ function ring(p) {
 const prio = p => ({ high: ['high', 'High value'], med: ['med', 'Medium'], low: ['low', 'Express'] }[p]);
 
 
+/* ---------- exam-day checklist (facts from the textbook introduction) ---------- */
+const CHECK = [
+  ['id', 'Valid government-issued ID with your signature and photo (driver’s licence, passport or military ID).'],
+  ['early', 'Arrive (or log in for the remote exam) 30 minutes before the appointment.'],
+  ['book', 'Nothing to bring in: closed book, no notes, no phone, no watch, no laptop. Personal items go in a locker.'],
+  ['calc', 'Do NOT bring your own calculator. A basic four-function calculator (or an online one when remote) and scratch paper/notepad are provided.'],
+  ['calcpractice', 'Practised with the in-app small calculator: abbreviate numbers (14.7 instead of 14,700,000).'],
+  ['format', 'Format: 75 scored questions (+5 unscored), 4 choices, 1 h 45 min, 70% to pass. A confirmation box appears after each answer; you can flag questions for review.'],
+  ['pace', 'Pace: about 1.4 minutes per question. Flag and move on; use the time left for the flagged ones.'],
+  ['remote', 'Remote exam: read the FINRA/Prometric remote requirements in advance (finra.org → test online) and test your set-up.'],
+  ['sleep', 'Sleep. Last two days = light review only: traps, formulas, missed questions.'],
+];
+function checklistCard(open) {
+  return `<section class="card"><div class="row"><div style="flex:1"><div class="eyebrow">Exam day</div><h2 style="margin-top:4px">Checklist</h2></div><span class="pill ${open ? 'high' : ''}">${CHECK.filter(c => S.checks[c[0]]).length}/${CHECK.length}</span></div><ul class="list" style="margin-top:6px">${CHECK.map(c => `<li><button class="row" data-act="chk" data-k="${c[0]}" style="width:100%;background:none;border:0;padding:11px 0;text-align:left;align-items:flex-start"><span style="flex:none;width:24px;height:24px;border-radius:8px;border:1.5px solid ${S.checks[c[0]] ? 'var(--ok)' : 'var(--line)'};background:${S.checks[c[0]] ? 'var(--ok)' : 'transparent'};color:#fff;display:grid;place-items:center;font-size:.8rem">${S.checks[c[0]] ? '✓' : ''}</span><span class="small">${esc(c[1])}</span></button></li>`).join('')}</ul></section>`;
+}
+
 /* ---------- study plan (exam 30 Nov 2026, ~2-4 h/day) ---------- */
 const PLAN = [
   ['2026-10-23', '2026-10-30', 'Week 1 · Accounts first', 'Customer accounts and tax-advantaged accounts are ~31% of the exam. Then investment companies.', [11, 12, 4]],
@@ -257,7 +279,7 @@ function viewHome() {
     <div class="bp" style="margin-top:10px">${BLUEPRINT.map(([n, w, c]) => `<div style="flex:${w};background:${c}">${w}%</div>`).join('')}</div>
     <div class="row wrapx tiny muted" style="margin-top:8px;gap:12px">${BLUEPRINT.map(([n, w, c]) => `<span><i style="display:inline-block;width:9px;height:9px;border-radius:3px;background:${c};margin-right:5px"></i>${n}</span>`).join('')}</div></section>`;
   const live = META.filter(m => m.live).map(m => chRow(m)).join('');
-  return `<div class="stack">${hero}${plan}${planCard()}${stats}<section><div class="row" style="margin:6px 0 10px"><h2 style="flex:1">Your chapters</h2><a class="small" href="#/learn" style="color:var(--accent);font-weight:650;text-decoration:none">All 14 →</a></div><div class="card" style="padding:0">${live}</div><p class="muted small" style="margin-top:10px">More chapters unlock as they’re produced. Highest-value first.</p></section>${bp}</div>`;
+  return `<div class="stack">${days !== null && days >= 0 && days <= 2 ? checklistCard(true) : ''}${hero}${plan}${planCard()}${stats}<section><div class="row" style="margin:6px 0 10px"><h2 style="flex:1">Your chapters</h2><a class="small" href="#/learn" style="color:var(--accent);font-weight:650;text-decoration:none">All 14 →</a></div><div class="card" style="padding:0">${live}</div><p class="muted small" style="margin-top:10px">More chapters unlock as they’re produced. Highest-value first.</p></section>${bp}</div>`;
 }
 function chRow(m) {
   const p = prio(m.priority);
@@ -316,10 +338,10 @@ function viewRun() {
     const q = it.x;
     body = `<div class="eyebrow">Question · §${esc(q.r)}</div><div class="qstem" style="margin-top:8px">${esc(q.q)}</div>` +
       q.o.map((o, k) => { let cl = ''; if (R.state === 'show') { if (k === q.a) cl = 'ok'; else if (k === R.picked) cl = 'bad'; cl += ' locked'; } return `<button class="opt ${cl}" data-act="pick" data-k="${k}"><b>${LET[k]}</b><span>${esc(o)}</span></button>`; }).join('');
-    if (R.state === 'show') body += `<div class="why"><b>${R.picked === q.a ? '✓ Correct' : '✗ Not quite'}</b><ul class="list" style="margin-top:6px">${q.w.map((w, k) => `<li class="${k === q.a ? 'c' : ''}"><b>${LET[k]}.</b> ${esc(clean(w))}</li>`).join('')}</ul><div class="row" style="margin-top:8px"><span class="pill">Manual §${esc(q.r)}</span><button class="btn sm ghost" data-act="flag" data-id="${it.id}">${S.flags[it.id] ? '⚑ Flagged' : '⚑ Flag as doubtful'}</button></div></div><button class="btn primary block" style="margin-top:14px" data-act="next">${R.i + 1 >= R.items.length ? 'Finish' : 'Next'}</button>`;
+    if (R.state === 'show') body += `<div class="why"><b>${R.picked === q.a ? '✓ Correct' : '✗ Not quite'}</b><ul class="list" style="margin-top:6px">${q.w.map((w, k) => `<li class="${k === q.a ? 'c' : ''}"><b>${LET[k]}.</b> ${esc(clean(w))}</li>`).join('')}</ul><div class="row" style="margin-top:8px">${refPill(q.r)}<button class="btn sm ghost" data-act="flag" data-id="${it.id}">${S.flags[it.id] ? '⚑ Flagged' : '⚑ Flag as doubtful'}</button></div></div><button class="btn primary block" style="margin-top:14px" data-act="next">${R.i + 1 >= R.items.length ? 'Finish' : 'Next'}</button>`;
   } else if (it.kind === 'card') {
     const c = it.x;
-    body = `<div class="eyebrow">Flashcard · §${esc(c.r)}</div><div class="flip" style="margin-top:10px"><div class="flipcard" data-act="flip">${R.shown ? `<div class="a">${inline(c.b)}</div>` : `<div class="q">${esc(c.f)}</div>`}</div></div>`;
+    body = `<div class="eyebrow">Flashcard · §${esc(c.r)}</div><div class="flip" style="margin-top:10px"><div class="flipcard" data-act="flip">${R.shown ? `<div class="a">${inline(c.b)}<div class="tiny muted" style="margin-top:14px">${refPill(c.r)}</div></div>` : `<div class="q">${esc(c.f)}</div>`}</div></div>`;
     body += R.shown ? `<div class="grid3" style="margin-top:14px"><button class="btn" data-act="gcard" data-g="0" style="color:var(--bad)">Missed</button><button class="btn primary" data-act="gcard" data-g="1">Got it</button><button class="btn" data-act="gcard" data-g="2">Easy</button></div>` : `<button class="btn primary block" style="margin-top:14px" data-act="flip">Show answer</button>`;
   } else {
     const p = it.p;
@@ -351,7 +373,7 @@ function viewExam() {
   return `<div class="stack"><div><h1>Exam simulator</h1><p class="muted">Real format: 4 choices, no feedback until the end, flag and review, small-calculator discipline.</p></div>
   <section class="card"><h3>Mini exam · ${n} questions</h3><p class="muted small">${mins} minutes (the real exam gives ~1.4 min per question). Built from the ${QUESTIONS.length} questions currently available.</p><button class="btn primary block" style="margin-top:12px" data-act="exstart" data-n="${n}">Start mini exam</button></section>
   <section class="card" style="opacity:.75"><h3>Full simulation · 75 questions · 1 h 45</h3><p class="muted small">Unlocks when at least 150 questions are available (${QUESTIONS.length} now). Matches the official weights: 12 / 33 / 23 / 7.</p><button class="btn block" style="margin-top:12px" disabled>Locked</button></section>
-  ${hist ? `<section class="card"><h3>Recent attempts</h3><ul class="list">${hist}</ul></section>` : ''}</div>`;
+  ${checklistCard(false)}${hist ? `<section class="card"><h3>Recent attempts</h3><ul class="list">${hist}</ul></section>` : ''}</div>`;
 }
 function exStart(n) {
   const qs = shuffle(QUESTIONS).slice(0, n);
@@ -401,6 +423,7 @@ function settingsSheet() {
 const APP = $('#app');
 function go(h) { if (location.hash === h) render(); else location.hash = h; }
 function render() {
+  if (!S.act) return;
   const h = (location.hash || '#/').slice(2).split('/'), r = h[0] || '';
   let html = '', tab = r;
   if (r === '') html = viewHome();
@@ -429,7 +452,7 @@ document.addEventListener('click', e => {
     case 'closesheet': $('#sheet').remove(); break;
     case 'savesettings': S.examDate = $('#sd').value || null; S.theme = $('#st').value; save(); applyTheme(); $('#sheet').remove(); render(); break;
     case 'export': { const b = new Blob([JSON.stringify(S)], { type: 'application/json' }), u = URL.createObjectURL(b), l = document.createElement('a'); l.href = u; l.download = 'sie-prep-progress.json'; l.click(); break; }
-    case 'reset': if (confirm('Erase all progress on this device?')) { S = { rec: {}, exams: [], examDate: '2026-11-30', theme: 'auto', log: {}, flags: {} }; save(); applyTheme(); $('#sheet').remove(); go('#/'); render(); } break;
+    case 'reset': if (confirm('Erase all progress on this device?')) { S = { act: S.act, checks: {}, rec: {}, exams: [], examDate: '2026-11-30', theme: 'auto', log: {}, flags: {} }; save(); applyTheme(); $('#sheet').remove(); go('#/'); render(); } break;
     case 'review': startRun('Daily review', sessionReview(), { back: '#/' }); break;
     case 'weak': startRun('Weak spots', weakItems(), { back: '#/practice' }); break;
     case 'mixed': startRun('Mixed quiz', shuffle(QUESTIONS).slice(0, +t.dataset.n), { back: '#/practice' }); break;
@@ -454,6 +477,8 @@ document.addEventListener('click', e => {
     case 'exfinish': { const un = EX.ans.filter(x => x === null).length; if (!un || confirm(un + ' unanswered question(s). Finish anyway?')) exFinish(); break; }
     case 'exquit': if (confirm('Quit this exam? Progress will be lost.')) { clearInterval(exTimer); EX = null; go('#/exam'); } break;
     case 'exdone': EX = null; break;
+    case 'chk': S.checks[t.dataset.k] = !S.checks[t.dataset.k]; save(); render(); break;
+    case 'unlock': { const v = ($('#akey').value || '').toUpperCase().replace(/[^A-Z0-9]/g, ''); if (cyrb53(v) === KEYHASH) { S.act = true; save(); $('#gate').remove(); render(); } else { const g = $('#gate .card'); g.animate([{ transform: 'translateX(0)' }, { transform: 'translateX(-10px)' }, { transform: 'translateX(10px)' }, { transform: 'translateX(0)' }], { duration: 300 }); $('#gerr').textContent = 'Invalid activation key.'; } break; }
   }
 });
 
@@ -461,5 +486,14 @@ document.addEventListener('click', e => {
 const nav = [['today', 'Today', '#/'], ['learn', 'Learn', '#/learn'], ['practice', 'Practice', '#/practice'], ['exam', 'Exam', '#/exam']];
 $('#nav').innerHTML = '<div class="in">' + nav.map(n => `<a href="${n[2]}" data-t="${n[0]}">${ICON[n[0]]}${n[1]}</a>`).join('') + '</div>';
 applyTheme();
-render();
+function showGate() {
+  const g = document.createElement('div'); g.id = 'gate';
+  g.style.cssText = 'position:fixed;inset:0;z-index:100;background:var(--bg);display:grid;place-items:center;padding:20px';
+  g.innerHTML = `<div class="card" style="width:100%;max-width:420px;text-align:center;padding:28px 22px"><div class="brand" style="justify-content:center;font-size:1.3rem"><i></i>SIE Prep</div>
+  <p class="muted" style="margin:14px 0 4px">Licensed edition · single user</p><h2 style="margin:6px 0 16px">Enter your activation key</h2>
+  <input class="num-in" id="akey" placeholder="XXXXXXXXXXXXXXX" autocomplete="off" autocapitalize="characters" spellcheck="false" style="text-align:center;letter-spacing:.12em;font-size:1.1rem">
+  <div id="gerr" class="small" style="color:var(--bad);min-height:20px;margin:8px 0"></div><button class="btn primary block" data-act="unlock">Activate</button></div>`;
+  document.body.appendChild(g); const i = $('#akey'); i.focus(); i.addEventListener('keydown', e => { if (e.key === 'Enter') $('[data-act=unlock]').click(); });
+}
+if (!S.act) showGate(); else render();
 })();

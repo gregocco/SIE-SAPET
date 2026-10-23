@@ -13,7 +13,8 @@ const chapters = readdirSync(join(root, 'content'))
 const index = JSON.parse(read('content/index.json')).map(m => ({ ...m, live: chapters.some(c => c.id === m.id) }));
 const glossary = JSON.parse(read('content/glossary.json'));
 for (const c of chapters) for (const g of c.glossary || []) if (!glossary.some(x => x.t.toLowerCase() === g.t.toLowerCase())) glossary.push({ t: g.t, d: g.d, ch: c.id });
-const data = { index, glossary, chapters };
+const pages = JSON.parse(read('content/pages.json'));
+const data = { index, glossary, chapters, pages };
 
 // garde-fous contenu
 const ids = new Set();
