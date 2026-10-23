@@ -273,6 +273,64 @@ const DRILLS = [
         steps: [`Heir’s basis is stepped up to the date-of-death value: $${death}.`, `Gain = $${sale} − $${death} = $${sale - death}.`], tip: 'The original purchase price is irrelevant to the heir.' };
     } }
 ];
+
+const pct = n => (Math.round(n * 100) / 100).toFixed(2) + '%';
+DRILLS.push(
+  { id: 'accrued', ch: 2, title: 'Accrued interest (30/360)', sub: 'Corporate and municipal bonds', gen() {
+      const rate = pick([4, 4.5, 5, 5.5, 6, 6.5, 7, 8]), face = pick([1, 5, 10, 25]) * 1000, mo = ri(0, 5), d = ri(1, 29), days = mo * 30 + d;
+      const ans = face * rate / 100 * days / 360;
+      return { q: `A corporate bond with a ${rate}% coupon (par ${money(face)}) is sold. The last coupon was paid ${mo} month${mo === 1 ? '' : 's'} and ${d} day${d === 1 ? '' : 's'} before settlement (30/360 convention). How much accrued interest does the buyer pay?`, ans: Math.round(ans * 100) / 100, unit: '$', tol: 0.51,
+        steps: ['Annual interest = ' + money(face * rate / 100) + '.', `Days accrued on a 30/360 basis = ${mo} × 30 + ${d} = ${days}.`, `Accrued = ${money(face * rate / 100)} × ${days} / 360 = $${ans.toFixed(2)}.`], tip: 'Corporates and munis count 30-day months and a 360-day year; Treasuries use actual days.' };
+    } },
+  { id: 'accruedtsy', ch: 2, title: 'Accrued interest (Treasuries)', sub: 'Actual days / actual days in the period', gen() {
+      const rate = pick([3, 3.5, 4, 4.5, 5]), face = pick([10, 25, 100]) * 1000, per = pick([181, 182, 183, 184]), el = ri(10, per - 10, 3);
+      const semi = face * rate / 100 / 2, ans = semi * el / per;
+      return { q: `A ${rate}% Treasury note (par ${money(face)}) pays semiannually. ${el} of the ${per} days in the current coupon period have elapsed at settlement. How much accrued interest is owed?`, ans: Math.round(ans * 100) / 100, unit: '$', tol: 0.51,
+        steps: [`Semiannual coupon = ${money(face)} × ${rate}% / 2 = $${semi.toFixed(2)}.`, `Accrued = $${semi.toFixed(2)} × ${el} / ${per} = $${ans.toFixed(2)}.`], tip: 'Actual/actual: use the real number of days in the period, not 180.' };
+    } },
+  { id: 'cy', ch: 2, title: 'Current yield', sub: 'Annual interest ÷ market price', gen() {
+      const cpn = pick([4, 5, 6, 7, 8]), price = pick([88, 92, 95, 98, 101, 104, 108, 112]);
+      const ans = (cpn * 10) / (price * 10) * 100;
+      return { q: `A $1,000 par bond with a ${cpn}% coupon trades at ${price} (${money(price * 10)}). What is its current yield? (Percent, two decimals.)`, ans: Math.round(ans * 100) / 100, unit: '%', tol: 0.011,
+        steps: [`Annual interest = ${money(cpn * 10)}.`, `Market price = ${money(price * 10)}.`, `Current yield = ${cpn * 10} / ${price * 10} = ${ans.toFixed(2)}%.`], tip: 'Current yield ignores the pull to par; premium bonds yield less than their coupon.' };
+    } },
+  { id: 'tey', ch: 3, title: 'Tax-equivalent yield', sub: 'Muni yield ÷ (1 − tax rate)', gen() {
+      const y = pick([2.5, 3, 3.5, 4, 4.5, 5]), t = pick([24, 28, 32, 35, 37]);
+      const ans = y / (1 - t / 100);
+      return { q: `A municipal bond yields ${y}% tax-free. For an investor in the ${t}% federal bracket, what taxable yield is equivalent? (Percent, two decimals.)`, ans: Math.round(ans * 100) / 100, unit: '%', tol: 0.011,
+        steps: [`Tax-equivalent yield = muni yield / (1 − tax rate).`, `= ${y}% / ${(1 - t / 100).toFixed(2)} = ${ans.toFixed(2)}%.`], tip: 'The higher the bracket, the more attractive munis become.' };
+    } },
+  { id: 'nav', ch: 4, title: 'Mutual fund NAV', sub: '(Assets − liabilities) ÷ shares', gen() {
+      const sh = pick([5, 8, 10, 20, 25]) * 100000, nav = pick([12, 15, 18.5, 22, 30, 41.5]), L = pick([2, 5, 8]) * 1000000;
+      const A = Math.round(nav * sh + L);
+      return { q: `A mutual fund has total assets of ${money(A)}, liabilities of ${money(L)} and ${sh.toLocaleString('en-US')} shares outstanding. What is the NAV per share?`, ans: nav, unit: '$', tol: 0.011,
+        steps: [`Net assets = ${money(A)} − ${money(L)} = ${money(A - L)}.`, `NAV = ${money(A - L)} / ${sh.toLocaleString('en-US')} = $${nav.toFixed(2)}.`], tip: 'Forward pricing: orders get the NAV calculated after the 4:00 pm ET close.' };
+    } },
+  { id: 'pop', ch: 4, title: 'Public offering price', sub: 'POP = NAV ÷ (1 − sales charge)', gen() {
+      const nav = pick([10, 12, 15, 20, 25, 40]), sc = pick([4, 5, 5.5, 8.5]);
+      const ans = nav / (1 - sc / 100);
+      return { q: `A front-end load fund has a NAV of $${nav.toFixed(2)} and a maximum sales charge of ${sc}%. What is the public offering price? (Dollars, two decimals.)`, ans: Math.round(ans * 100) / 100, unit: '$', tol: 0.011,
+        steps: [`POP = NAV / (1 − sales charge).`, `= ${nav} / ${(1 - sc / 100).toFixed(3)} = $${ans.toFixed(2)}.`], tip: 'The charge is a percentage of the POP, not of the NAV — divide, do not multiply.' };
+    } },
+  { id: 'divyield', ch: 1, title: 'Dividend yield', sub: 'Annual dividend ÷ price', gen() {
+      const q = pick([0.25, 0.4, 0.5, 0.75, 1]), px = pick([20, 25, 40, 50, 80, 100]), ans = q * 4 / px * 100;
+      return { q: `A stock pays a quarterly dividend of $${q.toFixed(2)} and trades at $${px}. What is its dividend yield? (Percent, two decimals.)`, ans: Math.round(ans * 100) / 100, unit: '%', tol: 0.011,
+        steps: [`Annual dividend = 4 × $${q.toFixed(2)} = $${(q * 4).toFixed(2)}.`, `Yield = $${(q * 4).toFixed(2)} / $${px} = ${ans.toFixed(2)}%.`], tip: 'Always annualise a quarterly dividend before dividing by price.' };
+    } },
+  { id: 'optpl', ch: 6, title: 'Option profit / loss and breakeven', sub: 'Long and short calls and puts, per contract', gen() {
+      const kind = pick(['call', 'put']), side = pick(['buy', 'sell']), K = pick([30, 40, 50, 60, 80, 100]), prem = pick([1, 1.5, 2, 3, 4, 5]);
+      const S = K + pick([-12, -8, -5, -2, 2, 5, 8, 12]), intrinsic = kind === 'call' ? Math.max(S - K, 0) : Math.max(K - S, 0), buyer = (intrinsic - prem) * 100, ans = side === 'buy' ? buyer : -buyer;
+      return { q: `An investor ${side === 'buy' ? 'buys' : 'sells (writes)'} 1 ${kind} contract on XYZ, strike ${K}, for a premium of $${prem.toFixed(2)}. At expiration XYZ closes at $${S}. What is the investor’s gain or loss on the position? (Use a negative number for a loss.)`, ans, unit: '$', tol: 0.51,
+        steps: [`Intrinsic value at expiry = ${kind === 'call' ? 'max(' + S + ' − ' + K + ', 0)' : 'max(' + K + ' − ' + S + ', 0)'} = $${intrinsic}.`, `Option buyer’s result = (${intrinsic} − ${prem.toFixed(2)}) × 100 = ${money(buyer)}.`, side === 'buy' ? 'Investor is the buyer → same result.' : 'Investor is the writer → the opposite sign: ' + money(ans) + '.'], tip: 'Per contract (100 shares). Writer’s result is the mirror image of the buyer’s.' };
+    } },
+  { id: 'bondprice', ch: 3, title: 'Bond price from a quote', sub: 'Quote × $10 per $1,000 of par', gen() {
+      const q = pick([96.5, 98, 99.25, 101.5, 103, 94]), n = pick([5, 10, 25, 50]), ans = q * 10 * n;
+      return { q: `A corporate bond is quoted at ${q}. What is the total dollar price of ${n} bonds ($1,000 par each, excluding accrued interest)?`, ans, unit: '$', tol: 0.51,
+        steps: [`Bond quotes are percentages of par: ${q}% × $1,000 = $${(q * 10).toFixed(2)} per bond.`, `× ${n} bonds = ${money(ans)}.`], tip: 'A quote below 100 = discount, above 100 = premium.' };
+    } }
+);
+
+const fmtAns = p => p.unit === '%' ? p.ans.toFixed(2) + '%' : (p.ans < 0 ? '-' : '') + '$' + Math.abs(p.ans).toLocaleString('en-US', { minimumFractionDigits: p.ans % 1 ? 2 : 0, maximumFractionDigits: 2 });
 function drillSet(id, n = 5) { const d = DRILLS.find(x => x.id === id); return Array.from({ length: n }, () => ({ kind: 'drill', id: 'drill:' + id, drill: d, p: d.gen() })); }
 
 /* ---------- sessions ---------- */
@@ -404,8 +462,8 @@ function viewRun() {
   } else {
     const p = it.p;
     body = `<div class="eyebrow">Drill · ${esc(it.drill.title)}</div><div class="qstem" style="margin-top:8px">${esc(p.q)}</div>`;
-    if (R.state === 'ask') body += `<div style="margin-top:14px"><input class="num-in" id="dans" inputmode="decimal" placeholder="Answer in ${p.unit === '$' ? 'dollars' : ''}" autocomplete="off"></div><button class="btn primary block" style="margin-top:12px" data-act="dcheck">Check</button>`;
-    else body += `<div class="why"><b>${R.picked ? '✓ Correct' : '✗ Answer: ' + money(p.ans)}</b><ol style="margin:8px 0 0;padding-left:1.2em">${p.steps.map(s => `<li>${esc(s)}</li>`).join('')}</ol><div class="tip">${esc(p.tip)}</div></div><button class="btn primary block" style="margin-top:14px" data-act="next">${R.i + 1 >= R.items.length ? 'Finish' : 'Next'}</button>`;
+    if (R.state === 'ask') body += `<div style="margin-top:14px"><input class="num-in" id="dans" inputmode="decimal" placeholder="${p.unit === '%' ? 'Answer in %' : 'Answer in $'}" autocomplete="off"></div><button class="btn primary block" style="margin-top:12px" data-act="dcheck">Check</button>`;
+    else body += `<div class="why"><b>${R.picked ? '✓ Correct' : '✗ Answer: ' + fmtAns(p)}</b><ol style="margin:8px 0 0;padding-left:1.2em">${p.steps.map(s => `<li>${esc(s)}</li>`).join('')}</ol><div class="tip">${esc(p.tip)}</div></div><button class="btn primary block" style="margin-top:14px" data-act="next">${R.i + 1 >= R.items.length ? 'Finish' : 'Next'}</button>`;
   }
   return `<div class="run-top"><button class="icon-btn" data-act="quit" aria-label="Close">✕</button><div class="bar"><i style="width:${pct}%"></i></div><span class="small muted num">${Math.min(R.done + 1, R.items.length)}/${R.items.length}</span></div><div class="card">${body}</div>`;
 }
@@ -521,7 +579,7 @@ document.addEventListener('click', e => {
     case 'pick': { if (R.state !== 'ask') break; const it = R.items[R.i], k = +t.dataset.k; R.picked = k; R.state = 'show'; const ok = k === it.x.a; grade(it.id, ok); R.lastOk = ok; render(); break; }
     case 'flip': R.shown = !R.shown; render(); break;
     case 'gcard': { const it = R.items[R.i], g = +t.dataset.g; if (!it.retry) grade(it.id, g > 0, g === 2); advance(g > 0); render(); break; }
-    case 'dcheck': { const it = R.items[R.i], v = parseFloat(($('#dans').value || '').replace(/[$,\s]/g, '')); if (isNaN(v)) { toast('Enter a number'); break; } const ok = Math.abs(v - it.p.ans) < 0.51; R.picked = ok; R.state = 'show'; R.lastOk = ok; render(); break; }
+    case 'dcheck': { const it = R.items[R.i], v = parseFloat(($('#dans').value || '').replace(/[$,\s]/g, '')); if (isNaN(v)) { toast('Enter a number'); break; } const ok = Math.abs(v - it.p.ans) < (it.p.tol || 0.51); R.picked = ok; R.state = 'show'; R.lastOk = ok; render(); break; }
     case 'next': { const it = R.items[R.i]; advance(it.kind === 'q' ? R.lastOk : R.picked === true); render(); break; }
     case 'flag': S.flags[t.dataset.id] = !S.flags[t.dataset.id]; save(); render(); break;
     case 'exstart': exStart(+t.dataset.n); break;
