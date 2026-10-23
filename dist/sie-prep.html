@@ -438,7 +438,12 @@ function viewHome() {
     <div class="bp" style="margin-top:10px">${BLUEPRINT.map(([n, w, c]) => `<div style="flex:${w};background:${c}">${w}%</div>`).join('')}</div>
     <div class="row wrapx tiny muted" style="margin-top:8px;gap:12px">${BLUEPRINT.map(([n, w, c]) => `<span><i style="display:inline-block;width:9px;height:9px;border-radius:3px;background:${c};margin-right:5px"></i>${n}</span>`).join('')}</div></section>`;
   const live = META.filter(m => m.live).map(m => chRow(m)).join('');
-  return `<div class="stack">${days !== null && days >= 0 && days <= 2 ? checklistCard(true) : ''}${hero}${plan}${planCard()}${stats}<section><div class="row" style="margin:6px 0 10px"><h2 style="flex:1">Your chapters</h2><a class="small" href="#/learn" style="color:var(--accent);font-weight:650;text-decoration:none">All 14 →</a></div><div class="card" style="padding:0">${live}</div><p class="muted small" style="margin-top:10px">More chapters unlock as they’re produced. Highest-value first.</p></section>${bp}</div>`;
+  const first = !S.exams.length && !Object.keys(S.rec).length;
+  const start = first ? `<section class="card" style="border:2px solid var(--accent)"><div class="eyebrow" style="color:var(--accent)">Start here</div><h2 style="margin-top:4px">Take the 30-question diagnostic</h2>
+    <p class="muted small">About 40 minutes, real exam format, all topics weighted like the real test. It shows where you stand by section so you study the right things first. Expect a low score: that is the point.</p>
+    <button class="btn primary block" style="margin-top:10px" data-act="exstart" data-n="30">Start diagnostic</button>
+    <ol class="small muted" style="margin:12px 0 0;padding-left:1.2em"><li>Follow “This week” below — chapters are ordered by exam value.</li><li>Do the daily review (10–15 min): missed items come back sooner.</li><li>Calculator is in the top bar; numbers, audio and traps are under Practice.</li><li>First full 75-question mock by mid-November; aim for 80%+ three times in a row.</li></ol></section>` : '';
+  return `<div class="stack">${days !== null && days >= 0 && days <= 2 ? checklistCard(true) : ''}${start}${hero}${plan}${planCard()}${stats}<section><div class="row" style="margin:6px 0 10px"><h2 style="flex:1">Your chapters</h2><a class="small" href="#/learn" style="color:var(--accent);font-weight:650;text-decoration:none">All 14 →</a></div><div class="card" style="padding:0">${live}</div><p class="muted small" style="margin-top:10px">More chapters unlock as they’re produced. Highest-value first.</p></section>${bp}</div>`;
 }
 function chRow(m) {
   const p = prio(m.priority);
