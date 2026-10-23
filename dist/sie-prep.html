@@ -150,6 +150,7 @@ details>summary{cursor:pointer;font-weight:650;padding:6px 0}
 </head>
 <body>
 <header class="top"><div class="wrap"><div class="brand"><i></i>SIE Prep</div><div class="spacer"></div>
+<button class="icon-btn" data-act="calc" aria-label="Calculator" style="margin-right:8px"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 7h8M8 12h.01M12 12h.01M16 12h.01M8 16h.01M12 16h.01M16 16h.01"/></svg></button>
 <button class="icon-btn" data-act="settings" aria-label="Settings"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1L7 17M17 7l2.1-2.1"/></svg></button></div></header>
 <nav class="tabs" id="nav" aria-label="Main"></nav>
 <main><div class="wrap" id="app"></div></main>
@@ -213,7 +214,7 @@ const KEYHASH = 1660197817701199;
 const KEY = 'sie-prep.v1';
 let S = null;
 try { S = JSON.parse(localStorage.getItem(KEY)); } catch (e) { }
-S = Object.assign({ act: false, checks: {}, rec: {}, exams: [], examDate: '2026-11-30', theme: 'auto', log: {}, flags: {} }, S || {});
+S = Object.assign({ used: {}, act: false, checks: {}, rec: {}, exams: [], examDate: '2026-11-30', theme: 'auto', log: {}, flags: {} }, S || {});
 const save = () => { try { localStorage.setItem(KEY, JSON.stringify(S)); } catch (e) { } };
 function applyTheme() { const r = document.documentElement; if (S.theme === 'auto') r.removeAttribute('data-theme'); else r.setAttribute('data-theme', S.theme); }
 
@@ -368,7 +369,9 @@ let toastT;
 function toast(m) { let t = $('#toast'); if (!t) { t = document.createElement('div'); t.id = 'toast'; t.style.cssText = 'position:fixed;left:50%;bottom:96px;transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:10px 16px;border-radius:12px;z-index:80;font-weight:600;font-size:.9rem'; document.body.appendChild(t); } t.textContent = m; t.style.display = 'block'; clearTimeout(toastT); toastT = setTimeout(() => (t.style.display = 'none'), 2200); }
 
 /* ---------- views ---------- */
+const CHEV = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg>';
 const ICON = {
+  calc: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 7h8M8 12h.01M12 12h.01M16 12h.01M8 16h.01M12 16h.01M16 16h.01"/></svg>',
   today: '<svg viewBox="0 0 24 24"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/></svg>',
   learn: '<svg viewBox="0 0 24 24"><path d="M4 5a2 2 0 012-2h13v16H6a2 2 0 00-2 2z"/><path d="M4 21V5"/></svg>',
   practice: '<svg viewBox="0 0 24 24"><path d="M13 3L4 14h7l-1 7 9-11h-7z"/></svg>',
@@ -460,7 +463,7 @@ function viewChapter(id, tab) {
     `<div class="card"><h3>Practice the maths</h3><p class="muted small">Generated problems, unlimited. Same calculator constraints as exam day.</p><a class="btn primary block" href="#/practice" style="margin-top:8px">Go to drills</a></div>`;
   else if (tab === 'cards') {
     const d = ITEMS.filter(i => i.kind === 'card' && i.ch === +id);
-    body = `<button class="btn primary block" data-act="chcards" data-ch="${id}">Study flashcards (${Math.min(20, d.length)} of ${d.length})</button><section class="card" style="margin-top:14px"><h3>All cards</h3><ul class="list" style="margin-top:6px">${d.map(i => `<li style="padding:10px 0"><div style="font-weight:650">${esc(i.x.f)}</div><div class="muted small">${inline(i.x.b)}</div></li>`).join('')}</ul></section>`;
+    body = `<div class="row wrapx"><button class="btn primary" style="flex:1" data-act="chcards" data-ch="${id}">Study flashcards (${Math.min(20, d.length)} of ${d.length})</button><button class="btn" data-act="listen" data-kind="cards" data-ch="${id}">🎧 Listen</button></div><section class="card" style="margin-top:14px"><h3>All cards</h3><ul class="list" style="margin-top:6px">${d.map(i => `<li style="padding:10px 0"><div style="font-weight:650">${esc(i.x.f)}</div><div class="muted small">${inline(i.x.b)}</div></li>`).join('')}</ul></section>`;
   } else {
     const qs = QUESTIONS.filter(q => q.ch === +id).length;
     body = `<div class="stack"><section class="card"><h3>Practice questions</h3><p class="muted small">${qs} original questions. Every wrong answer is explained.</p><div class="row wrapx" style="margin-top:10px"><button class="btn primary" data-act="chquiz" data-ch="${id}" data-n="15">Quick quiz · 15</button><button class="btn" data-act="chquiz" data-ch="${id}" data-n="0">All ${qs}</button></div></section>
@@ -476,6 +479,7 @@ function viewPractice() {
   <section class="card"><div class="row"><div style="flex:1"><h3>Weak spots</h3><p class="muted small">${weak} item${weak === 1 ? '' : 's'} you’ve missed and not yet recovered</p></div><button class="btn" data-act="weak" ${weak ? '' : 'disabled'}>Drill</button></div></section>
   <section class="card"><h3>Mixed quiz</h3><p class="muted small">Random questions from every available chapter.</p><div class="row wrapx" style="margin-top:10px"><button class="btn primary" data-act="mixed" data-n="10">10 questions</button><button class="btn" data-act="mixed" data-n="25">25 questions</button></div></section>
   <section class="card"><h3>Calculation drills</h3><p class="muted small">Numbers are generated on the fly. Do them until they feel automatic.</p><ul class="list" style="margin-top:6px">${DRILLS.map(d => `<li><button class="row" style="width:100%;background:none;border:0;padding:12px 0;text-align:left" data-act="drill" data-id="${d.id}"><div style="flex:1"><div style="font-weight:650">${esc(d.title)}</div><div class="muted small">Ch. ${d.ch} · ${esc(d.sub)}</div></div><span class="pill acc">5</span></button></li>`).join('')}</ul></section>
+  <section class="card"><h3>Memory tools</h3><p class="muted small">Short sessions for commutes and spare minutes.</p><div class="row wrapx" style="margin-top:10px"><button class="btn primary" data-act="listen" data-kind="cards">🎧 Listen to cards</button><button class="btn" data-act="listen" data-kind="traps">🎧 Listen to traps</button><button class="btn" data-act="trapsprint">⚠ Traps sprint</button><a class="btn" href="#/numbers">№ Numbers to know</a></div></section>
   <a class="card row" href="#/glossary" style="text-decoration:none;color:inherit"><div style="flex:1"><h3>Glossary</h3><p class="muted small">${DATA.glossary.length} terms, searchable</p></div><span>›</span></a></div>`;
 }
 function viewGlossary() {
@@ -495,6 +499,8 @@ function viewRun() {
     body = `<div class="eyebrow">Question · §${esc(q.r)}</div><div class="qstem" style="margin-top:8px">${esc(q.q)}</div>` +
       q.o.map((o, k) => { let cl = ''; if (R.state === 'show') { if (k === q.a) cl = 'ok'; else if (k === R.picked) cl = 'bad'; cl += ' locked'; } return `<button class="opt ${cl}" data-act="pick" data-k="${k}"><b>${LET[k]}</b><span>${esc(o)}</span></button>`; }).join('');
     if (R.state === 'show') body += `<div class="why"><b>${R.picked === q.a ? '✓ Correct' : '✗ Not quite'}</b><ul class="list" style="margin-top:6px">${q.w.map((w, k) => `<li class="${k === q.a ? 'c' : ''}"><b>${LET[k]}.</b> ${esc(clean(w))}</li>`).join('')}</ul><div class="row" style="margin-top:8px">${refPill(q.r)}<button class="btn sm ghost" data-act="flag" data-id="${it.id}">${S.flags[it.id] ? '⚑ Flagged' : '⚑ Flag as doubtful'}</button></div></div><button class="btn primary block" style="margin-top:14px" data-act="next">${R.i + 1 >= R.items.length ? 'Finish' : 'Next'}</button>`;
+  } else if (it.kind === 'trap') {
+    body = `<div class="eyebrow">Trap · Ch. ${it.ch}</div><div class="prose" style="margin-top:10px;font-size:1.08rem">${md(it.text)}</div><div class="grid2" style="margin-top:16px"><button class="btn" data-act="gtrap" data-g="0" style="color:var(--bad)">Tricky, again</button><button class="btn primary" data-act="gtrap" data-g="1">Got it</button></div>`;
   } else if (it.kind === 'card') {
     const c = it.x;
     body = `<div class="eyebrow">Flashcard · §${esc(c.r)}</div><div class="flip" style="margin-top:10px"><div class="flipcard" data-act="flip">${R.shown ? `<div class="a">${inline(c.b)}<div class="tiny muted" style="margin-top:14px">${refPill(c.r)}</div></div>` : `<div class="q">${esc(c.f)}</div>`}</div></div>`;
@@ -509,7 +515,7 @@ function viewRun() {
 }
 function runFinish() {
   const R = RUN, tot = R.done || 1, p = Math.round(R.ok / tot * 100);
-  const miss = R.misses.map(i => i.kind === 'q' ? `<li style="padding:10px 0"><div style="font-weight:600">${esc(i.x.q)}</div><div class="small" style="color:var(--ok)">✓ ${esc(i.x.o[i.x.a])}</div></li>` : i.kind === 'card' ? `<li style="padding:10px 0"><div style="font-weight:600">${esc(i.x.f)}</div><div class="small" style="color:var(--ok)">${inline(i.x.b)}</div></li>` : '').join('');
+  const miss = R.misses.map(i => i.kind === 'q' ? `<li style="padding:10px 0"><div style="font-weight:600">${esc(i.x.q)}</div><div class="small" style="color:var(--ok)">✓ ${esc(i.x.o[i.x.a])}</div></li>` : i.kind === 'card' ? `<li style="padding:10px 0"><div style="font-weight:600">${esc(i.x.f)}</div><div class="small" style="color:var(--ok)">${inline(i.x.b)}</div></li>` : i.kind === 'trap' ? `<li style="padding:10px 0" class="prose">${md(i.text)}</li>` : '').join('');
   return `<div class="stack"><section class="card" style="text-align:center"><div class="eyebrow">${esc(R.title)}</div><div class="score num" style="margin-top:8px">${p}%</div><p class="muted">${R.ok} of ${tot} correct</p><div class="row wrapx" style="justify-content:center;margin-top:10px"><button class="btn primary" data-act="again">Another round</button><a class="btn" href="${R.back}">Done</a></div></section>
   ${R.misses.length ? `<section class="card"><h3>To revisit (${R.misses.length})</h3><ul class="list">${miss}</ul></section>` : ''}</div>`;
 }
@@ -523,44 +529,149 @@ function advance(ok) {
 
 /* ---------- exam ---------- */
 let EX = null, exTimer = null;
+const SECTIONS = [
+  { name: 'Products & Risks', chs: [1, 2, 3, 4, 5, 6, 7], w: [5, 5, 5, 5, 5, 3.5, 5], n: 33 },
+  { name: 'Capital Markets', chs: [8, 9, 10], w: [4, 4, 3], n: 12 },
+  { name: 'Accounts & Trading', chs: [11, 12], w: [11.5, 11.5], n: 23 },
+  { name: 'Regulation', chs: [13, 14], w: [3, 4], n: 7 },
+];
+const secOf = ch => SECTIONS.find(s => s.chs.includes(ch)).name;
+function buildExam(total) {
+  const picks = [];
+  SECTIONS.forEach(sec => {
+    const tgt = Math.round(sec.n * total / 75), sw = sec.w.reduce((a, b) => a + b, 0), raw = sec.w.map(w => w / sw * tgt), base = raw.map(Math.floor);
+    let rem = tgt - base.reduce((a, b) => a + b, 0);
+    raw.map((r, i) => [r - base[i], i]).sort((a, b) => b[0] - a[0]).slice(0, rem).forEach(x => base[x[1]]++);
+    sec.chs.forEach((ch, i) => {
+      const pool = QUESTIONS.filter(q => q.ch === ch);
+      picks.push(...shuffle(pool.filter(q => !S.used[q.id])).concat(shuffle(pool.filter(q => S.used[q.id]))).slice(0, base[i]));
+    });
+  });
+  return shuffle(picks);
+}
+function readiness() {
+  const full = S.exams.filter(e => e.n >= 70), last3 = full.slice(-3);
+  return { n: last3.filter(e => e.pct >= 80).length, ready: last3.length === 3 && last3.every(e => e.pct >= 80), played: full.length };
+}
 function viewExam() {
-  const n = Math.min(QUESTIONS.length, 20), mins = Math.round(n * 1.4);
-  const hist = S.exams.slice(-5).reverse().map(e => `<li class="row" style="padding:12px 0"><div style="flex:1"><div style="font-weight:650">${new Date(e.t).toLocaleDateString('en-GB', { day: 'numeric', month: 'short' })} · ${e.n} Q</div><div class="muted small">${e.mins} min</div></div><span class="pill ${e.pct >= 70 ? 'low' : 'high'}">${e.pct}%</span></li>`).join('');
-  return `<div class="stack"><div><h1>Exam simulator</h1><p class="muted">Real format: 4 choices, no feedback until the end, flag and review, small-calculator discipline.</p></div>
-  <section class="card"><h3>Mini exam · ${n} questions</h3><p class="muted small">${mins} minutes (the real exam gives ~1.4 min per question). Built from the ${QUESTIONS.length} questions currently available.</p><button class="btn primary block" style="margin-top:12px" data-act="exstart" data-n="${n}">Start mini exam</button></section>
-  <section class="card" style="opacity:.75"><h3>Full simulation · 75 questions · 1 h 45</h3><p class="muted small">Unlocks when at least 150 questions are available (${QUESTIONS.length} now). Matches the official weights: 12 / 33 / 23 / 7.</p><button class="btn block" style="margin-top:12px" disabled>Locked</button></section>
-  ${checklistCard(false)}${hist ? `<section class="card"><h3>Recent attempts</h3><ul class="list">${hist}</ul></section>` : ''}</div>`;
+  const hist = S.exams.slice(-6).reverse().map(e => `<li class="row" style="padding:12px 0"><div style="flex:1"><div style="font-weight:650">${new Date(e.t).toLocaleDateString('en-GB', { day: 'numeric', month: 'short' })} · ${e.n} Q</div><div class="muted small">${e.mins} min</div></div><span class="pill ${e.pct >= 80 ? 'low' : e.pct >= 70 ? 'med' : 'high'}">${e.pct}%</span></li>`).join('');
+  const rd = readiness(), unseen = QUESTIONS.filter(q => !S.used[q.id]).length, fresh = Math.floor(unseen / 75);
+  const gate = `<section class="card"><div class="row"><div style="flex:1"><div class="eyebrow">Readiness gate</div><h3 style="margin-top:4px">${rd.ready ? 'Ready to sit the exam ✓' : '3 full mocks in a row at 80%+'}</h3></div><div class="row" style="gap:6px">${[0, 1, 2].map(i => `<span style="width:14px;height:14px;border-radius:50%;background:${i < rd.n && !rd.ready ? 'var(--ok)' : rd.ready ? 'var(--ok)' : 'var(--line)'}"></span>`).join('')}</div></div><p class="muted small">The pass mark is 70%, but unscored questions and exam stress cost margin. Scoring 70–75% in mocks is not “ready”.</p></section>`;
+  return `<div class="stack"><div><h1>Exam simulator</h1><p class="muted">Real format: 4 choices, no feedback until the end, flag and review. Mirrors the official weights: Products 33 · Accounts 23 · Capital Markets 12 · Regulation 7. The calculator (top bar) is the exam-style 4-function one.</p></div>
+  <section class="card"><h3>Full mock · 75 questions · 1 h 45</h3><p class="muted small">${QUESTIONS.length} questions in the bank. Each mock prefers questions you haven’t seen in a previous mock (${unseen} unseen, ≈ ${fresh} fresh mock${fresh === 1 ? '' : 's'} left).</p><button class="btn primary block" style="margin-top:12px" data-act="exstart" data-n="75">Start full mock</button></section>
+  <div class="grid2"><section class="card"><h3>Half · 35 Q</h3><p class="muted small">49 min</p><button class="btn block" style="margin-top:8px" data-act="exstart" data-n="35">Start</button></section><section class="card"><h3>Mini · 20 Q</h3><p class="muted small">28 min</p><button class="btn block" style="margin-top:8px" data-act="exstart" data-n="20">Start</button></section></div>
+  ${gate}${checklistCard(false)}${hist ? `<section class="card"><h3>Recent attempts</h3><ul class="list">${hist}</ul></section>` : ''}</div>`;
 }
 function exStart(n) {
-  const qs = shuffle(QUESTIONS).slice(0, n);
-  EX = { qs, ans: qs.map(() => null), flag: qs.map(() => false), i: 0, mins: Math.round(n * 1.4), end: Date.now() + Math.round(n * 1.4) * 60000, grid: false, result: null };
+  const qs = buildExam(n), mins = Math.round(qs.length * 1.4);
+  EX = { qs, ans: qs.map(() => null), flag: qs.map(() => false), i: 0, mins, end: Date.now() + mins * 60000, grid: false, result: null };
   clearInterval(exTimer); exTimer = setInterval(tick, 1000); go('#/exam/run');
 }
-function tick() { const el = $('#tm'); if (!EX || EX.result) { clearInterval(exTimer); return; } const left = Math.max(0, Math.round((EX.end - Date.now()) / 1000)); if (el) el.textContent = Math.floor(left / 60) + ':' + String(left % 60).padStart(2, '0'); if (!left) exFinish(); }
+function tick() { const el = $('#tm'); if (!EX || EX.result) { clearInterval(exTimer); return; } const left = Math.max(0, Math.round((EX.end - Date.now()) / 1000)); if (el) { el.textContent = Math.floor(left / 60) + ':' + String(left % 60).padStart(2, '0'); el.style.color = left < 300 ? 'var(--bad)' : ''; } if (!left) exFinish(); }
 function viewExamRun() {
   if (!EX) return '<div class="empty">No exam in progress.</div>';
   if (EX.result) return viewExamResult();
   const q = EX.qs[EX.i].x, left = Math.max(0, Math.round((EX.end - Date.now()) / 1000));
-  const grid = EX.grid ? `<section class="card" style="margin-bottom:12px"><div class="qgrid">${EX.qs.map((_, k) => `<button data-act="exgo" data-k="${k}" class="${EX.ans[k] !== null ? 'a' : ''} ${EX.flag[k] ? 'f' : ''} ${k === EX.i ? 'cur' : ''}">${k + 1}</button>`).join('')}</div><p class="tiny muted" style="margin-top:8px">Blue = answered · outlined = flagged</p></section>` : '';
-  return `<div class="run-top"><button class="icon-btn" data-act="exquit" aria-label="Quit">✕</button><div style="flex:1" class="small muted num">Question ${EX.i + 1} of ${EX.qs.length}</div><span class="timer" id="tm">${Math.floor(left / 60)}:${String(left % 60).padStart(2, '0')}</span><button class="icon-btn" data-act="exgrid" aria-label="Question map">▦</button></div>${grid}
+  const grid = EX.grid ? `<section class="card" style="margin-bottom:12px"><div class="qgrid">${EX.qs.map((_, k) => `<button data-act="exgo" data-k="${k}" class="${EX.ans[k] !== null ? 'a' : ''} ${EX.flag[k] ? 'f' : ''} ${k === EX.i ? 'cur' : ''}">${k + 1}</button>`).join('')}</div><p class="tiny muted" style="margin-top:8px">Blue = answered · outlined = flagged · ${EX.ans.filter(x => x === null).length} unanswered</p></section>` : '';
+  return `<div class="run-top"><button class="icon-btn" data-act="exquit" aria-label="Quit">✕</button><div style="flex:1" class="small muted num">Question ${EX.i + 1} of ${EX.qs.length}</div><span class="timer" id="tm">${Math.floor(left / 60)}:${String(left % 60).padStart(2, '0')}</span><button class="icon-btn" data-act="calc" aria-label="Calculator">${ICON.calc}</button><button class="icon-btn" data-act="exgrid" aria-label="Question map">▦</button></div>${grid}
   <div class="card"><div class="qstem">${esc(q.q)}</div>${q.o.map((o, k) => `<button class="opt ${EX.ans[EX.i] === k ? 'sel' : ''}" data-act="expick" data-k="${k}"><b>${LET[k]}</b><span>${esc(o)}</span></button>`).join('')}</div>
   <div class="row" style="margin-top:14px"><button class="btn" data-act="exprev" ${EX.i === 0 ? 'disabled' : ''}>‹ Prev</button><button class="btn ghost" data-act="exflag">${EX.flag[EX.i] ? '⚑ Flagged' : '⚐ Flag'}</button><div class="spacer"></div>${EX.i + 1 < EX.qs.length ? '<button class="btn primary" data-act="exnext">Next ›</button>' : '<button class="btn primary" data-act="exfinish">Finish</button>'}</div>`;
 }
 function exFinish() {
   if (!EX || EX.result) return;
   clearInterval(exTimer);
-  let ok = 0; const by = {};
-  EX.qs.forEach((it, k) => { const good = EX.ans[k] === it.x.a; if (good) ok++; (by[it.ch] = by[it.ch] || { n: 0, ok: 0 }); by[it.ch].n++; if (good) by[it.ch].ok++; if (EX.ans[k] !== null) grade(it.id, good); else grade(it.id, false); });
+  let ok = 0; const by = {}, bs = {};
+  EX.qs.forEach((it, k) => {
+    const good = EX.ans[k] === it.x.a; if (good) ok++;
+    (by[it.ch] = by[it.ch] || { n: 0, ok: 0 }); by[it.ch].n++; if (good) by[it.ch].ok++;
+    const sn = secOf(it.ch); (bs[sn] = bs[sn] || { n: 0, ok: 0 }); bs[sn].n++; if (good) bs[sn].ok++;
+    grade(it.id, good); S.used[it.id] = 1;
+  });
   const pct = Math.round(ok / EX.qs.length * 100);
-  EX.result = { ok, pct, by };
+  EX.result = { ok, pct, by, bs };
   S.exams.push({ t: Date.now(), n: EX.qs.length, pct, mins: Math.round((Date.now() - (EX.end - EX.mins * 60000)) / 60000) }); save();
   go('#/exam/run'); render();
 }
 function viewExamResult() {
   const r = EX.result, pass = r.pct >= 70;
-  const rows = EX.qs.map((it, k) => { const q = it.x, a = EX.ans[k], good = a === q.a; return `<li style="padding:12px 0"><div class="row" style="align-items:flex-start"><span class="pill ${good ? 'low' : 'high'}">${k + 1}</span><div style="flex:1"><div style="font-weight:600">${esc(q.q)}</div><div class="small" style="color:var(--ok)">✓ ${LET[q.a]}. ${esc(q.o[q.a])}</div>${good ? '' : `<div class="small" style="color:var(--bad)">${a === null ? 'Unanswered' : '✗ ' + LET[a] + '. ' + esc(q.o[a])}</div><div class="small muted">${esc(clean(q.w[q.a]))}</div>`}</div></div></li>`; }).join('');
-  return `<div class="stack"><section class="card" style="text-align:center"><div class="eyebrow">Result</div><div class="score num" style="margin-top:6px;color:${pass ? 'var(--ok)' : 'var(--bad)'}">${r.pct}%</div><p class="muted">${r.ok} / ${EX.qs.length} · ${pass ? 'Above' : 'Below'} the 70% pass mark</p><div class="row wrapx" style="justify-content:center;margin-top:8px"><button class="btn primary" data-act="exstart" data-n="${EX.qs.length}">Retake (new draw)</button><a class="btn" href="#/exam" data-act="exdone">Close</a></div></section>
+  const secRows = SECTIONS.filter(s => r.bs[s.name]).map(s => { const x = r.bs[s.name], p = Math.round(x.ok / x.n * 100); return `<li class="row" style="padding:10px 0"><div style="flex:1"><div style="font-weight:650">${s.name}</div><div class="bar" style="margin-top:6px"><i style="width:${p}%;background:${p >= 70 ? 'var(--ok)' : 'var(--bad)'}"></i></div></div><span class="num small" style="width:84px;text-align:right">${x.ok}/${x.n} · ${p}%</span></li>`; }).join('');
+  const chRows = Object.keys(r.by).sort((a, b) => (r.by[a].ok / r.by[a].n) - (r.by[b].ok / r.by[b].n)).map(c => `<span class="pill ${r.by[c].ok / r.by[c].n >= .7 ? 'low' : 'high'}">Ch.${c} · ${r.by[c].ok}/${r.by[c].n}</span>`).join(' ');
+  const rows = EX.qs.map((it, k) => { const q = it.x, a = EX.ans[k], good = a === q.a; return `<li style="padding:12px 0"><div class="row" style="align-items:flex-start"><span class="pill ${good ? 'low' : 'high'}">${k + 1}</span><div style="flex:1"><div style="font-weight:600">${esc(q.q)}</div><div class="small" style="color:var(--ok)">✓ ${LET[q.a]}. ${esc(q.o[q.a])}</div>${good ? '' : `<div class="small" style="color:var(--bad)">${a === null ? 'Unanswered' : '✗ ' + LET[a] + '. ' + esc(q.o[a])}</div><div class="small muted">${esc(clean(q.w[q.a]))}</div><div style="margin-top:4px">${refPill(q.r)}</div>`}</div></div></li>`; }).join('');
+  return `<div class="stack"><section class="card" style="text-align:center"><div class="eyebrow">Result</div><div class="score num" style="margin-top:6px;color:${pass ? 'var(--ok)' : 'var(--bad)'}">${r.pct}%</div><p class="muted">${r.ok} / ${EX.qs.length} · ${pass ? 'Above' : 'Below'} the 70% pass mark${r.pct >= 70 && r.pct < 80 ? ' — but aim for 80%+' : ''}</p><div class="row wrapx" style="justify-content:center;margin-top:8px"><button class="btn primary" data-act="exstart" data-n="${EX.qs.length}">New mock (fresh questions)</button><a class="btn" href="#/exam" data-act="exdone">Close</a></div></section>
+  <section class="card"><h3>By section</h3><ul class="list">${secRows}</ul><div class="eyebrow" style="margin:10px 0 6px">Weakest chapters first</div><div class="row wrapx" style="gap:6px">${chRows}</div></section>
   <section class="card"><h3>Review</h3><ul class="list">${rows}</ul></section></div>`;
+}
+
+/* ---------- tools: calculator, audio, numbers, traps ---------- */
+let CALC = { d: '0', acc: null, op: null, fresh: true };
+function calcFmt(x) { if (!isFinite(x) || Math.abs(x) >= 1e8) return 'E'; let s = String(Math.round(x * 1e8) / 1e8); if (s.replace('-', '').replace('.', '').length > 8) { const dp = Math.max(0, 8 - String(Math.trunc(Math.abs(x))).length); s = String(+x.toFixed(dp)); } return s; }
+function calcPress(k) {
+  const C = CALC, num = () => parseFloat(C.d);
+  if (C.d === 'E' && k !== 'C') return;
+  if (/\d/.test(k)) { if (C.fresh) { C.d = k; C.fresh = false; } else if (C.d.replace(/[-.]/g, '').length < 8) C.d = C.d === '0' ? k : C.d + k; }
+  else if (k === '.') { if (C.fresh) { C.d = '0.'; C.fresh = false; } else if (!C.d.includes('.')) C.d += '.'; }
+  else if (k === 'C') CALC = { d: '0', acc: null, op: null, fresh: true };
+  else if (k === '⌫') { C.d = C.d.length > 1 ? C.d.slice(0, -1) : '0'; if (C.d === '-') C.d = '0'; }
+  else if (k === '±') C.d = C.d === '0' ? '0' : C.d.startsWith('-') ? C.d.slice(1) : '-' + C.d;
+  else if ('+-×÷'.includes(k) || k === '=') {
+    if (C.op && !C.fresh) { const a = C.acc, b = num(); const r = C.op === '+' ? a + b : C.op === '-' ? a - b : C.op === '×' ? a * b : a / b; C.d = calcFmt(r); C.acc = C.d === 'E' ? null : r; } else C.acc = num();
+    C.op = k === '=' ? null : k; C.fresh = true;
+  }
+  const el = $('#cdisp'); if (el) el.textContent = CALC.d;
+}
+function calcSheet() {
+  if ($('#csheet')) { $('#csheet').remove(); return; }
+  const s = document.createElement('div'); s.className = 'sheet'; s.id = 'csheet';
+  const keys = ['C', '⌫', '±', '÷', '7', '8', '9', '×', '4', '5', '6', '-', '1', '2', '3', '+', '0', '.', '=', ''];
+  s.innerHTML = `<div style="max-width:340px"><div class="row"><b style="flex:1">Exam calculator</b><button class="icon-btn" data-act="calc" aria-label="Close">✕</button></div>
+  <div id="cdisp" class="num" style="margin:12px 0;padding:14px;border-radius:12px;background:var(--surface2);border:1px solid var(--line);text-align:right;font-size:2rem;font-weight:700;min-height:62px;overflow:hidden">${CALC.d}</div>
+  <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:8px">${keys.map(k => k ? `<button class="btn ${'÷×-+='.includes(k) ? 'primary' : ''}" data-act="ck" data-k="${k}" style="min-height:54px;font-size:1.15rem;padding:0">${k}</button>` : '<span></span>').join('')}</div>
+  <p class="tiny muted" style="margin-top:10px">Four functions, 8 digits, like the one on exam day. Work in thousands: 14.7 instead of 14,700,000.</p></div>`;
+  s.addEventListener('click', e => { if (e.target === s) s.remove(); });
+  document.body.appendChild(s);
+}
+const NUMRE = /(\$|%|\b\d+\s*(?:-|to)?\s*\d*\s*(?:days?|business|months?|years?|hours?|minutes?|shares|percent|trading)\b|\b\d{2,}\b|\d[,.]\d)/i;
+const numCards = () => ITEMS.filter(i => i.kind === 'card' && NUMRE.test(i.x.b));
+const allTraps = ch => { const out = []; DATA.chapters.forEach(c => { if (ch && c.id !== ch) return; c.traps.forEach((t, k) => out.push({ kind: 'trap', id: 'trap:' + c.id + ':' + k, ch: c.id, text: t })); }); return out; };
+function viewNumbers() {
+  const cs = numCards();
+  return `<div class="stack"><div class="row"><a class="icon-btn" href="#/practice" aria-label="Back">${CHEV}</a><div style="flex:1"><h1>Numbers to know</h1><p class="muted small">${cs.length} cards where the answer is a number, deadline or limit. Searchable.</p></div></div>
+  <div class="row wrapx"><button class="btn primary" data-act="numdrill">Quick drill · 25</button><button class="btn" data-act="listen" data-kind="numbers">🎧 Listen</button></div>
+  <input class="search" id="nq" placeholder="Search (e.g. 30 days, SIPC, margin)…" autocomplete="off"><div class="card" style="padding:0 16px"><ul class="list" id="nl">${numHtml('')}</ul></div></div>`;
+}
+const numHtml = q => { const l = numCards().filter(i => (i.x.f + ' ' + i.x.b).toLowerCase().includes(q.toLowerCase())); return l.length ? l.map(i => `<li style="padding:11px 0"><div class="row" style="align-items:flex-start;gap:10px"><span class="pill acc">${i.ch}</span><div style="flex:1"><div style="font-weight:650">${esc(i.x.f)}</div><div class="muted small">${inline(i.x.b)}</div></div></div></li>`).join('') : '<li class="empty">No match.</li>'; };
+/* audio */
+let AUD = null;
+const speechText = s => String(s).replace(/\*\*|`|\*/g, '').replace(/→/g, ' leads to ').replace(/≥/g, ' at least ').replace(/≤/g, ' at most ').replace(/&/g, ' and ').replace(/\s+/g, ' ');
+function audioItems(kind, ch) {
+  if (kind === 'traps') return shuffle(allTraps(ch)).map(t => ({ t: 'trap', ch: t.ch, text: t.text }));
+  const cs = kind === 'numbers' ? shuffle(numCards()).slice(0, 60) : shuffle(ITEMS.filter(i => i.kind === 'card' && (!ch || i.ch === ch))).slice(0, 60);
+  return cs.map(i => ({ t: 'card', ch: i.ch, f: i.x.f, b: i.x.b }));
+}
+function audioStart(kind, ch) {
+  if (!('speechSynthesis' in window)) { toast('Audio is not supported on this browser.'); return; }
+  speechSynthesis.cancel(); AUD = { items: audioItems(kind, ch), i: 0, playing: true, rate: 1, kind, ch, phase: 'f', tok: 0 };
+  go('#/listen'); audioSpeak();
+}
+function say(text, A, tok, cb) { const u = new SpeechSynthesisUtterance(speechText(text)); u.lang = 'en-US'; u.rate = A.rate; u.onend = () => { if (AUD === A && A.tok === tok && A.playing) cb(); }; speechSynthesis.speak(u); }
+function audioSpeak() {
+  const A = AUD; if (!A || !A.playing) return;
+  const it = A.items[A.i]; if (!it) { A.playing = false; render(); return; }
+  const tok = ++A.tok, next = () => { setTimeout(() => { if (AUD === A && A.tok === tok && A.playing) { A.i++; A.phase = 'f'; render(); audioSpeak(); } }, 900); };
+  speechSynthesis.cancel(); A.phase = 'f'; render();
+  if (it.t === 'trap') say(it.text, A, tok, next);
+  else say(it.f, A, tok, () => setTimeout(() => { if (AUD === A && A.tok === tok && A.playing) { A.phase = 'b'; render(); say(it.b, A, tok, next); } }, 2500 / A.rate));
+}
+function audioStop() { if (AUD) { AUD.playing = false; AUD.tok++; } try { speechSynthesis.cancel(); } catch (e) { } }
+function viewListen() {
+  const A = AUD; if (!A) return `<div class="empty"><p>No audio session.</p><a class="btn" href="#/practice">Back</a></div>`;
+  const it = A.items[A.i], done = !it;
+  const body = done ? '<h2>Finished 🎧</h2>' : it.t === 'trap' ? `<div class="eyebrow">Trap · Ch. ${it.ch}</div><div class="prose" style="margin-top:8px;font-size:1.1rem">${md(it.text)}</div>` : `<div class="eyebrow">Card · Ch. ${it.ch}</div><div class="qstem" style="margin-top:8px">${esc(it.f)}</div><div style="margin-top:14px;font-size:1.05rem;min-height:48px">${A.phase === 'b' ? inline(it.b) : '<span class="muted">…</span>'}</div>`;
+  return `<div class="stack"><div class="run-top"><button class="icon-btn" data-act="audiostop" aria-label="Close">✕</button><div class="bar"><i style="width:${Math.round(A.i / A.items.length * 100)}%"></i></div><span class="small muted num">${Math.min(A.i + 1, A.items.length)}/${A.items.length}</span></div>
+  <section class="card" style="min-height:220px">${body}</section>
+  <div class="row" style="justify-content:center;gap:14px"><button class="icon-btn" style="width:52px;height:52px" data-act="aprev" aria-label="Previous">⏮</button><button class="btn primary" style="min-width:120px" data-act="aplay">${A.playing ? '⏸ Pause' : '▶ Play'}</button><button class="icon-btn" style="width:52px;height:52px" data-act="anext" aria-label="Next">⏭</button></div>
+  <div class="row" style="justify-content:center;gap:8px">${[0.9, 1, 1.2, 1.4].map(r => `<button class="btn sm ${A.rate === r ? 'primary' : ''}" data-act="arate" data-r="${r}">${r}×</button>`).join('')}</div>
+  <p class="tiny muted" style="text-align:center">Screen can lock on most phones; keep this page open. Uses your device’s built-in English voice.</p></div>`;
 }
 
 /* ---------- settings ---------- */
@@ -585,10 +696,14 @@ function render() {
   if (r === '') html = viewHome();
   else if (r === 'learn') { tab = 'learn'; html = h[1] ? viewChapter(h[1], h[2] || 'brief') : viewLearn(); }
   else if (r === 'practice' || r === 'glossary') { tab = 'practice'; html = r === 'glossary' ? viewGlossary() : viewPractice(); }
+  else if (r === 'numbers') { tab = 'practice'; html = viewNumbers(); }
+  else if (r === 'listen') { tab = 'practice'; html = viewListen(); }
   else if (r === 'run') { tab = 'practice'; html = viewRun(); }
   else if (r === 'exam') { tab = 'exam'; html = h[1] === 'run' ? viewExamRun() : viewExam(); }
   else html = viewHome();
+  if (r !== 'listen' && AUD && AUD.playing) audioStop();
   APP.innerHTML = html;
+  const nq = $('#nq'); if (nq) nq.addEventListener('input', () => ($('#nl').innerHTML = numHtml(nq.value)));
   document.querySelectorAll('nav.tabs a').forEach(a => a.classList.toggle('on', a.dataset.t === (tab || 'today')));
   const gq = $('#gq'); if (gq) gq.addEventListener('input', () => ($('#gl').innerHTML = glossHtml(gq.value)));
   const dans = $('#dans'); if (dans) dans.focus();
@@ -608,7 +723,7 @@ document.addEventListener('click', e => {
     case 'closesheet': $('#sheet').remove(); break;
     case 'savesettings': S.examDate = $('#sd').value || null; S.theme = $('#st').value; save(); applyTheme(); $('#sheet').remove(); render(); break;
     case 'export': { const b = new Blob([JSON.stringify(S)], { type: 'application/json' }), u = URL.createObjectURL(b), l = document.createElement('a'); l.href = u; l.download = 'sie-prep-progress.json'; l.click(); break; }
-    case 'reset': if (confirm('Erase all progress on this device?')) { S = { act: S.act, checks: {}, rec: {}, exams: [], examDate: '2026-11-30', theme: 'auto', log: {}, flags: {} }; save(); applyTheme(); $('#sheet').remove(); go('#/'); render(); } break;
+    case 'reset': if (confirm('Erase all progress on this device?')) { S = { used: {}, act: S.act, checks: {}, rec: {}, exams: [], examDate: '2026-11-30', theme: 'auto', log: {}, flags: {} }; save(); applyTheme(); $('#sheet').remove(); go('#/'); render(); } break;
     case 'review': startRun('Daily review', sessionReview(), { back: '#/' }); break;
     case 'weak': startRun('Weak spots', weakItems(), { back: '#/practice' }); break;
     case 'mixed': startRun('Mixed quiz', shuffle(QUESTIONS).slice(0, +t.dataset.n), { back: '#/practice' }); break;
@@ -633,6 +748,17 @@ document.addEventListener('click', e => {
     case 'exfinish': { const un = EX.ans.filter(x => x === null).length; if (!un || confirm(un + ' unanswered question(s). Finish anyway?')) exFinish(); break; }
     case 'exquit': if (confirm('Quit this exam? Progress will be lost.')) { clearInterval(exTimer); EX = null; go('#/exam'); } break;
     case 'exdone': EX = null; break;
+    case 'calc': calcSheet(); break;
+    case 'ck': calcPress(t.dataset.k); break;
+    case 'listen': audioStart(t.dataset.kind, t.dataset.ch ? +t.dataset.ch : 0); break;
+    case 'audiostop': audioStop(); AUD = null; go('#/practice'); break;
+    case 'aplay': if (AUD) { if (AUD.playing) { audioStop(); } else { AUD.playing = true; audioSpeak(); } render(); } break;
+    case 'anext': if (AUD) { const pl = AUD.playing; audioStop(); AUD.i = Math.min(AUD.items.length, AUD.i + 1); AUD.playing = pl; pl ? audioSpeak() : render(); } break;
+    case 'aprev': if (AUD) { const pl = AUD.playing; audioStop(); AUD.i = Math.max(0, AUD.i - 1); AUD.playing = pl; pl ? audioSpeak() : render(); } break;
+    case 'arate': if (AUD) { AUD.rate = +t.dataset.r; if (AUD.playing) audioSpeak(); else render(); } break;
+    case 'numdrill': startRun('Numbers drill', shuffle(numCards()).slice(0, 25), { back: '#/numbers' }); break;
+    case 'trapsprint': startRun('Traps sprint', shuffle(allTraps(0)).slice(0, 20), { back: '#/practice' }); break;
+    case 'gtrap': advance(+t.dataset.g > 0); render(); break;
     case 'chk': S.checks[t.dataset.k] = !S.checks[t.dataset.k]; save(); render(); break;
     case 'unlock': { const v = ($('#akey').value || '').toUpperCase().replace(/[^A-Z0-9]/g, ''); if (cyrb53(v) === KEYHASH) { S.act = true; save(); $('#gate').remove(); render(); } else { const g = $('#gate .card'); g.animate([{ transform: 'translateX(0)' }, { transform: 'translateX(-10px)' }, { transform: 'translateX(10px)' }, { transform: 'translateX(0)' }], { duration: 300 }); $('#gerr').textContent = 'Invalid activation key.'; } break; }
   }

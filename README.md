@@ -4,7 +4,8 @@ Application web de révision (mobile + PC, hors-ligne) construite à partir du m
 *SIE Textbook 6th Edition* (490 p., 14 chapitres), pour une VP DCM FIG (4 ans d'expérience)
 qui doit passer le SIE avant fin 2026 en vue d'une mission de 6 mois à New York.
 
-**Statut : lot L1 livré — socle de l'appli + chapitre pilote (ch. 11 Customer Accounts).**
+**Statut : contenu complet (14 chapitres, ~920 QCM, ~1 100 cartes, 14 générateurs de calcul) + outils d'étude. Examen visé : 30/11/2026.**
+Outils : mocks de 75 questions (poids officiels, sans répétition), calculatrice d'examen, audio, chiffres à connaître, traps sprint, checklist jour J, renvois aux pages du manuel.
 
 ## Utiliser l'appli
 Ouvrir **`dist/sie-prep.html`** (fichier unique, hors-ligne, aucun serveur). Sur GitHub : ouvrir le fichier → *Download raw file*, puis l'ouvrir dans le navigateur (Chrome/Safari/Edge). La progression est enregistrée dans le navigateur de l'appareil (export/import JSON dans ⚙).
@@ -20,7 +21,8 @@ Lire dans l'ordre :
 | [docs/03-pedagogie.md](docs/03-pedagogie.md) | Formats d'apprentissage (fiches, QCM, drills de calcul, simulateur), répétition espacée, planning 10 semaines |
 | [docs/04-architecture.md](docs/04-architecture.md) | Choix techniques, modèle de données, hébergement, données de marché réelles (API) |
 | [docs/05-plan-et-budget.md](docs/05-plan-et-budget.md) | Lots de production, ordre, budget et points d'arrêt |
-| [docs/06-questions-ouvertes.md](docs/06-questions-ouvertes.md) | Décisions à prendre avant de coder |
+| [docs/06-questions-ouvertes.md](docs/06-questions-ouvertes.md) | Décisions prises et points ouverts |
+| [docs/07-points-a-confirmer.md](docs/07-points-a-confirmer.md) | Ambiguïtés / incohérences du manuel |
 
 `tools/extract.sh` extrait le texte du PDF (le texte extrait n'est volontairement pas versionné).
 
