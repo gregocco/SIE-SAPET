@@ -7,7 +7,7 @@
     {"s":"The rep must analyze the client’s financial situation and investment profile before recommending.","v":"b","w":"Customer-specific suitability requires analyzing a broad array of factors, including the client’s financial situation."},
     {"s":"An institution that affirmatively exercises independent judgment may be exempt from this obligation.","v":"b","w":"The institutional account exemption relieves only the customer-specific obligation, when two stated criteria are satisfied."},
     {"s":"It asks whether a recommendation fits one particular institutional customer.","v":"b","w":"Customer-specific suitability looks at the particular institutional customer’s profile, unlike the product-level reasonable-basis test."},
-    {"s":"The rep must obtain and analyze a broad array of client factors to support the determination.","v":"b","w":"Gathering and analyzing client-specific factors is the defining requirement of customer-specific suitability, per the chapter."}
+    {"s":"A product that is suitable for some investors can still fail this test for the particular client at hand.","v":"b","w":"Customer-specific suitability requires the product to be suitable for the specific client, beyond being suitable for someone."}
   ]},
   {"title":"FINRA Suitability vs Regulation Best Interest","a":"FINRA Rule 2111","b":"Reg BI","items":[
     {"s":"Recommendations to institutional customers are judged under this standard.","v":"a","w":"Rule 2111 suitability applies to institutional customers, while recommendations to retail customers fall under Reg BI."},
@@ -26,9 +26,7 @@
     {"s":"Call protection prevents the issuer from redeeming the security for a set period.","v":"a","w":"Call protection bars the issuer from calling the security for a certain period, which protects bondholders."},
     {"s":"Homeowners refinance to a lower rate and return principal to the holders early.","v":"b","w":"Mortgage refinancing in falling rate environments gives MBS holders an early return of principal, which is prepayment risk."},
     {"s":"Mortgage-backed securities are the investments most at risk.","v":"b","w":"Prepayment risk is distinctly linked to mortgage-backed securities, which the chapter lists as most at risk."},
-    {"s":"Investing in other fixed-income securities and equities mitigates this risk.","v":"b","w":"The listed strategy for prepayment risk is investing in other types of fixed-income securities and in equities."},
-    {"s":"Principal comes back faster than anticipated as mortgage holders pay down their loans.","v":"b","w":"Faster-than-expected principal paydown by mortgage holders is the defining feature of prepayment risk in MBS."}
-  ]},
+    {"s":"Investing in other fixed-income securities and equities mitigates this risk.","v":"b","w":"The listed strategy for prepayment risk is investing in other types of fixed-income securities and in equities."}  ]},
   {"title":"Systematic Risk vs Non-Systematic Risk","a":"Systematic risk","b":"Non-systematic risk","items":[
     {"s":"A recession or war that pushes down the overall market is an example.","v":"a","w":"Recessions, wars and significant political events are named sources of systematic, market-wide risk."},
     {"s":"It cannot be avoided through diversification but can be hedged with derivatives such as options.","v":"a","w":"Systematic risk survives diversification, though the chapter says it can be hedged with options contracts."},
@@ -46,8 +44,8 @@
     {"s":"The return of par at maturity buys fewer real goods because prices have risen.","v":"a","w":"The chapter notes the returned principal at maturity has reduced purchasing power in an inflationary environment."},
     {"s":"Bond prices fall when rates rise, because of the inverse relationship between prices and rates.","v":"b","w":"The inverse price and rate relationship is the definition of interest rate risk for fixed-income securities."},
     {"s":"Bonds with a lower coupon and longer maturity are especially exposed.","v":"b","w":"The Knopman Note says lower coupon and longer maturity bonds are especially exposed to interest rate risk."},
-    {"s":"An investor buying Treasury securities would be most concerned with this risk.","v":"b","w":"Treasuries have little credit or political risk, so the buyer’s main concern is interest rate risk."},
-    {"s":"Convertible bonds and common stock are listed strategies to reduce it.","v":"b","w":"Common stock and convertible bonds are the strategies listed for mitigating interest rate risk in the chapter."}
+    {"s":"Compared with credit or political risk, an investor buying Treasury securities is most concerned with this one.","v":"b","w":"Treasuries have little credit or political risk, so the buyer’s main concern is interest rate risk."},
+    {"s":"Investing in convertible bonds is a listed way to reduce it.","v":"b","w":"Convertible bonds, along with common stock, are the strategies listed for mitigating interest rate risk in the chapter."}
   ]},
   {"title":"Current Income vs Growth Objective","a":"Current income","b":"Growth","items":[
     {"s":"Utility stocks and REITs are listed as suitable investments.","v":"a","w":"Utility stocks, REITs and preferred stock are named suitable investments for generating current cash."},

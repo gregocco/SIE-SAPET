@@ -1,27 +1,502 @@
 [
-  {"id":"11-x01","r":"11.1.1","k":"concept","d":3,"q":"A registered representative wants to call a person who is on the federal do-not-call registry. Which of the following would permit the call?\nI. The person has given the firm prior written consent\nII. The rep has a personal relationship with the person\nIII. The person is an existing customer of the firm\nIV. The call is placed at 8:30 am in the person’s local time","o":["I and II only","I, II and III only","II and IV only","I, II, III and IV"],"a":1,"w":["Wrong: this leaves out the existing-customer exception, which also removes the do-not-call restriction entirely.","Correct: written consent, a personal relationship, and existing-customer status are all exceptions; calling hours do not override the registry.","Wrong: the time of day does not create an exception, and this also omits the consent exception.","Wrong: a call at 8:30 am is within hours but does not permit calling someone on the registry."]},
-  {"id":"11-x02","r":"11.1.5","k":"concept","d":3,"q":"Which of the following are TRUE about verification of customer account information?\nI. The first request goes out within 30 days of opening the account\nII. After the customer reports a change, an updated record goes out within 30 days\nIII. Verification is repeated at least every 36 months\nIV. In a joint account, only the first-named owner receives the notice","o":["I and III only","I, II and IV only","I, II and III only","II, III and IV only"],"a":2,"w":["Wrong: this omits the requirement to send an updated record within 30 days of a customer’s change notice.","Wrong: joint accounts require the notice to go to each owner, so the fourth statement makes this choice incorrect.","Correct: the 30-day opening request, the 30-day post-change update, and the 36-month cycle are all required, and notices go to every joint owner.","Wrong: it leaves out the initial 30-day request and wrongly includes the first-named-owner-only statement."]},
-  {"id":"11-x03","r":"11.1.4","k":"concept","d":2,"q":"All of the following are true about new account documentation EXCEPT:","o":["The designated principal’s written approval becomes part of the permanent account record","The firm must maintain a record of new account forms","The customer and the registered representative must both sign the new account form","A principal may approve the account promptly after the first transaction"],"a":2,"w":["Wrong: this is true, since the written approval is kept as part of the permanent account record.","Wrong: this is true, because broker-dealers are required to maintain a record of new account forms.","Correct: only the designated principal approving the account signs the form, so requiring customer and rep signatures is false.","Wrong: this is true, since approval may come before or promptly after any transaction in the account."]},
-  {"id":"11-x04","r":"11.2.1.1","k":"calc","d":2,"q":"A customer buys $20,000 of stock in a cash account on Monday in a regular way trade. Assuming no extension is requested, by which day must the customer pay under Regulation T?","o":["Tuesday","Wednesday","Friday","Thursday"],"a":3,"w":["Wrong: Tuesday is the regular way settlement date, not the Reg T payment deadline.","Wrong: Wednesday is only one business day after settlement, but Reg T allows two.","Wrong: Friday is three business days after settlement, which is past the deadline and when the sell-out occurs.","Correct: settlement is Tuesday and Reg T allows two further business days (S + 2), so payment is due Thursday."]},
-  {"id":"11-x05","r":"11.2.1.1","k":"concept","d":3,"q":"A customer fails to pay for a cash account purchase by the Reg T deadline. All of the following are true EXCEPT:","o":["The firm may ask its self-regulatory organization for more time","The position must be sold out on the morning of the third day if no extension is granted","The account is frozen for 90 days","The account must always be frozen, even when the payment shortage is $1,000 or less"],"a":3,"w":["Wrong: this is true, since the firm can request an extension from its SRO on the customer’s behalf.","Wrong: this is true, because without an extension the position is sold out on the morning of the third day.","Wrong: this is true, as a 90-day freeze is the normal consequence of late payment.","Correct: for shortages of $1,000 or less the firm has discretion to leave the account unfrozen, so “always” is false."]},
-  {"id":"11-x06","r":"11.2.1.1","k":"scenario","d":2,"q":"A cash account is frozen for free-riding and holds $3,000 in cash. The customer places an order to buy $5,000 of stock and promises to wire $2,000 later that day. What should the firm do?","o":["Accept the order because the wire will arrive the same day","Reject the buy order because the full cash must already be in the account when it is placed","Accept the order only with a principal’s approval","Reject the order and also refuse any sell orders"],"a":1,"w":["Wrong: a frozen account may buy only with sufficient funds already on deposit, not funds that are promised.","Correct: frozen accounts may place buys only when cash covers the entire purchase at the time of the order.","Wrong: principal approval does not cure the lack of cash; the rule depends on funds already in the account.","Wrong: sell orders remain permitted in a frozen account, so refusing them is not required."]},
-  {"id":"11-x07","r":"11.2.2.4","k":"concept","d":3,"q":"Which of the following may be purchased on margin?\nI. Exchange-traded fund shares\nII. IPO shares on the tenth day after the effective date\nIII. Shares of a closed-end fund\nIV. Mutual fund shares held for 45 days","o":["I and II only","I and III only","I, III and IV only","II and IV only"],"a":1,"w":["Wrong: IPO shares cannot be bought on margin during the first 30 days after the effective date.","Correct: ETFs and closed-end funds are exchange-traded and eligible, while early IPO shares and mutual funds are not.","Wrong: mutual funds can never be purchased on margin; holding them 45 days only makes them usable as collateral.","Wrong: both of these are restricted, so this choice excludes the two eligible securities."]},
-  {"id":"11-x08","r":"11.2.2.4","k":"concept","d":2,"q":"A customer wants to use mutual fund shares already owned in a margin account. Which statement is correct?","o":["The shares may be purchased on margin after a 30-day holding period","The shares may serve as collateral for margin borrowing after being held at least 30 days","The shares may serve as collateral immediately upon deposit","Mutual fund shares may never be used as collateral"],"a":1,"w":["Wrong: mutual funds can never be purchased on margin, regardless of how long they are held.","Correct: although they cannot be bought on margin, mutual funds can be pledged as collateral after a 30-day hold.","Wrong: the 30-day minimum holding period must pass before mutual funds count as collateral.","Wrong: after 30 days they can be used as collateral, so a total prohibition is incorrect."]},
-  {"id":"11-x09","r":"11.2.2.1","k":"scenario","d":3,"q":"A customer buys $100,000 of municipal bonds in a margin account. Which statement about the initial margin is correct?","o":["Regulation T requires a 50% deposit of $50,000","Municipal bonds cannot be purchased on margin","The Federal Reserve Board sets a 25% requirement","The requirement is set by the firm’s self-regulatory organization, such as FINRA, because municipal bonds are exempt from Reg T"],"a":3,"w":["Wrong: municipal securities are exempt from Regulation T, so its 50% rule does not apply to them.","Wrong: bonds are listed among securities eligible for margin purchase, and municipals are not prohibited.","Wrong: 25% is the FINRA long maintenance percentage, not a Federal Reserve initial requirement.","Correct: exempt securities such as municipal bonds and US government securities follow SRO margin requirements instead of Reg T."]},
-  {"id":"11-x10","r":"11.2.2.3","k":"calc","d":3,"q":"A customer buys $40,000 of stock in a long margin account, depositing the Regulation T amount. The stock later falls to a market value of $26,000. What is the maintenance call?","o":["$0","$1,000","$500","$6,500"],"a":2,"w":["Wrong: equity is $6,000 which is below the $6,500 required, so a call exists.","Wrong: this overstates the shortfall; the difference between required and actual equity is smaller than that.","Correct: the debit is $20,000 so equity is $6,000, the 25% requirement is $6,500, leaving a $500 call.","Wrong: $6,500 is the total maintenance requirement, not the shortfall the customer must deposit."]},
-  {"id":"11-x11","r":"11.2.2.5","k":"calc","d":2,"q":"A firm charges broker call plus 0.50% on debit balances from $100,000 to $249,999, and broker call is 2.25%. A customer carries a $120,000 debit balance. What is the annual interest charge at that rate?","o":["$2,700","$4,200","$5,100","$3,300"],"a":3,"w":["Wrong: $2,700 uses only the 2.25% broker call rate without adding the 0.50% spread.","Wrong: $4,200 would correspond to a 3.50% rate, which applies to a smaller debit balance tier.","Wrong: $5,100 would correspond to 4.25%, the rate on the smallest debit balances.","Correct: the rate is 2.25% + 0.50% = 2.75%, and 2.75% of $120,000 equals $3,300."]},
-  {"id":"11-x12","r":"11.2.2.5","k":"concept","d":3,"q":"Which of the following are TRUE about the margin agreement?\nI. The hypothecation agreement permits the firm to re-pledge securities to a bank\nII. Securities in a margin account must be held in street name\nIII. The credit agreement states the terms and interest on the borrowing\nIV. The loan consent form is mandatory before the account may be opened","o":["I, II and III only","I and II only","II, III and IV only","I, II, III and IV"],"a":0,"w":["Correct: rehypothecation, street name registration, and credit terms are all true, while the loan consent form is technically optional.","Wrong: this omits the credit agreement, which does set the interest terms for the loan.","Wrong: this omits the hypothecation statement and wrongly treats the loan consent form as mandatory.","Wrong: the loan consent form is technically optional, so including it makes this choice incorrect."]},
-  {"id":"11-x13","r":"11.2.2.6","k":"concept","d":2,"q":"A firm opens a margin account for a new customer in January. When must the firm provide the margin disclosure statement?","o":["Only after the first margin call is issued","Before or at account opening, and annually","At opening and every quarter","Only at account opening"],"a":1,"w":["Wrong: the disclosure must be given at the start of the account, long before any margin call.","Correct: FINRA Rule 2264 requires delivery prior to or at opening, with the notice repeated every year.","Wrong: the margin disclosure repeat requirement is annual, not quarterly, so this schedule is incorrect.","Wrong: the notice must be renewed each year, so a one-time delivery is not enough."]},
-  {"id":"11-x14","r":"11.2.3","k":"concept","d":3,"q":"Which of the following are TRUE about opening an options account?\nI. The options disclosure document is prepared by the OCC\nII. It must be furnished at or before the time a registered options principal approves the account\nIII. The customer may not trade until the signed agreement is returned\nIV. By signing the agreement the customer acknowledges position limits","o":["I, II and III only","I and II only","II, III and IV only","I, II and IV only"],"a":3,"w":["Wrong: trading may begin on approval; the customer has 15 days to return the signed agreement.","Wrong: this leaves out the position limit acknowledgment the customer gives by signing the agreement.","Wrong: the OCC point is true, and the third statement is false because trading starts upon approval.","Correct: the OCC document, the timing before ROP approval, and the position limit acknowledgment are true, but trading can start before signing."]},
-  {"id":"11-x15","r":"11.2.3","k":"scenario","d":2,"q":"An options account was approved by a registered options principal ten days ago and the customer has not yet returned the signed options agreement. The customer wants to open a new long call position. What is the result?","o":["The order is allowed because the 15-day period has not expired","The order is rejected because trading requires the signed agreement first","The order is allowed only to close existing positions","The order requires approval from a second principal"],"a":0,"w":["Correct: the customer may trade after approval and has 15 days from approval to return the signed agreement.","Wrong: the sequence permits trading upon approval before the agreement is returned within 15 days.","Wrong: the closing-only restriction applies only after 15 days pass without a signed agreement.","Wrong: no second principal is needed; one registered options principal’s written approval suffices."]},
-  {"id":"11-x16","r":"11.2.4","k":"scenario","d":3,"q":"Which of the following trades are discretionary?\nI. A customer asks to sell 300 shares of ABC and the rep sells 500 shares\nII. A customer instructs the rep to buy 200 shares of DEF and the rep waits for a lower price before entering the order\nIII. A customer asks the rep to put $20,000 into bonds and the rep chooses the issues\nIV. A rep recommends buying GHI and the customer approves before the order is entered","o":["I and III only","II and IV only","I, II and III only","III and IV only"],"a":0,"w":["Correct: choosing the amount and choosing the asset are discretionary, while timing and customer-approved trades are not.","Wrong: timing and price are not discretionary, and a customer-approved recommendation is non-discretionary.","Wrong: waiting for a better price involves only time and price, which are not discretionary elements.","Wrong: a recommendation the customer approves leaves the final decision with the customer, so it is not discretionary."]},
-  {"id":"11-x17","r":"11.2.4","k":"concept","d":3,"q":"Which of the following are required for discretionary trading in a customer’s account?\nI. Written power of attorney from the customer\nII. Principal approval of the account before the first discretionary trade\nIII. Principal approval of each discretionary trade promptly after execution\nIV. Signing the customer’s name to the power of attorney if the customer agrees and a signature is on file","o":["I and II only","II, III and IV only","I, II and III only","I, II, III and IV"],"a":2,"w":["Wrong: it omits the requirement that a principal approve each discretionary trade promptly after execution.","Wrong: it leaves out the written power of attorney and wrongly includes a prohibited signature practice.","Correct: written authority, pre-approval of the account, and prompt approval of each trade are required.","Wrong: signing for the customer is a prohibited signature of convenience even with the customer’s consent."]},
-  {"id":"11-x18","r":"11.3.3.1","k":"concept","d":2,"q":"All of the following are true of UGMA and UTMA accounts EXCEPT:","o":["Each account has one custodian and one minor beneficiary","Gifts to the account cannot be taken back","The minor may place trades if the custodian gives permission","Margin trading is not permitted"],"a":2,"w":["Wrong: this is true, as a custodial account has only one custodian and one minor beneficiary.","Wrong: this statement is true, since gifts to a custodial account are irrevocable and cannot be reclaimed.","Correct: the custodian manages the account, and the minor cannot trade even with the custodian’s permission.","Wrong: this is true, because margin is not permitted in UGMA or UTMA accounts."]},
-  {"id":"11-x19","r":"11.3.3.1","k":"scenario","d":2,"q":"The custodian of a UTMA account dies before the minor reaches the age of majority. What happens to the account?","o":["The courts name a successor custodian, typically a guardian or adult family member","The assets pass to the deceased custodian’s estate","The minor takes control of the account immediately","The minor’s eldest sibling becomes custodian automatically"],"a":0,"w":["Correct: courts appoint a successor custodian, usually the minor’s guardian or an adult family member.","Wrong: the assets belong to the minor, so they do not go to the custodian’s estate.","Wrong: control transfers to the minor only at the age of majority, not when a custodian dies.","Wrong: a successor custodian is named by the courts rather than appearing automatically by family rank."]},
-  {"id":"11-x20","r":"11.3.3.1","k":"scenario","d":2,"q":"A 17-year-old asks a registered representative to open an account in her own name, and her mother offers to be a joint owner with her. How should the representative respond?","o":["Open a JTWROS account with the mother and the minor","Open a JTIC account with the mother and the minor","Refuse both and offer a UGMA or UTMA custodial account","Open an individual account with the mother’s signature as consent"],"a":2,"w":["Wrong: a minor cannot be part of a joint account of any kind.","Wrong: tenants in common is also a joint account, which a minor may not join.","Correct: a minor may only be a party to a UGMA or UTMA account, so the rep should offer that alternative.","Wrong: a minor cannot open an individual account, even with a parent’s signature."]},
-  {"id":"11-x21","r":"11.3.3.2","k":"concept","d":3,"q":"Which of the following are TRUE about trust accounts?\nI. A revocable trust may be altered or cancelled by the trustor\nII. An irrevocable trust cannot be changed without the agreement of the beneficiary\nIII. The trustee and the beneficiary can never be the same person\nIV. The broker-dealer must be given a copy of the trust agreement","o":["I and II only","I, II and IV only","II, III and IV only","I, III and IV only"],"a":1,"w":["Wrong: this omits the requirement that the firm receive a copy of the trust agreement.","Correct: revocability, irrevocability limits, and the firm’s need for the agreement are accurate, while trustee and beneficiary may be the same person.","Wrong: the statement that trustee and beneficiary can never be the same is false, and this choice leaves out the revocable trust point.","Wrong: it includes the false statement that trustee and beneficiary can never be the same person and omits irrevocability."]},
-  {"id":"11-x22","r":"11.3.2.2","k":"scenario","d":3,"q":"Three different customers die. Customer 1 held a JTWROS account, customer 2 held an individual account with a transfer on death designation, and customer 3 held a share of a JTIC account. Which accounts avoid probate?","o":["Customer 1 only","Customers 1 and 2 only","Customers 2 and 3 only","Customers 1, 2 and 3"],"a":1,"w":["Wrong: the transfer on death designation also lets the individual account avoid probate.","Correct: JTWROS and an individual account with a TOD designation avoid probate, while JTIC assets are subject to it.","Wrong: JTIC assets are distributed through the deceased’s estate and are subject to probate.","Wrong: the JTIC account does not avoid probate, so not every account qualifies."]},
-  {"id":"11-x23","r":"11.5.1","k":"concept","d":3,"q":"Which of the following accounts require a statement at least MONTHLY?\nI. A cash account holding only a money balance with no activity\nII. An inactive account holding options\nIII. An active account holding penny stocks\nIV. An active account holding only exchange-listed stocks","o":["I and IV only","II and III only","II, III and IV only","I, II and III only"],"a":1,"w":["Wrong: money-balance-only accounts and listed-stock accounts need quarterly statements, not monthly ones.","Correct: any account holding options or penny stocks must receive monthly statements.","Wrong: an account holding only listed stocks is on the quarterly schedule.","Wrong: a money-balance-only account receives quarterly statements, so including it is incorrect."]},
-  {"id":"11-x24","r":"11.5.4","k":"scenario","d":3,"q":"A customer gives written instructions asking the firm to hold her mail for five months, citing security concerns. The firm agrees. Which of the following is NOT required of the firm?","o":["Informing her in writing of alternatives such as website access or email notifications","Obtaining her confirmation that she received that information","Verifying at reasonable intervals that the hold instructions still apply","Requiring her to switch permanently to electronic delivery"],"a":3,"w":["Wrong: written notice of alternatives to monitor the account is a required step.","Wrong: the firm must have the customer confirm receipt of the alternatives information.","Wrong: verifying at reasonable intervals that the hold instructions still apply is a required firm step.","Correct: nothing requires a permanent switch to electronic delivery; the hold is permitted for a valid reason like safety."]},
-  {"id":"11-x25","r":"11.6.1","k":"concept","d":2,"q":"Which of the following are TRUE under Regulation S-P?\nI. A privacy notice must be given before the customer enters an agreement to do business\nII. The notice must be provided annually thereafter\nIII. A customer may opt out of sharing with non-affiliated parties\nIV. A customer may opt out of sharing that is required in an IRS or anti-money laundering investigation","o":["I, II and III only","I and II only","II, III and IV only","I, II, III and IV"],"a":0,"w":["Correct: the notice is due before opening and annually, and customers may opt out of non-affiliate sharing but not legally required sharing.","Wrong: this omits the opt-out right for non-affiliated sharing, which the privacy notice must explain.","Wrong: sharing legally required, such as for the IRS, cannot be opted out, and the opening notice is omitted.","Wrong: customers cannot opt out of legally required sharing, so the fourth statement is false."]}
+ {
+  "id": "11-x01",
+  "r": "11.1.1",
+  "k": "concept",
+  "d": 3,
+  "q": "A registered representative wants to call a person who is on the federal do-not-call registry. Which of the following would permit the call?\nI. The person has given the firm prior written consent\nII. The rep has a personal relationship with the person\nIII. The person is an existing customer of the firm\nIV. The call is placed at 8:30 am in the person’s local time",
+  "o": [
+   "I, II and III only",
+   "I and II only",
+   "II and IV only",
+   "I, II, III and IV"
+  ],
+  "a": 0,
+  "w": [
+   "Correct: written consent, a personal relationship, and existing-customer status are all exceptions; calling hours do not override the registry.",
+   "Wrong: this leaves out the existing-customer exception, which also removes the do-not-call restriction entirely.",
+   "Wrong: the time of day does not create an exception, and this also omits the consent exception.",
+   "Wrong: a call at 8:30 am is within hours but does not permit calling someone on the registry."
+  ]
+ },
+ {
+  "id": "11-x02",
+  "r": "11.1.5",
+  "k": "concept",
+  "d": 3,
+  "q": "Which of the following are TRUE about verification of customer account information?\nI. The first request goes out within 30 days of opening the account\nII. After the customer reports a change, an updated record goes out within 30 days\nIII. Verification is repeated at least every 36 months\nIV. In a joint account, only the first-named owner receives the notice",
+  "o": [
+   "I and III only",
+   "I, II and III only",
+   "I, II and IV only",
+   "II, III and IV only"
+  ],
+  "a": 1,
+  "w": [
+   "Wrong: this omits the requirement to send an updated record within 30 days of a customer’s change notice.",
+   "Correct: the 30-day opening request, the 30-day post-change update, and the 36-month cycle are all required, and notices go to every joint owner.",
+   "Wrong: joint accounts require the notice to go to each owner, so the fourth statement makes this choice incorrect.",
+   "Wrong: it leaves out the initial 30-day request and wrongly includes the first-named-owner-only statement."
+  ]
+ },
+ {
+  "id": "11-x03",
+  "r": "11.1.4",
+  "k": "concept",
+  "d": 2,
+  "q": "All of the following are true about new account documentation EXCEPT:",
+  "o": [
+   "The designated principal’s written approval becomes part of the permanent account record",
+   "The firm must maintain a record of new account forms",
+   "A principal may approve the account promptly after the first transaction",
+   "The customer and the registered representative must both sign the new account form"
+  ],
+  "a": 3,
+  "w": [
+   "Wrong: this is true, since the written approval is kept as part of the permanent account record.",
+   "Wrong: this is true, because broker-dealers are required to maintain a record of new account forms.",
+   "Wrong: this is true, since approval may come before or promptly after any transaction in the account.",
+   "Correct: only the designated principal approving the account signs the form, so requiring customer and rep signatures is false."
+  ]
+ },
+ {
+  "id": "11-x04",
+  "r": "11.2.1.1",
+  "k": "calc",
+  "d": 2,
+  "q": "A customer buys $20,000 of stock in a cash account on Monday in a regular way trade. Assuming no extension is requested, by which day must the customer pay under Regulation T?",
+  "o": [
+   "Tuesday",
+   "Wednesday",
+   "Thursday",
+   "Friday"
+  ],
+  "a": 2,
+  "w": [
+   "Wrong: Tuesday is the regular way settlement date, not the Reg T payment deadline.",
+   "Wrong: Wednesday is only one business day after settlement, but Reg T allows two.",
+   "Correct: settlement is Tuesday and Reg T allows two further business days (S + 2), so payment is due Thursday.",
+   "Wrong: Friday is three business days after settlement, which is past the deadline and when the sell-out occurs."
+  ]
+ },
+ {
+  "id": "11-x05",
+  "r": "11.2.1.1",
+  "k": "concept",
+  "d": 3,
+  "q": "A customer fails to pay for a cash account purchase by the Reg T deadline. All of the following are true EXCEPT:",
+  "o": [
+   "The firm may ask its self-regulatory organization for more time",
+   "The account must always be frozen, even when the payment shortage is $1,000 or less",
+   "The account is frozen for 90 days",
+   "The position must be sold out on the morning of the third day if no extension is granted"
+  ],
+  "a": 1,
+  "w": [
+   "Wrong: this is true, since the firm can request an extension from its SRO on the customer’s behalf.",
+   "Correct: for shortages of $1,000 or less the firm has discretion to leave the account unfrozen, so “always” is false.",
+   "Wrong: this is true, as a 90-day freeze is the normal consequence of late payment.",
+   "Wrong: this is true, because without an extension the position is sold out on the morning of the third day."
+  ]
+ },
+ {
+  "id": "11-x06",
+  "r": "11.2.1.1",
+  "k": "scenario",
+  "d": 2,
+  "q": "A cash account is frozen for free-riding and holds $3,000 in cash. The customer places an order to buy $5,000 of stock and promises to wire $2,000 later that day. What should the firm do?",
+  "o": [
+   "Reject the buy order because the full cash must already be in the account when it is placed",
+   "Accept the order because the wire will arrive the same day",
+   "Accept the order only with a principal’s approval",
+   "Reject the order and also refuse any sell orders"
+  ],
+  "a": 0,
+  "w": [
+   "Correct: frozen accounts may place buys only when cash covers the entire purchase at the time of the order.",
+   "Wrong: a frozen account may buy only with sufficient funds already on deposit, not funds that are promised.",
+   "Wrong: principal approval does not cure the lack of cash; the rule depends on funds already in the account.",
+   "Wrong: sell orders remain permitted in a frozen account, so refusing them is not required."
+  ]
+ },
+ {
+  "id": "11-x07",
+  "r": "11.2.2.4",
+  "k": "concept",
+  "d": 3,
+  "q": "Which of the following may be purchased on margin?\nI. Exchange-traded fund shares\nII. IPO shares on the tenth day after the effective date\nIII. Shares of a closed-end fund\nIV. Mutual fund shares held for 45 days",
+  "o": [
+   "I and II only",
+   "I, III and IV only",
+   "I and III only",
+   "II and IV only"
+  ],
+  "a": 2,
+  "w": [
+   "Wrong: IPO shares cannot be bought on margin during the first 30 days after the effective date.",
+   "Wrong: mutual funds can never be purchased on margin; holding them 45 days only makes them usable as collateral.",
+   "Correct: ETFs and closed-end funds are exchange-traded and eligible, while early IPO shares and mutual funds are not.",
+   "Wrong: both of these are restricted, so this choice excludes the two eligible securities."
+  ]
+ },
+ {
+  "id": "11-x08",
+  "r": "11.2.2.4",
+  "k": "concept",
+  "d": 2,
+  "q": "A customer wants to use mutual fund shares already owned in a margin account. Which statement is correct?",
+  "o": [
+   "The shares may be purchased on margin after a 30-day holding period",
+   "Mutual fund shares may never be used as collateral",
+   "The shares may serve as collateral immediately upon deposit",
+   "The shares may serve as collateral for margin borrowing after being held at least 30 days"
+  ],
+  "a": 3,
+  "w": [
+   "Wrong: mutual funds can never be purchased on margin, regardless of how long they are held.",
+   "Wrong: after 30 days they can be used as collateral, so a total prohibition is incorrect.",
+   "Wrong: the 30-day minimum holding period must pass before mutual funds count as collateral.",
+   "Correct: although they cannot be bought on margin, mutual funds can be pledged as collateral after a 30-day hold."
+  ]
+ },
+ {
+  "id": "11-x09",
+  "r": "11.2.2.1",
+  "k": "scenario",
+  "d": 3,
+  "q": "A customer buys $100,000 of municipal bonds in a margin account. Which statement about the initial margin is correct?",
+  "o": [
+   "The requirement is set by the firm’s self-regulatory organization, such as FINRA, because municipal bonds are exempt from Reg T",
+   "Municipal bonds cannot be purchased on margin",
+   "The Federal Reserve Board sets a 25% requirement",
+   "Regulation T requires a 50% deposit of $50,000"
+  ],
+  "a": 0,
+  "w": [
+   "Correct: exempt securities such as municipal bonds and US government securities follow SRO margin requirements instead of Reg T.",
+   "Wrong: bonds are listed among securities eligible for margin purchase, and municipals are not prohibited.",
+   "Wrong: 25% is the FINRA long maintenance percentage, not a Federal Reserve initial requirement.",
+   "Wrong: municipal securities are exempt from Regulation T, so its 50% rule does not apply to them."
+  ]
+ },
+ {
+  "id": "11-x10",
+  "r": "11.2.2.3",
+  "k": "calc",
+  "d": 3,
+  "q": "A customer buys $40,000 of stock in a long margin account, depositing the Regulation T amount. The stock later falls to a market value of $26,000. What is the maintenance call?",
+  "o": [
+   "$0",
+   "$1,000",
+   "$6,500",
+   "$500"
+  ],
+  "a": 3,
+  "w": [
+   "Wrong: equity is $6,000 which is below the $6,500 required, so a call exists.",
+   "Wrong: this overstates the shortfall; the difference between required and actual equity is smaller than that.",
+   "Wrong: $6,500 is the total maintenance requirement, not the shortfall the customer must deposit.",
+   "Correct: the debit is $20,000 so equity is $6,000, the 25% requirement is $6,500, leaving a $500 call."
+  ]
+ },
+ {
+  "id": "11-x11",
+  "r": "11.2.2.5",
+  "k": "calc",
+  "d": 2,
+  "q": "A firm charges broker call plus 0.50% on debit balances from $100,000 to $249,999, and broker call is 2.25%. A customer carries a $120,000 debit balance. What is the annual interest charge at that rate?",
+  "o": [
+   "$2,700",
+   "$4,200",
+   "$3,300",
+   "$5,100"
+  ],
+  "a": 2,
+  "w": [
+   "Wrong: $2,700 uses only the 2.25% broker call rate without adding the 0.50% spread.",
+   "Wrong: $4,200 would correspond to a 3.50% rate, which applies to a smaller debit balance tier.",
+   "Correct: the rate is 2.25% + 0.50% = 2.75%, and 2.75% of $120,000 equals $3,300.",
+   "Wrong: $5,100 would correspond to 4.25%, the rate on the smallest debit balances."
+  ]
+ },
+ {
+  "id": "11-x12",
+  "r": "11.2.2.5",
+  "k": "concept",
+  "d": 3,
+  "q": "Which of the following are TRUE about the margin agreement?\nI. The hypothecation agreement permits the firm to re-pledge securities to a bank\nII. Securities in a margin account must be held in street name\nIII. The credit agreement states the terms and interest on the borrowing\nIV. The loan consent form is mandatory before the account may be opened",
+  "o": [
+   "I and II only",
+   "I, II and III only",
+   "II, III and IV only",
+   "I, II, III and IV"
+  ],
+  "a": 1,
+  "w": [
+   "Wrong: this omits the credit agreement, which does set the interest terms for the loan.",
+   "Correct: rehypothecation, street name registration, and credit terms are all true, while the loan consent form is technically optional.",
+   "Wrong: this omits the hypothecation statement and wrongly treats the loan consent form as mandatory.",
+   "Wrong: the loan consent form is technically optional, so including it makes this choice incorrect."
+  ]
+ },
+ {
+  "id": "11-x13",
+  "r": "11.2.2.6",
+  "k": "concept",
+  "d": 2,
+  "q": "A firm opens a margin account for a new customer in January. When must the firm provide the margin disclosure statement?",
+  "o": [
+   "Only after the first margin call is issued",
+   "Only at account opening",
+   "At opening and every quarter",
+   "Before or at account opening, and annually"
+  ],
+  "a": 3,
+  "w": [
+   "Wrong: the disclosure must be given at the start of the account, long before any margin call.",
+   "Wrong: the notice must be renewed each year, so a one-time delivery is not enough.",
+   "Wrong: the margin disclosure repeat requirement is annual, not quarterly, so this schedule is incorrect.",
+   "Correct: FINRA Rule 2264 requires delivery prior to or at opening, with the notice repeated every year."
+  ]
+ },
+ {
+  "id": "11-x14",
+  "r": "11.2.3",
+  "k": "concept",
+  "d": 3,
+  "q": "Which of the following are TRUE about opening an options account?\nI. The options disclosure document is prepared by the OCC\nII. It must be furnished at or before the time a registered options principal approves the account\nIII. The customer may not trade until the signed agreement is returned\nIV. By signing the agreement the customer acknowledges position limits",
+  "o": [
+   "I, II and III only",
+   "I and II only",
+   "I, II and IV only",
+   "II, III and IV only"
+  ],
+  "a": 2,
+  "w": [
+   "Wrong: trading may begin on approval; the customer has 15 days to return the signed agreement.",
+   "Wrong: this leaves out the position limit acknowledgment the customer gives by signing the agreement.",
+   "Correct: the OCC document, the timing before ROP approval, and the position limit acknowledgment are true, but trading can start before signing.",
+   "Wrong: the OCC point is true, and the third statement is false because trading starts upon approval."
+  ]
+ },
+ {
+  "id": "11-x15",
+  "r": "11.2.3",
+  "k": "scenario",
+  "d": 2,
+  "q": "An options account was approved by a registered options principal ten days ago and the customer has not yet returned the signed options agreement. The customer wants to open a new long call position. What is the result?",
+  "o": [
+   "The order is allowed because the 15-day period has not expired",
+   "The order is rejected because trading requires the signed agreement first",
+   "The order is allowed only to close existing positions",
+   "The order requires approval from a second principal"
+  ],
+  "a": 0,
+  "w": [
+   "Correct: the customer may trade after approval and has 15 days from approval to return the signed agreement.",
+   "Wrong: the sequence permits trading upon approval before the agreement is returned within 15 days.",
+   "Wrong: the closing-only restriction applies only after 15 days pass without a signed agreement.",
+   "Wrong: no second principal is needed; one registered options principal’s written approval suffices."
+  ]
+ },
+ {
+  "id": "11-x16",
+  "r": "11.2.4",
+  "k": "scenario",
+  "d": 3,
+  "q": "Which of the following trades are discretionary?\nI. A customer asks the rep to sell some shares of ABC and the rep decides how many to sell\nII. A customer instructs the rep to buy 200 shares of DEF and the rep waits for a lower price before entering the order\nIII. A customer asks the rep to put $20,000 into bonds and the rep chooses the issues\nIV. A rep recommends buying GHI and the customer approves before the order is entered",
+  "o": [
+   "II and IV only",
+   "I and III only",
+   "I, II and III only",
+   "III and IV only"
+  ],
+  "a": 1,
+  "w": [
+   "Wrong: timing and price are not discretionary, and a customer-approved recommendation is non-discretionary.",
+   "Correct: choosing the amount and choosing the asset are discretionary, while timing and customer-approved trades are not.",
+   "Wrong: waiting for a better price involves only time and price, which are not discretionary elements.",
+   "Wrong: a recommendation the customer approves leaves the final decision with the customer, so it is not discretionary."
+  ]
+ },
+ {
+  "id": "11-x17",
+  "r": "11.2.4",
+  "k": "concept",
+  "d": 3,
+  "q": "Which of the following are required for discretionary trading in a customer’s account?\nI. Written power of attorney from the customer\nII. Principal approval of the account before the first discretionary trade\nIII. Principal approval of each discretionary trade promptly after execution\nIV. Signing the customer’s name to the power of attorney if the customer agrees and a signature is on file",
+  "o": [
+   "I, II and III only",
+   "II, III and IV only",
+   "I and II only",
+   "I, II, III and IV"
+  ],
+  "a": 0,
+  "w": [
+   "Correct: written authority, pre-approval of the account, and prompt approval of each trade are required.",
+   "Wrong: it leaves out the written power of attorney and wrongly includes a prohibited signature practice.",
+   "Wrong: it omits the requirement that a principal approve each discretionary trade promptly after execution.",
+   "Wrong: signing for the customer is a prohibited signature of convenience even with the customer’s consent."
+  ]
+ },
+ {
+  "id": "11-x18",
+  "r": "11.3.3.1",
+  "k": "concept",
+  "d": 2,
+  "q": "All of the following are true of UGMA and UTMA accounts EXCEPT:",
+  "o": [
+   "Each account has one custodian and one minor beneficiary",
+   "The minor may place trades if the custodian gives permission",
+   "Gifts to the account cannot be taken back",
+   "Margin trading is not permitted"
+  ],
+  "a": 1,
+  "w": [
+   "Wrong: this is true, as a custodial account has only one custodian and one minor beneficiary.",
+   "Correct: the custodian manages the account, and the minor cannot trade even with the custodian’s permission.",
+   "Wrong: this statement is true, since gifts to a custodial account are irrevocable and cannot be reclaimed.",
+   "Wrong: this is true, because margin is not permitted in UGMA or UTMA accounts."
+  ]
+ },
+ {
+  "id": "11-x19",
+  "r": "11.3.3.1",
+  "k": "scenario",
+  "d": 2,
+  "q": "The custodian of a UTMA account dies before the minor reaches the age of majority. What happens to the account?",
+  "o": [
+   "The minor takes control of the account immediately",
+   "The assets pass to the deceased custodian’s estate",
+   "The courts name a successor custodian, typically a guardian or adult family member",
+   "The minor’s eldest sibling becomes custodian automatically"
+  ],
+  "a": 2,
+  "w": [
+   "Wrong: control transfers to the minor only at the age of majority, not when a custodian dies.",
+   "Wrong: the assets belong to the minor, so they do not go to the custodian’s estate.",
+   "Correct: courts appoint a successor custodian, usually the minor’s guardian or an adult family member.",
+   "Wrong: a successor custodian is named by the courts rather than appearing automatically by family rank."
+  ]
+ },
+ {
+  "id": "11-x20",
+  "r": "11.3.3.1",
+  "k": "scenario",
+  "d": 2,
+  "q": "A 17-year-old asks a registered representative to open an account in her own name, and her mother offers to be a joint owner with her. How should the representative respond?",
+  "o": [
+   "Open a JTWROS account with the mother and the minor",
+   "Open a JTIC account with the mother and the minor",
+   "Open an individual account with the mother’s signature as consent",
+   "Refuse both and offer a UGMA or UTMA custodial account"
+  ],
+  "a": 3,
+  "w": [
+   "Wrong: a minor cannot be part of a joint account of any kind.",
+   "Wrong: tenants in common is also a joint account, which a minor may not join.",
+   "Wrong: a minor cannot open an individual account, even with a parent’s signature.",
+   "Correct: a minor may only be a party to a UGMA or UTMA account, so the rep should offer that alternative."
+  ]
+ },
+ {
+  "id": "11-x21",
+  "r": "11.3.3.2",
+  "k": "concept",
+  "d": 3,
+  "q": "Which of the following are TRUE about trust accounts?\nI. A revocable trust may be altered or cancelled by the trustor\nII. An irrevocable trust cannot be changed without the agreement of the beneficiary\nIII. The trustee and the beneficiary can never be the same person\nIV. The broker-dealer must be given a copy of the trust agreement",
+  "o": [
+   "I and II only",
+   "I, II and IV only",
+   "II, III and IV only",
+   "I, III and IV only"
+  ],
+  "a": 1,
+  "w": [
+   "Wrong: this omits the requirement that the firm receive a copy of the trust agreement.",
+   "Correct: revocability, irrevocability limits, and the firm’s need for the agreement are accurate, while trustee and beneficiary may be the same person.",
+   "Wrong: the statement that trustee and beneficiary can never be the same is false, and this choice leaves out the revocable trust point.",
+   "Wrong: it includes the false statement that trustee and beneficiary can never be the same person and omits irrevocability."
+  ]
+ },
+ {
+  "id": "11-x22",
+  "r": "11.3.2.2",
+  "k": "scenario",
+  "d": 3,
+  "q": "Three different customers die. Customer 1 held a JTWROS account, customer 2 held an individual account with a transfer on death designation, and customer 3 held a share of a JTIC account. Which accounts avoid probate?",
+  "o": [
+   "Customers 1 and 2 only",
+   "Customer 1 only",
+   "Customers 2 and 3 only",
+   "Customers 1, 2 and 3"
+  ],
+  "a": 0,
+  "w": [
+   "Correct: JTWROS and an individual account with a TOD designation avoid probate, while JTIC assets are subject to it.",
+   "Wrong: the transfer on death designation also lets the individual account avoid probate.",
+   "Wrong: JTIC assets are distributed through the deceased’s estate and are subject to probate.",
+   "Wrong: the JTIC account does not avoid probate, so not every account qualifies."
+  ]
+ },
+ {
+  "id": "11-x23",
+  "r": "11.5.1",
+  "k": "concept",
+  "d": 3,
+  "q": "Which of the following accounts require MONTHLY statements?\nI. A cash account holding only a money balance with no activity\nII. An inactive account holding options\nIII. An active account holding penny stocks\nIV. An active account holding only exchange-listed stocks",
+  "o": [
+   "I and IV only",
+   "II, III and IV only",
+   "II and III only",
+   "I, II and III only"
+  ],
+  "a": 2,
+  "w": [
+   "Wrong: money-balance-only accounts and listed-stock accounts need quarterly statements, not monthly ones.",
+   "Wrong: an account holding only listed stocks is on the quarterly schedule.",
+   "Correct: any account holding options or penny stocks must receive monthly statements.",
+   "Wrong: a money-balance-only account receives quarterly statements, so including it is incorrect."
+  ]
+ },
+ {
+  "id": "11-x24",
+  "r": "11.5.4",
+  "k": "scenario",
+  "d": 3,
+  "q": "A customer gives written instructions asking the firm to hold her mail for five months, citing security concerns. The firm agrees. Which of the following is NOT required of the firm?",
+  "o": [
+   "Informing her in writing of alternatives such as website access or email notifications",
+   "Obtaining her confirmation that she received that information",
+   "Verifying at reasonable intervals that the hold instructions still apply",
+   "Requiring her to switch permanently to electronic delivery"
+  ],
+  "a": 3,
+  "w": [
+   "Wrong: written notice of alternatives to monitor the account is a required step.",
+   "Wrong: the firm must have the customer confirm receipt of the alternatives information.",
+   "Wrong: verifying at reasonable intervals that the hold instructions still apply is a required firm step.",
+   "Correct: nothing requires a permanent switch to electronic delivery; the hold is permitted for a valid reason like safety."
+  ]
+ },
+ {
+  "id": "11-x25",
+  "r": "11.6.1",
+  "k": "concept",
+  "d": 2,
+  "q": "Which of the following are TRUE under Regulation S-P?\nI. A privacy notice must be given before the customer enters an agreement to do business\nII. The notice must be provided annually thereafter\nIII. A customer may opt out of sharing with non-affiliated parties\nIV. A customer may opt out of sharing that is required in an IRS or anti-money laundering investigation",
+  "o": [
+   "II, III and IV only",
+   "I and II only",
+   "I, II and III only",
+   "I, II, III and IV"
+  ],
+  "a": 2,
+  "w": [
+   "Wrong: sharing legally required, such as for the IRS, cannot be opted out, and the opening notice is omitted.",
+   "Wrong: this omits the opt-out right for non-affiliated sharing, which the privacy notice must explain.",
+   "Correct: the notice is due before opening and annually, and customers may opt out of non-affiliate sharing but not legally required sharing.",
+   "Wrong: customers cannot opt out of legally required sharing, so the fourth statement is false."
+  ]
+ }
 ]

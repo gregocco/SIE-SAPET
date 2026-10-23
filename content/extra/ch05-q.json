@@ -1,17 +1,302 @@
 [
-  {"id":"5-x01","r":"5.1.6","k":"concept","d":3,"q":"Which of the following are true of dividends paid by a publicly traded REIT? I. They are taxed as ordinary income at the investor’s bracket. II. They qualify for the lower qualified-dividend rate after a 60-day holding period. III. They come from earnings on which the REIT itself pays no corporate tax. IV. The REIT pays corporate tax on every dollar it distributes.","o":["I only","I and III only","II and III only","II and IV only"],"a":1,"w":["Wrong: statement I is true, but statement III is also true, so naming I alone leaves out a correct item.","Correct: REIT dividends are taxed as ordinary income and come from earnings the REIT passes through untaxed at the corporate level.","Wrong: the lower qualified rate applies to traditional corporate dividends, never to REIT dividends, so statement II is false.","Wrong: a REIT that distributes the required earnings pays no corporate tax on them, so statement IV is false."]},
-  {"id":"5-x02","r":"5.1.1","k":"calc","d":3,"q":"A REIT has total assets of $120,000,000, gross income of $30,000,000, and taxable income of $9,000,000. Which set of figures satisfies all three IRS tests for pass-through status?","o":["$96,000,000 in real estate; $21,000,000 from rents and mortgage interest; $8,400,000 distributed","$92,000,000 in real estate; $23,000,000 from rents and mortgage interest; $8,400,000 distributed","$85,000,000 in real estate; $24,000,000 from rents and mortgage interest; $8,500,000 distributed","$95,000,000 in real estate; $24,000,000 from rents and mortgage interest; $7,500,000 distributed"],"a":1,"w":["Wrong: only 70% of gross income comes from rents or mortgage interest, which falls below the required 75% income test.","Correct: 92 of 120 is above 75% of assets, 23 of 30 is above 75% of gross income, and 8.4 of 9 exceeds 90% of taxable income.","Wrong: only about 71% of total assets is in real estate, which fails the 75% asset test even though the other figures pass.","Wrong: distributing $7,500,000 is about 83% of taxable income, below the required 90%, so the distribution test fails."]},
-  {"id":"5-x03","r":"5.1.1","k":"scenario","d":2,"q":"A publicly traded REIT’s properties lose value and the REIT reports a loss for the year. Which statement is correct?","o":["The loss is passed through to shareholders to offset their passive gains","The loss is reflected in a lower price per share on the exchange","The loss may be deducted by shareholders against their ordinary income","The loss obliges the REIT to redeem shares at net asset value"],"a":1,"w":["Wrong: REITs cannot pass through losses to investors, so shareholders have no passive loss to offset against gains.","Correct: because REITs cannot pass through losses, any losses are reflected in the price per share decreasing on the exchange.","Wrong: no loss is passed through at all, so nothing is available to deduct against ordinary income.","Wrong: publicly traded REIT shares trade on the market at a premium or discount to NAV and are not redeemed at NAV."]},
-  {"id":"5-x04","r":"5.2","k":"calc","d":3,"q":"A client receives a $30,000 passive loss from a direct participation program. Her other income this year is $12,000 of passive gains from another DPP, a $50,000 salary, and $9,000 of capital gains on stock. How much of the DPP loss can she use to offset this year’s income?","o":["$9,000","$12,000","$21,000","$30,000"],"a":1,"w":["Wrong: capital gains on stock are not passive gains, so they cannot be offset by passive losses from a DPP.","Correct: passive losses can offset only passive gains, and her only passive gains this year total $12,000.","Wrong: adding the capital gains to the passive gains is improper because passive losses cannot offset capital gains.","Wrong: the full loss could be used only if she had $30,000 of passive gains, and the salary cannot be sheltered."]},
-  {"id":"5-x05","r":"5.2","k":"concept","d":2,"q":"Which statement about choosing a direct participation program is correct?","o":["The primary factor should be tax benefit, because losses always exceed gains","The primary factor should be economic soundness, with tax benefits a secondary matter","Investors who pay little tax benefit most because losses are refunded","A guaranteed secondary market makes the investment liquid whenever needed"],"a":1,"w":["Wrong: the chapter says tax benefit should not be the primary reason to choose a DPP, since passive-loss use is limited.","Correct: economic soundness is the primary factor, though available tax benefits should still be used by the investor.","Wrong: investors who do not pay a lot of taxes generally should not invest in DPPs, as they cannot use the losses.","Wrong: DPPs are highly illiquid and there is no guarantee of a secondary market for the interests."]},
-  {"id":"5-x06","r":"5.2.1","k":"concept","d":3,"q":"Which of the following are true of an S corporation? I. Income and losses pass through to shareholders. II. The S corporation entity itself is not taxed. III. Shareholders are subject to double taxation on dividends. IV. It is treated as a type of DPP for small businesses.","o":["I and II only","I, II and IV only","II, III and IV only","I, III and IV only"],"a":1,"w":["Wrong: this list omits statement IV, since an S corporation is described as a type of DPP for small businesses.","Correct: an S corp passes through income and losses, is not taxed itself, and is a DPP for small businesses.","Wrong: statement III is false because double taxation applies to dividends from C corporations, not S corporations.","Wrong: statement III is false, because S corporation shareholders are taxed only once, at the shareholder level."]},
-  {"id":"5-x07","r":"5.2.3","k":"scenario","d":3,"q":"A limited partnership has two general partners, and one of them withdraws. The partnership agreement says nothing about continuing the business. The remaining general partner wants to carry on. What is the correct position?","o":["She may continue because she now holds all management authority","She may not continue unless the partnership agreement authorized continuation","She may continue if the limited partners are not told of the departure","The limited partners automatically become general partners and must continue"],"a":1,"w":["Wrong: holding all management authority does not override the restriction on continuing after another general partner departs.","Correct: a general partner cannot continue the partnership after another GP departs unless the agreement authorized that activity.","Wrong: concealing the departure from limited partners is not a permitted route and does not change the restriction.","Wrong: nothing in the chapter converts limited partners to general partners, who would then lose their limited liability."]},
-  {"id":"5-x08","r":"5.2.3","k":"concept","d":3,"q":"Limited partners may exercise the partnership democracy voting right for which of the following? I. Admitting a new general partner. II. Contesting a judgment against the general partner. III. Day-to-day management decisions. IV. Sale or refinancing of partnership property.","o":["I and II only","I, II and IV only","II, III and IV only","I, II, III and IV"],"a":1,"w":["Wrong: this list leaves out the sale or refinancing of partnership property, which is also a listed voting matter.","Correct: limited partners vote on admitting a new GP, contesting a GP judgment, and sale or refinancing of property.","Wrong: day-to-day decisions are excluded because limited partners play a passive role and have no management authority.","Wrong: including day-to-day management is incorrect since limited partners do not participate in those decisions."]},
-  {"id":"5-x09","r":"5.2.4","k":"calc","d":3,"q":"A limited partnership is dissolved and its assets raise $14,000,000. Secured lenders are owed $5,000,000, general creditors $6,000,000, the limited partners $4,000,000, and the general partner $2,000,000. How are the remaining proceeds distributed?","o":["Limited partners receive $3,000,000 and the general partner receives nothing","Limited partners receive $4,000,000 and the general partner receives nothing","Limited partners and the general partner share the $3,000,000 pro rata","Limited partners receive $1,000,000 and the general partner receives $2,000,000"],"a":0,"w":["Correct: lenders and creditors take $11,000,000 first, leaving $3,000,000 for limited partners, and the GP is last with nothing left.","Wrong: $4,000,000 would require $15,000,000 of proceeds, but only $3,000,000 remains after secured and general creditors.","Wrong: the order of priority is strict, with limited partners paid before the general partner rather than sharing pro rata.","Wrong: the general partner stands last in line, behind limited partners, so it cannot receive proceeds ahead of them."]},
-  {"id":"5-x10","r":"5.3.1","k":"concept","d":3,"q":"Which of the following are true of hedge fund regulation? I. Hedge funds are exempt from the Investment Company Act of 1940. II. Hedge funds have historically been exempt from ’33 Act registration through private placements to institutions and accredited investors. III. Hedge fund managers owe a fiduciary duty to fund investors. IV. Hedge funds are exempt from antifraud prohibitions.","o":["I and II only","I, II and III only","II, III and IV only","I, II, III and IV"],"a":1,"w":["Wrong: this omits statement III, since managers do owe a fiduciary duty to the investors in their funds.","Correct: hedge funds are exempt from the ’40 Act, historically from ’33 Act registration, and managers owe a fiduciary duty.","Wrong: statement IV is false, and statement I is also true, so this list is incorrect on both counts.","Wrong: statement IV is false because all hedge funds are subject to the same fraud prohibitions as other market participants."]},
-  {"id":"5-x11","r":"5.4.1","k":"calc","d":2,"q":"A private equity fund has invested capital of $75,000,000 and the manager’s compensation is 2% of invested capital plus 20% of profits. The fund earns profits of $10,000,000. What is the manager’s total compensation?","o":["$3,500,000","$2,000,000","$1,500,000","$16,500,000"],"a":0,"w":["Correct: a 2% fee on $75,000,000 is $1,500,000 and 20% of $10,000,000 profit is $2,000,000, totaling $3,500,000.","Wrong: this counts only the 20% performance share of profits and leaves out the 2% annual management fee.","Wrong: this counts only the 2% management fee on invested capital and leaves out the 20% share of profits.","Wrong: this wrongly takes 20% of invested capital rather than 20% of profits before adding the management fee."]},
-  {"id":"5-x12","r":"5.3.2","k":"scenario","d":2,"q":"A hedge fund trades through several executing firms and wants one bundled service from a bank that consolidates its trading positions across those firms. Which arrangement provides this?","o":["Prime brokerage account","Lock-up agreement","Partnership agreement","Private placement memorandum"],"a":0,"w":["Correct: banks and wealth management firms offer bundled services to hedge funds, including consolidating positions, through prime brokerage accounts.","Wrong: a lock-up is a period during which investors cannot withdraw from the fund, not a trading service.","Wrong: a partnership agreement defines partner roles and how the partnership functions, not trading consolidation.","Wrong: this is an offering document concept and does not consolidate trading positions among executing firms."]},
-  {"id":"5-x13","r":"5.3.3.1","k":"concept","d":2,"q":"Why does a hedge fund impose a lock-up period on investors?","o":["It lets investors withdraw monthly without restriction","It protects the majority of fund assets from liquidation and lets managers hold less cash","It guarantees investors a minimum return during the period","It exempts the fund from the Investment Company Act of 1940"],"a":1,"w":["Wrong: a lock-up does the opposite, since it bars withdrawals for a set period rather than allowing them freely.","Correct: the lock-up shields most assets from liquidation and allows portfolio managers to keep a lower amount of cash on hand.","Wrong: no return is guaranteed, and the lock-up is a liquidity restriction on withdrawals rather than a performance feature.","Wrong: the hedge fund’s exemption comes from its structure and private offering, not from imposing a lock-up."]},
-  {"id":"5-x14","r":"5.5.1","k":"concept","d":3,"q":"Which of the following are true of an investor holding an exchange-traded note? I. The ETN pays periodic interest. II. If the underlying equity falls, the investor receives principal at maturity, provided the issuer does not default. III. The investor shares in the upside of the underlying equity. IV. The investor is exposed to the credit risk of the issuer.","o":["I, II and III only","II, III and IV only","I, III and IV only","II and IV only"],"a":1,"w":["Wrong: statement I is false because ETNs do not pay interest, and statement IV is also true but omitted.","Correct: principal is returned at maturity absent default, the investor shares the upside, and issuer credit risk applies.","Wrong: statement I is false, since ETNs do not pay interest, and statement II is a true item that this list leaves out.","Wrong: statement III is also true, because the investor shares in the equity upside but not the downside."]},
-  {"id":"5-x15","r":"5.6.1","k":"concept","d":3,"q":"Which of the following are true of local government investment pools? I. They may be managed by government employees or an external investment-management firm. II. Cash is typically invested in securities allowed under state law. III. They are registered with the SEC under the Investment Company Act of 1940. IV. Fees paid by the pool reduce current returns and share values.","o":["I and II only","I, II and IV only","II, III and IV only","I, II, III and IV"],"a":1,"w":["Wrong: this leaves out statement IV, since fees paid from pool assets do reduce current returns and share values.","Correct: management may be internal or external, investments follow state law, and fees come out of pool assets.","Wrong: statement III is false and statement I is true, so this list is incorrect on both counts.","Wrong: statement III is false because LGIPs are municipal securities regulated by the MSRB, not SEC-registered under the ’40 Act."]}
+ {
+  "id": "5-x01",
+  "r": "5.1.6",
+  "k": "concept",
+  "d": 3,
+  "q": "Which of the following are true of dividends paid by a publicly traded REIT? I. They are taxed as ordinary income at the investor’s bracket. II. They qualify for the lower qualified-dividend rate after a 60-day holding period. III. They come from earnings on which the REIT itself pays no corporate tax. IV. The REIT pays corporate tax on every dollar it distributes.",
+  "o": [
+   "I and III only",
+   "II and III only",
+   "I only",
+   "II and IV only"
+  ],
+  "a": 0,
+  "w": [
+   "Correct: REIT dividends are taxed as ordinary income and come from earnings the REIT passes through untaxed at the corporate level.",
+   "Wrong: the lower qualified rate applies to traditional corporate dividends, never to REIT dividends, so statement II is false.",
+   "Wrong: statement I is true, but statement III is also true, so naming I alone leaves out a correct item.",
+   "Wrong: a REIT that distributes the required earnings pays no corporate tax on them, so statement IV is false."
+  ]
+ },
+ {
+  "id": "5-x02",
+  "r": "5.1.1",
+  "k": "calc",
+  "d": 3,
+  "q": "A REIT has total assets of $120,000,000, gross income of $30,000,000, and taxable income of $9,000,000. Which set of figures satisfies all three IRS tests for pass-through status?",
+  "o": [
+   "$96,000,000 in real estate; $21,000,000 from rents and mortgage interest; $8,400,000 distributed",
+   "$95,000,000 in real estate; $24,000,000 from rents and mortgage interest; $7,500,000 distributed",
+   "$92,000,000 in real estate; $23,000,000 from rents and mortgage interest; $8,400,000 distributed",
+   "$85,000,000 in real estate; $24,000,000 from rents and mortgage interest; $8,500,000 distributed"
+  ],
+  "a": 2,
+  "w": [
+   "Wrong: only 70% of gross income comes from rents or mortgage interest, which falls below the required 75% income test.",
+   "Wrong: distributing $7,500,000 is about 83% of taxable income, below the required 90%, so the distribution test fails.",
+   "Correct: 92 of 120 is above 75% of assets, 23 of 30 is above 75% of gross income, and 8.4 of 9 exceeds 90% of taxable income.",
+   "Wrong: only about 71% of total assets is in real estate, which fails the 75% asset test even though the other figures pass."
+  ]
+ },
+ {
+  "id": "5-x03",
+  "r": "5.1.1",
+  "k": "scenario",
+  "d": 2,
+  "q": "A publicly traded REIT’s properties lose value and the REIT reports a loss for the year. Which statement is correct?",
+  "o": [
+   "The loss is passed through to shareholders to offset their passive gains",
+   "The loss is reflected in a lower price per share on the exchange",
+   "The loss may be deducted by shareholders against their ordinary income",
+   "The loss obliges the REIT to redeem shares at net asset value"
+  ],
+  "a": 1,
+  "w": [
+   "Wrong: REITs cannot pass through losses to investors, so shareholders have no passive loss to offset against gains.",
+   "Correct: because REITs cannot pass through losses, any losses are reflected in the price per share decreasing on the exchange.",
+   "Wrong: no loss is passed through at all, so nothing is available to deduct against ordinary income.",
+   "Wrong: publicly traded REIT shares trade on the market at a premium or discount to NAV and are not redeemed at NAV."
+  ]
+ },
+ {
+  "id": "5-x04",
+  "r": "5.2",
+  "k": "calc",
+  "d": 3,
+  "q": "A client receives a $30,000 passive loss from a direct participation program. Her other income this year is $12,000 of passive gains from another DPP, a $50,000 salary, and $9,000 of capital gains on stock. How much of the DPP loss can she use to offset this year’s income?",
+  "o": [
+   "$9,000",
+   "$21,000",
+   "$30,000",
+   "$12,000"
+  ],
+  "a": 3,
+  "w": [
+   "Wrong: capital gains on stock are not passive gains, so they cannot be offset by passive losses from a DPP.",
+   "Wrong: adding the capital gains to the passive gains is improper because passive losses cannot offset capital gains.",
+   "Wrong: the full loss could be used only if she had $30,000 of passive gains, and the salary cannot be sheltered.",
+   "Correct: passive losses can offset only passive gains, and her only passive gains this year total $12,000."
+  ]
+ },
+ {
+  "id": "5-x05",
+  "r": "5.2",
+  "k": "concept",
+  "d": 2,
+  "q": "Which statement about choosing a direct participation program is correct?",
+  "o": [
+   "The primary factor should be economic soundness, with tax benefits a secondary matter",
+   "A guaranteed secondary market makes the investment liquid whenever needed",
+   "Investors who pay little tax benefit most because losses are refunded",
+   "The primary factor should be tax benefit, because losses always exceed gains"
+  ],
+  "a": 0,
+  "w": [
+   "Correct: economic soundness is the primary factor, though available tax benefits should still be used by the investor.",
+   "Wrong: DPPs are highly illiquid and there is no guarantee of a secondary market for the interests.",
+   "Wrong: investors who do not pay a lot of taxes generally should not invest in DPPs, as they cannot use the losses.",
+   "Wrong: the chapter says tax benefit should not be the primary reason to choose a DPP, since passive-loss use is limited."
+  ]
+ },
+ {
+  "id": "5-x06",
+  "r": "5.2.1",
+  "k": "concept",
+  "d": 3,
+  "q": "Which of the following are true of an S corporation? I. Income and losses pass through to shareholders. II. The S corporation entity itself is not taxed. III. Shareholders are subject to double taxation on dividends. IV. It is treated as a type of DPP for small businesses.",
+  "o": [
+   "I and II only",
+   "I, II and IV only",
+   "II, III and IV only",
+   "I, III and IV only"
+  ],
+  "a": 1,
+  "w": [
+   "Wrong: this list omits statement IV, since an S corporation is described as a type of DPP for small businesses.",
+   "Correct: an S corp passes through income and losses, is not taxed itself, and is a DPP for small businesses.",
+   "Wrong: statement III is false because double taxation applies to dividends from C corporations, not S corporations.",
+   "Wrong: statement III is false, because S corporation shareholders are taxed only once, at the shareholder level."
+  ]
+ },
+ {
+  "id": "5-x07",
+  "r": "5.2.3",
+  "k": "scenario",
+  "d": 3,
+  "q": "A limited partnership has two general partners, and one of them withdraws. The partnership agreement says nothing about continuing the business. The remaining general partner wants to carry on. What is the correct position?",
+  "o": [
+   "She may continue because she now holds all management authority",
+   "She may continue if the limited partners are not told of the departure",
+   "She may not continue unless the partnership agreement authorized continuation",
+   "The limited partners automatically become general partners and must continue"
+  ],
+  "a": 2,
+  "w": [
+   "Wrong: holding all management authority does not override the restriction on continuing after another general partner departs.",
+   "Wrong: concealing the departure from limited partners is not a permitted route and does not change the restriction.",
+   "Correct: a general partner cannot continue the partnership after another GP departs unless the agreement authorized that activity.",
+   "Wrong: nothing in the chapter converts limited partners to general partners, who would then lose their limited liability."
+  ]
+ },
+ {
+  "id": "5-x08",
+  "r": "5.2.3",
+  "k": "concept",
+  "d": 3,
+  "q": "Limited partners may exercise the partnership democracy voting right for which of the following? I. Admitting a new general partner. II. Contesting a judgment against the general partner. III. Day-to-day management decisions. IV. Sale or refinancing of partnership property.",
+  "o": [
+   "I and II only",
+   "II, III and IV only",
+   "I, II, III and IV",
+   "I, II and IV only"
+  ],
+  "a": 3,
+  "w": [
+   "Wrong: this list leaves out the sale or refinancing of partnership property, which is also a listed voting matter.",
+   "Wrong: day-to-day decisions are not a voting matter for passive limited partners, and this list also leaves out admitting a new general partner.",
+   "Wrong: including day-to-day management is incorrect since limited partners do not participate in those decisions.",
+   "Correct: limited partners vote on admitting a new GP, contesting a GP judgment, and sale or refinancing of property."
+  ]
+ },
+ {
+  "id": "5-x09",
+  "r": "5.2.4",
+  "k": "calc",
+  "d": 3,
+  "q": "A limited partnership is dissolved and its assets raise $14,000,000. Secured lenders are owed $5,000,000, general creditors $6,000,000, the limited partners $4,000,000, and the general partner $2,000,000. How are the remaining proceeds distributed?",
+  "o": [
+   "Limited partners receive $3,000,000 and the general partner receives nothing",
+   "Limited partners receive $4,000,000 and the general partner receives nothing",
+   "Limited partners and the general partner share the $3,000,000 pro rata",
+   "Limited partners receive $1,000,000 and the general partner receives $2,000,000"
+  ],
+  "a": 0,
+  "w": [
+   "Correct: lenders and creditors take $11,000,000 first, leaving $3,000,000 for limited partners, and the GP is last with nothing left.",
+   "Wrong: $4,000,000 would require $15,000,000 of proceeds, but only $3,000,000 remains after secured and general creditors.",
+   "Wrong: the order of priority is strict, with limited partners paid before the general partner rather than sharing pro rata.",
+   "Wrong: the general partner stands last in line, behind limited partners, so it cannot receive proceeds ahead of them."
+  ]
+ },
+ {
+  "id": "5-x10",
+  "r": "5.3.1",
+  "k": "concept",
+  "d": 3,
+  "q": "Which of the following are true of hedge fund regulation? I. Hedge funds are exempt from the Investment Company Act of 1940. II. Hedge funds have historically been exempt from ’33 Act registration through private placements to institutions and accredited investors. III. Hedge fund managers owe a fiduciary duty to fund investors. IV. Hedge funds are exempt from antifraud prohibitions.",
+  "o": [
+   "I and II only",
+   "I, II, III and IV",
+   "II, III and IV only",
+   "I, II and III only"
+  ],
+  "a": 3,
+  "w": [
+   "Wrong: this omits statement III, since managers do owe a fiduciary duty to the investors in their funds.",
+   "Wrong: statement IV is false because all hedge funds are subject to the same fraud prohibitions as other market participants.",
+   "Wrong: statement IV is false, and statement I is also true, so this list is incorrect on both counts.",
+   "Correct: hedge funds are exempt from the ’40 Act, historically from ’33 Act registration, and managers owe a fiduciary duty."
+  ]
+ },
+ {
+  "id": "5-x11",
+  "r": "5.4.1",
+  "k": "calc",
+  "d": 2,
+  "q": "A private equity fund has invested capital of $75,000,000 and the manager’s compensation is 2% of invested capital plus 20% of profits. The fund earns profits of $10,000,000. What is the manager’s total compensation?",
+  "o": [
+   "$2,000,000",
+   "$3,500,000",
+   "$1,500,000",
+   "$16,500,000"
+  ],
+  "a": 1,
+  "w": [
+   "Wrong: this counts only the 20% performance share of profits and leaves out the 2% annual management fee.",
+   "Correct: a 2% fee on $75,000,000 is $1,500,000 and 20% of $10,000,000 profit is $2,000,000, totaling $3,500,000.",
+   "Wrong: this counts only the 2% management fee on invested capital and leaves out the 20% share of profits.",
+   "Wrong: this wrongly takes 20% of invested capital rather than 20% of profits before adding the management fee."
+  ]
+ },
+ {
+  "id": "5-x12",
+  "r": "5.3.2",
+  "k": "scenario",
+  "d": 2,
+  "q": "A hedge fund trades through several executing firms and wants one bundled service from a bank that consolidates its trading positions across those firms. Which arrangement provides this?",
+  "o": [
+   "Private placement memorandum",
+   "Lock-up agreement",
+   "Prime brokerage account",
+   "Partnership agreement"
+  ],
+  "a": 2,
+  "w": [
+   "Wrong: this is an offering document concept and does not consolidate trading positions among executing firms.",
+   "Wrong: a lock-up is a period during which investors cannot withdraw from the fund, not a trading service.",
+   "Correct: banks and wealth management firms offer bundled services to hedge funds, including consolidating positions, through prime brokerage accounts.",
+   "Wrong: a partnership agreement defines partner roles and how the partnership functions, not trading consolidation."
+  ]
+ },
+ {
+  "id": "5-x13",
+  "r": "5.3.3.1",
+  "k": "concept",
+  "d": 2,
+  "q": "Why does a hedge fund impose a lock-up period on investors?",
+  "o": [
+   "It lets investors withdraw monthly without restriction",
+   "It guarantees investors a minimum return during the period",
+   "It protects the majority of fund assets from liquidation and lets managers hold less cash",
+   "It exempts the fund from the Investment Company Act of 1940"
+  ],
+  "a": 2,
+  "w": [
+   "Wrong: a lock-up does the opposite, since it bars withdrawals for a set period rather than allowing them freely.",
+   "Wrong: no return is guaranteed, and the lock-up is a liquidity restriction on withdrawals rather than a performance feature.",
+   "Correct: the lock-up shields most assets from liquidation and allows portfolio managers to keep a lower amount of cash on hand.",
+   "Wrong: the hedge fund’s exemption comes from its structure and private offering, not from imposing a lock-up."
+  ]
+ },
+ {
+  "id": "5-x14",
+  "r": "5.5.1",
+  "k": "concept",
+  "d": 3,
+  "q": "Which of the following are true of an investor holding an exchange-traded note? I. The ETN pays periodic interest. II. If the underlying equity falls, the investor receives principal at maturity, provided the issuer does not default. III. The investor shares in the upside of the underlying equity. IV. The investor is exposed to the credit risk of the issuer.",
+  "o": [
+   "II, III and IV only",
+   "I, II and III only",
+   "I, III and IV only",
+   "II and IV only"
+  ],
+  "a": 0,
+  "w": [
+   "Correct: principal is returned at maturity absent default, the investor shares the upside, and issuer credit risk applies.",
+   "Wrong: statement I is false because ETNs do not pay interest, and statement IV is also true but omitted.",
+   "Wrong: statement I is false, since ETNs do not pay interest, and statement II is a true item that this list leaves out.",
+   "Wrong: statement III is also true, because the investor shares in the equity upside but not the downside."
+  ]
+ },
+ {
+  "id": "5-x15",
+  "r": "5.6.1",
+  "k": "concept",
+  "d": 3,
+  "q": "Which of the following are true of local government investment pools? I. They may be managed by government employees or an external investment-management firm. II. Cash is typically invested in securities allowed under state law. III. They are registered with the SEC under the Investment Company Act of 1940. IV. Fees paid by the pool reduce current returns and share values.",
+  "o": [
+   "I and II only",
+   "I, II, III and IV",
+   "II, III and IV only",
+   "I, II and IV only"
+  ],
+  "a": 3,
+  "w": [
+   "Wrong: this leaves out statement IV, since fees paid from pool assets do reduce current returns and share values.",
+   "Wrong: statement III is false because LGIPs are municipal securities regulated by the MSRB, not SEC-registered under the ’40 Act.",
+   "Wrong: statement III is false and statement I is true, so this list is incorrect on both counts.",
+   "Correct: management may be internal or external, investments follow state law, and fees come out of pool assets."
+  ]
+ }
 ]

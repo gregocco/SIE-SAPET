@@ -1,17 +1,302 @@
 [
-  {"id":"3-x01","r":"3.1.2.1","k":"concept","d":2,"q":"Which of the following corporate bonds are backed by specific collateral? I. A bond backed by a portfolio of stocks the issuer owns in other companies II. A bond backed by a fleet of trucks III. A debenture IV. A bond backed by the issuer’s office buildings","o":["I and II only","I, II and IV only","II, III and IV only","I, II, III and IV"],"a":1,"w":["Wrong: this list leaves out the bond backed by real estate, which is also secured by specific collateral.","Correct: a collateral trust bond, an equipment trust obligation and a mortgage bond are all secured by specific assets.","Wrong: a debenture is unsecured and backed only by the good faith of the corporation, so it cannot be included.","Wrong: including the debenture is the error, since it has no pledged collateral behind it."]},
-  {"id":"3-x02","r":"3.1.2.3","k":"scenario","d":3,"q":"Hartwell Industries liquidates in bankruptcy. After secured bondholders are paid in full, the remaining assets cover only part of the claims of unsecured bondholders and general creditors. Which holders will receive nothing? I. Debenture holders II. Convertible bondholders III. Preferred stockholders IV. Common stockholders","o":["I and II only","III and IV only","II, III and IV only","I, II, III and IV"],"a":2,"w":["Wrong: debenture holders share with general creditors and receive a partial payment, so they do not get nothing.","Wrong: this omits convertible bondholders, who rank below unsecured creditors and are also unpaid here.","Correct: each class is paid in full before the next, so convertibles, preferred and common all receive nothing.","Wrong: debenture holders are in the class that still receives the remaining assets, so they are not wiped out."]},
-  {"id":"3-x03","r":"3.1.3.1","k":"calc","d":3,"q":"A $1,000 par convertible bond has a conversion price of $32 and trades at $1,150. The issuer’s common stock trades at $38. Ignoring commissions, the shares received on conversion are worth how much compared with the bond’s market price?","o":["$187.50 more","$37.50 less","$37.50 more","$215.63 more"],"a":2,"w":["Wrong: this compares the share value of $1,187.50 with par of $1,000 instead of with the bond’s market price.","Wrong: the sign is reversed; the shares are worth more than the bond’s market price, not less.","Correct: the ratio is $1,000 ÷ $32 = 31.25 shares, worth $1,187.50, which is $37.50 above $1,150.","Wrong: this wrongly divides the market price rather than par by the conversion price, but the ratio is always based on par."]},
-  {"id":"3-x04","r":"3.1.3","k":"concept","d":3,"q":"All of the following are true of convertible bonds EXCEPT:","o":["They typically pay a lower coupon than comparable nonconvertible bonds of the issuer","Their value can fall only to a level where the yield equals that of a comparable nonconvertible bond","They may trade more like equities than like traditional bonds","They are repaid ahead of the issuer’s unsecured creditors in a liquidation"],"a":3,"w":["Wrong: this is true, because the conversion feature lets the issuer pay a lower coupon than on nonconvertible debt.","Wrong: this is true, since the bond’s value is supported by its yield relative to a similar nonconvertible bond.","Wrong: this is true, because convertibles can be converted into stock and tend to follow the underlying shares.","Correct: convertibles rank with subordinated debt, behind unsecured creditors, so this statement is false."]},
-  {"id":"3-x05","r":"3.2.1.4","k":"calc","d":2,"q":"Thandi owns a TIPS with a 2% coupon rate. After CPI adjustments, the principal of each bond has risen to $1,050. What annual interest does each bond now generate?","o":["$20.00","$21.00","$50.00","$70.00"],"a":1,"w":["Wrong: this applies the coupon to the original $1,000 principal, ignoring the inflation adjustment to principal.","Correct: the coupon rate stays constant but is applied to the adjusted principal, so 2% × $1,050 = $21.","Wrong: $50 is the principal increase itself, not the interest paid on the adjusted principal.","Wrong: this adds the principal increase to the original coupon amount, which is not how TIPS interest works."]},
-  {"id":"3-x06","r":"3.2.3","k":"concept","d":3,"q":"Which of the following are true of Treasury bills? I. They are quoted on a discounted yield basis using a 360-day year II. The ask discount rate is higher than the bid discount rate III. The investor’s interest is the difference between the discounted purchase price and par at maturity IV. New bills are sold through single-price auctions held weekly","o":["I and III only","I, II and III only","I, III and IV only","II, III and IV only"],"a":2,"w":["Wrong: this omits the weekly single-price auction, which is also a true feature of new bill issuance.","Wrong: the bid discount is higher than the ask, so statement II is false and cannot be included.","Correct: bills are quoted on a 360-day discount basis, pay interest through the discount and are auctioned weekly.","Wrong: statement II is false because bill bid quotes are higher than ask quotes, and it also drops the quoting basis."]},
-  {"id":"3-x07","r":"3.5","k":"scenario","d":3,"q":"Maya lives in Colorado, a state that levies an income tax. Interest on which of her holdings is subject to Colorado income tax? I. A Treasury bond II. A Ginnie Mae certificate III. A corporate bond IV. A New York public purpose municipal bond","o":["I and IV only","II and III only","I, II and III only","II, III and IV only"],"a":3,"w":["Wrong: Treasury interest is exempt from state and local tax, so the Treasury bond should not be on this list.","Wrong: this omits the out-of-state municipal bond, whose interest is taxed by the investor’s home state.","Wrong: the Treasury bond is exempt from state and local income tax, so including it makes the list incorrect.","Correct: Ginnie Mae and corporate interest are fully taxable, and an out-of-state muni is state taxable, while Treasuries are exempt."]},
-  {"id":"3-x08","r":"3.4.5.1","k":"scenario","d":2,"q":"Ines buys a $10,000 par public purpose municipal bond with a 5% coupon for $9,400. After receiving one year of interest she sells it for $10,100. Which statement describes the federal tax treatment?","o":["The $500 of interest is exempt and the $700 gain is taxable","The entire $1,200 is exempt because the bond is a municipal","The $500 of interest is taxable and the $700 gain is exempt","Both amounts are taxable because the bond was sold before maturity"],"a":0,"w":["Correct: interest on public purpose munis is federally exempt, while capital gains from the sale are taxable.","Wrong: the tax benefit applies to interest income, not to capital gains generated from the sale of the bond.","Wrong: this reverses the treatment; the interest is the exempt portion and the capital gain is the taxable one.","Wrong: selling early does not make interest taxable; the interest remains exempt and only the gain is taxed."]},
-  {"id":"3-x09","r":"3.4.5.2","k":"concept","d":3,"q":"Which of the following statements about municipal bond taxation are true? I. The higher a state’s income tax, the greater the incentive for its residents to buy that state’s bonds II. States without an income tax must offer slightly higher yields to attract buyers III. Interest on Puerto Rico bonds is generally exempt from federal, state and local tax for residents of any state IV. A New York resident owes no New York income tax on a California public purpose bond","o":["I, II and III only","I and II only","II and III only","I, II and IV only"],"a":0,"w":["Correct: the first three are stated in the book, while the California bond interest is taxed by New York.","Wrong: this leaves out the territory bond statement, which is true because territory bonds are triple-tax-free anywhere.","Wrong: this omits the state income tax incentive statement, which is also true.","Wrong: statement IV is false because a New York resident owes New York tax on interest from a California bond."]},
-  {"id":"3-x10","r":"3.4.5.3","k":"scenario","d":2,"q":"Brookvale issues an industrial development revenue bond to build a plant that it leases to a private manufacturer. An analyst assessing the bond’s creditworthiness should focus mainly on:","o":["Brookvale’s property tax base and debt limit","The voter margin in the bond referendum","The manufacturer’s ability to make its lease payments","Brookvale’s general fund balance"],"a":2,"w":["Wrong: the bond is not backed by the town’s taxing power, so its property tax base is not the main concern.","Wrong: IDR bonds are revenue-type bonds that do not depend on voter approval to determine credit quality.","Correct: IDR debt is backed by the corporation’s lease payments, so the bond’s credit quality follows the company.","Wrong: the municipality’s general funds are not pledged; repayment comes from the corporation’s lease payments."]},
-  {"id":"3-x11","r":"3.3.2","k":"concept","d":3,"q":"Which of the following statements about CMOs and asset-backed securities are true? I. A CMO is structured by broker-dealers into tranches II. An ABS may be backed by credit card debt or aircraft leases III. A CMO is a direct obligation of the US Treasury IV. An ABS’s credit quality is directly related to the quality of the underlying loans and borrowers","o":["I and II only","II and IV only","I, II and III only","I, II and IV only"],"a":3,"w":["Wrong: this omits the statement on ABS credit quality, which is also true.","Wrong: this omits the statement that CMOs are structured by broker-dealers into tranches, which is also true.","Wrong: a CMO is structured by broker-dealers, not issued by the Treasury, so statement III is false.","Correct: CMOs are dealer-structured tranches, ABS can be backed by many asset types, and ABS credit follows the pooled assets."]},
-  {"id":"3-x12","r":"3.3.1","k":"concept","d":3,"q":"All of the following are true of mortgage-backed securities EXCEPT:","o":["When mortgage rates rise, prepayments accelerate and the securities mature sooner","They pass through monthly payments of interest and principal from the mortgage pool","Ginnie Mae securities carry the full faith and credit of the US government","When mortgage rates fall, expected maturity shortens and reinvestment rate risk rises"],"a":0,"w":["Correct: rising rates slow prepayments and extend maturity, so this statement is false and is the exception.","Wrong: this is true, since MBS pay monthly and pass through a share of both interest and principal.","Wrong: this is true, because GNMA is the agency issuer with explicit full faith and credit backing.","Wrong: this is true, since falling rates trigger refinancing, shorter maturity and reinvestment at lower rates."]},
-  {"id":"3-x13","r":"3.6.3","k":"concept","d":3,"q":"A banker’s acceptance differs from commercial paper because the banker’s acceptance:","o":["Is an unsecured promissory note issued at a discount by a corporation","Carries the liability of both the borrower and the guaranteeing bank","Is non-negotiable and cannot be sold before maturity","Typically has a maximum maturity of 270 days"],"a":1,"w":["Wrong: this describes commercial paper, which is unsecured corporate debt, not a bank-guaranteed instrument.","Correct: a banker’s acceptance is guaranteed by a bank, so the borrower and the bank are each liable at maturity.","Wrong: banker’s acceptances are negotiable and can usually be sold on the secondary market before maturity.","Wrong: the 270-day figure applies to commercial paper, while acceptances are typically 180 days or less."]},
-  {"id":"3-x14","r":"3.6.4","k":"scenario","d":3,"q":"A dealer sells Treasury securities to a bank for cash today, agreeing to repurchase them next week at a higher specified price. Which of the following are true? I. The dealer is engaged in a repo II. The bank is engaged in a reverse repo III. The higher repurchase price includes interest, so the arrangement resembles a short-term loan against collateral IV. When the Federal Reserve enters reverse repos, it temporarily adds reserve balances to the banking system","o":["I and II only","I, II and IV only","I, II and III only","II, III and IV only"],"a":2,"w":["Wrong: this omits the statement that the higher repurchase price makes the deal like a collateralized loan, which is true.","Wrong: statement IV is false because Fed reverse repos temporarily drain balances from the banking system.","Correct: the seller is in a repo, the buyer in a reverse repo, and the higher repurchase price includes interest.","Wrong: this excludes the dealer’s repo and includes the false claim that reverse repos add reserves."]},
-  {"id":"3-x15","r":"3.4.5.4","k":"calc","d":3,"q":"A 4.2% tax-free municipal bond and a 6.0% taxable corporate bond of similar quality give the same after-tax income to an investor in which federal tax bracket?","o":["18%","25%","35%","30%"],"a":3,"w":["Wrong: 18% is simply the 1.8 point yield difference, which has no connection to the tax-equivalent yield formula.","Wrong: at 25% the tax-equivalent yield is 4.2% ÷ 0.75 = 5.6%, which is below the 6.0% corporate yield.","Wrong: at 35% the tax-equivalent yield is 4.2% ÷ 0.65 = 6.46%, which exceeds the 6.0% corporate yield.","Correct: setting 4.2% ÷ (1 − rate) equal to 6.0% gives 1 − rate = 0.70, so the bracket is 30%."]}
+ {
+  "id": "3-x01",
+  "r": "3.1.2.1",
+  "k": "concept",
+  "d": 2,
+  "q": "Which of the following corporate bonds are backed by specific collateral? I. A bond backed by a portfolio of stocks the issuer owns in other companies II. A bond backed by a fleet of trucks III. A debenture IV. A bond backed by the issuer’s office buildings",
+  "o": [
+   "I and II only",
+   "I, II and IV only",
+   "II, III and IV only",
+   "I, II, III and IV"
+  ],
+  "a": 1,
+  "w": [
+   "Wrong: this list leaves out the bond backed by real estate, which is also secured by specific collateral.",
+   "Correct: a collateral trust bond, an equipment trust obligation and a mortgage bond are all secured by specific assets.",
+   "Wrong: a debenture is unsecured and backed only by the good faith of the corporation, so it cannot be included.",
+   "Wrong: including the debenture is the error, since it has no pledged collateral behind it."
+  ]
+ },
+ {
+  "id": "3-x02",
+  "r": "3.1.2.3",
+  "k": "scenario",
+  "d": 3,
+  "q": "Hartwell Industries liquidates in bankruptcy. After secured bondholders are paid in full, the remaining assets cover only part of the claims of unsecured bondholders and general creditors. Which holders will receive nothing? I. Debenture holders II. Convertible bondholders III. Preferred stockholders IV. Common stockholders",
+  "o": [
+   "I and II only",
+   "III and IV only",
+   "II, III and IV only",
+   "I, II, III and IV"
+  ],
+  "a": 2,
+  "w": [
+   "Wrong: debenture holders share with general creditors and receive a partial payment, so they do not get nothing.",
+   "Wrong: this omits convertible bondholders, who rank below unsecured creditors and are also unpaid here.",
+   "Correct: each class is paid in full before the next, so convertibles, preferred and common all receive nothing.",
+   "Wrong: debenture holders are in the class that still receives the remaining assets, so they are not wiped out."
+  ]
+ },
+ {
+  "id": "3-x03",
+  "r": "3.1.3.1",
+  "k": "calc",
+  "d": 3,
+  "q": "A $1,000 par convertible bond has a conversion price of $32 and trades at $1,150. The issuer’s common stock trades at $38. Ignoring commissions, the shares received on conversion are worth how much compared with the bond’s market price?",
+  "o": [
+   "$37.50 more",
+   "$37.50 less",
+   "$187.50 more",
+   "$215.63 more"
+  ],
+  "a": 0,
+  "w": [
+   "Correct: the ratio is $1,000 ÷ $32 = 31.25 shares, worth $1,187.50, which is $37.50 above $1,150.",
+   "Wrong: the sign is reversed; the shares are worth more than the bond’s market price, not less.",
+   "Wrong: this compares the share value of $1,187.50 with par of $1,000 instead of with the bond’s market price.",
+   "Wrong: this wrongly divides the market price rather than par by the conversion price, but the ratio is always based on par."
+  ]
+ },
+ {
+  "id": "3-x04",
+  "r": "3.1.3",
+  "k": "concept",
+  "d": 3,
+  "q": "All of the following are true of convertible bonds EXCEPT:",
+  "o": [
+   "They typically pay a lower coupon than comparable nonconvertible bonds of the issuer",
+   "Their value can fall only to a level where the yield equals that of a comparable nonconvertible bond",
+   "They may trade more like equities than like traditional bonds",
+   "They are repaid ahead of the issuer’s unsecured creditors in a liquidation"
+  ],
+  "a": 3,
+  "w": [
+   "Wrong: this is true, because the conversion feature lets the issuer pay a lower coupon than on nonconvertible debt.",
+   "Wrong: this is true, since the bond’s value is supported by its yield relative to a similar nonconvertible bond.",
+   "Wrong: this is true, because convertibles can be converted into stock and tend to follow the underlying shares.",
+   "Correct: convertibles rank with subordinated debt, behind unsecured creditors, so this statement is false."
+  ]
+ },
+ {
+  "id": "3-x05",
+  "r": "3.2.1.4",
+  "k": "calc",
+  "d": 2,
+  "q": "Thandi owns a TIPS with a 2% coupon rate. After CPI adjustments, the principal of each bond has risen to $1,050. What annual interest does each bond now generate?",
+  "o": [
+   "$20.00",
+   "$50.00",
+   "$21.00",
+   "$70.00"
+  ],
+  "a": 2,
+  "w": [
+   "Wrong: this applies the coupon to the original $1,000 principal, ignoring the inflation adjustment to principal.",
+   "Wrong: $50 is the principal increase itself, not the interest paid on the adjusted principal.",
+   "Correct: the coupon rate stays constant but is applied to the adjusted principal, so 2% × $1,050 = $21.",
+   "Wrong: this adds the principal increase to the original coupon amount, which is not how TIPS interest works."
+  ]
+ },
+ {
+  "id": "3-x06",
+  "r": "3.2.3",
+  "k": "concept",
+  "d": 3,
+  "q": "Which of the following are true of Treasury bills? I. They are quoted on a discounted yield basis using a 360-day year II. The ask discount rate is higher than the bid discount rate III. The investor’s interest is the difference between the discounted purchase price and par at maturity IV. New bills are sold through single-price auctions held weekly",
+  "o": [
+   "I and III only",
+   "I, III and IV only",
+   "I, II and III only",
+   "II, III and IV only"
+  ],
+  "a": 1,
+  "w": [
+   "Wrong: this omits the weekly single-price auction, which is also a true feature of new bill issuance.",
+   "Correct: bills are quoted on a 360-day discount basis, pay interest through the discount and are auctioned weekly.",
+   "Wrong: the bid discount is higher than the ask, so statement II is false and cannot be included.",
+   "Wrong: statement II is false because bill bid quotes are higher than ask quotes, and it also drops the quoting basis."
+  ]
+ },
+ {
+  "id": "3-x07",
+  "r": "3.5",
+  "k": "scenario",
+  "d": 3,
+  "q": "Maya lives in Colorado, a state that levies an income tax. Interest on which of her holdings is subject to Colorado income tax? I. A Treasury bond II. A Ginnie Mae certificate III. A corporate bond IV. A New York public purpose municipal bond",
+  "o": [
+   "I and IV only",
+   "II and III only",
+   "I, II and III only",
+   "II, III and IV only"
+  ],
+  "a": 3,
+  "w": [
+   "Wrong: Treasury interest is exempt from state and local tax, so the Treasury bond should not be on this list.",
+   "Wrong: this omits the out-of-state municipal bond, whose interest is taxed by the investor’s home state.",
+   "Wrong: the Treasury bond is exempt from state and local income tax, so including it makes the list incorrect.",
+   "Correct: Ginnie Mae and corporate interest are fully taxable, and an out-of-state muni is state taxable, while Treasuries are exempt."
+  ]
+ },
+ {
+  "id": "3-x08",
+  "r": "3.4.5.1",
+  "k": "scenario",
+  "d": 2,
+  "q": "Ines buys a $10,000 par public purpose municipal bond with a 5% coupon for $9,400. After receiving one year of interest she sells it for $10,100. Which statement describes the federal tax treatment?",
+  "o": [
+   "The $500 of interest is exempt and the $700 gain is taxable",
+   "The entire $1,200 is exempt because the bond is a municipal",
+   "The $500 of interest is taxable and the $700 gain is exempt",
+   "Both amounts are taxable because the bond was sold before maturity"
+  ],
+  "a": 0,
+  "w": [
+   "Correct: interest on public purpose munis is federally exempt, while capital gains from the sale are taxable.",
+   "Wrong: the tax benefit applies to interest income, not to capital gains generated from the sale of the bond.",
+   "Wrong: this reverses the treatment; the interest is the exempt portion and the capital gain is the taxable one.",
+   "Wrong: selling early does not make interest taxable; the interest remains exempt and only the gain is taxed."
+  ]
+ },
+ {
+  "id": "3-x09",
+  "r": "3.4.5.2",
+  "k": "concept",
+  "d": 3,
+  "q": "Which of the following statements about municipal bond taxation are true? I. The higher a state’s income tax, the greater the incentive for its residents to buy that state’s bonds II. States without an income tax must offer slightly higher yields to attract buyers III. Interest on Puerto Rico bonds is generally exempt from federal, state and local tax for residents of any state IV. A New York resident owes no New York income tax on a California public purpose bond",
+  "o": [
+   "I and II only",
+   "I, II and III only",
+   "II and III only",
+   "I, II and IV only"
+  ],
+  "a": 1,
+  "w": [
+   "Wrong: this leaves out the territory bond statement, which is true because territory bonds are triple-tax-free anywhere.",
+   "Correct: the first three are stated in the book, while the California bond interest is taxed by New York.",
+   "Wrong: this omits the state income tax incentive statement, which is also true.",
+   "Wrong: statement IV is false because a New York resident owes New York tax on interest from a California bond."
+  ]
+ },
+ {
+  "id": "3-x10",
+  "r": "3.4.5.3",
+  "k": "scenario",
+  "d": 2,
+  "q": "The town of Brookvale issues an industrial development revenue bond to build a plant that it leases to a private manufacturer. An analyst assessing the bond’s creditworthiness should focus mainly on:",
+  "o": [
+   "The manufacturer’s ability to make its lease payments",
+   "The voter margin in the bond referendum",
+   "The municipality’s property tax base and debt limit",
+   "The municipality’s general fund balance"
+  ],
+  "a": 0,
+  "w": [
+   "Correct: IDR debt is backed by the corporation’s lease payments, so the bond’s credit quality follows the company.",
+   "Wrong: a bond referendum relates to GO bonds and says nothing about the credit of a bond backed by lease payments.",
+   "Wrong: the bond is not backed by the municipality’s taxing power, so its tax base and debt limit are not the main concern.",
+   "Wrong: the municipality’s general funds are not pledged; repayment comes from the corporation’s lease payments."
+  ]
+ },
+ {
+  "id": "3-x11",
+  "r": "3.3.2",
+  "k": "concept",
+  "d": 3,
+  "q": "Which of the following statements about CMOs and asset-backed securities are true? I. A CMO is structured by broker-dealers into tranches II. An ABS may be backed by credit card debt or aircraft leases III. A CMO is a direct obligation of the US Treasury IV. An ABS’s credit quality is directly related to the quality of the underlying loans and borrowers",
+  "o": [
+   "I and II only",
+   "II and IV only",
+   "I, II and III only",
+   "I, II and IV only"
+  ],
+  "a": 3,
+  "w": [
+   "Wrong: this omits the statement on ABS credit quality, which is also true.",
+   "Wrong: this omits the statement that CMOs are structured by broker-dealers into tranches, which is also true.",
+   "Wrong: a CMO is structured by broker-dealers, not issued by the Treasury, so statement III is false.",
+   "Correct: CMOs are dealer-structured tranches, ABS can be backed by many asset types, and ABS credit follows the pooled assets."
+  ]
+ },
+ {
+  "id": "3-x12",
+  "r": "3.3.1",
+  "k": "concept",
+  "d": 3,
+  "q": "All of the following are true of mortgage-backed securities EXCEPT:",
+  "o": [
+   "Ginnie Mae securities carry the full faith and credit of the US government",
+   "They pass through monthly payments of interest and principal from the mortgage pool",
+   "When mortgage rates rise, prepayments accelerate and the securities mature sooner",
+   "When mortgage rates fall, expected maturity shortens and reinvestment rate risk rises"
+  ],
+  "a": 2,
+  "w": [
+   "Wrong: this is true, because GNMA is the agency issuer with explicit full faith and credit backing.",
+   "Wrong: this is true, since MBS pay monthly and pass through a share of both interest and principal.",
+   "Correct: rising rates slow prepayments and extend maturity, so this statement is false and is the exception.",
+   "Wrong: this is true, since falling rates trigger refinancing, shorter maturity and reinvestment at lower rates."
+  ]
+ },
+ {
+  "id": "3-x13",
+  "r": "3.6.3",
+  "k": "concept",
+  "d": 3,
+  "q": "A banker’s acceptance differs from commercial paper because the banker’s acceptance:",
+  "o": [
+   "Carries the liability of both the borrower and the guaranteeing bank",
+   "Is an unsecured promissory note issued at a discount by a corporation",
+   "Is non-negotiable and cannot be sold before maturity",
+   "Typically has a maximum maturity of 270 days"
+  ],
+  "a": 0,
+  "w": [
+   "Correct: a banker’s acceptance is guaranteed by a bank, so the borrower and the bank are each liable at maturity.",
+   "Wrong: this describes commercial paper, which is unsecured corporate debt, not a bank-guaranteed instrument.",
+   "Wrong: banker’s acceptances are negotiable and can usually be sold on the secondary market before maturity.",
+   "Wrong: the 270-day figure applies to commercial paper, while acceptances are typically 180 days or less."
+  ]
+ },
+ {
+  "id": "3-x14",
+  "r": "3.6.4",
+  "k": "scenario",
+  "d": 3,
+  "q": "A dealer sells Treasury securities to a bank for cash today, agreeing to repurchase them next week at a higher specified price. Which of the following are true? I. The dealer is engaged in a repo II. The bank is engaged in a reverse repo III. The higher repurchase price includes interest, so the arrangement resembles a short-term loan against collateral IV. When the Federal Reserve enters reverse repos, it temporarily adds reserve balances to the banking system",
+  "o": [
+   "I and II only",
+   "I, II and IV only",
+   "II, III and IV only",
+   "I, II and III only"
+  ],
+  "a": 3,
+  "w": [
+   "Wrong: this omits the statement that the higher repurchase price makes the deal like a collateralized loan, which is true.",
+   "Wrong: statement IV is false because Fed reverse repos temporarily drain balances from the banking system.",
+   "Wrong: this excludes the dealer’s repo and includes the false claim that reverse repos add reserves.",
+   "Correct: the seller is in a repo, the buyer in a reverse repo, and the higher repurchase price includes interest."
+  ]
+ },
+ {
+  "id": "3-x15",
+  "r": "3.4.5.4",
+  "k": "calc",
+  "d": 3,
+  "q": "A 4.2% tax-free municipal bond and a 6.0% taxable corporate bond of similar quality give the same after-tax income to an investor in which federal tax bracket?",
+  "o": [
+   "18%",
+   "25%",
+   "30%",
+   "35%"
+  ],
+  "a": 2,
+  "w": [
+   "Wrong: 18% is simply the 1.8 point yield difference, which has no connection to the tax-equivalent yield formula.",
+   "Wrong: at 25% the tax-equivalent yield is 4.2% ÷ 0.75 = 5.6%, which is below the 6.0% corporate yield.",
+   "Correct: setting 4.2% ÷ (1 − rate) equal to 6.0% gives 1 − rate = 0.70, so the bracket is 30%.",
+   "Wrong: at 35% the tax-equivalent yield is 4.2% ÷ 0.65 = 6.46%, which exceeds the 6.0% corporate yield."
+  ]
+ }
 ]

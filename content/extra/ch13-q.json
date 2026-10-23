@@ -1,0 +1,302 @@
+[
+ {
+  "id": "13-x01",
+  "r": "13.4",
+  "k": "concept",
+  "d": 2,
+  "q": "Which statements about state securities regulation are accurate? I. Blue sky laws are enforced by each state’s securities commissioner II. NASAA is a membership organization of state securities administrators III. Kansas was the first state to adopt a blue sky law IV. A rep needs state registration only in the firm’s home-office state",
+  "o": [
+   "I and II only",
+   "I, III and IV only",
+   "II, III and IV only",
+   "I, II and III only"
+  ],
+  "a": 3,
+  "w": [
+   "Wrong: this omits the Kansas statement, which is also true because Kansas adopted the first blue sky law in 1911.",
+   "Wrong: this relies on statement IV, which is false, and leaves out the true statement about NASAA.",
+   "Wrong: statement IV is false because reps must register in every state where they do securities business.",
+   "Correct: state commissioners enforce blue sky laws, NASAA represents state administrators, and Kansas was first; statement IV is false."
+  ]
+ },
+ {
+  "id": "13-x02",
+  "r": "13.1",
+  "k": "concept",
+  "d": 2,
+  "q": "A rep is found to have committed serious securities fraud. Which of the following can the SEC or FINRA do on its own? I. Censure the firm II. Revoke the rep’s registration III. Imprison the rep IV. Bring criminal charges against the rep",
+  "o": [
+   "I and II only",
+   "I, II and III only",
+   "II and IV only",
+   "I, II and IV only"
+  ],
+  "a": 0,
+  "w": [
+   "Correct: regulators can censure and revoke registrations, but they have no criminal authority to jail anyone or file criminal charges.",
+   "Wrong: imprisonment is outside regulators’ power; only criminal courts after charges from the attorney general can do that.",
+   "Wrong: bringing criminal charges is not a regulator’s power, and this answer also leaves out censure, which regulators can impose.",
+   "Wrong: criminal charges must come from the attorney general or law enforcement, not from the SEC or FINRA themselves."
+  ]
+ },
+ {
+  "id": "13-x03",
+  "r": "13.1.2",
+  "k": "scenario",
+  "d": 3,
+  "q": "A bank’s municipal securities dealer department and, separately, a municipal advisor both break MSRB rules. Which statement about discipline is correct?",
+  "o": [
+   "FINRA disciplines both because it enforces all MSRB rules",
+   "The Federal Reserve, OCC or FDIC enforces within the bank, and the SEC has authority over the municipal advisor",
+   "The MSRB itself disciplines both firms through its enforcement staff",
+   "Only the SEC may act, because banks fall outside MSRB rules entirely"
+  ],
+  "a": 1,
+  "w": [
+   "Wrong: FINRA enforces MSRB rules for securities firms, while banking regulators handle them inside banks.",
+   "Correct: banking regulators enforce MSRB rules within banks, and the SEC has enforcement authority over municipal advisors, securities firms and banks.",
+   "Wrong: the MSRB has rulemaking authority but no enforcement authority, so it cannot discipline anyone itself.",
+   "Wrong: banks that deal in municipal securities are subject to MSRB rules, enforced by the Federal Reserve, OCC and FDIC."
+  ]
+ },
+ {
+  "id": "13-x04",
+  "r": "13.3.1",
+  "k": "concept",
+  "d": 2,
+  "q": "All of the following are firm obligations connected with a new rep’s Form U4 EXCEPT:",
+  "o": [
+   "Ensuring the candidate’s good standing, experience and qualifications before filing",
+   "Implementing written procedures to verify the U4’s accuracy promptly after submission",
+   "Independently verifying all ten years of the candidate’s employment history",
+   "Designating a registered principal or corporate officer to oversee registration functions"
+  ],
+  "a": 2,
+  "w": [
+   "Wrong: ensuring good standing, experience and qualifications before filing is a stated firm obligation, so it is not the exception.",
+   "Wrong: written procedures to verify U4 accuracy promptly after submission are required, so this is not the exception.",
+   "Correct: only the three most recent years of employment history must be verified by the firm, not all ten years.",
+   "Wrong: Rule 1010 requires designating a registered principal or corporate officer to oversee registration, so this is a real duty."
+  ]
+ },
+ {
+  "id": "13-x05",
+  "r": "13.3.1",
+  "k": "calc",
+  "d": 2,
+  "q": "A firm files a candidate’s Form U4 on June 15, 2025. The candidate listed employment for the last ten years. Back to what date must the firm verify the employment history?",
+  "o": [
+   "June 15, 2015",
+   "June 15, 2020",
+   "June 15, 2022",
+   "June 15, 2024"
+  ],
+  "a": 2,
+  "w": [
+   "Wrong: June 15, 2015 is the full ten-year reporting window, but only the three most recent years must be verified by the firm.",
+   "Wrong: June 15, 2020 matches the five-year residential address history, not the employment verification period.",
+   "Correct: the firm must verify the three most recent years of employment, which reach back from June 15, 2025 to June 15, 2022.",
+   "Wrong: this covers only one year, but the firm must verify the three most recent years of employment."
+  ]
+ },
+ {
+  "id": "13-x06",
+  "r": "13.3.1.1",
+  "k": "concept",
+  "d": 2,
+  "q": "Which statements about the pre-dispute arbitration clause are correct? I. The rep gives up the right to sue and to a jury trial, except in special circumstances II. Awards are generally final and binding III. A customer is required to consent when opening an account IV. Claims above $100,000 need three arbitrators unless the parties agree in writing to one",
+  "o": [
+   "I and II only",
+   "I, II and III only",
+   "II, III and IV only",
+   "I, II and IV only"
+  ],
+  "a": 3,
+  "w": [
+   "Wrong: this leaves out the three-arbitrator rule for claims above $100,000, which is also correct.",
+   "Wrong: customers are not required to consent to the clause, so statement III makes this answer incorrect.",
+   "Wrong: statement III is false because a customer is not required to consent, and this answer also drops the true waiver statement.",
+   "Correct: the clause waives court and jury rights, awards are generally final, and larger claims need three arbitrators; customers need not consent."
+  ]
+ },
+ {
+  "id": "13-x07",
+  "r": "13.3.2",
+  "k": "calc",
+  "d": 2,
+  "q": "On April 20 a firm files Form U4s for four new hires: a trader, a receptionist with purely administrative duties, a silent-partner investor with no other involvement, and an operations employee who regularly handles customer money and securities. How many must be fingerprinted, and by when must the prints be received?",
+  "o": [
+   "Two people, by May 20",
+   "Two people, by April 30",
+   "Three people, by May 20",
+   "Four people, by May 20"
+  ],
+  "a": 0,
+  "w": [
+   "Correct: only the trader and the operations employee need prints, and 30 days after April 20 is May 20.",
+   "Wrong: the headcount is right, but the deadline is 30 days after the U4 filing, not ten days.",
+   "Wrong: a purely administrative employee and a silent partner who is not involved in securities activities are both exempt.",
+   "Wrong: requiring prints from everyone ignores the exemptions for purely administrative staff and uninvolved investor partners."
+  ]
+ },
+ {
+  "id": "13-x08",
+  "r": "13.3.3",
+  "k": "calc",
+  "d": 3,
+  "q": "Lena fails the Series 7 on March 1, retakes it on April 1 and fails, then retakes it on May 5 and fails again. What is the earliest date she may sit for it a fourth time?",
+  "o": [
+   "June 4",
+   "November 1",
+   "August 3",
+   "May 5 of the following year"
+  ],
+  "a": 1,
+  "w": [
+   "Wrong: June 4 applies the 30-day wait, which governs earlier failures but not three failures in succession.",
+   "Correct: after three failures in succession the wait is 180 calendar days, and 180 days after May 5 is November 1.",
+   "Wrong: August 3 is only 90 days after the third failure, shorter than the required 180 calendar days.",
+   "Wrong: a full year is longer than the 180 calendar days required after three consecutive failures."
+  ]
+ },
+ {
+  "id": "13-x09",
+  "r": "13.3.5.1",
+  "k": "scenario",
+  "d": 3,
+  "q": "Marta passed the Series 7 in 2016, long before the SIE existed. Her firm filed a Form U5 when she left in January 2020. She joins a new member firm in December 2021 and no regulatory action was ever taken against her. What is required to put her back to work?",
+  "o": [
+   "Retaking the Series 7 only, because she was out of the industry for almost two years",
+   "Retaking the SIE only, because she passed her Series 7 before October 1, 2018",
+   "No new exam; the new firm files an original Form U4 because she re-associated within two years",
+   "Retaking both the SIE and the Series 7, because her registration was terminated"
+  ],
+  "a": 2,
+  "w": [
+   "Wrong: the exam requirement applies only after more than two years away, and she returned in under two.",
+   "Wrong: she is exempt from the SIE because she passed a qualification exam before October 1, 2018 and her registration stayed valid.",
+   "Correct: re-association within two years through a new Form U4 keeps her qualification valid, and her pre-October 2018 exam keeps the SIE exemption.",
+   "Wrong: her registration did not lapse because she re-associated within two years, so no exam is needed at all."
+  ]
+ },
+ {
+  "id": "13-x10",
+  "r": "13.3.5",
+  "k": "calc",
+  "d": 2,
+  "q": "A firm terminates a registered rep on June 10. Which description of the obligations is correct?",
+  "o": [
+   "The firm files Form U5 by July 10, gives the rep a copy by July 10, and the rep keeps an address on file for five years",
+   "The firm files Form U5 by July 10, and a copy for the rep is not required",
+   "The firm files Form U5 by June 20, gives the rep a copy by July 10, and the rep keeps an address on file for two years",
+   "The firm files Form U5 by July 10, gives the rep a copy by July 10, and the rep keeps an address on file for two years"
+  ],
+  "a": 3,
+  "w": [
+   "Wrong: the terminated rep must keep the address updated for two years after termination, not five.",
+   "Wrong: the firm must give the departing rep a copy of the U5 within 30 days, so a copy is required.",
+   "Wrong: June 20 uses the 10-day deadline for statutory disqualification events, but the U5 is due within 30 days.",
+   "Correct: U5 and the rep’s copy are both due within 30 days, which is July 10, and address updates continue for two years."
+  ]
+ },
+ {
+  "id": "13-x11",
+  "r": "13.3.7",
+  "k": "concept",
+  "d": 3,
+  "q": "Which of the following can cause statutory disqualification? I. A temporary court injunction involving unlawful investment activities II. Suspension from membership in an SRO III. Arbitration that concludes with findings of sales practice violations IV. A pending customer complaint alleging misrepresentation with no finding yet",
+  "o": [
+   "I and II only",
+   "I, II and III only",
+   "II, III and IV only",
+   "I, II, III and IV"
+  ],
+  "a": 1,
+  "w": [
+   "Wrong: this leaves out arbitration or civil litigation concluding with sales practice violation findings, which is a listed cause.",
+   "Correct: injunctions, SRO suspension and adverse sales practice findings all disqualify, while an unresolved complaint is merely an allegation.",
+   "Wrong: a pending complaint with no finding is not a listed disqualifying event, and this also omits the injunction.",
+   "Wrong: an unresolved allegation is not a listed disqualifying event; the book requires an actual finding or conviction."
+  ]
+ },
+ {
+  "id": "13-x12",
+  "r": "13.3.7.1",
+  "k": "scenario",
+  "d": 3,
+  "q": "A rep is statutorily disqualified, and the firm wants to keep sponsoring her. Each of the following is true EXCEPT:",
+  "o": [
+   "If a waiver is granted, only routine supervision is needed",
+   "The firm may request a waiver from ineligibility from FINRA",
+   "The waiver request must describe the proposed terms of employment, with emphasis on supervision",
+   "The firm could instead file a Form U5 if it wished to end her association"
+  ],
+  "a": 0,
+  "w": [
+   "Correct: a granted waiver typically requires the firm to provide active and comprehensive supervision, not routine supervision.",
+   "Wrong: requesting a waiver from ineligibility is the route to continue the association, so this is a true statement.",
+   "Wrong: the request must give the terms and conditions of employment with emphasis on proposed supervision, so this is true.",
+   "Wrong: filing a U5 is the firm’s alternative to seeking a waiver, so this statement is true and not the exception."
+  ]
+ },
+ {
+  "id": "13-x13",
+  "r": "13.3.8.1",
+  "k": "scenario",
+  "d": 3,
+  "q": "A rep missed her Regulatory Element deadline and is CE inactive. Which are true? I. She may not perform duties requiring registration II. She may receive residual commissions on business completed before the inactive period III. She may not receive commissions on new business IV. She must immediately retake her qualification exam",
+  "o": [
+   "I, II and III only",
+   "I and II only",
+   "I, III and IV only",
+   "II and IV only"
+  ],
+  "a": 0,
+  "w": [
+   "Correct: CE inactive reps cannot perform registered duties or earn new-business compensation, but residual commissions on earlier business may be paid.",
+   "Wrong: this omits the ban on commissions for new business, which also applies while she is CE inactive.",
+   "Wrong: retaking the exam is required only after two years of inactivity, and this answer excludes the permitted residual commissions.",
+   "Wrong: the exam is not required immediately, and this answer leaves out that she cannot perform registered duties."
+  ]
+ },
+ {
+  "id": "13-x14",
+  "r": "13.5.2",
+  "k": "concept",
+  "d": 3,
+  "q": "Which of the following are NOT required to register as investment advisers? I. An accountant II. An adviser serving only the clients of one family III. A newsletter publisher making specific recommendations tailored to individuals IV. A registered rep whose advice is incidental and who receives no special compensation for it",
+  "o": [
+   "I and II only",
+   "II, III and IV only",
+   "I, II and IV only",
+   "I, III and IV only"
+  ],
+  "a": 2,
+  "w": [
+   "Wrong: this leaves out the rep whose advice is incidental with no special pay, who is also exempt.",
+   "Wrong: publishers who give tailored recommendations to individuals are required to register, and this answer also leaves out accountants.",
+   "Correct: accountants, single-family offices and reps giving incidental, uncompensated advice are exempt, but tailored newsletter publishers must register.",
+   "Wrong: the tailored newsletter publisher must register, so including that exemption makes this answer incorrect."
+  ]
+ },
+ {
+  "id": "13-x15",
+  "r": "13.3",
+  "k": "scenario",
+  "d": 3,
+  "q": "Which situations would amount to parking a registration? I. A retiring rep asks compliance to keep his Series 7 active in case he returns II. A firm sponsors an outside consultant it does not employ III. A rep on a three-month leave remains employed and keeps her licenses IV. A newly hired employee is sponsored on her start date",
+  "o": [
+   "I only",
+   "II and IV only",
+   "I, II and III only",
+   "I and II only"
+  ],
+  "a": 3,
+  "w": [
+   "Wrong: sponsoring someone the firm does not employ is also parking, so the answer is incomplete.",
+   "Wrong: sponsoring a newly hired employee is proper, and this answer omits the retiring rep’s request, which is parking.",
+   "Wrong: a rep on leave who stays employed and keeps her licenses is still employed, so this is not parking.",
+   "Correct: sponsoring anyone who is not duly employed by the firm is parking, whether a retiree keeping a license or an outside consultant."
+  ]
+ }
+]

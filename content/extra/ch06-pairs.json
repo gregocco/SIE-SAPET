@@ -24,12 +24,12 @@
     {"s":"The seller of the underlying must make good delivery of 100 shares when the option is exercised.","v":"a","w":"Equity option exercise requires delivery of shares, with the call seller or put buyer delivering the stock."}
   ]},
   {"title":"American vs European style","a":"American-style","b":"European-style","items":[
-    {"s":"The buyer may exercise on any business day up to and including expiration.","v":"a","w":"American-style contracts can be exercised any time the buyer chooses prior to the expiration date."},
+    {"s":"The buyer may exercise any time he chooses before the expiration date.","v":"a","w":"American-style contracts can be exercised any time the buyer chooses prior to the expiration date."},
     {"s":"The buyer may exercise only on the expiration date itself.","v":"b","w":"European-style contracts allow exercise solely on the expiration date, never before it."},
     {"s":"Most single stock options use this exercise style.","v":"a","w":"The book states that most single stock options are American-style, unlike many index options."},
     {"s":"Stock index options are often this exercise style.","v":"b","w":"Index options are frequently European-style, so they are exercised only on the expiration date."},
     {"s":"Options on the VIX volatility index use this exercise style.","v":"b","w":"The Knopman Note says VIX options have European-style exercises, meaning exercise only at expiration."},
-    {"s":"The holder’s exercise window runs from purchase through the expiration date.","v":"a","w":"Because exercise is allowed at any time before expiration, the holder controls timing across the contract’s life."}
+    {"s":"A call holder whose option goes deep in-the-money months before expiration may exercise right away.","v":"a","w":"Because exercise is allowed at any time before expiration, the holder controls timing across the contract’s life."}
   ]},
   {"title":"Intrinsic value vs Time value","a":"Intrinsic value","b":"Time value","items":[
     {"s":"The amount by which an option is in-the-money.","v":"a","w":"Intrinsic value measures how far the option is in-the-money, and it is zero when out-of-the-money."},
@@ -37,6 +37,6 @@
     {"s":"For a 60 call with the stock at $68, this component is $8.","v":"a","w":"A call’s intrinsic value is market value minus strike, which is $68 minus $60, or $8."},
     {"s":"For a 60 call quoted at 9.50 with the stock at $68, this component is $1.50.","v":"b","w":"Time value is the premium less intrinsic value, so $9.50 minus the $8 intrinsic value is $1.50."},
     {"s":"It reflects the remaining time to expiration and shrinks quickly in the final weeks.","v":"b","w":"Time value is highest with more time remaining and quickly declines as expiration approaches."},
-    {"s":"For a put, it equals the strike price minus the stock price, and can never be negative.","v":"a","w":"A put’s intrinsic value is strike less market value, with a floor of zero for out-of-the-money puts."}
+    {"s":"For an in-the-money put, it equals the strike price minus the stock price, and it is never negative.","v":"a","w":"A put’s intrinsic value is strike less market value, with a floor of zero for out-of-the-money puts."}
   ]}
 ]

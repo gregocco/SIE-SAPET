@@ -8,7 +8,6 @@
       {"s": "A holder of 100 shares with three seats open may cast all 300 of her votes for a single nominee.", "v": "b", "w": "Cumulative voting pools shares times seats into one pot that can be placed on one candidate."},
       {"s": "Each share votes once per seat, and votes may never be combined onto one director.", "v": "a", "w": "Under statutory voting each seat is a separate vote of one vote per share."},
       {"s": "The shareholder pools her total votes and may split them, such as 15 for one candidate and 5 for another.", "v": "b", "w": "Cumulative voting lets the holder allocate the pooled votes in any manner she chooses."},
-      {"s": "A holder of 200 shares and five open seats can never give one nominee more than 200 votes.", "v": "a", "w": "Statutory voting caps the votes for any one nominee at the number of shares owned."},
       {"s": "A holder of 200 shares and five open seats has a total pool of 1,000 votes to allocate.", "v": "b", "w": "The cumulative pool equals shares times open seats, here 200 times 5, which is 1,000 votes."},
       {"s": "With 10 shares and two seats, the holder may cast 10 votes for each of two directors but not 20 for one.", "v": "a", "w": "Statutory voting allows up to 10 votes for each seat and forbids moving votes between seats."}
     ]

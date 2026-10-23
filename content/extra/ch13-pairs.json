@@ -1,0 +1,56 @@
+[
+  {"title":"FINRA vs MSRB","a":"FINRA","b":"MSRB","items":[
+    {"s":"Enforces the MSRB’s rules against securities firms.","v":"a","w":"The MSRB has no enforcement power, so FINRA enforces its rules for securities firms."},
+    {"s":"Has rulemaking authority only and relies on other agencies to discipline violators.","v":"b","w":"The MSRB writes municipal rules but has no enforcement authority of its own."},
+    {"s":"Administers the continuing education program for the securities industry.","v":"a","w":"FINRA administers the Regulatory Element continuing education program on behalf of the industry."},
+    {"s":"Established in 1975 to govern participants in the municipal securities market.","v":"b","w":"The book states the MSRB was established in 1975 for the municipal securities market."},
+    {"s":"Runs dispute-resolution forums, including arbitration, for investors and member firms.","v":"a","w":"Administering dispute-resolution forums is one of the listed FINRA roles in the chapter."},
+    {"s":"Cannot regulate New York City as a bond issuer, only firms and professionals.","v":"b","w":"The MSRB regulates municipal securities firms and professionals, never the municipal issuers themselves."},
+    {"s":"Performs market regulation for exchanges such as Nasdaq.","v":"a","w":"Market regulation for various exchanges, including Nasdaq, is one of the listed FINRA roles."}
+  ]},
+  {"title":"Form U4 vs Form U5","a":"Form U4","b":"Form U5","items":[
+    {"s":"Collects five years of residential history and ten years of employment history.","v":"a","w":"The U4 gathers background information such as address and employment history on the candidate."},
+    {"s":"Filed by the firm within 30 calendar days after a registered rep is terminated.","v":"b","w":"A firm must file the U5 with FINRA within 30 calendar days of termination."},
+    {"s":"Contains the pre-dispute arbitration agreement signed by the registered representative.","v":"a","w":"FINRA Rule 2263 requires the arbitration clause to be signed as part of the U4."},
+    {"s":"A copy must be given to the departing rep within 30 days.","v":"b","w":"The firm must give the terminated rep a copy of the U5 within 30 days."},
+    {"s":"Filed by a new employer when a long-inactive rep is hired and relicensed.","v":"a","w":"A rep returning after years away needs an original U4 filed by the hiring firm."},
+    {"s":"Must be updated when the firm learns a former rep violated securities regulations.","v":"b","w":"The firm must update the former employee’s U5 even though the person has already left."},
+    {"s":"Submitted with fingerprints and fees when a firm sponsors a new associated person.","v":"a","w":"After membership approval, the firm submits a U4, fingerprints and fees for each registered person."}
+  ]},
+  {"title":"Regulatory Element vs Firm Element","a":"Regulatory Element","b":"Firm Element","items":[
+    {"s":"Missing it makes the registration CE inactive.","v":"a","w":"Failure to complete the Regulatory Element, unlike the Firm Element, produces CE inactive status."},
+    {"s":"The firm performs an annual needs analysis and writes a training plan.","v":"b","w":"The needs analysis and written training plan are core Firm Element obligations of the broker-dealer."},
+    {"s":"Computer-based training administered by FINRA, due on or before December 31st.","v":"a","w":"FINRA administers this computer-based program with a year-end December 31st annual deadline."},
+    {"s":"Content is not defined or approved by FINRA or other regulators.","v":"b","w":"The firm’s own training plan content is not defined or approved by regulators."},
+    {"s":"The annual needs analysis weighs the size and scope of the business, products offered and customer complaints.","v":"b","w":"The firm considers these factors in its needs analysis; failure to complete the Firm Element brings discipline, not CE inactive status."},
+    {"s":"A rep may not earn new commissions while delinquent in completing it.","v":"a","w":"A CE inactive person cannot receive compensation for activities requiring registration, such as commissions."},
+    {"s":"Two years of non-completion leads to administrative termination of the registration.","v":"a","w":"After two years CE inactive, the registration is terminated and the exam must be retaken."}
+  ]},
+  {"title":"30 days vs 10 days","a":"30 calendar days","b":"10 calendar days","items":[
+    {"s":"Deadline for fingerprints to be received after the Form U4 is filed.","v":"a","w":"Fingerprints are due within 30 days after the U4 or status becomes Inactive Prints."},
+    {"s":"A firm reports a statutory disqualifying event to FINRA on an amended U4.","v":"b","w":"Reportable events involving statutory disqualification must reach CRD within 10 calendar days."},
+    {"s":"A firm files Form U5 after a registered rep’s termination.","v":"a","w":"The U5 notice is due within 30 calendar days of termination."},
+    {"s":"Amended U4 reporting a rep’s suspension from membership in an SRO.","v":"b","w":"Suspension from an SRO is a statutory disqualification event, which must be disclosed within 10 days."},
+    {"s":"Amended U4 after a rep changes her residential address.","v":"a","w":"Normal updates such as a new address must be filed within 30 calendar days."},
+    {"s":"Amended U4 after a rep begins a paid seat on a company’s board.","v":"a","w":"An outside business activity requires an amended U4 within the normal 30 days."},
+    {"s":"Amended U4 reporting a felony conviction within the last ten years.","v":"b","w":"A felony conviction causes statutory disqualification, which must be reported within 10 calendar days."}
+  ]},
+  {"title":"Statutory disqualification: yes or no","a":"Disqualifies","b":"Does not disqualify","items":[
+    {"s":"A rep is convicted of a felony three years ago.","v":"a","w":"Felony convictions within the last 10 years cause statutory disqualification."},
+    {"s":"A rep is arrested for a felony; the case is pending with no conviction.","v":"b","w":"Arrests alone are not disqualifying; only convictions count, though compliance should be notified."},
+    {"s":"A rep is convicted of a bribery misdemeanor two years ago.","v":"a","w":"Misdemeanors involving bribery, fraud or extortion within 10 years cause statutory disqualification."},
+    {"s":"A court issues a permanent injunction against a person over unlawful investment activities.","v":"a","w":"Temporary and permanent injunctions involving unlawful investment activities disqualify at any time."},
+    {"s":"A rep legally changes her name after marriage.","v":"b","w":"A name change only requires an amended U4 and has no disqualifying effect."},
+    {"s":"The SEC finds that a person willfully violated federal securities laws.","v":"a","w":"Findings of willful violations of federal securities laws are listed disqualifying events."},
+    {"s":"A tax lien is filed against a registered rep.","v":"b","w":"A lien requires an amended U4 but is not on the statutory disqualification list."}
+  ]},
+  {"title":"Investment adviser vs BD rep","a":"Investment adviser","b":"Broker-dealer rep","items":[
+    {"s":"Owes a fiduciary duty to act in the client’s best interest.","v":"a","w":"Advisers are fiduciaries because their business is providing advice to clients."},
+    {"s":"Subject to a suitability standard for all recommendations.","v":"b","w":"Broker-dealer representatives are not fiduciaries; recommendations must simply be suitable for the customer."},
+    {"s":"Typically charges a percentage of assets under management for advice.","v":"a","w":"Advisers charge for advice, typically as a percentage of assets under management."},
+    {"s":"Typically earns commissions on the transactions it executes.","v":"b","w":"Broker-dealers charge for executed transactions rather than for advice."},
+    {"s":"With over $100 million under management, files Form ADV with the SEC.","v":"a","w":"Larger advisers register with the SEC by filing Form ADV."},
+    {"s":"Advice is incidental to the main business, with no special compensation for it.","v":"b","w":"Incidental advice without special pay keeps broker-dealers and reps exempt from adviser registration."},
+    {"s":"With under $100 million under management, registers directly with each state it operates in.","v":"a","w":"Smaller advisers register with state securities commissions rather than with the SEC."}
+  ]}
+]

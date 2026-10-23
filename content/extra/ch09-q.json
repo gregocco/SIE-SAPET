@@ -1,0 +1,302 @@
+[
+ {
+  "id": "9-x01",
+  "r": "9.3.3.1",
+  "k": "concept",
+  "d": 3,
+  "q": "Which of the following are obligations of a Nasdaq market maker?\nI. Quote a firm, two-sided market of at least one round lot\nII. Refresh its quote after each trade execution\nIII. Post only a bid when it does not wish to sell\nIV. Stand ready to trade at its quotes during normal market hours",
+  "o": [
+   "I and II only",
+   "II, III and IV only",
+   "I, II and IV only",
+   "I, III and IV only"
+  ],
+  "a": 2,
+  "w": [
+   "Wrong: this is incomplete because it omits the obligation to stand ready to trade at quoted prices throughout normal market hours.",
+   "Wrong: this wrongly includes one-sided quoting, which is not allowed on Nasdaq, and omits the minimum round lot quote requirement.",
+   "Correct: firm two-sided quotes of at least one round lot, refreshed after each execution and honored during market hours, are all market maker duties.",
+   "Wrong: this includes a one-sided bid, but Nasdaq quotes must be two-sided, and it also omits the duty to refresh quotes after each trade."
+  ]
+ },
+ {
+  "id": "9-x02",
+  "r": "9.3.1",
+  "k": "scenario",
+  "d": 2,
+  "q": "The management of a listed company believes its common stock is undervalued by the market. Which action is described in the chapter as consistent with that belief?",
+  "o": [
+   "Repurchasing shares in the open market",
+   "Asking market makers to raise their quotes on the stock",
+   "Selling additional shares to the public in the primary market",
+   "Moving the stock to the OTC Pink to reduce disclosure"
+  ],
+  "a": 0,
+  "w": [
+   "Correct: the Knopman Note says a company that believes its stock is undervalued may repurchase shares in the open market.",
+   "Wrong: asking market makers to adjust quotes is an attempt to coordinate or influence prices, which the anti-coordination rules prohibit.",
+   "Wrong: issuing more shares would sell stock the company thinks is cheap and does not reflect a belief that the stock is undervalued.",
+   "Wrong: relocating to the OTC Pink is not a response to undervaluation and would typically reduce liquidity and available information."
+  ]
+ },
+ {
+  "id": "9-x03",
+  "r": "9.3.4.1",
+  "k": "concept",
+  "d": 3,
+  "q": "Which of the following are true of an issuer whose equity is quoted on the OTC Bulletin Board?\nI. It has registered its shares under the ’33 Act\nII. It makes ongoing 10-K and 10-Q filings\nIII. It need not meet a minimum stock price\nIV. It is exempt from filing periodic reports with the SEC",
+  "o": [
+   "I and II only",
+   "I, II and III only",
+   "II, III and IV only",
+   "I, II, III and IV"
+  ],
+  "a": 1,
+  "w": [
+   "Wrong: this omits the point that OTCBB issuers face no minimum stock price or minimum shareholder count, unlike exchange-listed companies.",
+   "Correct: OTCBB issuers have registered under the ’33 Act, keep filing 10-Ks and 10-Qs, and face no minimum price or shareholder requirement.",
+   "Wrong: the OTCBB requires current SEC reports; the exemption from periodic reports describes OTC Pink, and this choice also drops the registration point.",
+   "Wrong: statement IV describes OTC Pink issuers, because OTCBB issuers must file current financial reports with the SEC."
+  ]
+ },
+ {
+  "id": "9-x04",
+  "r": "9.4.2",
+  "k": "concept",
+  "d": 2,
+  "q": "A market order is generally appropriate in all of the following situations EXCEPT:",
+  "o": [
+   "A purchase where the customer wants to ensure the order executes",
+   "A sale where the customer values immediate execution over an exact price",
+   "A small purchase of a heavily traded stock when speed matters most",
+   "A large order in a thinly traded security where a specific price is required"
+  ],
+  "a": 3,
+  "w": [
+   "Wrong: a market order assures execution, so it suits a customer whose priority is making sure the trade is completed.",
+   "Wrong: a market order suits a customer who prioritizes immediate execution, since the price is simply the best available.",
+   "Wrong: small trades in liquid stocks are exactly where market orders work best because immediate execution matters more than price.",
+   "Correct: market orders work poorly for large trades, illiquid securities, or when a specific price is desired, so a limit order would fit better."
+  ]
+ },
+ {
+  "id": "9-x05",
+  "r": "9.5.9",
+  "k": "scenario",
+  "d": 3,
+  "q": "A broker-dealer’s trading desk learns of a soon-to-be-released research report on Acme Corp. Before publication, a customer calls to buy 400 shares of Acme at the market. How should the firm handle the customer order?",
+  "o": [
+   "Fill it from the firm’s inventory as principal, charging a mark-up",
+   "Place it on an agency basis rather than as principal",
+   "Refuse the order until the report has been published",
+   "Buy shares for the firm first, then sell them to the customer"
+  ],
+  "a": 1,
+  "w": [
+   "Wrong: with advance knowledge of nonpublic research the firm may not trade from its own inventory, so a principal fill is improper.",
+   "Correct: if the firm has nonpublic advance information from a research report, it must place customer orders on an agency basis, not as principal.",
+   "Wrong: the rule focuses on the firm’s own inventory trading and does not require refusing the customer order outright.",
+   "Wrong: buying for the firm’s own account ahead of the report is exactly the inventory trading the rule on research reports prohibits."
+  ]
+ },
+ {
+  "id": "9-x06",
+  "r": "9.5.8",
+  "k": "scenario",
+  "d": 3,
+  "q": "A broker-dealer holds an unexecuted customer limit order and then trades for its own account at a price equal to that limit. Under FINRA’s rule on trading ahead of customer orders, which of the following would NOT be a violation?\nI. The trader was unaware of the customer’s order\nII. The customer is an institution that received written disclosure at account opening\nIII. The customer is a retail client who verbally agreed over the phone\nIV. The firm immediately fills the customer at the same or better price for at least the same shares",
+  "o": [
+   "I, II and IV only",
+   "II and III only",
+   "I and II only",
+   "I, II, III and IV"
+  ],
+  "a": 0,
+  "w": [
+   "Correct: lack of awareness, written disclosure to an institutional client, and a prompt same-or-better fill for at least the same shares are all acceptable.",
+   "Wrong: the verbal agreement of a retail client is not an exception, since only institutions with written disclosure are excluded.",
+   "Wrong: this leaves out the case where the firm promptly fills the customer at the same or better price, which also satisfies the rule.",
+   "Wrong: a retail client’s verbal agreement does not remove the prohibition, so including statement III makes this choice incorrect."
+  ]
+ },
+ {
+  "id": "9-x07",
+  "r": "9.3.2.1",
+  "k": "concept",
+  "d": 3,
+  "q": "Which of the following describe the role of a designated market maker (DMM) on the NYSE?\nI. Directs and supervises trading on the floor\nII. Reviews trading data from both physical and electronic venues\nIII. Provides participants with accurate liquidity and pricing data\nIV. Competes with several other DMMs assigned to the same stock",
+  "o": [
+   "I and II only",
+   "I, III and IV only",
+   "II, III and IV only",
+   "I, II and III only"
+  ],
+  "a": 3,
+  "w": [
+   "Wrong: this is incomplete because DMMs also provide market participants with accurate, up-to-date liquidity and pricing data.",
+   "Wrong: statement IV describes the competing market makers found on Nasdaq, whereas each NYSE security has only one DMM.",
+   "Wrong: statement IV is false, since exactly one DMM is assigned to each NYSE-listed security, and this choice also omits floor supervision.",
+   "Correct: DMMs supervise floor trading, review physical and electronic trading data, and give participants accurate liquidity and pricing information."
+  ]
+ },
+ {
+  "id": "9-x08",
+  "r": "9.2.1.1",
+  "k": "calc",
+  "d": 3,
+  "q": "A customer sells 250 shares to a dealer that buys for its own inventory. The market value is $40.00 per share and the dealer pays $38.60 per share. What does the firm earn on the trade, and how is it characterized?",
+  "o": [
+   "A $350 commission, about 3.5% of market value",
+   "A $350 mark-up, about 3.5% of market value",
+   "A $350 mark-down, about 3.5% of market value, with no commission",
+   "A $1.40 per share mark-down, about 7% of market value"
+  ],
+  "a": 2,
+  "w": [
+   "Wrong: commissions are charged on agency trades, while a dealer buying for its own account earns a mark-down and no commission.",
+   "Wrong: a mark-up applies when the dealer sells to a customer, but here the dealer is buying, so the charge is a mark-down.",
+   "Correct: $1.40 times 250 shares equals $350, which is 3.5% of market value; a dealer buying earns a mark-down and charges no commission.",
+   "Wrong: the $1.40 difference is 3.5% of the $40.00 market value, not 7%, so the percentage in this choice is miscalculated."
+  ]
+ },
+ {
+  "id": "9-x09",
+  "r": "9.4.5",
+  "k": "calc",
+  "d": 3,
+  "q": "A stock trades at $38. A customer holds three open GTC orders: a buy limit at $36.00 marked do not reduce (DNR), a sell stop at $33.50 with no DNR, and a sell limit at $41.00. The stock goes ex-dividend with a $0.90 cash dividend. What are the orders on the ex-date?",
+  "o": [
+   "Buy limit $35.10, sell stop $32.60, sell limit $41.00",
+   "Buy limit $35.10, sell stop $33.50, sell limit $41.00",
+   "Buy limit $36.00, sell stop $33.50, sell limit $40.10",
+   "Buy limit $36.00, sell stop $32.60, sell limit $41.00"
+  ],
+  "a": 3,
+  "w": [
+   "Wrong: the buy limit carries a DNR instruction, so its price is not reduced even though it is entered below the market.",
+   "Wrong: this reduces the DNR buy limit and leaves the sell stop untouched, which reverses the correct treatment of each order.",
+   "Wrong: the sell stop is entered below the market without DNR and must be reduced, while sell limits above the market are never reduced.",
+   "Correct: the DNR buy limit stays at $36.00, the unmarked sell stop falls by $0.90 to $32.60, and the sell limit above the market is unchanged."
+  ]
+ },
+ {
+  "id": "9-x10",
+  "r": "9.1.1",
+  "k": "calc",
+  "d": 3,
+  "q": "Price manipulation in a stock occurred on January 10, 2023, and an injured investor discovered it on November 1, 2025. Under the statute of limitations in the chapter, by when must the investor sue?",
+  "o": [
+   "By January 10, 2027, which is four years after the manipulation",
+   "By November 1, 2026, which is one year after discovery",
+   "By January 10, 2026, which is three years after the manipulation",
+   "There is no deadline because the manipulation was discovered late"
+  ],
+  "a": 2,
+  "w": [
+   "Wrong: the chapter provides a three-year outer limit from the manipulative activity, not four years.",
+   "Wrong: the one-year discovery period must also fit inside the three-year limit, so this later date is cut off by the outer limit.",
+   "Correct: suit must come within three years of the act and within one year of discovery, so the earlier deadline, January 10, 2026, controls.",
+   "Wrong: late discovery does not remove the deadline, since both the three-year and one-year time limits apply."
+  ]
+ },
+ {
+  "id": "9-x11",
+  "r": "9.5.6",
+  "k": "scenario",
+  "d": 3,
+  "q": "Which of the following would NOT violate FINRA’s rule on payments for market making?",
+  "o": [
+   "An issuer’s affiliate gives shares to the firm in return for publishing a quote",
+   "A firm independently decides to make a market in a stock based on legitimate business reasons",
+   "A promoter pays the trader’s family member to induce the firm to quote a stock",
+   "An issuer pays cash to the firm so that it will act as a market maker"
+  ],
+  "a": 1,
+  "w": [
+   "Wrong: payments from an issuer’s affiliate, including securities, are covered and create a conflict of interest in the firm’s quoting decision.",
+   "Correct: the decision to make a market must rest on valid and legitimate reasons, which is what the rule requires, so no payment is involved.",
+   "Wrong: indirect payments from promoters also count, since the rule bars direct or indirect payments in return for quoting or market making.",
+   "Wrong: cash from an issuer for acting as market maker is the central example of a prohibited payment under Rule 5250."
+  ]
+ },
+ {
+  "id": "9-x12",
+  "r": "9.5.1",
+  "k": "concept",
+  "d": 3,
+  "q": "Which of the following are true of a firm’s best execution obligation?\nI. It applies to agency trades\nII. It applies to principal trades\nIII. Firms must regularly review their procedures for meeting it\nIV. Price is the only factor a firm may consider",
+  "o": [
+   "I, II and III only",
+   "I and II only",
+   "II and IV only",
+   "I, III and IV only"
+  ],
+  "a": 0,
+  "w": [
+   "Correct: best execution applies to both agency and principal trades, and firms must regularly and rigorously review their procedures.",
+   "Wrong: this omits the requirement that firms regularly and rigorously review their procedures for meeting the best execution duty.",
+   "Wrong: statement IV is false because factors such as volatility and liquidity may be considered, and this choice leaves out agency trades.",
+   "Wrong: statement IV is false since price is often the key factor but not the only one, and this choice also ignores principal trades."
+  ]
+ },
+ {
+  "id": "9-x13",
+  "r": "9.2.1.4",
+  "k": "concept",
+  "d": 3,
+  "q": "A firm is setting its commission on an agency trade. Which of the following must it take into account?\nI. The type of security involved\nII. The firm’s entitlement to earn a profit\nIII. The dollar size of the transaction\nIV. The expense involved in filling the order",
+  "o": [
+   "I and III only",
+   "II, III and IV only",
+   "I, III and IV only",
+   "I, II, III and IV"
+  ],
+  "a": 2,
+  "w": [
+   "Wrong: this omits the expense of filling the order, which is also one of the factors in setting a reasonable commission.",
+   "Wrong: the firm’s entitlement to a profit is a factor for principal trades only and is not used to determine an agency commission.",
+   "Correct: security type, dollar size and the expense of filling the order apply, while the firm’s right to profit applies only to principal trades.",
+   "Wrong: including the firm’s right to profit is incorrect, because that factor does not apply to commissions on agency transactions."
+  ]
+ },
+ {
+  "id": "9-x14",
+  "r": "9.4.4",
+  "k": "calc",
+  "d": 3,
+  "q": "A stock is at $52.00. A customer holds a sell stop for 300 shares at $51.50 and a buy limit for 200 shares at $51.00. Trades print in this order: 52.10, 51.80, 51.60, 51.40, 51.20, 50.90, 51.30. When the stop is triggered, the best available bid is $51.38. What happens?",
+  "o": [
+   "The stop triggers at the 51.40 print and sells at $51.38; the buy limit fills at $50.90",
+   "The stop triggers at the 51.60 print and sells at $51.38; the buy limit fills at $50.90",
+   "The stop sells at exactly $51.50 and the buy limit fills at $51.00",
+   "The stop triggers at the 51.40 print and sells at $51.38; the buy limit fills at $51.30"
+  ],
+  "a": 0,
+  "w": [
+   "Correct: the sell stop triggers at the 51.40 print and sells at the $51.38 bid, while the buy limit fills at the first print of $51.00 or lower, 50.90.",
+   "Wrong: the 51.60 print is above the 51.50 stop price, so it does not trigger a sell stop; the first print at or below 51.50 is 51.40.",
+   "Wrong: a triggered stop becomes a market order and executes at the best available price, not at exactly the stop price, and limits fill at the first qualifying print.",
+   "Wrong: the 51.30 print is above the $51.00 buy limit, so it cannot satisfy it; the first print at or below 51.00 is 50.90."
+  ]
+ },
+ {
+  "id": "9-x15",
+  "r": "9.5.7",
+  "k": "scenario",
+  "d": 3,
+  "q": "A broker-dealer’s trading desk head receives a client instruction to buy 15,000 shares of ABC. Before executing it, the desk head buys 500 shares of ABC for the firm’s own account, reasoning that the amount is small. Which statement is correct?",
+  "o": [
+   "This is permitted because 500 shares is well below the size of a block",
+   "This is front-running, because the firm may not trade while holding nonpublic knowledge of an imminent block",
+   "This is permitted if the client order is executed within 60 seconds",
+   "This is permitted if the firm discloses the trade to the client afterward"
+  ],
+  "a": 1,
+  "w": [
+   "Wrong: it is the client’s 15,000-share order that is the block, and no orders may be placed by a firm that knows about it, regardless of the firm’s own size.",
+   "Correct: a 10,000-share-plus order is a block, and a firm with nonpublic knowledge of it may not place its own orders ahead, however small.",
+   "Wrong: the 60-second remedy belongs to the rule on trading ahead of customer limit orders and does not apply to front-running.",
+   "Wrong: disclosing the trade afterward does not cure the violation, because the prohibition applies before the block is executed and reported."
+  ]
+ }
+]

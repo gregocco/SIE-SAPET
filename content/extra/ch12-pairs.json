@@ -40,8 +40,8 @@
       {"s": "Contributions may be tax-deductible, depending on workplace plan coverage and income.", "v": "a", "w": "A traditional IRA can be pre-tax or after-tax depending on plan eligibility and income."},
       {"s": "Contributions are always made with after-tax dollars.", "v": "b", "w": "Roth IRA contributions are never deductible and are always after-tax."},
       {"s": "When contributions were pre-tax, every dollar distributed is taxed as ordinary income.", "v": "a", "w": "Deductible traditional IRAs work like qualified plans, so all distributions are ordinary income."},
-      {"s": "Distributions are tax-free only after the five-year period and age 59½.", "v": "b", "w": "Qualified Roth distributions must meet both the five-year test and the age 59½ test."},
-      {"s": "Failing to take a required distribution triggers a 25% excise tax on the shortfall.", "v": "a", "w": "Because Roth owners have no lifetime RMDs, the 25% missed-RMD tax concerns traditional IRAs."}
+      {"s": "Earnings come out completely tax-free only after the five-year period and age 59½.", "v": "b", "w": "Qualified Roth distributions must meet both the five-year test and the age 59½ test."},
+      {"s": "An owner covered by a workplace plan whose income is over the threshold can still contribute, but only with non-deductible dollars.", "v": "a", "w": "A traditional IRA can take after-tax contributions in scenario 3, whereas a high-income taxpayer cannot contribute to a Roth at all."}
     ]
   },
   {
@@ -56,7 +56,7 @@
       {"s": "There is no age limit on the beneficiary.", "v": "a", "w": "Unlike a Coverdell, a 529 plan has no age limit on its beneficiary."},
       {"s": "Available only to families whose income is below a certain level.", "v": "b", "w": "Coverdell availability is restricted by an income limit; 529 plans carry no such restriction."},
       {"s": "Any adult can open one for an existing child, with no earned income requirement.", "v": "a", "w": "A 529 plan can be opened by any adult without earned income for an existing child."},
-      {"s": "Can be opened for a student under the age of 18.", "v": "b", "w": "A Coverdell can be opened for any student under 18, with assets withdrawn by 30."}
+      {"s": "The beneficiary must be under age 18 when the account is opened.", "v": "b", "w": "A Coverdell is opened for a student under 18, whereas a 529 plan has no age limit on its beneficiary."}
     ]
   },
   {
@@ -85,7 +85,6 @@
       {"s": "The beneficiary is protected only during the guaranteed period, commonly 10 or 15 years.", "v": "b", "w": "Beneficiary protection under this option lasts only for the period certain, often 10 or 15 years."},
       {"s": "If the annuitant dies after a single payment, the insurer owes nothing further.", "v": "a", "w": "Even after only one payment, the insurer has no further obligation under straight life."},
       {"s": "Guarantees a minimum number of years of payments, whoever receives them.", "v": "b", "w": "The period certain sets a minimum payment period to the annuitant or the beneficiary."},
-      {"s": "The annuitant dies in year 2 of the contract and the beneficiary receives no further money.", "v": "a", "w": "With no period certain, death ends all payments and the beneficiary gets nothing."},
       {"s": "With a 10-year guarantee, an annuitant who dies after year 6 leaves the beneficiary four more years of payments.", "v": "b", "w": "The beneficiary collects the remaining four years of the 10-year period certain."}
     ]
   },

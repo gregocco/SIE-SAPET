@@ -1,12 +1,202 @@
 [
-  {"id":"2-x01","r":"2.1.3","k":"calc","d":2,"q":"A customer buys four Treasury bonds quoted at 99 16/32. Assuming $1,000 par and ignoring accrued interest and commissions, what is the total price paid?","o":["$3,960.00","$3,980.00","$3,966.40","$4,000.00"],"a":1,"w":["Wrong: this ignores the 16/32 fraction entirely and prices each bond at 99 instead of 99.5.","Correct: 16/32 equals 0.5, so the quote is 99.5, which is $995 per bond, and four bonds cost $3,980.","Wrong: this treats the 16 as a decimal (99.16) instead of converting 16/32 to 0.5 before multiplying by ten.","Wrong: this rounds the fraction up to a full point, but 99 16/32 is half a point below par."]},
-  {"id":"2-x02","r":"2.1.8","k":"concept","d":3,"q":"Bond X was bought at 93 and Bond Y was bought at 109, and both have ten years to maturity and will be held to maturity. Which statements are TRUE as the bonds approach maturity? I. Bond X’s price moves up toward par II. Bond Y’s price moves down toward par III. Bond X will be worth more than par at maturity IV. Bond Y will fall below par before maturity","o":["I and II only","I and III only","II and IV only","I, II and III only"],"a":0,"w":["Correct: a discount bond rises toward par and a premium bond declines toward par as maturity approaches.","Wrong: statement III is false because a bond’s price converges on par at maturity and does not exceed it.","Wrong: statement IV is false because the premium bond declines toward par but does not fall below it.","Wrong: this includes statement III, but the discount bond reaches par at maturity rather than passing above it."]},
-  {"id":"2-x03","r":"2.1.9","k":"scenario","d":3,"q":"A 20-year corporate bond has call protection for the first five years. Which statements are TRUE? I. The issuer cannot call the bond during the first five years II. After year five the issuer may call it at any time through maturity III. The issuer may call it only in year 20 IV. The call premium is typically larger the earlier the bond is called","o":["I and II only","I, II and IV only","II and III only","I, III and IV only"],"a":1,"w":["Wrong: this omits statement IV, since the earlier the call the higher the premium is a stated feature.","Correct: protection blocks calls for five years, a call can then occur any time, and earlier calls pay higher premiums.","Wrong: statement III is false because a callable bond can be redeemed at any time after the call date, not only at maturity.","Wrong: statement III is false for the same reason, and it also leaves out statement II, which is true."]},
-  {"id":"2-x04","r":"2.1.9","k":"calc","d":3,"q":"Marta owns six 7% bonds with $1,000 par value, callable at 103. The issuer calls all six on a coupon date. In total, how much does she receive?","o":["$6,180","$6,210","$6,390","$6,420"],"a":2,"w":["Wrong: this leaves out the final semiannual coupon of $35 per bond that is paid along with par and premium.","Wrong: this includes par and the $35 coupon but omits the $30 call premium on each bond.","Correct: each bond pays $1,000 par, a $35 final semiannual coupon and a $30 call premium, or $1,065, times six.","Wrong: this uses a full annual coupon of $70 instead of the final semiannual payment of $35 per bond."]},
-  {"id":"2-x05","r":"2.2.3","k":"concept","d":2,"q":"Which statement about yield to maturity (YTM) is TRUE?","o":["It ignores the difference between the purchase price and par","It is calculated using the years to the first call date","It assumes coupon payments are reinvested at the YTM rate","It is a yield candidates are expected to calculate by hand on the exam"],"a":2,"w":["Wrong: YTM specifically accounts for the difference between the purchase price and the principal received at maturity.","Wrong: using the years to the first call date describes yield to call, not yield to maturity.","Correct: YTM assumes every coupon received is reinvested at the same YTM rate, in addition to using price and time.","Wrong: YTM needs a specialized calculator, so the exam does not ask candidates to compute it."]},
-  {"id":"2-x06","r":"2.2.5","k":"scenario","d":3,"q":"A 5% bond is callable in four years at 101 and currently trades at 94. Which statements are TRUE? I. Current yield is above 5% II. Yield to maturity is above the current yield III. Yield to call is above yield to maturity IV. Nominal yield is the highest of the yields","o":["I and II only","I, II and III only","II, III and IV only","I and IV only"],"a":1,"w":["Wrong: this omits statement III, since for a discount bond the yield to call is higher than the yield to maturity.","Correct: for a discount bond CY exceeds NY, YTM exceeds CY, and YTC exceeds YTM, so I, II and III hold.","Wrong: statement IV is false because the nominal yield is the lowest of the yields for a discount bond.","Wrong: statement IV is false for a discount bond, and this also omits true statements II and III."]},
-  {"id":"2-x07","r":"2.2.2","k":"calc","d":3,"q":"A bond pays $18.75 every six months and is currently quoted at 93 3/4. What is its current yield?","o":["3.75%","4.00%","2.00%","4.50%"],"a":1,"w":["Wrong: this is the nominal yield, annual interest of $37.50 over par, rather than over the market price.","Correct: the price is $937.50 and annual interest is $37.50, so current yield is $37.50 divided by $937.50, or 4.00%.","Wrong: this forgets to double the semiannual coupon, dividing only $18.75 by the market price.","Wrong: no valid use of the annual interest and the $937.50 market price produces this figure."]},
-  {"id":"2-x08","r":"2.4","k":"calc","d":3,"q":"A customer buys a 5% corporate bond that pays interest on April 1 and October 1. The trade is made on August 20 for cash settlement. Using the corporate day count, how much accrued interest is owed per $1,000 bond?","o":["$19.04","$19.31","$19.44","$19.58"],"a":1,"w":["Wrong: this divides by 365 days, but corporate bonds use a 360-day year with 30-day months.","Correct: cash settlement is the trade date, so 139 days from April 1 through August 19 gives $50 times 139 over 360.","Wrong: 140 days would be correct for regular way settlement the next business day, but this trade settles the same day.","Wrong: this counts 141 days, which wrongly includes the settlement date itself in the accrued interest period."]},
-  {"id":"2-x09","r":"2.5","k":"calc","d":3,"q":"An investor buys a bond at $940 with six years to maturity. After holding it for two years, she sells it for $975. Using straight-line accretion, what is her taxable result?","o":["$15 capital gain","$35 capital gain","$25 capital gain","$15 capital loss"],"a":0,"w":["Correct: accretion of $10 a year lifts the basis to $960 after two years, so selling at $975 yields a $15 gain.","Wrong: this compares the sale price with the original $940 cost and ignores the upward adjustment of the cost basis.","Wrong: this accretes the basis for only one year, but the investor held the bond for two years.","Wrong: the sale price of $975 is above the adjusted basis of $960, so the result is a gain, not a loss."]},
-  {"id":"2-x10","r":"2.1.1","k":"concept","d":2,"q":"All of the following are true of bearer bonds EXCEPT:","o":["Interest is collected by presenting a coupon to a paying agent","The issuer keeps no record of who owns the bond","Interest is sent automatically to the registered owner","A few still trade, and a seller must physically deliver the certificate"],"a":2,"w":["Wrong: this is true of bearer bonds, because coupons had to be clipped and presented to a paying agent such as a bank.","Wrong: this is true, since the issuer has no ownership record and pays whoever holds the bond and coupons.","Correct: automatic payment to a recorded owner describes registered and book-entry bonds, not bearer bonds, so it is the exception.","Wrong: this is true, because a small number still trade in the secondary market and sales require physical delivery."]}
+ {
+  "id": "2-x01",
+  "r": "2.1.3",
+  "k": "calc",
+  "d": 2,
+  "q": "A customer buys four Treasury bonds quoted at 99 16/32. Assuming $1,000 par and ignoring accrued interest and commissions, what is the total price paid?",
+  "o": [
+   "$3,980.00",
+   "$3,960.00",
+   "$3,966.40",
+   "$4,000.00"
+  ],
+  "a": 0,
+  "w": [
+   "Correct: 16/32 equals 0.5, so the quote is 99.5, which is $995 per bond, and four bonds cost $3,980.",
+   "Wrong: this ignores the 16/32 fraction entirely and prices each bond at 99 instead of 99.5.",
+   "Wrong: this treats the 16 as a decimal (99.16) instead of converting 16/32 to 0.5 before multiplying by ten.",
+   "Wrong: this rounds the fraction up to a full point, but 99 16/32 is half a point below par."
+  ]
+ },
+ {
+  "id": "2-x02",
+  "r": "2.1.8",
+  "k": "concept",
+  "d": 3,
+  "q": "Bond X was bought at 93 and Bond Y was bought at 109, and both have ten years to maturity and will be held to maturity. Which statements are TRUE as the bonds approach maturity? I. Bond X’s price moves up toward par II. Bond Y’s price moves down toward par III. Bond X will be worth more than par at maturity IV. Bond Y will fall below par before maturity",
+  "o": [
+   "I and III only",
+   "I and II only",
+   "II and IV only",
+   "I, II and III only"
+  ],
+  "a": 1,
+  "w": [
+   "Wrong: statement III is false because a bond’s price converges on par at maturity and does not exceed it.",
+   "Correct: a discount bond rises toward par and a premium bond declines toward par as maturity approaches.",
+   "Wrong: statement IV is false because the premium bond declines toward par but does not fall below it.",
+   "Wrong: this includes statement III, but the discount bond reaches par at maturity rather than passing above it."
+  ]
+ },
+ {
+  "id": "2-x03",
+  "r": "2.1.9",
+  "k": "scenario",
+  "d": 3,
+  "q": "A 20-year corporate bond has call protection for the first five years. Which statements are TRUE? I. The issuer cannot call the bond during the first five years II. After year five the issuer may call it at any time through maturity III. The issuer may call it only in year 20 IV. The call premium is typically larger the earlier the bond is called",
+  "o": [
+   "I and II only",
+   "II and III only",
+   "I, II and IV only",
+   "I, III and IV only"
+  ],
+  "a": 2,
+  "w": [
+   "Wrong: this omits statement IV, since the earlier the call the higher the premium is a stated feature.",
+   "Wrong: statement III is false because a callable bond can be redeemed at any time after the call date, not only at maturity.",
+   "Correct: protection blocks calls for five years, a call can then occur any time, and earlier calls pay higher premiums.",
+   "Wrong: statement III is false for the same reason, and it also leaves out statement II, which is true."
+  ]
+ },
+ {
+  "id": "2-x04",
+  "r": "2.1.9",
+  "k": "calc",
+  "d": 3,
+  "q": "Marta owns six 7% bonds with $1,000 par value, callable at 103. The issuer calls all six on a coupon date. In total, how much does she receive?",
+  "o": [
+   "$6,180",
+   "$6,210",
+   "$6,600",
+   "$6,390"
+  ],
+  "a": 3,
+  "w": [
+   "Wrong: this leaves out the final semiannual coupon of $35 per bond that is paid along with par and premium.",
+   "Wrong: this includes par and the $35 coupon but omits the $30 call premium on each bond.",
+   "Wrong: this pays a full annual coupon of $70 plus the $30 premium on each bond, but only the final semiannual coupon of $35 is owed on a coupon date.",
+   "Correct: each bond pays $1,000 par, a $35 final semiannual coupon and a $30 call premium, or $1,065, times six."
+  ]
+ },
+ {
+  "id": "2-x05",
+  "r": "2.2.3",
+  "k": "concept",
+  "d": 2,
+  "q": "Which statement about yield to maturity (YTM) is TRUE?",
+  "o": [
+   "It assumes coupon payments are reinvested at the YTM rate",
+   "It is calculated using the years to the first call date",
+   "It ignores the difference between the purchase price and par",
+   "It is a yield candidates are expected to calculate by hand on the exam"
+  ],
+  "a": 0,
+  "w": [
+   "Correct: YTM assumes every coupon received is reinvested at the same YTM rate, in addition to using price and time.",
+   "Wrong: using the years to the first call date describes yield to call, not yield to maturity.",
+   "Wrong: YTM specifically accounts for the difference between the purchase price and the principal received at maturity.",
+   "Wrong: YTM needs a specialized calculator, so the exam does not ask candidates to compute it."
+  ]
+ },
+ {
+  "id": "2-x06",
+  "r": "2.2.5",
+  "k": "scenario",
+  "d": 3,
+  "q": "A 5% bond is callable in four years at 101 and currently trades at 94. Which statements are TRUE? I. Current yield is above 5% II. Yield to maturity is above the current yield III. Yield to call is above yield to maturity IV. Nominal yield is the highest of the yields",
+  "o": [
+   "I and II only",
+   "I, II and III only",
+   "II, III and IV only",
+   "I and IV only"
+  ],
+  "a": 1,
+  "w": [
+   "Wrong: this omits statement III, since for a discount bond the yield to call is higher than the yield to maturity.",
+   "Correct: for a discount bond CY exceeds NY, YTM exceeds CY, and YTC exceeds YTM, so I, II and III hold.",
+   "Wrong: statement IV is false because the nominal yield is the lowest of the yields for a discount bond.",
+   "Wrong: statement IV is false for a discount bond, and this also omits true statements II and III."
+  ]
+ },
+ {
+  "id": "2-x07",
+  "r": "2.2.2",
+  "k": "calc",
+  "d": 3,
+  "q": "A bond pays $18.75 every six months and is currently quoted at 93 3/4. What is its current yield?",
+  "o": [
+   "3.75%",
+   "4.50%",
+   "2.00%",
+   "4.00%"
+  ],
+  "a": 3,
+  "w": [
+   "Wrong: this is the nominal yield, annual interest of $37.50 over par, rather than over the market price.",
+   "Wrong: no valid use of the annual interest and the $937.50 market price produces this figure.",
+   "Wrong: this forgets to double the semiannual coupon, dividing only $18.75 by the market price.",
+   "Correct: the price is $937.50 and annual interest is $37.50, so current yield is $37.50 divided by $937.50, or 4.00%."
+  ]
+ },
+ {
+  "id": "2-x08",
+  "r": "2.4",
+  "k": "calc",
+  "d": 3,
+  "q": "A customer buys a 5% corporate bond that pays interest on April 1 and October 1. The trade is made on August 20 for cash settlement. Using the corporate day count, how much accrued interest is owed per $1,000 bond?",
+  "o": [
+   "$19.04",
+   "$19.44",
+   "$19.31",
+   "$19.58"
+  ],
+  "a": 2,
+  "w": [
+   "Wrong: this divides by 365 days, but corporate bonds use a 360-day year with 30-day months.",
+   "Wrong: 140 days would be correct for regular way settlement the next business day, but this trade settles the same day.",
+   "Correct: cash settlement is the trade date, so 139 days from April 1 through August 19 gives $50 times 139 over 360.",
+   "Wrong: this counts 141 days, which runs one day past the settlement date, since interest stops the day before settlement."
+  ]
+ },
+ {
+  "id": "2-x09",
+  "r": "2.5",
+  "k": "calc",
+  "d": 3,
+  "q": "An investor buys a bond at $940 with six years to maturity. After holding it for two years, she sells it for $975. Using straight-line accretion, what is her taxable result?",
+  "o": [
+   "$25 capital gain",
+   "$35 capital gain",
+   "$15 capital gain",
+   "$15 capital loss"
+  ],
+  "a": 2,
+  "w": [
+   "Wrong: this accretes the basis for only one year, but the investor held the bond for two years.",
+   "Wrong: this compares the sale price with the original $940 cost and ignores the upward adjustment of the cost basis.",
+   "Correct: accretion of $10 a year lifts the basis to $960 after two years, so selling at $975 yields a $15 gain.",
+   "Wrong: the sale price of $975 is above the adjusted basis of $960, so the result is a gain, not a loss."
+  ]
+ },
+ {
+  "id": "2-x10",
+  "r": "2.1.1",
+  "k": "concept",
+  "d": 2,
+  "q": "All of the following are true of bearer bonds EXCEPT:",
+  "o": [
+   "Interest is sent automatically to the registered owner",
+   "The issuer keeps no record of who owns the bond",
+   "Interest is collected by presenting a coupon to a paying agent",
+   "A few still trade, and a seller must physically deliver the certificate"
+  ],
+  "a": 0,
+  "w": [
+   "Correct: automatic payment to a recorded owner describes registered and book-entry bonds, not bearer bonds, so it is the exception.",
+   "Wrong: this is true, since the issuer has no ownership record and pays whoever holds the bond and coupons.",
+   "Wrong: this is true of bearer bonds, because coupons had to be clipped and presented to a paying agent such as a bank.",
+   "Wrong: this is true, because a small number still trade in the secondary market and sales require physical delivery."
+  ]
+ }
 ]

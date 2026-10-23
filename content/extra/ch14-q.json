@@ -1,12 +1,202 @@
 [
-  {"id":"14-x01","r":"14.2","k":"concept","d":3,"q":"Which of the following statements about insider trading liability are true? I. A journalist who learns of a pending takeover through her own investigation and trades on it may be liable under the misappropriation theory II. A friend who trades on an insider’s tip is potentially liable III. The insider who passed along the tip is potentially liable IV. Only officers, directors, and holders of more than 10% of the shares can violate the rules","o":["I, II and III only","I and II only","II, III and IV only","I and IV only"],"a":0,"w":["Correct: the misappropriation theory, tippee liability, and tipper liability all apply, and liability is not limited to formal insiders.","Wrong: this omits statement III, since both the tipper and the tippee have potential liability for the tipped trade.","Wrong: statement IV is false because anyone with access to material nonpublic information who trades on it can violate the rules.","Wrong: this leaves out two true statements and includes IV, which wrongly limits liability to officers, directors, and large holders."]},
-  {"id":"14-x02","r":"14.4.2","k":"concept","d":3,"q":"Which of the following payments are permitted under FINRA Rule 2040? I. Splitting a commission with a registered rep at the same firm II. Splitting a commission with a registered rep at an affiliated firm III. Paying a referral fee to an unregistered insurance agent who sent the rep a client IV. Paying continuing commissions to a rep who retired and left the industry under a written contract signed before retirement","o":["I and II only","I, II and IV only","II, III and IV only","I, III and IV only"],"a":1,"w":["Wrong: this omits statement IV, because a retired rep may keep receiving commissions under a pre-retirement written contract.","Correct: commissions may go to registered reps of the same or affiliated firms and to a properly contracted retiree outside the industry.","Wrong: statement III is prohibited because unregistered persons cannot be compensated for securities business, and this also drops statement I.","Wrong: paying an unregistered insurance agent a referral fee violates the rule, and this answer also leaves out the affiliated firm split."]},
-  {"id":"14-x03","r":"14.3.1","k":"calc","d":3,"q":"On a single business day, a brokerage customer deposits $4,000 in currency, a $3,100 cashier’s check, and a $2,900 traveler’s check. The customer made no other deposits that day. What is the firm’s CTR obligation?","o":["A CTR must be filed with FinCEN within 15 days because the total reaches $10,000","A CTR must be filed with FinCEN within 30 days because the deposits were in different forms","No CTR is required because the cash-type deposits total exactly $10,000, which does not exceed the threshold","A SAR must be filed in every case because the total sits right at the CTR threshold"],"a":2,"w":["Wrong: a CTR is triggered only by cash deposits in excess of $10,000, and a total of exactly $10,000 does not exceed that figure.","Wrong: the 30-day period belongs to suspicious activity reports, and a CTR would carry a 15-day deadline in any case.","Correct: currency, cashier’s check, and traveler’s check total $10,000 exactly, which is not in excess of the threshold, so no CTR is required.","Wrong: a SAR depends on suspicious activity being discovered, not automatically on a total at the CTR threshold, so it is not mandatory in every case."]},
-  {"id":"14-x04","r":"14.3.2","k":"concept","d":2,"q":"All of the following are true of suspicious activity reports EXCEPT:","o":["A rep may tell the customer a SAR was filed once the account has been closed","They are filed with FinCEN within 30 days of discovering the suspicious activity","A rep who spots reportable activity should inform a supervisor, who takes the appropriate action","Frequent deposits of $9,900 are an example of activity that can call for one"],"a":0,"w":["Correct: a rep is prohibited from telling the customer a SAR was filed, and closing the account does not remove that prohibition.","Wrong: this statement is true, since SARs go to FinCEN within 30 days of discovery, so it is not the exception.","Wrong: this statement is true because the rep informs a supervisor, who is then responsible for the appropriate action.","Wrong: this statement is true because deposits just under the $10,000 CTR trigger are a listed red flag for a SAR."]},
-  {"id":"14-x05","r":"14.4.10.2","k":"concept","d":2,"q":"Which of the following must municipal securities firms provide to investors in writing each year under MSRB Rule G-10? I. A statement that the firm is registered with the SEC and the MSRB II. The website address of the MSRB III. Notice that an investor brochure is available on the MSRB website IV. A printed copy of the entire MSRB rulebook","o":["I and III only","I and II only","II, III and IV only","I, II and III only"],"a":3,"w":["Wrong: this leaves out the MSRB website address, which is one of the three items required in the annual written notice.","Wrong: this leaves out the notice about the investor brochure, which is also a required element of the annual notice.","Wrong: the full rulebook is not mailed; the brochure only provides a link to it, and this also omits the registration statement.","Correct: the annual notice covers SEC and MSRB registration, the MSRB website, and the availability of the investor brochure."]},
-  {"id":"14-x06","r":"14.4.1","k":"scenario","d":3,"q":"A registered rep joins a new firm. She already holds a stock trading account at Firm X and a mutual-fund-only account at Firm Y. What does FINRA Rule 3210 require of her?","o":["Written consent from the new employer within 30 calendar days for both accounts","Written consent from the new employer within 30 calendar days for the stock account only; the fund-only account is not covered","Written approval from FINRA for the stock account before her association begins","Nothing, because both accounts were opened before she joined the new firm"],"a":1,"w":["Wrong: accounts holding only mutual funds, UITs, or variable annuities are outside the rule, so consent is not needed for that account.","Correct: the stock account needs the new employer’s written consent within 30 calendar days, while the fund-only account is exempt.","Wrong: the consent comes from the employing firm rather than from FINRA, and the deadline runs after association, not before.","Wrong: accounts that already exist must still receive the new employer’s written consent within 30 calendar days of joining."]},
-  {"id":"14-x07","r":"14.4.7","k":"calc","d":3,"q":"In one calendar year a rep gives a client a $150 gift basket in February and an $80 gift in November. In June the rep buys a ticket to a sporting event for $120 (face value $180) and gives it to the client without attending. In September the rep takes the client to a $200 dinner and attends. By how much does the total of gifts exceed the $300 limit?","o":["It does not exceed the limit; the total is $230","By $10","By $110","By $50"],"a":2,"w":["Wrong: this excludes the unattended ticket, but tickets given without the rep attending are gifts and count toward the limit.","Wrong: this figure does not follow from any valid valuation of the gifts, and the attended dinner is not part of the total at all.","Correct: the ticket is valued at its higher face value of $180, so $150 plus $180 plus $80 is $410, and the attended dinner is excluded.","Wrong: this values the ticket at its $120 cost, but the rule uses the higher of cost or face value, which is $180."]},
-  {"id":"14-x08","r":"14.4.8","k":"concept","d":2,"q":"Which statement correctly describes MSRB Rule G-25 as it relates to joint investment accounts with customers?","o":["Only the municipal firm itself, not its representatives, may open a joint account with a customer","Neither a municipal firm nor its representatives may ever open a joint account with a customer","A firm and a representative may both open one, provided only the customer consents","Only registered representatives, not municipal firms themselves, may open joint investment accounts with customers"],"a":3,"w":["Wrong: this reverses the rule, since it is the firm that is barred and the representatives who are permitted.","Wrong: representatives may open a joint account with a customer when the usual firm, customer, and proportionate sharing conditions are met.","Wrong: the firm’s permission is also needed, and the municipal firm itself is not allowed to be a party to such an account.","Correct: G-25 is similar to the FINRA rule except that it allows only representatives, not municipal firms, to open joint accounts with customers."]},
-  {"id":"14-x09","r":"14.4.13.2","k":"scenario","d":3,"q":"Dana is not an MFP and contributes $500 to the campaign of a mayoral candidate in a city where she is entitled to vote. Fourteen months later she is promoted into a role that makes her an MFP, and the candidate is now the mayor, an official of an issuer. What is the effect on her firm under G-37?","o":["The firm is subject to the ban on negotiated business with that issuer because of the two-year look-back","The firm is not subject to any ban because Dana was not an MFP when she contributed","The firm is banned from both competitive and negotiated business with that issuer","The firm is not banned because Dana was entitled to vote for the candidate"],"a":0,"w":["Correct: a two-year look-back applies to a new MFP’s prior contributions, and a $500 gift exceeds the $250 limit, so the firm is banned from negotiated business.","Wrong: becoming an MFP later does not erase earlier contributions, because the look-back covers contributions made in the prior two years.","Wrong: the ban covers only negotiated municipal securities business, not competitive underwritings, which are determined by price.","Wrong: being entitled to vote helps only if the contribution does not exceed $250 per election, and her $500 exceeds that limit."]},
-  {"id":"14-x10","r":"14.5.2","k":"concept","d":2,"q":"Which of the following are permitted in a retail communication? I. A hypothetical illustration of mathematical principles that does not project the performance of an investment strategy II. A price target contained in a research report III. A statement implying that past performance forecasts future results IV. A projection of the future return of a recommended fund","o":["I and III only","II and IV only","I and II only","I, II and IV only"],"a":2,"w":["Wrong: implying that past performance forecasts future results is prohibited, so statement III disqualifies this answer.","Wrong: projecting a fund’s future return is prohibited, and this answer also omits the permitted hypothetical illustration.","Correct: a non-predictive mathematical illustration and a price target within a research report are allowed, while projections and forecasts are not.","Wrong: projections of performance are prohibited in retail communications, so statement IV cannot be included."]}
+ {
+  "id": "14-x01",
+  "r": "14.2",
+  "k": "concept",
+  "d": 3,
+  "q": "Which of the following statements about insider trading liability are true? I. A journalist who learns of a pending takeover through her own investigation and trades on it may be liable under the misappropriation theory II. A friend who trades on an insider’s tip is potentially liable III. The insider who passed along the tip is potentially liable IV. Only officers, directors, and holders of more than 10% of the shares can violate the rules",
+  "o": [
+   "I and II only",
+   "I, II and III only",
+   "II, III and IV only",
+   "I and IV only"
+  ],
+  "a": 1,
+  "w": [
+   "Wrong: this omits statement III, since both the tipper and the tippee have potential liability for the tipped trade.",
+   "Correct: the misappropriation theory, tippee liability, and tipper liability all apply, and liability is not limited to formal insiders.",
+   "Wrong: statement IV is false because anyone with access to material nonpublic information who trades on it can violate the rules.",
+   "Wrong: this leaves out two true statements and includes IV, which wrongly limits liability to officers, directors, and large holders."
+  ]
+ },
+ {
+  "id": "14-x02",
+  "r": "14.4.2",
+  "k": "concept",
+  "d": 3,
+  "q": "Which of the following payments are permitted under FINRA Rule 2040? I. Splitting a commission with a registered rep at the same firm II. Splitting a commission with a registered rep at an affiliated firm III. Paying a referral fee to an unregistered insurance agent who sent the rep a client IV. Paying continuing commissions to a rep who retired and left the industry under a written contract signed before retirement",
+  "o": [
+   "I and II only",
+   "I, III and IV only",
+   "II, III and IV only",
+   "I, II and IV only"
+  ],
+  "a": 3,
+  "w": [
+   "Wrong: this omits statement IV, because a retired rep may keep receiving commissions under a pre-retirement written contract.",
+   "Wrong: paying an unregistered insurance agent a referral fee violates the rule, and this answer also leaves out the affiliated firm split.",
+   "Wrong: statement III is prohibited because unregistered persons cannot be compensated for securities business, and this also drops statement I.",
+   "Correct: commissions may go to registered reps of the same or affiliated firms and to a properly contracted retiree outside the industry."
+  ]
+ },
+ {
+  "id": "14-x03",
+  "r": "14.3.1",
+  "k": "calc",
+  "d": 3,
+  "q": "On a single business day, a brokerage customer deposits $4,000 in currency, a $3,100 cashier’s check, and a $2,900 traveler’s check. The customer made no other deposits that day. What is the firm’s CTR obligation?",
+  "o": [
+   "A CTR must be filed with FinCEN within 15 days because the total reaches $10,000",
+   "A CTR must be filed with FinCEN within 30 days because the deposits were in different forms",
+   "No CTR is required because the cash-type deposits total exactly $10,000, which does not exceed the threshold",
+   "A SAR must be filed in every case because the total sits right at the CTR threshold"
+  ],
+  "a": 2,
+  "w": [
+   "Wrong: a CTR is triggered only by cash deposits in excess of $10,000, and a total of exactly $10,000 does not exceed that figure.",
+   "Wrong: the 30-day period belongs to suspicious activity reports, and a CTR would carry a 15-day deadline in any case.",
+   "Correct: currency, cashier’s check, and traveler’s check total $10,000 exactly, which is not in excess of the threshold, so no CTR is required.",
+   "Wrong: a SAR depends on suspicious activity being discovered, not automatically on a total at the CTR threshold, so it is not mandatory in every case."
+  ]
+ },
+ {
+  "id": "14-x04",
+  "r": "14.3.2",
+  "k": "concept",
+  "d": 2,
+  "q": "All of the following are true of suspicious activity reports EXCEPT:",
+  "o": [
+   "A rep may tell the customer a SAR was filed once the account has been closed",
+   "They are filed with FinCEN within 30 days of discovering the suspicious activity",
+   "A rep who spots reportable activity should inform a supervisor, who takes the appropriate action",
+   "Frequent deposits of $9,900 are an example of activity that can call for one"
+  ],
+  "a": 0,
+  "w": [
+   "Correct: a rep is prohibited from telling the customer a SAR was filed, and closing the account does not remove that prohibition.",
+   "Wrong: this statement is true, since SARs go to FinCEN within 30 days of discovery, so it is not the exception.",
+   "Wrong: this statement is true because the rep informs a supervisor, who is then responsible for the appropriate action.",
+   "Wrong: this statement is true because deposits just under the $10,000 CTR trigger are a listed red flag for a SAR."
+  ]
+ },
+ {
+  "id": "14-x05",
+  "r": "14.4.10.2",
+  "k": "concept",
+  "d": 2,
+  "q": "Which of the following must municipal securities firms provide to investors in writing each year under MSRB Rule G-10? I. A statement that the firm is registered with the SEC and the MSRB II. The website address of the MSRB III. Notice that an investor brochure is available on the MSRB website IV. A printed copy of the entire MSRB rulebook",
+  "o": [
+   "I and III only",
+   "I and II only",
+   "II, III and IV only",
+   "I, II and III only"
+  ],
+  "a": 3,
+  "w": [
+   "Wrong: this leaves out the MSRB website address, which is one of the three items required in the annual written notice.",
+   "Wrong: this leaves out the notice about the investor brochure, which is also a required element of the annual notice.",
+   "Wrong: the full rulebook is not mailed; the brochure only provides a link to it, and this also omits the registration statement.",
+   "Correct: the annual notice covers SEC and MSRB registration, the MSRB website, and the availability of the investor brochure."
+  ]
+ },
+ {
+  "id": "14-x06",
+  "r": "14.4.1",
+  "k": "scenario",
+  "d": 3,
+  "q": "A registered rep joins a new firm. She already holds a stock trading account at Firm X and a mutual-fund-only account at Firm Y. What does FINRA Rule 3210 require of her?",
+  "o": [
+   "Written consent from the new employer within 30 calendar days for the stock account only; the fund-only account is not covered",
+   "Written consent from the new employer within 30 calendar days for both accounts",
+   "Written approval from FINRA for the stock account before her association begins",
+   "Nothing, because both accounts were opened before she joined the new firm"
+  ],
+  "a": 0,
+  "w": [
+   "Correct: the stock account needs the new employer’s written consent within 30 calendar days, while the fund-only account is exempt.",
+   "Wrong: accounts holding only mutual funds, UITs, or variable annuities are outside the rule, so consent is not needed for that account.",
+   "Wrong: the consent comes from the employing firm rather than from FINRA, and the deadline runs after association, not before.",
+   "Wrong: accounts that already exist must still receive the new employer’s written consent within 30 calendar days of joining."
+  ]
+ },
+ {
+  "id": "14-x07",
+  "r": "14.4.7",
+  "k": "calc",
+  "d": 3,
+  "q": "In one calendar year a rep gives a client a $150 gift basket in February and an $80 gift in November. In June the rep buys a ticket to a sporting event for $120 (face value $180) and gives it to the client without attending. In September the rep takes the client to a $200 dinner and attends. By how much does the total of gifts exceed the $300 limit?",
+  "o": [
+   "It does not exceed the limit; the total is $230",
+   "By $110",
+   "By $10",
+   "By $50"
+  ],
+  "a": 1,
+  "w": [
+   "Wrong: this excludes the unattended ticket, but tickets given without the rep attending are gifts and count toward the limit.",
+   "Correct: the ticket is valued at its higher face value of $180, so $150 plus $180 plus $80 is $410, and the attended dinner is excluded.",
+   "Wrong: this figure does not follow from any valid valuation of the gifts, and the attended dinner is not part of the total at all.",
+   "Wrong: this values the ticket at its $120 cost, but the rule uses the higher of cost or face value, which is $180."
+  ]
+ },
+ {
+  "id": "14-x08",
+  "r": "14.4.8",
+  "k": "concept",
+  "d": 2,
+  "q": "Which statement correctly describes MSRB Rule G-25 as it relates to joint investment accounts with customers?",
+  "o": [
+   "Only the municipal firm itself, not its representatives, may open a joint account with a customer",
+   "Neither a municipal firm nor its representatives may ever open a joint account with a customer",
+   "Only registered representatives, not municipal firms themselves, may open joint investment accounts with customers",
+   "A firm and a representative may both open one, provided only the customer consents"
+  ],
+  "a": 2,
+  "w": [
+   "Wrong: this reverses the rule, since it is the firm that is barred and the representatives who are permitted.",
+   "Wrong: representatives may open a joint account with a customer when the usual firm, customer, and proportionate sharing conditions are met.",
+   "Correct: G-25 is similar to the FINRA rule except that it allows only representatives, not municipal firms, to open joint accounts with customers.",
+   "Wrong: the firm’s permission is also needed, and the municipal firm itself is not allowed to be a party to such an account."
+  ]
+ },
+ {
+  "id": "14-x09",
+  "r": "14.4.13.2",
+  "k": "scenario",
+  "d": 3,
+  "q": "Dana is not an MFP and contributes $500 to the campaign of a mayoral candidate in a city where she is entitled to vote. Fourteen months later she is promoted into a role that makes her an MFP, and the candidate is now the mayor, an official of an issuer. What is the effect on her firm under G-37?",
+  "o": [
+   "The firm is not banned because Dana was entitled to vote for the candidate",
+   "The firm is not subject to any ban because Dana was not an MFP when she contributed",
+   "The firm is banned from both competitive and negotiated business with that issuer",
+   "The firm is subject to the ban on negotiated business with that issuer because of the two-year look-back"
+  ],
+  "a": 3,
+  "w": [
+   "Wrong: being entitled to vote helps only if the contribution does not exceed $250 per election, and her $500 exceeds that limit.",
+   "Wrong: becoming an MFP later does not erase earlier contributions, because the look-back covers contributions made in the prior two years.",
+   "Wrong: the ban covers only negotiated municipal securities business, not competitive underwritings, which are determined by price.",
+   "Correct: a two-year look-back applies to a new MFP’s prior contributions, and a $500 gift exceeds the $250 limit, so the firm is banned from negotiated business."
+  ]
+ },
+ {
+  "id": "14-x10",
+  "r": "14.5.2",
+  "k": "concept",
+  "d": 2,
+  "q": "Which of the following are permitted in a retail communication? I. A hypothetical illustration of mathematical principles that does not project the performance of an investment strategy II. A price target contained in a research report III. A statement implying that past performance forecasts future results IV. A projection of the future return of a recommended fund",
+  "o": [
+   "I and II only",
+   "II and IV only",
+   "I and III only",
+   "I, II and IV only"
+  ],
+  "a": 0,
+  "w": [
+   "Correct: a non-predictive mathematical illustration and a price target within a research report are allowed, while projections and forecasts are not.",
+   "Wrong: projecting a fund’s future return is prohibited, and this answer also omits the permitted hypothetical illustration.",
+   "Wrong: implying that past performance forecasts future results is prohibited, so statement III disqualifies this answer.",
+   "Wrong: projections of performance are prohibited in retail communications, so statement IV cannot be included."
+  ]
+ }
 ]

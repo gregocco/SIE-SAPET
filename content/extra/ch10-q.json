@@ -1,0 +1,202 @@
+[
+ {
+  "id": "10-x01",
+  "r": "10.1.1",
+  "k": "calc",
+  "d": 3,
+  "q": "An economy produces GDP of $18 trillion and has a money supply of $3 trillion. A year later GDP is unchanged but the money supply has grown to $4.5 trillion. Using the GDP-to-money-supply measure, what happened to the velocity of money and what does the change suggest?",
+  "o": [
+   "Velocity fell from 6 to 4, suggesting people are saving rather than spending",
+   "Velocity stayed at 6 because GDP did not change, suggesting stable spending",
+   "Velocity rose from 4 to 6, suggesting money is being spent faster",
+   "Velocity fell from 6 to 4, suggesting people are spending money faster than before"
+  ],
+  "a": 0,
+  "w": [
+   "Correct: velocity is GDP divided by money supply, so it fell from 6 to 4, and low velocity means people are saving.",
+   "Wrong: velocity depends on both GDP and the money supply, so a larger money supply changes the ratio even with flat GDP.",
+   "Wrong: this reverses the direction, because dividing the same GDP by a larger money supply lowers velocity rather than raising it.",
+   "Wrong: the arithmetic is right, but lower velocity means money turns over more slowly, so people are saving rather than spending."
+  ]
+ },
+ {
+  "id": "10-x02",
+  "r": "10.1.3",
+  "k": "concept",
+  "d": 3,
+  "q": "Which of the following statements about stagflation are TRUE?\n\nI. It combines slow economic growth with rising prices\nII. It pairs increased inflation with relatively high unemployment\nIII. It is the fifth phase of the business cycle, following the trough\nIV. It is thought to be caused by sharp price increases for essential commodities such as oil, or by poor economic policy",
+  "o": [
+   "I and II only",
+   "I, III and IV only",
+   "II, III and IV only",
+   "I, II and IV only"
+  ],
+  "a": 3,
+  "w": [
+   "Wrong: this leaves out the stated causes, since sharp commodity price increases or poor policy are indeed blamed for stagflation.",
+   "Wrong: this includes the fifth-phase claim and drops the unemployment feature, although stagflation does pair inflation with high unemployment.",
+   "Wrong: this includes the claim that stagflation is a fifth phase, but the cycle has only expansion, peak, contraction and trough.",
+   "Correct: stagflation is slow growth with rising prices and high unemployment, blamed on commodity shocks or poor policy, and it is not a cycle phase."
+  ]
+ },
+ {
+  "id": "10-x03",
+  "r": "10.1.3",
+  "k": "concept",
+  "d": 2,
+  "q": "Each of the following is characteristic of an economic expansion EXCEPT:",
+  "o": [
+   "A measurable rise in GDP",
+   "Corporate bankruptcies and high unemployment as investment spending falls",
+   "Increased availability of goods and services in the marketplace",
+   "A decline in unemployment"
+  ],
+  "a": 1,
+  "w": [
+   "Wrong: a measurable rise in GDP is a defining feature of an expansion, so it does not fit the exception.",
+   "Correct: falling investment, bankruptcies and high unemployment describe a contraction, so this is the one item that is not characteristic of an expansion.",
+   "Wrong: increased availability of goods and services is listed as a characteristic of expansion, so it is not the exception.",
+   "Wrong: unemployment declines during an expansion, so this is a true characteristic rather than the exception."
+  ]
+ },
+ {
+  "id": "10-x04",
+  "r": "10.1.1.2",
+  "k": "concept",
+  "d": 3,
+  "q": "Which of the following statements about inflation are consistent with the chapter?\n\nI. Demand-pull inflation occurs when an economy’s demand exceeds its aggregate supply\nII. Cost-push inflation is driven by consumers bidding up prices\nIII. High rates of inflation are generally attributed to excessive growth of the money supply\nIV. Most economists believe moderate inflation is needed to drive consumption and promote spending",
+  "o": [
+   "II, III and IV only",
+   "I and II only",
+   "I, III and IV only",
+   "I, II and III only"
+  ],
+  "a": 2,
+  "w": [
+   "Wrong: this includes the false claim that cost-push is consumer driven and leaves out the true demand-pull definition.",
+   "Wrong: cost-push inflation comes from higher production costs and rising raw material prices, not from consumers, so the second statement is false.",
+   "Correct: demand-pull comes from demand exceeding supply, excess money growth drives high inflation, and moderate inflation is seen as supporting spending.",
+   "Wrong: this includes the false claim that cost-push is consumer driven and omits the true point about moderate inflation."
+  ]
+ },
+ {
+  "id": "10-x05",
+  "r": "10.2.1",
+  "k": "scenario",
+  "d": 2,
+  "q": "On Monday a report shows strong, potentially inflationary economic growth. On Friday a second report points to a slowing economy, lower inflation and likely interest rate cuts. Which pair best describes the likely reaction of the bond market to each report?",
+  "o": [
+   "Monday: bond prices rise; Friday: bond prices fall",
+   "Monday: bond prices fall; Friday: bond prices fall",
+   "Monday: bond prices fall; Friday: bond prices rise",
+   "Monday: bond prices rise; Friday: bond prices rise"
+  ],
+  "a": 2,
+  "w": [
+   "Wrong: this is backwards, since strong inflationary growth pushes rates up and bond prices down, while rate cuts help bond prices.",
+   "Wrong: the Monday reaction is right, but expected rate cuts and lower inflation are generally positive for bond prices, not negative.",
+   "Correct: inflationary growth means rising rates and falling bond prices, while weak news implying lower inflation and rate cuts is generally positive for bonds.",
+   "Wrong: the Friday reaction is right, but strong inflationary growth raises rate expectations, which causes bond prices to decline rather than rise."
+  ]
+ },
+ {
+  "id": "10-x06",
+  "r": "10.2.2",
+  "k": "concept",
+  "d": 3,
+  "q": "Which statements about the shapes of the yield curve are TRUE?\n\nI. A normal curve, the most common shape, shows higher yields on longer maturities because of the risks of holding a bond longer\nII. An inverted curve may signal an upcoming recession\nIII. A flat or humped curve, with short- and long-term yields very close together, is a predictor of an economic transition\nIV. An inverted curve shows longer-term yields above shorter-term yields",
+  "o": [
+   "I, II and III only",
+   "II, III and IV only",
+   "I, III and IV only",
+   "I and II only"
+  ],
+  "a": 0,
+  "w": [
+   "Correct: normal, inverted and flat or humped curves are described accurately in the first three statements, while the fourth describes a normal curve instead.",
+   "Wrong: this relies on the false claim about inverted curves, which have short-term yields above long-term yields, and drops the normal curve.",
+   "Wrong: this relies on the false inverted-curve statement and omits the accurate point that an inverted curve may signal recession.",
+   "Wrong: this omits the flat or humped curve statement, which is accurate because close short and long yields predict an economic transition."
+  ]
+ },
+ {
+  "id": "10-x07",
+  "r": "10.2.4",
+  "k": "calc",
+  "d": 3,
+  "q": "A 10-year Treasury note yields 3.8% while 10-year non-investment-grade bonds average 6.3%. Later, the Treasury yield rises to 4.1% and the non-investment-grade average rises to 6.9%. How did the yield spread change, and what is the market most likely forecasting?",
+  "o": [
+   "It was unchanged because both yields rose; the market’s default expectations are unchanged",
+   "It widened from 250 bp to 280 bp; the market is forecasting less default risk, implying a strengthening economy",
+   "It widened from 250 bp to 310 bp; the market is forecasting greater default risk, implying a slowing economy",
+   "It widened from 250 bp to 280 bp; the market is forecasting greater default risk, implying a slowing economy"
+  ],
+  "a": 3,
+  "w": [
+   "Wrong: both yields rose, but the non-investment-grade yield rose by more, so the spread widened by 30 bp instead of staying unchanged.",
+   "Wrong: the calculation is right, but widening spreads signal more default risk and a slowing economy, while narrowing spreads signal growth.",
+   "Wrong: this ignores the rise in the Treasury yield, because the spread is 6.9% minus 4.1%, which is 280 bp rather than 310 bp.",
+   "Correct: the spread moved from 250 bp to 280 bp, and a widening spread means the market forecasts greater default risk and a slowing economy."
+  ]
+ },
+ {
+  "id": "10-x08",
+  "r": "10.3.1.1",
+  "k": "concept",
+  "d": 2,
+  "q": "Which of the following statements describe the classical economists who followed Adam Smith?\n\nI. Their leading figure was John Maynard Keynes\nII. They believed free markets would achieve full employment through supply and demand\nIII. They recommended using neither monetary nor fiscal policy\nIV. Their hands-off approach is known as laissez-faire economics",
+  "o": [
+   "II and III only",
+   "II, III and IV only",
+   "I, II and IV only",
+   "I, III and IV only"
+  ],
+  "a": 1,
+  "w": [
+   "Wrong: this omits the laissez-faire label, which is the accurate name for the classical hands-off policy of no government interference.",
+   "Correct: classical economists trusted supply and demand to reach full employment, rejected monetary and fiscal policy, and their approach is called laissez-faire.",
+   "Wrong: this includes Keynes as the leading figure, but Adam Smith is considered the founder, and Keynes argued against the classical view.",
+   "Wrong: this includes Keynes as the leading figure and omits the classical belief that markets reach full employment on their own."
+  ]
+ },
+ {
+  "id": "10-x09",
+  "r": "10.2.5.2",
+  "k": "concept",
+  "d": 2,
+  "q": "According to the chapter, each of the following is an effect of rising inflation on investments EXCEPT:",
+  "o": [
+   "Bond fixed interest payments lose purchasing power and bond market values tend to fall",
+   "Real estate values tend to move opposite to inflation, falling as inflation rises",
+   "Cash savers may earn higher interest, yet the purchasing power of their cash decreases",
+   "High and unpredictable inflation can raise business costs and hurt corporate profits"
+  ],
+  "a": 1,
+  "w": [
+   "Wrong: inflation erodes the purchasing power of fixed interest payments and tends to push rates up, so bond prices fall, which is accurate.",
+   "Correct: the chapter describes a positive relationship between real estate and inflation because of higher cash flows and asset values, so this is the exception.",
+   "Wrong: higher inflation usually brings higher rates for savers while reducing the purchasing power of cash, which creates inflationary risk, so this is accurate.",
+   "Wrong: at high and unpredictable levels inflation raises costs and can hurt corporate profits, so this statement is accurate rather than the exception."
+  ]
+ },
+ {
+  "id": "10-x10",
+  "r": "10.4.2",
+  "k": "scenario",
+  "d": 3,
+  "q": "A US importer notices that the Canadian dollar quote has moved from 1.07 to 1.15 Canadian dollars per US dollar. All else equal, which combination is most likely?",
+  "o": [
+   "The US dollar has strengthened; US imports rise and US exports fall",
+   "The US dollar has weakened; foreign investment in the dollar declines and imports fall",
+   "The US dollar has strengthened; US exports rise because US goods are cheaper abroad",
+   "The US dollar has weakened; US exports rise and US imports fall"
+  ],
+  "a": 0,
+  "w": [
+   "Correct: the dollar buys more Canadian dollars, so it strengthened, which makes foreign goods cheaper for US buyers and US goods pricier abroad.",
+   "Wrong: more Canadian dollars per US dollar means a stronger dollar, which attracts foreign investment rather than reducing it.",
+   "Wrong: the strengthening is identified correctly, but a stronger dollar makes US goods more expensive abroad, so exports fall rather than rise.",
+   "Wrong: one US dollar now buys more Canadian dollars, so the dollar strengthened, and the trade effects described belong to a weakening."
+  ]
+ }
+]

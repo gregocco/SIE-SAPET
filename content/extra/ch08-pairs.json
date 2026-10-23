@@ -21,7 +21,7 @@
       {"s": "Sales are capped at the greater of 1% of outstanding shares or average weekly volume.", "v": "b", "w": "The volume limit applies to affiliates selling control stock over any 90-day period."},
       {"s": "Held by an officer, a director or an owner of more than 10% of voting shares.", "v": "b", "w": "Control stock is defined by the holder being an affiliate or corporate insider of the issuer."},
       {"s": "Acquired through a private placement, an employee benefit plan or as seed capital.", "v": "a", "w": "Restricted stock arises from unregistered acquisitions such as private placements and compensation or start-up funding."},
-      {"s": "Requires adequate current public information about the issuer before the sale.", "v": "a", "w": "Restricted stock can only be resold under Rule 144 when the issuer is a public reporting company."},
+      {"s": "Stock that has never been SEC-registered and is only resold once the issuer is a public company.", "v": "a", "w": "Restricted stock is defined as never-registered stock, and Rule 144 resale requires adequate current information about a public issuer."},
       {"s": "The holder files Form 144 before selling unless sales stay at or below $50,000 over three months.", "v": "b", "w": "Insiders must file Form 144 before selling control shares in the open market, subject to that dollar threshold."}
     ]
   },
@@ -46,7 +46,6 @@
       {"s": "An already-public issuer sells additional stock to the public after its IPO.", "v": "a", "w": "A follow-on is any later offering by an issuer that already has publicly traded securities."},
       {"s": "All proceeds belong to existing shareholders who sell their own shares.", "v": "b", "w": "In a secondary offering the selling shareholders receive the proceeds, not the issuing company."},
       {"s": "No new shares are created, so the issuer’s net worth is unchanged.", "v": "b", "w": "Because only existing shares are sold, the company’s net worth stays the same in a secondary offering."},
-      {"s": "The label depends on the issuer already having publicly traded securities.", "v": "a", "w": "Follow-on versus IPO turns on whether the issuer is already public, not on who receives the proceeds."},
       {"s": "Apple, already public, issues more stock to raise capital for the company.", "v": "a", "w": "A publicly traded company doing another stock offering is the book’s example of a follow-on."},
       {"s": "A founder and a venture firm sell positions while the company sells no shares.", "v": "b", "w": "A registration covering only existing shareholders’ shares is identified in the prospectus as a secondary offering."}
     ]

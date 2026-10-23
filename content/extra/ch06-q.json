@@ -1,12 +1,202 @@
 [
-  {"id":"6-x01","r":"6.2.4","k":"calc","d":3,"q":"An investor sells short 200 shares of ABC at $48 and buys 2 ABC 55 calls at 2.50 as protection. What is the maximum possible loss on the combined position, ignoring commissions?","o":["$1,900","$1,400","$950","Unlimited"],"a":0,"w":["Correct: the loss is strike minus short sale price plus premium, which is $7 plus $2.50, or $9.50 times 200 shares.","Wrong: this counts only the $7 gap between the sale price and strike, leaving out the premium paid for the calls.","Wrong: $9.50 is the per-share loss, but the position covers 200 shares, so the amount must be multiplied accordingly.","Wrong: the purchased calls lock in a buying price of $55, so the risk is capped rather than unlimited."]},
-  {"id":"6-x02","r":"6.2.4","k":"calc","d":3,"q":"An investor sells short 100 shares of DEF at $70 and buys 1 DEF 75 call at 3. Which statements are TRUE?\nI. The maximum loss is $800\nII. The breakeven is $73\nIII. The maximum gain is $6,700\nIV. The maximum loss is unlimited","o":["I and II only","II and IV only","I and III only","III and IV only"],"a":2,"w":["Wrong: the breakeven on a short stock plus long call position is the sale price minus the premium, not $73.","Wrong: the breakeven is not $73, and the purchased call removes the unlimited loss of an unprotected short sale.","Correct: maximum loss is $5 plus $3, or $800, and the maximum gain is $70 minus $3, or $6,700 per 100 shares.","Wrong: the loss is capped by the call, so statement IV is false, even though the maximum gain figure is right."]},
-  {"id":"6-x03","r":"6.3.3","k":"calc","d":2,"q":"An investor buys 4 GHI Jun 45 puts at 2.75. What is the maximum possible profit on the position, ignoring commissions?","o":["$18,000","$16,900","$19,100","$1,100"],"a":1,"w":["Wrong: this uses the full strike price and ignores the premium that must be subtracted from the maximum gain.","Correct: maximum gain is strike minus premium, or $42.25 per share, times 400 shares if the stock falls to zero.","Wrong: this adds the premium to the strike, but a put buyer’s premium reduces the maximum gain rather than increasing it.","Wrong: $1,100 is the total premium paid, which is the maximum loss of the long put, not its maximum gain."]},
-  {"id":"6-x04","r":"6.3.1","k":"concept","d":2,"q":"All of the following are advantages of buying a put rather than selling the same stock short EXCEPT:","o":["The put ties up less money than a short sale","The maximum loss can be quantified in advance","The loss is limited to the premium paid","The put buyer earns the stock’s dividends while the short seller does not"],"a":3,"w":["Wrong: only the premium is tied up when buying a put, so this is a genuine advantage over a short sale.","Wrong: a put buyer’s loss is known in advance, while a short seller’s loss is hard to quantify, so this is an advantage.","Wrong: risk is capped at the premium paid, unlike the unlimited risk of a short sale, which makes this an advantage.","Correct: like short sellers, put buyers do not earn dividends on the stock, so this is not an advantage of the put."]},
-  {"id":"6-x05","r":"6.2.2.2","k":"concept","d":2,"q":"An investor owns 500 shares of XYZ and writes 5 XYZ calls. Which statements are TRUE?\nI. The investor keeps dividends and voting rights until assigned\nII. Gains above the strike price are given up\nIII. The premium offers limited protection against a decline\nIV. Owning 100 shares is enough to fully cover the position","o":["I and II only","I, II and III only","II, III and IV only","I, II, III and IV"],"a":1,"w":["Wrong: this leaves out statement III, since the premium received does provide a small hedge against stock declines.","Correct: ownership rights remain until assignment, upside above the strike is lost, and the premium gives limited downside protection.","Wrong: statement IV is false because each contract needs 100 shares, so five calls require 500 shares to be fully covered.","Wrong: statement IV fails since full coverage requires 100 shares for every contract written, here 500 shares in total."]},
-  {"id":"6-x06","r":"6.7.3.2","k":"scenario","d":2,"q":"A company declares a cash dividend payable to holders of record on Monday. A customer holds in-the-money calls and wants the dividend. What is the latest day the customer can give exercise instructions?","o":["Monday, the record date itself","Thursday before the record date","Friday before the record date","Tuesday after the record date"],"a":2,"w":["Wrong: exercising on the record date settles the next business day, which is after the record date, so no dividend is earned.","Wrong: Thursday would work but is not the latest day, since an exercise on Friday still settles on Monday.","Correct: stock from an exercise settles in one business day, so Friday’s exercise settles on Monday, the record date.","Wrong: Tuesday comes after the record date, so the customer would not be an owner of record to receive the dividend."]},
-  {"id":"6-x07","r":"6.3.2","k":"calc","d":3,"q":"One investor writes an uncovered KLM 40 put at 3 and another writes an uncovered KLM 40 call at 3. Which statements are TRUE?\nI. The put writer’s maximum loss is $3,700\nII. The call writer’s maximum loss is unlimited\nIII. Each writer’s best outcome is keeping $300\nIV. Both writers break even at $43","o":["I and II only","I, II and III only","II, III and IV only","I, III and IV only"],"a":1,"w":["Wrong: this omits statement III, which is true because the best case for any option writer is earning the premium.","Correct: the put loss is strike minus premium times 100, the call loss is unlimited, and the premium is each best case.","Wrong: statement IV is false because the put writer breaks even at strike minus premium, which is $37 rather than $43.","Wrong: the call writer’s loss is unlimited, so statement II belongs in the answer, and statement IV is false."]},
-  {"id":"6-x08","r":"6.7.2","k":"calc","d":2,"q":"An investor buys 4 ABC Jul 60 calls at 3.20 and later exits with a closing sale of the same 4 contracts at 1.10. What is the result, ignoring commissions?","o":["$840 profit","$1,280 loss","$210 loss","$840 loss"],"a":3,"w":["Wrong: the investor sold for less than the purchase price, so the position produced a loss rather than a profit.","Wrong: this equals the full premium paid, but the closing sale recovered $1.10 per share, so the loss is smaller.","Wrong: $210 is the per-share loss for one contract only, and the position involves four contracts of 100 shares.","Correct: the loss is the $2.10 premium difference times 100 shares times 4 contracts, which equals $840."]},
-  {"id":"6-x09","r":"6.4","k":"calc","d":2,"q":"An investor holds an index put with a strike of 4,200. The index closes at 4,155 and the multiplier is $100. If the put is exercised, what happens?","o":["The holder receives $4,500 in cash","The holder receives $450 in cash","The holder delivers one share of each index stock","The option expires worthless because the index fell"],"a":0,"w":["Correct: the put is in-the-money by 45 points, and index options settle in cash, so 45 times $100 equals $4,500.","Wrong: this misplaces the decimal; the 45-point difference multiplied by the $100 multiplier gives $4,500, not $450.","Wrong: index options settle in cash because delivering one share of every stock in the index would be too complex.","Wrong: a put is in-the-money when the index is below the strike, so a falling index makes this put exercisable."]},
-  {"id":"6-x10","r":"6.5","k":"calc","d":3,"q":"XYZ trades at $34. An XYZ 30 call is priced at 5.75 and an XYZ 30 put is priced at 1.40. Which statements are TRUE?\nI. The call’s intrinsic value is $4\nII. The call’s time value is $1.75\nIII. The put’s intrinsic value is $4\nIV. The put’s premium is entirely time value","o":["I and II only","I, II and III only","I, II and IV only","II, III and IV only"],"a":2,"w":["Wrong: this leaves out statement IV, which is true since the out-of-the-money put has no intrinsic value.","Wrong: statement III is false because a put is out-of-the-money when the stock is above the strike, so intrinsic value is zero.","Correct: the call has intrinsic value of $4 and time value of $1.75, and the out-of-the-money put’s premium is all time value.","Wrong: statement I is true and belongs in the answer, while statement III is false since the put has zero intrinsic value."]}
+ {
+  "id": "6-x01",
+  "r": "6.2.4",
+  "k": "calc",
+  "d": 3,
+  "q": "An investor sells short 200 shares of ABC at $48 and buys 2 ABC 55 calls at 2.50 as protection. What is the maximum possible loss on the combined position, ignoring commissions?",
+  "o": [
+   "Unlimited",
+   "$1,400",
+   "$950",
+   "$1,900"
+  ],
+  "a": 3,
+  "w": [
+   "Wrong: the purchased calls lock in a buying price of $55, so the risk is capped rather than unlimited.",
+   "Wrong: this counts only the $7 gap between the sale price and strike, leaving out the premium paid for the calls.",
+   "Wrong: $9.50 is the per-share loss, but the position covers 200 shares, so the amount must be multiplied accordingly.",
+   "Correct: the loss is strike minus short sale price plus premium, which is $7 plus $2.50, or $9.50 times 200 shares."
+  ]
+ },
+ {
+  "id": "6-x02",
+  "r": "6.2.4",
+  "k": "calc",
+  "d": 3,
+  "q": "An investor sells short 100 shares of DEF at $70 and buys 1 DEF 75 call at 3. Which statements are TRUE?\nI. The maximum loss is $800\nII. The breakeven is $73\nIII. The maximum gain is $6,700\nIV. The maximum loss is unlimited",
+  "o": [
+   "I and II only",
+   "II and IV only",
+   "I and III only",
+   "III and IV only"
+  ],
+  "a": 2,
+  "w": [
+   "Wrong: the breakeven on a short stock plus long call position is the sale price minus the premium, not $73.",
+   "Wrong: the breakeven is not $73, and the purchased call removes the unlimited loss of an unprotected short sale.",
+   "Correct: maximum loss is $5 plus $3, or $800, and the maximum gain is $70 minus $3, or $6,700 per 100 shares.",
+   "Wrong: the loss is capped by the call, so statement IV is false, even though the maximum gain figure is right."
+  ]
+ },
+ {
+  "id": "6-x03",
+  "r": "6.3.3",
+  "k": "calc",
+  "d": 2,
+  "q": "An investor buys 4 GHI Jun 45 puts at 2.75. What is the maximum possible profit on the position, ignoring commissions?",
+  "o": [
+   "$16,900",
+   "$18,000",
+   "$19,100",
+   "$1,100"
+  ],
+  "a": 0,
+  "w": [
+   "Correct: maximum gain is strike minus premium, or $42.25 per share, times 400 shares if the stock falls to zero.",
+   "Wrong: this uses the full strike price and ignores the premium that must be subtracted from the maximum gain.",
+   "Wrong: this adds the premium to the strike, but a put buyer’s premium reduces the maximum gain rather than increasing it.",
+   "Wrong: $1,100 is the total premium paid, which is the maximum loss of the long put, not its maximum gain."
+  ]
+ },
+ {
+  "id": "6-x04",
+  "r": "6.3.1",
+  "k": "concept",
+  "d": 2,
+  "q": "All of the following are advantages of buying a put rather than selling the same stock short EXCEPT:",
+  "o": [
+   "The put ties up less money than a short sale",
+   "The put buyer earns the stock’s dividends while the short seller does not",
+   "A bearish view can be taken with less risk than a short sale",
+   "The maximum loss can be quantified in advance"
+  ],
+  "a": 1,
+  "w": [
+   "Wrong: only the premium is tied up when buying a put, so this is a genuine advantage over a short sale.",
+   "Correct: like short sellers, put buyers do not earn dividends on the stock, so this is not an advantage of the put.",
+   "Wrong: a long put has limited financial risk, while a short sale carries unlimited risk, which makes this an advantage.",
+   "Wrong: a put buyer’s loss is known in advance, while a short seller’s loss is hard to quantify, so this is an advantage."
+  ]
+ },
+ {
+  "id": "6-x05",
+  "r": "6.2.2.2",
+  "k": "concept",
+  "d": 2,
+  "q": "An investor owns 500 shares of XYZ and writes 5 XYZ calls. Which statements are TRUE?\nI. The investor keeps dividends and voting rights until assigned\nII. Gains above the strike price are given up\nIII. The premium offers limited protection against a decline\nIV. Owning 100 shares is enough to fully cover the position",
+  "o": [
+   "I and II only",
+   "I, II and III only",
+   "II, III and IV only",
+   "I, II, III and IV"
+  ],
+  "a": 1,
+  "w": [
+   "Wrong: this leaves out statement III, since the premium received does provide a small hedge against stock declines.",
+   "Correct: ownership rights remain until assignment, upside above the strike is lost, and the premium gives limited downside protection.",
+   "Wrong: statement IV is false because each contract needs 100 shares, so five calls require 500 shares to be fully covered.",
+   "Wrong: statement IV fails since full coverage requires 100 shares for every contract written, here 500 shares in total."
+  ]
+ },
+ {
+  "id": "6-x06",
+  "r": "6.7.3.2",
+  "k": "scenario",
+  "d": 2,
+  "q": "A company declares a cash dividend payable to holders of record on Monday. A customer holds in-the-money calls and wants the dividend. What is the latest day the customer can give exercise instructions?",
+  "o": [
+   "Monday, the record date itself",
+   "Thursday before the record date",
+   "Friday before the record date",
+   "Tuesday after the record date"
+  ],
+  "a": 2,
+  "w": [
+   "Wrong: exercising on the record date settles the next business day, which is after the record date, so no dividend is earned.",
+   "Wrong: Thursday would work but is not the latest day, since an exercise on Friday still settles on Monday.",
+   "Correct: stock from an exercise settles in one business day, so Friday’s exercise settles on Monday, the record date.",
+   "Wrong: Tuesday comes after the record date, so the customer would not be an owner of record to receive the dividend."
+  ]
+ },
+ {
+  "id": "6-x07",
+  "r": "6.3.2",
+  "k": "calc",
+  "d": 3,
+  "q": "One investor writes an uncovered KLM 40 put at 3 and another writes an uncovered KLM 40 call at 3. Which statements are TRUE?\nI. The put writer’s maximum loss is $3,700\nII. The call writer’s maximum loss is unlimited\nIII. Each writer’s best outcome is keeping $300\nIV. Both writers break even at $43",
+  "o": [
+   "I, II and III only",
+   "I and II only",
+   "II, III and IV only",
+   "I, III and IV only"
+  ],
+  "a": 0,
+  "w": [
+   "Correct: the put loss is strike minus premium times 100, the call loss is unlimited, and the premium is each best case.",
+   "Wrong: this omits statement III, which is true because the best case for any option writer is earning the premium.",
+   "Wrong: statement IV is false because the put writer breaks even at strike minus premium, which is $37 rather than $43.",
+   "Wrong: the call writer’s loss is unlimited, so statement II belongs in the answer, and statement IV is false."
+  ]
+ },
+ {
+  "id": "6-x08",
+  "r": "6.7.2",
+  "k": "calc",
+  "d": 2,
+  "q": "An investor buys 4 ABC Jul 60 calls at 3.20 and later exits with a closing sale of the same 4 contracts at 1.10. What is the result, ignoring commissions?",
+  "o": [
+   "$840 profit",
+   "$1,280 loss",
+   "$210 loss",
+   "$840 loss"
+  ],
+  "a": 3,
+  "w": [
+   "Wrong: the investor sold for less than the purchase price, so the position produced a loss rather than a profit.",
+   "Wrong: this equals the full premium paid, but the closing sale recovered $1.10 per share, so the loss is smaller.",
+   "Wrong: $210 is the loss on a single contract, but the position involves four contracts of 100 shares each.",
+   "Correct: the loss is the $2.10 premium difference times 100 shares times 4 contracts, which equals $840."
+  ]
+ },
+ {
+  "id": "6-x09",
+  "r": "6.4",
+  "k": "calc",
+  "d": 2,
+  "q": "An investor holds an index put with a strike of 4,200. The index closes at 4,155 and the multiplier is $100. If the put is exercised, what happens?",
+  "o": [
+   "The holder receives $4,500 in cash",
+   "The holder receives $450 in cash",
+   "The holder delivers one share of each index stock",
+   "The option expires worthless because the index fell"
+  ],
+  "a": 0,
+  "w": [
+   "Correct: the put is in-the-money by 45 points, and index options settle in cash, so 45 times $100 equals $4,500.",
+   "Wrong: this misplaces the decimal; the 45-point difference multiplied by the $100 multiplier gives $4,500, not $450.",
+   "Wrong: index options settle in cash because delivering one share of every stock in the index would be too complex.",
+   "Wrong: a put is in-the-money when the index is below the strike, so a falling index makes this put exercisable."
+  ]
+ },
+ {
+  "id": "6-x10",
+  "r": "6.5",
+  "k": "calc",
+  "d": 3,
+  "q": "XYZ trades at $34. An XYZ 30 call is priced at 5.75 and an XYZ 30 put is priced at 1.40. Which statements are TRUE?\nI. The call’s intrinsic value is $4\nII. The call’s time value is $1.75\nIII. The put’s intrinsic value is $4\nIV. The put’s premium is entirely time value",
+  "o": [
+   "I and II only",
+   "I, II and IV only",
+   "I, II and III only",
+   "II, III and IV only"
+  ],
+  "a": 1,
+  "w": [
+   "Wrong: this leaves out statement IV, which is true since the out-of-the-money put has no intrinsic value.",
+   "Correct: the call has intrinsic value of $4 and time value of $1.75, and the out-of-the-money put’s premium is all time value.",
+   "Wrong: statement III is false because a put is out-of-the-money when the stock is above the strike, so intrinsic value is zero.",
+   "Wrong: statement I is true and belongs in the answer, while statement III is false since the put has zero intrinsic value."
+  ]
+ }
 ]

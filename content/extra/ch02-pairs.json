@@ -26,10 +26,10 @@
   {"title":"Accretion vs Amortization","a":"Accretion","b":"Amortization","items":[
     {"s":"Applied to a bond bought at 88, so the cost basis rises toward par.","v":"a","w":"A bond bought at a discount has its cost basis adjusted upward each year toward par."},
     {"s":"An investor buys at $940 with six years left, and the basis is $950 after one year.","v":"a","w":"Straight-line accretion adds the $60 discount divided by six years, or $10, to the basis yearly."},
-    {"s":"Used for a bond purchased below par, increasing the basis until it equals $1,000 at maturity.","v":"a","w":"Accretion moves the basis of a discount bond upward so it equals par at maturity."},
+    {"s":"Raises the cost basis, so a later sale at a given price produces a smaller taxable gain.","v":"a","w":"Accretion adjusts the basis of a discount bond upward, which reduces the gain realized on a sale before maturity."},
     {"s":"Applied to a bond bought at 108, so the cost basis falls toward par.","v":"b","w":"A bond bought at a premium has its cost basis adjusted downward each year toward par."},
     {"s":"An investor buys at $1,100 with five years left, and the basis is $1,080 after one year.","v":"b","w":"Straight-line amortization subtracts the $100 premium divided by five years, or $20, from the basis yearly."},
-    {"s":"Used for a bond purchased above par, decreasing the basis until it equals $1,000 at maturity.","v":"b","w":"Amortization moves the basis of a premium bond downward so it equals par at maturity."}
+    {"s":"Lowers the cost basis, so a later sale at a given price produces a larger taxable gain.","v":"b","w":"Amortization adjusts the basis of a premium bond downward, which increases the gain realized on a sale before maturity."}
   ]},
   {"title":"Interest rate risk vs Reinvestment risk","a":"Interest rate risk","b":"Reinvestment risk","items":[
     {"s":"A 30-year zero-coupon bond carries more of this risk than a 5-year 7% coupon bond.","v":"a","w":"Longer maturity and lower or zero coupons make a bond’s price more sensitive to rate changes."},

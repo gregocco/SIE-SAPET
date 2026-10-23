@@ -51,7 +51,7 @@
     "items": [
       {"s": "The account has exactly one custodian and one minor beneficiary.", "v": "a", "w": "Custodial accounts can have only one custodian and one minor beneficiary, unlike a trust with several beneficiaries."},
       {"s": "The minor’s Social Security number appears on the account, and the minor owes the taxes.", "v": "a", "w": "The minor owns the assets, so the minor’s SSN is used and the minor bears the tax liability."},
-      {"s": "Gifts to the account are irrevocable and cannot be taken back by the donor.", "v": "a", "w": "Any gift to a UGMA or UTMA account is irrevocable, so neither donor nor minor can reverse it."},
+      {"s": "Once the minor reaches the age of majority, the assets are transferred into the minor’s own name.", "v": "a", "w": "Custodial assets move into the name of the new adult at the age of majority, 18 for UGMA and 18 to 25 for UTMA."},
       {"s": "Margin trading is not permitted in the account.", "v": "a", "w": "The book states margin trading is not permitted in UGMA or UTMA accounts."},
       {"s": "The firm must receive a copy of the agreement, usually written by an attorney, to open the account.", "v": "b", "w": "Trust clients must give the broker-dealer a copy of the trust agreement, which is usually drafted by an attorney."},
       {"s": "The creator may restrict the assets, such as allowing use for educational expenses only.", "v": "b", "w": "A trust lets its creator limit or restrict how the assets are used, which custodial accounts do not."},
@@ -69,7 +69,7 @@
       {"s": "Buying and selling a security without ever paying for it is free-riding here.", "v": "a", "w": "Free-riding is the cash account violation of selling shares that were never paid for."},
       {"s": "The customer may withdraw cash balances at any time, in whole or in part.", "v": "a", "w": "The book says customers have the right to withdraw cash balances held in a cash account at any time."},
       {"s": "The customer signs a hypothecation agreement pledging securities as collateral.", "v": "b", "w": "Hypothecation of account securities as loan collateral is part of the margin agreement, not a cash account requirement."},
-      {"s": "Every short sale must be executed here.", "v": "b", "w": "All short sales must be placed in a margin account because the shares are borrowed."},
+      {"s": "Every short sale must be executed here.", "v": "b", "w": "The book states that all short sales must be executed in a margin account."},
       {"s": "The account is marked to the market daily, and falling equity triggers maintenance calls.", "v": "b", "w": "Margin accounts, long and short, are marked to market daily to test the maintenance requirement."},
       {"s": "A margin disclosure statement must be delivered at opening and annually.", "v": "b", "w": "FINRA Rule 2264 requires the margin disclosure statement before or at opening and every year."}
     ]
@@ -101,7 +101,7 @@
       {"s": "Insures checking, savings, and bank-issued CDs at banks and thrifts.", "v": "b", "w": "FDIC coverage is limited to bank deposit products such as checking, savings, money market accounts, and CDs."},
       {"s": "Coverage is $250,000 per depositor in each bank, backed by US government full faith and credit.", "v": "b", "w": "FDIC insurance of at least $250,000 per depositor is backed by the full faith and credit of the government."},
       {"s": "Does not cover mutual funds or stocks, even when they are purchased through a bank.", "v": "b", "w": "Securities and mutual funds are not FDIC insured, even if sold by a bank branch."},
-      {"s": "An independent agency created by Congress in 1933 that also supervises failed banks.", "v": "b", "w": "The FDIC was created in 1933 and also examines institutions and manages receiverships of failed banks."}
+      {"s": "An independent agency created by Congress in 1933 that also examines institutions and manages receiverships of failed banks.", "v": "b", "w": "The FDIC was created in 1933 and also examines institutions and manages receiverships of failed banks."}
     ]
   }
 ]

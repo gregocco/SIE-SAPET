@@ -1,0 +1,86 @@
+[
+  {
+    "title": "Dealer vs Broker",
+    "a": "Dealer (principal)",
+    "b": "Broker (agent)",
+    "items": [
+      {"s": "The firm sells the customer shares out of its own inventory and is paid a mark-up.", "v": "a", "w": "Trading from inventory is principal capacity, and the firm’s only fee is the mark-up or mark-down."},
+      {"s": "The firm matches a willing buyer with a willing seller and never owns the security.", "v": "b", "w": "In agency capacity the firm only matches two counterparties and does not purchase or own the shares."},
+      {"s": "The firm charges each of the two matched customers a commission.", "v": "b", "w": "Agency trades are paid by commission, and both matched clients may be charged one."},
+      {"s": "The customer sells shares to the firm and receives a price reduced by a mark-down.", "v": "a", "w": "A firm buying from the client as principal compensates itself through a mark-down, not a commission."},
+      {"s": "The firm’s entitlement to earn a profit is a factor in setting its charge.", "v": "a", "w": "The right to make a profit is a fair-pricing factor for principal trades only, per the Knopman Note."},
+      {"s": "A trade can occur only when two other participants want to transact on the same terms at the same time.", "v": "b", "w": "Agency requires two outside counterparties on agreeable terms at once, since the firm is not a party."},
+      {"s": "The firm holds inventory and capital ready to deploy, adding liquidity through position trading.", "v": "a", "w": "Position trading from inventory is how dealers provide near-instant execution and add liquidity to the market."}
+    ]
+  },
+  {
+    "title": "NYSE vs Nasdaq",
+    "a": "NYSE",
+    "b": "Nasdaq",
+    "items": [
+      {"s": "Each listed security has exactly one designated market maker assigned to it.", "v": "a", "w": "The NYSE assigns one DMM per security, whereas Nasdaq can have many market makers in one stock."},
+      {"s": "Trading occurs in an auction market combining floor trading with simultaneous electronic trading.", "v": "a", "w": "The NYSE uses a dual-method approach of human floor trading plus electronic trading of the same securities."},
+      {"s": "There is no central trading location, and every transaction occurs electronically.", "v": "b", "w": "Nasdaq is exclusively electronic with no central location and no DMM-like figure overseeing trading."},
+      {"s": "It was the world’s first electronic stock exchange.", "v": "b", "w": "Nasdaq earned that distinction, while the NYSE is simply the world’s largest exchange."},
+      {"s": "Market makers must post bid and ask quotations, making it a negotiated marketplace.", "v": "b", "w": "Nasdaq is described as negotiated because competing market makers must post two-sided quotes to trade."},
+      {"s": "It is the world’s largest stock exchange, ahead of Nasdaq.", "v": "a", "w": "The chapter calls the NYSE the largest exchange and Nasdaq the second largest behind it."},
+      {"s": "Human oversight is concentrated around the open, the close and volatile periods.", "v": "a", "w": "DMMs have special importance at the open, close and heightened volatility, which is unique to the NYSE."}
+    ]
+  },
+  {
+    "title": "OTCBB vs OTC Pink",
+    "a": "OTC Bulletin Board",
+    "b": "OTC Pink",
+    "items": [
+      {"s": "Quoted issuers must have registered under the ’33 Act and keep filing 10-Ks and 10-Qs.", "v": "a", "w": "OTCBB issuers must be current in ’34 Act reports, which is the key contrast with OTC Pink."},
+      {"s": "Quoted companies are not required to file periodic reports or audited financials with the SEC.", "v": "b", "w": "OTC Pink has no ’34 disclosure requirement, making reliable information hard to find on its issuers."},
+      {"s": "It was formerly known as the Pink Sheets, named for the paper quotes were printed on.", "v": "b", "w": "OTC Markets, also called OTC Pink, took its name from the pink paper used for historic quotes."},
+      {"s": "It is a FINRA-operated quotation service, and FINRA planned to close it at the end of 2021.", "v": "a", "w": "The OTCBB was run by FINRA, and the Knopman Note says FINRA would shut it down by end of 2021."},
+      {"s": "Quotes on this venue may be one-sided, with only a bid or only an ask.", "v": "b", "w": "The Knopman Note says OTC Pink quotes may be one-sided, unlike the required two-sided exchange quotes."},
+      {"s": "Its quoted securities include regional and foreign equities, warrants, ADRs and direct participation programs.", "v": "a", "w": "The chapter lists those instrument types specifically as OTCBB securities with real-time quotes and volume."},
+      {"s": "It has no formal listing requirements, and many quoted companies are closely held or extremely small.", "v": "b", "w": "OTC Pink imposes no formal listing standards, so tiny, thinly traded and closely held issuers dominate it."}
+    ]
+  },
+  {
+    "title": "Front-running vs Trading ahead of customers",
+    "a": "Front-running (5270)",
+    "b": "Trading ahead (5320)",
+    "items": [
+      {"s": "A rep learns of a client’s pending 25,000-share buy order and first buys for a personal account.", "v": "a", "w": "Trading on knowledge of an imminent block order before it executes is classic front-running under Rule 5270."},
+      {"s": "The firm buys 500 shares for inventory at $20 while holding an unexecuted customer buy limit at $20.", "v": "b", "w": "Trading for the firm’s own account at a price equal to or better than a customer limit triggers Rule 5320."},
+      {"s": "The concern involves material, nonpublic information about an imminent block trade of 10,000 shares or more.", "v": "a", "w": "Rule 5270 centers on nonpublic knowledge of a block, generally an order of 10,000 shares or more."},
+      {"s": "The firm cures the situation by filling the customer’s order at the same or a better price within 60 seconds.", "v": "b", "w": "Rule 5320 permits the firm’s trade only if the customer limit order is filled promptly for at least the same shares."},
+      {"s": "The rule does not apply if the trader was unaware of the customer’s unexecuted limit order.", "v": "b", "w": "Lack of awareness of the customer’s order is an express exception to the trading-ahead prohibition."},
+      {"s": "The regulatory fear is that the large customer order will push the price up after the insider’s small order.", "v": "a", "w": "Front-running profits when a known large order later moves the price in the insider’s favor."},
+      {"s": "Institutional clients who received written disclosure may be excluded from the protection.", "v": "b", "w": "Written disclosure at account opening or before each trade lets firms trade ahead of institutional clients."}
+    ]
+  },
+  {
+    "title": "Limit vs Stop orders",
+    "a": "Limit order",
+    "b": "Stop order",
+    "items": [
+      {"s": "It guarantees the price or better but does not guarantee that the order will execute.", "v": "a", "w": "A limit order protects the price, yet it never fills if the specified price is unavailable."},
+      {"s": "Once the stop price trades, it becomes a market order and may fill at a worse price than the stop.", "v": "b", "w": "A triggered stop is a market order, so execution can be above or below the stop price (gap risk)."},
+      {"s": "It is filled at the first price that satisfies the specified price or better.", "v": "a", "w": "The chapter says limit orders are filled at the first price that satisfies the limit."},
+      {"s": "It can be partially filled if the full quantity is not available at the specified price.", "v": "a", "w": "The chapter contrasts limit orders, which may be partially filled, with stop orders that are fully executed."},
+      {"s": "A sell version protects profit on an existing long position by triggering as the price falls.", "v": "b", "w": "A sell stop below the market locks in gains and limits losses on a long stock position."},
+      {"s": "A buy version entered below the market is used to purchase at a cheaper price.", "v": "a", "w": "Buy limits sit below the market because customers want to buy cheaper than the current price."},
+      {"s": "A buy version caps potential losses on a short sale by repurchasing the shares if the price rises.", "v": "b", "w": "A buy stop above the market protects a short position, which otherwise has unlimited loss potential."}
+    ]
+  },
+  {
+    "title": "BLiSS vs SLoBS",
+    "a": "BLiSS (below market)",
+    "b": "SLoBS (above market)",
+    "items": [
+      {"s": "A buy limit at 45 entered when the stock trades at 50.", "v": "a", "w": "Buy limit orders are placed below the current market, so they fall in the BLiSS group."},
+      {"s": "A sell limit at 55 entered when the stock trades at 50.", "v": "b", "w": "Sell limits sit above the market, which makes them SLoBS orders that are not adjusted."},
+      {"s": "A sell stop entered to protect a long position, such as at 29 with the stock at 31.", "v": "a", "w": "Sell stops are entered below the market, so they belong with BLiSS orders."},
+      {"s": "A buy stop entered to protect a short position, such as at 110 with the stock at 105.", "v": "b", "w": "Buy stops are entered above the market and are classed as SLoBS orders."},
+      {"s": "On the ex-dividend date, the order’s limit or stop price is automatically reduced by the cash dividend unless DNR is attached.", "v": "a", "w": "Orders entered below the market are lowered by the dividend, and only a DNR instruction prevents it."},
+      {"s": "The order price is left unchanged on the ex-dividend date even without a DNR instruction.", "v": "b", "w": "Orders above the market are not adjusted for dividends because the price drop cannot trigger them."},
+      {"s": "A sell stop at 47.50 with the stock at 50 becomes 46.25 after a $1.25 dividend.", "v": "a", "w": "A sell stop is below the market, so it is cut by the dividend to avoid inadvertent triggering."}
+    ]
+  }
+]

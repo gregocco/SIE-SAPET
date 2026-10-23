@@ -25,7 +25,7 @@
       {"s": "Does not offer breakpoints, so a large investment earns no discount on the charge.", "v": "b", "w": "Class B shares, like Class C, do not offer breakpoints."},
       {"s": "Tends to carry the lowest 12b-1 fee among the share classes.", "v": "a", "w": "Class A typically has a lower 12b-1 fee than other share classes."},
       {"s": "Typically imposes a 12b-1 fee that is higher than the fee on the front-end load class.", "v": "b", "w": "Class B shares usually charge a higher 12b-1 fee than Class A shares."},
-      {"s": "On a typical schedule the charge steps down each period and reaches zero beginning in year seven.", "v": "b", "w": "The typical CDSC schedule runs 5%, 4%, 3%, 3%, 2%, 1% and then 0 from year seven."},
+      {"s": "On a typical schedule the charge declines over the years and reaches zero beginning in year seven.", "v": "b", "w": "The typical CDSC schedule runs 5%, 4%, 3%, 3%, 2%, 1% and then 0 from year seven."},
       {"s": "A good fit for an investor making a large purchase who wants sales charge discounts.", "v": "a", "w": "Large purchasers benefit from Class A breakpoints, making the front-end load worthwhile."}
     ]
   },
@@ -41,7 +41,7 @@
       {"s": "If the promised amount is not reached, extra shares held in escrow are liquidated to pay the higher sales charge.", "v": "a", "w": "The fund escrows the additional shares and liquidates them if the LOI is not completed."},
       {"s": "Share appreciation and reinvested dividends may be counted when determining the value that earns the discount.", "v": "b", "w": "Rights of accumulation let appreciation and reinvested dividends count toward the position value."},
       {"s": "Appreciation and reinvested dividends and capital gains do not count toward completing the commitment.", "v": "a", "w": "Only actual purchases count toward completing an LOI, not appreciation or reinvestments."},
-      {"s": "A position grown by market gains to just under a breakpoint earns a lower charge on the next add-on purchase.", "v": "b", "w": "Under rights of accumulation, appreciation can lift a position to a new breakpoint for later purchases."}
+      {"s": "A position grown by market gains to $23,500 in a fund with a $25,000 breakpoint earns the lower charge on a new $2,000 purchase.", "v": "b", "w": "Under rights of accumulation, appreciation plus the new purchase can carry the total past a breakpoint, so the add-on gets the lower charge."}
     ]
   },
   {
@@ -68,10 +68,9 @@
       {"s": "Holds in safekeeping all of the securities purchased for the fund’s portfolio.", "v": "b", "w": "The custodian is the institution that acts as caretaker of the fund’s securities."},
       {"s": "Sends trade confirmations when fund shares are purchased or sold.", "v": "a", "w": "Trade confirmations to customers are a transfer agent responsibility, not a custodian task."},
       {"s": "A bank or trust company responsible for safekeeping the fund’s assets and securities.", "v": "b", "w": "The Knopman Note describes the custodian as a bank or trust company safekeeping fund assets."},
-      {"s": "A shareholder missing a year-end capital gains distribution should contact this service provider.", "v": "a", "w": "The transfer agent handles distributing dividends and capital gains to shareholders."},
+      {"s": "Handles the distribution of dividends and capital gains to shareholders.", "v": "a", "w": "The transfer agent handles distributing dividends and capital gains to shareholders."},
       {"s": "Acts as caretaker of what the fund owns rather than dealing with customer transactions.", "v": "b", "w": "The custodian protects fund assets, while the transfer agent handles customer transactions."},
-      {"s": "Processes investor mailings and issues or cancels certificates.", "v": "a", "w": "The Knopman Note assigns certificates and investor mailings to the transfer agent."},
-      {"s": "Takes custody of the securities the fund buys, rather than serving customers who transact in fund shares.", "v": "b", "w": "The custodian safekeeps the securities purchased for the portfolio, a role distinct from customer transactions."}
+      {"s": "Processes investor mailings and issues or cancels certificates.", "v": "a", "w": "The Knopman Note assigns certificates and investor mailings to the transfer agent."}
     ]
   },
   {

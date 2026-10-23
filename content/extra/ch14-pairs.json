@@ -29,7 +29,7 @@
     {"s":"Includes municipal underwriters, traders, and their direct supervisors who deal with municipal issuers.","v":"a","w":"MFPs include associated persons in sales, trading, underwriting, and research for issuers, plus their direct supervisors."},
     {"s":"A PAC controlled by the municipal securities firm gives $50 to an issuer official’s campaign.","v":"b","w":"A firm-controlled PAC has no exception, so even a small contribution triggers the two-year negotiated business ban."},
     {"s":"May give $250 to the primary and another $250 to the general election for a candidate the contributor can vote for.","v":"a","w":"The $250 limit applies separately to each election, both the primary and the general, for an eligible voter."},
-    {"s":"Even a small gift to a candidate in the firm’s own home district cannot use the voter-based $250 exception.","v":"b","w":"The residence-based voting exception exists only for individual MFPs, never for the firm or its political action committee."}
+    {"s":"The municipal securities firm itself gives $100 to the re-election campaign of an issuer’s mayor.","v":"b","w":"The $250 exception exists only for individual MFPs, so a contribution by the firm itself in any amount triggers the two-year ban."}
   ]},
   {"title":"Notice Only vs Written Approval","a":"Notice only","b":"Written approval","items":[
     {"s":"A rep takes a weekend bartending job for extra income.","v":"a","w":"Under FINRA Rule 3270 an outside business activity requires written notice to the firm, not permission."},

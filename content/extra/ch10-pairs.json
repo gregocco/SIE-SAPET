@@ -1,0 +1,67 @@
+[
+  {
+    "title": "Leading vs Lagging indicators",
+    "a": "Leading",
+    "b": "Lagging",
+    "items": [
+      {"s": "Building permits for new private housing.", "v": "a", "w": "Building permits are listed among the leading indicators that change before the economy turns."},
+      {"s": "The prime rate.", "v": "b", "w": "Interest rates, particularly the prime rate, change only after a trend is already underway."},
+      {"s": "The S&P 500 and other stock market indices and averages.", "v": "a", "w": "Stock market indices are an important leading indicator of economic activity and cycles."},
+      {"s": "Corporate profits.", "v": "b", "w": "Corporate profits are a lagging indicator, changing after the economy has begun following a trend."},
+      {"s": "Layoff rates.", "v": "a", "w": "Layoff rates are leading indicators, unlike the unemployment rate itself, which is a lagging indicator."},
+      {"s": "The unemployment rate.", "v": "b", "w": "The unemployment rate lags because it does not turn until cycle trends are already underway."}
+    ]
+  },
+  {
+    "title": "Easing vs Tightening the money supply",
+    "a": "Easing",
+    "b": "Tightening",
+    "items": [
+      {"s": "The Fed buys Treasury securities from primary dealers and pays them cash.", "v": "a", "w": "Fed purchases put cash into the banking system, which increases the money supply and lowers rates."},
+      {"s": "The Fed raises the reserve requirement so banks must keep more deposits on hand.", "v": "b", "w": "A higher reserve requirement leaves banks less to lend, which tightens the money supply."},
+      {"s": "The Fed lowers the discount rate charged to banks.", "v": "a", "w": "Lowering the discount rate is on the Fed’s ease checklist alongside buying securities and lowering reserves."},
+      {"s": "The Fed sells securities to primary dealers to curb inflation or an overheating economy.", "v": "b", "w": "Selling securities soaks up cash from dealers, shrinking the money supply and pushing interest rates up."},
+      {"s": "The Fed lowers the reserve requirement, letting banks lend more of each deposit.", "v": "a", "w": "A reduced reserve requirement is an expansionary strategy because banks keep fewer funds on deposit."},
+      {"s": "Cash leaves the banking system, credit becomes harder to obtain and interest rates rise.", "v": "b", "w": "Removing cash from circulation makes credit harder to obtain, which is the effect of tightening."}
+    ]
+  },
+  {
+    "title": "Keynesian vs Monetarist",
+    "a": "Keynesian",
+    "b": "Monetarist",
+    "items": [
+      {"s": "To stimulate growth, increase government spending and reduce taxes.", "v": "a", "w": "Keynesians propose higher spending and lower taxes, which are fiscal tools, to stimulate the economy."},
+      {"s": "Variations in the money supply have major influences over national output and price levels.", "v": "b", "w": "Monetarists emphasize the role of the money supply in controlling national output and price levels."},
+      {"s": "To control inflation, decrease government spending and increase taxes.", "v": "a", "w": "The Keynesian inflation-control toolkit is fiscal: spend less and tax more to cool demand."},
+      {"s": "To control inflation, decrease the amount of money in circulation.", "v": "b", "w": "Monetarists fight inflation by contracting the money supply, not by changing spending or taxes."},
+      {"s": "The economy is best controlled through taxation and government spending.", "v": "a", "w": "Keynesian economists believe taxation and government spending are the best way to control the economy."},
+      {"s": "Popularized by Milton Friedman, this school stresses the role of central banks.", "v": "b", "w": "Milton Friedman popularized monetarism, which focuses on central banks and the money supply."}
+    ]
+  },
+  {
+    "title": "Strong dollar vs Weak dollar",
+    "a": "Strong dollar",
+    "b": "Weak dollar",
+    "items": [
+      {"s": "US imports increase because foreign goods are cheaper for US businesses and consumers.", "v": "a", "w": "When the dollar strengthens it buys more foreign currency, so imports become cheaper and rise."},
+      {"s": "US exports increase because US goods look more attractive to foreign buyers.", "v": "b", "w": "A weaker dollar makes US goods cheaper abroad, so exports increase."},
+      {"s": "The usual result when Fed actions raise US interest rates and investors shift assets into dollars.", "v": "a", "w": "Higher US rates draw investors into dollars, which generally raises the dollar’s foreign exchange value."},
+      {"s": "Foreign investment in the US dollar declines.", "v": "b", "w": "Foreign investors are drawn to a strong dollar, so a weakening dollar reduces foreign investment."},
+      {"s": "US exports decrease because US goods are expensive for consumers in many foreign countries.", "v": "a", "w": "A strong dollar raises the foreign price of US goods, which restrains exports."},
+      {"s": "US imports decline because foreign goods cost American buyers more.", "v": "b", "w": "A weak dollar buys less foreign currency, making imports more expensive and reducing them."}
+    ]
+  },
+  {
+    "title": "Federal funds rate vs Discount rate",
+    "a": "Federal funds rate",
+    "b": "Discount rate",
+    "items": [
+      {"s": "The rate banks charge one another for overnight loans.", "v": "a", "w": "The federal funds rate is the interbank overnight lending rate, not a Fed lending rate."},
+      {"s": "The rate the Federal Reserve charges banks and depository institutions for short-term credit.", "v": "b", "w": "The discount rate is the interest rate on credit available from the Fed itself."},
+      {"s": "Determined by supply and demand in the market; the Fed does not directly set it.", "v": "a", "w": "The fed funds rate is market-driven, only heavily influenced by open market operations."},
+      {"s": "Considered the most volatile interest rate in the market.", "v": "a", "w": "The Knopman Note identifies the market-driven fed funds rate as the most volatile rate."},
+      {"s": "A direct tool of the Fed, lowered to ease and raised to tighten the money supply.", "v": "b", "w": "The discount rate is one of the Fed’s three tools, lowered to ease and raised to tighten."},
+      {"s": "The higher of these two rates in the order fed funds, discount, broker call, prime.", "v": "b", "w": "The lowest-to-highest ordering places the discount rate above the federal funds rate."}
+    ]
+  }
+]

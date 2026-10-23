@@ -2118,17 +2118,17 @@
    "d": 2,
    "q": "All of the following are services that an exchange provides to the market EXCEPT:",
    "o": [
-    "guaranteeing payment to the seller and delivering shares to the buyer",
+    "deciding which stocks an individual investor should buy",
     "giving issuers and investors liquidity",
     "automatically reporting transaction data",
-    "deciding which stocks an individual investor should buy"
+    "guaranteeing payment to the seller and delivering shares to the buyer"
    ],
-   "a": 3,
+   "a": 0,
    "w": [
-    "Wrong: exchanges act as clearinghouses, guaranteeing payment to the seller and delivering the purchased shares to the buyer, so this is a service they provide.",
+    "Correct: choosing what to buy is an investment decision for the investor and adviser, not a service an exchange performs.",
     "Wrong: providing liquidity, the ability to sell quickly and easily, is a core service of an exchange.",
     "Wrong: exchanges automatically report transaction data to the appropriate reporting facility.",
-    "Correct: choosing what to buy is an investment decision for the investor and adviser, not a service an exchange performs."
+    "Wrong: exchanges act as clearinghouses, guaranteeing payment to the seller and delivering the purchased shares to the buyer, so this is a service they provide."
    ]
   },
   {

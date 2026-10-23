@@ -1,427 +1,502 @@
 [
-  {
-    "id": "12-x01", "r": "12.4.1.4", "k": "concept", "d": 2,
-    "q": "Which statement correctly describes the special 529 plan distribution limits described in this chapter?",
-    "o": [
-      "Up to $20,000 per year for elementary or secondary school costs, and up to $10,000 toward student loan debt",
-      "Up to $10,000 per year for elementary or secondary school costs, and up to $20,000 toward student loan debt",
-      "Up to $20,000 per year for elementary or secondary school costs, but nothing toward student loan debt",
-      "Up to $2,000 per year for elementary or secondary school costs, and up to $10,000 toward student loan debt"
-    ],
-    "a": 0,
-    "w": [
-      "Correct: the Tax Cuts and Jobs Act allows $20,000 a year for K-12 and the SECURE Act allows $10,000 for student loans.",
-      "Wrong: this reverses the two figures, putting the larger amount on student loans instead of on elementary and secondary school costs.",
-      "Wrong: the SECURE Act provision added in 2020 does allow up to $10,000 of 529 funds to repay student loan debt.",
-      "Wrong: the $2,000 figure belongs to the Coverdell ESA annual contribution limit, not to the 529 K-12 distribution limit."
-    ]
-  },
-  {
-    "id": "12-x02", "r": "12.4.1.1", "k": "concept", "d": 3,
-    "q": "Which statements about establishing a 529 plan are TRUE?\n\nI. The designated beneficiary must be an existing child, not an unborn child\nII. The contributor must have earned income in the year of the contribution\nIII. The beneficiary must be a relative of the contributor\nIV. A parent may open a 529 plan for himself or herself if distributions pay qualified education expenses",
-    "o": [
-      "I and IV only",
-      "I, II and IV only",
-      "II and III only",
-      "I, III and IV only"
-    ],
-    "a": 0,
-    "w": [
-      "Correct: the beneficiary must already exist, and a parent can name himself or herself if the money pays qualified education costs.",
-      "Wrong: this wrongly adds statement II, because no earned income is required in the year a 529 contribution is made.",
-      "Wrong: neither earned income nor a family relationship is required, so both of these statements are false.",
-      "Wrong: this wrongly adds statement III, since the beneficiary does not have to be a relative of the contributor."
-    ]
-  },
-  {
-    "id": "12-x03", "r": "12.4.1.2", "k": "scenario", "d": 2,
-    "q": "A parent opening a 529 plan wants an investment option whose allocation stays in the same fund or combination of funds regardless of the child’s age. Which option fits?",
-    "o": [
-      "Age-based option",
-      "Risk-based option",
-      "Prepaid tuition plan",
-      "Guaranteed or insured option"
-    ],
-    "a": 1,
-    "w": [
-      "Wrong: an age-based option becomes more conservative as the beneficiary nears college age, so the allocation does not stay constant.",
-      "Correct: risk-based options keep the underlying investments in the same fund or combination of funds regardless of the beneficiary’s age.",
-      "Wrong: a prepaid tuition plan locks in future tuition at designated colleges rather than offering an investment allocation that stays fixed.",
-      "Wrong: guaranteed or insured products are designed to protect principal and are not defined by a constant allocation regardless of age."
-    ]
-  },
-  {
-    "id": "12-x04", "r": "12.4.1.3", "k": "concept", "d": 2,
-    "q": "All of the following are true of direct-sold 529 plans EXCEPT:",
-    "o": [
-      "Investors may access the plan through a primary distributor or directly through state personnel",
-      "Fees and charges may be lower than in an adviser-sold plan",
-      "Investors always receive the advice of an investment professional",
-      "Investors deal directly with the plan rather than through a municipal securities firm"
-    ],
-    "a": 2,
-    "w": [
-      "Wrong: this is a true statement, because direct-sold plans can be reached through a primary distributor or state personnel.",
-      "Wrong: this is true, since fees and charges may be lower in a direct-sold plan than in an adviser-sold plan.",
-      "Correct: investors in direct-sold plans may not have access to an investment professional, which is the advantage of adviser-sold plans.",
-      "Wrong: this is true, because direct-sold plans are purchased from the plan itself and not through an authorized municipal securities firm."
-    ]
-  },
-  {
-    "id": "12-x05", "r": "12.4.1", "k": "concept", "d": 2,
-    "q": "Which statement about prepaid tuition plans is TRUE?",
-    "o": [
-      "They allow families to prepay future tuition at designated colleges, often public colleges within the state",
-      "They are far more popular than 529 college savings plans",
-      "They are offered only by insurance companies",
-      "They may be used only to pay room and board"
-    ],
-    "a": 0,
-    "w": [
-      "Correct: prepaid tuition plans let families prepay tuition at designated colleges, sometimes locking in today’s cost of future tuition.",
-      "Wrong: prepaid tuition plans are much less popular than 529 savings plans, which is why the chapter focuses on savings plans.",
-      "Wrong: these plans are established by states and educational institutions, not only by insurance companies.",
-      "Wrong: the plans exist to prepay future tuition, not room and board, so this use description is inaccurate."
-    ]
-  },
-  {
-    "id": "12-x06", "r": "12.4.1.1", "k": "scenario", "d": 2,
-    "q": "Mia’s daughter decides not to attend college, so Mia wants to move the unused 529 funds to a family member’s 529 plan with no penalty. How often does the chapter say this transfer can be made?",
-    "o": [
-      "Up to once per year",
-      "Only once during the owner’s lifetime",
-      "Without limit, as many times as the owner wishes",
-      "Never; unused funds must be withdrawn with a 10% federal penalty"
-    ],
-    "a": 0,
-    "w": [
-      "Correct: unused 529 funds may be transferred to a family member’s 529 with no penalty, up to once per year.",
-      "Wrong: the chapter sets the limit at once per year, not once in a lifetime, so this overstates the restriction.",
-      "Wrong: the transfer is limited to once per year, so the owner cannot repeat it as often as desired.",
-      "Wrong: a transfer to a family member’s plan avoids the penalty, which applies to non-qualified withdrawals rather than family transfers."
-    ]
-  },
-  {
-    "id": "12-x07", "r": "12.2.1.3", "k": "scenario", "d": 3,
-    "q": "Roy, age 40, takes the following withdrawals from his deductible traditional IRA this year. Assuming each amount is within the stated limit of its exception, which are exempt from the 10% early withdrawal penalty?\n\nI. $9,000 to buy his first home\nII. $4,000 on the birth of his child\nIII. $12,000 to fund a vacation\nIV. $15,000 while living in a federally declared disaster area",
-    "o": [
-      "I, II and IV only",
-      "I and II only",
-      "II, III and IV only",
-      "I, III and IV only"
-    ],
-    "a": 0,
-    "w": [
-      "Correct: first-time home purchase, birth or adoption, and disaster-area distributions are listed exceptions, while a vacation is not.",
-      "Wrong: this omits the disaster-area exception, which allows distributions up to $22,000 without the 10% penalty.",
-      "Wrong: this includes the vacation withdrawal, which is not an exception, and leaves out the first-time homebuyer exception.",
-      "Wrong: this includes the vacation withdrawal and leaves out the birth exception, even though a $4,000 birth withdrawal is within the $5,000 limit."
-    ]
-  },
-  {
-    "id": "12-x08", "r": "12.2.1.3", "k": "calc", "d": 2,
-    "q": "Carlos and Elena, both age 33, welcome a newborn. Each owns a traditional IRA, and each takes a withdrawal for birth-related expenses. What is the maximum total that can be withdrawn from the two IRAs free of the 10% penalty under the birth or adoption exception?",
-    "o": [
-      "$5,000",
-      "$10,000",
-      "$22,000",
-      "$20,000"
-    ],
-    "a": 1,
-    "w": [
-      "Wrong: $5,000 is the limit for only one parent, but both parents can each use their own limit.",
-      "Correct: the exception is limited to $5,000 per parent, so two parents can withdraw $5,000 each, for $10,000 in total.",
-      "Wrong: $22,000 is the limit for federally declared disaster-area distributions, which is a different exception.",
-      "Wrong: $20,000 does not correspond to the birth or adoption exception, which caps each parent at $5,000."
-    ]
-  },
-  {
-    "id": "12-x09", "r": "12.2.1.3", "k": "calc", "d": 3,
-    "q": "Priya, age 41, lives in a federally declared disaster area and withdraws $28,000 of pre-tax money from her traditional IRA. The disaster exception covers only up to its stated limit. What 10% early withdrawal penalty is due?",
-    "o": [
-      "$2,800",
-      "$600",
-      "$0",
-      "$2,200"
-    ],
-    "a": 1,
-    "w": [
-      "Wrong: $2,800 applies the 10% penalty to the whole withdrawal, ignoring that the first $22,000 qualifies for the exception.",
-      "Correct: $22,000 is exempt, leaving $6,000 subject to the 10% penalty, which equals $600 on top of ordinary income tax.",
-      "Wrong: the exception covers only distributions up to $22,000, so the excess $6,000 is still penalized.",
-      "Wrong: $2,200 is 10% of the exempt $22,000 rather than 10% of the $6,000 that exceeds the exception."
-    ]
-  },
-  {
-    "id": "12-x10", "r": "12.2.1", "k": "calc", "d": 2,
-    "q": "Gwen, age 45, receives a $90,000 corporate pension and $20,000 of dividends. She also earns $3,000 in wages from a part-time job. What is the most she can contribute to a traditional IRA for the year?",
-    "o": [
-      "$3,000",
-      "$7,500",
-      "$113,000",
-      "$23,000"
-    ],
-    "a": 0,
-    "w": [
-      "Correct: only earned income counts, and the limit is the lesser of $7,500 or 100% of earned income, which is her $3,000 of wages.",
-      "Wrong: $7,500 is the dollar limit, but Gwen’s earned income is lower and the contribution cannot exceed it.",
-      "Wrong: this adds pension income and dividends, which are not earned income and cannot be contributed to an IRA.",
-      "Wrong: adding dividends to wages is incorrect because investment income does not count as earned income."
-    ]
-  },
-  {
-    "id": "12-x11", "r": "12.2.2", "k": "concept", "d": 2,
-    "q": "Which statements about contributions to a Roth IRA are TRUE?\n\nI. An owner covered by a retirement plan at work is not prohibited from contributing\nII. There is no age limit for contributing if the owner has earned income\nIII. Eligibility to contribute depends on the taxpayer’s income\nIV. Contributions are made with pre-tax dollars if the owner has no workplace plan",
-    "o": [
-      "I, II and III only",
-      "I, II and IV only",
-      "II, III and IV only",
-      "I and III only"
-    ],
-    "a": 0,
-    "w": [
-      "Correct: workplace coverage does not bar Roth contributions, there is no age limit, and income limits restrict eligibility.",
-      "Wrong: this includes statement IV, but Roth IRA contributions are always after-tax whether or not a workplace plan exists.",
-      "Wrong: this includes statement IV and omits statement I, even though workplace plan coverage does not prohibit Roth contributions.",
-      "Wrong: this omits statement II, yet the chapter notes there is no age limit for contributing to a Roth with earned income."
-    ]
-  },
-  {
-    "id": "12-x12", "r": "12.2.2.1", "k": "scenario", "d": 2,
-    "q": "Sam, age 35, opened a Roth IRA three years ago. He takes a withdrawal that consists solely of his own contributions, and no exception applies. What are the consequences?",
-    "o": [
-      "No income tax and no 10% penalty, because his contributions were made with after-tax dollars",
-      "Ordinary income tax and a 10% penalty on the full amount",
-      "A 10% penalty on the full amount but no income tax",
-      "Taxation of the full amount as long-term capital gains"
-    ],
-    "a": 0,
-    "w": [
-      "Correct: Roth contributions were taxed going in and come out tax-free, while tax and the 10% penalty apply only to earnings.",
-      "Wrong: tax and penalty apply to the earnings portion of a non-qualified Roth distribution, not to a return of contributions.",
-      "Wrong: the penalty applies to earnings withdrawn early, so a withdrawal of contributions alone is not penalized.",
-      "Wrong: retirement account withdrawals are never taxed as capital gains, and contributions are not taxed at all."
-    ]
-  },
-  {
-    "id": "12-x13", "r": "12.2.1.4", "k": "calc", "d": 3,
-    "q": "Beatrice’s required minimum distribution for the year was $24,000, but she took only $9,000. She corrects the shortfall in the following year. What excise tax is due?",
-    "o": [
-      "$1,500",
-      "$3,750",
-      "$2,400",
-      "$600"
-    ],
-    "a": 0,
-    "w": [
-      "Correct: the shortfall is $15,000 and correction within two years reduces the excise tax to 10%, which is $1,500.",
-      "Wrong: $3,750 applies the 25% rate to the shortfall, but the rate falls to 10% when corrected within two years.",
-      "Wrong: $2,400 applies 10% to the full RMD rather than to the $15,000 that was under-distributed.",
-      "Wrong: $600 applies 10% to only $6,000 and does not match the actual $15,000 shortfall."
-    ]
-  },
-  {
-    "id": "12-x14", "r": "12.2.1.4", "k": "scenario", "d": 3,
-    "q": "Hector turns 73 on March 3, 2027, and takes his first RMD from his traditional IRA on its deadline. By what date must he take his next RMD?",
-    "o": [
-      "December 31, 2028",
-      "April 1, 2029",
-      "December 31, 2029",
-      "April 1, 2028"
-    ],
-    "a": 0,
-    "w": [
-      "Correct: his first RMD is due April 1, 2028, and each later RMD is due by the end of the calendar year, so December 31, 2028.",
-      "Wrong: April 1 applies only to the first RMD; later distributions are due by the end of each calendar year.",
-      "Wrong: this skips a year, because the next RMD is due by the end of the calendar year of the first deadline.",
-      "Wrong: April 1, 2028 is the deadline for his first RMD, not the next one."
-    ]
-  },
-  {
-    "id": "12-x15", "r": "12.3.3.3", "k": "scenario", "d": 3,
-    "q": "Walter annuitized his variable annuity two years ago and elected the straight life payout. His contributions totaled $200,000 and the contract value at annuitization was $150,000. He dies after receiving 30 monthly payments. What does his beneficiary receive?",
-    "o": [
-      "Nothing further, because straight life pays no beneficiary and the death benefit usually ends at annuitization",
-      "$200,000, the greater of the contract value or the amount contributed",
-      "$150,000, the contract value at annuitization",
-      "The remaining payments for a guaranteed 10-year period"
-    ],
-    "a": 0,
-    "w": [
-      "Correct: straight life stops at death with no payments to a beneficiary, and the death benefit usually ends upon annuitization.",
-      "Wrong: the greater-of death benefit applies only during the accumulation phase, not after the contract has been annuitized.",
-      "Wrong: the contract value was converted into annuity units at annuitization, so no lump sum is paid to the beneficiary.",
-      "Wrong: a guaranteed period belongs to life with period certain, which Walter did not select."
-    ]
-  },
-  {
-    "id": "12-x16", "r": "12.3.3.3", "k": "concept", "d": 2,
-    "q": "Rank these annuity payout options from the highest to the lowest monthly payment:\n\nI. Joint with last survivor\nII. Life with a 15-year period certain\nIII. Straight life",
-    "o": [
-      "III, II, I",
-      "II, III, I",
-      "III, I, II",
-      "I, II, III"
-    ],
-    "a": 0,
-    "w": [
-      "Correct: straight life pays the most, joint with last survivor the least, so life with period certain falls in the middle.",
-      "Wrong: this places life with period certain above straight life, but straight life has the highest payment because it carries the most risk.",
-      "Wrong: this places joint with last survivor in the middle, yet it has the strongest guarantee and therefore the lowest payment.",
-      "Wrong: this is the exact reverse order, putting the lowest-paying joint option first and the highest-paying straight life option last."
-    ]
-  },
-  {
-    "id": "12-x17", "r": "12.3.3.3", "k": "scenario", "d": 2,
-    "q": "Dana has annuitized her variable annuity and has received two monthly payments under the straight life option. She now wants to switch to joint with last survivor so her husband is protected. What does the chapter say?",
-    "o": [
-      "The change is not allowed, because the payout option must be chosen before annuitization and cannot be changed afterward",
-      "The change is allowed at any time with advance notice",
-      "The change is allowed only during the first year of payments",
-      "The change is allowed only if her husband consents"
-    ],
-    "a": 0,
-    "w": [
-      "Correct: the payout option is selected before annuitization, and once the choice has been made it cannot be changed.",
-      "Wrong: the chapter states the choice is final once made, so no change is permitted at any time with notice.",
-      "Wrong: the chapter provides no first-year window; the election cannot be changed after it has been made.",
-      "Wrong: consent of the husband is not a mechanism for changing the option, since the election is final."
-    ]
-  },
-  {
-    "id": "12-x18", "r": "12.3.3.1", "k": "concept", "d": 3,
-    "q": "Which statements about accumulation units in a variable annuity are TRUE?\n\nI. The number of units increases as the owner invests more money\nII. The value of each unit fluctuates with the securities in the subaccount\nIII. The value of each unit is recalculated monthly\nIV. At annuitization they are converted into a fixed number of annuity units",
-    "o": [
-      "I, II and IV only",
-      "I, II and III only",
-      "II, III and IV only",
-      "I and IV only"
-    ],
-    "a": 0,
-    "w": [
-      "Correct: units increase with deposits, unit value moves with the market, and annuitization converts them to a fixed number of annuity units.",
-      "Wrong: this includes statement III, but unit values are recalculated daily rather than monthly, and it omits statement IV.",
-      "Wrong: this includes the false monthly valuation statement and omits statement I, even though the number of units rises with more money invested.",
-      "Wrong: this leaves out statement II, yet the value of each unit does fluctuate with the securities in the subaccount."
-    ]
-  },
-  {
-    "id": "12-x19", "r": "12.3.3.6", "k": "concept", "d": 2,
-    "q": "A registered representative is recommending a deferred variable annuity to a customer. Under FINRA Rule 2330, which belief must the representative have before making the recommendation?",
-    "o": [
-      "The customer would benefit from the features of the variable annuity, and the product and subaccounts are suitable",
-      "The customer will earn a guaranteed minimum return in the separate account",
-      "The customer is in a high enough tax bracket to avoid the 10% early withdrawal penalty",
-      "The customer will not need access to the funds for at least three years"
-    ],
-    "a": 0,
-    "w": [
-      "Correct: Rule 2330 bars a recommendation unless the rep has reason to believe the product and subaccounts are suitable and the customer would benefit.",
-      "Wrong: separate account returns are not guaranteed, because the investor bears the market risk.",
-      "Wrong: the early withdrawal penalty is a disclosure item that applies before 59½ and has nothing to do with tax bracket.",
-      "Wrong: Rule 2330 as described contains no three-year liquidity requirement; surrender charges are disclosed instead."
-    ]
-  },
-  {
-    "id": "12-x20", "r": "12.1.2", "k": "scenario", "d": 2,
-    "q": "Tom, age 45, is a full-time employee with six years of service. His company has a non-qualified deferred compensation plan for its executives, and Tom is not invited. Tom says the plan is discriminatory because he meets ERISA’s age and service requirements. Which statement is correct?",
-    "o": [
-      "The employer may choose which employees participate, because non-qualified plans are not subject to ERISA eligibility rules",
-      "Tom must be admitted, because every full-time employee over 21 with one year of service must be eligible",
-      "Tom must be admitted only if he also works at least 500 hours in three consecutive years",
-      "The plan loses its tax-deferred growth unless every employee participates"
-    ],
-    "a": 0,
-    "w": [
-      "Correct: non-qualified plans are not ERISA-covered, so employers can include or exclude any employees and avoid nondiscrimination tests.",
-      "Wrong: the age 21 and one year of service eligibility rule applies to ERISA qualified plans, not non-qualified plans.",
-      "Wrong: the 500-hour part-time rule is an ERISA requirement that does not apply to non-qualified plans.",
-      "Wrong: tax-deferred growth does not depend on universal participation, and non-qualified plans may be limited to key executives."
-    ]
-  },
-  {
-    "id": "12-x21", "r": "12.1.1.3", "k": "calc", "d": 2,
-    "q": "A small company contributes 6% of compensation to the SEP-IRAs of its eligible employees. The owner earns $200,000 and a staff member earns $55,000. What must the employer contribute to the staff member’s SEP-IRA?",
-    "o": [
-      "$3,300",
-      "$12,000",
-      "$0, because employees must fund their own SEP-IRA",
-      "$5,500"
-    ],
-    "a": 0,
-    "w": [
-      "Correct: the same percentage must be contributed for all eligible employees, so 6% of $55,000 equals $3,300.",
-      "Wrong: $12,000 is 6% of the owner’s $200,000 compensation, not the staff member’s contribution.",
-      "Wrong: only the employer, never the employee, contributes to a SEP-IRA, so the employer funds the staff member’s account.",
-      "Wrong: $5,500 is 10% of the staff member’s pay, not the 6% the company contributes."
-    ]
-  },
-  {
-    "id": "12-x22", "r": "12.2.1.2", "k": "concept", "d": 3,
-    "q": "Distributions from which of the following are taxed as ordinary income only on the growth above the amount contributed?\n\nI. A non-qualified corporate plan\nII. A non-deductible traditional IRA\nIII. A deductible traditional IRA\nIV. A variable annuity funded with after-tax dollars",
-    "o": [
-      "I, II and IV only",
-      "I and II only",
-      "II, III and IV only",
-      "I, III and IV only"
-    ],
-    "a": 0,
-    "w": [
-      "Correct: after-tax contributions mean only the growth above basis is taxed, which covers the non-qualified plan, non-deductible IRA and after-tax annuity.",
-      "Wrong: this omits the after-tax variable annuity, where tax is due only on the difference between basis and value.",
-      "Wrong: this includes the deductible traditional IRA, where contributions were pre-tax so every distribution is taxable, and omits the non-qualified plan.",
-      "Wrong: this includes the deductible traditional IRA, which works like a qualified plan, and omits the non-deductible traditional IRA."
-    ]
-  },
-  {
-    "id": "12-x23", "r": "12.3.3.5", "k": "calc", "d": 3,
-    "q": "Ines, age 54, paid $50,000 of after-tax money into a variable annuity that is now worth $80,000. She withdraws the entire contract value. What amount is taxable as ordinary income, and what is the 10% early withdrawal penalty?",
-    "o": [
-      "$30,000 taxable; $3,000 penalty",
-      "$80,000 taxable; $8,000 penalty",
-      "$30,000 taxable; $8,000 penalty",
-      "$30,000 taxable; no penalty"
-    ],
-    "a": 0,
-    "w": [
-      "Correct: tax applies to value minus basis, which is $30,000, and the 10% penalty before 59½ applies to those earnings, which is $3,000.",
-      "Wrong: this taxes and penalizes the entire $80,000 even though $50,000 was already-taxed basis.",
-      "Wrong: the taxable amount is right, but the penalty is computed on the entire withdrawal instead of only the earnings.",
-      "Wrong: the taxable amount is right, but Ines is under 59½ so the 10% penalty on the earnings applies."
-    ]
-  },
-  {
-    "id": "12-x24", "r": "12.4.3", "k": "concept", "d": 2,
-    "q": "Which statements are TRUE of both ABLE accounts and 529 plans?\n\nI. Contributions are made with after-tax dollars\nII. Growth is tax-free\nIII. They are available in all states\nIV. Contributions are federally tax-deductible",
-    "o": [
-      "I, II and III only",
-      "I and II only",
-      "II, III and IV only",
-      "I, III and IV only"
-    ],
-    "a": 0,
-    "w": [
-      "Correct: both use after-tax contributions with tax-free growth and are available in all states, and neither gives a federal deduction.",
-      "Wrong: this omits statement III, yet both ABLE accounts and 529 plans are available in all states.",
-      "Wrong: this includes statement IV, but contributions to both account types are made with after-tax dollars and are not federally deductible.",
-      "Wrong: this includes statement IV and omits statement II, even though growth is tax-free in both account types."
-    ]
-  },
-  {
-    "id": "12-x25", "r": "12.4.1.7", "k": "concept", "d": 2,
-    "q": "Which statement about MSRB Rule G-45 is correct?",
-    "o": [
-      "Underwriters of 529 plans and ABLE programs must submit specified information electronically twice a year, and local government investment pools are not covered",
-      "Underwriters must submit paper reports quarterly, and local government investment pools are covered",
-      "Only 529 plans, not ABLE programs, must report, and reports are due annually",
-      "Registered representatives must file a report each time they sell an out-of-state 529 plan"
-    ],
-    "a": 0,
-    "w": [
-      "Correct: Rule G-45 requires underwriters of 529 plans and ABLE programs to submit data electronically each half-year, excluding LGIPs.",
-      "Wrong: the submissions are electronic and semiannual rather than quarterly paper reports, and LGIPs are specifically excluded.",
-      "Wrong: the rule covers both 529 plans and ABLE programs, and the reporting is semiannual rather than annual.",
-      "Wrong: the representative’s duty on out-of-state plans is to disclose potential tax consequences at or before the sale, not to file reports."
-    ]
-  }
+ {
+  "id": "12-x01",
+  "r": "12.4.1.4",
+  "k": "concept",
+  "d": 2,
+  "q": "Which statement correctly describes the special 529 plan distribution limits described in this chapter?",
+  "o": [
+   "Up to $20,000 per year for elementary or secondary school costs, and up to $10,000 toward student loan debt",
+   "Up to $10,000 per year for elementary or secondary school costs, and up to $20,000 toward student loan debt",
+   "Up to $20,000 per year for elementary or secondary school costs, but nothing toward student loan debt",
+   "Up to $2,000 per year for elementary or secondary school costs, and up to $10,000 toward student loan debt"
+  ],
+  "a": 0,
+  "w": [
+   "Correct: the Tax Cuts and Jobs Act allows $20,000 a year for K-12 and the SECURE Act allows $10,000 for student loans.",
+   "Wrong: this reverses the two figures, putting the larger amount on student loans instead of on elementary and secondary school costs.",
+   "Wrong: the SECURE Act provision added in 2020 does allow up to $10,000 of 529 funds to repay student loan debt.",
+   "Wrong: the $2,000 figure belongs to the Coverdell ESA annual contribution limit, not to the 529 K-12 distribution limit."
+  ]
+ },
+ {
+  "id": "12-x02",
+  "r": "12.4.1.1",
+  "k": "concept",
+  "d": 3,
+  "q": "Which statements about establishing a 529 plan are TRUE?\n\nI. The designated beneficiary must be an existing child, not an unborn child\nII. The contributor must have earned income in the year of the contribution\nIII. The beneficiary must be a relative of the contributor\nIV. A parent may open a 529 plan for himself or herself if distributions pay qualified education expenses",
+  "o": [
+   "II and III only",
+   "I, II and IV only",
+   "I and IV only",
+   "I, III and IV only"
+  ],
+  "a": 2,
+  "w": [
+   "Wrong: neither earned income nor a family relationship is required, so both of these statements are false.",
+   "Wrong: this wrongly adds statement II, because no earned income is required in the year a 529 contribution is made.",
+   "Correct: the beneficiary must already exist, and a parent can name himself or herself if the money pays qualified education costs.",
+   "Wrong: this wrongly adds statement III, since the beneficiary does not have to be a relative of the contributor."
+  ]
+ },
+ {
+  "id": "12-x03",
+  "r": "12.4.1.2",
+  "k": "scenario",
+  "d": 2,
+  "q": "A parent opening a 529 plan wants an investment option whose allocation stays in the same fund or combination of funds regardless of the child’s age. Which option fits?",
+  "o": [
+   "Age-based option",
+   "Risk-based option",
+   "Prepaid tuition plan",
+   "Guaranteed or insured option"
+  ],
+  "a": 1,
+  "w": [
+   "Wrong: an age-based option becomes more conservative as the beneficiary nears college age, so the allocation does not stay constant.",
+   "Correct: risk-based options keep the underlying investments in the same fund or combination of funds regardless of the beneficiary’s age.",
+   "Wrong: a prepaid tuition plan locks in future tuition at designated colleges rather than offering an investment allocation that stays fixed.",
+   "Wrong: guaranteed or insured products are designed to protect principal and are not defined by a constant allocation regardless of age."
+  ]
+ },
+ {
+  "id": "12-x04",
+  "r": "12.4.1.3",
+  "k": "concept",
+  "d": 2,
+  "q": "All of the following are true of direct-sold 529 plans EXCEPT:",
+  "o": [
+   "Investors may access the plan through a primary distributor or directly through state personnel",
+   "Fees and charges may be lower than in an adviser-sold plan",
+   "Investors deal directly with the plan rather than through a municipal securities firm",
+   "Investors always receive the advice of an investment professional"
+  ],
+  "a": 3,
+  "w": [
+   "Wrong: this is a true statement, because direct-sold plans can be reached through a primary distributor or state personnel.",
+   "Wrong: this is true, since fees and charges may be lower in a direct-sold plan than in an adviser-sold plan.",
+   "Wrong: this is true, because direct-sold plans are purchased from the plan itself and not through an authorized municipal securities firm.",
+   "Correct: investors in direct-sold plans may not have access to an investment professional, which is the advantage of adviser-sold plans."
+  ]
+ },
+ {
+  "id": "12-x05",
+  "r": "12.4.1",
+  "k": "concept",
+  "d": 2,
+  "q": "Which statement about prepaid tuition plans is TRUE?",
+  "o": [
+   "They may be used only to pay room and board",
+   "They are far more popular than 529 college savings plans",
+   "They are offered only by insurance companies",
+   "They allow families to prepay future tuition at designated colleges, often public colleges within the state"
+  ],
+  "a": 3,
+  "w": [
+   "Wrong: the plans exist to prepay future tuition, not room and board, so this use description is inaccurate.",
+   "Wrong: prepaid tuition plans are much less popular than 529 savings plans, which is why the chapter focuses on savings plans.",
+   "Wrong: these plans are established by states and educational institutions, not only by insurance companies.",
+   "Correct: prepaid tuition plans let families prepay tuition at designated colleges, sometimes locking in today’s cost of future tuition."
+  ]
+ },
+ {
+  "id": "12-x06",
+  "r": "12.4.1.1",
+  "k": "scenario",
+  "d": 2,
+  "q": "Mia’s daughter decides not to attend college, so Mia wants to move the unused 529 funds to a family member’s 529 plan with no penalty. How often does the chapter say this transfer can be made?",
+  "o": [
+   "Only once during the owner’s lifetime",
+   "Up to once per year",
+   "Without limit, as many times as the owner wishes",
+   "Never; unused funds must be withdrawn with a 10% federal penalty"
+  ],
+  "a": 1,
+  "w": [
+   "Wrong: the chapter sets the limit at once per year, not once in a lifetime, so this overstates the restriction.",
+   "Correct: unused 529 funds may be transferred to a family member’s 529 with no penalty, up to once per year.",
+   "Wrong: the transfer is limited to once per year, so the owner cannot repeat it as often as desired.",
+   "Wrong: a transfer to a family member’s plan avoids the penalty, which applies to non-qualified withdrawals rather than family transfers."
+  ]
+ },
+ {
+  "id": "12-x07",
+  "r": "12.2.1.3",
+  "k": "scenario",
+  "d": 3,
+  "q": "Roy, age 40, takes the following withdrawals from his deductible traditional IRA this year. Assuming each amount is within the stated limit of its exception, which are exempt from the 10% early withdrawal penalty?\n\nI. $9,000 to buy his first home\nII. $4,000 on the birth of his child\nIII. $12,000 to fund a vacation\nIV. $15,000 while living in a federally declared disaster area",
+  "o": [
+   "I, II and IV only",
+   "I and II only",
+   "II, III and IV only",
+   "I, III and IV only"
+  ],
+  "a": 0,
+  "w": [
+   "Correct: first-time home purchase, birth or adoption, and disaster-area distributions are listed exceptions, while a vacation is not.",
+   "Wrong: this omits the disaster-area exception, which allows distributions up to $22,000 without the 10% penalty.",
+   "Wrong: this includes the vacation withdrawal, which is not an exception, and leaves out the first-time homebuyer exception.",
+   "Wrong: this includes the vacation withdrawal and leaves out the birth exception, even though a $4,000 birth withdrawal is within the $5,000 limit."
+  ]
+ },
+ {
+  "id": "12-x08",
+  "r": "12.2.1.3",
+  "k": "calc",
+  "d": 2,
+  "q": "Carlos and Elena, both age 33, welcome a newborn. Each owns a traditional IRA, and each takes a withdrawal for birth-related expenses. What is the maximum total that can be withdrawn from the two IRAs free of the 10% penalty under the birth or adoption exception?",
+  "o": [
+   "$5,000",
+   "$22,000",
+   "$10,000",
+   "$20,000"
+  ],
+  "a": 2,
+  "w": [
+   "Wrong: $5,000 is the limit for only one parent, but both parents can each use their own limit.",
+   "Wrong: $22,000 is the limit for federally declared disaster-area distributions, which is a different exception.",
+   "Correct: the exception is limited to $5,000 per parent, so two parents can withdraw $5,000 each, for $10,000 in total.",
+   "Wrong: $20,000 does not correspond to the birth or adoption exception, which caps each parent at $5,000."
+  ]
+ },
+ {
+  "id": "12-x09",
+  "r": "12.2.1.3",
+  "k": "calc",
+  "d": 3,
+  "q": "Priya, age 41, lives in a federally declared disaster area and withdraws $28,000 of pre-tax money from her traditional IRA. The disaster exception covers only up to its stated limit. What 10% early withdrawal penalty is due?",
+  "o": [
+   "$2,800",
+   "$600",
+   "$0",
+   "$2,200"
+  ],
+  "a": 1,
+  "w": [
+   "Wrong: $2,800 applies the 10% penalty to the whole withdrawal, ignoring that the first $22,000 qualifies for the exception.",
+   "Correct: $22,000 is exempt, leaving $6,000 subject to the 10% penalty, which equals $600 on top of ordinary income tax.",
+   "Wrong: the exception covers only distributions up to $22,000, so the excess $6,000 is still penalized.",
+   "Wrong: $2,200 is 10% of the exempt $22,000 rather than 10% of the $6,000 that exceeds the exception."
+  ]
+ },
+ {
+  "id": "12-x10",
+  "r": "12.2.1",
+  "k": "calc",
+  "d": 2,
+  "q": "Gwen, age 45, receives a $90,000 corporate pension and $20,000 of dividends. She also earns $3,000 in wages from a part-time job. What is the most she can contribute to a traditional IRA for the year?",
+  "o": [
+   "$3,000",
+   "$7,500",
+   "$113,000",
+   "$23,000"
+  ],
+  "a": 0,
+  "w": [
+   "Correct: only earned income counts, and the limit is the lesser of $7,500 or 100% of earned income, which is her $3,000 of wages.",
+   "Wrong: $7,500 is the dollar limit, but Gwen’s earned income is lower and the contribution cannot exceed it.",
+   "Wrong: this adds pension income and dividends, which are not earned income and cannot be contributed to an IRA.",
+   "Wrong: adding dividends to wages is incorrect because investment income does not count as earned income."
+  ]
+ },
+ {
+  "id": "12-x11",
+  "r": "12.2.2",
+  "k": "concept",
+  "d": 2,
+  "q": "Which statements about contributions to a Roth IRA are TRUE?\n\nI. An owner covered by a retirement plan at work is not prohibited from contributing\nII. There is no age limit for contributing if the owner has earned income\nIII. Eligibility to contribute depends on the taxpayer’s income\nIV. Contributions are made with pre-tax dollars if the owner has no workplace plan",
+  "o": [
+   "II, III and IV only",
+   "I, II and IV only",
+   "I, II and III only",
+   "I and III only"
+  ],
+  "a": 2,
+  "w": [
+   "Wrong: this includes statement IV and omits statement I, even though workplace plan coverage does not prohibit Roth contributions.",
+   "Wrong: this includes statement IV, but Roth IRA contributions are always after-tax whether or not a workplace plan exists.",
+   "Correct: workplace coverage does not bar Roth contributions, there is no age limit, and income limits restrict eligibility.",
+   "Wrong: this omits statement II, yet the chapter notes there is no age limit for contributing to a Roth with earned income."
+  ]
+ },
+ {
+  "id": "12-x12",
+  "r": "12.2.2.1",
+  "k": "scenario",
+  "d": 2,
+  "q": "Sam, age 35, opened a Roth IRA three years ago. He takes a withdrawal that consists solely of his own contributions, and no exception applies. What are the consequences?",
+  "o": [
+   "Taxation of the full amount as long-term capital gains",
+   "Ordinary income tax and a 10% penalty on the full amount",
+   "A 10% penalty on the full amount but no income tax",
+   "No income tax and no 10% penalty, because his contributions were made with after-tax dollars"
+  ],
+  "a": 3,
+  "w": [
+   "Wrong: retirement account withdrawals are never taxed as capital gains, and contributions are not taxed at all.",
+   "Wrong: tax and penalty apply to the earnings portion of a non-qualified Roth distribution, not to a return of contributions.",
+   "Wrong: the penalty applies to earnings withdrawn early, so a withdrawal of contributions alone is not penalized.",
+   "Correct: Roth contributions were taxed going in and come out tax-free, while tax and the 10% penalty apply only to earnings."
+  ]
+ },
+ {
+  "id": "12-x13",
+  "r": "12.2.1.4",
+  "k": "calc",
+  "d": 3,
+  "q": "Beatrice’s required minimum distribution for the year was $24,000, but she took only $9,000. She corrects the shortfall in the following year. What excise tax is due?",
+  "o": [
+   "$3,750",
+   "$1,500",
+   "$2,400",
+   "$600"
+  ],
+  "a": 1,
+  "w": [
+   "Wrong: $3,750 applies the 25% rate to the shortfall, but the rate falls to 10% when corrected within two years.",
+   "Correct: the shortfall is $15,000 and correction within two years reduces the excise tax to 10%, which is $1,500.",
+   "Wrong: $2,400 applies 10% to the full RMD rather than to the $15,000 that was under-distributed.",
+   "Wrong: $600 applies 10% to only $6,000 and does not match the actual $15,000 shortfall."
+  ]
+ },
+ {
+  "id": "12-x14",
+  "r": "12.2.1.4",
+  "k": "scenario",
+  "d": 3,
+  "q": "Hector turns 73 on March 3, 2027, and takes his first RMD from his traditional IRA on its deadline. By what date must he take his next RMD?",
+  "o": [
+   "December 31, 2028",
+   "April 1, 2029",
+   "December 31, 2029",
+   "April 1, 2028"
+  ],
+  "a": 0,
+  "w": [
+   "Correct: his first RMD is due April 1, 2028, and each later RMD is due by the end of the calendar year, so December 31, 2028.",
+   "Wrong: April 1 applies only to the first RMD; later distributions are due by the end of each calendar year.",
+   "Wrong: this skips a year, because the next RMD is due by the end of the calendar year of the first deadline.",
+   "Wrong: April 1, 2028 is the deadline for his first RMD, not the next one."
+  ]
+ },
+ {
+  "id": "12-x15",
+  "r": "12.3.3.3",
+  "k": "scenario",
+  "d": 3,
+  "q": "Walter annuitized his variable annuity two years ago and elected the straight life payout. His contributions totaled $200,000 and the contract value at annuitization was $150,000. He dies after receiving 24 monthly payments. What does his beneficiary receive?",
+  "o": [
+   "$150,000, the contract value at annuitization",
+   "$200,000, the greater of the contract value or the amount contributed",
+   "Nothing further, because straight life pays no beneficiary and the death benefit usually ends at annuitization",
+   "The remaining payments for a guaranteed 10-year period"
+  ],
+  "a": 2,
+  "w": [
+   "Wrong: the contract value was converted into annuity units at annuitization, so no lump sum is paid to the beneficiary.",
+   "Wrong: the greater-of death benefit applies only during the accumulation phase, not after the contract has been annuitized.",
+   "Correct: straight life stops at death with no payments to a beneficiary, and the death benefit usually ends upon annuitization.",
+   "Wrong: a guaranteed period belongs to life with period certain, which Walter did not select."
+  ]
+ },
+ {
+  "id": "12-x16",
+  "r": "12.3.3.3",
+  "k": "concept",
+  "d": 2,
+  "q": "Rank these annuity payout options from the highest to the lowest monthly payment:\n\nI. Joint with last survivor\nII. Life with a 15-year period certain\nIII. Straight life",
+  "o": [
+   "I, II, III",
+   "II, III, I",
+   "III, I, II",
+   "III, II, I"
+  ],
+  "a": 3,
+  "w": [
+   "Wrong: this is the exact reverse order, putting the lowest-paying joint option first and the highest-paying straight life option last.",
+   "Wrong: this places life with period certain above straight life, but straight life has the highest payment because it carries the most risk.",
+   "Wrong: this places joint with last survivor in the middle, yet it has the strongest guarantee and therefore the lowest payment.",
+   "Correct: straight life pays the most, joint with last survivor the least, so life with period certain falls in the middle."
+  ]
+ },
+ {
+  "id": "12-x17",
+  "r": "12.3.3.3",
+  "k": "scenario",
+  "d": 2,
+  "q": "Dana has annuitized her variable annuity and has received two monthly payments under the straight life option. She now wants to switch to joint with last survivor so her husband is protected. What does the chapter say?",
+  "o": [
+   "The change is allowed only if her husband consents",
+   "The change is allowed at any time with advance notice",
+   "The change is allowed only during the first year of payments",
+   "The change is not allowed, because the payout option must be chosen before annuitization and cannot be changed afterward"
+  ],
+  "a": 3,
+  "w": [
+   "Wrong: consent of the husband is not a mechanism for changing the option, since the election is final.",
+   "Wrong: the chapter states the choice is final once made, so no change is permitted at any time with notice.",
+   "Wrong: the chapter provides no first-year window; the election cannot be changed after it has been made.",
+   "Correct: the payout option is selected before annuitization, and once the choice has been made it cannot be changed."
+  ]
+ },
+ {
+  "id": "12-x18",
+  "r": "12.3.3.1",
+  "k": "concept",
+  "d": 3,
+  "q": "Which statements about accumulation units in a variable annuity are TRUE?\n\nI. The number of units increases as the owner invests more money\nII. The value of each unit fluctuates with the securities in the subaccount\nIII. The value of each unit is recalculated monthly\nIV. At annuitization they are converted into a fixed number of annuity units",
+  "o": [
+   "I, II and III only",
+   "I, II and IV only",
+   "II, III and IV only",
+   "I and IV only"
+  ],
+  "a": 1,
+  "w": [
+   "Wrong: this includes statement III, but unit values are recalculated daily rather than monthly, and it omits statement IV.",
+   "Correct: units increase with deposits, unit value moves with the market, and annuitization converts them to a fixed number of annuity units.",
+   "Wrong: this includes the false monthly valuation statement and omits statement I, even though the number of units rises with more money invested.",
+   "Wrong: this leaves out statement II, yet the value of each unit does fluctuate with the securities in the subaccount."
+  ]
+ },
+ {
+  "id": "12-x19",
+  "r": "12.3.3.6",
+  "k": "concept",
+  "d": 2,
+  "q": "A registered representative is recommending a deferred variable annuity to a customer. Under FINRA Rule 2330, which belief must the representative have before making the recommendation?",
+  "o": [
+   "The customer would benefit from the features of the variable annuity, and the product and subaccounts are suitable",
+   "The customer will earn a guaranteed minimum return in the separate account",
+   "The customer is in a high enough tax bracket to avoid the 10% early withdrawal penalty",
+   "The customer will not need access to the funds for at least three years"
+  ],
+  "a": 0,
+  "w": [
+   "Correct: Rule 2330 bars a recommendation unless the rep has reason to believe the product and subaccounts are suitable and the customer would benefit.",
+   "Wrong: separate account returns are not guaranteed, because the investor bears the market risk.",
+   "Wrong: the early withdrawal penalty is a disclosure item that applies before 59½ and has nothing to do with tax bracket.",
+   "Wrong: Rule 2330 as described contains no three-year liquidity requirement; surrender charges are disclosed instead."
+  ]
+ },
+ {
+  "id": "12-x20",
+  "r": "12.1.2",
+  "k": "scenario",
+  "d": 2,
+  "q": "Tom, age 45, is a full-time employee with six years of service. His company has a non-qualified deferred compensation plan for its executives, and Tom is not invited. Tom says the plan is discriminatory because he meets ERISA’s age and service requirements. Which statement is correct?",
+  "o": [
+   "Tom must be admitted only if he also works at least 500 hours in three consecutive years",
+   "Tom must be admitted, because every full-time employee over 21 with one year of service must be eligible",
+   "The employer may choose which employees participate, because non-qualified plans are not subject to ERISA eligibility rules",
+   "The plan loses its tax-deferred growth unless every employee participates"
+  ],
+  "a": 2,
+  "w": [
+   "Wrong: the 500-hour part-time rule is an ERISA requirement that does not apply to non-qualified plans.",
+   "Wrong: the age 21 and one year of service eligibility rule applies to ERISA qualified plans, not non-qualified plans.",
+   "Correct: non-qualified plans are not ERISA-covered, so employers can include or exclude any employees and avoid nondiscrimination tests.",
+   "Wrong: tax-deferred growth does not depend on universal participation, and non-qualified plans may be limited to key executives."
+  ]
+ },
+ {
+  "id": "12-x21",
+  "r": "12.1.1.3",
+  "k": "calc",
+  "d": 2,
+  "q": "A small company contributes 6% of compensation to the SEP-IRAs of its eligible employees. The owner earns $200,000 and a staff member earns $55,000. What must the employer contribute to the staff member’s SEP-IRA?",
+  "o": [
+   "$12,000",
+   "$3,300",
+   "$0, because employees must fund their own SEP-IRA",
+   "$5,500"
+  ],
+  "a": 1,
+  "w": [
+   "Wrong: $12,000 is 6% of the owner’s $200,000 compensation, not the staff member’s contribution.",
+   "Correct: the same percentage must be contributed for all eligible employees, so 6% of $55,000 equals $3,300.",
+   "Wrong: only the employer, never the employee, contributes to a SEP-IRA, so the employer funds the staff member’s account.",
+   "Wrong: $5,500 is 10% of the staff member’s pay, not the 6% the company contributes."
+  ]
+ },
+ {
+  "id": "12-x22",
+  "r": "12.2.1.2",
+  "k": "concept",
+  "d": 3,
+  "q": "Distributions from which of the following are taxed as ordinary income only on the growth above the amount contributed?\n\nI. A non-qualified corporate plan\nII. A non-deductible traditional IRA\nIII. A deductible traditional IRA\nIV. A variable annuity funded with after-tax dollars",
+  "o": [
+   "I, II and IV only",
+   "I and II only",
+   "II, III and IV only",
+   "I, III and IV only"
+  ],
+  "a": 0,
+  "w": [
+   "Correct: after-tax contributions mean only the growth above basis is taxed, which covers the non-qualified plan, non-deductible IRA and after-tax annuity.",
+   "Wrong: this omits the after-tax variable annuity, where tax is due only on the difference between basis and value.",
+   "Wrong: this includes the deductible traditional IRA, where contributions were pre-tax so every distribution is taxable, and omits the non-qualified plan.",
+   "Wrong: this includes the deductible traditional IRA, which works like a qualified plan, and omits the non-deductible traditional IRA."
+  ]
+ },
+ {
+  "id": "12-x23",
+  "r": "12.3.3.5",
+  "k": "calc",
+  "d": 3,
+  "q": "Ines, age 54, paid $50,000 of after-tax money into a variable annuity that is now worth $80,000. She withdraws the entire contract value. What amount is taxable as ordinary income, and what is the 10% early withdrawal penalty?",
+  "o": [
+   "$30,000 taxable; no penalty",
+   "$80,000 taxable; $8,000 penalty",
+   "$30,000 taxable; $8,000 penalty",
+   "$30,000 taxable; $3,000 penalty"
+  ],
+  "a": 3,
+  "w": [
+   "Wrong: the taxable amount is right, but Ines is under 59½ so the 10% penalty on the earnings applies.",
+   "Wrong: this taxes and penalizes the entire $80,000 even though $50,000 was already-taxed basis.",
+   "Wrong: the taxable amount is right, but the penalty is computed on the entire withdrawal instead of only the earnings.",
+   "Correct: tax applies to value minus basis, which is $30,000, and the 10% penalty before 59½ applies to those earnings, which is $3,000."
+  ]
+ },
+ {
+  "id": "12-x24",
+  "r": "12.4.3",
+  "k": "concept",
+  "d": 2,
+  "q": "Which statements are TRUE of both ABLE accounts and 529 plans?\n\nI. Contributions are made with after-tax dollars\nII. Growth is tax-free\nIII. They are available in all states\nIV. Contributions are federally tax-deductible",
+  "o": [
+   "II, III and IV only",
+   "I and II only",
+   "I, II and III only",
+   "I, III and IV only"
+  ],
+  "a": 2,
+  "w": [
+   "Wrong: this includes statement IV, but contributions to both account types are made with after-tax dollars and are not federally deductible.",
+   "Wrong: this omits statement III, yet both ABLE accounts and 529 plans are available in all states.",
+   "Correct: both use after-tax contributions with tax-free growth and are available in all states, and neither gives a federal deduction.",
+   "Wrong: this includes statement IV and omits statement II, even though growth is tax-free in both account types."
+  ]
+ },
+ {
+  "id": "12-x25",
+  "r": "12.4.1.7",
+  "k": "concept",
+  "d": 2,
+  "q": "Which statement about MSRB Rule G-45 is correct?",
+  "o": [
+   "Underwriters must submit paper reports quarterly, and local government investment pools are covered",
+   "Underwriters of 529 plans and ABLE programs must submit specified information electronically twice a year, and local government investment pools are not covered",
+   "Only 529 plans, not ABLE programs, must report, and reports are due annually",
+   "Registered representatives must file a report each time they sell an out-of-state 529 plan"
+  ],
+  "a": 1,
+  "w": [
+   "Wrong: the submissions are electronic and semiannual rather than quarterly paper reports, and LGIPs are specifically excluded.",
+   "Correct: Rule G-45 requires underwriters of 529 plans and ABLE programs to submit data electronically each half-year, excluding LGIPs.",
+   "Wrong: the rule covers both 529 plans and ABLE programs, and the reporting is semiannual rather than annual.",
+   "Wrong: the representative’s duty on out-of-state plans is to disclose potential tax consequences at or before the sale, not to file reports."
+  ]
+ }
 ]
