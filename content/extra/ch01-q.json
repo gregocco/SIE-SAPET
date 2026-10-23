@@ -66,10 +66,10 @@
   "d": 2,
   "q": "A corporation issues bonds with warrants attached. The warrants’ exercise price is above the current stock price, and they may trade separately. Which statement best describes the issuer’s purpose and the effect on existing shareholders?",
   "o": [
-   "The warrants guarantee the bonds against default, and only existing shareholders may exercise them.",
-   "The warrants protect existing shareholders from dilution, and they are exercisable below the market price.",
-   "The warrants give bondholders a vote on corporate policy, and they expire within 30 to 45 days.",
-   "The warrants let the issuer pay a lower interest rate, and they do not prevent dilution of existing shareholders."
+   "The warrants guarantee the bonds against default, and only current shareholders may exercise them",
+   "The warrants protect holders from dilution, and they are exercisable below the market price",
+   "The warrants give bondholders a vote on policy, and they expire within 30 to 45 days",
+   "The warrants let the issuer pay a lower interest rate but do not protect against dilution"
   ],
   "a": 3,
   "w": [

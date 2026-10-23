@@ -705,17 +705,17 @@
    "d": 2,
    "q": "What is the main difference between a fully registered bond and a book-entry bond?",
    "o": [
-    "Registered bonds pay interest by coupon; book-entry bonds do not",
-    "Registered bonds cannot be sold in the secondary market",
-    "Book-entry bonds are payable to whoever holds the certificate",
-    "Book-entry ownership is recorded by a central depository rather than the issuer or transfer agent"
+    "Registered bonds pay interest by coupon presented to a paying agent; book-entry bonds do not",
+    "Registered bonds cannot be resold in the secondary market without the issuer’s written consent",
+    "Book-entry bonds are payable to whoever holds the certificate, with no ownership record kept",
+    "Book-entry ownership is recorded electronically by a central depository"
    ],
    "a": 3,
    "w": [
-    "Wrong: neither form uses coupons, so interest delivery is not the distinguishing feature.",
-    "Wrong: registered bonds trade freely in the secondary market; only the ownership record held by the issuer or agent is updated.",
-    "Wrong: that describes a bearer bond; book-entry has no certificate at all.",
-    "Correct: the difference is who keeps the ownership records, which is the depository for book-entry bonds."
+    "Wrong: neither form uses coupons, so interest delivery by coupon is not what distinguishes the two forms.",
+    "Wrong: registered bonds trade freely in the secondary market without issuer consent; only the ownership record is updated.",
+    "Wrong: that describes a bearer bond; book-entry has no certificate at all and ownership is always recorded.",
+    "Correct: the difference is who keeps the ownership records, which is a central depository for book-entry bonds."
    ]
   },
   {
@@ -805,16 +805,16 @@
    "d": 2,
    "q": "All of the following are true of zero-coupon bonds EXCEPT:",
    "o": [
-    "they are sold at a deep discount to par",
-    "the owner may owe annual tax on imputed interest",
-    "they carry no reinvestment risk",
-    "they pay semiannual interest on the first of the month"
+    "they are sold at a deep discount to par and mature at face value",
+    "the owner may owe annual tax on imputed interest even though no cash is received",
+    "they carry no reinvestment risk if held to maturity",
+    "they pay semiannual interest to the holder"
    ],
    "a": 3,
    "w": [
-    "Wrong: this is true; the discount is how the investor earns the return.",
-    "Wrong: this is true; phantom interest accrues each year and is generally taxable.",
-    "Wrong: this is true; with no coupons paid there is nothing to reinvest.",
+    "Wrong: this is true; the discount is how the investor earns the return, paid at face value on maturity.",
+    "Wrong: this is true; phantom interest accrues each year and is generally taxable although no cash is received.",
+    "Wrong: this is true; with no coupons paid there is nothing to reinvest while the bond is held to maturity.",
     "Correct: this is false because a zero-coupon bond pays no periodic interest and all of the return arrives at maturity."
    ]
   },
@@ -905,10 +905,10 @@
    "d": 2,
    "q": "One bond trades at 94 and another at 108, each with eight years to maturity. All else equal, what happens to their prices as maturity nears?",
    "o": [
-    "Both rise toward par",
-    "The 94 bond rises toward par and the 108 bond falls toward par",
-    "Both fall toward par",
-    "Both stay constant until maturity"
+    "Both rise toward par as the remaining life shortens",
+    "The 94 bond rises and the 108 bond falls, both toward par",
+    "Both fall toward par as the remaining life shortens",
+    "Both stay constant until maturity if interest rates are unchanged"
    ],
    "a": 1,
    "w": [
@@ -925,17 +925,17 @@
    "d": 2,
    "q": "Which statement about a sinking fund provision is TRUE?",
    "o": [
-    "It gives bondholders protection from the issuer’s call",
-    "It protects the bond’s price from rising interest rates",
-    "The issuer sets money aside in an escrow account held by a third party to help retire the bonds",
-    "It raises the coupon paid to investors"
+    "It protects bondholders from the issuer’s call by prohibiting early redemption",
+    "It protects the bond’s price from declines when market interest rates rise",
+    "The issuer sets money aside in a fund to help retire the bonds",
+    "It raises the coupon paid to investors to compensate for the extra safety"
    ],
    "a": 2,
    "w": [
-    "Wrong: a sinking fund is about setting aside money, not about restricting calls.",
-    "Wrong: a sinking fund does not change how sensitive the bond’s price is to moves in market interest rates.",
-    "Correct: regular set-asides in escrow improve the safety and liquidity of the issue.",
-    "Wrong: a sinking fund adds safety, which if anything lowers the required yield."
+    "Wrong: a sinking fund is about setting money aside, not about prohibiting or restricting early redemption by call.",
+    "Wrong: a sinking fund does not change how sensitive the bond’s price is to rising market interest rates.",
+    "Correct: regular set-asides in a fund improve the safety and liquidity of the issue by helping retire the bonds.",
+    "Wrong: a sinking fund adds safety, which if anything lowers the required yield rather than raising the coupon."
    ]
   },
   {
@@ -945,17 +945,17 @@
    "d": 2,
    "q": "Which of the following best describes refunding?",
    "o": [
-    "An issuer sets money aside to repay bonds",
-    "An investor reinvests coupons at a higher rate",
-    "An investor sells a bond back to the issuer under a put",
-    "An issuer calls outstanding bonds and sells cheaper new bonds after interest rates have fallen"
+    "An issuer sets money aside in a fund to repay bonds at maturity",
+    "An investor reinvests coupon income at a higher rate than the original",
+    "An investor sells a bond back to the issuer at par under a put provision",
+    "An issuer calls bonds and replaces them with cheaper new debt"
    ],
    "a": 3,
    "w": [
     "Wrong: that describes a sinking fund, which sets money aside for retirement, and not refunding, which replaces old debt with cheaper debt.",
-    "Wrong: reinvesting coupons has nothing to do with the issuer calling bonds.",
-    "Wrong: a put is an investor right, and refunding is an issuer action.",
-    "Correct: this is the refinancing logic, similar to a homeowner refinancing a mortgage."
+    "Wrong: reinvesting coupon income has nothing to do with the issuer calling bonds and replacing them with new debt.",
+    "Wrong: a put is an investor right, and refunding is an issuer action that replaces old bonds with new ones.",
+    "Correct: this is the refinancing logic, similar to a homeowner refinancing a mortgage after rates fall."
    ]
   },
   {
@@ -985,16 +985,16 @@
    "d": 3,
    "q": "A 25-year corporate bond is callable beginning in year 12. An investor asks when the issuer may redeem it. Which answer is accurate?",
    "o": [
-    "At any time from year 12 until maturity, at the stated call price",
-    "Only at maturity in year 25",
-    "Only on a date the investor selects",
-    "Only during year 12"
+    "Any time from year 12 until maturity, at the call price",
+    "Only at maturity in year 25, at par value",
+    "Only on a date the investor selects after year 12",
+    "Only during year 12, at the stated call price"
    ],
    "a": 0,
    "w": [
     "Correct: the call right begins in year 12 and stays open until maturity, at the stated call price.",
-    "Wrong: redemption at maturity is not a call; the call right exists before maturity.",
-    "Wrong: a call is the issuer’s option, so the investor does not choose the date.",
+    "Wrong: redemption at maturity is not a call; the call right exists before maturity and starts in year 12.",
+    "Wrong: a call is the issuer’s option, so the investor does not choose the date at any point.",
     "Wrong: the call date marks when the right begins; it does not limit the call to that single year."
    ]
   },
@@ -1545,17 +1545,17 @@
    "d": 3,
    "q": "A customer buys a corporate bond on a Friday for regular-way settlement. Up to which day is accrued interest counted?",
    "o": [
-    "Friday, the trade date, only",
-    "Saturday",
+    "Friday, the trade date, only, because interest stops accruing at the trade",
+    "Saturday, the first calendar day after the trade date",
     "Sunday, the day before the Monday settlement",
-    "Monday, the settlement date"
+    "Monday, the settlement date, because that is when ownership transfers"
    ],
    "a": 2,
    "w": [
     "Wrong: interest keeps running after the trade date until the day before the Monday settlement, so Friday alone is too early.",
-    "Wrong: interest continues over the weekend, so Saturday is counted, but so is Sunday.",
+    "Wrong: interest continues over the weekend, so Saturday is counted, but so is Sunday before settlement.",
     "Correct: T+1 from a Friday settles on Monday, and interest counts up to but not including settlement, so through Sunday.",
-    "Wrong: the settlement date itself is excluded from the count, so interest stops the day before settlement."
+    "Wrong: the settlement date itself is excluded from the count, so interest stops the day before settlement even though ownership transfers then."
    ]
   },
   {
@@ -1585,17 +1585,17 @@
    "d": 2,
    "q": "A seller receives accrued interest in a bond trade. How is this amount treated?",
    "o": [
-    "Ordinary interest income that does not affect cost basis",
-    "Tax-free return of principal",
-    "Interest income that increases cost basis",
-    "Capital gain that increases cost basis"
+    "Ordinary interest income with no effect on cost basis",
+    "Tax-free return of principal that lowers the seller’s cost basis",
+    "Interest income that is added to the seller’s cost basis",
+    "Capital gain taxed at long-term rates that increases cost basis"
    ],
    "a": 0,
    "w": [
     "Correct: it is taxed at ordinary income rates and leaves cost basis unchanged.",
-    "Wrong: accrued interest is taxable and is not a return of principal.",
-    "Wrong: accrued interest does not change the bond’s cost basis, so it cannot increase basis at all.",
-    "Wrong: accrued interest is interest income taxed at ordinary rates, not a capital gain, and it leaves cost basis alone."
+    "Wrong: accrued interest is taxable and is not a return of principal, so it does not lower cost basis either.",
+    "Wrong: accrued interest does not change the bond’s cost basis, so it is never added to basis at all.",
+    "Wrong: accrued interest is interest income taxed at ordinary rates, not a long-term capital gain, and it leaves cost basis alone."
    ]
   },
   {
@@ -1666,9 +1666,9 @@
    "q": "A customer expects interest rates to climb and wants the bond type that is least likely to lose market value as a result. Which choice best fits?",
    "o": [
     "A floating-rate bond tied to the Treasury bill rate",
-    "A 30-year zero-coupon bond",
-    "A 20-year 4% fixed-rate bond",
-    "A 10-year 6% fixed-rate bond"
+    "A 30-year zero-coupon bond bought at a deep discount",
+    "A 20-year 4% fixed-rate bond trading at a discount",
+    "A 10-year 6% fixed-rate bond trading at par"
    ],
    "a": 0,
    "w": [

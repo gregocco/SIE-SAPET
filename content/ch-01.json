@@ -803,14 +803,14 @@
    "q": "Which of the following is true of treasury stock?",
    "o": [
     "It receives dividends but cannot vote",
-    "It is included in the outstanding share count",
-    "It has been authorized but never sold",
-    "It has been issued and later repurchased by the company"
+    "It is included in the outstanding share count and in EPS",
+    "It has been authorized by the charter but never sold to investors",
+    "It was issued and later repurchased by the issuer"
    ],
    "a": 3,
    "w": [
     "Wrong: treasury shares are not investor owned, so they receive neither dividends nor votes.",
-    "Wrong: treasury stock is specifically excluded when calculating outstanding shares.",
+    "Wrong: treasury stock is specifically excluded when calculating outstanding shares and earnings per share.",
     "Wrong: authorized-but-unsold shares are simply unissued; treasury stock must have been issued first.",
     "Correct: treasury shares were issued to investors and then bought back by the issuer."
    ]
@@ -822,10 +822,10 @@
    "d": 1,
    "q": "Which statement best describes the par value of a common stock?",
    "o": [
-    "It is the price at which the stock must always trade",
-    "It is a low nominal legal-capital figure that is not relevant to the investor",
-    "It is the amount creditors must repay to common holders",
-    "It determines the dividend the common stockholder receives"
+    "It is the price at which the stock must trade on the exchange after the IPO",
+    "It is a nominal legal-capital figure irrelevant to common investors",
+    "It is the amount creditors must repay to common holders in liquidation",
+    "It determines the dividend the common stockholder receives each quarter"
    ],
    "a": 1,
    "w": [
@@ -1022,10 +1022,10 @@
    "d": 2,
    "q": "All of the following are characteristics of warrants EXCEPT:",
    "o": [
-    "They are often attached to bonds as a sweetener",
-    "They generally have a term of five years or more",
+    "They are often attached to bonds or preferred stock as a sweetener",
+    "They generally have a term of five years or more from issuance",
     "They may trade separately in the secondary market",
-    "They are usually issued with an exercise price below the current stock price"
+    "They are usually issued with an exercise price below market"
    ],
    "a": 3,
    "w": [
@@ -1062,10 +1062,10 @@
    "d": 3,
    "q": "Which comparison of rights and warrants is accurate?",
    "o": [
-    "Rights are long-term; warrants are short-term",
-    "Rights are meant to prevent dilution; warrants are attached to make another security more attractive",
-    "Rights have an exercise price above market; warrants below market",
-    "Rights cannot be traded; warrants can"
+    "Rights are long-term, five years or more; warrants are short-term",
+    "Rights prevent dilution of holders; warrants sweeten another security",
+    "Rights have an exercise price above market; warrants have one below market",
+    "Rights cannot be traded separately; warrants can trade in the secondary market"
    ],
    "a": 1,
    "w": [
@@ -1082,10 +1082,10 @@
    "d": 1,
    "q": "A stock is described as trading ex-rights. What does this mean?",
    "o": [
-    "The stock is delisted",
-    "The stock has no voting rights",
-    "The stock now trades separately from its rights and is worth less than before",
-    "The rights have been exercised in full"
+    "The stock has been delisted from the exchange after the rights offering",
+    "The stock carries no voting rights until the rights are exercised",
+    "The stock now trades without its rights and is worth less",
+    "All of the rights have been exercised in full by existing holders"
    ],
    "a": 2,
    "w": [
@@ -1262,16 +1262,16 @@
    "d": 1,
    "q": "American depositary receipts are made available to US investors by which of the following?",
    "o": [
-    "The foreign government",
-    "Major commercial banks acting as depositary",
-    "The US Treasury",
-    "The SEC"
+    "The foreign government of the issuing company",
+    "US commercial banks acting as depositary",
+    "The US Treasury acting as custodian of shares",
+    "The SEC, after registering each foreign issuer"
    ],
    "a": 1,
    "w": [
     "Wrong: the foreign government is not the party that bundles and reissues the shares.",
     "Correct: commercial banks buy bulk foreign shares, bundle them and reissue them as ADRs in the US.",
-    "Wrong: the Treasury does not create depositary receipts.",
+    "Wrong: the Treasury does not create depositary receipts or act as their custodian.",
     "Wrong: the SEC regulates markets but does not issue ADRs."
    ]
   },
@@ -1284,7 +1284,7 @@
    "o": [
     "The depositary bank keeps 15% as a call premium",
     "The ADR is a preferred share with a lower dividend",
-    "The foreign government withheld a portion of the dividend for taxes",
+    "The foreign government withheld part of it for taxes",
     "The SEC reduces foreign dividends paid in the US"
    ],
    "a": 2,
@@ -1342,9 +1342,9 @@
    "d": 3,
    "q": "A foreign company behind a US-traded ADR reports excellent earnings, yet its home currency is devalued sharply against the dollar. What is the most likely effect on a US holder?",
    "o": [
-    "The ADR is called at par",
+    "The ADR is called at par because of the devaluation",
     "The ADR value rises because earnings improved",
-    "The ADR value and the dollar dividend both tend to fall",
+    "ADR value and the dollar dividend both tend to fall",
     "Nothing changes because the ADR trades in dollars"
    ],
    "a": 2,
@@ -1562,10 +1562,10 @@
    "d": 2,
    "q": "To be negotiable, how must a physical stock certificate generally be endorsed?",
    "o": [
-    "Signed by the issuer’s transfer agent only",
-    "Signed on the front using the owner’s initials",
-    "Signed on the back exactly as the owner’s name appears on the front",
-    "Signed by the broker-dealer, not the owner"
+    "Signed by the issuer’s transfer agent only, before delivery",
+    "Signed on the front using the owner’s initials only",
+    "Signed on the back exactly as the name on the front",
+    "Signed by the broker-dealer on the owner’s behalf, not the owner"
    ],
    "a": 2,
    "w": [
@@ -1582,10 +1582,10 @@
    "d": 2,
    "q": "A customer endorses a stock certificate over to her brokerage firm. What is the result?",
    "o": [
-    "The firm becomes the beneficial owner and she loses voting rights",
-    "The securities are registered in street name, with the customer as beneficial owner",
-    "The securities are cancelled and reissued as treasury stock",
-    "The securities are converted into book-entry preferred shares"
+    "The firm becomes the beneficial owner and she loses her voting rights",
+    "They are registered in street name; she stays beneficial owner",
+    "The securities are cancelled and reissued as treasury stock by the issuer",
+    "The securities are converted into book-entry preferred shares of the firm"
    ],
    "a": 1,
    "w": [
@@ -1602,10 +1602,10 @@
    "d": 1,
    "q": "Which entity establishes the ex-dividend date?",
    "o": [
-    "The exchange on which the stock trades",
-    "The company’s board of directors",
-    "The issuer’s transfer agent",
-    "The SEC"
+    "The exchange or market where the stock trades",
+    "The company’s board of directors, at declaration",
+    "The issuer’s transfer agent, from its records",
+    "The SEC, once the dividend is declared"
    ],
    "a": 0,
    "w": [
@@ -1662,10 +1662,10 @@
    "d": 3,
    "q": "A customer buys 200 shares regular way on Monday, which is the record date for a declared dividend. Who receives the dividend?",
    "o": [
-    "The buyer, because Monday is the record date",
+    "The buyer, because he bought on the record date itself",
     "The seller, because the trade settles after the record date",
-    "The buyer, because settlement is on the same day",
-    "Neither, because the dividend is cancelled"
+    "The buyer, because regular way settlement occurs the same day",
+    "Neither, because the dividend is cancelled for pending trades"
    ],
    "a": 1,
    "w": [
@@ -1982,9 +1982,9 @@
    "d": 1,
    "q": "Which statement best describes the risk of selling common stock short?",
    "o": [
-    "The potential loss is unlimited because the stock price can rise indefinitely",
-    "The loss is limited to the amount borrowed",
-    "The most that can be lost is the amount of the sale proceeds",
+    "The potential loss is unlimited because the price can rise indefinitely",
+    "The loss is limited to the value of the borrowed shares when sold",
+    "The most that can be lost is the amount of the short sale proceeds",
     "The seller cannot lose money if the stock is on the easy-to-borrow list"
    ],
    "a": 0,
@@ -2002,10 +2002,10 @@
    "d": 1,
    "q": "An investor bought stock at $40 and it now trades at $65. She has not sold. Which statement about the taxation of her gain is correct?",
    "o": [
-    "The $25 gain is taxed now as a realized gain",
-    "The gain is taxed only if the company pays a dividend",
-    "The $25 per share is an unrealized gain and is not taxed until she sells",
-    "The gain is never taxed"
+    "The $25 gain is taxed this year as a realized capital gain",
+    "The gain is taxed only if the company pays a dividend this year",
+    "It is an unrealized gain and is not taxed until she sells",
+    "The gain is never taxed because it is only a paper gain"
    ],
    "a": 2,
    "w": [
@@ -2022,10 +2022,10 @@
    "d": 1,
    "q": "Why would a company choose to do a forward stock split?",
    "o": [
-    "To avoid falling below the minimum listing price",
-    "Because management believes the share price is too high to attract buyers",
-    "To cancel all open orders",
-    "To increase the total market value of the company"
+    "To avoid falling below the exchange’s minimum listing price",
+    "Because the share price seems too high to attract buyers",
+    "To cancel all open orders at the old price level",
+    "To increase the total market value of the company overall"
    ],
    "a": 1,
    "w": [
