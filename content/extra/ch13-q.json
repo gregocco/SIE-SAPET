@@ -46,10 +46,10 @@
   "d": 3,
   "q": "A bank’s municipal securities dealer department and, separately, a municipal advisor both break MSRB rules. Which statement about discipline is correct?",
   "o": [
-   "FINRA disciplines both because it enforces all MSRB rules",
-   "The Federal Reserve, OCC or FDIC enforces within the bank, and the SEC has authority over the municipal advisor",
-   "The MSRB itself disciplines both firms through its enforcement staff",
-   "Only the SEC may act, because banks fall outside MSRB rules entirely"
+   "FINRA disciplines both because it enforces all MSRB rules for every firm",
+   "Banking regulators enforce within the bank; the SEC covers the municipal advisor",
+   "The MSRB itself disciplines both firms through its own enforcement staff and panels",
+   "Only the SEC may act, since banks fall outside MSRB rules and bank regulators have no role"
   ],
   "a": 1,
   "w": [
@@ -168,7 +168,7 @@
   "o": [
    "Retaking the Series 7 only, because she was out of the industry for almost two years",
    "Retaking the SIE only, because she passed her Series 7 before October 1, 2018",
-   "No new exam; the new firm files an original Form U4 because she re-associated within two years",
+   "No exam; the new firm files a Form U4 because she returned within two years",
    "Retaking both the SIE and the Series 7, because her registration was terminated"
   ],
   "a": 2,

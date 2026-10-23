@@ -971,16 +971,16 @@
    "d": 3,
    "q": "Under FINRA Rule 2111, a wealthy individual with $62 million in total assets is solicited by a rep. She says she makes her own decisions and the rep agrees she can assess the risks. Which statement is TRUE?",
    "o": [
-    "Rule 2111 does not apply to her because she is an individual",
-    "Customer-specific suitability may be waived, but reasonable-basis and quantitative still apply",
-    "Only quantitative suitability is waived",
+    "Rule 2111 does not apply to her because she is an individual rather than an institution, whatever her assets",
+    "Only customer-specific suitability may be waived; the other two obligations still apply",
+    "Only quantitative suitability is waived, because she makes her own investment decisions",
     "Suitability does not apply at all"
    ],
    "a": 1,
    "w": [
-    "Wrong: she exceeds the $50 million asset threshold, so she is treated as institutional and Rule 2111 applies.",
+    "Wrong: she exceeds the $50 million asset threshold, so she is treated as institutional and Rule 2111 still applies to her.",
     "Correct: assets above $50 million make her institutional and both exemption criteria are met, which relieves only customer-specific suitability.",
-    "Wrong: quantitative suitability is not the exempted element; customer-specific is.",
+    "Wrong: quantitative suitability is not the exempted element; customer-specific suitability is the only part that can be waived.",
     "Wrong: the exemption is partial; reasonable-basis and quantitative suitability remain."
    ]
   },
@@ -1011,17 +1011,17 @@
    "d": 1,
    "q": "Quantitative suitability is concerned primarily with which of the following?",
    "o": [
-    "Turnover rate and in-and-out trading in the account",
-    "The credit rating of the securities held",
-    "The client’s net worth and tax bracket",
-    "Whether the firm’s policies are written"
+    "Turnover and in-and-out trading in the account",
+    "The credit rating and quality of the securities held",
+    "The client’s net worth, tax bracket and time horizon",
+    "Whether the firm’s written supervisory policies are followed"
    ],
    "a": 0,
    "w": [
-    "Correct: it looks at timing, frequency and quantity of transactions.",
-    "Wrong: product quality is a reasonable-basis question.",
-    "Wrong: client profile facts belong to customer-specific suitability and KYC.",
-    "Wrong: written policies relate to Reg BI conflict and compliance obligations."
+    "Correct: quantitative suitability looks at the timing, frequency and quantity of transactions in the account, including turnover.",
+    "Wrong: product quality and risk of a security are reasonable-basis suitability questions, not quantitative ones.",
+    "Wrong: client profile facts belong to customer-specific suitability and the know-your-customer investor profile.",
+    "Wrong: written policies relate to Reg BI compliance and conflict obligations rather than to quantitative suitability."
    ]
   },
   {
@@ -1111,17 +1111,17 @@
    "d": 2,
    "q": "Under Regulation BI, which of the following is regarded as a recommendation?",
    "o": [
-    "Only written research reports",
-    "Only unsolicited trades entered by the customer",
-    "Only communications delivered to institutions",
-    "Any communication that could be viewed as a call to action and would influence investor behavior"
+    "Only written research reports distributed to retail customers by the firm",
+    "Only unsolicited trades entered by the customer without input from the rep",
+    "Only communications delivered to institutional investors by a principal",
+    "Any communication that is a call to action and could influence investor behavior"
    ],
    "a": 3,
    "w": [
-    "Wrong: spoken or written, any call-to-action communication can qualify.",
-    "Wrong: unsolicited orders are not recommendations; a call to action by the firm or rep is.",
-    "Wrong: Reg BI is directed at retail customers.",
-    "Correct: this is the book’s definition covering securities, account types and rollovers."
+    "Wrong: spoken or written, any communication that works as a call to action can qualify, not just formal research reports.",
+    "Wrong: unsolicited orders are not recommendations; a call to action by the firm or its representative is.",
+    "Wrong: Reg BI is directed at retail customers, so communications to institutions are not its focus.",
+    "Correct: this is the book’s definition, covering securities, account types and rollovers."
    ]
   },
   {
@@ -1371,17 +1371,17 @@
    "d": 2,
    "q": "A client who is very concerned about inflationary risk should be MOST cautious about which investment?",
    "o": [
-    "Long-term fixed-rate US Treasury bonds",
-    "TIPS",
-    "REITs",
-    "Common stock"
+    "Long-term fixed-rate Treasury bonds",
+    "Treasury Inflation-Protected Securities (TIPS)",
+    "Real estate investment trusts (REITs)",
+    "Common stock of established companies"
    ],
    "a": 0,
    "w": [
-    "Correct: fixed payments and fixed principal lose purchasing power, especially over a long period.",
-    "Wrong: TIPS are designed to protect against inflation.",
-    "Wrong: real estate is regarded as an inflation-fighting option.",
-    "Wrong: stocks have historically offered potential to offset inflation."
+    "Correct: fixed payments and fixed principal lose purchasing power, especially over a long period of rising prices.",
+    "Wrong: TIPS are designed to protect investors against inflation, since principal adjusts with the CPI.",
+    "Wrong: real estate is regarded as an inflation-fighting option because property values and rents tend to rise.",
+    "Wrong: stocks have historically offered the potential to offset inflation over longer periods of time."
    ]
   },
   {
@@ -1451,16 +1451,16 @@
    "d": 3,
    "q": "A retiree lives on the coupon payments of her bonds. Prices are rising quickly and the central bank raises interest rates to slow them. Which TWO risks are hurting her?",
    "o": [
-    "Call risk and prepayment risk",
-    "Capital risk and liquidity risk",
-    "Currency risk and political risk",
+    "Call risk and prepayment risk on her bonds",
+    "Capital risk and liquidity risk in her portfolio",
+    "Currency risk and political risk on foreign holdings",
     "Inflationary risk and interest rate risk"
    ],
    "a": 3,
    "w": [
-    "Wrong: higher rates reduce calls and prepayments.",
-    "Wrong: the scenario does not describe total loss or inability to sell.",
-    "Wrong: nothing in the facts involves foreign investments.",
+    "Wrong: higher interest rates reduce the likelihood of calls and prepayments, so these risks are not hurting her.",
+    "Wrong: the scenario does not describe any total loss of capital or an inability to sell her bonds.",
+    "Wrong: nothing in the facts involves foreign investments, so currency and political risk do not apply here.",
     "Correct: coupons buy less, and bond market values fall as rates rise."
    ]
   },
@@ -1511,17 +1511,17 @@
    "d": 2,
    "q": "Mortgage rates fall sharply and many homeowners refinance. Holders of a mortgage-backed security are MOST likely to experience",
    "o": [
-    "early return of principal that must be reinvested at lower rates",
-    "an increase in the coupon rate",
-    "delayed return of principal and higher yields",
-    "loss of all invested capital"
+    "early return of principal reinvested at lower rates",
+    "an increase in the coupon rate paid by the underlying mortgages",
+    "delayed return of principal as extension risk builds, with higher yields",
+    "loss of all invested capital because of widespread defaults"
    ],
    "a": 0,
    "w": [
-    "Correct: this is prepayment risk, a type of reinvestment rate risk.",
-    "Wrong: the investors face lower reinvestment rates, not a higher coupon.",
-    "Wrong: falling rates speed up, not slow, repayments.",
-    "Wrong: early repayment returns principal; it does not wipe out the investment."
+    "Correct: this is prepayment risk, a type of reinvestment rate risk, which hurts when refinancing surges.",
+    "Wrong: investors face lower reinvestment rates, not a higher coupon, when homeowners refinance at lower rates.",
+    "Wrong: falling rates speed up, not slow, repayments, so extension risk is not the concern in this scenario.",
+    "Wrong: early repayment returns principal to holders; it does not wipe out the investment or signal defaults."
    ]
   },
   {
@@ -1571,17 +1571,17 @@
    "d": 3,
    "q": "A client plans to invest in a limited partnership, an illiquid investment that cannot be hedged. How can the rep BEST address the liquidity risk for the client’s overall plan?",
    "o": [
-    "Buy put options on a broad index",
-    "Keep enough liquidity in the rest of the portfolio so cash is available from other sources",
-    "Increase the portfolio’s exposure to other DPPs",
-    "Buy callable bonds"
+    "Buy put options on a broad market index to offset declines",
+    "Keep enough liquid assets elsewhere in the portfolio to meet cash needs",
+    "Increase the portfolio’s exposure to other DPPs to diversify the illiquid holdings",
+    "Buy callable bonds to generate extra income for the client"
    ],
    "a": 1,
    "w": [
-    "Wrong: index puts hedge market risk, not the inability to sell.",
-    "Correct: illiquidity of the asset cannot be changed, so the client should hold other liquid assets.",
-    "Wrong: adding illiquid investments increases the liquidity problem.",
-    "Wrong: callable bonds do not provide liquidity and add call risk."
+    "Wrong: index puts hedge market risk, not the inability to sell an illiquid partnership interest.",
+    "Correct: illiquidity of the asset cannot be changed, so the client should hold other liquid assets for cash.",
+    "Wrong: adding more illiquid investments increases the liquidity problem for the client’s overall plan instead of solving it.",
+    "Wrong: callable bonds do not provide liquidity and add call risk to the portfolio rather than addressing it."
    ]
   },
   {
@@ -1611,17 +1611,17 @@
    "d": 2,
    "q": "A US investor owns an ADR denominated in yen. The US dollar strengthens against the yen. The investor is MOST likely to experience",
    "o": [
-    "an increase in the dollar value of the investment",
-    "no change, since ADRs trade in dollars",
-    "a decline in the dollar value of the investment, even if the company is doing well",
-    "prepayment of principal"
+    "an increase in the dollar value of the investment because the yen is worth more",
+    "no change in value, since ADRs trade and pay dividends in US dollars",
+    "a decline in the investment’s dollar value even if the company is profitable",
+    "early prepayment of principal by the underlying borrowers"
    ],
    "a": 2,
    "w": [
-    "Wrong: a stronger dollar reduces the dollar value of foreign holdings.",
-    "Wrong: the investment is exposed to the foreign currency in the scenario.",
-    "Correct: fewer US dollars are received on sale or dividends when the dollar strengthens.",
-    "Wrong: prepayment is a feature of mortgage pools."
+    "Wrong: a stronger dollar means the yen is worth less, which reduces the dollar value of foreign holdings.",
+    "Wrong: the underlying investment is still exposed to the foreign currency in this scenario despite dollar trading.",
+    "Correct: fewer US dollars are received on sale or dividends when the dollar strengthens against the yen.",
+    "Wrong: prepayment is a feature of mortgage pools and has nothing to do with currency movements on an ADR."
    ]
   },
   {
@@ -1631,17 +1631,17 @@
    "d": 2,
    "q": "Which statement about hedging currency risk is TRUE?",
    "o": [
-    "Currency risk is highest in a weak-dollar environment",
-    "Options exist on the US dollar but not foreign currencies",
-    "Currency risk cannot be reduced by investing domestically",
-    "Foreign currency options exist only on foreign currencies, not on the US dollar"
+    "Currency risk is highest in a weak-dollar environment for US investors",
+    "Options exist on the US dollar but not on foreign currencies",
+    "Currency risk cannot be reduced by investing in domestic securities instead",
+    "Options trade on foreign currencies but not on the US dollar"
    ],
    "a": 3,
    "w": [
-    "Wrong: the book links currency risk to a strengthening dollar.",
-    "Wrong: the reverse is true.",
-    "Wrong: domestic securities eliminate foreign currency exposure.",
-    "Correct: you cannot buy or sell an option on the US dollar."
+    "Wrong: the book links currency risk to a strengthening dollar, which reduces the value of foreign holdings.",
+    "Wrong: the reverse is true: options trade on foreign currencies, but not on the US dollar itself.",
+    "Wrong: domestic securities eliminate foreign currency exposure, so investing domestically does reduce currency risk.",
+    "Correct: you cannot buy or sell an option on the US dollar, though foreign currency options exist."
    ]
   },
   {
@@ -1711,16 +1711,16 @@
    "d": 2,
    "q": "A company announces a product recall and a management scandal, and its stock falls while the overall market is unchanged. This is an example of",
    "o": [
-    "prepayment risk",
-    "systematic risk",
-    "currency risk",
+    "prepayment risk in a mortgage pool",
+    "systematic (market) risk",
+    "currency risk from foreign exposure",
     "non-systematic (business) risk"
    ],
    "a": 3,
    "w": [
-    "Wrong: this applies to mortgage-backed securities.",
-    "Wrong: systematic risk affects the whole market.",
-    "Wrong: there is no foreign currency involved.",
+    "Wrong: prepayment risk applies to mortgage-backed securities, not to a single company facing a scandal.",
+    "Wrong: systematic risk affects the whole market, and here the overall market is unchanged.",
+    "Wrong: there is no foreign currency involved in this scenario, so currency risk cannot explain the decline.",
     "Correct: the loss comes from issues specific to one company."
    ]
   },
@@ -1791,16 +1791,16 @@
    "d": 1,
    "q": "An investor who seeks no decline in the value of her portfolio has which objective?",
    "o": [
-    "Current income",
-    "Growth",
-    "Speculation",
+    "Current income from bond interest",
+    "Long-term capital growth",
+    "Short-term speculation",
     "Preservation of capital"
    ],
    "a": 3,
    "w": [
-    "Wrong: current income targets cash flow rather than protection from any decline.",
-    "Wrong: growth seeks appreciation and accepts more risk.",
-    "Wrong: speculation accepts outsized risk for outsized return.",
+    "Wrong: current income targets cash flow rather than protection from any decline in portfolio value.",
+    "Wrong: growth seeks appreciation and accepts more risk, so it does not match a goal of no decline.",
+    "Wrong: speculation accepts outsized risk for outsized return, which is the opposite of avoiding any decline.",
     "Correct: this objective aims for zero decline in value."
    ]
   },
@@ -1871,17 +1871,17 @@
    "d": 3,
    "q": "A conservative client wants current income with the lowest credit risk, while another, more aggressive client wants higher income and accepts more credit risk. Which choice correctly matches each client?",
    "o": [
-    "Conservative: highly rated corporates or agencies; aggressive: high-yield bonds",
-    "Conservative: high-yield bonds; aggressive: Treasuries",
-    "Conservative: options; aggressive: money market",
-    "Conservative: penny stocks; aggressive: bank CDs"
+    "Conservative: Treasuries or agencies; aggressive: high-yield bonds",
+    "Conservative: high-yield bonds; aggressive: Treasuries and agencies",
+    "Conservative: options writing; aggressive: money market funds",
+    "Conservative: penny stocks; aggressive: bank CDs and savings"
    ],
    "a": 0,
    "w": [
     "Correct: less aggressive income investors use Treasuries, agencies and highly rated corporates; more aggressive use high-yield.",
-    "Wrong: this reverses the matching.",
-    "Wrong: options are speculative, and money market securities have low yield.",
-    "Wrong: penny stocks are speculative and not appropriate for conservative income."
+    "Wrong: this reverses the matching, since high-yield bonds carry the most credit risk and suit the aggressive client.",
+    "Wrong: options are speculative, and money market securities have low yield, so neither matches the clients.",
+    "Wrong: penny stocks are speculative and not appropriate for conservative income, and CDs are low-risk."
    ]
   },
   {
@@ -1991,17 +1991,17 @@
    "d": 3,
    "q": "A 45-year-old saving for retirement in 20 years wants his money to appreciate with a high degree of predictability and safety. Which investment BEST meets both needs?",
    "o": [
-    "Money market mutual funds",
-    "Penny stocks",
+    "Money market mutual funds and bank CDs",
+    "Penny stocks with high growth potential",
     "Long-term zero-coupon US Treasuries",
-    "Callable preferred stock"
+    "Callable preferred stock paying fixed dividends"
    ],
    "a": 2,
    "w": [
-    "Wrong: safe, but they offer little appreciation.",
-    "Wrong: these are speculative and unpredictable.",
+    "Wrong: these are safe, but they offer little appreciation over a twenty-year horizon, so growth needs are unmet.",
+    "Wrong: these are speculative and unpredictable, so they fail the predictability and safety requirement.",
     "Correct: accreting interest is a form of appreciation, and zero-coupons avoid reinvestment risk.",
-    "Wrong: fixed income with call risk and little predictability of growth."
+    "Wrong: this is fixed income with call risk and little predictability of growth, so it fails the appreciation need."
    ]
   },
   {
@@ -2012,15 +2012,15 @@
    "q": "Which statement about risk and the investor’s time horizon is TRUE?",
    "o": [
     "The shorter the horizon, the more growth stock exposure is appropriate",
-    "Risk tolerance generally rises as an investor ages",
-    "Time horizon has no effect on suitability",
-    "As the goal nears, assets are typically shifted toward less risky, income-producing investments"
+    "Risk tolerance generally rises as an investor ages and nears retirement",
+    "Time horizon has no effect on suitability because objectives alone drive it",
+    "Assets shift toward safer income investments as the goal nears"
    ],
    "a": 3,
    "w": [
-    "Wrong: this reverses the relationship.",
-    "Wrong: risk tolerance often declines with age.",
-    "Wrong: time horizon is a core factor in suitability analysis.",
+    "Wrong: this reverses the relationship; shorter horizons call for less risk, not more growth stock exposure.",
+    "Wrong: risk tolerance often declines with age, as investors have less time to recover from losses.",
+    "Wrong: time horizon is a core factor in suitability analysis alongside objectives and risk tolerance.",
     "Correct: longer horizons allow more risk, and shorter horizons call for bonds and safer assets."
    ]
   },
@@ -2371,17 +2371,17 @@
    "d": 1,
    "q": "Among the three major asset classes, which offers the safest holdings but the lowest potential return?",
    "o": [
-    "Long-term bonds",
-    "Common stocks",
+    "Long-term corporate bonds",
+    "Common stocks of large companies",
     "Cash and cash equivalents",
-    "Growth mutual funds"
+    "Growth mutual funds holding equities"
    ],
    "a": 2,
    "w": [
-    "Wrong: bonds are less volatile than stocks but are not the safest class.",
-    "Wrong: stocks historically offer the highest potential reward and the greatest risk.",
+    "Wrong: bonds are less volatile than stocks but are not the safest of the three major asset classes.",
+    "Wrong: stocks historically offer the highest potential reward and also carry the greatest risk.",
     "Correct: savings, CDs, T-bills and money market funds carry little risk of loss and the lowest returns.",
-    "Wrong: growth funds hold stocks, the riskiest of the three major classes."
+    "Wrong: growth funds hold stocks, the riskiest of the three major classes, so they are not the safest."
    ]
   },
   {
@@ -2412,16 +2412,16 @@
    "q": "Which risk is listed specifically for municipal bonds in the product summary?",
    "o": [
     "Possible alternative minimum tax (AMT) implications",
-    "Unlimited risk from uncovered writing",
-    "Lack of a secondary market",
-    "Sales charges and 12b-1 fees"
+    "Unlimited loss potential from uncovered call writing",
+    "Lack of a secondary market after the initial offering",
+    "Sales charges and 12b-1 fees charged to shareholders"
    ],
    "a": 0,
    "w": [
     "Correct: besides credit, inflation and interest rate risk, some municipal interest can carry AMT implications.",
-    "Wrong: unlimited risk belongs to writing uncovered calls.",
-    "Wrong: lack of a secondary market is a UIT and open-end fund feature.",
-    "Wrong: sales charges and 12b-1 fees relate to mutual funds."
+    "Wrong: unlimited risk belongs to writing uncovered calls, not to holding municipal bonds.",
+    "Wrong: lack of a secondary market is a feature of UITs and open-end funds, not of municipal bonds.",
+    "Wrong: sales charges and 12b-1 fees relate to mutual funds, not to municipal bond product risks."
    ]
   },
   {
@@ -2433,15 +2433,15 @@
    "o": [
     "A utility with large fixed-rate debt",
     "A mortgage-backed security issuer",
-    "A holder of long-term bonds",
-    "A bank or other financial services company"
+    "A holder of long-term fixed-rate bonds",
+    "A bank or financial services company"
    ],
    "a": 3,
    "w": [
     "Wrong: higher rates do not help a borrower; the benefit goes to lenders.",
     "Wrong: rising rates do not improve MBS holders’ position and slow refinancing.",
-    "Wrong: long-term bond holders see their bond prices fall as rates rise.",
-    "Correct: lenders can earn a higher return and widen the spread between what they pay to borrow and what they charge."
+    "Wrong: long-term bond holders see their bond prices fall as rates rise, so they are hurt rather than helped.",
+    "Correct: lenders can earn a higher return and widen the spread between what they pay to borrow and charge."
    ]
   },
   {
@@ -2451,17 +2451,17 @@
    "d": 2,
    "q": "A customer places an unsolicited order to buy a municipal bond in the secondary market. Under MSRB Rule G-47, the firm must",
    "o": [
-    "disclose all material information known about the bond that is reasonably accessible to the market, at or prior to the trade",
-    "make the disclosure only if the trade was recommended",
-    "disclose only on primary market transactions",
-    "provide the disclosure after the trade settles"
+    "disclose known material information reasonably accessible to the market, at or before the trade",
+    "make the disclosure only if the trade was recommended by the firm or its rep",
+    "disclose only on primary market transactions, not on secondary market trades",
+    "provide the disclosure promptly after the trade settles, once the customer asks"
    ],
    "a": 0,
    "w": [
     "Correct: G-47 time-of-trade disclosure covers primary and secondary trades, solicited and unsolicited.",
-    "Wrong: the rule applies to unsolicited transactions too.",
-    "Wrong: the rule applies to both primary and secondary market transactions.",
-    "Wrong: disclosure is due at or prior to the transaction, not afterward."
+    "Wrong: the rule applies to unsolicited transactions too, not just recommended ones.",
+    "Wrong: the rule applies to both primary and secondary market transactions, so this limit is incorrect.",
+    "Wrong: disclosure is due at or prior to the transaction, not afterward and not only upon request."
    ]
   }
  ]

@@ -701,17 +701,17 @@
    "d": 2,
    "q": "The Producer Price Index differs from the Consumer Price Index because the PPI measures:",
    "o": [
-    "Average changes in the selling prices received by domestic producers for their output",
-    "Price changes from the purchaser’s perspective",
-    "Changes in the unemployment rate among manufacturers",
-    "The cost of capital to businesses"
+    "Price changes in what domestic producers receive for their output",
+    "Price changes from the purchaser’s perspective, such as retail prices paid by households",
+    "Changes in the unemployment rate among manufacturers and other goods producers",
+    "The cost of capital to businesses, measured by the prevailing interest rate on loans"
    ],
    "a": 0,
    "w": [
     "Correct: the PPI captures what domestic producers, such as manufacturers, receive when they sell their output.",
-    "Wrong: the purchaser’s perspective describes the CPI, which is the contrast the PPI is drawn against.",
-    "Wrong: unemployment is measured by the unemployment rate, not by any producer price index.",
-    "Wrong: the cost of capital is the interest rate, which is a separate concept from producer prices."
+    "Wrong: the purchaser’s perspective and retail prices paid describe the CPI, which is the contrast the PPI is drawn against.",
+    "Wrong: unemployment is measured by the unemployment rate, not by any producer price index, so this is not what the PPI tracks.",
+    "Wrong: the cost of capital is the interest rate, which is a separate concept from producer prices and the PPI."
    ]
   },
   {
@@ -1041,17 +1041,17 @@
    "d": 2,
    "q": "An investor expects a prolonged contraction and wants to hold stocks that are most likely to retain value. Which holding best fits that goal?",
    "o": [
-    "A discount retailer of everyday consumer staples",
-    "A maker of large household appliances",
-    "A manufacturer of heavy capital equipment",
-    "A luxury automobile maker"
+    "A discount retailer of consumer staples",
+    "A maker of large household appliances sold through big-box stores",
+    "A manufacturer of heavy capital equipment for factories and construction",
+    "A luxury automobile maker selling high-end sedans and sports cars"
    ],
    "a": 0,
    "w": [
     "Correct: discount retailers of staples are defensive; buyers trade down and still need basic items in a downturn.",
-    "Wrong: large appliances are high-ticket items, so makers are cyclical and fall in contractions.",
-    "Wrong: capital equipment suppliers are cyclical and weaken when businesses cut investment spending.",
-    "Wrong: luxury automobiles are high-ticket consumer items and a classic cyclical stock."
+    "Wrong: large appliances are high-ticket items, so makers are cyclical and fall in contractions even when sold through big-box stores.",
+    "Wrong: capital equipment suppliers are cyclical and weaken when factories and builders cut investment spending in a downturn.",
+    "Wrong: luxury automobiles are high-ticket consumer items and a classic cyclical stock that suffers in contractions."
    ]
   },
   {
@@ -1181,16 +1181,16 @@
    "d": 2,
    "q": "Which statement correctly contrasts a company’s income statement and balance sheet?",
    "o": [
-    "The income statement is a snapshot at a point in time; the balance sheet covers a period",
-    "Both cover a period of time, but only the income statement shows liabilities",
-    "Both are snapshots, but only the balance sheet shows revenue",
-    "The income statement covers a period and ends in net income; the balance sheet is a snapshot showing assets, liabilities and equity"
+    "The income statement is a snapshot at a point in time showing assets; the balance sheet covers a period and ends in net income",
+    "Both cover a period of time, but only the income statement shows liabilities and shareholders’ equity",
+    "Both are snapshots, but only the balance sheet shows revenue, expenses and net income",
+    "The income statement covers a period and ends in net income; the balance sheet is a snapshot of financial position"
    ],
    "a": 3,
    "w": [
-    "Wrong: this reverses the two statements.",
-    "Wrong: the balance sheet is a snapshot, not a period report, and liabilities appear on the balance sheet.",
-    "Wrong: the income statement is not a snapshot and revenue is reported on the income statement.",
+    "Wrong: this reverses the two statements, since the income statement covers a period and the balance sheet is the snapshot.",
+    "Wrong: the balance sheet is a snapshot, not a period report, and liabilities and equity appear on the balance sheet.",
+    "Wrong: the income statement is not a snapshot, and revenue, expenses and net income are reported on the income statement.",
     "Correct: the income statement measures revenue, expenses and net income over a period; the balance sheet is a moment-in-time view."
    ]
   },
@@ -1321,17 +1321,17 @@
    "d": 1,
    "q": "An oligopoly is a market in which:",
    "o": [
-    "There are few sellers, each supplying a large portion of the products sold",
-    "There is a single seller",
-    "There are many small sellers and entry is easy",
-    "The government sets all prices"
+    "Few sellers each supply a large share of the market",
+    "There is a single seller with no close substitutes and high barriers to entry",
+    "There are many small sellers and entry is easy, so no firm has pricing power",
+    "The government sets all prices and limits the number of firms"
    ],
    "a": 0,
    "w": [
     "Correct: few sellers each hold a large share, making it hard for new firms to enter, as in autos and airlines.",
-    "Wrong: a single seller describes a monopoly, which the chapter does not define as an oligopoly.",
-    "Wrong: many sellers with easy entry is the opposite of an oligopoly.",
-    "Wrong: government price setting is not part of the definition."
+    "Wrong: a single seller with high barriers to entry describes a monopoly, which is not the definition of an oligopoly.",
+    "Wrong: many small sellers with easy entry is the opposite of an oligopoly and describes a competitive market.",
+    "Wrong: government price setting and limits on firm numbers are not part of the definition of an oligopoly."
    ]
   },
   {
@@ -1341,17 +1341,17 @@
    "d": 3,
    "q": "Compared with the P/E ratio, the PEG ratio is considered a more enhanced valuation metric because it:",
    "o": [
-    "Replaces earnings with cash flow",
-    "Uses the dividend instead of earnings",
-    "Factors in the company’s expected growth rate",
-    "Is calculated from the balance sheet"
+    "Replaces earnings with operating cash flow per share",
+    "Uses the dividend per share instead of earnings",
+    "Factors in the company’s expected earnings growth rate",
+    "Is calculated from balance sheet book values"
    ],
    "a": 2,
    "w": [
-    "Wrong: cash flow yield is a separate measure that is not what makes the PEG different.",
-    "Wrong: current or dividend yield is a separate evaluation method.",
+    "Wrong: cash flow yield is a separate measure that is not what makes the PEG different from the P/E ratio.",
+    "Wrong: current or dividend yield is a separate evaluation method and is not what makes the PEG different.",
     "Correct: the PEG uses the P/E ratio while also factoring in expected growth.",
-    "Wrong: P/E and PEG both derive from the price and earnings, not from balance sheet items."
+    "Wrong: P/E and PEG both derive from the price and earnings, not from balance sheet items such as book value."
    ]
   },
   {
@@ -1402,16 +1402,16 @@
    "q": "The Fed concludes that demand is likely to greatly outpace supply and inflation is a risk. It sells a large amount of Treasury securities to primary dealers. What is the expected result?",
    "o": [
     "Cash enters the banking system and interest rates fall",
-    "The discount rate automatically falls",
-    "Cash leaves the banking system, the money supply tightens and interest rates rise",
-    "The reserve requirement is cut"
+    "The discount rate automatically falls to offset the sale",
+    "Cash leaves the banking system and interest rates rise",
+    "The reserve requirement is cut to ease credit conditions"
    ],
    "a": 2,
    "w": [
     "Wrong: cash entering the system and falling rates is what a purchase of securities would do.",
     "Wrong: the discount rate is a separate tool and does not change automatically with open market sales.",
     "Correct: dealers pay cash for the securities, which removes money from the banking system and pushes rates up.",
-    "Wrong: reserve requirements are a separate tool and a cut would be easing, not tightening."
+    "Wrong: reserve requirements are a separate tool and a cut would be easing, not the tightening the Fed intends."
    ]
   },
   {
@@ -1542,15 +1542,15 @@
    "q": "Which of the following describes the balance of payments?",
    "o": [
     "The difference between a country’s exports and imports of goods only",
-    "The sum of consumer spending in a quarter",
-    "The gap between government spending and tax revenue",
-    "A comprehensive record of a country’s economic transactions with the rest of the world over a period"
+    "The sum of consumer spending on goods and services in a given quarter",
+    "The gap between government spending and tax revenue in a fiscal year",
+    "A record of a country’s transactions with the rest of the world over a period"
    ],
    "a": 3,
    "w": [
     "Wrong: exports minus imports describes the balance of trade, which is only a part of the balance of payments.",
-    "Wrong: consumer spending is the C component of GDP.",
-    "Wrong: the gap between spending and tax revenue is a budget concept, not part of this definition.",
+    "Wrong: consumer spending on goods and services is the C component of GDP, not the balance of payments.",
+    "Wrong: the gap between spending and tax revenue is a budget concept, not part of the balance of payments definition.",
     "Correct: the balance of payments records all payments and receipts between residents and foreign entities over a quarter or year."
    ]
   },
@@ -1641,17 +1641,17 @@
    "d": 2,
    "q": "Purchasing power parity is used to:",
    "o": [
-    "Compare the cost of the same basket of goods in different countries to help determine exchange rates",
-    "Measure the unemployment rate in each country",
-    "Set the Fed’s discount rate",
-    "Calculate a country’s balance of trade"
+    "Compare the cost of a basket of goods across countries to gauge exchange rates",
+    "Measure the unemployment and labor force participation of each country",
+    "Set the Fed’s discount rate for loans to member banks",
+    "Calculate a country’s balance of trade from exports and imports"
    ],
    "a": 0,
    "w": [
     "Correct: PPP compares what the same basket of goods costs in two countries to gauge currency strength and exchange rates.",
-    "Wrong: PPP is unrelated to unemployment measurement.",
+    "Wrong: PPP is unrelated to measuring unemployment or labor force participation in any country.",
     "Wrong: the discount rate is set by the Fed as a policy tool, independently of PPP.",
-    "Wrong: balance of trade is credits minus debits and does not rely on PPP."
+    "Wrong: balance of trade is credits minus debits on goods and does not rely on PPP."
    ]
   },
   {
@@ -1661,16 +1661,16 @@
    "d": 3,
    "q": "Interest rates in a major foreign country rise sharply while US rates stay unchanged. All else being equal, which outcome is most consistent with the chapter?",
    "o": [
-    "The dollar strengthens and US exports drop",
-    "Demand for the dollar rises and US prices fall",
-    "Investment flows from the foreign country into the US",
-    "Demand for the foreign currency rises, the dollar’s value falls, and US output and prices tend to increase"
+    "The dollar strengthens and US exports drop as US goods get pricier abroad",
+    "Demand for the dollar rises and US prices fall as imports become cheaper",
+    "Investment flows from the foreign country into the US seeking higher returns",
+    "Demand for the foreign currency rises and the dollar’s value falls, lifting US output"
    ],
    "a": 3,
    "w": [
-    "Wrong: a stronger dollar is the result of rising US rates, not rising foreign rates.",
-    "Wrong: this is the opposite; a dollar demand increase would follow a rise in US rates.",
-    "Wrong: investment may flow from the US to the foreign country offering higher rates.",
+    "Wrong: a stronger dollar and pricier US goods abroad result from rising US rates, not rising foreign rates.",
+    "Wrong: this is the opposite; a dollar demand increase and falling prices would follow a rise in US rates.",
+    "Wrong: investment may flow from the US to the foreign country offering higher rates, not the reverse.",
     "Correct: higher foreign rates raise demand for assets in that currency, reducing the dollar’s value, and US output and prices tend to rise."
    ]
   },
@@ -1721,16 +1721,16 @@
    "r": "10.4.2",
    "q": "A country deliberately devalues its currency. Which result is most likely?",
    "o": [
-    "Foreign demand for its goods is unchanged",
+    "Foreign demand for its goods is unchanged since relative prices do not move",
     "Its exports decrease because its goods become more expensive abroad",
-    "Its imports become cheaper for domestic consumers",
-    "Its exports increase because its goods become more attractive to foreign buyers"
+    "Its imports become cheaper for domestic consumers and domestic firms",
+    "Its exports increase because its goods become cheaper for foreign buyers"
    ],
    "a": 3,
    "w": [
-    "Cheaper prices abroad raise foreign demand rather than leaving it unchanged.",
+    "Wrong: cheaper prices abroad raise foreign demand rather than leaving it unchanged, because relative prices do move.",
     "Devaluation lowers, not raises, the foreign price of its goods.",
-    "Devaluation makes foreign goods costlier in the home currency, so imports become more expensive.",
+    "Wrong: devaluation makes foreign goods costlier in the home currency, so imports become more expensive for consumers and firms.",
     "Correct: a devalued currency makes the country’s goods cheaper for foreign buyers, so exports rise."
    ]
   },
@@ -1741,17 +1741,17 @@
    "r": "10.4.1",
    "q": "During a strong economic expansion, a country is most likely to prefer to:",
    "o": [
-    "Reduce imports to protect jobs",
-    "Import more, adding price competition that helps limit inflation",
-    "Run a trade surplus to stimulate demand",
-    "Impose a ban on foreign aid"
+    "Reduce imports to protect domestic jobs and industries",
+    "Import more, adding competition that limits inflation",
+    "Run a trade surplus to stimulate domestic demand and output",
+    "Impose a ban on foreign aid to cut government spending"
    ],
    "a": 1,
    "w": [
-    "Restricting imports is the recession-era preference for boosting domestic jobs, not the expansion-era one.",
+    "Wrong: restricting imports is the recession-era preference for boosting domestic jobs, not the expansion-era preference.",
     "Correct: extra imports supply goods beyond domestic capacity and keep prices in check, so a deficit may help in an expansion.",
-    "Stimulating demand is the recession objective; an overheating expansion does not need it.",
-    "Foreign aid has no link to the expansion-era trade preference described in the chapter."
+    "Wrong: stimulating demand and output is the recession objective; an overheating expansion does not need it.",
+    "Wrong: foreign aid has no link to the expansion-era trade preference described in the chapter, so a ban is not it."
    ]
   },
   {

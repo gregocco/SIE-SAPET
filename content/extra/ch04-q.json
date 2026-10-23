@@ -67,7 +67,7 @@
   "q": "A broker-dealer wants to offer a fund’s shares to its customers through the fund’s sponsor. Which statement is accurate?",
   "o": [
    "It needs no agreement with the sponsor, buying at NAV and filling customer orders at the POP",
-   "It needs a written selling agreement, buys at a discount to the POP and fills customer orders at the POP",
+   "It needs a written selling agreement, buys below the POP and fills orders at the POP",
    "It may rely on an oral understanding, buying at the POP and filling customer orders at the POP",
    "It needs a written selling agreement, buys at NAV and fills customer orders at NAV"
   ],
@@ -166,10 +166,10 @@
   "d": 3,
   "q": "Fund X is actively managed, with average annual net assets of $250 million, management fees of $1.5 million and other operating expenses of $0.75 million. Fund Y is an index fund with average annual net assets of $800 million, management fees of $0.9 million and other operating expenses of $0.5 million. Which statement is correct?",
   "o": [
-   "Fund X’s expense ratio is 0.60% and Fund Y’s is 0.1125%",
-   "Fund X’s expense ratio is 0.90% and Fund Y’s is 1.75%",
+   "Fund X’s expense ratio is 0.60% and Fund Y’s is 0.1125%, counting management fees only",
+   "Fund X’s expense ratio is 0.90% and Fund Y’s is 1.75%, so the index fund costs more",
    "Fund X’s expense ratio is 0.90%, above the typical active range, and Fund Y’s is 0.175%",
-   "Fund X’s expense ratio is 0.90% and Fund Y’s is 0.175%, both in line with typical ranges for their fund types"
+   "Fund X’s expense ratio is 0.90% and Fund Y’s is 0.175%, both typical for their types"
   ],
   "a": 3,
   "w": [
@@ -348,7 +348,7 @@
   "o": [
    "She can buy units from other investors on an exchange at a price set by supply and demand",
    "She can buy newly created units from the sponsor at any time, because UITs have a continuous offering",
-   "She may be able to obtain units made available through redemptions, because a new trust’s units are offered only once",
+   "She may obtain units made available through redemptions, since new units are issued only at the IPO",
    "She can ask the trust’s board of directors to issue more units, which it must do at NAV"
   ],
   "a": 2,
@@ -426,15 +426,15 @@
   "d": 2,
   "q": "Which statement about two equity indexes is accurate?",
   "o": [
-   "The Wilshire 5000 measures the 50 largest stocks in the Russell 3000 universe",
-   "The Russell Top 50 Mega Cap Index measures all actively traded US stocks",
+   "The Wilshire 5000 measures the 50 largest stocks in the Russell 3000 universe, while the Russell Top 50 covers all actively traded US stocks",
+   "The Russell Top 50 Mega Cap Index measures all actively traded US stocks, while the Wilshire 5000 holds only 50 securities",
    "The Russell Top 50 Mega Cap Index and the Wilshire 5000 both track every actively traded US company",
-   "The Wilshire 5000 measures US companies with actively traded stock, while the Russell Top 50 Mega Cap Index tracks the 50 largest stocks in the Russell 3000 universe"
+   "The Wilshire 5000 covers actively traded US companies; the Russell Top 50 tracks the 50 largest Russell 3000 stocks"
   ],
   "a": 3,
   "w": [
-   "Wrong: this assigns the Russell Top 50 description to the Wilshire 5000, which instead measures actively traded US companies.",
-   "Wrong: the Russell Top 50 Mega Cap Index tracks only the 50 largest stocks, not all actively traded US stocks.",
+   "Wrong: this swaps the descriptions; the Wilshire 5000 covers actively traded US companies and the Russell Top 50 holds only the 50 largest stocks.",
+   "Wrong: the Russell Top 50 tracks only the 50 largest stocks, and the Wilshire 5000 is the broad measure of actively traded US stocks.",
    "Wrong: only the Wilshire 5000 covers actively traded US companies broadly, while the Russell Top 50 holds just 50 stocks.",
    "Correct: the Wilshire 5000 covers US companies with actively traded stock, and the Russell Top 50 tracks the 50 largest in the Russell 3000."
   ]
@@ -466,9 +466,9 @@
   "d": 2,
   "q": "The SEC does each of the following with respect to mutual funds EXCEPT:",
   "o": [
-   "Establish financial disclosure requirements",
-   "Set limits on the fees funds may charge",
-   "Supervise day-to-day investment decisions and judge the merits of the fund’s investments",
+   "Establish financial disclosure requirements for fund prospectuses and reports",
+   "Set limits on the sales charges and fees a fund may impose",
+   "Supervise daily investment decisions or judge the merits of holdings",
    "Restrict activities such as short selling, margin purchases and joint accounts"
   ],
   "a": 2,

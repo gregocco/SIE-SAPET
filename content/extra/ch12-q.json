@@ -86,16 +86,16 @@
   "d": 2,
   "q": "Which statement about prepaid tuition plans is TRUE?",
   "o": [
-   "They may be used only to pay room and board",
-   "They are far more popular than 529 college savings plans",
-   "They are offered only by insurance companies",
-   "They allow families to prepay future tuition at designated colleges, often public colleges within the state"
+   "They may be used only to pay room and board at the designated college",
+   "They are far more popular than 529 college savings plans nationwide",
+   "They are offered only by insurance companies, not by states",
+   "They let families prepay tuition at designated colleges, often in-state public ones"
   ],
   "a": 3,
   "w": [
-   "Wrong: the plans exist to prepay future tuition, not room and board, so this use description is inaccurate.",
-   "Wrong: prepaid tuition plans are much less popular than 529 savings plans, which is why the chapter focuses on savings plans.",
-   "Wrong: these plans are established by states and educational institutions, not only by insurance companies.",
+   "Wrong: prepaid tuition plans cover tuition, so they are not limited to room and board.",
+   "Wrong: prepaid tuition plans are much less common than 529 college savings plans.",
+   "Wrong: prepaid tuition plans are typically sponsored by states or educational institutions, not limited to insurers.",
    "Correct: prepaid tuition plans let families prepay tuition at designated colleges, sometimes locking in today’s cost of future tuition."
   ]
  },
@@ -226,16 +226,16 @@
   "d": 2,
   "q": "Sam, age 35, opened a Roth IRA three years ago. He takes a withdrawal that consists solely of his own contributions, and no exception applies. What are the consequences?",
   "o": [
-   "Taxation of the full amount as long-term capital gains",
-   "Ordinary income tax and a 10% penalty on the full amount",
-   "A 10% penalty on the full amount but no income tax",
-   "No income tax and no 10% penalty, because his contributions were made with after-tax dollars"
+   "Taxation of the full amount as long-term capital gains, with no penalty",
+   "Ordinary income tax and a 10% penalty on the full amount withdrawn",
+   "A 10% penalty on the full amount but no income tax, as the account is young",
+   "No tax and no penalty, since contributions were made with after-tax dollars"
   ],
   "a": 3,
   "w": [
-   "Wrong: retirement account withdrawals are never taxed as capital gains, and contributions are not taxed at all.",
-   "Wrong: tax and penalty apply to the earnings portion of a non-qualified Roth distribution, not to a return of contributions.",
-   "Wrong: the penalty applies to earnings withdrawn early, so a withdrawal of contributions alone is not penalized.",
+   "Wrong: contributions to a Roth IRA come out first and are never taxed again, so no capital gains tax applies.",
+   "Wrong: withdrawn contributions were already taxed and are not penalized, so neither income tax nor the penalty applies.",
+   "Wrong: contributions can be withdrawn at any time without the 10% penalty, regardless of how long the account has existed.",
    "Correct: Roth contributions were taxed going in and come out tax-free, while tax and the 10% penalty apply only to earnings."
   ]
  },
@@ -286,17 +286,17 @@
   "d": 3,
   "q": "Walter annuitized his variable annuity two years ago and elected the straight life payout. His contributions totaled $200,000 and the contract value at annuitization was $150,000. He dies after receiving 24 monthly payments. What does his beneficiary receive?",
   "o": [
-   "$150,000, the contract value at annuitization",
-   "$200,000, the greater of the contract value or the amount contributed",
-   "Nothing further, because straight life pays no beneficiary and the death benefit usually ends at annuitization",
-   "The remaining payments for a guaranteed 10-year period"
+   "$150,000 less the payments already received, the unrecovered contract value",
+   "$200,000, the greater of the contract value or the total amount contributed",
+   "Nothing further, because straight life pays no beneficiary after the annuitant dies",
+   "The remaining payments for a guaranteed 10-year period, as with a period certain"
   ],
   "a": 2,
   "w": [
-   "Wrong: the contract value was converted into annuity units at annuitization, so no lump sum is paid to the beneficiary.",
-   "Wrong: the greater-of death benefit applies only during the accumulation phase, not after the contract has been annuitized.",
+   "Wrong: straight life stops at the annuitant’s death, so no unrecovered contract value passes to a beneficiary.",
+   "Wrong: that death benefit applies before annuitization; once annuitized under straight life the benefit ends.",
    "Correct: straight life stops at death with no payments to a beneficiary, and the death benefit usually ends upon annuitization.",
-   "Wrong: a guaranteed period belongs to life with period certain, which Walter did not select."
+   "Wrong: a guaranteed period applies only to a life with period certain option, not to the straight life option elected."
   ]
  },
  {
@@ -326,16 +326,16 @@
   "d": 2,
   "q": "Dana has annuitized her variable annuity and has received two monthly payments under the straight life option. She now wants to switch to joint with last survivor so her husband is protected. What does the chapter say?",
   "o": [
-   "The change is allowed only if her husband consents",
-   "The change is allowed at any time with advance notice",
-   "The change is allowed only during the first year of payments",
-   "The change is not allowed, because the payout option must be chosen before annuitization and cannot be changed afterward"
+   "The change is allowed only if her husband consents in writing to the new option",
+   "The change is allowed at any time with 30 days’ advance notice to the insurer",
+   "The change is allowed only during the first year of payments, with a reduced payout",
+   "The change is not allowed, because the payout option is irrevocable once annuitization begins"
   ],
   "a": 3,
   "w": [
-   "Wrong: consent of the husband is not a mechanism for changing the option, since the election is final.",
-   "Wrong: the chapter states the choice is final once made, so no change is permitted at any time with notice.",
-   "Wrong: the chapter provides no first-year window; the election cannot be changed after it has been made.",
+   "Wrong: the payout option cannot be changed after annuitization, regardless of any consent from her husband.",
+   "Wrong: after annuitization the payout option is irrevocable, so no amount of advance notice permits a change.",
+   "Wrong: there is no first-year window; the option must be chosen before annuitization and cannot be changed afterward.",
    "Correct: the payout option is selected before annuitization, and once the choice has been made it cannot be changed."
   ]
  },
@@ -366,17 +366,17 @@
   "d": 2,
   "q": "A registered representative is recommending a deferred variable annuity to a customer. Under FINRA Rule 2330, which belief must the representative have before making the recommendation?",
   "o": [
-   "The customer would benefit from the features of the variable annuity, and the product and subaccounts are suitable",
-   "The customer will earn a guaranteed minimum return in the separate account",
-   "The customer is in a high enough tax bracket to avoid the 10% early withdrawal penalty",
-   "The customer will not need access to the funds for at least three years"
+   "The customer would benefit from its features, and the product and subaccounts suit them",
+   "The customer is in a high enough tax bracket to avoid the 10% early withdrawal penalty entirely",
+   "The customer will earn a guaranteed minimum return in the separate account each year",
+   "The customer will not need access to the funds for at least three years after purchase"
   ],
   "a": 0,
   "w": [
    "Correct: Rule 2330 bars a recommendation unless the rep has reason to believe the product and subaccounts are suitable and the customer would benefit.",
-   "Wrong: separate account returns are not guaranteed, because the investor bears the market risk.",
-   "Wrong: the early withdrawal penalty is a disclosure item that applies before 59½ and has nothing to do with tax bracket.",
-   "Wrong: Rule 2330 as described contains no three-year liquidity requirement; surrender charges are disclosed instead."
+   "Wrong: the penalty depends on age, not tax bracket, and Rule 2330 does not require such a belief.",
+   "Wrong: the separate account carries market risk with no guaranteed return, so the representative cannot hold such a belief.",
+   "Wrong: Rule 2330 requires a reasonable belief about benefits and suitability, not a fixed three-year holding period."
   ]
  },
  {
@@ -388,15 +388,15 @@
   "o": [
    "Tom must be admitted only if he also works at least 500 hours in three consecutive years",
    "Tom must be admitted, because every full-time employee over 21 with one year of service must be eligible",
-   "The employer may choose which employees participate, because non-qualified plans are not subject to ERISA eligibility rules",
-   "The plan loses its tax-deferred growth unless every employee participates"
+   "The employer may choose who participates, since non-qualified plans are exempt from ERISA eligibility",
+   "The plan loses its tax-deferred status and becomes taxable unless every employee participates"
   ],
   "a": 2,
   "w": [
    "Wrong: the 500-hour part-time rule is an ERISA requirement that does not apply to non-qualified plans.",
    "Wrong: the age 21 and one year of service eligibility rule applies to ERISA qualified plans, not non-qualified plans.",
    "Correct: non-qualified plans are not ERISA-covered, so employers can include or exclude any employees and avoid nondiscrimination tests.",
-   "Wrong: tax-deferred growth does not depend on universal participation, and non-qualified plans may be limited to key executives."
+   "Wrong: a non-qualified plan need not cover every employee, and selective participation does not cost it its deferral treatment."
   ]
  },
  {
@@ -486,17 +486,17 @@
   "d": 2,
   "q": "Which statement about MSRB Rule G-45 is correct?",
   "o": [
-   "Underwriters must submit paper reports quarterly, and local government investment pools are covered",
-   "Underwriters of 529 plans and ABLE programs must submit specified information electronically twice a year, and local government investment pools are not covered",
-   "Only 529 plans, not ABLE programs, must report, and reports are due annually",
-   "Registered representatives must file a report each time they sell an out-of-state 529 plan"
+   "Underwriters must submit paper reports quarterly, and local government investment pools are also covered by the rule",
+   "Underwriters of 529 plans and ABLE programs report electronically twice yearly, excluding local government investment pools",
+   "Only 529 plans, not ABLE programs, must report, and the reports are due annually by December 31",
+   "Registered representatives must file a report with the MSRB each time they sell an out-of-state 529 plan"
   ],
   "a": 1,
   "w": [
-   "Wrong: the submissions are electronic and semiannual rather than quarterly paper reports, and LGIPs are specifically excluded.",
+   "Wrong: reports are submitted electronically twice a year, and local government investment pools are not covered by Rule G-45.",
    "Correct: Rule G-45 requires underwriters of 529 plans and ABLE programs to submit data electronically each half-year, excluding LGIPs.",
-   "Wrong: the rule covers both 529 plans and ABLE programs, and the reporting is semiannual rather than annual.",
-   "Wrong: the representative’s duty on out-of-state plans is to disclose potential tax consequences at or before the sale, not to file reports."
+   "Wrong: both 529 plans and ABLE programs are covered, and the reports are due twice a year rather than annually.",
+   "Wrong: the Rule G-45 reporting duty falls on underwriters, not on registered representatives for individual sales."
   ]
  }
 ]

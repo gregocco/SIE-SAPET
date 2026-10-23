@@ -26,10 +26,10 @@
   "d": 3,
   "q": "An issuer offers $80 million of notes through an underwriter on a mini-max best efforts basis with a $50 million minimum. Investors have now bought $56 million. Which statement is correct?",
   "o": [
-   "The deal is cancelled because the full $80 million was not sold",
+   "The deal is cancelled because the full $80 million was not sold by the closing date",
    "The underwriter must now purchase the remaining $24 million for its own account",
-   "The offering continues only if a second, higher minimum is reached",
-   "The minimum is met, so it continues as a traditional best efforts offering with no obligation on the underwriter to buy the rest"
+   "The offering continues only if a second, higher minimum is later reached",
+   "The minimum is met, so the deal continues as best efforts with no buy obligation"
   ],
   "a": 3,
   "w": [
@@ -87,7 +87,7 @@
   "q": "All of the following are true of indications of interest (IOIs) collected during the cooling-off period EXCEPT:",
   "o": [
    "They are non-binding expressions of potential interest in the shares",
-   "Orders may be confirmed during the cooling-off period once the investor reconfirms the IOI",
+   "Orders may be confirmed during the cooling-off period once reconfirmed",
    "They typically become orders on the effective date unless the investor cancels",
    "They help the underwriters gauge demand and set the public offering price"
   ],
@@ -108,15 +108,15 @@
   "o": [
    "She may sell only 100,000 shares, the average weekly volume, in a 90-day period",
    "She may sell only 300,000 shares, which is 1% of the outstanding shares, in a 90-day period",
-   "The sale is permitted in full because the holding period is met and volume limits do not apply to non-affiliates",
-   "She may not sell because restricted stock must be held longer than eight months"
+   "She may sell all 600,000 shares, since the holding period is met and no volume cap applies",
+   "She may not sell because restricted stock must be held at least a full year"
   ],
   "a": 2,
   "w": [
    "Wrong: the weekly volume alternative is part of the affiliate volume formula, which does not restrict a non-affiliate here.",
    "Wrong: the 1% limit applies to affiliates selling control stock, not to a non-affiliate selling restricted shares after the holding period.",
    "Correct: restricted securities held by non-affiliates need only the six-month holding period for a public reporting issuer, and the volume formula does not apply to them.",
-   "Wrong: the required holding period for a reporting company is six months, and eight months of holding already satisfies it."
+   "Wrong: the required holding period for a reporting company is six months, so eight months already satisfies it and no full year is required."
   ]
  },
  {

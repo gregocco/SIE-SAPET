@@ -956,17 +956,17 @@
    "d": 2,
    "q": "A new broker-dealer’s advertising says, “Registered with the SEC, so our practices are approved by the government.” This statement is:",
    "o": [
-    "Improper because registration does not mean endorsement",
-    "Permitted if the firm is also a FINRA member",
-    "Permitted if the statement is in a footnote",
-    "Required in all retail communications"
+    "Improper; registration does not imply endorsement",
+    "Permitted if the firm is also a FINRA member in good standing",
+    "Permitted if the statement is printed in a footnote in smaller type",
+    "Required in all retail communications to show regulatory status"
    ],
    "a": 0,
    "w": [
     "Correct: registration authorizes business but is not an approval of the firm’s practices, and firms may not imply otherwise.",
-    "Wrong: FINRA membership does not change the rule against implying regulatory endorsement.",
-    "Wrong: placement in a footnote does not cure the misleading implication of approval.",
-    "Wrong: there is no requirement to make such a statement, and it would be misleading."
+    "Wrong: FINRA membership, even in good standing, does not change the rule against implying regulatory endorsement.",
+    "Wrong: placing the statement in a footnote or smaller type does not cure the misleading implication of approval.",
+    "Wrong: there is no requirement to make such a statement, and it would be misleading about regulatory status."
    ]
   },
   {
@@ -976,17 +976,17 @@
    "d": 2,
    "q": "Which of these must a firm submit to FINRA to begin the registration process as a broker-dealer?",
    "o": [
-    "Form ADV and a fiduciary certification",
-    "Form U4, Form U5 and fingerprints",
-    "New Member Agreement, Form BD, business plan and fees",
-    "Series 7 results for all employees"
+    "Form ADV, a fiduciary certification and a fee schedule",
+    "Form U4, Form U5 and fingerprints for all staff",
+    "New Member Agreement, Form BD, business plan, fees",
+    "Series 7 results for all prospective employees"
    ],
    "a": 2,
    "w": [
-    "Wrong: Form ADV is how an investment adviser registers with the SEC.",
+    "Wrong: Form ADV is how an investment adviser registers with the SEC, not how a broker-dealer applies for FINRA membership.",
     "Wrong: U4 and fingerprints are filed per associated person after membership is approved; U5 is for terminations.",
     "Correct: the New Member Agreement, Form BD, a detailed business plan and fees start the registration.",
-    "Wrong: exam results are not part of the firm’s initial application package."
+    "Wrong: exam results for prospective employees are not part of the firm’s initial application package."
    ]
   },
   {
@@ -1016,15 +1016,15 @@
    "d": 3,
    "q": "A broker-dealer has its home office in Ohio and wants its reps to take orders from customers in Texas and Florida. Under blue sky laws, which is required?",
    "o": [
-    "Registration only in Ohio suffices",
-    "Only the firm must register in Texas and Florida",
-    "The firm, principals and each rep must register in Texas and Florida",
+    "Registration in Ohio suffices because it is the home state",
+    "Only the firm must register in Texas and Florida, not its staff",
+    "The firm, principals and reps must register in both states",
     "Only the principals must register in Texas and Florida"
    ],
    "a": 2,
    "w": [
-    "Wrong: Ohio alone would meet FINRA admission rules but not Texas and Florida blue sky laws.",
-    "Wrong: reps and principals must also register in the states in which they do business.",
+    "Wrong: Ohio alone would meet FINRA admission rules but not Texas and Florida blue sky laws, which apply to each state of business.",
+    "Wrong: reps and principals must also register in the states in which they do business, not just the firm.",
     "Correct: state law requires firm, principals and each registered rep to register in every state of business.",
     "Wrong: individual reps must register too, not only principals."
    ]
@@ -1057,15 +1057,15 @@
    "q": "On Form U4, a firm must verify which of the following?",
    "o": [
     "The full five years of residential history",
-    "The three most recent years of employment history",
-    "Education only",
-    "All liens and judgments for life"
+    "The three most recent years of employment",
+    "Education history only, back to high school",
+    "All liens and judgments reported over a lifetime"
    ],
    "a": 1,
    "w": [
     "Wrong: five years of address history is collected, but verification is specified for employment.",
     "Correct: the form lists 10 years of employment, of which the firm must verify the three most recent.",
-    "Wrong: education is collected but the stated verification requirement is for recent employment.",
+    "Wrong: education is collected on the form but the stated verification requirement is for recent employment history.",
     "Wrong: liens and judgments are self-reported disclosures, with no lifetime verification rule."
    ]
   },
@@ -1076,15 +1076,15 @@
    "d": 2,
    "q": "The pre-dispute arbitration agreement that a registered rep signs on Form U4 requires the rep to:",
    "o": [
-    "Resolve future firm disputes through arbitration and give up the right to a jury trial",
-    "Pay all arbitration costs for the firm",
-    "Accept arbitration only for customer complaints",
-    "Waive all rights to appeal on any legal ground"
+    "Arbitrate future firm disputes and waive the right to a jury trial",
+    "Pay all arbitration costs of any dispute with the firm",
+    "Accept arbitration only for customer complaints, not firm disputes",
+    "Waive all rights to appeal an award on any legal ground whatsoever"
    ],
    "a": 0,
    "w": [
     "Correct: future disputes between rep and firm go to arbitration, and the rep forgoes court and jury trial.",
-    "Wrong: nothing in the clause shifts all arbitration costs to the rep.",
+    "Wrong: nothing in the clause shifts all arbitration costs of a dispute with the firm onto the rep.",
     "Wrong: the clause covers disputes between firm and rep, not customer complaints alone.",
     "Wrong: awards are final and binding with very limited court review, but it is not an unlimited waiver."
    ]
@@ -1096,17 +1096,17 @@
    "d": 3,
    "q": "A rep and her firm have a dispute over sexual harassment. She signed the standard U4 arbitration clause. Where will the matter be resolved?",
    "o": [
-    "Before the MSRB",
-    "In arbitration automatically",
-    "In court, unless both parties agree to arbitrate",
-    "Before the SEC commissioners"
+    "Before the MSRB’s employment dispute panel",
+    "In arbitration automatically under the U4 clause",
+    "In court, unless both sides agree to arbitrate",
+    "Before the SEC in an administrative proceeding"
    ],
    "a": 2,
    "w": [
-    "Wrong: the MSRB is a rulemaking body and does not hear employment disputes.",
-    "Wrong: automatic arbitration applies to other disputes, but these two are carved out.",
+    "Wrong: the MSRB is a rulemaking body and has no panel that hears employment disputes.",
+    "Wrong: automatic arbitration under the U4 clause applies to other disputes, but these two are carved out.",
     "Correct: discrimination and sexual harassment disputes go to arbitration only if both parties agree; otherwise court.",
-    "Wrong: the SEC does not adjudicate private employment disputes in this way."
+    "Wrong: the SEC does not adjudicate private employment disputes in administrative proceedings of this kind."
    ]
   },
   {
@@ -1176,15 +1176,15 @@
    "d": 2,
    "q": "Which of the following persons would NOT be required to be fingerprinted?",
    "o": [
-    "A partner who supervises sales staff",
-    "A trader who handles customer orders",
+    "A partner who supervises the firm’s sales staff",
+    "A trader who handles customer orders and executions",
     "An officer with access to original books and records",
-    "A silent partner who invested capital but has no role in securities activities"
+    "A silent partner who only invests capital, with no securities role"
    ],
    "a": 3,
    "w": [
     "Wrong: a supervising partner is involved in the firm’s securities business and must be fingerprinted.",
-    "Wrong: a trader engages in securities business and must be fingerprinted.",
+    "Wrong: a trader engages in securities business, including executions, and must be fingerprinted.",
     "Wrong: access to original books and records triggers the fingerprint requirement.",
     "Correct: a partner who only invests capital and has no involvement in securities activities is exempt from fingerprinting."
    ]
@@ -1196,17 +1196,17 @@
    "d": 2,
    "q": "A registered person’s fingerprints are not received within the required time. What happens?",
    "o": [
-    "Status becomes Inactive Prints and the person must cease business until processed",
-    "The registration is permanently revoked",
-    "The firm receives a censure only",
-    "The person is statutorily disqualified"
+    "Inactive Prints status; the person must stop business until processed",
+    "The registration is permanently revoked and the firm is fined",
+    "The firm receives a censure, but the person may keep working",
+    "The person is statutorily disqualified until the prints clear"
    ],
    "a": 0,
    "w": [
     "Correct: late fingerprints change status to Inactive Prints and the person must stop doing business until processed.",
     "Wrong: the registration is not permanently revoked; the status is inactive until prints are processed.",
-    "Wrong: the consequence is a halt to business, not merely a censure.",
-    "Wrong: late prints do not create statutory disqualification."
+    "Wrong: the consequence is a halt to business, not a censure while the person keeps working.",
+    "Wrong: late prints do not create statutory disqualification; they only cause inactive status until processed."
    ]
   },
   {
@@ -1277,16 +1277,16 @@
    "q": "Which statement about the SIE exam is true?",
    "o": [
     "It must be taken by a person employed at a FINRA member",
-    "Any person 18 or older may take it without being sponsored by a firm",
+    "Any person 18 or older may take it with no sponsorship",
     "Passing it allows a person to solicit new business",
-    "It has no age requirement"
+    "It has no minimum age requirement for candidates"
    ],
    "a": 1,
    "w": [
     "Wrong: no association with a FINRA or MSRB member is required for the SIE.",
     "Correct: the SIE is open to anyone 18 or older with no sponsorship required.",
     "Wrong: passing the SIE alone does not qualify anyone to engage in securities business.",
-    "Wrong: candidates must be at least 18."
+    "Wrong: candidates must be at least 18 to sit for the SIE."
    ]
   },
   {
@@ -1296,15 +1296,15 @@
    "d": 2,
    "q": "Priya passes the SIE exam on January 10 of Year 1 and then takes a job in a non-securities field. She is hired by a broker-dealer in Year 3. Which is true?",
    "o": [
-    "She still has a valid SIE and needs a qualification exam through her sponsor",
-    "She must retake the SIE",
-    "She may begin soliciting clients immediately",
-    "The SIE credential lasts only two years"
+    "Her SIE is still valid; she needs a sponsored qualification exam",
+    "She must retake the SIE because she was out of the industry",
+    "She may begin soliciting clients immediately as an SIE holder",
+    "The SIE credential lasts only two years after passing"
    ],
    "a": 0,
    "w": [
     "Correct: the SIE is valid for four years, so she needs only the qualification exam after being sponsored.",
-    "Wrong: the SIE has not expired in under four years.",
+    "Wrong: the SIE has not expired in under four years, regardless of time spent outside the industry.",
     "Wrong: she cannot solicit with only the SIE; she needs the qualification exam.",
     "Wrong: the SIE is valid four years, not two."
    ]
@@ -1336,14 +1336,14 @@
    "d": 3,
    "q": "A registered rep passed her Series 7 in 2015 and has kept her registration continuously valid since. How does this affect the SIE requirement?",
    "o": [
-    "She must take it within 30 days",
-    "She must take the SIE at her next renewal",
-    "She is exempt because she passed a qualification exam before October 1, 2018",
-    "She must take it only if she changes firms"
+    "She must take it within 30 days to stay registered",
+    "She must take the SIE at her next annual registration renewal",
+    "She is exempt; she passed a qualification exam before October 2018",
+    "She must take it only if she changes firms after 2018"
    ],
    "a": 2,
    "w": [
-    "Wrong: there is no 30-day SIE requirement for them.",
+    "Wrong: there is no 30-day SIE requirement for those who kept a continuously valid registration.",
     "Wrong: no SIE requirement arises at renewal for these grandfathered individuals.",
     "Correct: those who passed a qualification exam before October 1, 2018 and keep continuous registration are exempt from the SIE.",
     "Wrong: changing firms does not cancel the exemption if the registration remains continuous."
@@ -1356,10 +1356,10 @@
    "d": 1,
    "q": "Which of the following can sit for a qualification exam such as the Series 7?",
    "o": [
-    "Only registered principals",
-    "Anyone age 18 or older",
+    "Only registered principals with a supervisory role",
+    "Anyone age 18 or older, with or without a firm",
     "Anyone who has passed the SIE and is unemployed",
-    "Only individuals sponsored by a FINRA or MSRB member firm"
+    "Only people sponsored by a FINRA or MSRB member"
    ],
    "a": 3,
    "w": [
@@ -1376,16 +1376,16 @@
    "d": 2,
    "q": "Which person must register as a principal?",
    "o": [
-    "An officer in charge of day-to-day supervision of the firm’s securities business",
-    "A receptionist who answers phones",
-    "An outside accountant",
-    "A silent partner with no role"
+    "An officer who directly supervises day-to-day securities business",
+    "A receptionist who answers phones and schedules meetings",
+    "An outside accountant who audits the firm’s books",
+    "A silent partner with no role in the business"
    ],
    "a": 0,
    "w": [
     "Correct: persons who manage or supervise securities business day to day, or train associated persons, are principals.",
     "Wrong: a receptionist performs clerical duties and is exempt from registration.",
-    "Wrong: an outside accountant is not an associated person managing the securities business.",
+    "Wrong: an outside accountant, even one auditing the books, is not an associated person managing the securities business.",
     "Wrong: a silent partner has no involvement in the firm’s securities activities."
    ]
   },
@@ -1396,10 +1396,10 @@
    "d": 2,
    "q": "Which of the following need NOT register with FINRA?",
    "o": [
-    "Equity traders",
-    "Employees performing only clerical or administrative duties",
-    "Persons soliciting customers",
-    "Persons training representatives"
+    "Equity traders executing customer orders",
+    "Employees doing only clerical or administrative work",
+    "Persons soliciting customers for new accounts",
+    "Persons training registered representatives"
    ],
    "a": 1,
    "w": [
@@ -1456,14 +1456,14 @@
    "d": 2,
    "q": "A rep takes a paid seat on the board of a local company. What must be done?",
    "o": [
-    "No filing is required",
-    "File a Form U5",
+    "No filing; she remains employed",
+    "File a Form U5 within 30 days",
     "Amend the U4 within 30 days",
-    "File an original U4"
+    "File an original U4 within 10 days"
    ],
    "a": 2,
    "w": [
-    "Wrong: outside business activity is a reportable change.",
+    "Wrong: an outside business activity is a reportable change even though she remains employed.",
     "Wrong: a U5 is for terminations, and the rep is still employed.",
     "Correct: an outside business activity requires an amended U4 within 30 days.",
     "Wrong: an original U4 is for new registrations, not updates."
@@ -1476,16 +1476,16 @@
    "d": 3,
    "q": "A rep sells her home for less than the outstanding mortgage, and the bank accepts the lower amount as full repayment. What is required?",
    "o": [
-    "Notify compliance and file an amended U4 because it is a compromise with creditors",
-    "Nothing; it is a personal matter",
-    "File a Form U5",
+    "Notify compliance and amend the U4: it is a creditor compromise",
+    "Nothing; it is a private matter between her and the bank",
+    "File a Form U5 to report the compromise",
     "Report only if she is also convicted of a crime"
    ],
    "a": 0,
    "w": [
     "Correct: a home short sale is a compromise with creditors, requiring notice to compliance and an amended U4.",
-    "Wrong: compromises with creditors are reportable events.",
-    "Wrong: a U5 is for termination of registration.",
+    "Wrong: compromises with creditors are reportable events, not private matters.",
+    "Wrong: a U5 is for termination of registration, and she remains registered.",
     "Wrong: no conviction is needed; the creditor compromise itself is reportable."
    ]
   },
@@ -1577,9 +1577,9 @@
    "q": "Which situation requires NO new filing with FINRA about the individual’s registration?",
    "o": [
     "A rep is subject to a FINRA regulatory action",
-    "A rep takes three months of leave but keeps her licences and employment",
+    "A rep takes three months of leave, keeping licences and job",
     "A rep who has been out of the business for years is hired",
-    "A rep legally changes her name"
+    "A rep legally changes her name after marriage"
    ],
    "a": 1,
    "w": [
@@ -1596,16 +1596,16 @@
    "d": 2,
    "q": "Following a rep’s termination, which statement is true?",
    "o": [
-    "The rep remains subject to regulators’ jurisdiction for at least two years and must keep an address on file",
-    "Regulatory jurisdiction ends on the date of termination",
-    "The firm need not give the rep a copy of the U5",
-    "The rep may ignore regulator requests for information"
+    "Jurisdiction continues at least two years and the rep must keep an address on file",
+    "Regulatory jurisdiction ends on termination, once the U5 is filed with FINRA",
+    "The firm need not give the rep a copy of the U5 unless the rep requests it in writing",
+    "The rep may ignore regulator requests for information about prior activities"
    ],
    "a": 0,
    "w": [
     "Correct: former registered persons stay under regulators’ jurisdiction for at least two years and must keep addresses current.",
-    "Wrong: jurisdiction continues for at least two years after termination.",
-    "Wrong: the firm must provide a copy of the U5 to the departing rep within 30 days.",
+    "Wrong: jurisdiction continues for at least two years after termination, even after the U5 is filed.",
+    "Wrong: the firm must provide a copy of the U5 to the departing rep within 30 days without waiting for a request.",
     "Wrong: former reps may be required to provide information about activities while associated."
    ]
   },
@@ -1736,10 +1736,10 @@
    "d": 1,
    "q": "Which of the following results in statutory disqualification?",
    "o": [
-    "An arrest for a felony",
-    "A conviction for a felony within the last 10 years",
-    "A felony conviction 15 years ago",
-    "Any customer complaint"
+    "An arrest for a felony, pending trial",
+    "A felony conviction within the last 10 years",
+    "A felony conviction that occurred 15 years ago",
+    "Any customer complaint filed against the rep"
    ],
    "a": 1,
    "w": [
@@ -1756,16 +1756,16 @@
    "d": 2,
    "q": "A rep is arrested for shoplifting but not convicted. What action is appropriate?",
    "o": [
-    "Immediate license revocation",
-    "File Form U5 immediately",
-    "Automatic statutory disqualification",
-    "Notify compliance, but it is not a statutory disqualification"
+    "Immediate revocation of her license by the firm",
+    "File Form U5 immediately to terminate her",
+    "Automatic statutory disqualification for ten years",
+    "Notify compliance; it is not a statutory disqualification"
    ],
    "a": 3,
    "w": [
     "Wrong: licence revocation does not follow from an arrest alone.",
     "Wrong: a U5 is for termination, which is not triggered by an arrest.",
-    "Wrong: only convictions and the other listed events cause SD.",
+    "Wrong: only convictions and the other listed events cause SD, not an arrest.",
     "Correct: arrests do not cause statutory disqualification, but compliance should be told."
    ]
   },
@@ -1777,8 +1777,8 @@
    "q": "Which of the following does NOT have a 10-year look-back limit for statutory disqualification?",
    "o": [
     "A misdemeanor conviction involving fraud",
-    "A felony conviction",
-    "A court injunction involving unlawful investment activities",
+    "A felony conviction for any offense",
+    "A court injunction on unlawful investment activity",
     "A misdemeanor conviction involving bribery"
    ],
    "a": 2,
@@ -1816,16 +1816,16 @@
    "d": 2,
    "q": "A firm learns that one of its reps was just convicted of a securities-related misdemeanor and wants to keep employing the rep. What must it do?",
    "o": [
-    "File a U5 and keep the person as an employee",
-    "Report within 10 days on an amended U4 and request a waiver describing the proposed supervision",
-    "Do nothing until FINRA contacts the firm",
-    "Wait 30 days and then submit a waiver"
+    "File a U5 and keep the person on staff under closer supervision",
+    "Report within 10 days on an amended U4 and request a waiver",
+    "Do nothing until FINRA contacts the firm about the conviction",
+    "Wait 30 days, then file an amended U4 and a waiver"
    ],
    "a": 1,
    "w": [
-    "Wrong: a U5 terminates the association, which is the choice if the firm does not seek a waiver.",
+    "Wrong: a U5 terminates the association, which is the choice if the firm does not seek a waiver; it does not keep the person employed.",
     "Correct: the event is reported within 10 days and a waiver request must describe the proposed supervision and employment terms.",
-    "Wrong: the firm has an obligation to report promptly rather than waiting.",
+    "Wrong: the firm has an obligation to report promptly rather than waiting for FINRA.",
     "Wrong: the report is due within 10 days, not 30."
    ]
   },
@@ -1836,10 +1836,10 @@
    "d": 2,
    "q": "A rep does not complete the Regulatory Element by the deadline. Which is true?",
    "o": [
-    "She becomes CE inactive and may not receive commissions for new registered activity",
+    "She becomes CE inactive and cannot earn commissions for registered activity",
     "She loses only the right to place orders but may still earn commissions",
-    "Her registration is cancelled immediately",
-    "The firm alone decides whether to impose a penalty"
+    "Her registration is cancelled immediately and she must requalify",
+    "The firm alone decides whether to impose a penalty on her"
    ],
    "a": 0,
    "w": [
@@ -1856,14 +1856,14 @@
    "d": 3,
    "q": "A rep has been CE inactive for two years. What happens to her registration?",
    "o": [
-    "She may reactivate by paying a fee",
-    "It remains inactive indefinitely",
-    "It reverts to the firm",
-    "It is administratively terminated and she must requalify by exam"
+    "She may reactivate by paying a late fee and completing CE",
+    "It remains inactive indefinitely unless the firm reapplies",
+    "It reverts to the firm, which may assign it to another rep",
+    "It is administratively terminated; she must requalify by exam"
    ],
    "a": 3,
    "w": [
-    "Wrong: a fee does not restore a terminated registration.",
+    "Wrong: a fee and CE do not restore a registration that has been terminated after two years.",
     "Wrong: the inactive status ends in termination after two years.",
     "Wrong: registrations belong to the individual and are not transferred to the firm.",
     "Correct: after two years of CE inactivity the registration is administratively terminated and exams must be retaken."
@@ -1917,9 +1917,9 @@
    "q": "A rep registered only in New Jersey has a long-time client who relocates to Arizona and calls to place a buy order. What should the rep do?",
    "o": [
     "Execute the order since the client was a New Jersey customer",
-    "Pass the order to someone at the firm who is registered in Arizona",
-    "Execute the order if the client signs a waiver",
-    "Refuse and close the account"
+    "Pass the order to a colleague registered in Arizona",
+    "Execute the order if the client signs a written waiver",
+    "Refuse the order and close the account as a precaution"
    ],
    "a": 1,
    "w": [
@@ -1936,10 +1936,10 @@
    "d": 2,
    "q": "Which statement about investment advisers is true?",
    "o": [
-    "They owe clients a fiduciary duty and are paid for advice",
-    "They are held only to a suitability standard",
+    "They owe a fiduciary duty and are paid for advice",
+    "They are held only to a suitability standard per trade",
     "They are typically paid per transaction executed",
-    "They must all register with FINRA"
+    "They must all register with FINRA as members"
    ],
    "a": 0,
    "w": [
@@ -2016,10 +2016,10 @@
    "d": 2,
    "q": "Which of the following is generally REQUIRED to register as an investment adviser?",
    "o": [
-    "A publisher of an investment newsletter that makes specific recommendations tailored to individuals",
-    "A lawyer whose advice is incidental to practice",
-    "A bank providing advice",
-    "A family office serving a single family"
+    "A newsletter publisher whose recommendations are tailored to individuals",
+    "A lawyer whose investment advice is incidental to legal practice",
+    "A bank or bank holding company providing investment advice to customers",
+    "A family office that advises only the members of a single family"
    ],
    "a": 0,
    "w": [
@@ -2036,17 +2036,17 @@
    "d": 2,
    "q": "A client asks his rep about attractive tech stocks, hears three names, and buys 100 shares of one through the rep, paying only the commission. Is the rep required to register as an investment adviser representative?",
    "o": [
-    "Yes, because she recommended a security",
-    "No, her advice is incidental and she received no special compensation for it",
-    "Yes, if the client buys more than 100 shares",
-    "Yes, with the SEC"
+    "Yes, because she recommended three specific securities",
+    "No; her advice is incidental and she got no special compensation",
+    "Yes, if the client buys more than 100 shares in total",
+    "Yes, by registering with the SEC as an adviser"
    ],
    "a": 1,
    "w": [
-    "Wrong: recommending a security alone does not make a BD rep an adviser.",
+    "Wrong: recommending securities alone does not make a BD rep an adviser.",
     "Correct: advice incidental to brokerage business without special compensation falls within the exemption.",
     "Wrong: share count is irrelevant to the exemption.",
-    "Wrong: the SEC does not register individuals, and none is needed here."
+    "Wrong: the SEC does not register individuals, and no registration is needed here."
    ]
   },
   {
@@ -2116,17 +2116,17 @@
    "d": 2,
    "q": "Which of the following must a firm weigh in its annual Firm Element needs analysis?",
    "o": [
-    "The firm’s annual advertising budget",
-    "How its registered persons performed on the Regulatory Element",
-    "The share price of the firm’s parent company",
-    "Each rep’s personal investment returns"
+    "The firm’s annual advertising budget and sales targets",
+    "Its registered persons’ Regulatory Element performance",
+    "The share price and credit rating of the firm’s parent",
+    "Each rep’s personal investment returns and net worth"
    ],
    "a": 1,
    "w": [
-    "Wrong: advertising spending is not a listed training-needs factor.",
+    "Wrong: advertising spending and sales targets are not listed training-needs factors.",
     "Correct: the analysis looks at firm size and scope, products, complaints and regulatory actions, and Regulatory Element performance.",
-    "Wrong: a parent company’s share price has no bearing on training needs.",
-    "Wrong: reps’ personal returns are not part of the analysis."
+    "Wrong: a parent company’s share price and credit rating have no bearing on training needs.",
+    "Wrong: reps’ personal returns and net worth are not part of the analysis."
    ]
   },
   {
@@ -2137,9 +2137,9 @@
    "q": "FINRA believes a registered rep violated its rules and opens an investigation. Which is within FINRA’s power?",
    "o": [
     "Sending requests to the firm only, since the rep cannot be compelled",
-    "Filing criminal charges against the rep",
-    "Sending written information requests to the firm and the rep, and requiring the rep to be interviewed",
-    "Jailing the rep for refusing an interview"
+    "Filing criminal charges against the rep in federal court",
+    "Sending written requests to firm and rep, and requiring an interview",
+    "Jailing the rep for refusing to sit for an interview"
    ],
    "a": 2,
    "w": [
@@ -2156,16 +2156,16 @@
    "d": 2,
    "q": "Under FINRA Rule 1010, a firm must:",
    "o": [
-    "File a Form U5 within 10 days of any hire",
-    "Fingerprint every employee, including clerical staff",
-    "Send customers an annual BrokerCheck notice",
-    "Designate a registered principal or corporate officer to oversee its registration functions"
+    "File a Form U5 within 10 days of any new hire’s start date",
+    "Fingerprint every employee, including clerical staff, annually",
+    "Send customers an annual BrokerCheck notice and fee schedule",
+    "Designate a principal or corporate officer to oversee registration"
    ],
    "a": 3,
    "w": [
     "Wrong: a U5 reports a termination, not a hire.",
     "Wrong: clerical staff are exempt from fingerprinting, and this is not what Rule 1010 covers.",
-    "Wrong: the annual BrokerCheck notice comes from Rule 2267.",
+    "Wrong: the annual BrokerCheck notice comes from Rule 2267, not Rule 1010.",
     "Correct: Rule 1010 requires a designated registered principal or corporate officer to supervise registration."
    ]
   },

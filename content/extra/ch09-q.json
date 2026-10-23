@@ -146,9 +146,9 @@
   "d": 3,
   "q": "A customer sells 250 shares to a dealer that buys for its own inventory. The market value is $40.00 per share and the dealer pays $38.60 per share. What does the firm earn on the trade, and how is it characterized?",
   "o": [
-   "A $350 commission, about 3.5% of market value",
-   "A $350 mark-up, about 3.5% of market value",
-   "A $350 mark-down, about 3.5% of market value, with no commission",
+   "A $350 commission, about 3.5% of market value, on an agency trade",
+   "A $350 mark-up, about 3.5% of market value, with no commission",
+   "A $350 mark-down, about 3.5% of market value, no commission",
    "A $1.40 per share mark-down, about 7% of market value"
   ],
   "a": 2,
@@ -207,16 +207,16 @@
   "q": "Which of the following would NOT violate FINRA’s rule on payments for market making?",
   "o": [
    "An issuer’s affiliate gives shares to the firm in return for publishing a quote",
-   "A firm independently decides to make a market in a stock based on legitimate business reasons",
+   "A firm independently decides to make a market for legitimate business reasons",
    "A promoter pays the trader’s family member to induce the firm to quote a stock",
-   "An issuer pays cash to the firm so that it will act as a market maker"
+   "An issuer pays cash to the firm so that it will act as a market maker in its stock"
   ],
   "a": 1,
   "w": [
    "Wrong: payments from an issuer’s affiliate, including securities, are covered and create a conflict of interest in the firm’s quoting decision.",
    "Correct: the decision to make a market must rest on valid and legitimate reasons, which is what the rule requires, so no payment is involved.",
    "Wrong: indirect payments from promoters also count, since the rule bars direct or indirect payments in return for quoting or market making.",
-   "Wrong: cash from an issuer for acting as market maker is the central example of a prohibited payment under Rule 5250."
+   "Wrong: cash from an issuer for acting as market maker in its stock is the central example of a prohibited payment under Rule 5250."
   ]
  },
  {
@@ -286,17 +286,17 @@
   "d": 3,
   "q": "A broker-dealer’s trading desk head receives a client instruction to buy 15,000 shares of ABC. Before executing it, the desk head buys 500 shares of ABC for the firm’s own account, reasoning that the amount is small. Which statement is correct?",
   "o": [
-   "This is permitted because 500 shares is well below the size of a block",
-   "This is front-running, because the firm may not trade while holding nonpublic knowledge of an imminent block",
-   "This is permitted if the client order is executed within 60 seconds",
-   "This is permitted if the firm discloses the trade to the client afterward"
+   "This is permitted because 500 shares is well below the size of a block order",
+   "This is front-running, because a firm may not trade ahead knowing of a pending block",
+   "This is permitted if the client order is executed within 60 seconds of the firm’s purchase",
+   "This is permitted if the firm discloses the trade to the client afterward in writing"
   ],
   "a": 1,
   "w": [
    "Wrong: it is the client’s 15,000-share order that is the block, and no orders may be placed by a firm that knows about it, regardless of the firm’s own size.",
    "Correct: a 10,000-share-plus order is a block, and a firm with nonpublic knowledge of it may not place its own orders ahead, however small.",
    "Wrong: the 60-second remedy belongs to the rule on trading ahead of customer limit orders and does not apply to front-running.",
-   "Wrong: disclosing the trade afterward does not cure the violation, because the prohibition applies before the block is executed and reported."
+   "Wrong: disclosing the trade afterward, even in writing, does not cure the violation, because the prohibition applies before the block is executed."
   ]
  }
 ]

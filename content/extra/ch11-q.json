@@ -106,10 +106,10 @@
   "d": 2,
   "q": "A cash account is frozen for free-riding and holds $3,000 in cash. The customer places an order to buy $5,000 of stock and promises to wire $2,000 later that day. What should the firm do?",
   "o": [
-   "Reject the buy order because the full cash must already be in the account when it is placed",
-   "Accept the order because the wire will arrive the same day",
-   "Accept the order only with a principal’s approval",
-   "Reject the order and also refuse any sell orders"
+   "Reject the buy, since full cash must already be in the account",
+   "Accept the order because the $2,000 wire will arrive the same day",
+   "Accept the order only if a principal approves the exception",
+   "Reject the order and also refuse any sell orders in the account"
   ],
   "a": 0,
   "w": [
@@ -147,9 +147,9 @@
   "q": "A customer wants to use mutual fund shares already owned in a margin account. Which statement is correct?",
   "o": [
    "The shares may be purchased on margin after a 30-day holding period",
-   "Mutual fund shares may never be used as collateral",
-   "The shares may serve as collateral immediately upon deposit",
-   "The shares may serve as collateral for margin borrowing after being held at least 30 days"
+   "Mutual fund shares may never be used as collateral for margin loans",
+   "The shares may serve as collateral immediately upon deposit in the account",
+   "The shares may be pledged as collateral after a 30-day holding period"
   ],
   "a": 3,
   "w": [
@@ -166,10 +166,10 @@
   "d": 3,
   "q": "A customer buys $100,000 of municipal bonds in a margin account. Which statement about the initial margin is correct?",
   "o": [
-   "The requirement is set by the firm’s self-regulatory organization, such as FINRA, because municipal bonds are exempt from Reg T",
-   "Municipal bonds cannot be purchased on margin",
-   "The Federal Reserve Board sets a 25% requirement",
-   "Regulation T requires a 50% deposit of $50,000"
+   "The requirement is set by FINRA rather than Reg T, since municipals are exempt",
+   "Municipal bonds cannot be purchased on margin in any account type",
+   "The Federal Reserve Board sets a 25% initial requirement under Reg T",
+   "Regulation T requires a 50% deposit of $50,000 on the purchase"
   ],
   "a": 0,
   "w": [
@@ -366,10 +366,10 @@
   "d": 2,
   "q": "The custodian of a UTMA account dies before the minor reaches the age of majority. What happens to the account?",
   "o": [
-   "The minor takes control of the account immediately",
-   "The assets pass to the deceased custodian’s estate",
-   "The courts name a successor custodian, typically a guardian or adult family member",
-   "The minor’s eldest sibling becomes custodian automatically"
+   "The minor takes control of the account immediately upon the death",
+   "The assets pass to the deceased custodian’s estate and heirs",
+   "The court names a successor custodian, often a guardian or relative",
+   "The minor’s eldest sibling becomes custodian automatically by law"
   ],
   "a": 2,
   "w": [

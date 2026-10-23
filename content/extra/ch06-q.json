@@ -66,15 +66,15 @@
   "d": 2,
   "q": "All of the following are advantages of buying a put rather than selling the same stock short EXCEPT:",
   "o": [
-   "The put ties up less money than a short sale",
-   "The put buyer earns the stock’s dividends while the short seller does not",
-   "A bearish view can be taken with less risk than a short sale",
-   "The maximum loss can be quantified in advance"
+   "The put ties up less money than the margin required for a short sale",
+   "The put buyer receives the stock’s dividends",
+   "A bearish view can be taken with less risk than a short sale carries",
+   "The maximum loss can be quantified in advance as the premium paid"
   ],
   "a": 1,
   "w": [
    "Wrong: only the premium is tied up when buying a put, so this is a genuine advantage over a short sale.",
-   "Correct: like short sellers, put buyers do not earn dividends on the stock, so this is not an advantage of the put.",
+   "Correct: neither a put buyer nor a short seller receives the stock’s dividends, so this is not an advantage of the put.",
    "Wrong: a long put has limited financial risk, while a short sale carries unlimited risk, which makes this an advantage.",
    "Wrong: a put buyer’s loss is known in advance, while a short seller’s loss is hard to quantify, so this is an advantage."
   ]

@@ -86,8 +86,8 @@
   "d": 2,
   "q": "Which statement about choosing a direct participation program is correct?",
   "o": [
-   "The primary factor should be economic soundness, with tax benefits a secondary matter",
-   "A guaranteed secondary market makes the investment liquid whenever needed",
+   "Economic soundness should be the primary factor, with tax benefits secondary",
+   "A guaranteed secondary market makes the interests liquid whenever the investor needs cash",
    "Investors who pay little tax benefit most because losses are refunded",
    "The primary factor should be tax benefit, because losses always exceed gains"
   ],
@@ -246,9 +246,9 @@
   "d": 2,
   "q": "Why does a hedge fund impose a lock-up period on investors?",
   "o": [
-   "It lets investors withdraw monthly without restriction",
+   "It lets investors withdraw at any time without notice or restriction",
    "It guarantees investors a minimum return during the period",
-   "It protects the majority of fund assets from liquidation and lets managers hold less cash",
+   "It protects most fund assets from liquidation and lets managers hold less cash",
    "It exempts the fund from the Investment Company Act of 1940"
   ],
   "a": 2,

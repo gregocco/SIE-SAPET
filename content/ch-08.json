@@ -685,17 +685,17 @@
    "d": 1,
    "q": "Which statement best describes the SEC’s role in a new securities offering?",
    "o": [
-    "It verifies every statement in the registration statement",
-    "It approves the securities as a sound investment",
-    "It reviews disclosure and clears the registration for sale without approving the securities",
-    "It guarantees investors against loss on the issue"
+    "It independently verifies every statement in the registration statement before effectiveness",
+    "It approves the securities as a sound investment once the disclosure review is complete",
+    "It reviews disclosure and declares registration effective without approving the securities",
+    "It guarantees investors against loss on the issue if disclosure is later found deficient"
    ],
    "a": 2,
    "w": [
-    "Wrong: the SEC does not fact-check the filing; the issuer remains liable for accuracy and completeness.",
+    "Wrong: the SEC does not fact-check the filing; the issuer and underwriters remain liable for accuracy and completeness even after review.",
     "Wrong: the SEC never approves or disapproves securities; investors judge merit from the disclosure provided.",
     "Correct: the SEC checks that required disclosure is present and declares registration effective, but never approves the issue or its merits.",
-    "Wrong: no regulator guarantees an issue; clearance only means disclosure requirements were met."
+    "Wrong: no regulator guarantees an issue; clearance only means disclosure requirements were met, not that investors are protected from loss."
    ]
   },
   {
@@ -705,16 +705,16 @@
    "d": 1,
    "q": "A bank is preparing an S-1 for a client that has not yet filed. May the bank’s salespeople begin calling investors to market the shares?",
    "o": [
-    "Yes, as long as no orders are taken",
-    "Yes, but only to institutional investors",
-    "Yes, if only a tombstone is used",
-    "No, because no marketing or sales may occur before the registration statement is filed"
+    "Yes, as long as no orders are taken and no written materials are distributed",
+    "Yes, but only to institutional investors who have signed a confidentiality agreement",
+    "Yes, if only a tombstone ad is used and no price is quoted",
+    "No, because marketing is prohibited before the registration statement is filed"
    ],
    "a": 3,
    "w": [
-    "Wrong: marketing itself is not allowed before filing, so avoiding orders does not cure it.",
-    "Wrong: investor type makes no difference during the pre-filing period; marketing is prohibited.",
-    "Wrong: even a tombstone ad is not permitted before the filing; it is a cooling-off tool.",
+    "Wrong: marketing itself is not allowed before filing, so avoiding orders or paperwork does not cure the violation.",
+    "Wrong: investor type and confidentiality agreements make no difference during the pre-filing period; marketing is prohibited.",
+    "Wrong: even a tombstone ad is not permitted before the filing, and omitting a price does not change that; it is a cooling-off tool.",
     "Correct: the pre-filing (quiet) period bars marketing, offers and sales; marketing begins only after the filing."
    ]
   },
@@ -805,16 +805,16 @@
    "d": 2,
    "q": "A lead underwriter has received a large number of indications of interest well above the shares available. What is the most likely consequence?",
    "o": [
-    "The underwriter must cancel the offering",
-    "The IOIs become binding orders immediately",
-    "The SEC must lower the price",
-    "The underwriter will likely set a higher offering price"
+    "The underwriter must cancel the offering and refile at a smaller size",
+    "The IOIs become binding orders immediately, obligating each investor to buy",
+    "The SEC must lower the price to match the available shares",
+    "The underwriter will likely set a higher price"
    ],
    "a": 3,
    "w": [
-    "Wrong: strong demand is a positive signal; nothing requires cancelling the deal.",
-    "Wrong: IOIs are non-binding and only usually become orders on the effective date.",
-    "Wrong: the SEC does not set prices; underwriters and the issuer do.",
+    "Wrong: strong demand is a positive signal; nothing requires cancelling or resizing the deal.",
+    "Wrong: IOIs are non-binding and usually only become orders on the effective date, and investors may cancel.",
+    "Wrong: the SEC does not set prices; underwriters and the issuer do, and heavy demand points to a higher price.",
     "Correct: heavy IOIs signal strong demand, which supports a higher price; weak interest would force a lower one."
    ]
   },
@@ -825,17 +825,17 @@
    "d": 2,
    "q": "The effective date of an IPO is Tuesday. A customer buys shares that day. A final prospectus has been filed with the SEC, and the firm emails a notice of where it can be accessed online before settlement. Has the firm met its delivery obligation?",
    "o": [
-    "No, because a hard copy must always be mailed",
-    "Yes, because access equals delivery when the final prospectus is filed and notice is sent by settlement",
-    "No, because the red herring was not re-sent",
-    "No, because delivery must occur before the order is placed"
+    "No, because a hard copy of the final prospectus must always be mailed to the buyer",
+    "Yes, access equals delivery: final prospectus filed and notice sent by settlement",
+    "No, because the red herring was not re-sent to the customer before the effective date",
+    "No, because delivery must occur before the order is placed on the effective date"
    ],
    "a": 1,
    "w": [
-    "Wrong: physical delivery is not required under access equals delivery.",
+    "Wrong: physical delivery is not required under access equals delivery, so a mailed hard copy is not needed.",
     "Correct: no hard copy is needed; filing plus a timely notice to the purchaser satisfies delivery.",
     "Wrong: the red herring does not satisfy final prospectus delivery, and re-sending it is not required.",
-    "Wrong: the final prospectus is due no later than settlement, not before the order."
+    "Wrong: the final prospectus is due no later than settlement, not before the order is placed."
    ]
   },
   {
@@ -945,17 +945,17 @@
    "d": 2,
    "q": "A customer asks whether a mutual fund that invests only in municipal bonds is exempt from registration because the underlying bonds are exempt. The correct answer is:",
    "o": [
-    "No, the fund shares are an investment company security and must be registered",
-    "Yes, because exemption passes through to the fund",
-    "Yes, but only if the fund is closed-end",
-    "Yes, but only if the fund holds Treasuries"
+    "No, fund shares are investment company securities and must be registered",
+    "Yes, because the exemption of the underlying municipal bonds passes through to the fund",
+    "Yes, but only if the fund is closed-end and listed on an exchange",
+    "Yes, but only if the fund holds Treasuries or other government securities"
    ],
    "a": 0,
    "w": [
     "Correct: exemption attaches to the security itself, and mutual fund shares are non-exempt even if holdings are exempt.",
-    "Wrong: there is no pass-through of exemption to the fund’s own shares.",
+    "Wrong: there is no pass-through of exemption; the fund’s own shares are a separate, non-exempt security.",
     "Wrong: closed-end and open-end fund securities are both non-exempt investment company securities.",
-    "Wrong: a Treasury fund is also non-exempt for the same reason."
+    "Wrong: a government securities fund is also non-exempt for the same reason; the fund’s shares are not government securities."
    ]
   },
   {
@@ -985,16 +985,16 @@
    "d": 3,
    "q": "An issuer relying on Rule 147 sells 99% of an offering to state residents but one share to an out-of-state investor. What is the effect?",
    "o": [
-    "Nothing, because 80% is enough",
+    "Nothing, because the 80% tests are met and one out-of-state buyer is minor",
     "The exemption stays but a six-month hold applies to the issuer",
-    "The offering becomes a Regulation A+ Tier 1 automatically",
-    "The exemption is jeopardized because 100% of buyers must be residents"
+    "The offering automatically converts to a Regulation A+ Tier 1 offering",
+    "The exemption is jeopardized because all buyers must be residents"
    ],
    "a": 3,
    "w": [
-    "Wrong: the 80% tests concern revenue, assets or proceeds, not the buyer residency, which must be 100%.",
+    "Wrong: the 80% tests concern revenue, assets or proceeds, not buyer residency, which must be 100% for the offering.",
     "Wrong: the holding period applies to purchasers reselling out of state, not as a cure for the issuer.",
-    "Wrong: exemptions do not convert automatically; Reg A+ requires its own filing.",
+    "Wrong: exemptions do not convert automatically; Reg A+ requires its own filing with the SEC.",
     "Correct: Rule 147 requires all securities to be sold to state residents, so a single out-of-state buyer can sink it."
    ]
   },
@@ -1005,10 +1005,10 @@
    "d": 3,
    "q": "Which of the following is NOT an alternative qualifying test for the Rule 147 intrastate exemption (in addition to the principal place of business)?",
    "o": [
-    "At least 80% of gross revenues earned in the state",
-    "At least 80% of the issuer’s shareholders live in the state",
-    "At least 80% of net proceeds used in the state",
-    "A majority of employees located in the state"
+    "At least 80% of gross revenues earned from operations in the state",
+    "At least 80% of shareholders live in the state",
+    "At least 80% of net proceeds used for operations in the state",
+    "A majority of the issuer’s employees located in the state"
    ],
    "a": 1,
    "w": [
@@ -1025,17 +1025,17 @@
    "d": 2,
    "q": "Alma’s home is worth $700,000 and her other net assets total $850,000. She earned $120,000 this year and each of the last two years. Is she an accredited investor?",
    "o": [
-    "No, because her net worth excluding her home is $850,000, below $1 million, and her income is under $200,000",
-    "Yes, because her net worth excluding her home is $850,000",
-    "Yes, because net worth including her home is $1,550,000",
-    "Yes, because $120,000 for three years qualifies"
+    "No, because her net worth excluding her home is $850,000 and her income is under $200,000",
+    "Yes, because her net worth excluding her home is $850,000 and her income is above $100,000",
+    "Yes, because net worth including her home is $1,550,000, above the $1 million test",
+    "Yes, because $120,000 in each of three straight years shows a stable income record"
    ],
    "a": 0,
    "w": [
     "Correct: the net worth test excludes the primary residence ($850,000 < $1,000,000) and $120,000 is below the $200,000 income test, so she fails both.",
-    "Wrong: $850,000 is below the $1 million net worth threshold, so this reasoning does not make her accredited.",
-    "Wrong: the primary residence is excluded from the $1 million net worth test, so this overstates it.",
-    "Wrong: the income test requires more than $200,000 individually in each of the last two years."
+    "Wrong: $850,000 is below the $1 million net worth threshold and $120,000 is below the $200,000 income test, so neither qualifies her.",
+    "Wrong: the primary residence is excluded from the $1 million net worth test, so including it overstates her net worth.",
+    "Wrong: the income test requires more than $200,000 individually in each of the last two years, however stable the income."
    ]
   },
   {
@@ -1085,16 +1085,16 @@
    "d": 1,
    "q": "In a Regulation D private placement, which statement is correct?",
    "o": [
-    "No more than 35 investors of any kind may participate",
-    "An unlimited amount may be raised, with generally no more than 35 non-accredited investors",
-    "Capital raised is capped at $20 million",
-    "The securities can be resold freely the next day"
+    "No more than 35 investors of any kind may participate, accredited or not",
+    "No dollar limit, and generally no more than 35 non-accredited investors",
+    "Capital raised is capped at $20 million in any 12-month period",
+    "The securities can be resold freely to the public the next day"
    ],
    "a": 1,
    "w": [
-    "Wrong: the cap of 35 applies only to non-accredited investors.",
+    "Wrong: the cap of 35 applies only to non-accredited investors; accredited investors are unlimited.",
     "Correct: there is no dollar cap, accredited investors are unlimited, and non-accredited investors are generally capped at 35.",
-    "Wrong: $20 million is the Regulation A+ Tier 1 cap, not a private placement limit.",
+    "Wrong: $20 million is the Regulation A+ Tier 1 cap, not a private placement limit; Regulation D has no dollar cap.",
     "Wrong: private placement securities carry resale restrictions and cannot be sold without registration or an exemption."
    ]
   },
@@ -1125,15 +1125,15 @@
    "d": 2,
    "q": "A former employee of a private start-up holds restricted shares acquired five years ago. The company has never gone public. May he sell them under Rule 144?",
    "o": [
-    "Yes, because he has held them over six months",
-    "Yes, because he is not an affiliate",
-    "No, because Rule 144 requires a public company with adequate current information",
-    "Yes, but only up to 1% of outstanding shares"
+    "Yes, because he has held them well over the six-month holding period",
+    "Yes, because he is not an affiliate and the holding period is satisfied",
+    "No, because Rule 144 requires the issuer to be a public company",
+    "Yes, but only up to 1% of the outstanding shares in any 90 days"
    ],
    "a": 2,
    "w": [
     "Wrong: the holding period is necessary but not enough; the issuer must also be a public reporting company.",
-    "Wrong: non-affiliate status avoids volume limits but does not remove the public-issuer requirement.",
+    "Wrong: non-affiliate status and the holding period do not remove the requirement that the issuer be a public company.",
     "Correct: only shares of a public issuer can be sold under Rule 144, regardless of how long they were held.",
     "Wrong: the 1% volume limit applies to control stock and does not create eligibility here."
    ]
@@ -1185,10 +1185,10 @@
    "d": 3,
    "q": "An affiliate with registered control stock wants to sell shares. Outstanding shares are 900,000 and average weekly volume over the last four weeks is 12,000. Which volume limit applies per 90 days, and why?",
    "o": [
-    "12,000 shares, because the average weekly volume exceeds 1% (9,000)",
-    "9,000 shares, because 1% always governs",
-    "21,000 shares, the sum of both",
-    "48,000 shares, four weeks of volume"
+    "12,000 shares, because average weekly volume exceeds 1% (9,000)",
+    "9,000 shares, because 1% of outstanding shares always governs",
+    "21,000 shares, the sum of the two measures",
+    "48,000 shares, four weeks of volume added together"
    ],
    "a": 0,
    "w": [
@@ -1205,10 +1205,10 @@
    "d": 3,
    "q": "Which statement about Rule 144 is correct?",
    "o": [
-    "Control stock must be held six months in every case",
-    "Control stock is subject to a volume limit, while restricted stock is subject to a holding period",
+    "Control stock must be held for six months in every case, even if registered",
+    "Control stock is subject to volume limits; restricted stock to a holding period",
     "Restricted stock sold by a non-affiliate is subject to the volume limit",
-    "Neither is subject to any limit once the issuer is public"
+    "Neither is subject to any limit once the issuer becomes a public company"
    ],
    "a": 1,
    "w": [
@@ -1265,17 +1265,17 @@
    "d": 2,
    "q": "An issuer wants to raise $40 million in 12 months under Regulation A+. Which statement is correct?",
    "o": [
-    "It may use Tier 1, whose cap is $75 million",
-    "It may use either tier, as both allow $40 million",
-    "It must use Tier 2, since Tier 1 is capped at $20 million",
-    "It cannot use Regulation A+ at all"
+    "It may use Tier 1, whose cap is $75 million in a 12-month period",
+    "It may use either tier, as both allow $40 million in 12 months",
+    "It needs Tier 2, since Tier 1 is capped at $20 million",
+    "It cannot use Regulation A+ at all, since $40 million is too large"
    ],
    "a": 2,
    "w": [
-    "Wrong: the $75 million cap belongs to Tier 2.",
-    "Wrong: Tier 1 is capped at $20 million.",
+    "Wrong: the $75 million cap belongs to Tier 2, while Tier 1 is capped at $20 million.",
+    "Wrong: Tier 1 is capped at $20 million, so it cannot cover a $40 million raise.",
     "Correct: Tier 1 allows up to $20 million and Tier 2 up to $75 million, so $40 million requires Tier 2.",
-    "Wrong: $40 million is within the $75 million Tier 2 limit."
+    "Wrong: $40 million is within the $75 million Tier 2 limit, so Regulation A+ remains available."
    ]
   },
   {
@@ -1285,16 +1285,16 @@
    "d": 2,
    "q": "Which of the following describes a Regulation A+ Tier 2 offering?",
    "o": [
-    "Unaudited financials, no ongoing reports and state review",
-    "A $20 million cap with $6 million of affiliate secondary sales",
-    "No offering statement filed with the SEC",
-    "Audited financials, annual and semiannual reports, and no state securities review"
+    "Unaudited financials allowed, no ongoing reports and state blue sky review",
+    "A $20 million cap with $6 million of affiliate secondary sales in any 12 months",
+    "No offering statement filed with the SEC, only a state notice filing",
+    "Audited financials, annual and semiannual reports, and no state review"
    ],
    "a": 3,
    "w": [
-    "Wrong: this describes Tier 1.",
-    "Wrong: those are Tier 1 limits.",
-    "Wrong: both tiers require an offering statement filed with the SEC.",
+    "Wrong: this describes Tier 1, which allows unaudited financials and requires state review.",
+    "Wrong: those are Tier 1 limits; Tier 2 allows up to $75 million.",
+    "Wrong: both tiers require an offering statement filed with the SEC, so this cannot describe Tier 2.",
     "Correct: Tier 2 issuers provide audited statements and ongoing reports, and are not subject to state blue sky review."
    ]
   },
@@ -1365,17 +1365,17 @@
    "d": 3,
    "q": "A company with publicly traded stock registers a sale in which only its founder and a venture firm sell existing shares; no new shares are issued. Which description is accurate?",
    "o": [
-    "An IPO that is a primary offering",
-    "A split offering because two sellers participate",
+    "An IPO that is a primary offering of new shares",
+    "A split offering because two separate holders are selling shares",
     "A follow-on offering that is also a secondary offering",
-    "A standby commitment"
+    "A standby commitment to back a rights offering"
    ],
    "a": 2,
    "w": [
     "Wrong: the issuer already has publicly traded stock and no new shares are sold.",
     "Wrong: a split offering combines primary and secondary shares, and there are no primary shares here.",
     "Correct: the issuer is already public (follow-on) and only existing holders sell and receive the proceeds (secondary).",
-    "Wrong: a standby accompanies a rights offering to existing holders."
+    "Wrong: a standby accompanies a rights offering to existing holders, which is not what is described here."
    ]
   },
   {
@@ -1405,15 +1405,15 @@
    "d": 1,
    "q": "Which statement about selecting an underwriter is correct?",
    "o": [
-    "Most corporate underwritings are competitive bids",
-    "In a competitive bid, the issuer picks based on rapport",
-    "In a negotiated underwriting, the issuer selects one underwriter after a bake-off",
-    "The underwriting agreement is signed among syndicate members"
+    "Most corporate underwritings are done by competitive bid among underwriters",
+    "In a competitive bid, the issuer picks the underwriter it likes best on rapport",
+    "In a negotiated deal, the issuer chooses an underwriter after a bake-off",
+    "The underwriting agreement is signed among all of the syndicate members"
    ],
    "a": 2,
    "w": [
     "Wrong: most corporate deals are negotiated; select municipal deals use competitive bids.",
-    "Wrong: a competitive bid goes to the underwriter with the best price from sealed bids.",
+    "Wrong: a competitive bid goes to the underwriter with the best price from sealed bids, not on rapport.",
     "Correct: the issuer chooses based on factors such as pricing, expertise and rapport, and most corporate deals are negotiated.",
     "Wrong: the agreement among underwriters covers syndicate members; the underwriting agreement is between issuer and underwriter."
    ]
@@ -1565,16 +1565,16 @@
    "d": 3,
    "q": "A restricted person (an attorney for the managing underwriter) provides 30% of the income of his nephew, who is a college student. May the nephew buy shares in the IPO of common stock?",
    "o": [
-    "Yes, because nephews are never covered",
-    "No, because support above 25% of income makes him immediate family",
-    "Yes, because support must be at least 50%",
-    "Yes, if the attorney does not manage the account"
+    "Yes, because nephews are never covered by the restriction",
+    "No, because support above 25% makes him immediate family",
+    "Yes, because material support must be at least 50% of income",
+    "Yes, if the attorney does not manage or control his account"
    ],
    "a": 1,
    "w": [
     "Wrong: nephews are excluded only when not materially supported; a person getting more than 25% of income from a restricted person is covered.",
     "Correct: material support is more than 25% of income; 30% exceeds it, so the nephew is restricted even though nephews are not otherwise family.",
-    "Wrong: the threshold in the book is more than 25%.",
+    "Wrong: the threshold in the book is more than 25% of income, not 50%.",
     "Wrong: control of the account is irrelevant; the support test determines the restriction."
    ]
   },
@@ -1665,15 +1665,15 @@
    "d": 2,
    "q": "Why does SEC Rule 15c2-12 place its requirements on broker-dealers rather than on municipal issuers?",
    "o": [
-    "Because the SEC and MSRB cannot directly impose disclosure rules on municipal issuers",
-    "Because municipal issuers must register with FINRA",
-    "Because dealers choose which issuers to regulate",
-    "Because municipal bonds require a prospectus"
+    "Because the SEC and MSRB cannot directly regulate municipal issuers",
+    "Because municipal issuers are FINRA members and already file with it",
+    "Because dealers choose which municipal issuers they are willing to regulate",
+    "Because municipal bonds require a full registration statement and prospectus"
    ],
    "a": 0,
    "w": [
     "Correct: the rule regulates issuers indirectly through the dealers who underwrite and recommend their bonds.",
-    "Wrong: municipal issuers are not registered with FINRA, and the issue is the lack of regulatory authority over them.",
+    "Wrong: municipal issuers are not FINRA members, and the issue is the lack of regulatory authority over them.",
     "Wrong: dealers do not select regulators; the rule is a roundabout way to enforce disclosure.",
     "Wrong: munis are exempt from registration and need no prospectus."
    ]
@@ -1725,15 +1725,15 @@
    "d": 2,
    "q": "A customer buys new-issue municipal bonds and received the preliminary official statement before the sale. Which statement about the dealer’s delivery obligation is correct?",
    "o": [
-    "A prospectus must be delivered instead",
-    "The preliminary official statement is enough",
-    "The customer must still receive the final official statement by settlement",
-    "Delivery is due 25 days after settlement"
+    "A prospectus must be delivered instead of the official statement",
+    "The preliminary official statement satisfies the delivery obligation",
+    "The customer must still get the final official statement by settlement",
+    "Delivery is due 25 days after settlement for new-issue municipals"
    ],
    "a": 2,
    "w": [
     "Wrong: munis are exempt and use the official statement, not a prospectus.",
-    "Wrong: a preliminary statement does not replace the final official statement.",
+    "Wrong: a preliminary statement does not replace the final official statement, which is still owed by settlement.",
     "Correct: even after a preliminary official statement, investors must receive the final version no later than settlement.",
     "Wrong: the 25-day tail applies to corporate IPO prospectus delivery, not to municipal official statements."
    ]
@@ -1805,16 +1805,16 @@
    "d": 2,
    "q": "Which transaction is covered by Rule 145, giving affected shareholders registration and a prospectus?",
    "o": [
-    "A merger in which target holders receive acquirer stock",
-    "A change in par value",
-    "A 2-for-1 stock split",
+    "A merger in which target holders get acquirer stock",
+    "A change in par value for the existing common stock",
+    "A 2-for-1 stock split paid to existing shareholders",
     "A shareholder selling shares in the open market"
    ],
    "a": 0,
    "w": [
     "Correct: holders exchanging into a new security in a merger or acquisition are treated like buyers of a new offering.",
-    "Wrong: a par value change is also excluded.",
-    "Wrong: stock splits are specifically excluded from reclassifications.",
+    "Wrong: a par value change is excluded from Rule 145 because it creates no new investment decision for holders.",
+    "Wrong: stock splits are specifically excluded from reclassifications covered by Rule 145.",
     "Wrong: an ordinary market sale involves no new security being issued to holders."
    ]
   },
@@ -1845,10 +1845,10 @@
    "d": 2,
    "q": "An officer plans to sell $40,000 of registered control stock over the next three months. Is a Form 144 required?",
    "o": [
-    "Yes, always for control stock",
-    "Yes, because she is an officer",
-    "No, because aggregate sales do not exceed $50,000 in three months",
-    "No, because Form 144 applies only to restricted stock"
+    "Yes, because all sales of control stock require the form",
+    "Yes, because she is an officer and therefore an affiliate",
+    "No, because sales stay within $50,000 over three months",
+    "No, because Form 144 applies only to restricted stock sales"
    ],
    "a": 2,
    "w": [
@@ -1865,10 +1865,10 @@
    "d": 1,
    "q": "What is a tender offer?",
    "o": [
-    "A sale of new shares by the issuer in an IPO",
-    "A bid placed by the syndicate manager to stabilize the price",
-    "A sealed bid to win a municipal underwriting",
-    "An offer to buy at least 5% of a company’s shares directly from shareholders"
+    "A sale of new shares by the issuer to the public in an IPO",
+    "A bid placed by the syndicate manager to stabilize the secondary price",
+    "A sealed bid submitted to win a municipal underwriting mandate",
+    "An offer to buy at least 5% of a company’s shares from holders"
    ],
    "a": 3,
    "w": [

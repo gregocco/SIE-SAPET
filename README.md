@@ -4,8 +4,9 @@ Application web de révision (mobile + PC, hors-ligne) construite à partir du m
 *SIE Textbook 6th Edition* (490 p., 14 chapitres), pour une VP DCM FIG (4 ans d'expérience)
 qui doit passer le SIE avant fin 2026 en vue d'une mission de 6 mois à New York.
 
-**Statut : contenu complet (14 chapitres, ~920 QCM, ~1 100 cartes, 14 générateurs de calcul) + outils d'étude. Examen visé : 30/11/2026.**
-Outils : mocks de 75 questions (poids officiels, sans répétition), calculatrice d'examen, audio, chiffres à connaître, traps sprint, checklist jour J, renvois aux pages du manuel.
+**Statut : version finale. 14 chapitres, 1 145 QCM, ~1 100 cartes, 83 jeux « X ou Y ? » (575 énoncés), 636 termes de glossaire, 14 générateurs de calcul. Examen visé : 30/11/2026.**
+Outils : diagnostic de 30 Q, mocks de 75 Q (poids officiels, sans répétition), calculatrice d'examen, audio, chiffres à connaître, traps sprint, X ou Y, checklist jour J, renvois aux pages du manuel, export des questions douteuses.
+Contrôle qualité : vérification factuelle par un second agent par chapitre (136 défauts corrigés), résolution à l'aveugle des 920 QCM de base (2 désaccords, 1 clé corrigée), vérification des 225 questions de renfort, suppression du biais « la bonne réponse est la plus longue » (35 % → 15 %), positions A-D équilibrées (25 % chacune).
 
 ## Utiliser l'appli
 Ouvrir **`dist/sie-prep.html`** (fichier unique, hors-ligne, aucun serveur). Sur GitHub : ouvrir le fichier → *Download raw file*, puis l'ouvrir dans le navigateur (Chrome/Safari/Edge). La progression est enregistrée dans le navigateur de l'appareil (export/import JSON dans ⚙).

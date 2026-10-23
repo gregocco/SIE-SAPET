@@ -503,17 +503,17 @@
    "d": 1,
    "q": "A firm wants its representatives to use a script on cold calls. How is the script treated?",
    "o": [
-    "Institutional communication needing no approval",
-    "A retail communication that must be approved by a principal before first use",
-    "Correspondence, reviewed after use",
-    "A communication that must be filed with the SEC before use"
+    "Institutional communication, which needs no principal approval before use",
+    "A retail communication requiring principal approval before first use",
+    "Correspondence, which a principal reviews after it is sent",
+    "A communication that must be filed with the SEC for review before use"
    ],
    "a": 1,
    "w": [
-    "Wrong: cold calls target the public, not institutions.",
-    "Correct: scripts are retail communications requiring prior principal approval.",
+    "Wrong: cold calls target the public, not institutions, so the script is not an institutional communication.",
+    "Correct: a script used on cold calls is a retail communication requiring prior principal approval.",
     "Wrong: correspondence is a different category and no prior approval is required for a scripted solicitation.",
-    "Wrong: the SEC does not pre-approve broker-dealer scripts."
+    "Wrong: the SEC does not pre-approve broker-dealer scripts, and they are not filed with it before use."
    ]
   },
   {
@@ -544,16 +544,16 @@
    "q": "Who is required to sign the new account form?",
    "o": [
     "The customer and the registered representative",
-    "Only the designated principal who approves the account",
+    "Only the principal who approves the account",
     "The customer and the designated principal",
-    "Only the customer"
+    "Only the customer, who signs to open the account"
    ],
    "a": 1,
    "w": [
     "Wrong: neither of them needs to sign.",
-    "Correct: the principal’s signature documents approval and is the only one required.",
+    "Correct: the principal’s signature documents approval and is the only signature required on the form.",
     "Wrong: the customer’s signature is not required on the form itself.",
-    "Wrong: the customer need not sign the form."
+    "Wrong: the customer need not sign the form, so a customer-only signature does not satisfy the requirement."
    ]
   },
   {
@@ -583,17 +583,17 @@
    "d": 1,
    "q": "A customer who wants anonymity from relatives at the firm asks to open an account. What may the firm do?",
    "o": [
-    "Open the account under an alias",
-    "Open it under a fictitious name with made-up data",
-    "Open a numbered account, keeping a written statement of ownership and ID",
-    "Refuse; anonymity is never permitted"
+    "Open the account under an alias if the customer signs a waiver",
+    "Open it under a fictitious name using made-up identifying data",
+    "A numbered account with a signed ownership statement on file",
+    "Refuse, because anonymous or coded accounts are never permitted"
    ],
    "a": 2,
    "w": [
-    "Wrong: aliases are not allowed.",
-    "Wrong: false information is never allowed.",
-    "Correct: a symbol or number is allowed, with ownership statement and proof of identity on file.",
-    "Wrong: numbered accounts are permitted."
+    "Wrong: aliases are not allowed, and a signed waiver cannot make an alias account acceptable.",
+    "Wrong: false information is never allowed, so a fictitious name with invented data cannot be used.",
+    "Correct: a symbol or number is allowed, with a written ownership statement and proof of identity on file.",
+    "Wrong: numbered accounts are permitted when the firm keeps the written ownership statement on file."
    ]
   },
   {
@@ -623,17 +623,17 @@
    "d": 1,
    "q": "Which function is performed by a clearing firm but not by an introducing firm?",
    "o": [
-    "Opening customer accounts",
-    "Accepting customer orders",
-    "Holding customer cash and securities and settling trades",
-    "Obtaining new account forms"
+    "Opening and approving new customer accounts",
+    "Accepting and entering customer orders",
+    "Holding customer assets and settling trades",
+    "Obtaining new account forms and ID documents"
    ],
    "a": 2,
    "w": [
-    "Wrong: the introducing firm opens accounts.",
-    "Wrong: the introducing firm takes orders.",
-    "Correct: custody and settlement belong to the clearing firm.",
-    "Wrong: collected at the introducing level."
+    "Wrong: the introducing firm opens accounts and its principal approves them.",
+    "Wrong: the introducing firm takes the customer’s orders and enters them.",
+    "Correct: custody of cash and securities and settlement belong to the clearing firm.",
+    "Wrong: forms and identification are collected at the introducing firm level."
    ]
   },
   {
@@ -644,16 +644,16 @@
    "q": "A customer buys stock in a cash account and does not pay by the Reg T deadline; no extension is granted and the shortage exceeds $1,000. What happens?",
    "o": [
     "The firm sells the position and freezes the account for 90 days",
-    "The firm freezes the account for 30 days only",
+    "The firm sells the position and freezes the account for only 30 days",
     "The firm charges margin interest and keeps the position",
-    "The customer is reported to the SEC"
+    "The customer is reported to the SEC and the firm waits for payment"
    ],
    "a": 0,
    "w": [
     "Correct: sell-out and a 90-day freeze.",
-    "Wrong: the freeze is 90 days.",
+    "Wrong: the sell-out is right but the freeze lasts 90 days rather than 30 days.",
     "Wrong: a cash account has no margin loan.",
-    "Wrong: no automatic SEC report; the consequence is the sell-out and freeze."
+    "Wrong: there is no automatic SEC report; the consequence is the sell-out and a 90-day freeze."
    ]
   },
   {
@@ -683,17 +683,17 @@
    "d": 2,
    "q": "An account is frozen for free-riding. Which orders are permitted?",
    "o": [
-    "Only orders approved by a principal",
-    "Sell orders only",
-    "None",
-    "Sell orders, and buy orders only if full cash is in the account when placed"
+    "Any order, once a principal approves it in writing",
+    "Sell orders only, since buys are barred for 90 days",
+    "None; all trading stops for the 90-day period",
+    "Sells, and buys only if fully paid in cash when placed"
    ],
    "a": 3,
    "w": [
-    "Wrong: approval is not the test; funding is.",
-    "Wrong: buys with cash already on deposit are also allowed.",
-    "Wrong: trading is limited, not banned.",
-    "Correct: sells, plus buys fully funded at the time of the order."
+    "Wrong: principal approval does not lift the restriction; funding at the time of the order is the test.",
+    "Wrong: buys with cash already on deposit are also allowed during the freeze.",
+    "Wrong: trading is limited, not banned, so sells and fully funded buys are still allowed.",
+    "Correct: sells, plus buys fully funded with cash in the account at the time of the order."
    ]
   },
   {
@@ -803,17 +803,17 @@
    "d": 2,
    "q": "Which statement about Regulation T is correct?",
    "o": [
-    "It was set by FINRA",
-    "It sets the maintenance requirement at 25%",
-    "It applies to municipal bonds",
-    "It sets the initial margin requirement for margin-eligible securities"
+    "It was issued by FINRA to govern firms’ margin lending",
+    "It sets the minimum maintenance requirement at 25% of market value",
+    "It applies to municipal and US government securities",
+    "It sets initial margin for margin-eligible securities"
    ],
    "a": 3,
    "w": [
-    "Wrong: Reg T is a Federal Reserve Board regulation.",
-    "Wrong: the 25% maintenance level is FINRA’s.",
-    "Wrong: municipals and governments are exempt from Reg T.",
-    "Correct: the Fed’s Reg T sets initial margin (50%)."
+    "Wrong: Reg T is a Federal Reserve Board regulation, not a FINRA rule.",
+    "Wrong: the 25% maintenance level is FINRA’s rule rather than part of Reg T.",
+    "Wrong: municipals and governments are exempt from Reg T and follow SRO margin rules.",
+    "Correct: the Fed’s Reg T sets the initial margin requirement, currently 50%."
    ]
   },
   {
@@ -963,10 +963,10 @@
    "d": 2,
    "q": "Which statement is NOT a required warning in the margin disclosure statement?",
    "o": [
-    "You can lose more than you deposit",
-    "The firm can sell your securities without contacting you",
+    "You can lose more than you deposit and may owe additional funds",
+    "The firm can sell your securities without contacting you first",
     "You are not entitled to an extension on a margin call",
-    "You will receive 30 days’ written notice before the firm raises house maintenance requirements"
+    "You get 30 days’ written notice before house requirements are raised"
    ],
    "a": 3,
    "w": [
@@ -983,17 +983,17 @@
    "d": 3,
    "q": "A customer wants to trade options. Which sequence is correct?",
    "o": [
-    "Signed agreement → principal approval → disclosure document",
-    "Disclosure document (at or before approval) → ROP approval → trading → signed agreement within 15 days",
-    "ROP approval → trading → disclosure document at 15 days",
-    "Signed agreement → disclosure document → trading"
+    "Signed agreement → principal approval → disclosure document after first trade",
+    "Disclosure document → ROP approval → trading → signed agreement within 15 days",
+    "ROP approval → trading → disclosure document and signed agreement within 15 days",
+    "Signed agreement → disclosure document → ROP approval → trading"
    ],
    "a": 1,
    "w": [
-    "Wrong: the agreement comes after approval.",
-    "Correct: the ODD is delivered at or before approval; trading may begin; agreement due within 15 days.",
-    "Wrong: the ODD cannot be delayed.",
-    "Wrong: the agreement is not first."
+    "Wrong: the agreement comes after approval, and the disclosure document cannot wait until after trading.",
+    "Correct: the ODD is delivered at or before approval; trading may begin; the agreement is due within 15 days.",
+    "Wrong: the ODD cannot be delayed until after approval and trading.",
+    "Wrong: the signed agreement is not first; it is due within 15 days after approval."
    ]
   },
   {
@@ -1043,17 +1043,17 @@
    "d": 2,
    "q": "A client tells the rep: “Buy 100 shares of Apple when the time and price are right.” The trade is:",
    "o": [
-    "Discretionary",
-    "Prohibited",
-    "Non-discretionary (a not-held order)",
-    "A churning risk"
+    "Discretionary, since the rep picks the timing",
+    "Prohibited, because the rep controls the order",
+    "Non-discretionary, a not-held order",
+    "A churning violation, since the rep picks timing"
    ],
    "a": 2,
    "w": [
-    "Wrong: time and price are not discretionary items.",
-    "Wrong: nothing prohibits a client leaving time and price to the rep; it simply isn’t discretion.",
-    "Correct: action, asset and amount are set by the client.",
-    "Wrong: this is a single trade."
+    "Wrong: time and price are not discretionary items, so the rep choosing them does not create discretion.",
+    "Wrong: nothing prohibits a client leaving time and price to the rep; it simply is not discretion.",
+    "Correct: action, asset and amount are set by the client, so the trade is non-discretionary.",
+    "Wrong: churning requires excessive trading, and this is a single trade."
    ]
   },
   {
@@ -1063,17 +1063,17 @@
    "d": 2,
    "q": "Which is true of a power of attorney for discretionary trading?",
    "o": [
-    "It continues after the customer’s death",
-    "It must be written, and a principal must approve the account before the first trade",
+    "It continues after the customer’s death until the estate is settled",
+    "It must be written and approved by a principal before the first trade",
     "The rep may sign for the customer if permission is given",
-    "It is needed only for margin accounts"
+    "It is needed only for margin accounts, not for cash accounts"
    ],
    "a": 1,
    "w": [
     "Wrong: a power of attorney ends at the customer’s death.",
-    "Correct: written authority, principal approval before first trade and promptly after each trade.",
+    "Correct: written authority and principal approval before the first trade, with prompt review after each trade.",
     "Wrong: signing for a customer is prohibited.",
-    "Wrong: it concerns discretion, not margin."
+    "Wrong: it concerns discretion over trading, not margin, and applies to any account."
    ]
   },
   {
@@ -1163,16 +1163,16 @@
    "d": 2,
    "q": "In a joint account, which statement is correct?",
    "o": [
-    "Any owner may give trading instructions, but checks must be payable to all owners",
-    "Checks may be made out to any one owner",
-    "All owners must sign every order",
-    "A parent and a minor child may open one"
+    "Any owner may place orders, but checks must name all owners",
+    "Checks may be made payable to any one owner of the account",
+    "All owners must sign every order before it is entered",
+    "A parent and a minor child may open one as joint tenants"
    ],
    "a": 0,
    "w": [
     "Correct: any owner may instruct the firm, but checks must be payable to all owners.",
-    "Wrong: checks must name all owners.",
-    "Wrong: one owner may give instructions.",
+    "Wrong: checks must name all owners, not just one.",
+    "Wrong: one owner may give instructions, so every owner need not sign each order.",
     "Wrong: a minor cannot be part of a joint account."
    ]
   },
@@ -1244,16 +1244,16 @@
    "q": "What document must a corporation provide to open a brokerage account?",
    "o": [
     "A copy of the articles of incorporation only",
-    "A partnership agreement",
-    "A corporate resolution naming persons authorized to trade",
-    "A power of attorney from each shareholder"
+    "A partnership agreement naming the general partners",
+    "A corporate resolution naming authorized traders",
+    "A power of attorney signed by each shareholder"
    ],
    "a": 2,
    "w": [
-    "Wrong: insufficient to name authorized traders.",
-    "Wrong: used for partnerships.",
-    "Correct: the board resolution names who may transact.",
-    "Wrong: shareholders do not grant authority; the board names the authorised traders by resolution."
+    "Wrong: the articles alone are insufficient because they do not name authorized traders.",
+    "Wrong: a partnership agreement is used for partnerships, not corporations.",
+    "Correct: the board resolution names who may transact for the corporation.",
+    "Wrong: shareholders do not grant authority; the board names the authorized traders by resolution."
    ]
   },
   {
@@ -1323,16 +1323,16 @@
    "d": 2,
    "q": "A customer asks the firm to hold mail for 5 months because he doesn’t want to deal with it. The firm should:",
    "o": [
-    "Refuse because convenience is not an acceptable reason beyond 3 months",
-    "Agree in writing",
-    "Agree if a principal approves",
-    "Agree orally"
+    "Refuse; convenience is not valid beyond 3 months",
+    "Agree, provided the request is made in writing",
+    "Agree if a principal approves the request",
+    "Agree orally, with a note placed in the file"
    ],
    "a": 0,
    "w": [
-    "Correct: beyond three months a valid reason such as safety is required.",
-    "Wrong: written instruction is necessary but not enough here.",
-    "Wrong: approval does not change the rule.",
+    "Correct: beyond three months a valid reason such as safety is required, and convenience is not one.",
+    "Wrong: a written instruction is necessary but not enough for a five-month hold.",
+    "Wrong: principal approval does not change the rule on how long mail may be held.",
     "Wrong: a hold request must be in writing, and the length is the problem here."
    ]
   },
@@ -1363,17 +1363,17 @@
    "d": 2,
    "q": "Under Regulation S-P, a customer cannot opt out of information sharing:",
    "o": [
-    "With non-affiliated marketers",
-    "When the notice was sent annually",
-    "With the firm’s affiliates",
-    "When the sharing is required by law, such as in an AML investigation"
+    "With non-affiliated third parties for marketing",
+    "When the annual privacy notice was delivered on time",
+    "With the firm’s affiliates under common ownership",
+    "When sharing is required by law, as in an AML probe"
    ],
    "a": 3,
    "w": [
-    "Wrong: this is what opt-out is for.",
+    "Wrong: this is exactly the sharing that opt-out is designed for.",
     "Wrong: the annual notice does not remove or create an opt-out right; legally required sharing is the exception.",
-    "Wrong: not the typical test.",
-    "Correct: legally required sharing cannot be blocked."
+    "Wrong: affiliate sharing is not the situation where an opt-out is removed by law.",
+    "Correct: legally required sharing cannot be blocked by an opt-out."
    ]
   },
   {
@@ -1443,17 +1443,17 @@
    "d": 2,
    "q": "Which statement correctly contrasts FDIC and SIPC?",
    "o": [
-    "FDIC covers bank deposits; SIPC covers securities and cash at a failed broker-dealer",
-    "SIPC is a US government agency",
-    "FDIC protects market losses, SIPC does not",
-    "Both cover mutual fund losses"
+    "FDIC covers bank deposits; SIPC covers assets at a failed broker-dealer",
+    "SIPC is a government agency that guarantees investment performance",
+    "FDIC protects against market losses on deposits, SIPC does not",
+    "Both cover losses on mutual funds and other securities"
    ],
    "a": 0,
    "w": [
     "Correct: FDIC insures bank deposits; SIPC covers securities and cash at a failed broker-dealer.",
-    "Wrong: SIPC is a non-profit corporation.",
+    "Wrong: SIPC is a non-profit corporation and does not guarantee performance.",
     "Wrong: neither covers market losses.",
-    "Wrong: neither covers fund losses."
+    "Wrong: neither covers investment losses in funds or other securities."
    ]
   },
   {
@@ -1463,17 +1463,17 @@
    "d": 2,
    "q": "A firm reasonably believes a 70-year-old customer is being financially exploited. What can the firm do first?",
    "o": [
-    "Report to the IRS",
-    "Place a temporary hold on disbursements for up to 15 business days",
-    "Close the account",
-    "Freeze the account indefinitely"
+    "Report to the IRS and close the account at once",
+    "Temporarily hold disbursements for up to 15 business days",
+    "Close the account and return the assets to the customer",
+    "Freeze the account indefinitely pending investigation"
    ],
    "a": 1,
    "w": [
     "Wrong: reports go to adult protective services or state regulators; the first action is the hold.",
-    "Correct: initial 15-business-day hold.",
+    "Correct: the initial step is a temporary hold of up to 15 business days.",
     "Wrong: a firm cannot close the account on suspicion; the rule allows a temporary hold on disbursements.",
-    "Wrong: indefinite freezes are not authorized."
+    "Wrong: indefinite freezes are not authorized; the hold is temporary and limited in length."
    ]
   },
   {

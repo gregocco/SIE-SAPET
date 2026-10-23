@@ -1019,16 +1019,16 @@
    "d": 1,
    "q": "Which statement correctly describes the tax treatment of a qualified corporate retirement plan?",
    "o": [
-    "Contributions are after-tax and only the growth is taxed at distribution",
-    "Contributions are after-tax and all distributions are tax-free",
-    "Contributions are pre-tax and distributions are taxed as long-term capital gains",
-    "Contributions are pre-tax, growth is tax-deferred, and all distributions are taxed as ordinary income"
+    "Contributions are after-tax, growth is tax-deferred, and only the earnings are taxed at distribution",
+    "Contributions are after-tax, growth is tax-deferred, and all distributions are tax-free",
+    "Contributions are pre-tax, growth is tax-deferred, and distributions are taxed as long-term capital gains",
+    "Contributions are pre-tax, growth is tax-deferred, and distributions are taxed as ordinary income"
    ],
    "a": 3,
    "w": [
-    "Wrong: this describes a non-qualified plan, where only the growth above the after-tax basis is taxed.",
-    "Wrong: tax-free distributions with after-tax contributions describe Roth-type accounts, not qualified corporate plans.",
-    "Wrong: retirement plan distributions are never taxed as capital gains, regardless of how the money was earned.",
+    "Wrong: qualified plan contributions are made pre-tax, so the entire distribution is taxed, not merely the earnings portion.",
+    "Wrong: that describes a Roth-style arrangement; a qualified corporate plan uses pre-tax contributions and taxes distributions as ordinary income.",
+    "Wrong: distributions from a qualified plan are taxed as ordinary income, never at the lower long-term capital gains rates.",
     "Correct: qualified plans take pre-tax contributions, grow tax-deferred, and every dollar distributed is ordinary income."
    ]
   },
@@ -1099,16 +1099,16 @@
    "d": 2,
    "q": "Maria is 23 and works part-time for a private employer that sponsors an ERISA-qualified plan. She has worked 520 hours in each of the last three consecutive years. Which statement is correct?",
    "o": [
-    "She becomes eligible only after five years of service",
-    "She is excluded because only full-time employees may participate",
-    "She must wait until age 25 to participate",
-    "She must be allowed in, since a part-timer logging 500 or more hours three years in a row must be eligible"
+    "She becomes eligible only after five years of service, regardless of the hours she works",
+    "She is excluded because only employees working at least 1,000 hours a year may participate",
+    "She must wait until age 25 to participate, even after meeting the service requirement",
+    "She must be admitted, since 500+ hours in three straight years makes a part-timer eligible"
    ],
    "a": 3,
    "w": [
-    "Wrong: five years is the maximum vesting period for employer money, not an eligibility requirement.",
-    "Wrong: the full-time test is only the baseline; qualifying part-timers must also be eligible under ERISA.",
-    "Wrong: the age test is 21, not 25, and she is already past it.",
+    "Wrong: the long-term part-time rule requires only three consecutive years of at least 500 hours, not five years of service.",
+    "Wrong: long-term part-time workers with 500 hours in three consecutive years must be allowed to participate despite the 1,000-hour standard.",
+    "Wrong: ERISA permits a minimum age of 21 at most, so she cannot be made to wait until age 25.",
     "Correct: ERISA extends eligibility to part-timers who reach 500 hours in each of three consecutive years."
    ]
   },
@@ -1239,17 +1239,17 @@
    "d": 2,
    "q": "Which statement about a SEP-IRA is TRUE?",
    "o": [
-    "Employees may defer their own salary into it",
-    "Only the employer may contribute, and the same percentage must be given to all eligible employees",
-    "It is required for any business with more than 100 employees",
-    "The employer must contribute every year regardless of profit"
+    "Employees may defer their own salary into it, with an employer match required",
+    "Only the employer contributes, and the same percentage goes to every eligible employee",
+    "It is required for any business with more than 100 employees, in place of a 401(k)",
+    "The employer must contribute every year regardless of profit, at a fixed percentage"
    ],
    "a": 1,
    "w": [
-    "Wrong: employee contributions are not allowed in a SEP-IRA; only the employer contributes.",
+    "Wrong: a SEP-IRA is funded by the employer alone; employees do not defer their own salary and no match is required.",
     "Correct: SEP contributions come from the employer alone and must be the same percentage for all eligible employees.",
-    "Wrong: a SEP is never required and is typically used by small businesses.",
-    "Wrong: SEPs are at the employer’s option and are never required."
+    "Wrong: no business is required to adopt a SEP-IRA, and it is designed for small employers and the self-employed.",
+    "Wrong: SEP-IRA employer contributions are discretionary, so the employer may skip a year or change the percentage."
    ]
   },
   {
@@ -1259,17 +1259,17 @@
    "d": 2,
    "q": "A SIMPLE IRA is best described as which of the following?",
    "o": [
-    "A plan for self-employed individuals only",
-    "A plan for companies of any size where only employees contribute",
-    "A plan for companies with 100 or fewer employees, with required employer contributions and optional employee deferrals",
-    "A plan for nonprofit organizations with required employee deferrals"
+    "A plan for self-employed individuals only, with no employees allowed to participate",
+    "A plan for companies of any size where only employees contribute, with no employer money",
+    "A plan for employers with 100 or fewer employees, with required employer contributions",
+    "A plan for nonprofit organizations with required employee deferrals and no employer match"
    ],
    "a": 2,
    "w": [
-    "Wrong: self-employed persons are served by a Keogh plan for exam purposes.",
-    "Wrong: employer contributions are required, and the plan has a size cap of 100 employees.",
+    "Wrong: a SIMPLE IRA covers employers with up to 100 employees, and employees participate through their own deferrals.",
+    "Wrong: a SIMPLE IRA has a 100-employee cap and requires the employer to make a match or a nonelective contribution.",
     "Correct: SIMPLE IRAs target small employers with 100 or fewer eligible employees and require employer contributions.",
-    "Wrong: nonprofits use 403(b) plans, and SIMPLE employee deferrals are optional."
+    "Wrong: employee deferrals in a SIMPLE IRA are optional, and the employer must contribute; it is not limited to nonprofits."
    ]
   },
   {
@@ -1279,16 +1279,16 @@
    "d": 2,
    "q": "What is the principal feature that distinguishes a 401(k) from a pure profit-sharing plan?",
    "o": [
-    "The 401(k) is not covered by ERISA",
-    "The 401(k) has no vesting schedule",
-    "The 401(k) is a defined benefit plan",
-    "The 401(k) gives employees the option to contribute their own salary"
+    "The 401(k) is exempt from ERISA coverage and its reporting rules",
+    "The 401(k) has no vesting schedule for any contributions",
+    "The 401(k) is a defined benefit plan promising a fixed payout",
+    "Employees can elect to contribute part of their own salary"
    ],
    "a": 3,
    "w": [
-    "Wrong: both plan types are ERISA-qualified plans.",
-    "Wrong: vesting applies to employer contributions in both plans.",
-    "Wrong: both a 401(k) and a profit-sharing plan are defined contribution plans.",
+    "Wrong: a 401(k) is an ERISA-qualified plan, so ERISA coverage does not distinguish it from a profit-sharing plan.",
+    "Wrong: employer contributions to a 401(k) may be subject to a vesting schedule; only employee deferrals are always fully vested.",
+    "Wrong: a 401(k) is a defined contribution plan, so the retirement benefit depends on contributions and investment results.",
     "Correct: a 401(k) adds the employee’s elective deferral to the employer contribution found in a profit-sharing plan."
    ]
   },
@@ -1339,16 +1339,16 @@
    "d": 2,
    "q": "Which of the following is NOT an advantage of a non-qualified plan to the employer?",
    "o": [
-    "The employer can choose which employees participate",
-    "The plan avoids nondiscrimination testing",
-    "There is no limit on the amount that can be contributed",
-    "The company receives an immediate tax deduction when it funds the plan"
+    "The employer can select which employees participate, such as only key executives",
+    "The plan avoids nondiscrimination testing required of qualified plans",
+    "There is no annual limit on the amount that can be contributed",
+    "The company deducts contributions immediately when it funds the plan"
    ],
    "a": 3,
    "w": [
-    "Wrong: selecting participants is a stated advantage of non-qualified plans.",
-    "Wrong: because the plan is not ERISA-covered, it avoids nondiscrimination tests.",
-    "Wrong: non-qualified plans have no limit on contributions.",
+    "Wrong: this is a true advantage; a non-qualified plan lets the employer choose its participants, so it is not the exception.",
+    "Wrong: this is a true advantage; non-qualified plans are not subject to the nondiscrimination testing, so it is not the exception.",
+    "Wrong: this is a true advantage; non-qualified plans have no contribution limits, so it is not the exception.",
     "Correct: contributions are after-tax and non-deductible; the company generally deducts only when benefits are distributed."
    ]
   },
@@ -1519,17 +1519,17 @@
    "d": 2,
    "q": "Jordan earns $200,000 and his employer offers no retirement plan, so his traditional IRA contributions are tax-deductible. The employer then introduces a company plan that Jordan is eligible for. What is the effect on Jordan’s traditional IRA contributions?",
    "o": [
-    "They can only be made after-tax because his income exceeds the threshold",
-    "They are no longer permitted",
+    "They can only be made after-tax because his income exceeds the limit",
+    "They are no longer permitted once he is covered by an employer plan",
     "They remain pre-tax because he earns his income from one employer",
-    "They convert to Roth contributions automatically"
+    "They convert to Roth contributions automatically at the start of the plan year"
    ],
    "a": 0,
    "w": [
     "Correct: eligible for a corporate plan with income above the threshold, contributions become after-tax (non-deductible).",
-    "Wrong: contributions are still permitted; only their tax-deductibility changes.",
+    "Wrong: IRA contributions are still permitted when covered by a plan; only the deductibility is lost at his income level.",
     "Wrong: deductibility depends on plan eligibility and income, not on the number of employers.",
-    "Wrong: nothing converts automatically; the account stays a traditional IRA with non-deductible contributions."
+    "Wrong: nothing converts a traditional IRA contribution to a Roth contribution; it simply becomes nondeductible at his income."
    ]
   },
   {
@@ -1599,17 +1599,17 @@
    "d": 2,
    "q": "A 45-year-old woman withdraws money from her traditional IRA. For which of the following uses would the 10% early withdrawal penalty NOT apply?",
    "o": [
-    "Paying tuition for her grandchild",
-    "Taking a vacation",
-    "Buying a vacation home",
-    "Funding a new business"
+    "Paying a grandchild’s tuition",
+    "Taking an extended vacation",
+    "Buying a second vacation home",
+    "Funding a new family business"
    ],
    "a": 0,
    "w": [
     "Correct: education expenses for the owner, spouse, children and grandchildren are an exception to the penalty.",
-    "Wrong: a vacation is not among the exceptions, so the penalty would apply.",
-    "Wrong: only a first-time home purchase (up to $10,000) is excepted, not a second property.",
-    "Wrong: starting a business is not a listed exception to the penalty."
+    "Wrong: a vacation is not a recognized exception, so the 10% early withdrawal penalty applies to the distribution.",
+    "Wrong: only a first-time home purchase, within the dollar limit, avoids the penalty; a second vacation home does not qualify.",
+    "Wrong: starting a business is not an exception to the penalty, so withdrawals used for it are penalized before age 59½."
    ]
   },
   {
@@ -1639,17 +1639,17 @@
    "d": 2,
    "q": "Nora, age 50, receives a check from her IRA custodian in order to move her account to a new provider. She deposits the funds into the new IRA 75 days later. What is the likely result?",
    "o": [
-    "The transfer is fully tax-free because rollovers have no deadline",
-    "The transfer qualifies only if completed within 60 days, so she may face tax and an early withdrawal penalty",
-    "Only the 6% excess contribution penalty applies",
-    "She owes a 25% excise tax"
+    "The transfer is fully tax-free because rollovers have no deadline if the funds reach an IRA",
+    "It fails the 60-day rule, so she may owe tax and an early withdrawal penalty",
+    "Only the 6% excess contribution penalty applies to the amount redeposited late",
+    "She owes a 25% excise tax on the full amount of the distribution"
    ],
    "a": 1,
    "w": [
-    "Wrong: rollovers do have a deadline, and missing it creates tax consequences.",
+    "Wrong: a rollover must be completed within 60 days of receiving the funds, so the 75-day delay is a problem.",
     "Correct: a rollover must be completed within 60 days; at 75 days she risks ordinary income tax and the 10% penalty since she is under 59½.",
-    "Wrong: 6% is the penalty for excess contributions, which is a different problem.",
-    "Wrong: the 25% excise tax applies to missed required minimum distributions."
+    "Wrong: the excess contribution penalty concerns contributions over the limit; a late rollover is a taxable distribution instead.",
+    "Wrong: the 25% rate applies to early SIMPLE IRA withdrawals, not to a late rollover from an ordinary IRA."
    ]
   },
   {
@@ -1739,16 +1739,16 @@
    "d": 1,
    "q": "Which statement about a Roth IRA is TRUE?",
    "o": [
-    "Contributions are tax-deductible",
-    "Anyone may contribute regardless of income",
-    "The owner must take RMDs beginning at age 73",
-    "Qualified distributions, including the growth, are tax-free"
+    "Contributions are tax-deductible on the federal return",
+    "Anyone with earned income may contribute regardless of income level",
+    "The owner must take RMDs from the account beginning at age 73",
+    "Qualified distributions, including growth, are tax-free"
    ],
    "a": 3,
    "w": [
-    "Wrong: Roth contributions are never deductible; they go in after tax.",
-    "Wrong: Roth contributions are available only to taxpayers whose income is below a limit.",
-    "Wrong: Roth IRAs have no RMDs during the owner’s lifetime.",
+    "Wrong: Roth contributions are made with after-tax dollars and are not deductible; the benefit comes at distribution.",
+    "Wrong: Roth IRA contributions phase out and are barred above the income limits, so high earners cannot contribute directly.",
+    "Wrong: the original Roth IRA owner is not subject to required minimum distributions during life.",
     "Correct: qualified Roth distributions are completely tax-free, growth included."
    ]
   },
@@ -1799,17 +1799,17 @@
    "d": 3,
    "q": "Alicia, age 45, opened a Roth IRA three years ago. She becomes disabled and withdraws a portion that includes both her contributions and earnings. Which statement is correct?",
    "o": [
-    "Everything is tax-free because she is disabled",
-    "She owes the 10% penalty on the entire withdrawal",
-    "The 10% penalty is waived because of disability, but the earnings portion is taxable since the five-year period is not met",
-    "Her contributions are taxable and the earnings are tax-free"
+    "Everything is tax-free because disability waives both the tax and the penalty",
+    "She owes the 10% penalty on the entire withdrawal, since she is under age 59½",
+    "The penalty is waived for disability, but earnings are taxable as the five-year test is unmet",
+    "Her contributions are taxable and the earnings are tax-free, since the account is under five years old"
    ],
    "a": 2,
    "w": [
-    "Wrong: disability waives only the penalty; earnings remain taxable when the five-year test is not met.",
-    "Wrong: the disability exception removes the 10% penalty.",
+    "Wrong: disability waives only the 10% penalty; earnings are still taxable when the five-year holding period has not been met.",
+    "Wrong: disability is an exception to the 10% penalty, and contributions can be withdrawn without penalty in any case.",
     "Correct: with a valid exception the penalty is waived, but earnings are taxed because the account is under five years old.",
-    "Wrong: contributions were already taxed and come out tax-free; the earnings are the taxable part here."
+    "Wrong: contributions come out tax-free because they were taxed already, while the earnings are the taxable portion."
    ]
   },
   {
@@ -1820,16 +1820,16 @@
    "q": "Carl, age 74, and Dolores, age 67, are a retired couple. Both have earned income from consulting, but their total income is above the Roth IRA income limit. Which statement is correct?",
    "o": [
     "Both can contribute to a traditional IRA, but not to a Roth IRA",
-    "Both can contribute, but only to a Roth IRA",
-    "Neither can contribute to any IRA",
-    "Only Dolores can contribute because Carl is past age 73"
+    "Both can contribute, but only to a Roth IRA, since neither is covered by a plan",
+    "Neither can contribute to any IRA because their income is above the Roth limit",
+    "Only Dolores can contribute, because Carl is past age 73 and no longer eligible"
    ],
    "a": 0,
    "w": [
     "Correct: traditional IRAs have no income limit on contributing (only deductibility is affected) and no age limit, while the Roth has an income limit.",
-    "Wrong: their income is above the Roth limit, so Roth contributions are not allowed.",
-    "Wrong: both have earned income and traditional IRA contributions are allowed at any age.",
-    "Wrong: there is no age cutoff for contributing to a traditional IRA when the person has earned income."
+    "Wrong: their income is above the Roth limit, so a Roth contribution is barred while a traditional IRA contribution remains allowed.",
+    "Wrong: the Roth income limit does not restrict traditional IRA contributions, which remain open to anyone with earned income.",
+    "Wrong: traditional IRA contributions have no age cap, so Carl may contribute as long as he has earned income."
    ]
   },
   {
@@ -1879,16 +1879,16 @@
    "d": 1,
    "q": "Annuities are often said to protect against which risk?",
    "o": [
-    "Dying too soon",
-    "Rising interest rates",
-    "Market declines in bonds",
-    "Living too long and running out of savings"
+    "Dying too soon and leaving heirs with no estate",
+    "Rising interest rates that reduce bond values",
+    "Market declines that erode a bond portfolio",
+    "Living too long and outliving savings"
    ],
    "a": 3,
    "w": [
-    "Wrong: protection against dying too soon is the purpose of life insurance.",
-    "Wrong: interest rate risk is not the purpose of annuity contracts.",
-    "Wrong: annuities, especially variable ones, do not eliminate market risk.",
+    "Wrong: annuities address longevity risk, not early death; protecting heirs against early death is the role of life insurance.",
+    "Wrong: annuities are not marketed as a hedge against interest rate risk but as protection against outliving one’s income.",
+    "Wrong: market risk is not the risk annuities are said to address; the guarantee targets running out of retirement income.",
     "Correct: an annuity pays an income guaranteed for life, protecting against outliving savings."
    ]
   },
@@ -1959,17 +1959,17 @@
    "d": 2,
    "q": "For regulatory purposes, what is the separate account of a variable annuity treated as?",
    "o": [
-    "An investment company subject to the Investment Company Act of 1940",
-    "A bank subject to Glass-Steagall provisions",
-    "A tax-exempt charitable trust",
-    "A hedge fund under the Investment Advisers Act of 1940"
+    "An investment company under the Investment Company Act of 1940",
+    "A bank subject to Glass-Steagall and FDIC insurance provisions",
+    "A tax-exempt charitable trust under Internal Revenue Code Section 501(c)(3)",
+    "A private fund exempt from registration under the Securities Act of 1933"
    ],
    "a": 0,
    "w": [
     "Correct: the separate account is treated as an investment company and must register under the 1940 Act, much like a mutual fund.",
-    "Wrong: the separate account is not regulated as a bank.",
-    "Wrong: tax status is not what determines how the separate account is regulated.",
-    "Wrong: its manager falls under the Investment Advisers Act of 1940, but the account itself is an investment company."
+    "Wrong: the separate account is not a bank and is not FDIC insured; it is regulated as an investment company.",
+    "Wrong: the separate account is not a charity; it is a registered investment company under the Investment Company Act of 1940.",
+    "Wrong: the separate account is registered as an investment company, not treated as a private or unregistered fund."
    ]
   },
   {
@@ -1979,17 +1979,17 @@
    "d": 2,
    "q": "A guaranteed investment contract (GIC) offered by an insurance company is most like which of the following?",
    "o": [
-    "A common stock subaccount",
-    "A mutual fund with variable returns",
-    "A time deposit with guaranteed interest and principal for a fixed period",
-    "A Roth IRA"
+    "A common stock subaccount in a variable contract",
+    "A mutual fund with returns that vary with the market",
+    "A time deposit with guaranteed principal and interest",
+    "A tax-free Roth IRA account held at a custodian"
    ],
    "a": 2,
    "w": [
-    "Wrong: stock subaccounts belong to the separate account and carry market risk.",
-    "Wrong: a GIC has guaranteed returns, unlike a variable mutual fund.",
+    "Wrong: a GIC offers a guaranteed rate, whereas a stock subaccount carries market risk and has no guaranteed return.",
+    "Wrong: a GIC offers a fixed guaranteed return, not variable returns tied to market performance like a mutual fund.",
     "Correct: a GIC is a general-account contract that functions like a time deposit with a guaranteed rate and return of principal.",
-    "Wrong: a Roth IRA is an individual retirement account, not an insurance contract."
+    "Wrong: a Roth IRA is a tax-advantaged account type, not a guaranteed-rate insurance product comparable to a time deposit."
    ]
   },
   {
@@ -2039,17 +2039,17 @@
    "d": 2,
    "q": "What happens to the accumulation units when a variable annuity is annuitized?",
    "o": [
-    "They are swapped for a set count of annuity units whose value determines each payment",
-    "They are converted into fixed dollar payments that never change",
+    "They are swapped for annuity units whose value sets each payment",
+    "They are converted into fixed dollar payments that never change over time",
     "They are cancelled and replaced by a guaranteed interest rate",
-    "They are transferred to the general account"
+    "They are transferred to the insurer’s general account"
    ],
    "a": 0,
    "w": [
     "Correct: accumulation units become a set number of annuity units; the unit value changes, so payments vary while continuing for life.",
-    "Wrong: variable annuity payments fluctuate because annuity unit values change.",
+    "Wrong: variable annuity payments are based on the value of annuity units, so payments fluctuate with performance after annuitization.",
     "Wrong: no guaranteed interest rate replaces them in a variable annuity.",
-    "Wrong: variable annuity assets stay in the separate account."
+    "Wrong: annuitized units remain tied to the separate account value; they are not moved to the insurer’s general account."
    ]
   },
   {
@@ -2099,17 +2099,17 @@
    "d": 1,
    "q": "What is the primary purpose of a variable annuity surrender charge?",
    "o": [
-    "To pay the annual premium tax",
-    "To allow the insurer to recoup sales commissions paid to the registered representative",
-    "To fund the death benefit",
-    "To reimburse the SEC for registration"
+    "To pay the annual premium tax imposed by the state on the contract",
+    "To let the insurer recoup the sales commission paid on the sale",
+    "To fund the death benefit guarantee during the accumulation phase",
+    "To reimburse the SEC for registering the separate account"
    ],
    "a": 1,
    "w": [
-    "Wrong: surrender charges are not a premium tax.",
+    "Wrong: the surrender charge reimburses the insurer for upfront commissions; it is not a premium tax payment.",
     "Correct: they are back-end sales charges that let the insurer recover the commissions paid when the product was sold.",
-    "Wrong: the death benefit is an insurance feature, not funded by surrender charges.",
-    "Wrong: surrender charges have no connection to SEC registration costs."
+    "Wrong: the death benefit is paid for through the mortality and expense charge, not through the surrender charge.",
+    "Wrong: the surrender charge compensates the insurer for sales costs and has nothing to do with SEC registration fees."
    ]
   },
   {
@@ -2179,16 +2179,16 @@
    "d": 2,
    "q": "Before a variable annuity sale, the customer must be informed of all of the following EXCEPT:",
    "o": [
-    "A guarantee that the subaccounts will outperform fixed annuity rates",
-    "The tax penalty on distributions before age 59½",
-    "Market risk associated with the product",
+    "A guarantee that subaccounts will beat fixed annuity rates",
+    "The 10% federal tax penalty on most distributions before age 59½",
+    "Market risk, since subaccount values can lose principal",
     "Potential surrender charges and the surrender period"
    ],
    "a": 0,
    "w": [
     "Correct: no such guarantee exists, and a rep may not promise it; subaccount returns are not guaranteed.",
-    "Wrong: the 59½ tax penalty is a required disclosure.",
-    "Wrong: market risk must be explained because the investor bears it.",
+    "Wrong: this must be disclosed, since early distributions are subject to a tax penalty, so it is not the exception.",
+    "Wrong: this must be disclosed, because variable annuity subaccounts are exposed to market risk, so it is not the exception.",
     "Wrong: surrender period and charges are required disclosures under the suitability rule."
    ]
   },
@@ -2199,17 +2199,17 @@
    "d": 2,
    "q": "A client’s objectives have changed and she wishes to move from her current annuity contract into a different annuity contract with another insurer. What is true of a 1035 exchange?",
    "o": [
-    "It avoids both taxes and surrender charges",
-    "It is taxable on all earnings but penalty-free",
-    "It is tax-free, although surrender charges may still apply",
-    "It is only permitted for fixed annuities"
+    "It avoids both taxes and any surrender charges at the old insurer",
+    "It is taxable on all earnings but free of the 10% penalty",
+    "It is tax-free, though surrender charges may apply",
+    "It is permitted only for fixed annuities, not variable ones"
    ],
    "a": 2,
    "w": [
-    "Wrong: avoiding taxes does not mean avoiding surrender charges.",
-    "Wrong: the exchange itself is not a taxable event.",
+    "Wrong: a 1035 exchange defers taxes but does not waive surrender charges that the old contract may impose.",
+    "Wrong: a properly done 1035 exchange is tax-free, so earnings are not taxed at the time of the exchange.",
     "Correct: a 1035 exchange avoids tax liability, but the old contract’s surrender charges can still be assessed.",
-    "Wrong: an exchange can be made between variable annuity contracts as well."
+    "Wrong: a 1035 exchange can move between fixed and variable annuities, so it is not limited to fixed contracts."
    ]
   },
   {
@@ -2219,17 +2219,17 @@
    "d": 1,
    "q": "Which statement about 529 college savings plans is TRUE?",
    "o": [
-    "Contributions are tax-deductible on the federal return",
-    "The contributor must have wages in the year the money goes in",
-    "An investor may open a plan in any state, and the beneficiary need not attend school there",
-    "Only parents may open a plan"
+    "Contributions are deductible on the federal return up to the annual limit",
+    "The contributor must have earned income in the year the money goes in",
+    "Any state’s plan may be used, even if the beneficiary studies elsewhere",
+    "Only parents may open a plan for their own dependent children"
    ],
    "a": 2,
    "w": [
-    "Wrong: contributions are made with after-tax dollars at the federal level.",
-    "Wrong: no earned income is required to contribute to a 529.",
+    "Wrong: 529 contributions are made with after-tax dollars and are not deductible on the federal return.",
+    "Wrong: 529 contributions require no earned income; anyone may fund a plan, including relatives and friends.",
     "Correct: an individual can open a plan in any state, regardless of where the beneficiary studies.",
-    "Wrong: any adult may open one, and the beneficiary need not be a relative."
+    "Wrong: anyone, including grandparents, other relatives, and friends, may open a 529 plan for a beneficiary."
    ]
   },
   {
@@ -2279,17 +2279,17 @@
    "d": 2,
    "q": "Kai is enrolled in college only one course per semester, which is less than half-time. His parents want to pay his off-campus rent from a 529 plan. How are these room and board payments treated?",
    "o": [
-    "They are qualified up to any amount",
-    "They qualify only if Kai carries at least a half-time load, and only up to the school’s allowance",
-    "They are always qualified if the school is accredited",
-    "They are never qualified for any student"
+    "They are qualified in any amount, since off-campus rent is a higher-education expense",
+    "Only if he is enrolled at least half-time, and only up to the school’s allowance",
+    "They are always qualified as long as the school is an accredited institution",
+    "They are never qualified for any student who lives off campus"
    ],
    "a": 1,
    "w": [
-    "Wrong: room and board is qualified only within the school’s allowance and when the half-time test is met.",
+    "Wrong: room and board qualifies only for half-time students and only up to the school’s cost-of-attendance allowance.",
     "Correct: room and board qualifies only for students enrolled at least half-time, limited to the institution’s room and board allowance, so Kai’s rent would not qualify.",
-    "Wrong: accreditation does not remove the half-time requirement.",
-    "Wrong: room and board can qualify for students enrolled at least half-time."
+    "Wrong: accreditation is not enough; the student must also be enrolled at least half-time for room and board to qualify.",
+    "Wrong: off-campus room and board can qualify for half-time students, subject to the school’s published allowance."
    ]
   },
   {
@@ -2359,17 +2359,17 @@
    "d": 2,
    "q": "A Coverdell ESA was opened for Tara, who has just turned 30. The account still holds $12,000, and no family member has received a transfer. What happens to the balance?",
    "o": [
-    "It remains tax-free forever",
-    "The earnings become subject to federal income tax plus a 10% penalty",
+    "It stays in the account tax-free, since there is no age limit once opened",
+    "The earnings are taxed as income plus a 10% penalty",
     "It is automatically rolled into a 529 plan with no tax",
-    "It is taxed at capital gains rates"
+    "It is taxed at long-term capital gains rates on the earnings only"
    ],
    "a": 1,
    "w": [
-    "Wrong: Coverdell funds must be used or transferred to a family member by age 30.",
+    "Wrong: a Coverdell must be distributed or transferred by age 30, after which earnings become taxable and penalized.",
     "Correct: unused funds at age 30 are subject to federal income tax plus a 10% penalty.",
     "Wrong: no automatic rollover occurs; a transfer to a family member must be arranged.",
-    "Wrong: nothing in the Coverdell rules taxes the balance at capital gains rates; it is taxed as income plus a penalty."
+    "Wrong: the earnings are taxed as ordinary income and also carry a 10% penalty, not capital gains treatment."
    ]
   },
   {
@@ -2419,17 +2419,17 @@
    "d": 1,
    "q": "Dev tells a colleague, “I’ll be fully vested in three years.” What does he mean?",
    "o": [
-    "He will have an unconditional right to all of the employer’s contributions after three years",
-    "He becomes eligible to join the plan after three years",
-    "He may begin making his own contributions after three years",
+    "He will own all of the employer’s contributions after three years",
+    "He becomes eligible to join the plan after three years of service",
+    "He may begin making his own salary contributions after three years",
     "He can withdraw his own contributions tax-free after three years"
    ],
    "a": 0,
    "w": [
     "Correct: vesting is ownership of the employer’s money; once fully vested, it cannot be taken back.",
-    "Wrong: eligibility to join is a separate test based on age and service.",
-    "Wrong: employees can contribute from the start of participation; vesting concerns the employer’s money.",
-    "Wrong: vesting does not concern tax treatment, and his own contributions are his immediately."
+    "Wrong: vesting concerns ownership of employer contributions, not eligibility to enter the plan.",
+    "Wrong: vesting does not govern when employee deferrals may begin; it governs ownership of the employer’s money.",
+    "Wrong: employee contributions are always fully vested, and vesting does not make withdrawals tax-free."
    ]
   },
   {
@@ -2460,16 +2460,16 @@
    "q": "Which statement correctly compares a Coverdell ESA with a 529 plan?",
    "o": [
     "A Coverdell takes pre-tax contributions while a 529 takes after-tax contributions",
-    "A Coverdell has no age deadline while a 529 must be emptied by the beneficiary’s 30th birthday",
-    "Both take after-tax contributions and allow tax-free qualified withdrawals, but the Coverdell is capped at $2,000 per beneficiary per year",
-    "A Coverdell is a municipal fund security while a 529 is not"
+    "A Coverdell has no age limit, while a 529 must be emptied by the beneficiary’s 30th birthday",
+    "Both take after-tax money, but the Coverdell is capped at $2,000 per beneficiary per year",
+    "A Coverdell is a municipal fund security, while a 529 is a registered mutual fund"
    ],
    "a": 2,
    "w": [
     "Wrong: both are funded with after-tax dollars.",
-    "Wrong: this reverses the rules; Coverdell funds must be used or transferred by age 30, while a 529 beneficiary has no age limit.",
+    "Wrong: it is the Coverdell that must be used by age 30; a 529 has no such deadline.",
     "Correct: the tax pattern is the same, but the low Coverdell limit is why 529 plans are far more popular.",
-    "Wrong: this reverses the classification; a 529 is a municipal fund security and a Coverdell is not."
+    "Wrong: a 529 plan is the municipal fund security; the Coverdell is not described that way and the 529 is not a mutual fund."
    ]
   },
   {
@@ -2499,16 +2499,16 @@
    "d": 3,
    "q": "Lucia, age 61, made her first Roth 401(k) deferral four years ago. She now takes a distribution that includes earnings. How are the earnings treated?",
    "o": [
-    "They are tax-free because she is older than 59½",
+    "They are tax-free because she is over 59½ and the account is a Roth",
     "They are tax-free because Roth accounts inside a 401(k) are never taxed",
-    "They are taxed as capital gains because she is over 59½",
-    "They are taxable because five years have not passed since her first Roth deferral"
+    "They are taxed at long-term capital gains rates because she is over 59½",
+    "Taxable, since five years have not passed since her first Roth deferral"
    ],
    "a": 3,
    "w": [
-    "Wrong: age alone is not enough; the five-year period must also be satisfied.",
+    "Wrong: age 59½ alone is not enough; the five-year holding period from her first deferral must also be met.",
     "Wrong: the Roth feature does not remove the five-year requirement.",
-    "Wrong: retirement distributions are taxed as ordinary income, never as capital gains.",
+    "Wrong: nonqualified Roth earnings are taxed as ordinary income, not at capital gains rates.",
     "Correct: tax-free treatment needs both age 59½ and five years since the first Roth deferral; she has met only the age test."
    ]
   },

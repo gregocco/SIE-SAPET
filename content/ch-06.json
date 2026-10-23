@@ -1042,10 +1042,10 @@
    "d": 2,
    "q": "Which of the following best describes what happens when a holder exercises an in-the-money index option?",
    "o": [
-    "The holder receives one share of every stock in the index",
-    "The holder receives 100 shares of an index tracking fund",
-    "The holder receives cash based on the difference between the index level and the strike price",
-    "The contract cannot be exercised before the market closes on expiration day"
+    "The holder receives one share of every stock in the index, weighted by its index share",
+    "The holder receives 100 shares of an index tracking fund at the strike price",
+    "The holder receives cash based on the in-the-money amount",
+    "The contract can be exercised only after the market closes on expiration day"
    ],
    "a": 2,
    "w": [
@@ -1262,10 +1262,10 @@
    "d": 2,
    "q": "When a holder exercises a listed option, how does the OCC choose which writer to assign?",
    "o": [
-    "It always assigns the most recent writer",
-    "The holder chooses the writer",
-    "It assigns randomly or on a first-in, first-out basis among short positions in the same series",
-    "It assigns the underlying corporation"
+    "It assigns the writer who most recently sold the option in that series",
+    "The holder chooses which writer in the series receives the exercise notice",
+    "It assigns randomly or first-in, first-out among shorts in the series",
+    "It assigns the corporation that issued the underlying stock"
    ],
    "a": 2,
    "w": [
@@ -1382,10 +1382,10 @@
    "d": 2,
    "q": "An investor holds call options on a stock that has just declared a cash dividend. Which statement is correct?",
    "o": [
-    "The option holder receives the dividend automatically",
-    "The option holder is entitled to the dividend only by becoming an owner of record of the stock",
-    "The option writer must pass the dividend to the holder",
-    "The strike price falls by the dividend amount"
+    "The option holder receives the dividend automatically on the payable date",
+    "The holder is entitled only as an owner of record of the stock",
+    "The option writer must pass the dividend through to the holder in cash",
+    "The strike price is reduced by the dividend amount on the ex-date"
    ],
    "a": 1,
    "w": [
@@ -1422,10 +1422,10 @@
    "d": 2,
    "q": "After a 10% stock dividend, how is a standard call option contract adjusted?",
    "o": [
-    "It covers more shares, the strike is lower, and total contract value is unchanged",
-    "It covers the same shares and the strike is lower",
-    "It covers more shares and the strike is unchanged",
-    "It is cancelled and reissued by the OCC at the new price"
+    "It covers more shares and a lower strike, with total value unchanged",
+    "It covers the same 100 shares and the strike is lowered proportionally",
+    "It covers more shares and the strike is unchanged at the original price",
+    "It is cancelled and reissued by the OCC at the new market price"
    ],
    "a": 0,
    "w": [
@@ -1562,10 +1562,10 @@
    "d": 3,
    "q": "A customer paid a premium of $6 for a 40 call. Shortly before expiration the stock trades at $43. The customer says the call should be left alone because it must first recover the $6 premium. Which response is correct?",
    "o": [
-    "Exercising or selling recovers $3 per share, reducing the loss to $3 compared with $6 if the option expires",
-    "The customer is right, because exercise is only worthwhile above the breakeven of 46",
-    "The premium paid must be refunded by the writer if the option is not exercised",
-    "Calls are exercised only when the stock is above the strike plus the premium"
+    "Exercising or selling recovers $3, cutting the loss to $3 instead of $6",
+    "The customer is right, because exercise is only worthwhile once the stock is above the breakeven of 46",
+    "The premium paid is refunded by the writer if the option is not exercised before expiration",
+    "Calls are exercised only when the stock is above the strike plus the premium paid"
    ],
    "a": 0,
    "w": [
@@ -1722,9 +1722,9 @@
    "d": 1,
    "q": "What is the most frequent way an options position ends?",
    "o": [
-    "Expiring worthless",
-    "Exercise by the holder",
-    "Trading it out with a closing transaction",
+    "Expiring worthless on the expiration date",
+    "Exercise by the holder of the option",
+    "Offsetting it with a closing trade",
     "Assignment of a writer by the OCC"
    ],
    "a": 2,
@@ -1742,10 +1742,10 @@
    "d": 1,
    "q": "When must a firm furnish the options disclosure document to a new options customer?",
    "o": [
-    "At or before the time a registered options principal approves the account",
-    "Within 30 days after the first options trade",
-    "On the settlement date of the first trade",
-    "Only when the customer begins writing uncovered options"
+    "At or before the time the account is approved for options trading",
+    "Within 30 days after the first options trade is executed in the account",
+    "On the settlement date of the customer’s first options trade",
+    "Only when the customer first begins writing uncovered options"
    ],
    "a": 0,
    "w": [

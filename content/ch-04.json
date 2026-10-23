@@ -1011,9 +1011,9 @@
    "d": 1,
    "q": "A customer asks how she will eventually sell mutual fund shares she is about to buy. Which statement is accurate?",
    "o": [
-    "She will sell them to another investor on the NYSE",
-    "She will sell them back to the issuing fund, because there is no secondary market",
-    "She will sell them to the sponsor at the public offering price",
+    "She will sell them to another investor on the NYSE at the prevailing market price",
+    "She will sell them back to the issuing fund; there is no secondary market",
+    "She will sell them to the sponsor at the public offering price including the sales charge",
     "She will place a limit order that executes at a price she specifies"
    ],
    "a": 1,
@@ -1171,10 +1171,10 @@
    "d": 1,
    "q": "Which of the following activities is a mutual fund permitted to engage in?",
    "o": [
-    "Selling securities short",
-    "Redeeming its own shares directly from investors",
-    "Buying securities on margin",
-    "Issuing preferred stock to raise capital"
+    "Selling securities short to hedge its portfolio",
+    "Redeeming its shares directly from investors",
+    "Buying securities on margin to leverage returns",
+    "Issuing preferred stock to raise additional capital"
    ],
    "a": 1,
    "w": [
@@ -1271,10 +1271,10 @@
    "d": 2,
    "q": "A client tells her representative that she holds a money market mutual fund and assumes it is FDIC insured because her bank sold it to her. What is the correct response?",
    "o": [
-    "It is insured up to $250,000 because a bank sold it",
-    "It is insured only if the sponsor is an FDIC-insured bank",
-    "It is not FDIC insured, and its $1 NAV is a goal that is not guaranteed",
-    "It is insured only for US individual investors"
+    "It is insured up to $250,000 per depositor because a bank sold it",
+    "It is insured only if the sponsor is an FDIC-insured bank holding company",
+    "It is not FDIC insured, and its $1 NAV is not guaranteed",
+    "It is insured only for US individual investors, not institutions"
    ],
    "a": 2,
    "w": [
@@ -1751,9 +1751,9 @@
    "d": 3,
    "q": "A fund’s sales charge drops at $100,000. Which of the following is a breakpoint sale?",
    "o": [
-    "A representative recommends a $98,000 purchase to a client who has $120,000 to invest, in order to keep the higher commission",
-    "A representative recommends a $120,000 purchase and explains the discount",
-    "A client independently decides to invest $98,000 with no recommendation",
+    "Recommending $98,000 to a client who has $120,000, to earn a higher commission",
+    "A representative recommends a $120,000 purchase and fully explains the available discount",
+    "A client with $120,000 independently decides to invest $98,000 with no recommendation",
     "A representative recommends exactly $100,000 after explaining the discount"
    ],
    "a": 0,
@@ -1791,9 +1791,9 @@
    "d": 3,
    "q": "An investor signs a letter of intent to invest $100,000 over 13 months and receives a reduced sales charge, but invests only $70,000 by the deadline. What happens?",
    "o": [
-    "The LOI is automatically extended by 90 days",
-    "The investor receives a refund of the sales charge already paid",
-    "The fund liquidates escrowed shares to pay the higher sales charge that now applies",
+    "The LOI is automatically extended by 90 days to allow completion",
+    "The investor receives a refund of the sales charge already paid on the shares",
+    "The fund liquidates escrowed shares to pay the higher charge",
     "The investor keeps the lower sales charge on the $70,000 already invested"
    ],
    "a": 2,
@@ -1811,10 +1811,10 @@
    "d": 3,
    "q": "Which of the following counts toward completing a mutual fund letter of intent?",
    "o": [
-    "Appreciation in the value of shares already owned",
-    "Dividends reinvested in the fund",
+    "Appreciation in the value of shares already owned in the fund",
+    "Dividends reinvested in the fund during the period",
     "Capital gains distributions reinvested in the fund",
-    "New cash purchases made within the letter-of-intent period"
+    "New cash purchases made during the 13-month period"
    ],
    "a": 3,
    "w": [
@@ -1991,10 +1991,10 @@
    "d": 2,
    "q": "A representative urges a client to buy a mutual fund two days before the fund pays a large dividend. Why is this practice prohibited?",
    "o": [
-    "The sales charge doubles when shares are purchased before a dividend",
-    "The fund would be unable to pay the dividend to a new shareholder",
-    "The dividend lowers NAV and creates a tax liability for the client, who gives up the chance to buy at the lower NAV",
-    "The dividend is forfeited by shareholders who purchase within five days"
+    "The sales charge doubles when shares are purchased shortly before a dividend is paid",
+    "The fund would be unable to pay the dividend to a shareholder who has just joined",
+    "The dividend lowers NAV and creates a tax bill for a client who could buy cheaper afterward",
+    "The dividend is forfeited by shareholders who purchase within five days of the record date"
    ],
    "a": 2,
    "w": [
@@ -2071,10 +2071,10 @@
    "d": 2,
    "q": "A fund has an NAV of $12.00 per share and a price to the public of $11.40 per share. Based on this pricing alone, what type of fund is it?",
    "o": [
-    "A mutual fund, because mutual funds can be offered below NAV",
-    "A closed-end fund, because only closed-end funds can be priced below NAV",
-    "Either a mutual fund or a closed-end fund",
-    "A no-load mutual fund"
+    "A mutual fund, because mutual funds can be offered below NAV to attract buyers",
+    "A closed-end fund, because only closed-end shares can trade below NAV",
+    "Either a mutual fund or a closed-end fund, depending on the sponsor",
+    "A no-load mutual fund, because it carries no sales charge"
    ],
    "a": 1,
    "w": [
@@ -2131,10 +2131,10 @@
    "d": 2,
    "q": "A closed-end fund’s shares are trading 4% above its NAV. What best explains this?",
    "o": [
-    "The fund is required to redeem shares at a premium",
-    "The fund added a front-end sales charge",
-    "The fund did not calculate NAV that day",
-    "Investor demand for the shares is strong relative to the supply"
+    "The fund is required to redeem shares at a premium to NAV",
+    "The fund added a front-end sales charge to new share purchases",
+    "The fund did not calculate its NAV on that trading day",
+    "Strong investor demand relative to the supply of shares"
    ],
    "a": 3,
    "w": [
@@ -2231,10 +2231,10 @@
    "d": 2,
    "q": "An investor in a unit investment trust needs cash several years before the trust’s termination date. How can she exit?",
    "o": [
-    "Sell the units on a stock exchange",
-    "Redeem the units with the trust, receiving a value based on the underlying holdings",
-    "Request that the fund create a new unit at NAV",
-    "She must wait; UIT units cannot be redeemed early"
+    "Sell the units on a stock exchange at the prevailing market price",
+    "Redeem the units with the trust at a price based on its holdings",
+    "Ask the sponsor to create a new unit for her at the current NAV",
+    "She must wait; UIT units cannot be redeemed before the termination date"
    ],
    "a": 1,
    "w": [
@@ -2251,9 +2251,9 @@
    "d": 1,
    "q": "For a typical exchange-traded fund tracking an index, what usually causes its portfolio holdings to change?",
    "o": [
-    "The manager’s view that a stock is overvalued",
-    "Redemption requests from retail investors",
-    "A vote by the fund’s shareholders",
+    "The manager’s view that a particular stock is overvalued",
+    "Redemption requests submitted directly by retail investors",
+    "A vote by the fund’s shareholders on proposed portfolio changes",
     "A change in the composition of the underlying index"
    ],
    "a": 3,
@@ -2311,10 +2311,10 @@
    "d": 2,
    "q": "Which of the following is a disadvantage of exchange-traded funds?",
    "o": [
-    "They cannot be purchased on margin",
+    "They cannot be purchased on margin or sold short",
     "They carry higher management fees than actively managed funds",
-    "Their liquidity may encourage overtrading and increase commission costs",
-    "They cannot be sold during the trading day"
+    "Easy trading may encourage overtrading and raise commissions",
+    "They cannot be sold during the trading day, only at the close"
    ],
    "a": 2,
    "w": [
@@ -2371,10 +2371,10 @@
    "d": 3,
    "q": "Which of the following can an investor buy with borrowed funds in a margin account?",
    "o": [
-    "Newly issued mutual fund shares",
-    "Shares of a no-load money market fund",
+    "Newly issued mutual fund shares bought from the sponsor",
+    "Shares of a no-load money market fund sold by a broker",
     "Closed-end fund shares trading on an exchange",
-    "Shares of an index mutual fund"
+    "Shares of an index mutual fund that tracks the S&P 500"
    ],
    "a": 2,
    "w": [
@@ -2432,9 +2432,9 @@
    "q": "A mutual fund shareholder is said to hold an undivided interest in the fund. What does this mean?",
    "o": [
     "Ownership of the specific securities the shareholder chooses",
-    "Ownership of a proportionate share of every security in the portfolio",
-    "A creditor’s claim for repayment of principal from the fund",
-    "The right to vote on each trade the adviser makes"
+    "A proportionate share of every security in the portfolio",
+    "A creditor’s claim for repayment of principal and interest from the fund",
+    "The right to vote on each trade the adviser makes for the portfolio"
    ],
    "a": 1,
    "w": [
@@ -2471,10 +2471,10 @@
    "d": 2,
    "q": "Which investor is LEAST well served by a money market fund?",
    "o": [
-    "A saver who wants growth that outpaces inflation over 25 years",
-    "A buyer holding a down payment for a home purchase",
-    "An investor who needs to access cash quickly",
-    "A client who values price stability above all else"
+    "A saver seeking long-term growth that beats inflation",
+    "A buyer holding a down payment for a home purchase next year",
+    "An investor who needs to access cash quickly without penalty",
+    "A client who values price stability above all other goals"
    ],
    "a": 0,
    "w": [

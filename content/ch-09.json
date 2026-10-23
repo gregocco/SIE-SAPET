@@ -778,15 +778,15 @@
    "d": 1,
    "q": "The Securities Exchange Act of 1934 is primarily concerned with which of the following?",
    "o": [
-    "Registration of new issues sold to the public for the first time",
-    "Trading of securities between investors and the registration of broker-dealers and their representatives",
-    "Setting the dividend policy of listed companies",
-    "Establishing the maximum price at which an issuer may sell new shares"
+    "Registration of new issues sold to the public by issuers for the first time, with prospectus delivery",
+    "Trading of securities between investors and registration of broker-dealers and their representatives",
+    "Regulating the dividend policy and payment dates that listed companies must follow each year",
+    "Establishing the maximum price at which an issuer may sell new shares in an initial public offering"
    ],
    "a": 1,
    "w": [
     "Wrong: new-issue registration belongs to the primary market, which is governed by the ’33 Act, not the ’34 Act.",
-    "Correct: the ’34 Act governs the secondary market and requires participants such as broker-dealers and their reps to be registered.",
+    "Correct: the ’34 Act governs the secondary market and requires participants such as broker-dealers and their representatives to be registered.",
     "Wrong: the ’34 Act does not dictate what dividends a listed company pays to shareholders.",
     "Wrong: pricing of new issues is not set by the ’34 Act, which concerns secondary trading and anti-fraud."
    ]
@@ -818,15 +818,15 @@
    "d": 2,
    "q": "A registered representative knows that a company has just lost its largest customer, a fact not yet public. When recommending the stock she describes only its strong earnings and says nothing about the lost customer. Which statement is most accurate?",
    "o": [
-    "This is a violation because intentionally omitting a material fact is as misleading as misstating one",
-    "There is no violation because the information is not yet public",
-    "There is no violation because every statement she made was true",
-    "This is a violation only if the client actually loses money"
+    "This is a violation because deliberately omitting a material fact is as misleading as lying",
+    "There is no violation because the information is not yet public and no one has traded on it",
+    "There is no violation because every statement she made about the earnings was true",
+    "This is a violation only if the client actually loses money after buying the stock"
    ],
    "a": 0,
    "w": [
     "Correct: the anti-fraud provisions cover omissions of material facts, and deliberate withholding is as misleading as a false statement.",
-    "Wrong: non-public status does not excuse the omission; the issue is that the client lacks material information for the decision.",
+    "Wrong: non-public status does not excuse the omission; the issue is that the client lacks material information needed for the decision.",
     "Wrong: true statements do not cure the problem when a material fact is deliberately left out of the discussion.",
     "Wrong: the violation is the deceptive omission itself; a resulting loss only matters for damages, not for whether a violation occurred."
    ]
@@ -838,17 +838,17 @@
    "d": 2,
    "q": "The anti-fraud provisions of the Securities Exchange Act of 1934 prohibit all of the following EXCEPT:",
    "o": [
-    "an untrue statement of a material fact",
-    "an omission of a material fact",
-    "a dealer selling a security to a customer from its own inventory at a disclosed, reasonable mark-up",
-    "a misrepresentation of a material fact"
+    "an untrue statement of a material fact made to induce a purchase",
+    "an omission of a material fact that makes other statements misleading",
+    "a dealer selling from its own inventory at a disclosed, reasonable mark-up",
+    "a misrepresentation of a material fact to a customer or the market"
    ],
    "a": 2,
    "w": [
-    "Wrong: untrue statements of material fact are specifically prohibited by the anti-fraud provisions.",
-    "Wrong: omitting material facts is expressly prohibited as a form of deception.",
+    "Wrong: untrue statements of material fact, including those made to induce a purchase, are specifically prohibited by the anti-fraud provisions.",
+    "Wrong: omitting material facts that make other statements misleading is expressly prohibited as a form of deception.",
     "Correct: principal trades with a fair mark-up are a normal dealer activity, so this is the one item that is not prohibited.",
-    "Wrong: misrepresenting material facts is prohibited just like outright false statements."
+    "Wrong: misrepresenting material facts to customers or the market is prohibited just like outright false statements."
    ]
   },
   {
@@ -881,7 +881,7 @@
     "Firm Z owns the stock briefly and earns a mark-up",
     "Firm Z acts as principal and charges a mark-down to Customer B",
     "Firm Z may charge a commission to Customer A and a mark-up to Customer B",
-    "Firm Z acts as agent, never owns the stock, and charges each customer a commission"
+    "Firm Z acts as agent and charges each customer a commission"
    ],
    "a": 3,
    "w": [
@@ -898,16 +898,16 @@
    "d": 2,
    "q": "A dealer sells shares to a client from inventory at a price that includes a mark-up and then also bills the client a separate commission on the same trade. This conduct is:",
    "o": [
-    "acceptable if the client is told in writing beforehand",
-    "a violation, because a firm cannot be both broker and dealer in the same transaction",
-    "acceptable if the trade is for a block of 10,000 shares or more",
-    "acceptable if the combined charge is under 5%"
+    "acceptable if the client is told in writing beforehand and signs an acknowledgment",
+    "a violation, because a firm cannot act as both broker and dealer in one trade",
+    "acceptable if the trade is for a block of 10,000 shares or more at a negotiated price",
+    "acceptable if the combined charge stays under the 5% guideline"
    ],
    "a": 1,
    "w": [
-    "Wrong: written disclosure does not turn a prohibited dual capacity into a permitted one.",
+    "Wrong: written disclosure and a signed acknowledgment do not turn a prohibited dual capacity into a permitted one.",
     "Correct: a firm is either the customer’s counterparty or the matchmaker; charging both a mark-up and a commission is a hidden-profit violation.",
-    "Wrong: trade size has no bearing on the rule against acting as both broker and dealer.",
+    "Wrong: trade size and negotiated pricing have no bearing on the rule against acting as both broker and dealer.",
     "Wrong: the 5% guideline concerns reasonableness of charges, but it does not allow mixing the two capacities."
    ]
   },
@@ -958,17 +958,17 @@
    "d": 2,
    "q": "Which statement about FINRA’s 5% policy is most accurate?",
    "o": [
-    "It applies only to commissions and never to mark-ups",
-    "It is a hard cap, and no mark-up or commission may ever exceed 5%",
-    "It is a guideline, and a higher charge may be justified for an illiquid or hard-to-fill order",
-    "It sets the minimum commission a broker-dealer must charge"
+    "It applies only to commissions on agency trades and never to mark-ups",
+    "It is a hard cap, and no mark-up, mark-down or commission may ever exceed 5%",
+    "It is a guideline, and a higher charge may be justified for an illiquid security",
+    "It sets the minimum commission a broker-dealer must charge on each customer trade"
    ],
    "a": 2,
    "w": [
-    "Wrong: the guide covers mark-ups, mark-downs and commissions alike.",
+    "Wrong: the guide covers mark-ups, mark-downs and commissions alike, not just commissions on agency trades.",
     "Wrong: the policy is described as a guide, not a hard-and-fast rule, so exceeding 5% is not automatically a violation.",
     "Correct: circumstances such as a risky trade, an illiquid security or an expensive order to fill can justify more than 5%.",
-    "Wrong: it concerns the maximum reasonable amount, not a minimum charge."
+    "Wrong: it concerns the maximum reasonable amount a firm may charge, not a minimum charge on each customer trade."
    ]
   },
   {
@@ -978,16 +978,16 @@
    "d": 3,
    "q": "When setting fair prices and commissions, a firm must consider all of the following factors EXCEPT:",
    "o": [
-    "the type of security involved",
-    "the dollar size of the transaction",
-    "the expense of filling the order",
-    "the firm’s entitlement to a profit when it is acting as agent"
+    "the type of security being bought or sold",
+    "the dollar size of the transaction itself",
+    "the expense the firm incurs in filling the order",
+    "the firm’s right to a profit when acting as agent"
    ],
    "a": 3,
    "w": [
-    "Wrong: the type of security is one of the listed factors in judging fairness of the charge.",
+    "Wrong: the type of security is one of the listed factors in judging whether a charge is fair.",
     "Wrong: dollar size matters because larger orders should receive some consideration on cost.",
-    "Wrong: the expense involved in filling the order is a recognized factor.",
+    "Wrong: the expense the firm incurs in filling the order is a recognized factor in judging a fair charge.",
     "Correct: the firm’s right to a profit is relevant only to principal trades, not to a commission in an agency transaction."
    ]
   },
@@ -1138,16 +1138,16 @@
    "d": 2,
    "q": "Two Nasdaq market makers in the same stock agree over lunch to keep their quotes at identical prices for the rest of the week. This is:",
    "o": [
-    "acceptable, because both are registered market makers",
-    "acceptable, because the quotes remain firm",
-    "prohibited only if the stock is a penny stock",
-    "prohibited, because discussing or colluding on pricing is market manipulation"
+    "acceptable, because both are registered market makers in the stock",
+    "acceptable, because both firms keep their quotes firm at all times",
+    "prohibited only if the stock trades below $5 per share",
+    "prohibited, because colluding on pricing is market manipulation"
    ],
    "a": 3,
    "w": [
-    "Wrong: being registered does not allow market makers to agree on how to price a security.",
-    "Wrong: firm quotes do not cure collusion; the problem is the agreement on prices.",
-    "Wrong: the prohibition applies to all securities, not only penny stocks.",
+    "Wrong: being registered market makers in the stock does not allow them to agree on how to price a security.",
+    "Wrong: firm quotes do not cure collusion; the problem is the agreement on prices between the two firms.",
+    "Wrong: the prohibition applies to all securities, not only low-priced or penny stocks.",
     "Correct: market makers may not discuss or collude on pricing, which would violate the ’34 Act as manipulation."
    ]
   },
@@ -1198,16 +1198,16 @@
    "d": 2,
    "q": "Which statement correctly compares the NYSE and Nasdaq?",
    "o": [
-    "The NYSE has one DMM per stock, while Nasdaq has no DMMs and relies on multiple market makers",
+    "The NYSE has one DMM per stock, while Nasdaq relies on multiple market makers",
     "Nasdaq is the world’s largest exchange and the NYSE is the second largest",
-    "Both exchanges use designated market makers on a trading floor",
+    "Both exchanges use designated market makers who work on a physical trading floor",
     "Nasdaq uses a single DMM per stock and the NYSE uses several competing market makers"
    ],
    "a": 0,
    "w": [
     "Correct: the NYSE assigns exactly one human DMM per stock, whereas Nasdaq is fully electronic with many market makers and no DMM.",
     "Wrong: the NYSE is the largest in the world and Nasdaq is second largest.",
-    "Wrong: Nasdaq has no trading floor and no DMM-like figure.",
+    "Wrong: Nasdaq has no physical trading floor and no DMM-like figure, so only the NYSE fits this description.",
     "Wrong: this reverses the two structures; the single DMM model belongs to the NYSE."
    ]
   },
@@ -1218,16 +1218,16 @@
    "d": 2,
    "q": "All of the following describe the New York Stock Exchange EXCEPT:",
    "o": [
-    "it operates as an auction market",
+    "it operates as an auction market where buyers and sellers compete",
     "it conducts floor trading and electronic trading simultaneously",
-    "each listed security has a designated market maker",
-    "it has no central trading location and all trades occur electronically"
+    "each listed security has a single designated market maker",
+    "it has no central location and all trades occur electronically"
    ],
    "a": 3,
    "w": [
-    "Wrong: the NYSE does operate as an auction marketplace, so this is a true description.",
+    "Wrong: the NYSE does operate as an auction marketplace where buyers and sellers compete, so this is a true description.",
     "Wrong: the NYSE runs physical floor trading and electronic trading of the same securities at once.",
-    "Wrong: every NYSE-listed security has one DMM, so this statement is accurate.",
+    "Wrong: every NYSE-listed security has a single DMM, so this statement is accurate.",
     "Correct: having no central location with fully electronic trading describes Nasdaq, not the NYSE, which has a physical floor."
    ]
   },
@@ -1258,17 +1258,17 @@
    "d": 1,
    "q": "Why are bid–ask spreads on OTC equities often much wider than those of exchange-listed stocks?",
    "o": [
-    "Because OTC securities are more liquid",
-    "Because OTC securities are exempt from the ’34 Act",
-    "Because OTC securities are traded less and have no centralized venue",
-    "Because OTC securities are quoted only by the exchange"
+    "Because OTC securities are more liquid and trade more frequently",
+    "Because OTC securities are exempt from SEC oversight under the ’34 Act",
+    "Because OTC securities trade less and have no centralized venue",
+    "Because OTC securities are quoted only by a single exchange’s DMM"
    ],
    "a": 2,
    "w": [
-    "Wrong: OTC equities are generally less liquid, not more, which is what widens the spread.",
-    "Wrong: OTC markets are subject to SEC oversight under the ’34 Act.",
+    "Wrong: OTC equities are generally less liquid and trade less often, not more, which is what widens the spread.",
+    "Wrong: OTC markets are subject to SEC oversight under the ’34 Act, so exemption is not the reason for wide spreads.",
     "Correct: fewer shares trade and there is no central marketplace, so spreads widen, indicating higher volatility.",
-    "Wrong: OTC quotes are displayed on OTC quotation venues, not by an exchange."
+    "Wrong: OTC quotes are displayed on OTC quotation venues by market makers, not by an exchange’s DMM."
    ]
   },
   {
@@ -1279,16 +1279,16 @@
    "q": "Which statement best describes the requirements for an issuer’s equity to be quoted on the OTC Bulletin Board?",
    "o": [
     "It must meet a minimum share price and minimum number of shareholders",
-    "It must be registered under the ’33 Act and file ’34 Act reports such as 10-Ks and 10-Qs",
-    "It has no requirements at all",
-    "It must be listed on Nasdaq first"
+    "It must have ’33 Act registered shares and file ’34 Act reports (10-Ks, 10-Qs)",
+    "It has no requirements at all, so any issuer may be quoted without SEC filings",
+    "It must be listed on Nasdaq first and meet that exchange’s listing standards"
    ],
    "a": 1,
    "w": [
     "Wrong: the OTCBB has no minimum stock price or minimum number of shareholders, unlike national exchanges.",
     "Correct: the basic requirement is registered shares under the ’33 Act and ongoing ’34 Act disclosure through 10-Ks and 10-Qs.",
     "Wrong: although listing standards are absent, the issuer must still file current financial reports with the SEC.",
-    "Wrong: OTCBB securities are non-exchange securities and need no prior Nasdaq listing."
+    "Wrong: OTCBB securities are non-exchange securities and need no prior Nasdaq listing or compliance with its standards."
    ]
   },
   {
@@ -1318,15 +1318,15 @@
    "d": 2,
    "q": "A client wants to buy 1,000 shares of a company that trades on OTC Pink after hearing a tip. What should the representative tell the client?",
    "o": [
-    "The stock is guaranteed two-sided quotes at all times",
-    "The company must meet strict listing standards to be quoted",
+    "The stock is guaranteed two-sided quotes at all times from several market makers",
+    "The company must meet strict listing standards and a minimum share price to be quoted",
     "The company must file periodic reports with the SEC, so information is easy to find",
-    "The stock may be thinly traded and reliable information about the company may be hard to find"
+    "The stock may be thinly traded and reliable company information may be hard to find"
    ],
    "a": 3,
    "w": [
-    "Wrong: OTC Pink quotes may be one-sided, so two-sided quotes are not guaranteed.",
-    "Wrong: OTC Pink has no formal listing requirements.",
+    "Wrong: OTC Pink quotes may be one-sided, so two-sided quotes from several market makers are not guaranteed.",
+    "Wrong: OTC Pink has no formal listing requirements and no minimum share price.",
     "Wrong: OTC Pink companies do not have to file periodic reports or audited financials with the SEC.",
     "Correct: many OTC Pink companies are tiny, closely held or thinly traded, with limited and unreliable public information."
    ]
@@ -1358,17 +1358,17 @@
    "d": 3,
    "q": "A market maker posts a bid of $1.05 for Security A on OTC Pink while simultaneously posting a bid of $1.12 for Security A on another OTC venue. Which statement is correct?",
    "o": [
-    "This is permitted because each venue is a separate market",
-    "This violates the requirement that quotes for the same security on multiple OTC venues be the same",
+    "This is permitted because each venue is a separate market with its own order book",
+    "This violates the rule that quotes for one security on multiple OTC venues be identical",
     "This is permitted if the market maker’s quote on each venue is at least one round lot",
-    "This is a third-market transaction"
+    "This is a third-market transaction, because the quotes are displayed away from an exchange"
    ],
    "a": 1,
    "w": [
-    "Wrong: separate venues do not allow different quotes from the same market maker for the same security.",
+    "Wrong: separate venues and separate order books do not allow different quotes from the same market maker for the same security.",
     "Correct: FINRA Rule 6438 requires a market maker quoting the same security on multiple OTC venues to quote the same prices.",
     "Wrong: quote size does not solve the problem; the rule is about price consistency across venues.",
-    "Wrong: the third market refers to exchange-listed securities traded OTC, which is not described here."
+    "Wrong: the third market refers to exchange-listed securities traded OTC, and nothing here describes such a transaction."
    ]
   },
   {
@@ -1420,14 +1420,14 @@
    "o": [
     "It acts as a passive agent that matches orders automatically",
     "It can operate 24 hours per day, seven days per week",
-    "It accepts orders only from its subscribers",
-    "It buys and sells for its own account from inventory to fill orders"
+    "It accepts orders only from its subscribers, such as broker-dealers",
+    "It buys and sells for its own account from inventory"
    ],
    "a": 3,
    "w": [
     "Wrong: ECNs are passive systems acting as agents, so this is a true feature.",
     "Wrong: ECNs may operate around the clock, so this describes a real feature.",
-    "Wrong: only subscribers, such as broker-dealers and large institutions, may place orders.",
+    "Wrong: only subscribers, such as broker-dealers and large institutions, may place orders, so this is a true feature.",
     "Correct: trading from inventory is a dealer function; an ECN only matches orders between its members."
    ]
   },
@@ -1598,14 +1598,14 @@
    "d": 2,
    "q": "A stock trades at $23. A client tells her representative: “Sell 100 shares at $25.” What type of order is this, and what will happen?",
    "o": [
-    "A market order that executes immediately at $23",
-    "A sell limit entered above the market that fills only if the stock trades at $25 or higher",
+    "A market order that executes immediately at the current $23 price",
+    "A sell limit above the market that fills only at $25 or higher",
     "A sell stop entered above the market that triggers at $25",
     "A buy limit that fills at the first price below $25"
    ],
    "a": 1,
    "w": [
-    "Wrong: naming a specific price turns the instruction into a limit order, not a market order.",
+    "Wrong: naming a specific price turns the instruction into a limit order, not a market order that fills at $23.",
     "Correct: a stated price means a limit order; as a sell limit above the current market it waits until $25 or better is available.",
     "Wrong: a sell stop is entered below the market and becomes a market order when triggered, which is not the instruction given.",
     "Wrong: the client wants to sell, so this is a sell order rather than a buy limit."
@@ -1618,17 +1618,17 @@
    "d": 2,
    "q": "What is a market-on-close order?",
    "o": [
-    "An order executed immediately at the opening price",
-    "A stop order that triggers at the close",
-    "An order held and executed near the end of trading as close to the closing price as possible",
-    "An order that is cancelled if not filled by the close"
+    "An order executed at the opening price of the following trading day",
+    "A stop order that triggers when the stock reaches the closing price",
+    "An order held and executed as close to the closing price as possible",
+    "An order that is cancelled if it is not filled by the end of the day"
    ],
    "a": 2,
    "w": [
-    "Wrong: execution at the open is the opposite timing of what market-on-close describes.",
-    "Wrong: a market-on-close order does not wait for a stop price to trigger.",
+    "Wrong: execution at the next open is the opposite timing of what market-on-close describes.",
+    "Wrong: a market-on-close order does not wait for a stop price to trigger; it is simply executed at the close.",
     "Correct: the order is held until late in the session and executed as close to the closing price as possible.",
-    "Wrong: cancellation at the end of the day describes the fate of an unfilled day order."
+    "Wrong: cancellation at the end of the day describes the fate of an unfilled day order, not a market-on-close order."
    ]
   },
   {
@@ -1638,16 +1638,16 @@
    "d": 2,
    "q": "What happens when the market price reaches the stop price of a stop order?",
    "o": [
-    "The order executes only at exactly the stop price",
-    "The order becomes a limit order at the stop price",
-    "The order is cancelled",
-    "The order becomes a market order and executes at the best available price"
+    "The order executes only at exactly the stop price or at a better price",
+    "The order becomes a limit order at the stop price and waits for a fill",
+    "The order is cancelled and the customer must re-enter it",
+    "The order becomes a market order and fills at the best available price"
    ],
    "a": 3,
    "w": [
-    "Wrong: because it becomes a market order, the fill can be above or below the stop price.",
-    "Wrong: a triggered stop order converts to a market order, not a limit order.",
-    "Wrong: reaching the stop price activates the order rather than cancelling it.",
+    "Wrong: because it becomes a market order, the fill can be above or below the stop price, not only at it or better.",
+    "Wrong: a triggered stop order converts to a market order, not a limit order that waits at the stop price.",
+    "Wrong: reaching the stop price activates the order rather than cancelling it, so no re-entry is needed.",
     "Correct: the stop price is only a trigger; once reached, the order converts to a market order and fills at the best available price."
    ]
   },
@@ -1859,15 +1859,15 @@
    "q": "A firm handles a customer’s 2,000-share order. Which of the following practices would be permitted under FINRA’s order-splitting rule?",
    "o": [
     "Dividing the order into twenty 100-share orders so it can charge twenty commissions",
-    "Dividing the order mainly to increase the firm’s total payments",
-    "Dividing the order into smaller pieces because the firm believes smaller orders will fill faster and at better prices",
+    "Dividing the order mainly to increase the firm’s total payments or fees",
+    "Dividing the order into smaller pieces to obtain faster, better executions",
     "Dividing the order so that a related broker-dealer can act as principal on each piece"
    ],
    "a": 2,
    "w": [
     "Wrong: splitting solely to collect more commissions is the classic prohibited trade-shredding.",
     "Wrong: splitting with the primary purpose of increasing payments is prohibited by Rule 5290.",
-    "Correct: splitting for legitimate reasons such as obtaining better and faster execution is allowed.",
+    "Correct: splitting for legitimate reasons such as obtaining better and faster execution is allowed under the order-splitting rule.",
     "Wrong: adding principal intermediaries with no benefit would be interpositioning and a fee-driven split."
    ]
   },
@@ -1938,16 +1938,16 @@
    "d": 3,
    "q": "A broker-dealer holds an unexecuted customer order to buy 3,000 shares of a stock at a limit of $18.50. The firm buys 1,000 shares for its own inventory at $18.50. What must the firm do to comply with FINRA’s rule on trading ahead of customer orders?",
    "o": [
-    "Nothing, since the customer’s limit has not yet been reached",
-    "Fill the customer’s entire 3,000 shares within 60 seconds",
-    "Fill the customer’s order for at least 1,000 shares at $18.50 or better within 60 seconds",
+    "Nothing, since the customer’s limit has not yet been reached by the market",
+    "Fill the customer’s entire 3,000 shares at $18.50 within 60 seconds",
+    "Fill at least 1,000 shares of the customer’s order at $18.50 or better",
     "Cancel the customer’s order and notify the customer within 10 seconds"
    ],
    "a": 2,
    "w": [
-    "Wrong: the firm traded at a price equal to the customer’s limit, which triggers the obligation.",
+    "Wrong: the firm traded at a price equal to the customer’s limit, which triggers the obligation to protect the customer.",
     "Wrong: the requirement is at least the number of shares the firm bought for itself, not the whole order.",
-    "Correct: the firm must immediately, within 60 seconds, fill the customer at the same or better price for at least the number of shares it bought, here 1,000.",
+    "Correct: the firm must promptly fill the customer at the same or better price for at least the number of shares it bought, here 1,000.",
     "Wrong: cancelling is not the remedy; the firm must execute the customer’s order, and the clock is 60 seconds."
    ]
   },
@@ -1979,15 +1979,15 @@
    "q": "A firm’s research department is about to publish a favorable report on XYZ Corp. A trader at the same firm, who has heard about it, buys call options on XYZ for the firm’s own inventory before the report is released. Which statement is correct?",
    "o": [
     "This is permitted because the trade is in options rather than in stock",
-    "This is acceptable if the trader tells the customers afterwards",
-    "This is permitted because the trade is for the firm’s own account",
-    "This violates the rule on trading ahead of research reports, which also covers derivatives"
+    "This is acceptable if the trader tells the customers afterwards in writing",
+    "This is permitted because the trade is for the firm’s own account, not a customer’s",
+    "This violates the rule on trading ahead of research, which covers derivatives"
    ],
    "a": 3,
    "w": [
     "Wrong: the rule covers the security and derivatives of the issuer, such as call options.",
-    "Wrong: after-the-fact disclosure does not cure trading on nonpublic research information.",
-    "Wrong: the rule is aimed precisely at the firm trading from its own inventory.",
+    "Wrong: after-the-fact disclosure, even in writing, does not cure trading on nonpublic research information.",
+    "Wrong: the rule is aimed precisely at the firm trading from its own inventory, so own-account status is no defense.",
     "Correct: establishing, increasing or decreasing inventory positions in a security or derivative ahead of a research report is prohibited under Rule 5280."
    ]
   },
@@ -1998,17 +1998,17 @@
    "d": 2,
    "q": "An investor buys a stock on one exchange at a low price and immediately resells it on another exchange at a higher price. How is this activity treated?",
    "o": [
-    "Marking the close",
-    "Spoofing",
+    "Marking the close, since the resale moved the price",
+    "Spoofing, since orders were entered on two exchanges",
     "Arbitrage, which is not considered manipulation",
-    "A pump and dump"
+    "A pump and dump, since the price rose between venues"
    ],
    "a": 2,
    "w": [
     "Wrong: marking the close involves orders entered near the close to move the closing price, which did not occur.",
-    "Wrong: spoofing involves orders without intent to execute, but both trades here were real.",
+    "Wrong: spoofing involves orders without intent to execute, but both trades here were real and were completed.",
     "Correct: taking advantage of a temporary price disparity is arbitrage and is not manipulation.",
-    "Wrong: a pump and dump relies on exaggerated or misleading hype, which is absent."
+    "Wrong: a pump and dump relies on exaggerated or misleading hype, which is absent from a simple price-disparity trade."
    ]
   },
   {
@@ -2018,16 +2018,16 @@
    "d": 2,
    "q": "The CEO of an issuer offers a trader at a broker-dealer a generous gift of stock if the firm agrees to begin quoting and making a market in the issuer’s shares. What is the correct analysis?",
    "o": [
-    "It is permitted if the gift is disclosed to the firm’s principal",
-    "It is prohibited because a firm may not accept direct or indirect payment from an issuer, its affiliates or promoters for making a market",
-    "It is permitted if the stock is traded on the OTC Bulletin Board",
-    "It is permitted if the market maker quotes at least one round lot"
+    "It is permitted if the gift is disclosed to the firm’s principal and approved by compliance",
+    "It is prohibited, because issuers and promoters may not pay a firm to make a market",
+    "It is permitted if the stock is quoted on the OTC Bulletin Board rather than an exchange",
+    "It is permitted if the market maker quotes at least one round lot on each side"
    ],
    "a": 1,
    "w": [
-    "Wrong: disclosure does not make an issuer payment for market making acceptable.",
+    "Wrong: disclosure and approval do not make an issuer payment for market making acceptable.",
     "Correct: FINRA Rule 5250 bars direct or indirect payments, including securities, from issuers, affiliates or promoters in return for quoting or making a market.",
-    "Wrong: the venue does not change the rule against accepting such payments.",
+    "Wrong: the venue does not change the rule against accepting such payments for making a market.",
     "Wrong: quote size is irrelevant to the conflict of interest the rule prevents."
    ]
   },
@@ -2058,17 +2058,17 @@
    "d": 2,
    "q": "A trader at Firm A tells a trader at Firm B that if Firm B does not raise its quote in a stock, Firm A will stop sending it order flow. Which rule is implicated?",
    "o": [
-    "Best execution rules on interpositioning",
-    "The rule on trading ahead of research reports",
-    "The anti-coordination and anti-intimidation rule, which bars threatening another member to alter a price or quote",
-    "The requirement to report trades within 10 seconds"
+    "Best execution rules on interpositioning, which bar adding an unnecessary firm",
+    "The rule on trading ahead of research reports, which bars trading before publication",
+    "The anti-coordination and anti-intimidation rule, which bars threatening another member",
+    "The requirement to report trades within 10 seconds of execution to FINRA"
    ],
    "a": 2,
    "w": [
-    "Wrong: interpositioning concerns adding an unnecessary broker-dealer to a customer trade.",
-    "Wrong: research-report rules concern trading ahead of published research, which is not involved.",
+    "Wrong: interpositioning concerns adding an unnecessary broker-dealer to a customer trade, which is not the threat described here.",
+    "Wrong: research-report rules concern trading ahead of published research, which is not involved in threatening another firm.",
     "Correct: FINRA Rule 5240 requires independent quoting and prohibits directing, requesting or threatening another member to change a price or quote.",
-    "Wrong: trade reporting deadlines are unrelated to pressuring another firm’s quotes."
+    "Wrong: trade reporting deadlines are unrelated to pressuring another firm’s quotes by threatening to withdraw order flow."
    ]
   },
   {
@@ -2078,10 +2078,10 @@
    "d": 2,
    "q": "Which statement describes a DVP/RVP account?",
    "o": [
-    "An account that lets retail customers trade after hours on an ECN",
-    "A retail margin account that holds securities as loan collateral",
-    "A discretionary account managed by the representative",
-    "An institutional account used to settle trades by delivery or receipt versus payment, which does not hold securities positions"
+    "An account that lets retail customers trade after hours directly on an ECN with other subscribers",
+    "A retail margin account that holds the customer’s securities as collateral for a loan from the firm",
+    "A discretionary account in which the representative decides what to buy and sell without asking",
+    "An institutional account that settles trades delivery or receipt versus payment and holds no positions"
    ],
    "a": 3,
    "w": [
@@ -2178,14 +2178,14 @@
    "d": 2,
    "q": "Which condition is needed for a broker-dealer to execute a trade as agent?",
    "o": [
-    "The firm must be the registered market maker in the security",
-    "The firm must first buy the shares for its own inventory",
-    "Two other market participants willing to transact on the same terms at the same time",
-    "The customer must pay a mark-up instead of a commission"
+    "The firm must be the registered market maker in the security and quote it",
+    "The firm must first buy the shares for its own inventory at the bid",
+    "Two other participants willing to transact on the same terms at the same time",
+    "The customer must pay a mark-up instead of a commission to the firm"
    ],
    "a": 2,
    "w": [
-    "Wrong: market-maker status is not required for matching two customers as agent.",
+    "Wrong: market-maker status is not required for matching two customers as agent, since the firm never trades for itself.",
     "Wrong: buying into inventory is what a dealer does in a principal trade, and an agent never owns the security.",
     "Correct: an agency trade needs a willing buyer and a willing seller, other than the firm, on agreeable terms at the same time.",
     "Wrong: a mark-up belongs to principal trades, while agency trades are paid by commission."

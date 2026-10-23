@@ -46,10 +46,10 @@
   "d": 3,
   "q": "On a single business day, a brokerage customer deposits $4,000 in currency, a $3,100 cashier’s check, and a $2,900 traveler’s check. The customer made no other deposits that day. What is the firm’s CTR obligation?",
   "o": [
-   "A CTR must be filed with FinCEN within 15 days because the total reaches $10,000",
+   "A CTR must be filed with FinCEN within 15 days because the total reaches the $10,000 threshold",
    "A CTR must be filed with FinCEN within 30 days because the deposits were in different forms",
-   "No CTR is required because the cash-type deposits total exactly $10,000, which does not exceed the threshold",
-   "A SAR must be filed in every case because the total sits right at the CTR threshold"
+   "No CTR is required because the cash-type deposits total exactly $10,000, not in excess of it",
+   "A SAR must be filed in every case because the total sits right at the $10,000 CTR threshold"
   ],
   "a": 2,
   "w": [
@@ -106,10 +106,10 @@
   "d": 3,
   "q": "A registered rep joins a new firm. She already holds a stock trading account at Firm X and a mutual-fund-only account at Firm Y. What does FINRA Rule 3210 require of her?",
   "o": [
-   "Written consent from the new employer within 30 calendar days for the stock account only; the fund-only account is not covered",
-   "Written consent from the new employer within 30 calendar days for both accounts",
-   "Written approval from FINRA for the stock account before her association begins",
-   "Nothing, because both accounts were opened before she joined the new firm"
+   "Written consent from the new employer within 30 days for the stock account, but not the fund-only account",
+   "Written consent from the new employer within 30 calendar days for both the stock and fund-only accounts",
+   "Written approval from FINRA for the stock account before her association begins, with notice to Firm X",
+   "Nothing, because both accounts were opened before she joined the new firm and are grandfathered"
   ],
   "a": 0,
   "w": [
@@ -148,8 +148,8 @@
   "o": [
    "Only the municipal firm itself, not its representatives, may open a joint account with a customer",
    "Neither a municipal firm nor its representatives may ever open a joint account with a customer",
-   "Only registered representatives, not municipal firms themselves, may open joint investment accounts with customers",
-   "A firm and a representative may both open one, provided only the customer consents"
+   "Only registered representatives, not municipal firms themselves, may open joint accounts with customers",
+   "A firm and a representative may both open one, provided only the customer consents in writing and sharing is proportionate"
   ],
   "a": 2,
   "w": [
@@ -166,10 +166,10 @@
   "d": 3,
   "q": "Dana is not an MFP and contributes $500 to the campaign of a mayoral candidate in a city where she is entitled to vote. Fourteen months later she is promoted into a role that makes her an MFP, and the candidate is now the mayor, an official of an issuer. What is the effect on her firm under G-37?",
   "o": [
-   "The firm is not banned because Dana was entitled to vote for the candidate",
-   "The firm is not subject to any ban because Dana was not an MFP when she contributed",
-   "The firm is banned from both competitive and negotiated business with that issuer",
-   "The firm is subject to the ban on negotiated business with that issuer because of the two-year look-back"
+   "The firm is not banned because Dana was entitled to vote for the candidate in the election",
+   "The firm is not subject to any ban because Dana was not an MFP when she made the contribution",
+   "The firm is banned from both competitive and negotiated business with that issuer for two years",
+   "The firm is banned from negotiated business with that issuer because of the two-year look-back"
   ],
   "a": 3,
   "w": [

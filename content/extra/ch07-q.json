@@ -6,10 +6,10 @@
   "d": 2,
   "q": "Which of the following is NOT typically requested on the investor profile completed to satisfy the know-your-customer obligation under FINRA Rule 2090?",
   "o": [
-   "Number of dependents and employment status",
-   "The registered representative’s own personal brokerage holdings",
-   "Annual income, net worth and tax status",
-   "Investment objectives and time horizon"
+   "Number of dependents, employment status and relationship status",
+   "The representative’s own personal brokerage holdings",
+   "Annual income, net worth and tax status of the customer",
+   "Investment objectives, time horizon and risk tolerance"
   ],
   "a": 1,
   "w": [
@@ -126,10 +126,10 @@
   "d": 2,
   "q": "A fund manager believes the market may suffer a short-term drop. Which approach is consistent with an asset allocation strategy described in the chapter?",
   "o": [
-   "Add small-cap stocks now to capture growth",
+   "Add small-cap stocks now to capture growth if the market holds up",
    "Move the excess into direct participation programs",
-   "Switch the portfolio into high-yield bonds",
-   "Hold the excess in cash and cash equivalents, then buy after the market drops"
+   "Switch the portfolio into high-yield bonds to earn higher income",
+   "Hold the excess in cash equivalents, then buy after the market drops"
   ],
   "a": 3,
   "w": [

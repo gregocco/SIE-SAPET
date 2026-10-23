@@ -915,15 +915,15 @@
    "d": 2,
    "q": "An analyst takes a colleague’s deal file from a desk, learns an acquisition is pending, and buys the target’s stock. Nobody told him the file was confidential. Which statement is most accurate?",
    "o": [
-    "He is potentially liable because he should reasonably understand the information is nonpublic and confidential",
-    "He is not liable because he is not a corporate officer or director",
-    "He is liable only if the colleague also trades",
-    "He is not liable because no one expressly told him the information was nonpublic"
+    "He is potentially liable because he should know the information is nonpublic and confidential",
+    "He is not liable because he is not an officer, director, or employee of the target company",
+    "He is liable only if the colleague who owned the file also trades in the target’s stock",
+    "He is not liable because no one expressly told him the information was nonpublic or confidential"
    ],
    "a": 0,
    "w": [
     "Correct: Rule 10b5-2 and the misappropriation theory reach someone who should know the information was confidential.",
-    "Wrong: insider trading liability is not limited to officers and directors.",
+    "Wrong: insider trading liability is not limited to officers, directors, or employees of the company whose stock is traded.",
     "Wrong: his liability does not depend on the colleague trading.",
     "Wrong: a duty of trust does not require an express statement; he is expected to know the information was confidential."
    ]
@@ -1035,10 +1035,10 @@
    "d": 3,
    "q": "A customer deposits $6,000 in currency on Monday and another $6,000 in currency on Tuesday. Which statement is correct about CTR filing?",
    "o": [
-    "A CTR is required because the two-day total is $12,000",
-    "A CTR is required on Tuesday because the account exceeded $10,000 cumulatively",
-    "No CTR is triggered by these deposits alone because neither business day exceeds $10,000",
-    "A CTR is required, filed with the IRS within 15 days"
+    "A CTR is required because the two-day cash total of $12,000 exceeds the $10,000 threshold",
+    "A CTR is required on Tuesday because the account’s cumulative cash deposits exceeded $10,000",
+    "No CTR is triggered because neither business day’s cash total exceeds $10,000",
+    "A CTR is required, filed with the IRS within 15 days of the second deposit"
    ],
    "a": 2,
    "w": [
@@ -1055,15 +1055,15 @@
    "d": 1,
    "q": "A customer deposits a $25,000 personal check drawn on the customer’s own bank account. Is a CTR required?",
    "o": [
-    "No, because a personal check originates from a bank and is not a cash deposit",
-    "Yes, because the amount exceeds $10,000",
-    "Yes, but only if the customer is a new account holder",
-    "Yes, but only if the check is from a joint account"
+    "No, because a personal check is drawn on a bank account and is not currency",
+    "Yes, because the amount exceeds $10,000 and a check that large is treated as a cash equivalent",
+    "Yes, but only if the customer is a new account holder with no prior deposits at the firm",
+    "Yes, but only if the check is drawn on a joint account held with another person"
    ],
    "a": 0,
    "w": [
     "Correct: a personal check comes through a bank, so it does not trigger a CTR.",
-    "Wrong: the size alone does not trigger a CTR; the instrument must be cash or a cash equivalent.",
+    "Wrong: a personal check drawn on a bank account is not a cash equivalent; size alone does not trigger a CTR.",
     "Wrong: new account status does not change the CTR test.",
     "Wrong: joint ownership does not make a personal check a reportable cash deposit."
    ]
@@ -1135,10 +1135,10 @@
    "d": 2,
    "q": "A rep opens a new account for a retired couple who are well known throughout the community. Under the customer identification program:",
    "o": [
-    "Identifying information must be obtained before the account is opened, and identity verified within a reasonable time",
-    "Identification may be skipped because the couple is well known",
-    "Identifying information may be gathered any time within 10 days after opening",
-    "Verification is required only before the first trade"
+    "Identifying information must be obtained before opening, and identity verified within a reasonable time",
+    "Identification may be skipped because the couple is well known and the account is held by retirees",
+    "Identifying information may be gathered any time within 10 business days after the account is opened",
+    "Verification is required only before the first trade, with no deadline tied to account opening"
    ],
    "a": 0,
    "w": [
@@ -1155,10 +1155,10 @@
    "d": 2,
    "q": "While processing an order, a rep discovers that the buyer is on the Specially Designated Nationals list. What is the correct course of action?",
    "o": [
-    "Report to a principal; the firm blocks the transaction and reports to OFAC within 10 days",
-    "Complete the trade and file a SAR within 30 days",
-    "File a CTR with FinCEN within 15 days and continue",
-    "Complete the trade and notify the customer of the report"
+    "Report to a principal; the firm blocks the trade and reports to OFAC within 10 days",
+    "Complete the trade, then file a SAR with FinCEN within 30 days of the transaction",
+    "File a CTR with FinCEN within 15 days and continue processing the order",
+    "Complete the trade and notify the customer that a report has been filed"
    ],
    "a": 0,
    "w": [
@@ -1175,17 +1175,17 @@
    "d": 2,
    "q": "Which statement about a broker-dealer’s AML compliance officer is correct?",
    "o": [
-    "The officer must be a registered principal",
-    "The officer’s name and contact information go to FINRA, with changes reported within 30 days",
-    "The officer’s name is kept internally and not reported to FINRA",
-    "The officer’s contact changes must be reported within 15 days"
+    "The officer must be a registered principal holding a Series 24 license",
+    "Name and contact details go to FINRA; changes are reported within 30 days",
+    "The officer’s name is kept internally and not reported to FINRA unless an examiner requests it",
+    "The officer’s name and contact information go to FINRA, with changes reported within 15 days"
    ],
    "a": 1,
    "w": [
-    "Wrong: the role does not have to be filled by a registered representative or a principal.",
+    "Wrong: the officer does not have to be a registered principal or hold any particular principal license.",
     "Correct: FINRA is given the officer's name and contact details, and any change must be communicated within 30 days.",
     "Wrong: the name and contact information must be forwarded to FINRA.",
-    "Wrong: the change notification period is 30 days."
+    "Wrong: the name and contact information do go to FINRA, but the change notification period is 30 days, not 15."
    ]
   },
   {
@@ -1215,10 +1215,10 @@
    "d": 2,
    "q": "A registered rep at Firm A wants to open a personal brokerage account at Firm B. Which is required under Rule 3210?",
    "o": [
-    "Firm B’s prior written consent only",
-    "Notice to Firm A within 30 days after the account is opened",
-    "FINRA’s prior written approval",
-    "Firm A’s prior written consent, and the rep must tell Firm B of the association with Firm A"
+    "Firm B’s prior written consent only, given before the account is opened",
+    "Notice to Firm A within 30 days after the account is opened at Firm B",
+    "FINRA’s prior written approval, submitted through Firm A’s compliance department",
+    "Firm A’s prior written consent, and Firm B must be told of the rep’s association"
    ],
    "a": 3,
    "w": [
@@ -1255,10 +1255,10 @@
    "d": 1,
    "q": "A rep proposes paying the firm’s unregistered receptionist 2% of the commissions on accounts the receptionist refers. This is:",
    "o": [
-    "Permitted if the firm’s principal approves",
-    "Permitted because the percentage is small",
-    "Prohibited because unregistered persons cannot be compensated for securities business",
-    "Permitted only if the receptionist passes the SIE"
+    "Permitted if the firm’s principal approves the arrangement in writing",
+    "Permitted because the percentage is small and the receptionist only refers accounts",
+    "Prohibited because an unregistered person cannot receive transaction-based pay",
+    "Permitted only if the receptionist passes the SIE and the payment is disclosed to FINRA"
    ],
    "a": 2,
    "w": [
@@ -1355,10 +1355,10 @@
    "d": 3,
    "q": "A rep is offered no cash for helping a company sell shares to the rep’s clients, but the company promises to send the rep future deal flow. What is required under Rule 3280?",
    "o": [
-    "No notice, since no cash is received",
-    "Notice only, since non-cash benefits are not compensation",
-    "Written notice and written firm approval, because any compensation including deal flow triggers permission",
-    "Written approval from FINRA only"
+    "No notice, since no cash is received and the company is not a customer of the firm",
+    "Notice only, since non-cash benefits such as future deal flow are not compensation",
+    "Written notice and written firm approval, because deal flow counts as compensation",
+    "Written approval from FINRA only, before any shares are offered to clients"
    ],
    "a": 2,
    "w": [
@@ -1395,10 +1395,10 @@
    "d": 2,
    "q": "Which of the following activities requires the firm’s written permission, rather than only notice, under FINRA rules?",
    "o": [
-    "Working weekends at a shoe store",
+    "Working weekends at a shoe store owned by a family member",
     "Participating in a private securities transaction for compensation",
     "Taking part in an unpaid private securities transaction",
-    "Owning a passive limited partner interest"
+    "Owning a passive limited partner interest in a real estate partnership"
    ],
    "a": 1,
    "w": [
@@ -1475,10 +1475,10 @@
    "d": 3,
    "q": "A rep buys a ticket to a sporting event for $340 (face value $250) and gives it to a client without attending. The rep gave this person no other gifts this year. Is this a violation?",
    "o": [
-    "No, because the face value of $250 is under $300",
-    "No, because tickets are entertainment",
-    "Yes, because gift tickets are valued at the higher of cost or face value, and $340 exceeds $300",
-    "Yes, because tickets can never be given as gifts"
+    "No, because the face value of $250 is under the $300 annual gift limit per person",
+    "No, because tickets to sporting events are entertainment, whether or not the rep attends",
+    "Yes, because tickets are valued at the higher of cost or face, and $340 exceeds $300",
+    "Yes, because tickets can never be given as gifts to a client under the rule"
    ],
    "a": 2,
    "w": [
@@ -1495,10 +1495,10 @@
    "d": 1,
    "q": "A rep takes a client to dinner at a local restaurant at a cost of $180 per person, and the rep attends. How is this treated under the gift rule?",
    "o": [
-    "A gift that violates the $300 limit",
-    "A gift that counts toward the $300 limit",
-    "Prohibited because it exceeds $100",
-    "Entertainment that is not subject to the $300 limit, provided it is not egregious"
+    "A gift that violates the $300 limit because the cost is $360 for the pair",
+    "A gift that counts toward the $300 limit because a client receives the benefit",
+    "Prohibited because it exceeds the $100 limit that applies to meals",
+    "Entertainment that is not subject to the $300 limit unless it is egregious"
    ],
    "a": 3,
    "w": [
@@ -1555,10 +1555,10 @@
    "d": 3,
    "q": "A rep opens a joint account with his father, who is a client. Which requirement for sharing in a customer’s account does NOT apply?",
    "o": [
-    "The firm’s prior written authorization",
+    "The firm’s prior written authorization for the joint account",
     "Sharing in direct proportion to each person’s contributions",
-    "The customer’s prior written authorization",
-    "All requirements apply to family members as well"
+    "The customer’s prior written authorization for the account",
+    "All requirements apply to family members as well as to others"
    ],
    "a": 1,
    "w": [
@@ -1575,10 +1575,10 @@
    "d": 2,
    "q": "A customer who is not a relative asks a rep to serve as trustee of her trust. Under Rule 3241, the rep must:",
    "o": [
-    "Accept, since the customer asked",
-    "Notify the firm only after accepting",
-    "Obtain approval from FINRA",
-    "Give the firm written notice and receive the firm’s approval or disapproval before serving"
+    "Accept, since the customer asked and the trust is a personal arrangement",
+    "Notify the firm in writing, but only after accepting the appointment",
+    "Obtain approval from FINRA before accepting the appointment as trustee",
+    "Written notice to the firm and the firm’s approval or disapproval before serving"
    ],
    "a": 3,
    "w": [
@@ -1615,10 +1615,10 @@
    "d": 1,
    "q": "A rep gets a loan, on market terms available to the public, from a bank that is also a customer of the rep. What is required?",
    "o": [
-    "Written pre-approval by the firm",
-    "FINRA approval",
-    "No notice or permission, because it is a standard bank loan on market terms",
-    "The loan is prohibited"
+    "Written pre-approval by the firm before the loan is made",
+    "Prior approval from FINRA and written notice to the firm’s principal",
+    "No notice or permission, since it is a standard market-terms bank loan",
+    "The loan is prohibited because the bank is a customer of the rep"
    ],
    "a": 2,
    "w": [
@@ -1675,9 +1675,9 @@
    "d": 2,
    "q": "A rep recommends a mutual fund that pays the rep an additional sales commission. How must the conflict be disclosed?",
    "o": [
-    "No disclosure is needed if the fund is suitable",
-    "Only on the confirmation",
-    "Only verbally after the trade",
+    "No disclosure is needed if the fund is suitable for the customer",
+    "Only in writing on the confirmation, with no verbal disclosure",
+    "Only verbally, after the trade but before settlement",
     "Verbally before the trade and in writing on the confirmation"
    ],
    "a": 3,
@@ -1695,9 +1695,9 @@
    "d": 2,
    "q": "Which situation involves a control relationship that must be disclosed under Rule 2262?",
    "o": [
-    "A rep recommends shares of a company under common control with the rep’s firm",
-    "A rep recommends a competitor’s bond",
-    "A rep recommends Treasury securities",
+    "A rep recommends shares of a company under common control with the firm",
+    "A rep recommends a competitor’s bond that the firm has underwritten in the past",
+    "A rep recommends Treasury securities that the firm holds in its inventory",
     "A rep recommends a security held in the rep’s personal account"
    ],
    "a": 0,
@@ -1755,8 +1755,8 @@
    "d": 2,
    "q": "An MFP who is entitled to vote in Springfield contributes $200 to a mayoral candidate’s primary and $200 to the same candidate’s general election. Springfield issues bonds through negotiated underwriting. What is the result?",
    "o": [
-    "A two-year ban because the total exceeds $250",
-    "No ban, because each contribution is within $250 per election for a candidate the MFP can vote for",
+    "A two-year ban because the combined $400 total exceeds the $250 limit for the candidate",
+    "No ban, since each $200 is under $250 per election and the MFP can vote for the candidate",
     "A two-year ban because contributions to two elections are not permitted",
     "No ban only if the firm’s PAC matches the amount"
    ],
@@ -1775,10 +1775,10 @@
    "d": 3,
    "q": "An MFP entitled to vote for a state treasurer candidate contributes $300 to the candidate’s election. The treasurer influences the awarding of state bond business, and the firm does negotiated underwriting for the state. What follows?",
    "o": [
-    "The firm is barred from negotiated municipal business with the state for two years",
-    "No consequence because the MFP can vote for the candidate",
+    "The firm is barred from negotiated business with the state for two years",
+    "No consequence because the MFP is entitled to vote for the candidate in the election",
     "The firm is barred from all municipal business with the state for one year",
-    "Only the MFP is barred, not the firm"
+    "Only the MFP is barred from municipal work for two years, not the firm"
    ],
    "a": 0,
    "w": [
@@ -1815,10 +1815,10 @@
    "d": 2,
    "q": "A political action committee controlled by a municipal securities firm gives $100 to a candidate who can influence awards of bond business. What is the consequence?",
    "o": [
-    "None, since $100 is under $250",
+    "None, since $100 is under the $250 per-election limit for contributions",
     "The firm is barred from negotiated business with that issuer for two years",
-    "None, if the candidate is local",
-    "The firm is barred for one year"
+    "None, if the candidate is a local official the firm’s MFPs can vote for",
+    "The firm is barred from negotiated business with that issuer for one year"
    ],
    "a": 1,
    "w": [
@@ -1896,9 +1896,9 @@
    "q": "Which of the following correctly compares FINRA and MSRB communications rules?",
    "o": [
     "MSRB correspondence uses a 30-day window and FINRA uses 90 days",
-    "Both require 3-year record retention for advertising",
-    "FINRA retail communication records are kept 3 years and MSRB advertising records 4 years",
-    "MSRB advertisements need no principal approval"
+    "Both require 3-year record retention for advertising and retail communications",
+    "FINRA retail communications are kept 3 years; MSRB advertisements 4 years",
+    "MSRB advertisements need no principal approval, though FINRA retail communications do"
    ],
    "a": 2,
    "w": [
@@ -1935,10 +1935,10 @@
    "d": 3,
    "q": "An MFP who is entitled to vote for the candidate writes a $300 check to a mayoral campaign from a joint account with a friend. Only the MFP signs the check. How is the contribution treated under G-37?",
    "o": [
-    "Half is attributed to the MFP, so $150 is within the limit",
-    "The full $300 is attributed to the MFP, exceeding $250, so the firm faces the ban",
-    "Attributed to the MFP only if the friend is a spouse",
-    "None is attributed to the MFP because the account is joint"
+    "Half is attributed to the MFP, so $150 is within the $250 limit and no ban applies",
+    "The full $300 is attributed to the MFP, above the $250 limit, so the ban applies",
+    "Attributed to the MFP only if the friend is a spouse or other immediate family member",
+    "None is attributed to the MFP because the account is joint with a non-MFP friend"
    ],
    "a": 1,
    "w": [
@@ -1955,9 +1955,9 @@
    "d": 3,
    "q": "A representative makes a prohibited contribution to an issuer official and then leaves for another municipal firm, where the representative is also an MFP. What is the result?",
    "o": [
-    "Only the new firm is subject to the ban",
+    "Only the new firm is subject to the ban, since the donor is an MFP there now",
     "Neither firm is banned because the contribution was made while at the first firm",
-    "The original firm remains banned for the rest of the two years, and the new firm is banned as well",
+    "Both firms are banned: the original for the rest of the period, the new firm as well",
     "Only the original firm is banned and the ban ends when the representative leaves"
    ],
    "a": 2,
@@ -1996,9 +1996,9 @@
    "q": "A registered rep wants to exchange emails with clients using a personal email address instead of the firm’s system. What is required?",
    "o": [
     "Nothing, because email is not a communication with the public",
-    "Prior permission from the rep’s supervisor and monitoring of the messages by the firm",
-    "Prior approval from FINRA",
-    "The clients’ written consent only"
+    "Prior permission from the rep’s supervisor and monitoring by the firm",
+    "Prior approval from FINRA and monitoring of the messages by the firm",
+    "The clients’ written consent only, with copies retained by the rep"
    ],
    "a": 1,
    "w": [
@@ -2016,9 +2016,9 @@
    "q": "Who conducts the annual compliance meeting that all registered employees of a firm must attend?",
    "o": [
     "The firm’s chief compliance officer",
-    "A FINRA examiner",
-    "The firm’s outside auditor",
-    "The SEC"
+    "A FINRA examiner assigned to the firm",
+    "The firm’s outside independent auditor",
+    "The SEC through its regional office"
    ],
    "a": 0,
    "w": [
@@ -2037,8 +2037,8 @@
    "o": [
     "A two-year ban on negotiated business with that issuer",
     "A one-year ban on all municipal business with that issuer",
-    "A fine only, with no ban",
-    "No ban, because a spouse’s gift counts only if the MFP directed it"
+    "A fine only, with no ban, because the amount exceeds $250",
+    "No ban, since a spouse’s gift counts only if the MFP directed it"
    ],
    "a": 3,
    "w": [
