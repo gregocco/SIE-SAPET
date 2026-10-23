@@ -29,17 +29,14 @@ Chaque exercice affiche **la démarche pas à pas** et un conseil pour la petite
 - Aucune phrase ni question recopiée du manuel.
 - Un champ `confidence` (high/check) : tout ce qui est chiffré (plafonds, seuils, délais) est marqué `check` jusqu'à vérification contre le manuel par un script de recoupement.
 
-## Planning (≈ 9 semaines, 2-4 h/jour ; à caler sur la date de créneau)
-Ordre = rentabilité décroissante, pas l'ordre du livre.
-| Sem. | Focus |
+## Planning — examen le **30 novembre 2026** (38 jours, 2-4 h/jour)
+Budget temps : ≈ 75-150 h. Large pour 14 chapitres ; la marge sert aux examens blancs. Ordre = rentabilité décroissante.
+| Période | Focus |
 |---|---|
-| 1 | Positionnement + **ch. 11** (comptes, marge) + **ch. 12** (retraite, annuités, 529) |
-| 2 | Fin ch. 12 + **ch. 4** (fonds) + ch. 7 (suitability, Reg BI) |
-| 3 | Ch. 1, 5, 3 (equity, produits alternatifs, munis/agencies) |
-| 4 | Ch. 9 (marché secondaire), 13 (registration), 14 (conduct) |
-| 5 | Ch. 2, 8, 10 en express + ch. 6 (options, essentiels) |
-| 6 | Examen blanc 1-2 + remédiation par section |
-| 7 | Examens blancs 3-4 + drills de calcul |
-| 8 | Examen blanc 5 + mode « erreurs et pièges » |
-| 9 | Marge de sécurité / reprise des points faibles |
-Avec 2-4 h/jour, la couverture complète tient en ~5 semaines ; le reste = répétition et examens blancs. **Poser le créneau Prometric dès que possible** (la boîte l'exige, et les frais d'annulation partent à 10 jours ouvrés).
+| 23-30 oct | Positionnement, **ch. 11, 12** (comptes ≈ 31 % de l'examen), ch. 4 (fonds) |
+| 31 oct-6 nov | Ch. 7 (suitability/Reg BI), 1, 5, 3 |
+| 7-13 nov | Ch. 9, 13, 14 + express ch. 2, 8, 10, 6 |
+| 14-20 nov | **2 examens blancs complets**, remédiation par section |
+| 21-27 nov | 3 examens blancs, points faibles, onglets Traps, drills de calcul |
+| 28-30 nov | Révision légère (pièges, formules, erreurs), repos |
+**Actions immédiates :** réserver le créneau Prometric (Thanksgiving le 26 nov ; annuler/déplacer à moins de 10 jours ouvrés coûte des frais → date limite sans frais ≈ 13-16 nov). Vérifier la pièce d'identité exigée.

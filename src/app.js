@@ -51,7 +51,7 @@ const today = () => Math.floor((Date.now() - new Date().getTimezoneOffset() * 6e
 const KEY = 'sie-prep.v1';
 let S = null;
 try { S = JSON.parse(localStorage.getItem(KEY)); } catch (e) { }
-S = Object.assign({ rec: {}, exams: [], examDate: null, theme: 'auto', log: {}, flags: {} }, S || {});
+S = Object.assign({ rec: {}, exams: [], examDate: '2026-11-30', theme: 'auto', log: {}, flags: {} }, S || {});
 const save = () => { try { localStorage.setItem(KEY, JSON.stringify(S)); } catch (e) { } };
 function applyTheme() { const r = document.documentElement; if (S.theme === 'auto') r.removeAttribute('data-theme'); else r.setAttribute('data-theme', S.theme); }
 
@@ -222,6 +222,24 @@ function ring(p) {
 }
 const prio = p => ({ high: ['high', 'High value'], med: ['med', 'Medium'], low: ['low', 'Express'] }[p]);
 
+
+/* ---------- study plan (exam 30 Nov 2026, ~2-4 h/day) ---------- */
+const PLAN = [
+  ['2026-10-23', '2026-10-30', 'Week 1 · Accounts first', 'Customer accounts and tax-advantaged accounts are ~31% of the exam. Then investment companies.', [11, 12, 4]],
+  ['2026-10-31', '2026-11-06', 'Week 2 · Products & risks', 'Suitability / Reg BI, equities, other managed products, bond types (munis, agencies).', [7, 1, 5, 3]],
+  ['2026-11-07', '2026-11-13', 'Week 3 · Markets, rules, express chapters', 'Secondary market, registration, conduct. Skim what you already know from DCM: debt basics, issuance, economics, options essentials.', [9, 13, 14, 2, 8, 10, 6]],
+  ['2026-11-14', '2026-11-20', 'Week 4 · Exams and remediation', 'Two full mock exams under exam conditions, then drill every weak section.', []],
+  ['2026-11-21', '2026-11-27', 'Week 5 · Polish', 'Three more mock exams, weak spots, traps tabs, calculation drills until automatic.', []],
+  ['2026-11-28', '2026-11-30', 'Final days', 'Light review only: traps, formulas, missed questions. Sleep. Bring a valid government ID.', []],
+];
+function planCard() {
+  const d = new Date(); const iso = d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0');
+  const cur = PLAN.find(p => iso >= p[0] && iso <= p[1]) || (iso < PLAN[0][0] ? PLAN[0] : null);
+  if (!cur) return '';
+  const chs = cur[4].map(id => { const m = META.find(x => x.id === id); return `<a class="pill ${m && m.live ? 'acc' : ''}" style="text-decoration:none" href="#/learn/${id}/brief">Ch. ${id}</a>`; }).join('');
+  return `<section class="card"><div class="eyebrow">This week</div><h2 style="margin-top:4px">${esc(cur[2])}</h2><p class="muted small">${esc(cur[3])}</p>${chs ? `<div class="row wrapx" style="gap:6px;margin-top:8px">${chs}</div>` : ''}</section>`;
+}
+
 function viewHome() {
   const dueN = ITEMS.filter(isDue).length, newN = ITEMS.filter(isNew).length, acc = accuracy();
   const days = S.examDate ? Math.ceil((new Date(S.examDate + 'T00:00:00') - new Date()) / 864e5) : null;
@@ -239,7 +257,7 @@ function viewHome() {
     <div class="bp" style="margin-top:10px">${BLUEPRINT.map(([n, w, c]) => `<div style="flex:${w};background:${c}">${w}%</div>`).join('')}</div>
     <div class="row wrapx tiny muted" style="margin-top:8px;gap:12px">${BLUEPRINT.map(([n, w, c]) => `<span><i style="display:inline-block;width:9px;height:9px;border-radius:3px;background:${c};margin-right:5px"></i>${n}</span>`).join('')}</div></section>`;
   const live = META.filter(m => m.live).map(m => chRow(m)).join('');
-  return `<div class="stack">${hero}${plan}${stats}<section><div class="row" style="margin:6px 0 10px"><h2 style="flex:1">Your chapters</h2><a class="small" href="#/learn" style="color:var(--accent);font-weight:650;text-decoration:none">All 14 →</a></div><div class="card" style="padding:0">${live}</div><p class="muted small" style="margin-top:10px">More chapters unlock as they’re produced. Highest-value first.</p></section>${bp}</div>`;
+  return `<div class="stack">${hero}${plan}${planCard()}${stats}<section><div class="row" style="margin:6px 0 10px"><h2 style="flex:1">Your chapters</h2><a class="small" href="#/learn" style="color:var(--accent);font-weight:650;text-decoration:none">All 14 →</a></div><div class="card" style="padding:0">${live}</div><p class="muted small" style="margin-top:10px">More chapters unlock as they’re produced. Highest-value first.</p></section>${bp}</div>`;
 }
 function chRow(m) {
   const p = prio(m.priority);
@@ -411,7 +429,7 @@ document.addEventListener('click', e => {
     case 'closesheet': $('#sheet').remove(); break;
     case 'savesettings': S.examDate = $('#sd').value || null; S.theme = $('#st').value; save(); applyTheme(); $('#sheet').remove(); render(); break;
     case 'export': { const b = new Blob([JSON.stringify(S)], { type: 'application/json' }), u = URL.createObjectURL(b), l = document.createElement('a'); l.href = u; l.download = 'sie-prep-progress.json'; l.click(); break; }
-    case 'reset': if (confirm('Erase all progress on this device?')) { S = { rec: {}, exams: [], examDate: null, theme: 'auto', log: {}, flags: {} }; save(); applyTheme(); $('#sheet').remove(); go('#/'); render(); } break;
+    case 'reset': if (confirm('Erase all progress on this device?')) { S = { rec: {}, exams: [], examDate: '2026-11-30', theme: 'auto', log: {}, flags: {} }; save(); applyTheme(); $('#sheet').remove(); go('#/'); render(); } break;
     case 'review': startRun('Daily review', sessionReview(), { back: '#/' }); break;
     case 'weak': startRun('Weak spots', weakItems(), { back: '#/practice' }); break;
     case 'mixed': startRun('Mixed quiz', shuffle(QUESTIONS).slice(0, +t.dataset.n), { back: '#/practice' }); break;
