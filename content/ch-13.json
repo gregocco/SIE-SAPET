@@ -1,0 +1,2025 @@
+{
+ "id": 13,
+ "title": "FINRA Registration",
+ "section": "Regulation",
+ "minutes": 55,
+ "brief": [
+  {
+   "h": "Regulators: SEC, SROs, states",
+   "md": "- **SEC** = federal government agency (created by the **Securities Exchange Act of 1934**). Primary enforcer of federal securities law; regulates the industry, exchanges, other electronic markets, listed companies and broker-dealers. It is **not** an SRO.\n- **SROs** (FINRA, MSRB) are **quasi-governmental**: authority is **delegated by the SEC**; they are **empowered by and accountable to the SEC**, which oversees them.\n- **Primary mission of SROs**: **investor protection** and **market integrity**.\n- **Blue sky laws** = state securities laws. Enforced by each state’s securities department/commission under the state **securities commissioner**; **NASAA** is the membership group of state administrators.\n- **No criminal authority**: the SEC and SROs can **censure** and discipline (fines, revoking registration) but **cannot jail anyone**. Criminal charges come through the **attorney general / Department of Justice / state law enforcement**.\n> **Exam tip** “Which of these can the SEC NOT do?” → bring **criminal charges**. Fines, censure, revocation are all fine."
+  },
+  {
+   "h": "FINRA and the MSRB",
+   "md": "- **FINRA**: largest independent regulator of securities firms doing business in the US. Chief role = protect investors / fairness of the capital markets.\n- FINRA roles: **register and educate** industry participants; **write and enforce rules** (and enforce SEC rules); **examine** firms; run **dispute-resolution forums**; perform **market regulation** for exchanges incl. **Nasdaq**.\n- Firms in **investment banking / general securities business** must generally be **FINRA members**.\n- FINRA can make rules, but they must be **approved by the SEC** before they take effect.\n- **MSRB** (est. **1975**): makes rules for **underwriting, trading and selling of municipal securities** by **firms and banks**.\n- MSRB has **rulemaking but no enforcement** power. It **cannot regulate issuers** (e.g. New York City is outside its jurisdiction).\n\n| Who enforces MSRB rules | On whom |\n|---|---|\n| **FINRA** | Securities firms |\n| **Federal Reserve Board, OCC, FDIC** | Banks |\n| **SEC** | Securities firms, banks **and municipal advisors** |\n\n> **Exam tip** MSRB = rules, no teeth. Issuers are never under its jurisdiction."
+  },
+  {
+   "h": "Broker-dealer registration",
+   "md": "- All broker-dealers must **register with the SEC and become FINRA members**.\n- Application package: **New Member Agreement**, **Form BD**, detailed **business plan**, and **fees**. It may not be incomplete, inaccurate or misleading.\n- SEC registration is **complete when FINRA approves the New Member Agreement**. The firm may **do business only after** that approval.\n- The New Member Agreement is the **contract between firm and FINRA**: compliance certification, **high standards of commercial honor and just and equitable principles of trade**, and lists **permitted and prohibited activities** based on the business plan and supervisory procedures.\n- After approval, for **each person who must register**: **Form U4 + fingerprints + fees**.\n- Only **employed and sponsored** persons may register. The failure to register an employee exposes the **firm** to discipline.\n- **For FINRA membership**: firm and principals register only in the **home-office state**. **Under blue sky laws**: firm, principals and **each rep** register in **every state** where business is done (fee per state).\n- **Registration is not an endorsement.** Registration means authorized to do business; it does **not** mean the SEC/FINRA approves the firm’s services or ethics. A firm **may not suggest or imply** SEC approval.\n> **Exam tip** Business starts only on New Member Agreement approval; registered ≠ endorsed."
+  },
+  {
+   "h": "Associated persons and Form U4",
+   "md": "- **Associated person** = someone whose activities are controlled directly or indirectly by a member firm. Not all associated persons must register.\n- **Parking a registration** (sponsoring someone not employed by the firm, e.g. a retiree who wants to keep a licence “just in case”) is a **violation**. Compliance must refuse.\n- **Form U4** = background screening form; a main source for the rep’s **CRD** (Central Registration Depository) record.\n- U4 content: name, **SSN**, **5 years of residential addresses**, **10 years of employment history** (the **3 most recent years must be verified by the firm**), education.\n- Applicants **self-report**: customer complaints, arbitrations, regulatory proceedings, bankruptcies, certain criminal history, certain civil litigation, **liens and judgments**.\n- Lying or omitting on the U4 can lead to sanctions incl. **statutory disqualification**.\n- **Rule 3310**: firm must check good standing/experience/qualifications **before** the U4 is filed and have written procedures to verify U4 accuracy **promptly after** filing.\n- **Rule 1010**: firm designates a **registered principal or corporate officer** to oversee registration functions.\n- **Rule 2263 pre-dispute arbitration clause** is part of the U4: disputes between **firm and rep** go to arbitration; rep gives up court and jury trial.\n> **Exam tip** 10 years of employment listed, but only 3 verified; addresses = 5 years."
+  },
+  {
+   "h": "Arbitration",
+   "md": "- Arbitrators (not judges/juries) decide; cheaper and faster than court. Awards are **final and binding**; court review is **very limited**.\n- **Claims over $100,000** → **three arbitrators** unless parties agree **in writing** to one.\n- **Public arbitrators** come from outside the industry; **industry arbitrators** come from inside. Cases involving the public must include public arbitrators. A **law degree is not required**.\n- Brokers usually present the same clause when a **customer opens an account**; the **customer is not required** to agree.\n- **Exception**: **employment discrimination and sexual harassment** disputes go to arbitration **only if both parties agree**; otherwise they go to **court**.\n> **Exam tip** Employee clause is mandatory (except discrimination/harassment); customer clause is optional."
+  },
+  {
+   "h": "Fingerprinting and qualification exams",
+   "md": "- Applies to partners, directors, officers and employees of **exchanges, broker-dealers, registered transfer agents and registered clearing agencies**.\n- Fingerprints must be received **within 30 days after the U4 is filed**, else status becomes **“Inactive Prints”** and the person must **stop doing business** until prints are processed.\n- **Not required**: those not selling securities and with no regular access to securities, money or original books/records (**clerical/administrative** staff), and a **silent partner investor**.\n- Firms keep fingerprint records **at least 3 years after the person leaves**.\n- **Exam retake**: after a fail, wait **30 calendar days**; after **three or more successive fails**, wait **180 calendar days**.\n- Exam content is **confidential** (MSRB and FINRA both prohibit disclosure).\n- **SIE** (Securities Industry Essentials): anyone **18 or older**, **no sponsorship** needed, passing it alone does **not** allow securities business (no soliciting, no transactions). Valid **4 years**; the rep must pass a qualification (top-off) exam within that time or retake the SIE.\n- **Grandfathered**: anyone who passed a qualification exam **before Oct 1, 2018**, as long as licences stay continuously valid.\n- **Qualification exams** require **sponsorship** by a FINRA/MSRB member. Examples: Series 6 (investment company/variable contracts), **7** (general securities rep), **52** (muni rep), 57, 63, 65, 66, 79 (investment banking), 86/87, 99. *The book says memorising the list is not important.*\n> **Exam tip** SIE = no sponsor, no sales activity. Series exams = sponsored."
+  },
+  {
+   "h": "Principals and exempt persons",
+   "md": "- **Registered principals** = officers and management involved in **day-to-day management** of the securities/investment banking business, **supervision, solicitation or conduct** of business, or **training** associated persons. They must pass the requisite principal exams.\n- Most firms need **at least two principals** (under most circumstances).\n- **Exempt from registration**: employees doing only **clerical or administrative** work.\n- Persons doing **only municipal securities business** register with the **MSRB**, not FINRA.\n> **Exam tip** If a person supervises or manages the securities business, think principal."
+  },
+  {
+   "h": "Amended U4, Form U5 and requalification",
+   "md": "| Trigger | Form | Deadline |\n|---|---|---|\n| Regulatory action, certain complaints, settlements, certain criminal charges/convictions, **liens**, **bankruptcy**, **compromise with creditors** | **Amended U4** | **30 calendar days** |\n| Address change, **name change after marriage**, **outside business activity** (second job, paid board seat), added education | **Amended U4** | **30 days** |\n| **Statutory disqualification** event | **Amended U4** | **10 days** |\n| Termination of rep | **Form U5** | **30 days**; copy to rep within **30 days** |\n| New hire / returning to industry after lapse | **Original U4** | n/a |\n| Switching firms | **U5** (old firm) + **original U4** (new firm) | n/a |\n| Leave of absence, licence kept | **None** | n/a |\n\n- Marital status change **alone** does not require an amendment.\n- A **short sale of a home** (selling for less than the mortgage balance, bank accepts it) is a **compromise with creditors**: tell compliance, file amended U4.\n- After termination: regulators keep **jurisdiction for at least 2 years**; the former rep must keep their **address current for 2 years**; the firm must keep updating the U5 if it learns of violations.\n- **Requalification**: if no re-association with a member firm **within 2 years**, qualification exams (e.g. Series 7, 79) **expire** and must be retaken. The **SIE** is still good (4 years). Revocation for regulatory reasons also means retaking exams.\n- **Maintaining Qualifications Program (MQP)**: up to **5 years** to reregister without requalifying. Requires **1+ year** registered, **individual (not the firm)** enrolls through **FinPro within 2 years** of leaving, completes annual CE by **Dec 31**, pays **$100 per year**.\n> **Exam tip** U4 changes = 30 days, except statutory disqualification = 10 days."
+  },
+  {
+   "h": "BrokerCheck and statutory disqualification",
+   "md": "- **BrokerCheck** (Rule 8312): public information on registration, employment and **disciplinary history** of firms and reps; online or **toll-free number**. Firms must link it on their website (**Rule 2210**) and send customers an **annual notice** with BrokerCheck URL and phone (**Rule 2267**). Best source for a customer vetting a rep.\n- **Statutory disqualification (SD)** triggers:\n\n| Trigger | Look-back |\n|---|---|\n| **Felony conviction** | **10 years** |\n| **Misdemeanor** involving securities, investments, fraud, extortion, bribery, other unethical conduct | **10 years** |\n| **Injunctions** (temporary or permanent) on investment-related unlawful activity | **At any time** |\n| **Expulsion/suspension** from an SRO or other regulator | n/a |\n| False statements in applications/reports/proceedings before SROs | n/a |\n| Arbitration/civil litigation ending in **sales practice violation** findings | n/a |\n| SEC/SRO finding of **willful violation** of federal securities law | n/a |\n\n- An **arrest is not** an SD (shoplifting arrest: tell compliance, no SD). Convictions are.\n- **Rule 4530**: firms promptly update FINRA and file copies of criminal actions, civil complaints and arbitration claims.\n- Firm reports the event on an **amended U4 within 10 days**. Then either file **U5** (terminate) or request an **eligibility waiver** (describe terms and **proposed supervision**; if granted, **heightened active supervision**).\n- A disqualified person **may not associate with a FINRA member in any capacity** without a waiver.\n- FINRA investigations: written information requests to firm **and** rep; it may require the rep to **interview**.\n> **Exam tip** Conviction = SD; arrest = not."
+  },
+  {
+   "h": "Continuing education",
+   "md": "| | **Regulatory Element** | **Firm Element** |\n|---|---|---|\n| Run by | **FINRA** | **The firm** |\n| Who | **All registered persons** | **Covered persons**: registered individuals and supervisors who interact with customers |\n| When | **Annually, by Dec 31** (computer-based) | **Annually** (firm may require more often) |\n| Content | Compliance, regulatory, ethical, sales practice, supervisory standards | Firm-defined, based on a **yearly needs analysis** and **written training plan** |\n| Failure | **CE inactive** | Discipline by firm/regulator, **no CE inactive status** |\n\n- **CE inactive**: no registered activity and **no compensation requiring registration** (commissions). **Residual commissions** for earlier business may still be paid.\n- CE inactive for **2 years** → registration **administratively terminated**; must requalify by exam.\n- A newly registered person’s first Regulatory Element deadline is **Dec 31 of the year of registration**.\n- **Needs analysis** considers firm size/scope, products, customer complaints and regulatory actions, and rep performance on the Regulatory Element. Needs analysis and plan finished by **year-end (calendar or fiscal)**.\n- Content is **not defined or approved by FINRA**; it can be internal, vendor, or regulator/association material if relevant to the firm.\n- New hires who already did Firm Element elsewhere may be excused unless the new firm wants it.\n- Governing rules: **FINRA Rule 1250** and **MSRB Rule G-3**.\n> **Exam tip** Regulatory = FINRA, can make you CE inactive. Firm = employer, cannot."
+  },
+  {
+   "h": "State registration",
+   "md": "- Blue sky laws: **Kansas first (1911)**; term echoed in a **1917** Supreme Court opinion.\n- State regulators 1) protect consumers buying securities or advice, 2) supervise issuers and intermediaries.\n- Generally **both securities and firms** (broker-dealers, investment advisers, professionals) must register at the **state level**.\n- **Client moves to another state**: the rep **cannot trade** for that client until **registered in that state**; the rep should pass the order to someone in the firm registered there.\n> **Exam tip** Rep trades only in states where the rep is registered."
+  },
+  {
+   "h": "Investment advisers",
+   "md": "- **Investment Advisers Act of 1940**: an **investment adviser (IA)** is any person/firm in the business of giving securities advice **for compensation** (typically % of **assets under management**, also hourly, flat, per service).\n- IAs owe a **fiduciary duty** (best interest). BD reps are held to **suitability**.\n- IAs **charge for advice**; BDs **charge for transactions**. A **wrap fee** account (advice + brokerage for one fee) means the BD must **dually register** as IA and BD.\n- Financial planners who recommend securities for a fee are IAs.\n\n| Adviser size | Registers with | Form |\n|---|---|---|\n| **Over $100 million** AUM | **SEC** | **Form ADV** |\n| **Under $100 million** | **Each state** where it operates | state filing |\n\n- **IAR** (investment adviser representative): gives advice, manages portfolios for a fee, solicits/negotiates advisory services, or supervises other IARs. **SEC does not register individuals**; **states** do, **regardless of whether the RIA is SEC- or state-registered**.\n- **Exempt**: lawyers, accountants, engineers, teachers; banks and holding companies; **bona fide publishers** of general-circulation publications (but tailored-recommendation newsletters **must register**); **family office** advisers serving one family; BDs/reps whose advice is **solely incidental** with no special compensation.\n> **Exam tip** $100 million is the SEC/state line; IARs always register with states."
+  }
+ ],
+ "traps": [
+  "**SEC vs SRO.** The SEC is a government agency; FINRA and the MSRB are SROs overseen by the SEC. The SEC is never itself an SRO.",
+  "**Criminal power.** Neither the SEC nor an SRO can bring criminal charges or jail anyone. They fine, censure, suspend and revoke. Criminal action goes through the attorney general or law enforcement.",
+  "**MSRB rulemaking vs enforcement.** The MSRB writes rules but does not enforce them (FINRA enforces for securities firms; bank regulators for banks; SEC for all incl. municipal advisors). It also never regulates issuers.",
+  "**Registered vs endorsed.** SEC/FINRA registration only authorizes a firm to do business. A firm that implies the SEC approves its services commits a violation.",
+  "**Home-state vs every-state registration.** For FINRA membership the firm and principals need only the home-office state. Blue sky laws require firm, principals and each rep in every state of business.",
+  "**Parking a registration.** Keeping a retired or non-employee’s licence alive through a firm is prohibited; only employed, sponsored persons can be registered.",
+  "**U4 history lengths.** Employment history = 10 years but only the 3 most recent are verified by the firm; residential history = 5 years.",
+  "**Amended U4 deadlines.** 30 days for ordinary updates, 10 days for statutory disqualification events. Do not apply 30 days to an SD event.",
+  "**Arrest vs conviction.** An arrest never creates statutory disqualification; a felony or securities-related misdemeanor conviction in the last 10 years does. Injunctions have no 10-year limit.",
+  "**SIE vs qualification exam.** The SIE needs no sponsor and lets you do nothing; a Series exam needs sponsorship. SIE lasts 4 years; Series licences lapse after 2 years out of the industry.",
+  "**Retake waits.** 30 calendar days after a failure; 180 calendar days after three or more successive failures.",
+  "**Regulatory vs Firm Element.** Regulatory = FINRA, by Dec 31, failure → CE inactive. Firm = employer plan, annual, failure → discipline but never CE inactive.",
+  "**CE inactive vs terminated.** CE inactive stops all registered activity and commissions (residuals aside). After 2 years inactive, registration is administratively terminated and the exam must be retaken.",
+  "**Marriage and the U4.** A name change requires an amended U4; the change in marital status alone does not.",
+  "**Fingerprint exemptions.** Clerical staff and silent partner investors need no fingerprints; everyone else with securities, money or records contact does, within 30 days of the U4.",
+  "**IA vs BD rep.** IAs: fiduciary, paid for advice, register under the Advisers Act. BD reps: suitability, paid for transactions, advice only incidental. A wrap fee turns the BD into a dual registrant.",
+  "**IA registration line.** Over $100 million AUM → SEC (Form ADV); under → states. IARs always register with states, never the SEC."
+ ],
+ "formulas": [
+  {
+   "name": "Form and deadline decision table",
+   "rule": "Hire / return after lapse → original U4. Ordinary change (address, name, outside business, lien, bankruptcy, complaint, creditor compromise, regulatory action) → amended U4 within 30 days. Statutory disqualification event → amended U4 within 10 days. Termination → U5 within 30 days (copy to rep in 30 days). Leave of absence with licence intact → nothing.",
+   "example": "A rep takes a paid board seat on May 1 → amended U4 by **May 31**. She is convicted of a securities-related misdemeanor on May 1 → amended U4 by **May 11**. She resigns May 1 and joins a rival → old firm U5 by May 31, new firm files an original U4."
+  },
+  {
+   "name": "Statutory disqualification test",
+   "rule": "SD if: felony conviction ≤ 10 years; securities/fraud/extortion/bribery-type misdemeanor conviction ≤ 10 years; any court injunction (no time limit) on investment-related unlawful activity; SRO expulsion/suspension; false statements to SROs; sales practice findings in arbitration/litigation; willful violation findings. NOT SD: an arrest. Firm response: report within 10 days, then U5 or waiver request.",
+   "example": "Rep arrested (not convicted) for felony fraud → **no SD**. Rep convicted of securities-related misdemeanor 8 years ago → **SD**. Rep convicted of a felony 12 years ago → **no SD** under the 10-year look-back."
+  },
+  {
+   "name": "Exam retake and licence lapse clock",
+   "rule": "Fail 1 or 2 times → wait 30 calendar days. Fail 3+ times in succession → wait 180 calendar days. Out of industry 2 years → qualification exams expire (SIE valid 4 years). CE inactive 2 years → registration terminated. MQP: up to 5 years if enrolled within 2 years of leaving.",
+   "example": "Rep leaves on day 0 and returns after 3 years with no MQP: retakes the **Series exam**, keeps the **SIE** (valid until year 4). With MQP enrolled and $100/yr paid, a return at year 4 needs **no** requalification."
+  },
+  {
+   "name": "Continuing education comparison",
+   "rule": "Regulatory Element: FINRA-run, all registered persons, annual by Dec 31, failure → CE inactive (no work, no commissions except residuals). Firm Element: firm-run, covered persons, annual, based on needs analysis + written plan, failure → discipline only.",
+   "example": "A rep who misses Dec 31 is CE inactive and cannot earn a commission on a new trade; a rep who skips the firm’s in-house training is disciplined but **still active**."
+  },
+  {
+   "name": "Investment adviser registration decision",
+   "rule": "IA firm AUM over $100 million → SEC via Form ADV. Under $100 million → states. Individuals working for an RIA who advise/manage/solicit/supervise → IAR, registered with states regardless. Exempt: lawyers/accountants/engineers/teachers, banks, general publishers, single-family offices, BD advice solely incidental.",
+   "example": "Firm A: $250 million AUM → SEC, Form ADV. Firm B: $60 million AUM → state(s). Employee soliciting clients for Firm A → **IAR with the state**. Rep who casually suggests a stock when placing a commission trade → **no IA registration**."
+  },
+  {
+   "name": "Registration timeline (new rep)",
+   "rule": "Firm approved (New Member Agreement) → per person: U4 + fingerprints + fees → fingerprints due within 30 days of U4 → SIE (no sponsor) and qualification exam (sponsored) within the SIE’s 4-year life → first Regulatory Element by Dec 31 of year registered. Claims over $100,000 in arbitration need three arbitrators unless written agreement for one.",
+   "example": "U4 filed March 1 → prints due by **March 31** or status becomes Inactive Prints. SIE passed in year 0 → Series exam must be passed by year 4 or the SIE must be retaken."
+  }
+ ],
+ "glossary": [
+  {
+   "t": "SEC",
+   "d": "Federal government agency created by the Securities Exchange Act of 1934; primary enforcer of federal securities laws and overseer of SROs."
+  },
+  {
+   "t": "Self-regulatory organization (SRO)",
+   "d": "Quasi-governmental body such as FINRA or the MSRB that is empowered by and accountable to the SEC to regulate part of the industry."
+  },
+  {
+   "t": "FINRA",
+   "d": "Largest independent SRO regulating US securities firms and their employees to protect investors and ensure market fairness."
+  },
+  {
+   "t": "MSRB",
+   "d": "SRO created in 1975 that writes rules for municipal securities firms and professionals but has no enforcement power and no authority over issuers."
+  },
+  {
+   "t": "Blue sky laws",
+   "d": "State securities laws, enforced by state securities commissioners; Kansas passed the first in 1911."
+  },
+  {
+   "t": "NASAA",
+   "d": "North American Securities Administrators Association, the membership organization of state securities administrators."
+  },
+  {
+   "t": "Censure",
+   "d": "Formal disciplinary rebuke that the SEC and SROs may issue; they cannot impose criminal penalties."
+  },
+  {
+   "t": "New Member Agreement",
+   "d": "Contract between a broker-dealer and FINRA setting permitted and prohibited activities; SEC registration is complete when FINRA approves it."
+  },
+  {
+   "t": "Form BD",
+   "d": "Broker-dealer registration form submitted to FINRA with the New Member Agreement, business plan and fees."
+  },
+  {
+   "t": "Associated person",
+   "d": "Anyone whose activities are directly or indirectly controlled by a member firm; not all must register."
+  },
+  {
+   "t": "Parking a registration",
+   "d": "Prohibited practice of sponsoring a licence for someone who is not employed by the firm."
+  },
+  {
+   "t": "Form U4",
+   "d": "Uniform application for individual registration that collects background, history and disclosure items and includes the arbitration clause."
+  },
+  {
+   "t": "Central Registration Depository (CRD)",
+   "d": "FINRA’s database of registered representatives’ records, fed largely by Form U4."
+  },
+  {
+   "t": "Amended U4",
+   "d": "Update to the U4 filed within 30 days of a change, or within 10 days for a statutory disqualification event."
+  },
+  {
+   "t": "Form U5",
+   "d": "Termination notice a firm files with FINRA within 30 days of a registered person’s departure, stating the reason."
+  },
+  {
+   "t": "Pre-dispute arbitration clause",
+   "d": "U4 provision (Rule 2263) requiring firm-rep disputes to go to arbitration instead of court, with exceptions for discrimination and sexual harassment."
+  },
+  {
+   "t": "Public arbitrator",
+   "d": "Arbitrator from outside the securities industry; cases involving the public must include them."
+  },
+  {
+   "t": "Industry arbitrator",
+   "d": "Arbitrator from within the securities industry, used for industry disputes."
+  },
+  {
+   "t": "Fingerprinting",
+   "d": "Requirement for registration candidates to submit prints within 30 days of the U4, with clerical staff and silent partners exempt."
+  },
+  {
+   "t": "Inactive Prints",
+   "d": "Registration status when fingerprints are not received within 30 days; the person must cease business until processed."
+  },
+  {
+   "t": "Securities Industry Essentials (SIE) exam",
+   "d": "Entry-level FINRA exam open to anyone 18 or older without sponsorship; valid for four years and not enough alone to conduct business."
+  },
+  {
+   "t": "Qualification (top-off) exam",
+   "d": "Series exam specific to a business line, which requires sponsorship by a FINRA or MSRB member."
+  },
+  {
+   "t": "Series 7",
+   "d": "General Securities Representative qualification exam."
+  },
+  {
+   "t": "Series 6",
+   "d": "Investment Company Products/Variable Contracts Limited Representative qualification exam."
+  },
+  {
+   "t": "Series 52",
+   "d": "Municipal Securities Representative qualification exam."
+  },
+  {
+   "t": "Series 79",
+   "d": "Limited Representative – Investment Banking qualification exam."
+  },
+  {
+   "t": "Series 63",
+   "d": "Uniform Securities Agent State Law exam."
+  },
+  {
+   "t": "Series 65",
+   "d": "Uniform Investment Adviser State Law exam."
+  },
+  {
+   "t": "Series 66",
+   "d": "Uniform Combined State Law exam."
+  },
+  {
+   "t": "Registered principal",
+   "d": "Officer or manager involved in day-to-day management, supervision, solicitation or training for the securities business, who has passed principal exams."
+  },
+  {
+   "t": "Requalification",
+   "d": "Retaking qualification exams after two years out of the industry (without MQP) or after revocation."
+  },
+  {
+   "t": "BrokerCheck",
+   "d": "FINRA’s free public tool showing registration, employment and disciplinary history of firms and reps."
+  },
+  {
+   "t": "Statutory disqualification",
+   "d": "Bar from association with a member (absent FINRA waiver) due to events such as felony or securities-related misdemeanor convictions within 10 years, injunctions, or SRO expulsion."
+  },
+  {
+   "t": "Eligibility proceeding / waiver",
+   "d": "Process in which a firm asks FINRA to let it sponsor a statutorily disqualified person under stated supervision terms."
+  },
+  {
+   "t": "Regulatory Element",
+   "d": "FINRA-administered computer-based continuing education due annually by December 31 for all registered persons."
+  },
+  {
+   "t": "Firm Element",
+   "d": "Employer-run annual training for covered persons, built from a needs analysis and written training plan."
+  },
+  {
+   "t": "Covered person",
+   "d": "Registered individual or supervisor who interacts with customers and so must complete the Firm Element."
+  },
+  {
+   "t": "CE inactive",
+   "d": "Status of a person who missed the Regulatory Element: no registered activity or related compensation, terminated after two years."
+  },
+  {
+   "t": "Maintaining Qualifications Program (MQP)",
+   "d": "Program letting former reps keep qualifications up to five years via annual CE and a $100 fee, enrolled through FinPro."
+  },
+  {
+   "t": "Investment Advisers Act of 1940",
+   "d": "Federal law defining and regulating investment advisers."
+  },
+  {
+   "t": "Investment adviser (IA)",
+   "d": "Person or firm paid to provide securities advice regularly; owes a fiduciary duty."
+  },
+  {
+   "t": "Registered investment adviser (RIA)",
+   "d": "Investment adviser firm registered with the SEC or the states."
+  },
+  {
+   "t": "Form ADV",
+   "d": "Form used to register an investment adviser with the SEC."
+  },
+  {
+   "t": "Investment adviser representative (IAR)",
+   "d": "Person working for an RIA who advises, manages, solicits or supervises; registered with states."
+  },
+  {
+   "t": "Fiduciary standard",
+   "d": "Duty to act in the client’s best interest, applying to investment advisers."
+  },
+  {
+   "t": "Suitability standard",
+   "d": "Requirement that BD recommendations be appropriate for the customer; applies to registered reps."
+  },
+  {
+   "t": "Wrap account",
+   "d": "Account bundling advice and brokerage services for one fee, requiring dual registration as IA and BD."
+  },
+  {
+   "t": "Family office",
+   "d": "Adviser serving only one family; exempt from investment adviser registration."
+  }
+ ],
+ "cards": [
+  {
+   "id": "13-c01",
+   "f": "Is the SEC an SRO?",
+   "b": "No. The SEC is a **government agency**; FINRA and the MSRB are SROs overseen by it.",
+   "r": "13.1"
+  },
+  {
+   "id": "13-c02",
+   "f": "Primary mission of SROs",
+   "b": "**Investor protection** and **market integrity**.",
+   "r": "13.1"
+  },
+  {
+   "id": "13-c03",
+   "f": "Can the SEC or an SRO jail someone?",
+   "b": "**No criminal authority.** They can censure/fine/revoke; criminal charges come from the **attorney general** / law enforcement.",
+   "r": "13.1"
+  },
+  {
+   "id": "13-c04",
+   "f": "Whom does FINRA primarily regulate?",
+   "b": "**Broker-dealers and registered representatives.**",
+   "r": "13.1.1"
+  },
+  {
+   "id": "13-c05",
+   "f": "When do FINRA rules become effective?",
+   "b": "Only after **SEC approval**.",
+   "r": "13.1.1"
+  },
+  {
+   "id": "13-c06",
+   "f": "Name five FINRA roles",
+   "b": "Register/educate participants; write and enforce rules; **examine** firms; run **dispute resolution**; regulate markets such as **Nasdaq**.",
+   "r": "13.1.1"
+  },
+  {
+   "id": "13-c07",
+   "f": "Year the MSRB was established",
+   "b": "**1975**.",
+   "r": "13.1.2"
+  },
+  {
+   "id": "13-c08",
+   "f": "MSRB: rulemaking or enforcement?",
+   "b": "**Rulemaking only.** Others enforce its rules.",
+   "r": "13.1.2"
+  },
+  {
+   "id": "13-c09",
+   "f": "Who enforces MSRB rules on securities firms? On banks?",
+   "b": "Firms: **FINRA**. Banks: **Federal Reserve, OCC, FDIC**. The **SEC** covers firms, banks and municipal advisors.",
+   "r": "13.1.2"
+  },
+  {
+   "id": "13-c10",
+   "f": "Is New York City subject to the MSRB?",
+   "b": "**No.** The MSRB cannot regulate **issuers**, only municipal securities firms and professionals.",
+   "r": "13.1.2"
+  },
+  {
+   "id": "13-c11",
+   "f": "Documents to start broker-dealer registration",
+   "b": "**New Member Agreement, Form BD, business plan, fees.**",
+   "r": "13.2"
+  },
+  {
+   "id": "13-c12",
+   "f": "When is a firm’s SEC registration complete?",
+   "b": "When FINRA **approves the New Member Agreement**; only then may it do business.",
+   "r": "13.2"
+  },
+  {
+   "id": "13-c13",
+   "f": "What may a firm say about its SEC registration?",
+   "b": "It **cannot imply** the SEC endorses or approves its services or ethics. Registration only authorizes business.",
+   "r": "13.2"
+  },
+  {
+   "id": "13-c14",
+   "f": "Per associated person, what does the firm submit after membership approval?",
+   "b": "**Form U4, fingerprints, fees.**",
+   "r": "13.2"
+  },
+  {
+   "id": "13-c15",
+   "f": "FINRA membership: where must the firm and principals register?",
+   "b": "Only the **home-office state**.",
+   "r": "13.2"
+  },
+  {
+   "id": "13-c16",
+   "f": "Blue sky law registration: who registers where?",
+   "b": "Firm, principals and **each rep** in **every state** where business is done.",
+   "r": "13.2"
+  },
+  {
+   "id": "13-c17",
+   "f": "What is parking a registration?",
+   "b": "Sponsoring a licence for someone **not employed** by the firm: a **violation**.",
+   "r": "13.3"
+  },
+  {
+   "id": "13-c18",
+   "f": "Who can be sponsored for registration?",
+   "b": "Only **duly employed** personnel of a member firm.",
+   "r": "13.3"
+  },
+  {
+   "id": "13-c19",
+   "f": "Form U4 purpose",
+   "b": "Background screening for registration; main source of the rep’s **CRD** record.",
+   "r": "13.3.1"
+  },
+  {
+   "id": "13-c20",
+   "f": "U4 residential history length",
+   "b": "**5 years.**",
+   "r": "13.3.1"
+  },
+  {
+   "id": "13-c21",
+   "f": "U4 employment history: length and what the firm verifies",
+   "b": "**10 years** listed; firm verifies the **3 most recent**.",
+   "r": "13.3.1"
+  },
+  {
+   "id": "13-c22",
+   "f": "Which items must a rep self-report on the U4?",
+   "b": "Complaints, arbitrations, regulatory proceedings, bankruptcies, certain criminal/civil matters, **liens and judgments**.",
+   "r": "13.3.1"
+  },
+  {
+   "id": "13-c23",
+   "f": "What happens if a rep lies on the U4?",
+   "b": "Possible sanctions including **statutory disqualification**.",
+   "r": "13.3.1"
+  },
+  {
+   "id": "13-c24",
+   "f": "Rule 2263",
+   "b": "**Pre-dispute arbitration** agreement signed as part of the U4.",
+   "r": "13.3.1.1"
+  },
+  {
+   "id": "13-c25",
+   "f": "Effect of the pre-dispute arbitration clause on a rep",
+   "b": "Disputes with the firm go to arbitration; rep gives up **court and jury trial**.",
+   "r": "13.3.1.1"
+  },
+  {
+   "id": "13-c26",
+   "f": "Number of arbitrators for claims over $100,000",
+   "b": "**Three**, unless parties agree in writing to one.",
+   "r": "13.3.1.1"
+  },
+  {
+   "id": "13-c27",
+   "f": "Which disputes go to arbitration only if both parties agree?",
+   "b": "**Employment discrimination and sexual harassment**; otherwise court.",
+   "r": "13.3.1.1"
+  },
+  {
+   "id": "13-c28",
+   "f": "Must a customer accept a pre-dispute arbitration clause?",
+   "b": "**No.** The customer is not required to consent.",
+   "r": "13.3.1.1"
+  },
+  {
+   "id": "13-c29",
+   "f": "Fingerprints deadline",
+   "b": "Received within **30 days after the U4 is filed**.",
+   "r": "13.3.2"
+  },
+  {
+   "id": "13-c30",
+   "f": "Status if fingerprints are late",
+   "b": "**Inactive Prints**: person must cease business until processed.",
+   "r": "13.3.2"
+  },
+  {
+   "id": "13-c31",
+   "f": "Who does NOT need fingerprints?",
+   "b": "**Clerical/administrative** staff and **silent partner investors**.",
+   "r": "13.3.2"
+  },
+  {
+   "id": "13-c32",
+   "f": "Wait after failing a qualification exam (1st or 2nd time)",
+   "b": "**30 calendar days.**",
+   "r": "13.3.3"
+  },
+  {
+   "id": "13-c33",
+   "f": "Wait after three or more successive fails",
+   "b": "**180 calendar days.**",
+   "r": "13.3.3"
+  },
+  {
+   "id": "13-c34",
+   "f": "Who may take the SIE?",
+   "b": "Anyone **18 or older**; **no sponsorship** required.",
+   "r": "13.3.3.1"
+  },
+  {
+   "id": "13-c35",
+   "f": "Can someone who passed only the SIE solicit or trade?",
+   "b": "**No.** A qualification exam is also required.",
+   "r": "13.3.3.1"
+  },
+  {
+   "id": "13-c36",
+   "f": "How long is the SIE valid?",
+   "b": "**Four years** to pass the qualification exam.",
+   "r": "13.3.3.1"
+  },
+  {
+   "id": "13-c37",
+   "f": "Who is exempt from the SIE?",
+   "b": "Those who passed a qualification exam **before Oct 1, 2018** with continuously valid licences.",
+   "r": "13.3.3.1"
+  },
+  {
+   "id": "13-c38",
+   "f": "Can you take a Series exam without a sponsor?",
+   "b": "**No.** Qualification exams need sponsorship by a FINRA/MSRB member.",
+   "r": "13.3.3.2"
+  },
+  {
+   "id": "13-c39",
+   "f": "Series 7 covers…",
+   "b": "**General Securities Representative.**",
+   "r": "13.3.3.2"
+  },
+  {
+   "id": "13-c40",
+   "f": "Who must register as a principal?",
+   "b": "Those in **day-to-day management, supervision, solicitation/conduct of business, or training** of associated persons.",
+   "r": "13.3.3.3"
+  },
+  {
+   "id": "13-c41",
+   "f": "Minimum principals at a firm",
+   "b": "Generally **two**.",
+   "r": "13.3.3.3"
+  },
+  {
+   "id": "13-c42",
+   "f": "Who registers with the MSRB instead of FINRA?",
+   "b": "Individuals engaged **only in municipal securities business**.",
+   "r": "13.3.3.4"
+  },
+  {
+   "id": "13-c43",
+   "f": "Amended U4 deadline for ordinary changes",
+   "b": "**30 calendar days.**",
+   "r": "13.3.4"
+  },
+  {
+   "id": "13-c44",
+   "f": "Amended U4 deadline for statutory disqualification event",
+   "b": "**10 calendar days.**",
+   "r": "13.3.4"
+  },
+  {
+   "id": "13-c45",
+   "f": "Which events require an amended U4?",
+   "b": "Regulatory action, complaints, settlements, criminal matters, **liens, bankruptcy, creditor compromise**, outside business, address or name change.",
+   "r": "13.3.4"
+  },
+  {
+   "id": "13-c46",
+   "f": "Rep sells home short sale: what must happen?",
+   "b": "It is a **compromise with creditors**: notify compliance, file **amended U4**.",
+   "r": "13.3.4"
+  },
+  {
+   "id": "13-c47",
+   "f": "Rep marries but keeps name: amend U4?",
+   "b": "**No.** Marital status alone does not; a **name change** does.",
+   "r": "13.3.4"
+  },
+  {
+   "id": "13-c48",
+   "f": "Form U5 deadline and recipient copy",
+   "b": "File with FINRA within **30 days**; give rep a copy within **30 days**.",
+   "r": "13.3.5"
+  },
+  {
+   "id": "13-c49",
+   "f": "How long does a terminated rep stay under regulator jurisdiction?",
+   "b": "At least **2 years**; rep must keep address updated.",
+   "r": "13.3.5"
+  },
+  {
+   "id": "13-c50",
+   "f": "Time to re-associate before exams expire",
+   "b": "**2 years** after leaving; otherwise retake the Series exam (SIE still valid up to 4 years).",
+   "r": "13.3.5.1"
+  },
+  {
+   "id": "13-c51",
+   "f": "Rep switches firms: which forms?",
+   "b": "**U5** by old firm; **original U4** by new firm.",
+   "r": "13.3.5"
+  },
+  {
+   "id": "13-c52",
+   "f": "Rep on maternity leave keeps licence and job: which form?",
+   "b": "**None.**",
+   "r": "13.3.5"
+  },
+  {
+   "id": "13-c53",
+   "f": "Rules 8312, 2210 and 2267 (BrokerCheck)",
+   "b": "8312: info public; 2210: **website link**; 2267: **annual customer notice** with URL and phone.",
+   "r": "13.3.6"
+  },
+  {
+   "id": "13-c54",
+   "f": "Felony conviction look-back for SD",
+   "b": "**10 years.**",
+   "r": "13.3.7"
+  },
+  {
+   "id": "13-c55",
+   "f": "Do injunctions have a time limit for SD?",
+   "b": "**No.** Temporary or permanent injunctions count **at any time**.",
+   "r": "13.3.7"
+  },
+  {
+   "id": "13-c56",
+   "f": "Is an arrest a statutory disqualification?",
+   "b": "**No.** Only convictions (and the other listed events).",
+   "r": "13.3.7"
+  },
+  {
+   "id": "13-c57",
+   "f": "Rule 4530",
+   "b": "Firms must **promptly update FINRA** and file copies of criminal, civil and arbitration items.",
+   "r": "13.3.7"
+  },
+  {
+   "id": "13-c58",
+   "f": "Firm’s options for a statutorily disqualified person",
+   "b": "File **U5** to terminate, or request a **waiver** with proposed supervision terms.",
+   "r": "13.3.7.1"
+  },
+  {
+   "id": "13-c59",
+   "f": "Regulatory Element deadline and format",
+   "b": "**Annually by Dec 31**, computer-based.",
+   "r": "13.3.8.1"
+  },
+  {
+   "id": "13-c60",
+   "f": "Consequence of missing the Regulatory Element",
+   "b": "**CE inactive:** no registered activity or related compensation (residuals allowed).",
+   "r": "13.3.8.1"
+  },
+  {
+   "id": "13-c61",
+   "f": "CE inactive for two years",
+   "b": "Registration **administratively terminated**; retake the qualification exam.",
+   "r": "13.3.8.1"
+  },
+  {
+   "id": "13-c62",
+   "f": "Firm Element: who must complete and how often?",
+   "b": "**Covered persons** (registered individuals and customer-facing supervisors), **annually**.",
+   "r": "13.3.8.2"
+  },
+  {
+   "id": "13-c63",
+   "f": "Does missing the Firm Element make a rep CE inactive?",
+   "b": "**No.** Discipline possible, but no CE inactive status.",
+   "r": "13.3.8.2"
+  },
+  {
+   "id": "13-c64",
+   "f": "Maintaining Qualifications Program: time, fee, enrollment",
+   "b": "Up to **5 years**, **$100/yr**, individual enrolls via **FinPro within 2 years**; annual CE by Dec 31.",
+   "r": "13.3.8.3"
+  },
+  {
+   "id": "13-c65",
+   "f": "Rep’s client moves states: can the rep still trade?",
+   "b": "**No**, until registered in that state; hand the order to someone registered there.",
+   "r": "13.4"
+  },
+  {
+   "id": "13-c66",
+   "f": "IA vs BD rep standard and compensation",
+   "b": "IA: **fiduciary**, paid for **advice**. BD rep: **suitability**, paid for **transactions**.",
+   "r": "13.5"
+  },
+  {
+   "id": "13-c67",
+   "f": "SEC vs state IA registration",
+   "b": "Over **$100 million** AUM → **SEC** (Form ADV); smaller → **states**.",
+   "r": "13.5.1"
+  },
+  {
+   "id": "13-c68",
+   "f": "Who registers an IAR, and with whom?",
+   "b": "The **state**; SEC does not register individuals, regardless of whom they work for.",
+   "r": "13.5.1"
+  },
+  {
+   "id": "13-c69",
+   "f": "Which are exempt from IA registration?",
+   "b": "Lawyers/accountants/engineers/teachers, banks, general publishers, **single-family offices**, BD advice solely incidental.",
+   "r": "13.5.2"
+  },
+  {
+   "id": "13-c70",
+   "f": "Wrap-fee account at a broker-dealer",
+   "b": "Charging for advice means the BD must **dually register** as IA and BD.",
+   "r": "13.5"
+  }
+ ],
+ "questions": [
+  {
+   "id": "13-q01",
+   "r": "13.1",
+   "k": "concept",
+   "d": 1,
+   "q": "Which of the following is a government agency rather than a self-regulatory organization?",
+   "o": [
+    "Securities and Exchange Commission",
+    "Financial Industry Regulatory Authority",
+    "Municipal Securities Rulemaking Board",
+    "A broker-dealer’s internal compliance department"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: the SEC is a government agency that delegates authority to and oversees the SROs.",
+    "Wrong: FINRA is an SRO, a quasi-governmental body empowered by and accountable to the SEC.",
+    "Wrong: the MSRB is an SRO for municipal securities, not a government agency.",
+    "Wrong: a compliance department is a firm function, neither a government agency nor an SRO."
+   ]
+  },
+  {
+   "id": "13-q02",
+   "r": "13.1",
+   "k": "concept",
+   "d": 1,
+   "q": "All of the following are enforcement actions the SEC or an SRO may take against a firm EXCEPT:",
+   "o": [
+    "Bringing criminal charges",
+    "Censuring the firm",
+    "Revoking its registration",
+    "Imposing a fine"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: SEC and SROs have no criminal authority; criminal charges are brought through the attorney general or law enforcement.",
+    "Wrong: censure is a standard disciplinary action both the SEC and SROs can use against firms and employees.",
+    "Wrong: revoking a registration is within regulators’ administrative power, so it is not the exception.",
+    "Wrong: fines are an ordinary civil and administrative sanction available to the SEC and SROs."
+   ]
+  },
+  {
+   "id": "13-q03",
+   "r": "13.1",
+   "k": "concept",
+   "d": 1,
+   "q": "The primary mission of self-regulatory organizations is best described as:",
+   "o": [
+    "Investor protection and market integrity",
+    "Maximizing issuer capital raising",
+    "Setting interest rates for the economy",
+    "Prosecuting securities fraud criminally"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: SROs exist chiefly to protect investors and promote integrity in the securities markets.",
+    "Wrong: helping issuers raise capital is not the SRO mission; the focus is on investors and fair markets.",
+    "Wrong: monetary policy and interest rates are outside the scope of SROs.",
+    "Wrong: SROs lack criminal authority, so prosecuting fraud criminally is not their mission."
+   ]
+  },
+  {
+   "id": "13-q04",
+   "r": "13.1.1",
+   "k": "concept",
+   "d": 1,
+   "q": "Before a new FINRA rule can take effect, it must be:",
+   "o": [
+    "Approved by the SEC",
+    "Approved by the MSRB",
+    "Ratified by each state securities commissioner",
+    "Approved by a vote of member firms only"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: FINRA can write rules, but they become effective only after SEC approval.",
+    "Wrong: the MSRB is a separate SRO for municipal securities and has no approval role over FINRA rules.",
+    "Wrong: state commissioners enforce blue sky laws and do not ratify FINRA rules.",
+    "Wrong: member votes do not make rules effective; the SEC must approve them."
+   ]
+  },
+  {
+   "id": "13-q05",
+   "r": "13.1.1",
+   "k": "concept",
+   "d": 2,
+   "q": "Which of the following is NOT a function of FINRA?",
+   "o": [
+    "Prosecuting criminal securities violations",
+    "Administering dispute-resolution forums",
+    "Examining member firms for compliance",
+    "Registering industry participants"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: FINRA has no criminal authority; criminal prosecution is outside its powers.",
+    "Wrong: FINRA runs arbitration and mediation forums for investors and member firms.",
+    "Wrong: examining firms for regulatory compliance is a core FINRA role.",
+    "Wrong: registering and educating industry participants is one of FINRA’s main functions."
+   ]
+  },
+  {
+   "id": "13-q06",
+   "r": "13.1.2",
+   "k": "concept",
+   "d": 2,
+   "q": "The MSRB has authority to do which of the following?",
+   "o": [
+    "Write rules for municipal securities firms and professionals",
+    "Discipline municipal bond issuers that violate its rules",
+    "Enforce its rules directly against securities firms",
+    "Regulate state and local government finance departments"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: the MSRB creates rules for underwriting, trading and selling municipal securities by firms, banks and professionals.",
+    "Wrong: the MSRB has no jurisdiction over issuers, so it cannot discipline them.",
+    "Wrong: the MSRB lacks enforcement power; FINRA enforces its rules for securities firms.",
+    "Wrong: governments as issuers are outside MSRB jurisdiction, including their finance departments."
+   ]
+  },
+  {
+   "id": "13-q07",
+   "r": "13.1.2",
+   "k": "scenario",
+   "d": 2,
+   "q": "A securities firm’s municipal desk violates an MSRB rule. Which body would discipline the firm?",
+   "o": [
+    "FINRA",
+    "The MSRB itself",
+    "The Federal Reserve Board",
+    "The Office of the Comptroller of the Currency"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: the MSRB has no enforcement authority, and FINRA enforces MSRB rules for securities firms.",
+    "Wrong: the MSRB makes rules but cannot discipline anyone.",
+    "Wrong: the Federal Reserve enforces MSRB rules in banks, not at securities firms.",
+    "Wrong: the OCC enforces MSRB rules in banks, not securities firms."
+   ]
+  },
+  {
+   "id": "13-q08",
+   "r": "13.1.2",
+   "k": "concept",
+   "d": 2,
+   "q": "Which of the following are subject to MSRB rules? I. A bank underwriting municipal bonds II. A broker-dealer trading municipal bonds III. The city issuing the bonds IV. A municipal securities salesperson",
+   "o": [
+    "I, II and IV only",
+    "II and IV only",
+    "I and III only",
+    "I, II, III and IV"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: banks, broker-dealers and municipal professionals fall under MSRB rules; issuers do not.",
+    "Wrong: this omits the bank dealer, which is also regulated by MSRB rules.",
+    "Wrong: the city as issuer is outside MSRB jurisdiction, and this also omits the broker-dealer.",
+    "Wrong: including the issuer is incorrect because the MSRB cannot regulate municipal issuers."
+   ]
+  },
+  {
+   "id": "13-q09",
+   "r": "13.2",
+   "k": "concept",
+   "d": 1,
+   "q": "A broker-dealer may begin conducting securities business when:",
+   "o": [
+    "FINRA approves its New Member Agreement",
+    "It files Form BD",
+    "It hires its first registered representative",
+    "It pays the state registration fee"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: SEC registration is complete and business may begin only when FINRA approves the New Member Agreement.",
+    "Wrong: filing Form BD is part of the application, not approval to operate.",
+    "Wrong: hiring reps comes after membership approval, since U4s are filed only afterward.",
+    "Wrong: paying fees is part of the application and does not authorize business."
+   ]
+  },
+  {
+   "id": "13-q10",
+   "r": "13.2",
+   "k": "scenario",
+   "d": 2,
+   "q": "A new broker-dealer’s advertising says, “Registered with the SEC, so our practices are approved by the government.” This statement is:",
+   "o": [
+    "Improper because registration does not mean endorsement",
+    "Permitted if the firm is also a FINRA member",
+    "Permitted if the statement is in a footnote",
+    "Required in all retail communications"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: registration authorizes business but is not an approval of the firm’s practices, and firms may not imply otherwise.",
+    "Wrong: FINRA membership does not change the rule against implying regulatory endorsement.",
+    "Wrong: placement in a footnote does not cure the misleading implication of approval.",
+    "Wrong: there is no requirement to make such a statement, and it would be misleading."
+   ]
+  },
+  {
+   "id": "13-q11",
+   "r": "13.2",
+   "k": "concept",
+   "d": 2,
+   "q": "Which of these must a firm submit to FINRA to begin the registration process as a broker-dealer?",
+   "o": [
+    "New Member Agreement, Form BD, business plan and fees",
+    "Form U4, Form U5 and fingerprints",
+    "Form ADV and a fiduciary certification",
+    "Series 7 results for all employees"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: the New Member Agreement, Form BD, a detailed business plan and fees start the registration.",
+    "Wrong: U4 and fingerprints are filed per associated person after membership is approved; U5 is for terminations.",
+    "Wrong: Form ADV is how an investment adviser registers with the SEC.",
+    "Wrong: exam results are not part of the firm’s initial application package."
+   ]
+  },
+  {
+   "id": "13-q12",
+   "r": "13.2",
+   "k": "concept",
+   "d": 3,
+   "q": "For purposes of FINRA membership admission, in which state(s) must a broker-dealer and its principals be registered?",
+   "o": [
+    "Only the state of the firm’s home office",
+    "Every state in which any customer lives",
+    "Only the state where the largest client lives",
+    "All 50 states and territories"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: for FINRA membership, the firm and its principals need only be registered where the home office is located.",
+    "Wrong: blue sky laws require registration wherever business is done, but that is separate from FINRA admission.",
+    "Wrong: there is no rule keyed to the location of the largest client.",
+    "Wrong: some large firms register everywhere, but it is not required for membership."
+   ]
+  },
+  {
+   "id": "13-q13",
+   "r": "13.2",
+   "k": "scenario",
+   "d": 3,
+   "q": "A broker-dealer has its home office in Ohio and wants its reps to take orders from customers in Texas and Florida. Under blue sky laws, which is required?",
+   "o": [
+    "The firm, principals and each rep must register in Texas and Florida",
+    "Only the firm must register in Texas and Florida",
+    "Registration only in Ohio suffices",
+    "Only the principals must register in Texas and Florida"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: state law requires firm, principals and each registered rep to register in every state of business.",
+    "Wrong: reps and principals must also register in the states in which they do business.",
+    "Wrong: Ohio alone would meet FINRA admission rules but not Texas and Florida blue sky laws.",
+    "Wrong: individual reps must register too, not only principals."
+   ]
+  },
+  {
+   "id": "13-q14",
+   "r": "13.3",
+   "k": "scenario",
+   "d": 2,
+   "q": "A top-performing rep announces he is retiring but asks compliance to keep his Series 7 registration active in case he wants to return. How should compliance respond?",
+   "o": [
+    "Refuse; parking a registration is a violation",
+    "Agree for up to one year",
+    "Agree if he pays the annual fee himself",
+    "Agree if he stays on the payroll part-time without duties"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: registrations may be sponsored only for employees who actually work for the firm; parking is prohibited.",
+    "Wrong: no grace period permits parking a licence for a non-employee.",
+    "Wrong: paying the fee does not make a non-employee eligible for sponsorship.",
+    "Wrong: being on payroll without performing the job is exactly the sham the rule forbids."
+   ]
+  },
+  {
+   "id": "13-q15",
+   "r": "13.3.1",
+   "k": "concept",
+   "d": 2,
+   "q": "On Form U4, a firm must verify which of the following?",
+   "o": [
+    "The three most recent years of employment history",
+    "The full five years of residential history",
+    "Education only",
+    "All liens and judgments for life"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: the form lists 10 years of employment, of which the firm must verify the three most recent.",
+    "Wrong: five years of address history is collected, but verification is specified for employment.",
+    "Wrong: education is collected but the stated verification requirement is for recent employment.",
+    "Wrong: liens and judgments are self-reported disclosures, with no lifetime verification rule."
+   ]
+  },
+  {
+   "id": "13-q16",
+   "r": "13.3.1.1",
+   "k": "concept",
+   "d": 2,
+   "q": "The pre-dispute arbitration agreement that a registered rep signs on Form U4 requires the rep to:",
+   "o": [
+    "Resolve future firm disputes through arbitration and give up the right to a jury trial",
+    "Pay all arbitration costs for the firm",
+    "Accept arbitration only for customer complaints",
+    "Waive all rights to appeal on any legal ground"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: future disputes between rep and firm go to arbitration, and the rep forgoes court and jury trial.",
+    "Wrong: nothing in the clause shifts all arbitration costs to the rep.",
+    "Wrong: the clause covers disputes between firm and rep, not customer complaints alone.",
+    "Wrong: awards are final and binding with very limited court review, but it is not an unlimited waiver."
+   ]
+  },
+  {
+   "id": "13-q17",
+   "r": "13.3.1.1",
+   "k": "scenario",
+   "d": 3,
+   "q": "A rep and her firm have a dispute over sexual harassment. She signed the standard U4 arbitration clause. Where will the matter be resolved?",
+   "o": [
+    "In court, unless both parties agree to arbitrate",
+    "In arbitration automatically",
+    "Before the MSRB",
+    "Before the SEC commissioners"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: discrimination and sexual harassment disputes go to arbitration only if both parties agree; otherwise court.",
+    "Wrong: automatic arbitration applies to other disputes, but these two are carved out.",
+    "Wrong: the MSRB is a rulemaking body and does not hear employment disputes.",
+    "Wrong: the SEC does not adjudicate private employment disputes in this way."
+   ]
+  },
+  {
+   "id": "13-q18",
+   "r": "13.3.1.1",
+   "k": "calc",
+   "d": 2,
+   "q": "A firm and a former rep go to FINRA arbitration over a $180,000 claim, with no written agreement on panel size. How many arbitrators are required?",
+   "o": [
+    "Three",
+    "One",
+    "Two",
+    "Five"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: $180,000 exceeds $100,000, so three arbitrators are required unless the parties agree in writing to one.",
+    "Wrong: one arbitrator would require a written agreement between the parties.",
+    "Wrong: two is not a panel size set by the rule.",
+    "Wrong: five is not a requirement for any amount stated in the chapter."
+   ]
+  },
+  {
+   "id": "13-q19",
+   "r": "13.3.1.1",
+   "k": "concept",
+   "d": 2,
+   "q": "Which statement about FINRA arbitrators is true?",
+   "o": [
+    "A law degree is not required",
+    "All arbitrators must be attorneys",
+    "Only industry arbitrators may hear cases involving the public",
+    "Arbitrators must be current SEC employees"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: arbitrators can come from inside or outside the industry and need not hold a law degree.",
+    "Wrong: no law degree requirement exists.",
+    "Wrong: cases involving the public must include public arbitrators, not only industry ones.",
+    "Wrong: arbitrators are not SEC staff; they come from the public or the industry."
+   ]
+  },
+  {
+   "id": "13-q20",
+   "r": "13.3.2",
+   "k": "calc",
+   "d": 2,
+   "q": "A rep’s Form U4 is filed on April 10. By what date must her fingerprints be received to avoid Inactive Prints status?",
+   "o": [
+    "May 10",
+    "April 24",
+    "April 30",
+    "June 9"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: fingerprints are due within 30 days after filing; April 10 plus 30 days (20 days left in April, then 10 in May) is May 10.",
+    "Wrong: this is only 14 days after filing, which is shorter than the 30-day window.",
+    "Wrong: this is the end of the month, not 30 days after the filing date.",
+    "Wrong: this adds 60 days, double the permitted period."
+   ]
+  },
+  {
+   "id": "13-q21",
+   "r": "13.3.2",
+   "k": "concept",
+   "d": 2,
+   "q": "Which of the following persons would NOT be required to be fingerprinted?",
+   "o": [
+    "A silent partner who invested capital but has no role in securities activities",
+    "A trader who handles customer orders",
+    "An officer with access to original books and records",
+    "A partner who supervises sales staff"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: a partner who only invests capital and has no involvement in securities activities is exempt from fingerprinting.",
+    "Wrong: a trader engages in securities business and must be fingerprinted.",
+    "Wrong: access to original books and records triggers the fingerprint requirement.",
+    "Wrong: a supervising partner is involved in the firm’s securities business and must be fingerprinted."
+   ]
+  },
+  {
+   "id": "13-q22",
+   "r": "13.3.2",
+   "k": "concept",
+   "d": 2,
+   "q": "A registered person’s fingerprints are not received within the required time. What happens?",
+   "o": [
+    "Status becomes Inactive Prints and the person must cease business until processed",
+    "The registration is permanently revoked",
+    "The firm receives a censure only",
+    "The person is statutorily disqualified"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: late fingerprints change status to Inactive Prints and the person must stop doing business until processed.",
+    "Wrong: the registration is not permanently revoked; the status is inactive until prints are processed.",
+    "Wrong: the consequence is a halt to business, not merely a censure.",
+    "Wrong: late prints do not create statutory disqualification."
+   ]
+  },
+  {
+   "id": "13-q23",
+   "r": "13.3.2",
+   "k": "concept",
+   "d": 3,
+   "q": "After a person leaves a broker-dealer, the firm must keep fingerprint records for at least:",
+   "o": [
+    "Three years",
+    "One year",
+    "Six years",
+    "Ten years"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: records must be retained at least three years after the person leaves.",
+    "Wrong: one year is shorter than the required retention period.",
+    "Wrong: six years is not the fingerprint retention period given here.",
+    "Wrong: ten years is the look-back for felonies, not a retention period."
+   ]
+  },
+  {
+   "id": "13-q24",
+   "r": "13.3.3",
+   "k": "scenario",
+   "d": 2,
+   "q": "Oliver fails the Series 7 on his first attempt. When is the earliest he may retake it?",
+   "o": [
+    "After 30 calendar days",
+    "After 180 calendar days",
+    "The next day",
+    "After one year"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: a failed exam may be retaken after 30 calendar days.",
+    "Wrong: 180 days applies only after three or more successive failures.",
+    "Wrong: a waiting period is mandatory after a failure.",
+    "Wrong: one year is not the rule; 30 days applies."
+   ]
+  },
+  {
+   "id": "13-q25",
+   "r": "13.3.3",
+   "k": "scenario",
+   "d": 2,
+   "q": "Maria has failed the same qualification exam three times in a row. Before she can sit for it a fourth time she must wait:",
+   "o": [
+    "180 calendar days",
+    "30 calendar days",
+    "90 calendar days",
+    "One year"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: after three or more successive failures, the wait is 180 calendar days.",
+    "Wrong: 30 days is the wait after the first or second failure.",
+    "Wrong: 90 days is not a waiting period in the chapter.",
+    "Wrong: one year is not the rule; 180 days is."
+   ]
+  },
+  {
+   "id": "13-q26",
+   "r": "13.3.3.1",
+   "k": "concept",
+   "d": 1,
+   "q": "Which statement about the SIE exam is true?",
+   "o": [
+    "Any person 18 or older may take it without being sponsored by a firm",
+    "It must be taken by a person employed at a FINRA member",
+    "Passing it allows a person to solicit new business",
+    "It has no age requirement"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: the SIE is open to anyone 18 or older with no sponsorship required.",
+    "Wrong: no association with a FINRA or MSRB member is required for the SIE.",
+    "Wrong: passing the SIE alone does not qualify anyone to engage in securities business.",
+    "Wrong: candidates must be at least 18."
+   ]
+  },
+  {
+   "id": "13-q27",
+   "r": "13.3.3.1",
+   "k": "scenario",
+   "d": 2,
+   "q": "Priya passes the SIE exam on January 10 of Year 1 and then takes a job in a non-securities field. She is hired by a broker-dealer in Year 3. Which is true?",
+   "o": [
+    "She still has a valid SIE and needs a qualification exam through her sponsor",
+    "She must retake the SIE",
+    "She may begin soliciting clients immediately",
+    "The SIE credential lasts only two years"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: the SIE is valid for four years, so she needs only the qualification exam after being sponsored.",
+    "Wrong: the SIE has not expired in under four years.",
+    "Wrong: she cannot solicit with only the SIE; she needs the qualification exam.",
+    "Wrong: the SIE is valid four years, not two."
+   ]
+  },
+  {
+   "id": "13-q28",
+   "r": "13.3.3.1",
+   "k": "concept",
+   "d": 2,
+   "q": "Which of the following are TRUE about the SIE? I. It is valid for four years II. Passing it alone qualifies a person to enter transactions III. It requires sponsorship by a member firm IV. A person must also pass a qualification exam to be fully registered",
+   "o": [
+    "I and IV only",
+    "I and II only",
+    "II and III only",
+    "III and IV only"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: the SIE lasts four years and must be paired with a qualification exam for full registration.",
+    "Wrong: the SIE alone does not allow transactions, so statement II is false.",
+    "Wrong: both II and III are false: the SIE needs no sponsor and does not qualify for transactions.",
+    "Wrong: sponsorship is not required for the SIE, so III is false."
+   ]
+  },
+  {
+   "id": "13-q29",
+   "r": "13.3.3.1",
+   "k": "scenario",
+   "d": 3,
+   "q": "A registered rep passed her Series 7 in 2015 and has kept her registration continuously valid since. How does this affect the SIE requirement?",
+   "o": [
+    "She is exempt because she passed a qualification exam before October 1, 2018",
+    "She must take the SIE at her next renewal",
+    "She must take it within 30 days",
+    "She must take it only if she changes firms"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: those who passed a qualification exam before October 1, 2018 and keep continuous registration are exempt from the SIE.",
+    "Wrong: no SIE requirement arises at renewal for these grandfathered individuals.",
+    "Wrong: there is no 30-day SIE requirement for them.",
+    "Wrong: changing firms does not cancel the exemption if the registration remains continuous."
+   ]
+  },
+  {
+   "id": "13-q30",
+   "r": "13.3.3.2",
+   "k": "concept",
+   "d": 1,
+   "q": "Which of the following can sit for a qualification exam such as the Series 7?",
+   "o": [
+    "Only individuals sponsored by a FINRA or MSRB member firm",
+    "Anyone age 18 or older",
+    "Anyone who has passed the SIE and is unemployed",
+    "Only registered principals"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: representative qualification exams are available only to those associated with and sponsored by a member firm.",
+    "Wrong: age 18 is the SIE rule; qualification exams also require sponsorship.",
+    "Wrong: unemployed persons cannot be sponsored, so they cannot sit these exams.",
+    "Wrong: reps take these exams; principal exams are a separate set."
+   ]
+  },
+  {
+   "id": "13-q31",
+   "r": "13.3.3.3",
+   "k": "concept",
+   "d": 2,
+   "q": "Which person must register as a principal?",
+   "o": [
+    "An officer in charge of day-to-day supervision of the firm’s securities business",
+    "A receptionist who answers phones",
+    "An outside accountant",
+    "A silent partner with no role"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: persons who manage or supervise securities business day to day, or train associated persons, are principals.",
+    "Wrong: a receptionist performs clerical duties and is exempt from registration.",
+    "Wrong: an outside accountant is not an associated person managing the securities business.",
+    "Wrong: a silent partner has no involvement in the firm’s securities activities."
+   ]
+  },
+  {
+   "id": "13-q32",
+   "r": "13.3.3.4",
+   "k": "concept",
+   "d": 2,
+   "q": "Which of the following need NOT register with FINRA?",
+   "o": [
+    "Employees performing only clerical or administrative duties",
+    "Equity traders",
+    "Persons soliciting customers",
+    "Persons training representatives"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: clerical and administrative personnel are exempt from registration.",
+    "Wrong: traders conduct securities business and must register.",
+    "Wrong: soliciting customers is registered activity.",
+    "Wrong: training associated persons is one of the activities that makes someone a principal."
+   ]
+  },
+  {
+   "id": "13-q33",
+   "r": "13.3.3.4",
+   "k": "scenario",
+   "d": 2,
+   "q": "An individual who engages only in municipal securities business would register with:",
+   "o": [
+    "The MSRB",
+    "FINRA only",
+    "The state attorney general",
+    "The Federal Reserve"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: persons in only municipal securities business register with the MSRB rather than FINRA.",
+    "Wrong: FINRA registration is for general securities business, not municipal-only persons.",
+    "Wrong: the attorney general does not register securities professionals.",
+    "Wrong: the Federal Reserve enforces MSRB rules in banks but does not register individuals."
+   ]
+  },
+  {
+   "id": "13-q34",
+   "r": "13.3.4",
+   "k": "calc",
+   "d": 2,
+   "q": "A registered rep moves to a new home on June 3. By what date must her Form U4 be amended?",
+   "o": [
+    "July 3",
+    "June 13",
+    "June 18",
+    "July 18"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: ordinary updates are due within 30 calendar days; June 3 plus 30 days is July 3 (27 days left in June, then 3 more).",
+    "Wrong: this uses a 10-day window, which applies only to statutory disqualification events.",
+    "Wrong: 15 days is not a deadline in the chapter.",
+    "Wrong: 45 days exceeds the 30-day deadline."
+   ]
+  },
+  {
+   "id": "13-q35",
+   "r": "13.3.4",
+   "k": "scenario",
+   "d": 2,
+   "q": "A rep takes a paid seat on the board of a local company. What must be done?",
+   "o": [
+    "Amend the U4 within 30 days",
+    "File a Form U5",
+    "No filing is required",
+    "File an original U4"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: an outside business activity requires an amended U4 within 30 days.",
+    "Wrong: a U5 is for terminations, and the rep is still employed.",
+    "Wrong: outside business activity is a reportable change.",
+    "Wrong: an original U4 is for new registrations, not updates."
+   ]
+  },
+  {
+   "id": "13-q36",
+   "r": "13.3.4",
+   "k": "scenario",
+   "d": 3,
+   "q": "A rep sells her home for less than the outstanding mortgage, and the bank accepts the lower amount as full repayment. What is required?",
+   "o": [
+    "Notify compliance and file an amended U4 because it is a compromise with creditors",
+    "Nothing; it is a personal matter",
+    "File a Form U5",
+    "Report only if she is also convicted of a crime"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: a home short sale is a compromise with creditors, requiring notice to compliance and an amended U4.",
+    "Wrong: compromises with creditors are reportable events.",
+    "Wrong: a U5 is for termination of registration.",
+    "Wrong: no conviction is needed; the creditor compromise itself is reportable."
+   ]
+  },
+  {
+   "id": "13-q37",
+   "r": "13.3.4",
+   "k": "concept",
+   "d": 2,
+   "q": "Which of the following events require an amended Form U4? I. A rep changes her name after marriage II. A rep marries but keeps her name III. A tax lien is filed against the rep IV. The rep moves to a new residence",
+   "o": [
+    "I, III and IV only",
+    "I and II only",
+    "II and IV only",
+    "I, II, III and IV"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: name change, a lien and an address change all require an amendment, while marital status alone does not.",
+    "Wrong: a change in marital status alone does not require an amendment, and this omits the lien and address change.",
+    "Wrong: this includes the marital-status-only item and omits the name change and lien.",
+    "Wrong: item II alone does not trigger an amendment."
+   ]
+  },
+  {
+   "id": "13-q38",
+   "r": "13.3.4",
+   "k": "calc",
+   "d": 3,
+   "q": "A rep is convicted of a securities-related misdemeanor on September 5. By what date must the firm report the event to CRD?",
+   "o": [
+    "September 15",
+    "October 5",
+    "September 20",
+    "November 4"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: reportable statutory disqualification events must be disclosed within 10 calendar days, so September 5 plus 10 is September 15.",
+    "Wrong: October 5 uses the 30-day deadline for ordinary updates.",
+    "Wrong: September 20 is 15 days, which is not a deadline here.",
+    "Wrong: November 4 is 60 days, not applicable."
+   ]
+  },
+  {
+   "id": "13-q39",
+   "r": "13.3.5",
+   "k": "concept",
+   "d": 1,
+   "q": "A broker-dealer terminates a registered representative. Which form must it file with FINRA, and within what period?",
+   "o": [
+    "Form U5 within 30 calendar days",
+    "Amended Form U4 within 10 calendar days",
+    "Form U5 within 60 days",
+    "Form BD within 30 days"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: terminations are reported on Form U5 within 30 calendar days with the reason for termination.",
+    "Wrong: an amended U4 within 10 days is for statutory disqualification events, not terminations.",
+    "Wrong: the deadline is 30 days, not 60.",
+    "Wrong: Form BD is a firm registration form, not a termination notice."
+   ]
+  },
+  {
+   "id": "13-q40",
+   "r": "13.3.5",
+   "k": "scenario",
+   "d": 2,
+   "q": "A rep leaves Firm A for Firm B in the same month. Which filings are made?",
+   "o": [
+    "Firm A files a U5 and Firm B files an original U4",
+    "Firm A files an amended U4 and Firm B files a U5",
+    "Neither firm files anything",
+    "Both firms file a U5"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: the old firm terminates the registration with a U5 and the new sponsor files an original U4.",
+    "Wrong: this reverses the forms; a U5 is the departing firm’s notice.",
+    "Wrong: a change of firm requires both filings.",
+    "Wrong: the new firm files a U4, not a U5."
+   ]
+  },
+  {
+   "id": "13-q41",
+   "r": "13.3.5",
+   "k": "scenario",
+   "d": 2,
+   "q": "Which situation requires NO new filing with FINRA about the individual’s registration?",
+   "o": [
+    "A rep takes three months of leave but keeps her licences and employment",
+    "A rep is subject to a FINRA regulatory action",
+    "A rep who has been out of the business for years is hired",
+    "A rep legally changes her name"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: an approved leave without giving up licence or job does not trigger a U4 or U5.",
+    "Wrong: a regulatory action is reportable on an amended U4.",
+    "Wrong: a returning person needs an original U4 filed by the new firm.",
+    "Wrong: a name change requires an amended U4."
+   ]
+  },
+  {
+   "id": "13-q42",
+   "r": "13.3.5",
+   "k": "concept",
+   "d": 2,
+   "q": "Following a rep’s termination, which statement is true?",
+   "o": [
+    "The rep remains subject to regulators’ jurisdiction for at least two years and must keep an address on file",
+    "Regulatory jurisdiction ends on the date of termination",
+    "The firm need not give the rep a copy of the U5",
+    "The rep may ignore regulator requests for information"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: former registered persons stay under regulators’ jurisdiction for at least two years and must keep addresses current.",
+    "Wrong: jurisdiction continues for at least two years after termination.",
+    "Wrong: the firm must provide a copy of the U5 to the departing rep within 30 days.",
+    "Wrong: former reps may be required to provide information about activities while associated."
+   ]
+  },
+  {
+   "id": "13-q43",
+   "r": "13.3.5.1",
+   "k": "scenario",
+   "d": 2,
+   "q": "A rep leaves the industry and returns three years later, with no special program. Which is accurate?",
+   "o": [
+    "She must retake the qualification exam but not the SIE",
+    "She must retake the SIE but not the qualification exam",
+    "She must retake both",
+    "She need retake neither"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: registration lapses after two years out, but the SIE remains valid for four years.",
+    "Wrong: the SIE is still valid; the lapse affects the qualification exam.",
+    "Wrong: the SIE has not expired after three years, so it need not be retaken.",
+    "Wrong: the qualification exam expires after two years without association."
+   ]
+  },
+  {
+   "id": "13-q44",
+   "r": "13.3.5.1",
+   "k": "concept",
+   "d": 3,
+   "q": "A rep’s registration is revoked for regulatory reasons. To become registered again, she would generally need to:",
+   "o": [
+    "Pass the required examinations again",
+    "Wait for the two-year window and re-associate",
+    "File an amended U4 only",
+    "Pay the annual MQP fee"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: when registration is revoked for regulatory reasons, exams must be passed again.",
+    "Wrong: the two-year re-association window applies to leaving the firm, not revocation.",
+    "Wrong: an amended U4 does not restore a revoked registration.",
+    "Wrong: MQP is for those who left voluntarily, not those revoked for regulatory reasons."
+   ]
+  },
+  {
+   "id": "13-q45",
+   "r": "13.3.8.3",
+   "k": "concept",
+   "d": 2,
+   "q": "Which of the following are requirements of the Maintaining Qualifications Program? I. At least one year registered with a firm II. The individual enrolls within two years of leaving III. The firm enrolls the individual IV. Annual fee of $100 and annual CE",
+   "o": [
+    "I, II and IV only",
+    "I and III only",
+    "II, III and IV only",
+    "III only"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: the person needs a year of registration, must enroll within two years, and pays $100 annually plus completes CE.",
+    "Wrong: the firm does not enroll the individual, so III is false.",
+    "Wrong: III is false because individuals enroll themselves through FinPro.",
+    "Wrong: III is false and the other requirements are omitted."
+   ]
+  },
+  {
+   "id": "13-q46",
+   "r": "13.3.8.3",
+   "k": "scenario",
+   "d": 3,
+   "q": "Dan was registered for four years, left his firm, and enrolled in the Maintaining Qualifications Program within a year. He completes his CE yearly and pays the fee. After 4 years, he is hired by another member. What is true?",
+   "o": [
+    "He does not need to retake his representative exams",
+    "He must retake the SIE",
+    "He must retake his Series exam because two years passed",
+    "He must be re-sponsored by the old firm"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: MQP lets him reregister within a maximum of five years without requalifying by exam.",
+    "Wrong: the SIE is not the issue; the program preserves the representative qualification.",
+    "Wrong: the usual two-year lapse is extended by MQP up to five years.",
+    "Wrong: any member firm may hire him; the old firm is not required."
+   ]
+  },
+  {
+   "id": "13-q47",
+   "r": "13.3.6",
+   "k": "scenario",
+   "d": 1,
+   "q": "A customer wants to research a rep’s employment and disciplinary history before opening an account. Which is the best source?",
+   "o": [
+    "BrokerCheck",
+    "The rep’s personal social media",
+    "A request to the firm for a copy of the rep’s U4",
+    "The MSRB website"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: BrokerCheck is the public source for registration, employment and disciplinary history.",
+    "Wrong: social media is not an authoritative regulatory source.",
+    "Wrong: the customer can use BrokerCheck, which publishes U4-based information.",
+    "Wrong: the MSRB is a rulemaker for municipal securities, not a background database."
+   ]
+  },
+  {
+   "id": "13-q48",
+   "r": "13.3.6",
+   "k": "concept",
+   "d": 2,
+   "q": "Which statements are true about BrokerCheck? I. Firms must link to it on their websites II. Firms send customers an annual notice with its web address and phone number III. It is available online or by a toll-free number IV. Access requires the rep’s permission",
+   "o": [
+    "I, II and III only",
+    "I and IV only",
+    "II and IV only",
+    "III and IV only"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: firms link to it, give annual notice, and it is accessible online or by phone.",
+    "Wrong: IV is false; investors need no permission from the rep.",
+    "Wrong: IV is false and I and III are also true.",
+    "Wrong: IV is false and II and I are true."
+   ]
+  },
+  {
+   "id": "13-q49",
+   "r": "13.3.7",
+   "k": "concept",
+   "d": 1,
+   "q": "Which of the following results in statutory disqualification?",
+   "o": [
+    "A conviction for a felony within the last 10 years",
+    "An arrest for a felony",
+    "A felony conviction 15 years ago",
+    "Any customer complaint"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: felony convictions within the last 10 years trigger statutory disqualification.",
+    "Wrong: an arrest, without a conviction, is not a statutory disqualification.",
+    "Wrong: the 10-year look-back has passed for a conviction 15 years ago.",
+    "Wrong: a complaint alone does not cause statutory disqualification."
+   ]
+  },
+  {
+   "id": "13-q50",
+   "r": "13.3.7",
+   "k": "scenario",
+   "d": 2,
+   "q": "A rep is arrested for shoplifting but not convicted. What action is appropriate?",
+   "o": [
+    "Notify compliance, but it is not a statutory disqualification",
+    "File Form U5 immediately",
+    "Automatic statutory disqualification",
+    "Immediate license revocation"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: arrests do not cause statutory disqualification, but compliance should be told.",
+    "Wrong: a U5 is for termination, which is not triggered by an arrest.",
+    "Wrong: only convictions and the other listed events cause SD.",
+    "Wrong: licence revocation does not follow from an arrest alone."
+   ]
+  },
+  {
+   "id": "13-q51",
+   "r": "13.3.7",
+   "k": "concept",
+   "d": 3,
+   "q": "Which of the following does NOT have a 10-year look-back limit for statutory disqualification?",
+   "o": [
+    "A court injunction involving unlawful investment activities",
+    "A felony conviction",
+    "A misdemeanor conviction involving fraud",
+    "A misdemeanor conviction involving bribery"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: temporary and permanent injunctions disqualify at any time, with no 10-year limit.",
+    "Wrong: felony convictions count when within the last 10 years.",
+    "Wrong: fraud misdemeanors count when within the last 10 years.",
+    "Wrong: bribery misdemeanors count when within the last 10 years."
+   ]
+  },
+  {
+   "id": "13-q52",
+   "r": "13.3.7",
+   "k": "concept",
+   "d": 2,
+   "q": "All of the following can cause statutory disqualification EXCEPT:",
+   "o": [
+    "Being arrested but not convicted of fraud",
+    "Expulsion from an SRO",
+    "A finding that the person made false statements to an SRO",
+    "A finding of willful violation of federal securities laws"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: an arrest without conviction does not cause statutory disqualification.",
+    "Wrong: expulsion or suspension from an SRO is a disqualifying event.",
+    "Wrong: false statements in applications or reports to SROs are disqualifying.",
+    "Wrong: SEC or SRO findings of willful violations are disqualifying."
+   ]
+  },
+  {
+   "id": "13-q53",
+   "r": "13.3.7.1",
+   "k": "scenario",
+   "d": 2,
+   "q": "A firm learns that one of its reps was just convicted of a securities-related misdemeanor and wants to keep employing the rep. What must it do?",
+   "o": [
+    "Report within 10 days on an amended U4 and request a waiver describing the proposed supervision",
+    "File a U5 and keep the person as an employee",
+    "Do nothing until FINRA contacts the firm",
+    "Wait 30 days and then submit a waiver"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: the event is reported within 10 days and a waiver request must describe the proposed supervision and employment terms.",
+    "Wrong: a U5 terminates the association, which is the choice if the firm does not seek a waiver.",
+    "Wrong: the firm has an obligation to report promptly rather than waiting.",
+    "Wrong: the report is due within 10 days, not 30."
+   ]
+  },
+  {
+   "id": "13-q54",
+   "r": "13.3.8.1",
+   "k": "scenario",
+   "d": 2,
+   "q": "A rep does not complete the Regulatory Element by the deadline. Which is true?",
+   "o": [
+    "She becomes CE inactive and may not receive commissions for new registered activity",
+    "She loses only the right to place orders but may still earn commissions",
+    "Her registration is cancelled immediately",
+    "The firm alone decides whether to impose a penalty"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: CE inactive status bars registered activity and compensation that requires registration.",
+    "Wrong: she may not perform any registered function, including order handling.",
+    "Wrong: CE inactive is not immediate cancellation; termination occurs after two years of inactivity.",
+    "Wrong: CE inactive status results automatically from missing the Regulatory Element."
+   ]
+  },
+  {
+   "id": "13-q55",
+   "r": "13.3.8.1",
+   "k": "scenario",
+   "d": 3,
+   "q": "A rep has been CE inactive for two years. What happens to her registration?",
+   "o": [
+    "It is administratively terminated and she must requalify by exam",
+    "It remains inactive indefinitely",
+    "It reverts to the firm",
+    "She may reactivate by paying a fee"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: after two years of CE inactivity the registration is administratively terminated and exams must be retaken.",
+    "Wrong: the inactive status ends in termination after two years.",
+    "Wrong: registrations belong to the individual and are not transferred to the firm.",
+    "Wrong: a fee does not restore a terminated registration."
+   ]
+  },
+  {
+   "id": "13-q56",
+   "r": "13.3.8.2",
+   "k": "concept",
+   "d": 2,
+   "q": "Which statements about the Firm Element are correct? I. It is administered by the firm II. FINRA must approve the firm’s training content III. It is based on an annual needs analysis IV. Failure makes a rep CE inactive",
+   "o": [
+    "I and III only",
+    "I and II only",
+    "II and IV only",
+    "III and IV only"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: the firm runs it and bases it on an annual needs analysis and written plan.",
+    "Wrong: FINRA does not define or approve the content, so II is false.",
+    "Wrong: both II and IV are false.",
+    "Wrong: IV is false; Firm Element failure does not cause CE inactive status."
+   ]
+  },
+  {
+   "id": "13-q57",
+   "r": "13.5.1",
+   "k": "scenario",
+   "d": 2,
+   "q": "An investment adviser firm manages $140 million and operates in four states. Where does it register, and which form does it file?",
+   "o": [
+    "With the SEC on Form ADV",
+    "With each of the four states only",
+    "With FINRA on Form BD",
+    "With the MSRB on Form U4"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: advisers with more than $100 million in assets under management register with the SEC using Form ADV.",
+    "Wrong: state registration applies to advisers under $100 million.",
+    "Wrong: Form BD is for broker-dealers registering as FINRA members.",
+    "Wrong: the MSRB does not register advisers, and Form U4 is for individuals."
+   ]
+  },
+  {
+   "id": "13-q58",
+   "r": "13.4",
+   "k": "scenario",
+   "d": 2,
+   "q": "A rep registered only in New Jersey has a long-time client who relocates to Arizona and calls to place a buy order. What should the rep do?",
+   "o": [
+    "Pass the order to someone at the firm who is registered in Arizona",
+    "Execute the order since the client was a New Jersey customer",
+    "Execute the order if the client signs a waiver",
+    "Refuse and close the account"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: the rep cannot trade for the client until registered in that state, so the order goes to a rep registered there.",
+    "Wrong: a prior relationship does not authorize trading in an unregistered state.",
+    "Wrong: a client waiver cannot replace state registration.",
+    "Wrong: closing the account is unnecessary; the order can be handled by a properly registered person."
+   ]
+  },
+  {
+   "id": "13-q59",
+   "r": "13.5",
+   "k": "concept",
+   "d": 2,
+   "q": "Which statement about investment advisers is true?",
+   "o": [
+    "They owe clients a fiduciary duty and are paid for advice",
+    "They are held only to a suitability standard",
+    "They are typically paid per transaction executed",
+    "They must all register with FINRA"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: investment advisers act in clients’ best interest and charge for the advice they provide.",
+    "Wrong: suitability is the standard for broker-dealer reps, not advisers.",
+    "Wrong: charging for executed transactions describes broker-dealers.",
+    "Wrong: advisers register with the SEC or states under the Advisers Act, not with FINRA."
+   ]
+  },
+  {
+   "id": "13-q60",
+   "r": "13.5",
+   "k": "scenario",
+   "d": 3,
+   "q": "A broker-dealer offers a wrap account in which clients pay one annual fee covering advice and trade execution. What is the registration consequence?",
+   "o": [
+    "The firm must register as both an investment adviser and a broker-dealer",
+    "No additional registration is needed",
+    "Only the clients must register",
+    "Only the firm’s principals must register as IARs and the firm stays a BD only"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: because the firm charges for advice through the wrap fee, it must dually register as IA and BD.",
+    "Wrong: charging for advice triggers adviser registration.",
+    "Wrong: clients do not register in any capacity.",
+    "Wrong: the firm itself must be registered as an adviser, not only individuals."
+   ]
+  },
+  {
+   "id": "13-q61",
+   "r": "13.5.1",
+   "k": "calc",
+   "d": 2,
+   "q": "Four advisers each manage assets: A $95 million, B $101 million, C $60 million, D $99 million. Using the chapter’s rule, how many must register with the SEC?",
+   "o": [
+    "One",
+    "Two",
+    "Three",
+    "Four"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: only B manages more than $100 million ($101 million), so one adviser must register with the SEC.",
+    "Wrong: no second adviser exceeds $100 million: $95M, $60M and $99M are all below it.",
+    "Wrong: three advisers are below the threshold.",
+    "Wrong: only one adviser exceeds the $100 million line."
+   ]
+  },
+  {
+   "id": "13-q62",
+   "r": "13.5.1",
+   "k": "scenario",
+   "d": 2,
+   "q": "Sam works under an SEC-registered investment adviser, soliciting advisory clients and managing their portfolios for a fee. With whom does he register?",
+   "o": [
+    "His state, as an investment adviser representative",
+    "The SEC, as an investment adviser representative",
+    "FINRA, as a registered principal",
+    "He needs no registration"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: IARs register at the state level regardless of whether the adviser is SEC- or state-registered.",
+    "Wrong: the SEC does not register individuals working under an RIA.",
+    "Wrong: FINRA principal registration applies to broker-dealer management, not IARs.",
+    "Wrong: states generally require IAR registration for people who advise, manage, solicit or supervise."
+   ]
+  },
+  {
+   "id": "13-q63",
+   "r": "13.5.2",
+   "k": "concept",
+   "d": 2,
+   "q": "Which of the following is generally REQUIRED to register as an investment adviser?",
+   "o": [
+    "A publisher of an investment newsletter that makes specific recommendations tailored to individuals",
+    "A lawyer whose advice is incidental to practice",
+    "A bank providing advice",
+    "A family office serving a single family"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: newsletters with tailored specific recommendations are not exempt as bona fide publishers.",
+    "Wrong: lawyers, accountants, engineers and teachers are excluded when advice is incidental.",
+    "Wrong: banks and bank holding companies are excluded from the registration requirement.",
+    "Wrong: a family office advising only one family is exempt."
+   ]
+  },
+  {
+   "id": "13-q64",
+   "r": "13.5.2",
+   "k": "scenario",
+   "d": 2,
+   "q": "A client asks his rep about attractive tech stocks, hears three names, and buys 100 shares of one through the rep, paying only the commission. Is the rep required to register as an investment adviser representative?",
+   "o": [
+    "No, her advice is incidental and she received no special compensation for it",
+    "Yes, because she recommended a security",
+    "Yes, if the client buys more than 100 shares",
+    "Yes, with the SEC"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: advice incidental to brokerage business without special compensation falls within the exemption.",
+    "Wrong: recommending a security alone does not make a BD rep an adviser.",
+    "Wrong: share count is irrelevant to the exemption.",
+    "Wrong: the SEC does not register individuals, and none is needed here."
+   ]
+  },
+  {
+   "id": "13-q65",
+   "r": "13.3.8.1",
+   "k": "scenario",
+   "d": 2,
+   "q": "Teresa became registered in March of this year. By what date must she complete her first Regulatory Element without becoming CE inactive?",
+   "o": [
+    "December 31 of this year",
+    "Two years from March",
+    "Three years from March",
+    "The end of her first fiscal quarter"
+   ],
+   "a": 0,
+   "w": [
+    "Correct: the first deadline is December 31 of the year she was registered.",
+    "Wrong: two years is the length of CE inactivity before termination.",
+    "Wrong: the requirement is annual, not on a three-year cycle.",
+    "Wrong: the Regulatory Element is annual, due December 31."
+   ]
+  }
+ ]
+}
