@@ -1,13 +1,17 @@
-# 06 — Questions ouvertes (décisions avant de coder)
+# 06 — Décisions
 
-Ordre = impact décroissant sur la conception.
+## Tranchées (23/10)
+| Sujet | Décision |
+|---|---|
+| Périmètre | **SIE uniquement** ; les Series relèvent d'un autre projet. L'employeur exige le SIE → priorité vitesse |
+| Langue | **Tout en anglais** (elle est quasi bilingue, l'examen est en anglais) |
+| Temps dispo | 2-4 h/jour, échéance fin 2026 |
+| Hébergement | **Aucun.** Local, sur les appareils de l'utilisatrice → **un seul fichier HTML autonome**, hors-ligne |
+| Cas réels / API | Idée abandonnée comme priorité ; au mieux bonus tardif. Objectif = préparation maximale à l'examen |
+| Pilote | **Ch. 11 Customer Accounts** (le plus dense en points testés, ~12 questions) |
+| Budget | Plafond de travail ≈ 15 USD (estimé, voir 05) |
 
-1. **SIE seul, ou aussi Series 79/7 et 63 ?** Le SIE n'autorise pas à exercer. Qu'a demandé exactement l'employeur (examens, ordre, échéances) ? Si un Series suit, le planning de 10 semaines est trop optimiste et il faut garder une marge pour la suite.
-2. **Date d'examen visée et durée de travail réelle par jour ?** « Avant fin d'année » n'est pas une date. Sans date, pas de planning ; sans heures/jour réelles, on ne sait pas si la couverture complète est faisable (≈ 14 chapitres + 5 examens blancs ≈ 60-80 h).
-3. **Plafond budgétaire en USD** (solde restant que je ne vois pas) → je dimensionne le nombre de chapitres traités par lot.
-4. **Langue** : explications FR + examen EN (recommandé) ou tout en anglais ? Elle prépare un examen en anglais pour travailler à New York : le contenu 100 % FR la protège-t-il vraiment, ou retarde-t-il l'acquisition du vocabulaire ?
-5. **Hébergement privé** : OK pour Cloudflare Pages/Netlify (compte gratuit, mot de passe) ? Le dépôt doit passer en **privé** (manuel sous copyright).
-6. **Appareil principal** (iPhone ? Android ? Mac ?) et niveau d'exigence offline.
-7. **Cas réels** : qu'attend-elle précisément ? Pour quelle décision d'examen un cours Treasury du jour change-t-il sa réponse à une question ? Si la réponse est « aucune », on les garde comme bonus (L6) et on investit le budget dans les QCM et drills.
-8. **Pilote** : valides-tu le **chapitre 6 (Options)** comme chapitre pilote pour juger le niveau de qualité avant de produire le reste ?
-9. **Vocaux WhatsApp** : je n'ai pas d'outil de transcription ici. J'ai travaillé sur ton résumé écrit. S'ils contiennent une exigence absente de ton texte (date, ton, présentation), dis-la-moi en une ligne.
+## Encore ouvertes (n'empêchent pas de coder)
+1. **Appareils** : sur iPhone, ouvrir un fichier HTML local avec JavaScript est pénible (pas d'ouverture directe depuis l'app Fichiers). Piste : l'ouvrir via une app type « Documents by Readdle », ou la mettre sur son ordinateur. Quels appareils veut-elle utiliser ?
+2. **Date du créneau Prometric** (pour caler le planning et les examens blancs).
+3. **Dépôt GitHub privé** (manuel sous copyright).

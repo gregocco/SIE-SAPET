@@ -3,26 +3,28 @@
 Source : `SIE Textbook 6th Edition.pdf`. Texte extractible proprement (16 pages quasi vides = pages de titre de chapitre). Chaque chapitre contient déjà cours + exercices + corrigés — on **ne les reprend pas** (droits), on produit des questions originales.
 
 ## Cartographie et effort (profil : VP DCM FIG)
-Pages ≈ longueur du chapitre dans le livre. « Effort » = temps d'étude recommandé pour **elle**, pas la difficulté absolue.
+Sources : sommaire du manuel, pondération officielle par section, et **398 « Knopman Notes »** (points que l'éditeur signale comme très testés). « Q. estimées » = pondération de la section répartie entre ses chapitres (hypothèse d'égalité, sauf Options : le manuel dit lui-même « 3 à 4 questions au total »). Estimations, pas des chiffres FINRA.
 
-| Ch. | Thème | Pages | Poids exam (section) | Effort | Pourquoi |
-|---|---|---|---|---|---|
-| 1 | Equity (common, preferred, ADR, short sales, dividendes) | ~30 | Products 44 % | Moyen | Mécanique connue, mais **dates de dividendes** (declaration/ex/record/payable), droits de vote, short sale = pièges classiques |
-| 2 | Debt securities (yields, risques, accrued, accretion) | ~28 | Products | **Faible** | Cœur de métier. Ne garder que : conventions US (30/360 vs act/act), accrued, accretion/amortization, tax |
-| 3 | Types de bonds (corporate, Treasuries, agencies, **munis**, money market) | ~30 | Products | Moyen | Treasuries/corporates OK ; **munis (GO/revenue, tax-equivalent yield, triple tax-free)**, agencies (GSE, MBS/CMO) = zone floue |
-| 4 | Investment companies (mutual funds, CEF, UIT, ETF) | ~36 | Products | **Élevé** | Univers 40-Act inconnu : NAV/POP, sales charges, breakpoints, classes A/B/C, 12b-1, rachat |
-| 5 | Autres produits (REITs, DPP, hedge funds, PE, structured, 529/muni fund) | ~24 | Products | Moyen | Vocabulaire + qui peut investir (accredited) |
-| 6 | **Options** (calls, puts, index, premiums, OCC) | ~40 | Products | **Élevé** | Chapitre le plus « calcul + stratégies » ; gros rendement par heure de travail |
-| 7 | Suitability, **Reg BI**, risques, objectifs, rendements | ~32 | Products | **Élevé** | Concepts réglementaires US + risques/returns (beta, Sharpe, TWR…) |
-| 8 | Émission (registration, exemptions Reg D/Reg S/144A/Rule 144, underwriting, muni underwriting) | ~34 | Capital Markets 16 % | **Faible→Moyen** | Elle fait la syndication : survol. Mais **vocabulaire US** (Rule 415, 144, 145, 506) à vérifier |
-| 9 | Marché secondaire (’34 Act, exchanges, order types, market protection) | ~30 | Capital Markets | Moyen | Market structure US (NMS, Reg SHO, circuit breakers, ordres stop/limit) |
-| 10 | Économie & politique monétaire (Fed, indicateurs, taux, FX) | ~36 | Capital Markets | **Faible** | Culture macro acquise ; mémoriser vocabulaire Fed (discount rate, FOMC, OMO) |
-| 11 | **Customer accounts** (ouverture, types, titling, marge, SIPC) | ~38 | Trading/Accounts 31 % | **Élevé** | 100 % US retail : joint WROS/TIC, UTMA, marge Reg T, SIPC |
-| 12 | **Comptes fiscaux** (401k, IRA/Roth, annuités, 529, Coverdell, HSA) | ~38 | Trading/Accounts | **Élevé** | Entièrement nouveau, plein de chiffres (plafonds, pénalités) |
-| 13 | **FINRA/registration** (SRO, BD, personnel, Blue Sky, IA) | ~26 | Regulatory 9 % | Moyen | Faible poids mais mémoire pure |
-| 14 | **Business conduct** (insider trading, AML, communications, BCP, cadeaux…) | ~30 | Regulatory | Moyen | Beaucoup de seuils chiffrés (ex. gifts) ; questions « interdit / autorisé » |
+| Ch. | Thème | Pages | Notes très testées (par page) | Q. estimées | Effort pour elle | Remarque |
+|---|---|---|---|---|---|---|
+| 1 | Equity (common, preferred, ADR, short, dividendes) | ~30 | ~24 | ~5 | Moyen | Dates de dividendes, droits, short sale |
+| 2 | Debt (yields, risques, accrued, accretion) | 28 | 24 (0,86) | ~5 | **Faible** | Cœur de métier ; conventions US + calculs |
+| 3 | Types de bonds (corp, Treasuries, agencies, **munis**, money market) | 30 | 22 (0,73) | ~5 | Moyen | Munis, agencies/MBS = zone floue |
+| 4 | Investment companies (mutual funds, CEF, UIT, ETF) | 36 | 34 (0,94) | ~5 | **Élevé** | Univers 40-Act, NAV/POP, sales charges |
+| 5 | REIT, DPP, hedge funds, PE, structurés | 24 | 23 (0,96) | ~5 | Moyen | Vocabulaire + qui peut investir |
+| 6 | Options | 40 | 21 (**0,53**) | **3-4** | **Faible-moyen** | Beaucoup de pages, peu de questions : essentiels seulement |
+| 7 | Suitability, Reg BI, risques, rendements | 32 | 26 (0,81) | ~5 | Élevé | Concepts réglementaires US |
+| 8 | Émission (registration, exemptions, underwriting) | 34 | 29 (0,85) | ~4 | Faible | Son métier ; vocabulaire US (Rule 144/415, Reg D) |
+| 9 | Marché secondaire (’34 Act, ordres, protections) | 30 | 27 (0,90) | ~4 | Moyen | Market structure US |
+| 10 | Économie & Fed | 36 | 27 (0,75) | ~3 | **Faible** | Macro acquise ; vocabulaire Fed |
+| 11 | **Customer accounts** (types, titling, marge, SIPC) | 38 | **48 (1,26)** | **~11-12** | **Élevé** | **Chapitre n°1 en valeur** |
+| 12 | **Comptes fiscaux** (401k, IRA, annuités, 529) | 38 | 37 (0,97) | **~11-12** | **Élevé** | Entièrement nouveau, chiffres à mémoriser |
+| 13 | FINRA / registration | 26 | 24 (0,92) | ~3 | Moyen | Mémoire pure |
+| 14 | Business conduct (insider, AML, communications, gifts) | 45 | 32 (0,71) | ~4 | Moyen | Beaucoup de pages, peu de questions |
 
-**Lecture :** ≈ 45 % des pages (ch. 4, 6, 7, 11, 12 + partie de 13-14) concentrent l'essentiel du risque d'échec pour ce profil. Les ch. 2, 8, 10 (≈ 25 % des pages) peuvent être traités en diagnostic + fiche express.
+**Lecture corrigée :** les chapitres 11 et 12 pèsent à eux seuls **≈ 31 % de l'examen (23 questions) pour 76 pages** : ce sont les plus rentables. À l'inverse, les ch. 6 et 14 (85 pages) ne valent qu'environ 7-8 questions : à traiter en express. Les ch. 2, 8, 10 restent « diagnostic + fiche express » vu son métier.
+
+> Correction de ma première version : j'avais classé les Options « effort élevé / gros rendement par heure ». Le manuel contredit cela (3-4 questions). Priorité = densité de questions par page, pas nombre de pages.
 
 ## Pour chaque chapitre, l'appli contiendra
 1. **Fiche express** (1 écran défilant) : l'essentiel + schéma/tableau.

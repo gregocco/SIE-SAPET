@@ -1,6 +1,6 @@
 # 05 — Plan de production et budget
 
-**Contrainte posée : on dépense le reste des crédits cloud, pas 1 USD de plus.** Je ne vois pas le solde ; il faut me donner un plafond chiffré (voir 06). En attendant, le plan est conçu pour que **chaque lot soit utilisable seul** : on peut s'arrêter après n'importe quel lot avec un produit qui marche.
+**Contrainte posée : on dépense le reste des crédits cloud, pas 1 USD de plus.** Je ne vois pas le solde ; plafond de travail retenu : **≈ 15 USD** pour L1-L5 (estimation, voir ci-dessous), L6-L7 seulement s'il en reste. Le coût dominant n'est pas la rédaction mais le nombre d'appels d'outils (le contexte est relu à chaque appel) : donc peu d'appels, gros fichiers écrits d'un coup.  le plan est conçu pour que **chaque lot soit utilisable seul** : on peut s'arrêter après n'importe quel lot avec un produit qui marche.
 
 ## Où partent les coûts (ordre de grandeur, à recaler)
 - **Lire le manuel** : ~180 k mots ≈ 250 k tokens en entrée, **une seule fois**, chapitre par chapitre.
@@ -12,15 +12,15 @@
 | Lot | Contenu | Valeur si on s'arrête là |
 |---|---|---|
 | **L0** | Dossier de cadrage (ce dossier) | Décisions prises |
-| **L1** | Socle appli : navigation, thème, PWA, stockage, moteur de QCM, répétition espacée, simulateur d'examen — avec **1 chapitre pilote complet (ch. 6 Options)** | Produit utilisable + validation de la qualité/visuel avant de multiplier |
-| **L2** | Chapitres à **effort élevé** : 4, 7, 11, 12 (+6) | Couvre l'essentiel du risque d'échec |
+| **L1** | Socle appli : navigation, thème, PWA, stockage, moteur de QCM, répétition espacée, simulateur d'examen — avec **1 chapitre pilote complet (ch. 11 Customer Accounts, le plus rentable)** | Produit utilisable + validation de la qualité/visuel avant de multiplier |
+| **L2** | Chapitres à **effort élevé** : 12, 4, 7 | Couvre l'essentiel du risque d'échec |
 | **L3** | Générateurs de calcul (~25) | Entraînement illimité aux chiffres |
-| **L4** | Chapitres restants : 1, 5, 13, 14, puis 3, 9 | Couverture complète |
+| **L4** | Chapitres restants : 1, 5, 3, 9, 13, 14, 6 | Couverture complète |
 | **L5** | Chapitres express : 2, 8, 10 + test de positionnement + examens blancs finalisés | Parcours complet |
 | **L6** | Cas réels / snapshots API (modules bornés, si le réseau le permet) | Bonus d'ancrage |
 | **L7** | Passe de vérification (script de recoupement chiffres/seuils vs manuel) + polish visuel | Fiabilité |
 
-Ordre volontairement **qualité avant volume** : L1 sur un seul chapitre pour que tu valides le rendu avant que je produise les 13 autres.
+Ordre volontairement **qualité avant volume** : L1 sur un seul chapitre pour que vous validiez le rendu avant que je produise les 13 autres.
 
 ## Garde-fous de budget
 1. Point de contrôle chiffré à la fin de chaque lot (dépense estimée vs plafond).

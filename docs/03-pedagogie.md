@@ -29,18 +29,17 @@ Chaque exercice affiche **la démarche pas à pas** et un conseil pour la petite
 - Aucune phrase ni question recopiée du manuel.
 - Un champ `confidence` (high/check) : tout ce qui est chiffré (plafonds, seuils, délais) est marqué `check` jusqu'à vérification contre le manuel par un script de recoupement.
 
-## Planning proposé (10 semaines, ~1 h/jour ; à recaler avec la date d'examen)
+## Planning (≈ 9 semaines, 2-4 h/jour ; à caler sur la date de créneau)
+Ordre = rentabilité décroissante, pas l'ordre du livre.
 | Sem. | Focus |
 |---|---|
-| 1 | Positionnement + ch. 1, 4 (equity, fonds) |
-| 2 | Ch. 5, 6 début (options : bases calls/puts) |
-| 3 | Ch. 6 fin (stratégies, premiums) + ch. 7 |
-| 4 | Ch. 2-3 en mode express (conventions US, munis, agencies) |
-| 5 | Ch. 8-10 (marchés, Fed) |
-| 6 | Ch. 11 (comptes, marge) |
-| 7 | Ch. 12 (retraite, annuités, 529) |
-| 8 | Ch. 13-14 (régulation, conduct) |
-| 9 | Examens blancs 1-3 + remédiation |
-| 10 | Examens blancs 4-5, mode dernière semaine, réserve de marge |
-
-Date cible d'examen : **à poser dès maintenant** (créneaux Prometric dispo, frais d'annulation < 10 j).
+| 1 | Positionnement + **ch. 11** (comptes, marge) + **ch. 12** (retraite, annuités, 529) |
+| 2 | Fin ch. 12 + **ch. 4** (fonds) + ch. 7 (suitability, Reg BI) |
+| 3 | Ch. 1, 5, 3 (equity, produits alternatifs, munis/agencies) |
+| 4 | Ch. 9 (marché secondaire), 13 (registration), 14 (conduct) |
+| 5 | Ch. 2, 8, 10 en express + ch. 6 (options, essentiels) |
+| 6 | Examen blanc 1-2 + remédiation par section |
+| 7 | Examens blancs 3-4 + drills de calcul |
+| 8 | Examen blanc 5 + mode « erreurs et pièges » |
+| 9 | Marge de sécurité / reprise des points faibles |
+Avec 2-4 h/jour, la couverture complète tient en ~5 semaines ; le reste = répétition et examens blancs. **Poser le créneau Prometric dès que possible** (la boîte l'exige, et les frais d'annulation partent à 10 jours ouvrés).
