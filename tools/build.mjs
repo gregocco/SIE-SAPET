@@ -10,7 +10,10 @@ const read = p => readFileSync(join(root, p), 'utf8');
 const chapters = readdirSync(join(root, 'content'))
   .filter(f => /^ch-\d+\.json$/.test(f)).sort()
   .map(f => JSON.parse(read('content/' + f)));
-const data = { index: JSON.parse(read('content/index.json')), glossary: JSON.parse(read('content/glossary.json')), chapters };
+const index = JSON.parse(read('content/index.json')).map(m => ({ ...m, live: chapters.some(c => c.id === m.id) }));
+const glossary = JSON.parse(read('content/glossary.json'));
+for (const c of chapters) for (const g of c.glossary || []) if (!glossary.some(x => x.t.toLowerCase() === g.t.toLowerCase())) glossary.push({ t: g.t, d: g.d, ch: c.id });
+const data = { index, glossary, chapters };
 
 // garde-fous contenu
 const ids = new Set();
