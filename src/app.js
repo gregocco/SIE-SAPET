@@ -11,6 +11,8 @@ DATA.chapters.forEach(c => {
 });
 const BYID = Object.fromEntries(ITEMS.map(i => [i.id, i]));
 const QUESTIONS = ITEMS.filter(i => i.kind === 'q');
+const PAIRS = DATA.pairs || [];
+const pairItems = (list) => list.flatMap(p => p.items.map((it, k) => ({ kind: 'pair', id: 'pair:' + p.ch + ':' + p.pi + ':' + k, ch: p.ch, title: p.title, a: p.a, b: p.b, s: it.s, v: it.v, w: it.w })));
 
 /* ---------- helpers ---------- */
 const $ = (s, r = document) => r.querySelector(s);
@@ -327,6 +329,7 @@ function viewPractice() {
   <section class="card"><div class="row"><div style="flex:1"><h3>Weak spots</h3><p class="muted small">${weak} item${weak === 1 ? '' : 's'} you’ve missed and not yet recovered</p></div><button class="btn" data-act="weak" ${weak ? '' : 'disabled'}>Drill</button></div></section>
   <section class="card"><h3>Mixed quiz</h3><p class="muted small">Random questions from every available chapter.</p><div class="row wrapx" style="margin-top:10px"><button class="btn primary" data-act="mixed" data-n="10">10 questions</button><button class="btn" data-act="mixed" data-n="25">25 questions</button></div></section>
   <section class="card"><h3>Calculation drills</h3><p class="muted small">Numbers are generated on the fly. Do them until they feel automatic.</p><ul class="list" style="margin-top:6px">${DRILLS.map(d => `<li><button class="row" style="width:100%;background:none;border:0;padding:12px 0;text-align:left" data-act="drill" data-id="${d.id}"><div style="flex:1"><div style="font-weight:650">${esc(d.title)}</div><div class="muted small">Ch. ${d.ch} · ${esc(d.sub)}</div></div><span class="pill acc">5</span></button></li>`).join('')}</ul></section>
+  ${PAIRS.length ? `<section class="card"><div class="row"><div style="flex:1"><h3>X or Y?</h3><p class="muted small">Rapid sorting of look-alike rules (JTIC vs JTWROS, FDIC vs SIPC…). ${PAIRS.length} decks · ${PAIRS.reduce((n, p) => n + p.items.length, 0)} statements.</p></div></div><div class="row wrapx" style="margin-top:10px"><button class="btn primary" data-act="pairmix">Random 20</button><button class="btn" data-act="pairlist">Choose a deck</button></div></section>` : ''}
   <section class="card"><h3>Memory tools</h3><p class="muted small">Short sessions for commutes and spare minutes.</p><div class="row wrapx" style="margin-top:10px"><button class="btn primary" data-act="listen" data-kind="cards">🎧 Listen to cards</button><button class="btn" data-act="listen" data-kind="traps">🎧 Listen to traps</button><button class="btn" data-act="trapsprint">⚠ Traps sprint</button><a class="btn" href="#/numbers">№ Numbers to know</a></div></section>
   <a class="card row" href="#/glossary" style="text-decoration:none;color:inherit"><div style="flex:1"><h3>Glossary</h3><p class="muted small">${DATA.glossary.length} terms, searchable</p></div><span>›</span></a></div>`;
 }
@@ -347,6 +350,10 @@ function viewRun() {
     body = `<div class="eyebrow">Question · §${esc(q.r)}</div><div class="qstem" style="margin-top:8px">${esc(q.q)}</div>` +
       q.o.map((o, k) => { let cl = ''; if (R.state === 'show') { if (k === q.a) cl = 'ok'; else if (k === R.picked) cl = 'bad'; cl += ' locked'; } return `<button class="opt ${cl}" data-act="pick" data-k="${k}"><b>${LET[k]}</b><span>${esc(o)}</span></button>`; }).join('');
     if (R.state === 'show') body += `<div class="why"><b>${R.picked === q.a ? '✓ Correct' : '✗ Not quite'}</b><ul class="list" style="margin-top:6px">${q.w.map((w, k) => `<li class="${k === q.a ? 'c' : ''}"><b>${LET[k]}.</b> ${esc(clean(w))}</li>`).join('')}</ul><div class="row" style="margin-top:8px">${refPill(q.r)}<button class="btn sm ghost" data-act="flag" data-id="${it.id}">${S.flags[it.id] ? '⚑ Flagged' : '⚑ Flag as doubtful'}</button></div></div><button class="btn primary block" style="margin-top:14px" data-act="next">${R.i + 1 >= R.items.length ? 'Finish' : 'Next'}</button>`;
+  } else if (it.kind === 'pair') {
+    const bad = R.state === 'show' && R.picked !== it.v;
+    body = `<div class="eyebrow">X or Y? · Ch. ${it.ch}</div><div class="small" style="margin-top:6px;font-weight:700;color:var(--accent)">${esc(it.title)}</div><div class="qstem" style="margin-top:10px">${esc(it.s)}</div><div class="grid2" style="margin-top:16px">${['a', 'b'].map(k => { let cl = ''; if (R.state === 'show') { cl = k === it.v ? 'ok locked' : (k === R.picked ? 'bad locked' : 'locked'); } return `<button class="opt ${cl}" style="margin:0;justify-content:center;text-align:center;min-height:64px;font-weight:700" data-act="pairpick" data-k="${k}"><span>${esc(it[k])}</span></button>`; }).join('')}</div>` +
+      (R.state === 'show' ? `<div class="why"><b>${bad ? '✗ It is ' : '✓ '}${esc(it[it.v])}</b><div class="small" style="margin-top:6px">${esc(it.w)}</div></div><button class="btn primary block" style="margin-top:14px" data-act="next">${R.i + 1 >= R.items.length ? 'Finish' : 'Next'}</button>` : '');
   } else if (it.kind === 'trap') {
     body = `<div class="eyebrow">Trap · Ch. ${it.ch}</div><div class="prose" style="margin-top:10px;font-size:1.08rem">${md(it.text)}</div><div class="grid2" style="margin-top:16px"><button class="btn" data-act="gtrap" data-g="0" style="color:var(--bad)">Tricky, again</button><button class="btn primary" data-act="gtrap" data-g="1">Got it</button></div>`;
   } else if (it.kind === 'card') {
@@ -363,7 +370,7 @@ function viewRun() {
 }
 function runFinish() {
   const R = RUN, tot = R.done || 1, p = Math.round(R.ok / tot * 100);
-  const miss = R.misses.map(i => i.kind === 'q' ? `<li style="padding:10px 0"><div style="font-weight:600">${esc(i.x.q)}</div><div class="small" style="color:var(--ok)">✓ ${esc(i.x.o[i.x.a])}</div></li>` : i.kind === 'card' ? `<li style="padding:10px 0"><div style="font-weight:600">${esc(i.x.f)}</div><div class="small" style="color:var(--ok)">${inline(i.x.b)}</div></li>` : i.kind === 'trap' ? `<li style="padding:10px 0" class="prose">${md(i.text)}</li>` : '').join('');
+  const miss = R.misses.map(i => i.kind === 'q' ? `<li style="padding:10px 0"><div style="font-weight:600">${esc(i.x.q)}</div><div class="small" style="color:var(--ok)">✓ ${esc(i.x.o[i.x.a])}</div></li>` : i.kind === 'card' ? `<li style="padding:10px 0"><div style="font-weight:600">${esc(i.x.f)}</div><div class="small" style="color:var(--ok)">${inline(i.x.b)}</div></li>` : i.kind === 'trap' ? `<li style="padding:10px 0" class="prose">${md(i.text)}</li>` : i.kind === 'pair' ? `<li style="padding:10px 0"><div style="font-weight:600">${esc(i.s)}</div><div class="small" style="color:var(--ok)">→ ${esc(i[i.v])} (${esc(i.title)})</div></li>` : '').join('');
   return `<div class="stack"><section class="card" style="text-align:center"><div class="eyebrow">${esc(R.title)}</div><div class="score num" style="margin-top:8px">${p}%</div><p class="muted">${R.ok} of ${tot} correct</p><div class="row wrapx" style="justify-content:center;margin-top:10px"><button class="btn primary" data-act="again">Another round</button><a class="btn" href="${R.back}">Done</a></div></section>
   ${R.misses.length ? `<section class="card"><h3>To revisit (${R.misses.length})</h3><ul class="list">${miss}</ul></section>` : ''}</div>`;
 }
@@ -522,6 +529,12 @@ function viewListen() {
   <p class="tiny muted" style="text-align:center">Screen can lock on most phones; keep this page open. Uses your device’s built-in English voice.</p></div>`;
 }
 
+function pairSheet() {
+  const s = document.createElement('div'); s.className = 'sheet'; s.id = 'psheet';
+  s.innerHTML = `<div><div class="row"><h2 style="flex:1">Choose a deck</h2><button class="icon-btn" data-act="closep" aria-label="Close">✕</button></div><ul class="list" style="margin-top:8px">${PAIRS.map((p, k) => ({ p, k })).sort((x, y) => x.p.ch - y.p.ch).map(({ p, k }) => `<li><button class="row" data-act="pairdeck" data-k="${k}" style="width:100%;background:none;border:0;padding:12px 0;text-align:left"><span class="pill acc">${p.ch}</span><div style="flex:1;font-weight:650">${esc(p.title)}</div><span class="muted small">${p.items.length}</span></button></li>`).join('')}</ul></div>`;
+  s.addEventListener('click', e => { if (e.target === s) s.remove(); });
+  document.body.appendChild(s);
+}
 /* ---------- settings ---------- */
 function settingsSheet() {
   const s = document.createElement('div'); s.className = 'sheet'; s.id = 'sheet';
@@ -568,6 +581,7 @@ document.addEventListener('click', e => {
   const a = t.dataset.act, R = RUN;
   switch (a) {
     case 'settings': settingsSheet(); break;
+    case 'closep': $('#psheet').remove(); break;
     case 'closesheet': $('#sheet').remove(); break;
     case 'savesettings': S.examDate = $('#sd').value || null; S.theme = $('#st').value; save(); applyTheme(); $('#sheet').remove(); render(); break;
     case 'export': { const b = new Blob([JSON.stringify(S)], { type: 'application/json' }), u = URL.createObjectURL(b), l = document.createElement('a'); l.href = u; l.download = 'sie-prep-progress.json'; l.click(); break; }
@@ -584,7 +598,7 @@ document.addEventListener('click', e => {
     case 'flip': R.shown = !R.shown; render(); break;
     case 'gcard': { const it = R.items[R.i], g = +t.dataset.g; if (!it.retry) grade(it.id, g > 0, g === 2); advance(g > 0); render(); break; }
     case 'dcheck': { const it = R.items[R.i], v = parseFloat(($('#dans').value || '').replace(/[$,\s]/g, '')); if (isNaN(v)) { toast('Enter a number'); break; } const ok = Math.abs(v - it.p.ans) < (it.p.tol || 0.51); R.picked = ok; R.state = 'show'; R.lastOk = ok; render(); break; }
-    case 'next': { const it = R.items[R.i]; advance(it.kind === 'q' ? R.lastOk : R.picked === true); render(); break; }
+    case 'next': { const it = R.items[R.i]; advance(it.kind === 'q' || it.kind === 'pair' ? R.lastOk : R.picked === true); render(); break; }
     case 'flag': S.flags[t.dataset.id] = !S.flags[t.dataset.id]; save(); render(); break;
     case 'exstart': exStart(+t.dataset.n); break;
     case 'expick': EX.ans[EX.i] = +t.dataset.k; render(); break;
@@ -606,6 +620,10 @@ document.addEventListener('click', e => {
     case 'arate': if (AUD) { AUD.rate = +t.dataset.r; if (AUD.playing) audioSpeak(); else render(); } break;
     case 'numdrill': startRun('Numbers drill', shuffle(numCards()).slice(0, 25), { back: '#/numbers' }); break;
     case 'trapsprint': startRun('Traps sprint', shuffle(allTraps(0)).slice(0, 20), { back: '#/practice' }); break;
+    case 'pairmix': startRun('X or Y? mix', shuffle(pairItems(PAIRS)).slice(0, 20), { back: '#/practice' }); break;
+    case 'pairlist': pairSheet(); break;
+    case 'pairdeck': { const p = PAIRS[+t.dataset.k]; $('#psheet') && $('#psheet').remove(); startRun(p.title, shuffle(pairItems([p])), { back: '#/practice' }); break; }
+    case 'pairpick': { if (R.state !== 'ask') break; const it = R.items[R.i]; R.picked = t.dataset.k; R.state = 'show'; const ok = R.picked === it.v; if (!it.retry) grade(it.id, ok); R.lastOk = ok; render(); break; }
     case 'gtrap': advance(+t.dataset.g > 0); render(); break;
     case 'chk': S.checks[t.dataset.k] = !S.checks[t.dataset.k]; save(); render(); break;
     case 'unlock': { const v = ($('#akey').value || '').toUpperCase().replace(/[^A-Z0-9]/g, ''); if (cyrb53(v) === KEYHASH) { S.act = true; save(); $('#gate').remove(); render(); } else { const g = $('#gate .card'); g.animate([{ transform: 'translateX(0)' }, { transform: 'translateX(-10px)' }, { transform: 'translateX(10px)' }, { transform: 'translateX(0)' }], { duration: 300 }); $('#gerr').textContent = 'Invalid activation key.'; } break; }
