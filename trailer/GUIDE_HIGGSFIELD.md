@@ -1,3 +1,5 @@
+> **REMPLACÉ par `PROMPTS_V2.md`** : les prompts de ce guide ont provoqué des poteaux au-dessus de l'aile et des carénages inventés. Ne plus les utiliser.
+
 # Guide : faire tourner Higgsfield soi-même (sans Claude)
 
 Ce guide reprend, plan par plan, les prompts de `prompts.json`. Il est généré à partir de ce fichier : rien n'a été réécrit.
