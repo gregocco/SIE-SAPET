@@ -5,6 +5,7 @@ import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
 import { DecalGeometry } from 'three/addons/geometries/DecalGeometry.js';
 import { toCreasedNormals, mergeVertices } from 'three/addons/utils/BufferGeometryUtils.js';
 import { STICKERS, textSticker, OPTS } from './stickers.js';
+import { buildWing, LIVERIES } from './wing.js';
 
 const MODEL_URL = './models/T2A_F3_deflecteurs.glb';
 const STORE_KEY = 't2a-configurateur-v1';
@@ -145,6 +146,9 @@ const state = {
   visible: {},       // groupId -> bool
   decals: [],        // { id, node, point, normal, h (m), sx, rot, flip, opacity, sticker, imageId?, text? }
   rings: false,      // bagues d'instruments alu
+  wing: false,       // aile ORYX 16.9 (portage du configurateur DTA)
+  wingLivery: 'oryx',
+  wingText: '',
   images: [],        // bibliothèque PNG de l'utilisateur : { id, name, dataUrl, aspect }
   variants: {},      // groupId -> id de variante active (défaut : native)
   pose: {},          // groupId -> { dx, dy, dz (mm), ry (deg) } réglage fin de la variante
@@ -344,9 +348,14 @@ function frameModel() {
   sun.shadow.camera.updateProjectionMatrix();
 }
 
+function viewBox() {
+  const b = modelBox.clone();
+  if (state.wing && wingGroup) b.union(new THREE.Box3().setFromObject(wingGroup));
+  return b;
+}
 function setView(name) {
-  const c = modelBox.getCenter(new THREE.Vector3());
-  const d = modelSize * 1.8;
+  const vb = viewBox(), c = vb.getCenter(new THREE.Vector3());
+  const d = Math.max(...vb.getSize(new THREE.Vector3()).toArray()) * 1.8;
   const dirs = {
     '3q': [0.9, 0.45, 1.0], face: [0, 0.1, 1], arriere: [0, 0.15, -1], gauche: [-1, 0.08, 0], droite: [1, 0.08, 0], dessus: [0, 1, 0.001],
   };
@@ -550,6 +559,31 @@ function autoTankVent() {
   renderDecalList(); save();
 }
 
+// ---------------------------------------------------------------- aile
+let wingGroup = null;
+function ensureWing() {
+  if (wingGroup) return wingGroup;
+  const mast = visibleMeshes('mat', /^B03_MAT_V3/).length ? (groupMeshes.mat || []).filter(m => /^B03_MAT_V3/.test(m.name)) : [];
+  const b = new THREE.Box3(); mast.forEach(m => b.expandByObject(m));
+  // point d'accroche : sommet du mât (même règle que le configurateur DTA : milieu en x, haut du mât - 3,5 cm)
+  const hang = mast.length ? [(b.min.x + b.max.x) / 2, b.max.y - 0.035, 0] : [0.464, 2.275, 0];
+  wingGroup = buildWing(hang);
+  scene.add(wingGroup);
+  return wingGroup;
+}
+function applyWing() {
+  const w = ensureWing();
+  w.visible = !!state.wing;
+  w.userData.setLivery(LIVERIES[state.wingLivery] || LIVERIES.oryx, { text: state.wingText, show: !!state.wingText });
+  // ombres : le cadre d'ombre doit couvrir 10 m d'envergure
+  const span = state.wing ? 11 : modelSize * 1.4;
+  Object.assign(sun.shadow.camera, { left: -span, right: span, top: span, bottom: -span, far: Math.max(modelSize * 8, 60) });
+  sun.shadow.camera.updateProjectionMatrix();
+  shadowFloor.scale.setScalar(state.wing ? 40 : modelSize * 4);
+  for (const id of ['wing', 'wingLivery', 'wingText']) { const el = document.getElementById(id); if (el) { if (el.type === 'checkbox') el.checked = !!state.wing; else el.value = state[id]; } }
+}
+function setWing(on) { state.wing = !!on; applyWing(); save(); }
+
 // ---------------------------------------------------------------- bagues d'instruments (aluminium brossé)
 // Ajout visuel (hors CAD) : anneau autour des cadrans ronds du tableau de bord, calé sur les faces `TDB_face_*`.
 const RING_FACES = [/^TDB_face_MGL_Blaze/, /^TDB_face_MGL_EMS2/, /^TDB_face_obturateur/, /^TDB_face_radio/];
@@ -717,7 +751,7 @@ function rebuildDecalsOn(gid) {
 
 // ---------------------------------------------------------------- persistance
 function save() {
-  try { localStorage.setItem(STORE_KEY, JSON.stringify({ groupMat: state.groupMat, visible: state.visible, variants: state.variants, pose: state.pose, decals: state.decals, rings: state.rings, serial: OPTS.serial, bg: state.bg })); } catch {}
+  try { localStorage.setItem(STORE_KEY, JSON.stringify({ groupMat: state.groupMat, visible: state.visible, variants: state.variants, pose: state.pose, decals: state.decals, rings: state.rings, wing: state.wing, wingLivery: state.wingLivery, wingText: state.wingText, serial: OPTS.serial, bg: state.bg })); } catch {}
 }
 function saveImages() {
   try { localStorage.setItem(STORE_KEY + '-img', JSON.stringify(state.images)); } catch { $('#imgwarn').textContent = 'Images trop lourdes pour la sauvegarde automatique : exportez la configuration JSON.'; }
@@ -744,6 +778,7 @@ async function applyConfig(cfg) {
   }
   applyAll();
   for (const gid of Object.keys(state.variants)) applyPose(gid);
+  state.wing = !!cfg.wing; state.wingLivery = cfg.wingLivery || 'oryx'; state.wingText = cfg.wingText || ''; applyWing();
   state.rings = !!cfg.rings; if (!ringsGroup) buildRings(); ringsGroup.visible = state.rings;
   { const cb = document.getElementById('rings'); if (cb) cb.checked = state.rings; }
   state.decals.forEach(buildDecal);
@@ -754,7 +789,7 @@ function applyPreset(id) {
   const groupMat = {};
   for (const [g, preset] of Object.entries(p.groups)) groupMat[g] = { preset };
   const decals = (id === 'origine' || p.designs) ? state.decals.filter(d => !d.auto) : state.decals;
-  applyConfig({ groupMat, visible: state.visible, variants: state.variants, pose: state.pose, decals, rings: !!p.designs, bg: state.bg }).then(() => {
+  applyConfig({ groupMat, visible: state.visible, variants: state.variants, pose: state.pose, decals, rings: !!p.designs, wing: state.wing, wingLivery: state.wingLivery, wingText: state.wingText, bg: state.bg }).then(() => {
     if (p.designs) { autoMast(); autoTankVent(); }
     save();
   });
@@ -955,7 +990,7 @@ function buildUI() {
     const a = el('a', { href: renderer.domElement.toDataURL('image/png'), download: 't2a-rendu.png' }); a.click();
   });
   $('#export').addEventListener('click', () => {
-    const blob = new Blob([JSON.stringify({ groupMat: state.groupMat, visible: state.visible, variants: state.variants, pose: state.pose, decals: state.decals, images: state.images, rings: state.rings, serial: OPTS.serial, bg: state.bg }, null, 1)], { type: 'application/json' });
+    const blob = new Blob([JSON.stringify({ groupMat: state.groupMat, visible: state.visible, variants: state.variants, pose: state.pose, decals: state.decals, images: state.images, rings: state.rings, wing: state.wing, wingLivery: state.wingLivery, wingText: state.wingText, serial: OPTS.serial, bg: state.bg }, null, 1)], { type: 'application/json' });
     el('a', { href: URL.createObjectURL(blob), download: 't2a-config.json' }).click();
   });
   $('#import').addEventListener('change', async e => { const f = e.target.files[0]; if (f) { applyConfig(JSON.parse(await f.text())); save(); } });
@@ -963,6 +998,10 @@ function buildUI() {
   $('#automast').addEventListener('click', () => autoMast());
   $('#autovent').addEventListener('click', () => autoTankVent());
   $('#rings').addEventListener('change', e => setRings(e.target.checked));
+  $('#wing').addEventListener('change', e => { setWing(e.target.checked); setView('3q'); });
+  $('#wingLivery').append(...Object.entries(LIVERIES).map(([k, v]) => el('option', { value: k }, v.label)));
+  $('#wingLivery').addEventListener('change', e => { state.wingLivery = e.target.value; applyWing(); save(); });
+  $('#wingText').addEventListener('change', e => { state.wingText = e.target.value.trim(); applyWing(); save(); });
   $('#serial').addEventListener('change', e => {
     OPTS.serial = e.target.value.trim() || '0001';
     for (const k of Object.keys(stickerTexCache)) if (k.startsWith('mast')) delete stickerTexCache[k];
@@ -1008,7 +1047,7 @@ async function main() {
   const saved = loadSaved();
   applyConfig(saved || { groupMat: Object.fromEntries(Object.entries(BASE_LOOK).map(([g, p]) => [g, { preset: p }])), visible: {}, decals: [] });
   status.textContent = '';
-  window.__t2a = { setRings, addImageFile, selectDecal, buildDecal, autoMast, autoTankVent, setVariant, castDecal, scene, camera, controls, state, applyPreset, setView, addDecal, groupMeshes, THREE, model, get unit() { return unit; }, get modelSize() { return modelSize; }, selectGroup, modelBox };
+  window.__t2a = { setWing, applyWing, setRings, addImageFile, selectDecal, buildDecal, autoMast, autoTankVent, setVariant, castDecal, scene, camera, controls, state, applyPreset, setView, addDecal, groupMeshes, THREE, model, get unit() { return unit; }, get modelSize() { return modelSize; }, selectGroup, modelBox };
   const testMode = new URLSearchParams(location.search).has('test');
   if (testMode) document.body.dataset.test = '1';
   window.__t2a.render = () => { controls.update(); renderer.render(scene, camera); };
