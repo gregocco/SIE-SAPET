@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><title>Tournoi des partenaires v2</title>
+<style>
+@font-face{font-family:Inter;font-weight:500;src:url(file:///usr/share/fonts/opentype/inter/Inter-Medium.otf)}
+@font-face{font-family:Inter;font-weight:600;src:url(file:///usr/share/fonts/opentype/inter/Inter-SemiBold.otf)}
+@font-face{font-family:Inter;font-weight:700;src:url(file:///usr/share/fonts/opentype/inter/Inter-Bold.otf)}
+@font-face{font-family:Inter;font-weight:800;src:url(file:///usr/share/fonts/opentype/inter/Inter-ExtraBold.otf)}
+@font-face{font-family:Inter;font-weight:900;src:url(file:///usr/share/fonts/opentype/inter/Inter-Black.otf)}
+@font-face{font-family:InterD;font-weight:900;src:url(file:///usr/share/fonts/opentype/inter/InterDisplay-Black.otf)}
+@font-face{font-family:InterD;font-weight:700;src:url(file:///usr/share/fonts/opentype/inter/InterDisplay-Bold.otf)}
+html,body{margin:0;padding:0;background:#000;overflow:hidden}
+#stage{position:absolute;left:0;top:0;width:1920px;height:1080px;transform-origin:0 0;overflow:hidden;background:#20160f;font-family:Inter,sans-serif}
+#gl{position:absolute;left:0;top:0;width:1920px;height:1080px}
+#world{position:absolute;left:0;top:0;overflow:visible}
+.ov{position:absolute;opacity:0}
+/* bandeau (tiers inférieur haut-gauche), toujours dans la zone sûre (marges 96 x 54) */
+#bandeau{left:96px;top:58px;display:flex;align-items:stretch;border-radius:16px;overflow:hidden;max-width:900px;
+  background:linear-gradient(100deg,rgba(13,19,38,.92),rgba(20,30,58,.86));box-shadow:0 10px 34px rgba(0,0,0,.42),inset 0 0 0 1px rgba(255,255,255,.08)}
+#bandeau .lg{width:176px;min-height:118px;display:flex;align-items:center;justify-content:center;padding:12px;box-sizing:border-box}
+#bandeau .lg img{max-width:150px;max-height:94px;object-fit:contain;display:block}
+#bandeau .tx{padding:14px 30px 15px 24px;display:flex;flex-direction:column;justify-content:center;border-left:8px solid #fff}
+#bandeau .nm{font-weight:900;font-size:43px;color:#fff;line-height:1.04;letter-spacing:-.4px;white-space:nowrap}
+#bandeau .co{font-weight:700;font-size:29px;color:#f6c945;margin-top:6px;white-space:nowrap}
+#bandeau .ac{font-weight:500;font-size:22px;color:#d5dbea;margin-top:5px;white-space:nowrap}
+#subs{left:96px;right:96px;bottom:60px;text-align:center}
+#subs span{display:inline-block;max-width:1500px;background:rgba(9,13,26,.80);color:#fff;font-weight:600;font-size:44px;line-height:1.26;padding:10px 30px 13px;border-radius:14px;
+  box-decoration-break:clone;-webkit-box-decoration-break:clone;text-shadow:0 2px 6px rgba(0,0,0,.5)}
+#beltHud{right:96px;top:62px;display:flex;gap:9px;align-items:center;background:rgba(13,19,38,.86);padding:13px 17px;border-radius:14px;box-shadow:0 6px 22px rgba(0,0,0,.35)}
+#beltHud i{display:block;width:38px;height:13px;border-radius:4px;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.4),0 1px 2px rgba(0,0,0,.4)}
+#title{left:96px;right:96px;top:64px;text-align:center}
+#title .k{display:inline-block;font-weight:800;font-size:30px;letter-spacing:9px;color:#f6c945;text-transform:uppercase;background:rgba(10,14,28,.78);padding:8px 26px;border-radius:10px}
+#title .t{font-family:InterD;font-weight:900;font-size:112px;color:#fff;margin-top:12px;letter-spacing:-1px;line-height:1.05;
+  text-shadow:0 4px 0 rgba(0,0,0,.28),0 0 30px rgba(0,0,0,.55),0 0 60px rgba(0,0,0,.35)}
+#title .u{height:9px;background:linear-gradient(90deg,#c9961a,#fff2b3,#c9961a);margin:14px auto 0;border-radius:5px;box-shadow:0 2px 8px rgba(0,0,0,.4)}
+#ftitle{left:96px;right:96px;top:58px;text-align:center}
+#ftitle .t{font-family:InterD;font-weight:900;font-size:100px;color:#fff;letter-spacing:-1px;line-height:1.05;
+  text-shadow:0 4px 0 rgba(0,0,0,.28),0 0 30px rgba(0,0,0,.6),0 0 60px rgba(0,0,0,.4)}
+#fkick{left:96px;right:96px;bottom:66px;text-align:center}
+#fkick .k{display:inline-block;font-weight:800;font-size:28px;letter-spacing:6px;color:#f6c945;text-transform:uppercase;background:rgba(10,14,28,.8);padding:8px 24px;border-radius:10px}
+#flash{left:0;top:0;width:1920px;height:1080px;background:#fff8e8}
+#fade{left:0;top:0;width:1920px;height:1080px;background:#000}
+</style></head>
+<body>
+<div id="stage">
+  <canvas id="gl"></canvas>
+  <svg id="world" width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg"><defs id="defs"></defs><g id="dyn"></g></svg>
+  <div id="title" class="ov"><div class="k"></div><div class="t"></div><div class="u"></div></div>
+  <div id="ftitle" class="ov"><div class="t"></div></div>
+  <div id="fkick" class="ov"><div class="k"></div></div>
+  <div id="bandeau" class="ov"><div class="lg"></div><div class="tx"><div class="nm"></div><div class="co"></div><div class="ac"></div></div></div>
+  <div id="beltHud" class="ov"></div>
+  <div id="subs" class="ov"><span></span></div>
+  <div id="flash" class="ov"></div>
+  <div id="fade" class="ov"></div>
+</div>
+<script src="util.js"></script>
+<script src="dojo.js"></script>
+<script src="looks.js"></script>
+<script src="avatar_head.js"></script>
+<script src="avatar_hair.js"></script>
+<script src="avatar_body.js"></script>
+<script src="scene.js"></script>
+<script src="qc.js"></script>
+</body></html>

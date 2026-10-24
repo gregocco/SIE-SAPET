@@ -169,7 +169,7 @@
     };
     for (let q = -3; q <= 3; q++) lantern(CX + q * 600, 250);
     for (let q = -2; q <= 3; q++) lantern(CX + (q - 0.5) * 600, 690, 352);
-    lantern(CX - 520, -420, 372, 32); lantern(CX + 520, -420, 372, 32);
+    lantern(CX - 760, -420, 372, 32); lantern(CX + 760, -420, 372, 32);
     // guirlandes de fanions aux couleurs des ceintures (profondeur : deux rangées)
     for (const [z, ybase] of [[140, 412], [520, 404]]) {
       for (let x = XL + 20, i = 0; x < XR - 30; x += 34, i++) {
@@ -199,10 +199,11 @@
     const g = new Geo();
     for (const B of P.blocks) {
       const x0 = B.x0, x1 = B.x0 + B.w, z0 = P.zf, z1 = P.zf + P.depth, h = B.h;
-      g.box(x0, 0, z0, x1, h, z1, '#eef0f4', M.PODIUM, 'f');
+      g.box(x0, 0, z0, x1, h, z1, '#f1f2f5', M.PODIUM, 'f');
       const reg = atlas['pod' + B.n];
       g.quad([x0, 0, z0], [x1, 0, z0], [x1, h, z0], [x0, h, z0], '#ffffff', M.ATLAS, [[reg[0], reg[3]], [reg[2], reg[3]], [reg[2], reg[1]], [reg[0], reg[1]]], [0, 0, -1]);
-      g.box(x0 - 1, h - 3, z0 - 1.5, x1 + 1, h + 1, z1, '#d9ae3a', M.GOLD, 'b');
+      g.box(x0 - 1, h - 2.5, z0 - 1.8, x1 + 1, h + 0.6, z0 + 3, '#d9ae3a', M.GOLD, 'b');
+      g.box(x0 - 1, -0.1, z0 - 1.2, x1 + 1, 2.5, z1 + 1, '#1a2f5a', M.LACQUER, 't');
     }
     return g;
   }
@@ -210,9 +211,9 @@
   function buildStand(X, Z) {
     const g = new Geo();
     // petit plateau de bois laqué (sanbō) qui porte la ceinture pliée
-    g.box(X - 34, 22, Z - 22, X + 34, 27, Z + 22, '#2b1a10', M.LACQUER);
-    g.box(X - 30, 0, Z - 18, X + 30, 22, Z + 18, '#7a3a1e', M.LACQUER);
-    g.box(X - 36, 27, Z - 24, X + 36, 30, Z + 24, '#c9a24a', M.GOLD, 'b');
+    g.box(X - 30, 0, Z - 18, X + 30, 22, Z + 18, '#6a2a16', M.LACQUER);
+    g.box(X - 36, 22, Z - 24, X + 36, 25, Z + 24, '#c9a24a', M.GOLD);
+    g.box(X - 34, 25, Z - 22, X + 34, 28, Z + 22, '#1c120c', M.LACQUER);
     return g;
   }
 
@@ -236,8 +237,10 @@ float charOcc(vec3 p){ float o=1.; for(int i=0;i<12;i++){ if(i>=uNChars) break; 
   float dx=abs(q.x-c.x); float sf=2.+t*.02;
   float s=(1.-smoothstep(w-sf,w+sf,dx))*(1.-smoothstep(hh-2.,hh+5.,dy));
   o*=1.-.88*s; } return o; }
+uniform vec4 uWinBox;
 float insun(vec3 p, bool chars){ if(p.z>=WALLZ-1.) return 0.; float t=(WALLZ-p.z)/uSun.z; vec3 h=p+uSun*t;
-  float m=winMask(h.xy, 1.5+t*.014); if(m<=0.) return 0.; if(chars) m*=charOcc(p); return m; }
+  float sf=1.5+t*.014; if(h.y<uWinBox.y-sf||h.y>uWinBox.w+sf||h.x<uWinBox.x-sf||h.x>uWinBox.z+sf) return 0.;
+  float m=winMask(h.xy, sf); if(m<=0.) return 0.; if(chars) m*=charOcc(p); return m; }
 `;
 
   const VS_SCENE = `#version 300 es
@@ -254,15 +257,17 @@ ${COMMON}
 in vec3 vPos; in vec3 vNrm; in vec3 vCol; in vec2 vUv; flat in int vMat;
 uniform vec3 uCam, uFw; uniform float uTime, uRays, uLampK, uAmbK;
 uniform vec3 uSunCol;
-uniform sampler2D uAtlas;
+uniform sampler2D uAtlas, uNoise;
+float fbmT(vec2 p){ return texture(uNoise,p*.125).r; }
+float vnT(vec2 p){ return texture(uNoise,p*.03125).g; }
 uniform vec4 uLights[16]; uniform int uNLights;
 uniform vec4 uTatami; // x0, z0, nx, nz (aire de compétition en carreaux de 120)
 layout(location=0) out vec4 oCol; layout(location=1) out vec4 oDep;
 vec3 lin(vec3 c){ return pow(c, vec3(2.2)); }
 vec3 woodTex(vec2 uv, vec3 base, float k){
-  float g=fbm(vec2(uv.x*.010+k, uv.y*.30));
+  float g=fbmT(vec2(uv.x*.010+k, uv.y*.30));
   float r=sin(uv.y*.55+g*10.+k*3.)*.5+.5;
-  float fine=vn(vec2(uv.x*.06, uv.y*2.6+k*7.));
+  float fine=vnT(vec2(uv.x*.06, uv.y*2.6+k*7.));
   return base*mix(.74,1.10,r*.6+fine*.4);
 }
 vec3 shadeL(vec3 p, vec3 n, vec3 V, vec3 alb, float spec, float gloss, float ao, float sunK){
@@ -284,7 +289,7 @@ vec3 shadeL(vec3 p, vec3 n, vec3 V, vec3 alb, float spec, float gloss, float ao,
 #ifndef NO_LIGHTS
   for(int i=0;i<16;i++){ if(i>=uNLights) break; vec3 L=uLights[i].xyz-p; float d2=dot(L,L); L*=inversesqrt(d2);
     float att=uLights[i].w*uLampK/(1.+d2*(1./(230.*230.))); float nl=max(dot(n,L),0.); vec3 H=normalize(L+V);
-    c+=vec3(1.,.64,.33)*att*nl*(alb+spec*pow(max(dot(n,H),0.),gloss)); }
+    c+=vec3(1.,.64,.33)*att*nl*(alb+(spec>.01?spec*pow(max(dot(n,H),0.),gloss):0.)); }
 #endif
   return c;
 }
@@ -303,10 +308,10 @@ void main(){
     vec2 de2=min(lc,120.-lc); float e=min(de2.x,de2.y);
     bool inner = ci.x>=0. && ci.x<uTatami.z && ci.y>=0.;
     bool border = !inner && ci.x>=-1. && ci.x<uTatami.z+1. && ci.y>=-1.;
-    vec3 col = inner ? vec3(.47,.62,.30) : (border ? vec3(.72,.24,.19) : vec3(.42,.56,.29));
+    vec3 col = inner ? vec3(.40,.55,.25) : (border ? vec3(.66,.20,.16) : vec3(.36,.50,.24));
     col*=1.+(h12(ci+3.1)-.5)*.10;
     float px=fwidth(p.z*2.4); float wv=sin(p.z*2.4+sin(p.x*.05)*.6)*.5+.5; wv=mix(wv,.5,clamp(px*.7,0.,1.));
-    col*=.93+.08*wv; col*=.94+.10*fbm(p.xz*.02+ci*7.);
+    col*=.90+.12*wv; col*=.90+.16*fbmT(p.xz*.02+ci*7.); col*=.96+.06*vnT(p.xz*.35);
     float pw=fwidth(e); float seam=smoothstep(.35-pw,1.5+pw,e); float dk=mix(.30,1.,seam);
     dk=mix(1.,dk,clamp(1.6-pw*.6,.25,1.));
     vec2 ed=vec2(lc.x<60.?-1.:1., lc.y<60.?-1.:1.); vec2 bv=vec2(de2.x<de2.y?ed.x:0., de2.y<=de2.x?ed.y:0.);
@@ -316,23 +321,23 @@ void main(){
   } else if(m==1){ alb=woodTex(vUv,alb,vCol.r*9.); spec=.22; gloss=38.; }
   else if(m==12){ float idx=floor(vUv.y/19.); float lv=fract(vUv.y/19.); float sm=smoothstep(0.,.07,lv)*smoothstep(1.,.93,lv);
     alb=woodTex(vec2(vUv.x+idx*131.,vUv.y),alb,idx)*(.86+.24*h12(vec2(idx,4.)))*mix(.45,1.,sm); spec=.15; gloss=30.; }
-  else if(m==2){ alb*=.93+.10*fbm(vUv*.05); alb*=.97+.03*vn(vUv*.8); ao*=mix(.75,1.,smoothstep(0.,40.,abs(p.y-${CEIL.toFixed(1)}))); }
-  else if(m==3){ float f=fbm(vUv*.05); float pl=smoothstep(.52,.74,fbm(vUv*.011+vec2(3.,7.)));
+  else if(m==2){ alb*=.93+.10*fbmT(vUv*.05); alb*=.97+.03*vnT(vUv*.8); ao*=mix(.75,1.,smoothstep(0.,40.,abs(p.y-${CEIL.toFixed(1)}))); }
+  else if(m==3){ float f=fbmT(vUv*.05); float pl=smoothstep(.52,.74,fbmT(vUv*.011+vec2(3.,7.)));
     emi=lin(vec3(1.,.95,.84))*(1.75+.35*f)*(1.-.30*pl); alb*=.25; sunK=0.; }
-  else if(m==4){ alb=lin(texture(uAtlas,vUv).rgb); alb*=.95+.08*vn(p.xy*.9); spec=.05; }
+  else if(m==4){ alb=lin(texture(uAtlas,vUv).rgb); alb*=.95+.08*vnT(p.xy*.9); spec=.05; }
   else if(m==5){ float band=step(vUv.y,.13)+step(.87,vUv.y); float rib=pow(abs(sin(vUv.y*3.14159*15.)),10.);
     float face=.55+.45*max(dot(n,V),0.);
     emi=mix(vec3(1.25,.80,.38),vec3(.95,.16,.07),clamp(band,0.,1.))*(2.4-1.1*rib)*face; alb*=.2; }
-  else if(m==6){ float f=fbm(vUv*vec2(9.,6.)); float sky=smoothstep(.45,.95,vUv.y+f*.25);
+  else if(m==6){ float f=fbmT(vUv*vec2(9.,6.)); float sky=smoothstep(.45,.95,vUv.y+f*.25);
     emi=mix(vec3(.42,.58,.24)*1.4, vec3(1.25,1.12,.85)*2.6, sky)*(.8+.4*f); alb=vec3(0); }
-  else if(m==7){ spec=.45; gloss=70.; alb*=.97+.04*vn(vUv*.3); }
+  else if(m==7){ spec=.45; gloss=70.; alb*=.97+.04*vnT(vUv*.3); }
   else if(m==9){ emi=alb*.18; spec=.05; }
   else if(m==10){ spec=.55; gloss=90.; }
   else if(m==11){ alb=lin(vec3(.85,.66,.24)); spec=1.4; gloss=40.; }
   else if(m==13){ vec2 u=vUv; float d=abs(fract(u.x/26.)-.5)+abs(fract(u.y/22.+floor(u.x/26.)*.5)-.5);
     float hole=smoothstep(.30,.25,d)*smoothstep(4.,7.,u.y)*smoothstep(62.,59.,u.y);
     alb=woodTex(u,alb,2.)*(1.-hole); emi=lin(vec3(1.,.86,.62))*1.5*hole; }
-  else if(m==14){ alb*=.9+.15*fbm(vUv*6.); spec=.1; }
+  else if(m==14){ alb*=.9+.15*fbmT(vUv*6.); spec=.1; }
 #ifdef SIMPLE
   oCol=vec4(vCol,1.); oDep=vec4(dot(p-uCam,uFw),0.,0.,1.); return;
 #endif
@@ -365,9 +370,9 @@ void main(){ float r=length(gl_PointCoord-.5)*2.; o=vec4(vec3(1.,.86,.62)*vB*max
   const VS_FS = `#version 300 es
 out vec2 vUv; void main(){ vec2 p=vec2((gl_VertexID<<1)&2, gl_VertexID&2); vUv=p; gl_Position=vec4(p*2.-1.,0.,1.); }`;
   const FS_BRIGHT = `#version 300 es
-precision highp float; in vec2 vUv; uniform sampler2D uTex; out vec4 o;
-void main(){ vec2 px=1./vec2(textureSize(uTex,0)); vec3 c=vec3(0);
-  for(int i=0;i<4;i++) for(int j=0;j<4;j++) c+=texture(uTex,vUv+(vec2(i,j)-1.5)*px).rgb; c/=16.;
+precision highp float; in vec2 vUv; uniform sampler2D uTex; uniform float uSub; out vec4 o;
+void main(){ vec2 px=1./vec2(textureSize(uTex,0)); vec3 c=vec3(0); vec2 lim=vec2(uSub)-.5*px;
+  for(int i=0;i<4;i++) for(int j=0;j<4;j++) c+=texture(uTex,min(vUv*uSub+(vec2(i,j)-1.5)*px*uSub,lim)).rgb; c/=16.;
   float l=dot(c,vec3(.3,.59,.11)); o=vec4(c*smoothstep(.9,2.6,l),1.); }`;
   const FS_BLUR = `#version 300 es
 precision highp float; in vec2 vUv; uniform sampler2D uTex; uniform vec2 uDir; out vec4 o;
@@ -376,30 +381,31 @@ void main(){ vec2 px=uDir/vec2(textureSize(uTex,0)); vec3 c=texture(uTex,vUv).rg
   c+=(texture(uTex,vUv+px*3.23).rgb+texture(uTex,vUv-px*3.23).rgb)*.0703; o=vec4(c,1.); }`;
   const FS_RAYS = `#version 300 es
 ${COMMON}
-in vec2 vUv; uniform sampler2D uDep; uniform vec3 uCam, uR, uU, uFw; uniform float uFocal, uTime; out vec4 o;
+in vec2 vUv; uniform sampler2D uDep; uniform vec3 uCam, uR, uU, uFw; uniform float uFocal, uTime, uSub; out vec4 o;
 void main(){ vec2 ndc=vUv*2.-1.; vec3 dir=normalize(uFw+uR*(ndc.x*960./uFocal)+uU*(ndc.y*540./uFocal));
-  float zc=texture(uDep,vUv).r; float L=min(zc/max(dot(dir,uFw),.05), 2600.);
+  float zc=texture(uDep,vUv*uSub).r; float L=min(zc/max(dot(dir,uFw),.05), 2600.);
   float j=fract(52.9829189*fract(dot(gl_FragCoord.xy,vec2(.06711056,.00583715)))+uTime*7.31);
   float acc=0.; for(int i=0;i<20;i++){ vec3 q=uCam+dir*L*((float(i)+j)/20.); if(q.y>0.&&q.y<${CEIL.toFixed(1)}) acc+=insun(q,false)*(.6+.8*vn(q.xy*.010+vec2(uTime*.06,q.z*.004))); }
   acc*=L/20.; float ph=.30+1.6*pow(max(dot(dir,uSun),0.),3.);
   o=vec4(vec3(acc*ph),1.); }`;
   const FS_DOF = `#version 300 es
-precision highp float; in vec2 vUv; uniform sampler2D uCol, uDep; uniform float uFocus, uAp, uFocal, uPx, uMaxCoc; out vec4 o;
+precision highp float; in vec2 vUv; uniform sampler2D uCol, uDep; uniform float uFocus, uAp, uFocal, uPx, uMaxCoc, uSub; out vec4 o;
 float cocAt(float z){ return min(uAp*uFocal*abs(1./uFocus-1./max(z,1.)), uMaxCoc)*uPx; }
 const vec2 PD[16]=vec2[16](vec2(.2,.04),vec2(-.13,.36),vec2(-.38,-.14),vec2(.05,-.46),vec2(.5,.33),vec2(.62,-.22),vec2(-.6,.36),vec2(-.27,-.69),
  vec2(.31,-.8),vec2(.86,.1),vec2(.08,.78),vec2(-.85,-.06),vec2(-.53,.78),vec2(.6,.73),vec2(-.92,-.38),vec2(.93,-.36));
-void main(){ float z=texture(uDep,vUv).r; float coc=cocAt(z); vec3 c=texture(uCol,vUv).rgb;
+void main(){ vec2 uv=vUv*uSub; vec2 lim=vec2(uSub)-.5/vec2(textureSize(uCol,0));
+  float z=texture(uDep,uv).r; float coc=cocAt(z); vec3 c=texture(uCol,uv).rgb;
   if(coc>.4){ vec2 px=1./vec2(textureSize(uCol,0)); vec3 acc=c; float ws=1.;
-    for(int i=0;i<16;i++){ vec2 su=vUv+PD[i]*coc*px; float zs=texture(uDep,su).r; float cs=cocAt(zs);
+    for(int i=0;i<16;i++){ vec2 su=min(uv+PD[i]*coc*px,lim); float zs=texture(uDep,su).r; float cs=cocAt(zs);
       float w=zs<z-40.?clamp(cs/coc,0.,1.):1.; acc+=texture(uCol,su).rgb*w; ws+=w; }
     c=acc/ws; }
   o=vec4(c,coc); }`;
   const FS_FINAL = `#version 300 es
 precision highp float; in vec2 vUv; uniform sampler2D uCol, uDofT, uRaysT, uBloom;
-uniform float uTime, uExpo, uBloomK, uVig, uRays; uniform vec3 uSunCol;
+uniform float uTime, uExpo, uBloomK, uVig, uRays, uSub; uniform vec3 uSunCol;
 out vec4 o;
 float h12(vec2 p){ vec3 p3=fract(vec3(p.xyx)*.1031); p3+=dot(p3,p3.yzx+33.33); return fract((p3.x+p3.y)*p3.z); }
-void main(){ vec3 c=texture(uCol,vUv).rgb; vec4 d=texture(uDofT,vUv);
+void main(){ vec3 c=texture(uCol,min(vUv*uSub,vec2(uSub)-.5/vec2(textureSize(uCol,0)))).rgb; vec4 d=texture(uDofT,vUv);
   c=mix(c,d.rgb,smoothstep(.35,1.6,d.a));
   c+=uSunCol*texture(uRaysT,vUv).r*uRays;
   c+=texture(uBloom,vUv).rgb*uBloomK;
@@ -410,8 +416,28 @@ void main(){ vec3 c=texture(uCol,vUv).rgb; vec4 d=texture(uDofT,vUv);
   c+=(h12(gl_FragCoord.xy+fract(uTime*7.13)*517.)-.5)*.022;
   o=vec4(c,1.); }`;
 
+  // ---------------- texture de bruit (déterministe, raccordable) ----------------
+  // R : fbm 4 octaves (8 cellules par tuile à l'octave de base) ; G : bruit de valeur 32 cellules ; B : 64 ; A : hachage
+  function makeNoise(S) {
+    const out = new Uint8Array(S * S * 4);
+    const h = (x, y, s) => { const v = Math.sin(x * 127.1 + y * 311.7 + s * 74.7) * 43758.5453; return v - Math.floor(v); };
+    const vnoise = (x, y, P, s) => { // P cellules par tuile
+      const fx = x * P, fy = y * P, ix = Math.floor(fx), iy = Math.floor(fy); let ux = fx - ix, uy = fy - iy;
+      ux = ux * ux * (3 - 2 * ux); uy = uy * uy * (3 - 2 * uy);
+      const a = h(ix % P, iy % P, s), b = h((ix + 1) % P, iy % P, s), c = h(ix % P, (iy + 1) % P, s), d = h((ix + 1) % P, (iy + 1) % P, s);
+      return (a + (b - a) * ux) + ((c + (d - c) * ux) - (a + (b - a) * ux)) * uy;
+    };
+    for (let j = 0; j < S; j++) for (let i = 0; i < S; i++) {
+      const x = i / S, y = j / S;
+      let f = 0, amp = 0.5, P = 8; for (let o = 0; o < 4; o++) { f += amp * vnoise(x, y, P, o); amp *= 0.5; P *= 2; }
+      const k = (j * S + i) * 4;
+      out[k] = Math.round(f / 0.9375 * 255); out[k + 1] = Math.round(vnoise(x, y, 32, 7) * 255); out[k + 2] = Math.round(vnoise(x, y, 64, 9) * 255); out[k + 3] = Math.round(h(i, j, 3) * 255);
+    }
+    return out;
+  }
+
   // ---------------- renderer ----------------
-  function makeAtlas(belts) {
+  function makeAtlas(belts, podium) {
     const S = 2048, cv = document.createElement('canvas'); cv.width = S; cv.height = S;
     const x = cv.getContext('2d');
     x.fillStyle = '#806040'; x.fillRect(0, 0, S, S);
@@ -468,23 +494,22 @@ void main(){ vec3 c=texture(uCol,vUv).rgb; vec4 d=texture(uDofT,vUv);
       x.font = 'bold 44px "DejaVu Serif"'; x.fillText('la voie', cx, Y + 720); x.fillText('de la souplesse', cx, Y + 772);
       seal(cx + 70, Y + 890);
     });
-    // faces avant du podium : même taille de chiffre pour 1, 2, 3
-    const pod = (X, Y, w, h, n) => {
-      const gr = x.createLinearGradient(0, Y, 0, Y + h); gr.addColorStop(0, '#ffffff'); gr.addColorStop(1, '#d9dde6');
+    // faces avant du podium : texture au même rapport largeur/hauteur que la face, chiffre de même hauteur monde (36 u)
+    let py = 1100;
+    for (const B of podium.blocks) {
+      const ppu = 640 / B.w, w = 640, h = Math.round(B.h * ppu), X = 0, Y = py; py += h + 10;
+      const gr = x.createLinearGradient(0, Y, 0, Y + h); gr.addColorStop(0, '#ffffff'); gr.addColorStop(1, '#d6dbe5');
       x.fillStyle = gr; x.fillRect(X, Y, w, h);
-      x.fillStyle = '#1f4fa0'; x.fillRect(X, Y + h - 26, w, 26);
-      x.fillStyle = '#e7b93c'; x.fillRect(X, Y + h - 32, w, 6);
-      const fs = 250; x.font = `900 ${fs}px "Inter Display"`; x.textAlign = 'center'; x.textBaseline = 'middle';
-      const cy = Y + (h - 32) / 2 + 12;
-      x.lineWidth = 16; x.strokeStyle = '#8a6412'; x.strokeText(n, X + w / 2, cy);
-      const g2 = x.createLinearGradient(0, cy - fs / 2, 0, cy + fs / 2); g2.addColorStop(0, '#fff2b0'); g2.addColorStop(0.45, '#f2c230'); g2.addColorStop(1, '#b8860b');
-      x.fillStyle = g2; x.fillText(n, X + w / 2, cy);
-      return reg(X, Y, w, h);
-    };
-    // hauteurs des marches : 1 = 84, 2 = 62, 3 = 46 ; textures au même ratio (largeur 1 ~ 250, 2/3 ~ 330)
-    A.pod1 = pod(0, 1100, 500, 336, '1');
-    A.pod2 = pod(0, 1450, 660, 248, '2');
-    A.pod3 = pod(0, 1710, 660, 184, '3');
+      const band = Math.round(7 * ppu);
+      x.fillStyle = '#1f4fa0'; x.fillRect(X, Y + h - band, w, band);
+      x.fillStyle = '#e7b93c'; x.fillRect(X, Y + h - band - Math.round(1.4 * ppu), w, Math.round(1.4 * ppu));
+      const fs = Math.round(44 * ppu); x.font = `900 ${fs}px "Inter Display"`; x.textAlign = 'center'; x.textBaseline = 'middle';
+      const cy = Y + (h - band) / 2 + fs * 0.04;
+      x.lineJoin = 'round'; x.lineWidth = Math.max(4, fs * 0.07); x.strokeStyle = '#7a560e'; x.strokeText(B.n, X + w / 2, cy);
+      const g2 = x.createLinearGradient(0, cy - fs / 2, 0, cy + fs / 2); g2.addColorStop(0, '#fff4c0'); g2.addColorStop(0.45, '#f2c230'); g2.addColorStop(1, '#a87808');
+      x.fillStyle = g2; x.fillText(B.n, X + w / 2, cy);
+      A['pod' + B.n] = reg(X, Y, w, h);
+    }
     void belts;
     return { cv, A };
   }
@@ -508,13 +533,18 @@ void main(){ vec3 c=texture(uCol,vUv).rgb; vec4 d=texture(uDofT,vUv);
       this.progFinal = this.prog(VS_FS, FS_FINAL);
       this.progRays = this.prog(VS_FS, FS_RAYS);
       this.progDof = this.prog(VS_FS, FS_DOF);
-      const { cv, A } = makeAtlas(opts.belts);
+      const { cv, A } = makeAtlas(opts.belts, opts.podium);
       this.atlasA = A;
       this.atlas = gl.createTexture(); gl.bindTexture(gl.TEXTURE_2D, this.atlas);
       gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, gl.RGBA, gl.UNSIGNED_BYTE, cv);
       gl.generateMipmap(gl.TEXTURE_2D);
       gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR_MIPMAP_LINEAR);
       gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.LINEAR);
+      this.noise = gl.createTexture(); gl.bindTexture(gl.TEXTURE_2D, this.noise);
+      gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA8, 512, 512, 0, gl.RGBA, gl.UNSIGNED_BYTE, makeNoise(512));
+      gl.generateMipmap(gl.TEXTURE_2D);
+      gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR_MIPMAP_LINEAR); gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.LINEAR);
+      gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.REPEAT); gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.REPEAT);
       const room = buildRoom(A, opts.belts);
       this.windows = room.W; this.lights = room.lights;
       this.meshRoom = this.upload(room.g);
@@ -578,15 +608,18 @@ void main(){ vec3 c=texture(uCol,vUv).rgb; vec4 d=texture(uDofT,vUv);
       const win = new Float32Array(32); this.windows.slice(0, 8).forEach((w, i) => win.set(w, i * 4));
       if (L.uWin) { gl.uniform4fv(L.uWin, win); gl.uniform1i(L.uNWin, Math.min(8, this.windows.length)); }
       if (L.uSun) gl.uniform3fv(L.uSun, st.sun);
+      if (L.uWinBox) { const wb = this.windows.reduce((a, w) => [Math.min(a[0], w[0]), Math.min(a[1], w[1]), Math.max(a[2], w[2]), Math.max(a[3], w[3])], [1e9, 1e9, -1e9, -1e9]); gl.uniform4fv(L.uWinBox, wb); }
       const ch = new Float32Array(48); st.chars.slice(0, 12).forEach((c, i) => ch.set(c, i * 4));
       if (L.uChars) { gl.uniform4fv(L.uChars, ch); gl.uniform1i(L.uNChars, Math.min(12, st.chars.length)); }
     }
     // st : { cam (base), t, chars:[[x,z,footY,h]], focus, ap, podium, stand, sun, sunCol, rays, expo, lampK, ambK }
     render(st) {
-      const gl = this.gl, W = this.W, H = this.H, cb = st.cam;
-      gl.bindFramebuffer(gl.FRAMEBUFFER, this.msFbo); gl.viewport(0, 0, W, H);
+      const gl = this.gl, cb = st.cam, sub = Math.max(0.3, Math.min(1, st.res || 1));
+      const W = Math.round(this.W * sub), H = Math.round(this.H * sub), SUB = W / this.W;
+      gl.bindFramebuffer(gl.FRAMEBUFFER, this.msFbo); gl.viewport(0, 0, this.W, this.H);
       gl.drawBuffers([gl.COLOR_ATTACHMENT0, gl.COLOR_ATTACHMENT1]);
       gl.clearBufferfv(gl.COLOR, 0, [0.05, 0.04, 0.03, 1]); gl.clearBufferfv(gl.COLOR, 1, [9000, 0, 0, 1]); gl.clearBufferfi(gl.DEPTH_STENCIL, 0, 1, 0);
+      gl.viewport(0, 0, W, H);
       gl.enable(gl.DEPTH_TEST); gl.depthFunc(gl.LEQUAL); gl.depthMask(true); gl.disable(gl.BLEND); gl.disable(gl.CULL_FACE);
       let p = this.progScene; gl.useProgram(p); const L = p.loc;
       this.setCam(p, cb); this.setShared(p, st);
@@ -594,11 +627,12 @@ void main(){ vec3 c=texture(uCol,vUv).rgb; vec4 d=texture(uDofT,vUv);
       gl.uniform1f(L.uLampK, st.lampK); gl.uniform1f(L.uAmbK, st.ambK);
       // lanternes : les 6 plus proches de la cible de la caméra (les autres sont trop loin pour compter)
       const tg = cb.tgt;
-      const near = this.lights.map(l => [l, (l[0] - tg[0]) ** 2 + (l[2] - tg[2]) ** 2 * 0.5]).sort((a, b) => a[1] - b[1]).slice(0, 6).map(x => x[0]);
+      const near = this.lights.map(l => [l, (l[0] - tg[0]) ** 2 + (l[2] - tg[2]) ** 2 * 0.5]).sort((a, b) => a[1] - b[1]).slice(0, 5).map(x => x[0]);
       const lt = new Float32Array(64); near.forEach((l, i) => lt.set(l, i * 4));
       gl.uniform4fv(L.uLights, lt); gl.uniform1i(L.uNLights, near.length);
       gl.uniform4fv(L.uTatami, [ROOM.CX - 1080, 140, 18, 0]);
       gl.activeTexture(gl.TEXTURE0); gl.bindTexture(gl.TEXTURE_2D, this.atlas); gl.uniform1i(L.uAtlas, 0);
+      gl.activeTexture(gl.TEXTURE1); gl.bindTexture(gl.TEXTURE_2D, this.noise); gl.uniform1i(L.uNoise, 1); gl.activeTexture(gl.TEXTURE0);
       gl.bindVertexArray(this.meshRoom.vao); gl.drawArrays(gl.TRIANGLES, 0, this.meshRoom.n);
       if (st.podium) { gl.bindVertexArray(this.meshPodium.vao); gl.drawArrays(gl.TRIANGLES, 0, this.meshPodium.n); }
       if (st.stand) { gl.bindVertexArray(this.meshStand.vao); gl.drawArrays(gl.TRIANGLES, 0, this.meshStand.n); }
@@ -621,17 +655,20 @@ void main(){ vec3 c=texture(uCol,vUv).rgb; vec4 d=texture(uDofT,vUv);
       const tex = (unit, t, loc) => { gl.activeTexture(gl.TEXTURE0 + unit); gl.bindTexture(gl.TEXTURE_2D, t); gl.uniform1i(loc, unit); };
       // rayons volumétriques (1/4)
       gl.bindFramebuffer(gl.FRAMEBUFFER, this.fRay); gl.viewport(0, 0, this.w4, this.h4);
-      p = this.progRays; gl.useProgram(p); this.setCam(p, cb); this.setShared(p, st); gl.uniform1f(p.loc.uTime, st.t);
-      tex(0, this.tDep, p.loc.uDep); gl.drawArrays(gl.TRIANGLES, 0, 3); PR();
+      p = this.progRays; gl.useProgram(p); this.setCam(p, cb); this.setShared(p, st); gl.uniform1f(p.loc.uTime, st.t); gl.uniform1f(p.loc.uSub, SUB);
+      tex(0, this.tDep, p.loc.uDep); gl.drawArrays(gl.TRIANGLES, 0, 3);
+      p = this.progBlur; gl.useProgram(p); gl.uniform1i(p.loc.uTex, 0);
+      gl.bindFramebuffer(gl.FRAMEBUFFER, this.fB2); gl.bindTexture(gl.TEXTURE_2D, this.tRay); gl.uniform2f(p.loc.uDir, 1, 0); gl.drawArrays(gl.TRIANGLES, 0, 3);
+      gl.bindFramebuffer(gl.FRAMEBUFFER, this.fRay); gl.bindTexture(gl.TEXTURE_2D, this.tB2); gl.uniform2f(p.loc.uDir, 0, 1); gl.drawArrays(gl.TRIANGLES, 0, 3); PR();
       // profondeur de champ (1/2)
       gl.bindFramebuffer(gl.FRAMEBUFFER, this.fDof); gl.viewport(0, 0, this.w2, this.h2);
       p = this.progDof; gl.useProgram(p);
       tex(0, this.tCol, p.loc.uCol); tex(1, this.tDep, p.loc.uDep);
-      gl.uniform1f(p.loc.uFocus, st.focus); gl.uniform1f(p.loc.uAp, st.ap); gl.uniform1f(p.loc.uFocal, cb.f); gl.uniform1f(p.loc.uPx, W / 1920); gl.uniform1f(p.loc.uMaxCoc, 12);
+      gl.uniform1f(p.loc.uFocus, st.focus); gl.uniform1f(p.loc.uAp, st.ap); gl.uniform1f(p.loc.uFocal, cb.f); gl.uniform1f(p.loc.uPx, W / 1920); gl.uniform1f(p.loc.uMaxCoc, 12); gl.uniform1f(p.loc.uSub, SUB);
       gl.drawArrays(gl.TRIANGLES, 0, 3); PR();
       // bloom (1/4)
       gl.bindFramebuffer(gl.FRAMEBUFFER, this.fB1); gl.viewport(0, 0, this.w4, this.h4);
-      p = this.progBright; gl.useProgram(p); tex(0, this.tCol, p.loc.uTex); gl.drawArrays(gl.TRIANGLES, 0, 3);
+      p = this.progBright; gl.useProgram(p); tex(0, this.tCol, p.loc.uTex); gl.uniform1f(p.loc.uSub, SUB); gl.drawArrays(gl.TRIANGLES, 0, 3);
       p = this.progBlur; gl.useProgram(p); gl.uniform1i(p.loc.uTex, 0);
       for (let k = 0; k < 2; k++) {
         gl.bindFramebuffer(gl.FRAMEBUFFER, this.fB2); gl.bindTexture(gl.TEXTURE_2D, this.tB1); gl.uniform2f(p.loc.uDir, 1 + k, 0); gl.drawArrays(gl.TRIANGLES, 0, 3);
@@ -643,7 +680,7 @@ void main(){ vec3 c=texture(uCol,vUv).rgb; vec4 d=texture(uDofT,vUv);
       p = this.progFinal; gl.useProgram(p); const F = p.loc;
       tex(0, this.tCol, F.uCol); tex(1, this.tDof, F.uDofT); tex(2, this.tRay, F.uRaysT); tex(3, this.tB1, F.uBloom);
       gl.uniform1f(F.uTime, st.t); gl.uniform1f(F.uExpo, st.expo); gl.uniform1f(F.uBloomK, 0.30); gl.uniform1f(F.uVig, 0.55);
-      gl.uniform1f(F.uRays, st.rays); gl.uniform3fv(F.uSunCol, st.sunCol);
+      gl.uniform1f(F.uRays, st.rays); gl.uniform3fv(F.uSunCol, st.sunCol); gl.uniform1f(F.uSub, SUB);
       gl.drawArrays(gl.TRIANGLES, 0, 3);
       gl.activeTexture(gl.TEXTURE0);
     }
