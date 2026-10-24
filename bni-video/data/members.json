@@ -36,7 +36,7 @@
       "logo": "xl_glass.jpg",
       "duration": 20,
       "line": "Au judo, tout commence par une bonne garde et une vision limpide. Chez XL Glass, on vous donne les deux.",
-      "activity": "Réparation et remplacement de pare-brises (auto, poids lourds, bus, train, engins)",
+      "activity": "Changement de vitrages auto et camions pour les professionnels",
       "ideal_contact": "TODO",
       "prop": "TODO",
       "pronunciation": "TODO",
@@ -124,7 +124,7 @@
       "activity": "Copieurs et dématérialisation",
       "ideal_contact": "TODO",
       "prop": "TODO",
-      "pronunciation": "Koesio : TODO",
+      "pronunciation": "KOésio (accent sur le O)",
       "portrait_status": "déduit de 'Koesio pareil' + ordre d'envoi, à confirmer ; selfie"
     },
     {
@@ -141,5 +141,10 @@
       "pronunciation": "TODO",
       "portrait_status": "confirmé : message WhatsApp 'Arc en ciel recyclage / Recyclage bennes' sur cette photo"
     }
-  ]
+  ],
+  "music": {
+    "requested": "musique des JO (demande du commanditaire)",
+    "rights_status": "NON résolu : réponse 'pas de prise de tête pour les droits' ne vaut pas licence",
+    "recommendation": "fanfare originale ou libre de droits"
+  }
 }
