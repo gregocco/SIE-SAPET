@@ -1,0 +1,45 @@
+:root{--bg:#15171a;--card:#1d2024;--line:#2c3036;--tx:#e6e2da;--mut:#8f949b;--cu:#c07a47;--br:#b59a4e}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;font:13px/1.4 system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--bg);color:var(--tx)}
+body{display:grid;grid-template-columns:340px 1fr;height:100vh}
+#panel{overflow-y:auto;border-right:1px solid var(--line);padding:0 14px 40px;background:var(--bg)}
+header{padding:16px 0 8px;border-bottom:1px solid var(--line)}
+h1{font-size:17px;margin:0;color:var(--cu);letter-spacing:.04em}
+header p{margin:2px 0 0;color:var(--mut)}
+section{padding:14px 0;border-bottom:1px solid var(--line)}
+h2{font-size:11px;text-transform:uppercase;letter-spacing:.1em;margin:0 0 10px;color:var(--br)}
+h2 small{text-transform:none;letter-spacing:0;color:var(--mut);font-weight:400}
+#view{position:relative;min-width:0}
+#view canvas{width:100%;height:100%;display:block}
+#status{position:absolute;left:16px;top:14px;color:#555;font-weight:600;z-index:2;pointer-events:none}
+button,select,input[type=text]{font:inherit;color:var(--tx);background:var(--card);border:1px solid var(--line);border-radius:6px;padding:6px 9px}
+button{cursor:pointer}button:hover{border-color:var(--cu)}
+.btns{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:8px}.btns.col{flex-direction:column}.btns.col button{text-align:left}
+label{display:grid;grid-template-columns:96px 1fr 38px;gap:8px;align-items:center;margin:6px 0;color:var(--mut)}
+label input[type=range]{width:100%;accent-color:var(--cu)}
+label input[type=color]{width:46px;height:26px;border:0;background:none;padding:0}
+.val{font-variant-numeric:tabular-nums;text-align:right;color:var(--mut)}
+.part{border:1px solid var(--line);border-radius:7px;margin-bottom:5px;background:var(--card)}
+.part.sel{border-color:var(--cu)}
+.part-h{display:flex;align-items:center;gap:8px;padding:7px 9px;cursor:pointer}
+.part-n{flex:1}
+.chip{width:14px;height:14px;border-radius:50%;border:1px solid #0006}
+.part-b{padding:4px 10px 10px;border-top:1px solid var(--line)}
+.part-b label{grid-template-columns:70px 1fr 38px}
+.part-b select{width:100%;grid-column:2/4}
+.note{color:var(--mut);font-size:12px;margin:4px 0}
+.note a{color:var(--cu)}
+.sub{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--br);margin-top:10px}
+.stk-list{display:grid;gap:6px}
+.stk{display:grid;grid-template-columns:72px 1fr;grid-template-rows:auto auto;column-gap:10px;text-align:left;align-items:center}
+.stk .thumb{grid-row:1/3;width:72px;height:54px;object-fit:contain;background:#26292e;border-radius:4px}
+.stk small{color:var(--mut)}
+.row{display:flex;gap:6px;margin:8px 0}.row input{flex:1}
+.file{display:block;grid-template-columns:none;cursor:pointer}.file.inl{display:inline-block;border:1px solid var(--line);padding:6px 9px;border-radius:6px;background:var(--card);color:var(--tx)}
+.file input{display:none}
+.armed{min-height:18px;color:var(--cu);font-weight:600;margin:6px 0}
+.decal{border:1px solid var(--line);border-radius:7px;padding:8px;margin-top:6px;background:var(--card)}
+.decal-h{display:flex;justify-content:space-between;align-items:center}
+.x{padding:1px 7px}
+.decal label{grid-template-columns:62px 1fr 42px}
+@media(max-width:800px){body{grid-template-columns:1fr;grid-template-rows:55vh 1fr}#panel{order:2}#view{order:1}}

@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Configurateur T2A</title>
+<link rel="stylesheet" href="style.css">
+<script type="importmap">
+{ "imports": {
+  "three": "./vendor/three/build/three.module.js",
+  "three/addons/": "./vendor/three/addons/"
+} }
+</script>
+</head>
+<body>
+<aside id="panel">
+  <header><h1>Configurateur T2A</h1><p>Pendulaire — matériaux, stickers, composants</p></header>
+
+  <section>
+    <h2>Looks</h2>
+    <div id="presets" class="btns col"></div>
+  </section>
+
+  <section>
+    <h2>Pièces <small>(clic sur la pièce dans la vue, ou dans la liste)</small></h2>
+    <div id="parts"></div>
+  </section>
+
+  <section>
+    <h2>Stickers UV <small>(décalcomanies, sans relief)</small></h2>
+    <div id="stickers" class="stk-list"></div>
+    <div class="btns"><button id="automast">Mât : pose auto</button><button id="autovent">Réservoir : grille auto</button></div>
+    <div class="row">
+      <input id="txt" type="text" placeholder="Texte (n° de série…)" maxlength="40">
+      <button id="txtadd">Texte</button>
+    </div>
+    <label class="file">Image perso <input id="imgadd" type="file" accept="image/*"></label>
+    <div id="armed" class="armed"></div>
+    <div id="decals"></div>
+  </section>
+
+  <section>
+    <h2>Vue & rendu</h2>
+    <div id="views" class="btns"></div>
+    <label>Fond <input id="bg" type="color" value="#f4f3f0"></label>
+    <label>Exposition <input id="expo" type="range" min="0.4" max="2" step="0.05" value="1"></label>
+    <label>Lumière ambiante <input id="env" type="range" min="0" max="2" step="0.05" value="0.9"></label>
+    <label><input id="shadow" type="checkbox" checked> Ombre au sol</label>
+    <div class="btns">
+      <button id="shot">Capture PNG</button>
+    </div>
+  </section>
+
+  <section>
+    <h2>Configuration</h2>
+    <div class="btns">
+      <button id="export">Exporter JSON</button>
+      <label class="file inl">Importer <input id="import" type="file" accept=".json"></label>
+      <button id="reset">Réinitialiser</button>
+    </div>
+    <p class="note">Sauvegarde automatique dans ce navigateur.</p>
+  </section>
+</aside>
+<main id="view"><div id="status">Chargement…</div></main>
+<script type="module" src="app.js"></script>
+</body>
+</html>
