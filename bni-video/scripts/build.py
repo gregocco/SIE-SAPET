@@ -28,14 +28,14 @@ def card(seg, cfg, path):
         a = fit(Image.open(p), 700, 900); im.paste(a, (160, 90), a)
     lg = seg.get("logo_path")
     if isfile(lg):
-        l = fit(Image.open(lg), 420, 220); box = Image.new("RGBA", (l.width + 40, l.height + 40), "white")
+        l = fit(Image.open(lg), 420, 220); box = Image.new("RGBA", (l.width + 40, l.height + 40), seg.get("logo_bg", "white"))
         box.paste(l, (20, 20), l); im.paste(box, (W - box.width - 120, 90), box)
     d.rectangle([0, H - 260, W, H - 40], fill=(0, 0, 0, 0))
     d.rounded_rectangle([120, H - 280, W - 120, H - 80], 24, fill="#101828")
     d.text((160, H - 262), seg["title"], font=font(64), fill="white")
     d.text((160, H - 180), seg["subtitle"], font=font(42), fill="#f4d03f")
-    for i, ln in enumerate(textwrap.wrap(seg.get("text", ""), 58)[:3]):
-        d.text((900, 350 + i * 70), ln, font=font(48), fill="#101828")
+    for i, ln in enumerate(textwrap.wrap(seg.get("text", ""), 34)[:6]):
+        d.text((900, 380 + i * 62), ln, font=font(44), fill="#101828")
     im.save(path)
 
 def run(cmd):
@@ -64,7 +64,7 @@ def main():
         segs.append({"id": m["id"], "title": m["name"], "subtitle": m["company"], "text": m["line"], "dur": m["duration"],
                      "line": m["line"], "belt": cfg["belts"][min(i + 1, len(cfg["belts"]) - 1)],
                      "portrait_path": os.path.join(ROOT, "assets", "portraits", m["portrait"]) if m["portrait"] and not m["portrait"].startswith("TODO") else None,
-                     "logo_path": os.path.join(ROOT, "assets", "logos", m["logo"]) if m["logo"] and not m["logo"].startswith("TODO") else None})
+                     "logo_bg": m.get("logo_bg", "white"), "logo_path": os.path.join(ROOT, "assets", "logos", m["logo"]) if m["logo"] and not m["logo"].startswith("TODO") else None})
     segs.append({"id": "99", "title": "Ensemble, on vise l'ippon !", "subtitle": cfg["chapter"], "text": "", "dur": cfg["closing"]["duration"],
                  "line": cfg["closing"]["line"], "belt": cfg["belts"][-1]})
     t, srt, clips = 0.0, [], []
