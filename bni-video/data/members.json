@@ -60,7 +60,7 @@
       "id": "03",
       "name": "Estelle Lopez",
       "company": "Bobine Club",
-      "portrait": "p_H_tshirt_rose.jpg",
+      "portrait": "TODO",
       "logo": "bobine_club.jpg",
       "duration": 20,
       "line": "Le judo, c'est le fil qu'on ne lâche pas : la prise, le contrôle, la fluidité. Chez Bobine Club, on tient le fil pour vous.",
@@ -68,7 +68,7 @@
       "ideal_contact": "TODO",
       "prop": "bobine de fil",
       "pronunciation": "TODO",
-      "portrait_status": "déduit de l'ordre d'envoi et du t-shirt, à confirmer ; l'illustration n'est donc plus nécessaire ?"
+      "portrait_status": "NON RÉSOLU : F (dentelle bleue) ou H (t-shirt rose)"
     },
     {
       "id": "04",
@@ -88,7 +88,7 @@
       "id": "05",
       "name": "Hélène Papadopulo",
       "company": "Optic 2000",
-      "portrait": "p_F_dentelle_bleue.jpg",
+      "portrait": "p_E_lunettes_rouges.jpg",
       "logo": "optic2000.png",
       "duration": 20,
       "line": "Le secret d'un champion : anticiper l'adversaire. Voir le coup avant qu'il arrive. Chez Optic 2000, on s'occupe de votre regard.",
@@ -97,7 +97,7 @@
       "prop": "lunettes",
       "pronunciation": "Papadopulo : TODO",
       "logo_bg": "#20232b",
-      "portrait_status": "déduit de 'photo suivante c'est optic 2000' + ordre d'envoi, à confirmer ; photo floue"
+      "portrait_status": "confirmé par l'utilisateur : Optic 2000 = femme aux lunettes rouges (corrige ma déduction)"
     },
     {
       "id": "06",
@@ -111,13 +111,13 @@
       "ideal_contact": "TODO",
       "prop": "TODO",
       "pronunciation": "Mloctet : TODO",
-      "portrait_status": "déduit de 'ML OCTET PLUS sa photo est à côté' + ordre d'envoi, à confirmer"
+      "portrait_status": "probable par élimination : G (noir et blanc), à confirmer"
     },
     {
       "id": "07",
       "name": "Samia Fournier",
       "company": "Koesio",
-      "portrait": "p_E_lunettes_rouges.jpg",
+      "portrait": "TODO",
       "logo": "koesio.jpg",
       "duration": 20,
       "line": "Pas de victoire sans coordination entre le coach, les athlètes et les outils. Koesio connecte tout votre dispositif numérique.",
@@ -125,7 +125,7 @@
       "ideal_contact": "TODO",
       "prop": "TODO",
       "pronunciation": "KOésio (accent sur le O)",
-      "portrait_status": "déduit de 'Koesio pareil' + ordre d'envoi, à confirmer ; selfie"
+      "portrait_status": "NON RÉSOLU : F (dentelle bleue) ou H (t-shirt rose) ; ma déduction précédente était fausse"
     },
     {
       "id": "08",
@@ -144,7 +144,9 @@
   ],
   "music": {
     "requested": "musique des JO (demande du commanditaire)",
-    "rights_status": "NON résolu : réponse 'pas de prise de tête pour les droits' ne vaut pas licence",
+    "rights_status": "résolu : fanfare originale générée en code (scripts/fanfare.py)",
     "recommendation": "fanfare originale ou libre de droits"
-  }
+  },
+  "consents": "déclarés oralement par l'utilisateur pour tous les membres (non vérifié, pas d'écrit)",
+  "lines_status": "figées : script collé deux fois sans modification"
 }
