@@ -1,3 +1,5 @@
+> **REMPLACÉ par `GUIDE_RUNWAY.md`** (V3 : 12 références, plans de coupe, budget Runway).
+
 # Prompts V2 : trailer « FEEL IT FREE » (remplace GUIDE_HIGGSFIELD.md et prompts.json)
 
 Valable pour n'importe quel générateur (Higgsfield, Runway, Kling, Pika…). Anglais pour les prompts, français pour le reste.
