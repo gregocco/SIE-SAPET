@@ -92,7 +92,7 @@
       "logo": "optic2000.png",
       "duration": 20,
       "line": "Le secret d'un champion : anticiper l'adversaire. Voir le coup avant qu'il arrive. Chez Optic 2000, on s'occupe de votre regard.",
-      "activity": "TODO",
+      "activity": "Opticien, franchisé Optic 2000",
       "ideal_contact": "TODO",
       "prop": "lunettes",
       "pronunciation": "Papadopulo : TODO",
@@ -103,15 +103,16 @@
       "id": "06",
       "name": "Maxime Lombard Dessaix",
       "company": "Mloctet +",
-      "portrait": "p_G_noir_blanc.jpg",
+      "portrait": "p_G_couleur_polo_blanc.jpg",
       "logo": "mloctet_light.png",
       "duration": 20,
       "line": "Au judo, 1 % d'écart peut tout changer. Chez Mloctet +, on optimise chaque octet pour que vous gagniez en performance.",
-      "activity": "TODO précis (vague dans le script)",
+      "activity": "Informatique pour entreprises : sites web, maintenance et infogérance, sécurité et sauvegarde, VoIP, matériel. Slogan du site : 'L'informatique, sans prise de tête.'",
       "ideal_contact": "TODO",
       "prop": "TODO",
       "pronunciation": "Mloctet : TODO",
-      "portrait_status": "probable par élimination : G (noir et blanc), à confirmer"
+      "portrait_status": "confirmé : version couleur envoyée avec le message 'Mloctet'",
+      "pitch_note": "La réplique figée 'optimise chaque octet' est vague face à ce métier ; option : '...Chez Mloctet +, l'informatique sans prise de tête.'"
     },
     {
       "id": "07",
@@ -148,5 +149,6 @@
     "recommendation": "fanfare originale ou libre de droits"
   },
   "consents": "déclarés oralement par l'utilisateur pour tous les membres (non vérifié, pas d'écrit)",
-  "lines_status": "figées : script collé deux fois sans modification"
+  "lines_status": "figées : script collé deux fois sans modification",
+  "distribution": "privée (déclaré par l'utilisateur) ; à revérifier si la vidéo est partagée sur un réseau public"
 }
