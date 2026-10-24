@@ -2,7 +2,7 @@
 
 Remplace `PROMPTS_V2.md`, `GUIDE_HIGGSFIELD.md` et `prompts.json`. Prompts en anglais, explications en français.
 
-**Contexte** : 500 crédits Runway. Montage final dans Final Cut Pro X. Musique : piste témoin seulement (voir §10). Un seul logo : La Mouette.
+**Contexte** : 500 crédits Runway. Montage final dans Final Cut Pro X. Musique : piste témoin seulement (voir §10). Nom de la machine : **FILL** (jeu de mots « feel it » / « fill it », le réservoir). Signature : **FILL by La Mouette**. Un seul logo : La Mouette.
 
 > ⚠️ Je ne peux pas piloter Runway : c'est vous qui lancez les générations. Les noms de menus et les prix par seconde cités ici viennent de sources non officielles et peuvent avoir changé : **lisez toujours le coût affiché par Runway avant de lancer**.
 
@@ -81,10 +81,10 @@ Les 13 clips : M1 ×2, D1 ×2, E1 ×2, **L1 ×3** (le plus fragile), C1, C2, C3,
 | 5 | 6:01 → 6:22 | 6,03 → 6,73 | **C2** roue au ras de l'eau | coupe | roue |
 | 6 | 6:22 → 8:26 | 6,73 → 8,87 | **L1** approche et posé | large | oui |
 | 7 | 8:26 → 9:17 | 8,87 → 9,57 | **C3** roue qui touche, poussière | coupe | roue |
-| 8 | 9:17 → 10:08 | 9,57 → 10,27 | **P1** désert vide au crépuscule (titre) | paysage | non |
-| 9 | 10:08 → fin | 10,27 → 12,65 | **FIN** rendu 3D + logo | carte | rendu exact |
+| 8 | 9:17 → 10:08 | 9,57 → 10,27 | **P1** désert vide au crépuscule : titre **FEEL IT FREE** | paysage | non |
+| 9 | 10:08 → fin | 10,27 → 12,65 | **FIN** : le titre devient **FILL**, rendu 3D + « by » + logo La Mouette | carte | rendu exact |
 
-Contact des roues sur l'attaque la plus forte (8:26). Titre « FEEL IT FREE » à 9:17, logo La Mouette à 10:08.
+Contact des roues sur l'attaque la plus forte (8:26). Titre « FEEL IT FREE » à 9:17 ; à 10:08 il se transforme en **FILL**, avec « by » et le logo La Mouette.
 
 ---
 
@@ -169,7 +169,10 @@ Wide cinematic shot, 16:9: an empty rough dirt airstrip in the desert at sunset,
 ## 7. Carte de fin (10:08 → fin) : aucune machine générée par l'IA
 1. Vidéo **P1** (paysage vide), 5 s : gardez les 2,4 s utiles.
 2. Posez dessus `0_hero_fond_transparent.png` (détouré, **sans ombre au sol** : ajoutez-en une dans FCP).
-3. Texte **FEEL IT FREE** à 9:17, logo `trailer/assets/lamouette_logo_hd.png` à 10:08.
+3. **Titre en deux temps** (le jeu de mots doit se *voir*, car Facebook se regarde souvent sans le son) :
+   - **9:17** : « FEEL IT FREE » apparaît sur le paysage vide.
+   - **10:08** : sur l'attaque, les lettres de « FEEL » se transforment en **« FILL »** (E → I, E → L : deux lettres changent) pendant que « IT FREE » s'efface. La machine (rendu 3D) arrive en même temps.
+   - **À 10:40 environ** : sous « FILL », petit « **by** » puis le logo La Mouette (`trailer/assets/lamouette_logo_hd.png`). Tenir jusqu'à la fin (12,65 s).
 4. Le rendu 3D est « propre » et le paysage « photo » : raccordez par un **étalonnage commun**, une légère ombre sous la machine, du grain, un flou de profondeur sur le paysage.
 
 ---
@@ -198,4 +201,5 @@ Défaut dans l'**image** → refaire l'image. Ne pas l'animer « pour voir » : 
 - **Musique** : « You Know My Name » est une œuvre protégée. Gardez-la comme piste témoin, **à remplacer avant publication** (bibliothèque sonore de Meta, titre libre de droits, ou licence).
 - **Facebook** : signalez les contenus réalistes générés par IA selon la règle actuelle de Meta ; vérifiez-la.
 - **Runway** : le plan gratuit met un filigrane. Vérifiez que votre plan retire le filigrane et autorise l'usage commercial avant publication.
+- **Nom FILL** : vérifiez la disponibilité de la marque (INPI / EUIPO, classe 12 véhicules et aéronefs) avant une diffusion publique : « fill » est un mot courant. « FILL **by La Mouette** » associe le nom de La Mouette à votre produit : leur accord écrit est nécessaire.
 - **La Mouette** : demandez l'autorisation d'afficher leur logo et, si possible, le fichier vectoriel officiel (celui du dépôt est reconstitué à partir d'une image de 156 px).
