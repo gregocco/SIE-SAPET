@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><title>Tournoi des partenaires</title>
+<style>
+@font-face{font-family:Inter;font-weight:500;src:url(file:///usr/share/fonts/opentype/inter/Inter-Medium.otf)}
+@font-face{font-family:Inter;font-weight:600;src:url(file:///usr/share/fonts/opentype/inter/Inter-SemiBold.otf)}
+@font-face{font-family:Inter;font-weight:700;src:url(file:///usr/share/fonts/opentype/inter/Inter-Bold.otf)}
+@font-face{font-family:Inter;font-weight:900;src:url(file:///usr/share/fonts/opentype/inter/Inter-Black.otf)}
+@font-face{font-family:InterD;font-weight:900;src:url(file:///usr/share/fonts/opentype/inter/InterDisplay-Black.otf)}
+@font-face{font-family:Brush;font-weight:700;src:url(file:///usr/share/fonts/truetype/dejavu/DejaVuSerif-Bold.ttf)}
+html,body{margin:0;padding:0;background:#000;overflow:hidden}
+#stage{position:absolute;left:0;top:0;width:1920px;height:1080px;transform-origin:0 0;overflow:hidden;background:#3a2819;font-family:Inter,sans-serif}
+#world{position:absolute;left:0;top:0}
+.ov{position:absolute;opacity:0}
+#bandeau{left:40px;top:38px;display:flex;align-items:stretch;background:rgba(14,20,38,.86);border-radius:18px;overflow:hidden;box-shadow:0 8px 30px rgba(0,0,0,.35);max-width:820px}
+#bandeau .lg{width:190px;display:flex;align-items:center;justify-content:center;padding:14px;box-sizing:border-box}
+#bandeau .lg img{max-width:162px;max-height:104px;object-fit:contain;display:block}
+#bandeau .tx{padding:16px 28px 16px 24px;display:flex;flex-direction:column;justify-content:center;border-left:8px solid #fff}
+#bandeau .nm{font-weight:900;font-size:44px;color:#fff;line-height:1.05;letter-spacing:-.5px;white-space:nowrap}
+#bandeau .co{font-weight:700;font-size:29px;color:#f6c945;margin-top:6px;white-space:nowrap}
+#bandeau .ac{font-weight:500;font-size:23px;color:#d5dbea;margin-top:5px;white-space:nowrap}
+#subs{left:0;right:0;bottom:44px;text-align:center}
+#subs span{display:inline-block;max-width:1380px;background:rgba(10,14,28,.78);color:#fff;font-weight:600;font-size:46px;line-height:1.28;padding:12px 30px 14px;border-radius:14px;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+#beltHud{right:40px;top:44px;display:flex;gap:8px;align-items:center;background:rgba(14,20,38,.7);padding:12px 16px;border-radius:14px}
+#beltHud i{display:block;width:40px;height:14px;border-radius:4px;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.35)}
+#title{left:0;right:0;top:110px;text-align:center}
+#title .k{display:inline-block;font-weight:700;font-size:34px;letter-spacing:9px;color:#f6c945;text-transform:uppercase;background:rgba(14,20,38,.75);padding:8px 26px;border-radius:10px}
+#title .t{font-family:InterD;font-weight:900;font-size:118px;color:#fff;margin-top:18px;letter-spacing:-1px;text-shadow:0 6px 0 rgba(0,0,0,.25),0 0 40px rgba(0,0,0,.45);-webkit-text-stroke:2px rgba(20,24,40,.55)}
+#title .u{height:10px;background:linear-gradient(90deg,#f6c945,#fff2b3,#f6c945);margin:18px auto 0;border-radius:5px}
+#ftitle{left:0;right:0;top:64px;text-align:center}
+#ftitle .t{font-family:InterD;font-weight:900;font-size:104px;color:#fff;letter-spacing:-1px;text-shadow:0 6px 0 rgba(0,0,0,.25),0 0 40px rgba(0,0,0,.5);-webkit-text-stroke:2px rgba(20,24,40,.55)}
+#ftitle .k{display:inline-block;margin-top:10px;font-weight:700;font-size:32px;letter-spacing:7px;color:#f6c945;text-transform:uppercase;background:rgba(14,20,38,.75);padding:8px 24px;border-radius:10px}
+#flash{left:0;top:0;width:1920px;height:1080px;background:#fff}
+#fade{left:0;top:0;width:1920px;height:1080px;background:#000}
+</style></head>
+<body>
+<div id="stage">
+  <svg id="world" width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+    <defs id="defs"></defs>
+    <g id="wallG"></g>
+    <g id="dyn"></g>
+    <rect width="1920" height="1080" fill="url(#vignette)" pointer-events="none"/>
+    <rect width="1920" height="1080" fill="url(#warm)" pointer-events="none"/>
+  </svg>
+  <div id="title" class="ov"><div class="k"></div><div class="t"></div><div class="u"></div></div>
+  <div id="ftitle" class="ov"><div class="t"></div><div class="k"></div></div>
+  <div id="bandeau" class="ov"><div class="lg"><img alt=""></div><div class="tx"><div class="nm"></div><div class="co"></div><div class="ac"></div></div></div>
+  <div id="beltHud" class="ov"></div>
+  <div id="subs" class="ov"><span></span></div>
+  <div id="flash" class="ov"></div>
+  <div id="fade" class="ov"></div>
+</div>
+<script src="avatars.js"></script>
+<script src="engine.js"></script>
+</body></html>

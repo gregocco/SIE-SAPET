@@ -126,7 +126,7 @@
       "id": "07",
       "name": "Samia Fournier",
       "company": "Koesio",
-      "portrait": "p_F_dentelle_bleue.jpg",
+      "portrait": "p_I_samia_rose.jpg",
       "logo": "koesio.jpg",
       "duration": 20,
       "line": "Pas de victoire sans coordination entre le coach, les athlètes et les outils. Koesio connecte tout votre dispositif numérique.",
@@ -134,7 +134,7 @@
       "ideal_contact": null,
       "prop": "TODO",
       "pronunciation": "KOésio (accent sur le O)",
-      "portrait_status": "par élimination (dernier portrait), photo floue",
+      "portrait_status": "confirmé : photo envoyée avec le nom 'Samia' (corrige ma déduction par élimination)",
       "tts": "Pas de victoire sans coordination entre le coach, les athlètes et les outils. Koésio connecte tout votre dispositif numérique."
     },
     {
@@ -167,5 +167,8 @@
     "variant": "elevenlabs",
     "voice": "Celine 57ccb351-84d7-54ba-afd4-26b566ca6023",
     "note": "écrire chiffres et sigles en toutes lettres"
-  }
+  },
+  "unused_portraits": [
+    "p_F_dentelle_bleue.jpg : n'appartient plus à aucun membre confirmé (peut-être une autre photo de Samia ? à demander)"
+  ]
 }
