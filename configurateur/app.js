@@ -4,7 +4,7 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
 import { DecalGeometry } from 'three/addons/geometries/DecalGeometry.js';
 import { toCreasedNormals, mergeVertices } from 'three/addons/utils/BufferGeometryUtils.js';
-import { STICKERS, textSticker } from './stickers.js';
+import { STICKERS, textSticker, OPTS } from './stickers.js';
 
 const MODEL_URL = './models/T2A_F3_deflecteurs.glb';
 const STORE_KEY = 't2a-configurateur-v1';
@@ -83,8 +83,9 @@ const PRESETS = {
   steampunk: {
     label: 'Steampunk industriel',
     reset: true,
+    designs: true,
     groups: {
-      mat: 'cuivre', chassis: 'cuivre', train_ar: 'cuivre', rivets_mat: 'laiton', pneus: 'caoutchouc', roues: 'noir_satine', reservoir: 'alu_brosse',
+      mat: 'cuivre', chassis: 'cuivre', train_ar: 'cuivre', rivets_mat: 'laiton', pneus: 'caoutchouc', roues: 'noir_satine', reservoir: 'bleu_nuit',
       gaines: 'cuivre_tresse', durites: 'noir_mat', colliers: 'laiton',
       echangeur: 'cuivre', radiateur: 'acier_graphite', echappement: 'acier_graphite',
       tdb_coque: 'bleu_nuit', helice: 'noir_satine',
@@ -143,6 +144,7 @@ const state = {
   groupMat: {},      // groupId -> { preset, color?, roughness?, metalness? }
   visible: {},       // groupId -> bool
   decals: [],        // { id, node, point, normal, h (m), sx, rot, flip, opacity, sticker, imageId?, text? }
+  rings: false,      // bagues d'instruments alu
   images: [],        // bibliothèque PNG de l'utilisateur : { id, name, dataUrl, aspect }
   variants: {},      // groupId -> id de variante active (défaut : native)
   pose: {},          // groupId -> { dx, dy, dz (mm), ry (deg) } réglage fin de la variante
@@ -369,7 +371,7 @@ function imageElement(img) {
   return el;
 }
 function stickerTexture(d) {
-  const key = d.sticker === 'image' ? 'img:' + d.imageId : d.sticker + (d.text || '');
+  const key = d.sticker === 'image' ? 'img:' + d.imageId : d.sticker + (d.text || '') + (d.sticker === 'mast' ? OPTS.serial : '');
   if (stickerTexCache[key]) return stickerTexCache[key];
   let t;
   if (d.sticker === 'image') {
@@ -415,10 +417,17 @@ function buildDecal(d) {
   q.multiply(new THREE.Quaternion().setFromAxisAngle(new THREE.Vector3(0, 0, 1), THREE.MathUtils.degToRad(d.rot || 0)));
   orient.setFromQuaternion(q);
   // d.h = hauteur en mètres ; largeur = h * aspect * étirement (sx)
-  const h = d.h * unit, w = h * stickerAspect(d) * (d.sx || 1);
-  const size = new THREE.Vector3(w, h, Math.max(w, h) * 0.5);
+  const win = d.uv ? d.uv[1] - d.uv[0] : 1;
+  const h = d.h * unit, w = h * stickerAspect(d) / win * (d.sx || 1);
+  // Profondeur de projection plafonnée à 4 cm : sinon le sticker d'une face traverse une pièce mince (sangle du mât, 56 mm)
+  // et se reproduit en miroir sur la face opposée.
+  const size = new THREE.Vector3(w, h, Math.min(Math.max(w, h) * 0.5, 0.04 * unit));
   target.updateWorldMatrix(true, false);
   const geo = new DecalGeometry(target, point, orient, size);
+  if (d.uv) {   // tronçon d'un long graphisme : on ne garde que la fenêtre v0..v1 de la texture
+    const uv = geo.attributes.uv;
+    for (let i = 0; i < uv.count; i++) uv.setY(i, d.uv[0] + uv.getY(i) * (d.uv[1] - d.uv[0]));
+  }
   let map = base, own = false;
   if (d.flip) { map = base.clone(); map.repeat.x = -1; map.offset.x = 1; map.needsUpdate = true; own = true; }
   // Couleurs fidèles au fichier : rendu « imprimé », sans le virage de la tonalité du reste du modèle.
@@ -479,15 +488,15 @@ function rayHit(meshes, from, dir) {
   return { hit: h, n };
 }
 
-// Graphisme du mât : la sangle est coudée, donc on suit son axe réel par tronçons (les ornements d'extrémité tombent aux jonctions).
-function autoMast(chunk = 0.45) {
+// Graphisme du mât : la sangle est coudée. On suit son axe réel par tronçons ; chaque tronçon n'affiche qu'une
+// fenêtre de la texture (une seule longue bande), donc l'emblème et le n° de série ne se répètent pas.
+function autoMast(chunk = 0.4) {
   const meshes = visibleMeshes('mat', /^B03_MAT_V3/);
   if (!meshes.length) return;
   for (const d of state.decals.filter(d => d.auto === 'mast')) removeDecal(d.id, true);
   const box = new THREE.Box3(); meshes.forEach(m => box.expandByObject(m));
-  const dirs = [[1, new THREE.Vector3(0, 0, -1)], [-1, new THREE.Vector3(0, 0, 1)]];
-  for (const [side, dir] of dirs) {
-    // axe de la sangle : milieu de la zone touchée à chaque hauteur
+  const tex = STICKERS.find(x => x.id === 'mast');
+  for (const [side, dir] of [[1, new THREE.Vector3(0, 0, -1)], [-1, new THREE.Vector3(0, 0, 1)]]) {
     const cl = [];
     for (let y = box.min.y + 0.02; y < Math.min(box.max.y - 0.12, 2.0); y += 0.02) {
       let lo = Infinity, hi = -Infinity;
@@ -496,35 +505,83 @@ function autoMast(chunk = 0.45) {
       }
       if (hi > lo) cl.push({ x: (lo + hi) / 2, y, w: hi - lo });
     }
-    for (let i = 0; i + 1 < cl.length;) {
-      let j = i, len = 0;
-      while (j + 1 < cl.length && len < chunk) { len += Math.hypot(cl[j + 1].x - cl[j].x, cl[j + 1].y - cl[j].y); j++; }
-      if (len < chunk * 0.6) break;
-      const a = cl[i], b = cl[j];
+    if (cl.length < 3) continue;
+    const cum = [0];
+    for (let i = 1; i < cl.length; i++) cum.push(cum[i - 1] + Math.hypot(cl[i].x - cl[i - 1].x, cl[i].y - cl[i - 1].y));
+    const L = cum[cum.length - 1];
+    const ws = cl.map(c => c.w).sort((p, q) => p - q);
+    const wfix = Math.min(0.1, ws[Math.floor(ws.length / 2)] * 0.82);   // largeur du graphisme : un peu moins que la sangle
+    const sx = wfix / (L * tex.aspect);
+    // tronçons : bornes à chaque ~chunk mètres d'abscisse curviligne
+    const n = Math.max(1, Math.round(L / chunk));
+    const idxAt = s => { let k = 0; while (k < cl.length - 1 && cum[k] < s) k++; return k; };
+    for (let c = 0; c < n; c++) {
+      const s0 = (L * c) / n, s1 = (L * (c + 1)) / n;
+      const i0 = idxAt(s0), i1 = idxAt(s1);
+      const a = cl[i0], b = cl[Math.max(i1, i0 + 1)];
       const mid = { x: (a.x + b.x) / 2, y: (a.y + b.y) / 2 };
       const found = rayHit(meshes, new THREE.Vector3(mid.x, mid.y, 3 * side), dir);
-      if (found) {
-        const ang = Math.atan2(b.x - a.x, b.y - a.y) * 180 / Math.PI;
-        addDecal({ node: found.hit.object.name, point: found.hit.point.toArray(), normal: found.n.toArray(), h: +len.toFixed(3), sticker: 'mast', rot: +(-side * ang).toFixed(1), auto: 'mast' }, true);
-      }
-      i = j;
+      if (!found) continue;
+      const ang = Math.atan2(b.x - a.x, b.y - a.y) * 180 / Math.PI;
+      addDecal({
+        node: found.hit.object.name, point: found.hit.point.toArray(), normal: found.n.toArray(),
+        h: +(s1 - s0).toFixed(3), sx: +sx.toFixed(3), uv: [s0 / L, s1 / L], sticker: 'mast', rot: +(-side * ang).toFixed(1), auto: 'mast',
+      }, true);
     }
   }
   renderDecalList(); save();
 }
 
-// Grille de ventilation : une sur chaque flanc du réservoir actif.
+// Réservoir : grille + cadre de cornières sur chaque flanc du réservoir actif.
 function autoTankVent() {
   const meshes = visibleMeshes('reservoir');
   if (!meshes.length) return;
   for (const d of state.decals.filter(d => d.auto === 'vent')) removeDecal(d.id, true);
   const box = new THREE.Box3(); meshes.forEach(m => box.expandByObject(m));
   const c = box.getCenter(new THREE.Vector3());
+  const hTank = box.max.y - box.min.y;
   for (const side of [1, -1]) {
-    const found = rayHit(meshes, new THREE.Vector3(c.x, c.y - 0.02, 3 * side), new THREE.Vector3(0, 0, -side));
-    if (found) addDecal({ node: found.hit.object.name, point: found.hit.point.toArray(), normal: found.n.toArray(), h: 0.15, sticker: 'vent', auto: 'vent' }, true);
+    const found = rayHit(meshes, new THREE.Vector3(c.x, c.y, 3 * side), new THREE.Vector3(0, 0, -side));
+    if (!found) continue;
+    const base = { node: found.hit.object.name, point: found.hit.point.toArray(), normal: found.n.toArray(), auto: 'vent' };
+    addDecal({ ...base, sticker: 'frame', h: +(hTank * 0.86).toFixed(3) }, true);
+    addDecal({ ...base, sticker: 'vent', h: +(hTank * 0.62).toFixed(3) }, true);
   }
   renderDecalList(); save();
+}
+
+// ---------------------------------------------------------------- bagues d'instruments (aluminium brossé)
+// Ajout visuel (hors CAD) : anneau autour des cadrans ronds du tableau de bord, calé sur les faces `TDB_face_*`.
+const RING_FACES = [/^TDB_face_MGL_Blaze/, /^TDB_face_MGL_EMS2/, /^TDB_face_obturateur/, /^TDB_face_radio/];
+let ringsGroup = null;
+function buildRings() {
+  if (ringsGroup) { scene.remove(ringsGroup); ringsGroup.traverse(o => o.geometry?.dispose()); ringsGroup = null; }
+  ringsGroup = new THREE.Group(); ringsGroup.name = 'BAGUES_INSTRUMENTS';
+  const mat = new THREE.MeshPhysicalMaterial({ color: '#c9ccd0', metalness: 1, roughness: 0.3, bumpMap: proceduralTexture('brushed'), bumpScale: 0.1, side: THREE.DoubleSide });
+  mat.bumpMap.repeat.set(6, 1);
+  model.updateMatrixWorld(true);
+  model.traverse(o => {
+    if (!o.isMesh || !RING_FACES.some(re => re.test(o.name))) return;
+    const b = new THREE.Box3().setFromObject(o), c = b.getCenter(new THREE.Vector3()), sz = b.getSize(new THREE.Vector3());
+    // le cadran est plat : l'axe le plus fin est la normale (ici x)
+    const R = Math.min(sz.y, sz.z) / 2 * unit / unit;
+    const t = 0.006, ri = R - 0.0008, ro = R + 0.0065;
+    const prof = [[ri, 0], [ri, -t * 0.7], [ri + 0.0012, -t], [ro - 0.0014, -t], [ro, -t * 0.65], [ro, 0], [ro - 0.001, 0.0006], [ri + 0.001, 0.0006], [ri, 0]].map(([r, y]) => new THREE.Vector2(r, y));
+    const g = new THREE.LatheGeometry(prof, 96); g.rotateZ(-Math.PI / 2);
+    const ring = new THREE.Mesh(g, mat);
+    ring.position.set(b.min.x, c.y, c.z);
+    ring.castShadow = true;
+    ringsGroup.add(ring);
+  });
+  ringsGroup.visible = !!state.rings;
+  scene.add(ringsGroup);
+}
+function setRings(on) {
+  state.rings = !!on;
+  if (!ringsGroup) buildRings();
+  ringsGroup.visible = state.rings;
+  const cb = document.getElementById('rings'); if (cb) cb.checked = state.rings;
+  save();
 }
 
 // ---------------------------------------------------------------- interactions 3D
@@ -660,7 +717,7 @@ function rebuildDecalsOn(gid) {
 
 // ---------------------------------------------------------------- persistance
 function save() {
-  try { localStorage.setItem(STORE_KEY, JSON.stringify({ groupMat: state.groupMat, visible: state.visible, variants: state.variants, pose: state.pose, decals: state.decals, bg: state.bg })); } catch {}
+  try { localStorage.setItem(STORE_KEY, JSON.stringify({ groupMat: state.groupMat, visible: state.visible, variants: state.variants, pose: state.pose, decals: state.decals, rings: state.rings, serial: OPTS.serial, bg: state.bg })); } catch {}
 }
 function saveImages() {
   try { localStorage.setItem(STORE_KEY + '-img', JSON.stringify(state.images)); } catch { $('#imgwarn').textContent = 'Images trop lourdes pour la sauvegarde automatique : exportez la configuration JSON.'; }
@@ -676,6 +733,7 @@ async function applyConfig(cfg) {
   state.variants = cfg.variants || {};
   state.pose = cfg.pose || {};
   state.decals = cfg.decals || [];
+  if (cfg.serial) { OPTS.serial = cfg.serial; const si = document.getElementById('serial'); if (si) si.value = cfg.serial; }
   if (cfg.images) { state.images = cfg.images; saveImages(); renderImages(); }
   state.bg = cfg.bg || state.bg;
   setBackground(state.bg);
@@ -686,6 +744,8 @@ async function applyConfig(cfg) {
   }
   applyAll();
   for (const gid of Object.keys(state.variants)) applyPose(gid);
+  state.rings = !!cfg.rings; if (!ringsGroup) buildRings(); ringsGroup.visible = state.rings;
+  { const cb = document.getElementById('rings'); if (cb) cb.checked = state.rings; }
   state.decals.forEach(buildDecal);
   renderParts(); renderDecalList();
 }
@@ -693,8 +753,9 @@ function applyPreset(id) {
   const p = PRESETS[id];
   const groupMat = {};
   for (const [g, preset] of Object.entries(p.groups)) groupMat[g] = { preset };
-  const decals = id === 'origine' ? [] : state.decals;
-  applyConfig({ groupMat, visible: state.visible, variants: state.variants, pose: state.pose, decals, bg: state.bg }).then(() => {
+  const decals = (id === 'origine' || p.designs) ? state.decals.filter(d => !d.auto) : state.decals;
+  applyConfig({ groupMat, visible: state.visible, variants: state.variants, pose: state.pose, decals, rings: !!p.designs, bg: state.bg }).then(() => {
+    if (p.designs) { autoMast(); autoTankVent(); }
     save();
   });
   save();
@@ -894,13 +955,19 @@ function buildUI() {
     const a = el('a', { href: renderer.domElement.toDataURL('image/png'), download: 't2a-rendu.png' }); a.click();
   });
   $('#export').addEventListener('click', () => {
-    const blob = new Blob([JSON.stringify({ groupMat: state.groupMat, visible: state.visible, variants: state.variants, pose: state.pose, decals: state.decals, images: state.images, bg: state.bg }, null, 1)], { type: 'application/json' });
+    const blob = new Blob([JSON.stringify({ groupMat: state.groupMat, visible: state.visible, variants: state.variants, pose: state.pose, decals: state.decals, images: state.images, rings: state.rings, serial: OPTS.serial, bg: state.bg }, null, 1)], { type: 'application/json' });
     el('a', { href: URL.createObjectURL(blob), download: 't2a-config.json' }).click();
   });
   $('#import').addEventListener('change', async e => { const f = e.target.files[0]; if (f) { applyConfig(JSON.parse(await f.text())); save(); } });
   $('#reset').addEventListener('click', () => applyPreset('base'));
   $('#automast').addEventListener('click', () => autoMast());
   $('#autovent').addEventListener('click', () => autoTankVent());
+  $('#rings').addEventListener('change', e => setRings(e.target.checked));
+  $('#serial').addEventListener('change', e => {
+    OPTS.serial = e.target.value.trim() || '0001';
+    for (const k of Object.keys(stickerTexCache)) if (k.startsWith('mast')) delete stickerTexCache[k];
+    state.decals.filter(d => d.sticker === 'mast').forEach(buildDecal); save();
+  });
   $('#txtadd').addEventListener('click', () => { const t = $('#txt').value.trim(); if (t) arm({ sticker: 'text', text: t, size: 0.03, aspect: 4 }, `texte « ${t} »`); });
   $('#imgadd').addEventListener('change', async e => {
     let last = null;
@@ -941,7 +1008,7 @@ async function main() {
   const saved = loadSaved();
   applyConfig(saved || { groupMat: Object.fromEntries(Object.entries(BASE_LOOK).map(([g, p]) => [g, { preset: p }])), visible: {}, decals: [] });
   status.textContent = '';
-  window.__t2a = { addImageFile, selectDecal, buildDecal, autoMast, autoTankVent, setVariant, castDecal, scene, camera, controls, state, applyPreset, setView, addDecal, groupMeshes, THREE, model, get unit() { return unit; }, get modelSize() { return modelSize; }, selectGroup, modelBox };
+  window.__t2a = { setRings, addImageFile, selectDecal, buildDecal, autoMast, autoTankVent, setVariant, castDecal, scene, camera, controls, state, applyPreset, setView, addDecal, groupMeshes, THREE, model, get unit() { return unit; }, get modelSize() { return modelSize; }, selectGroup, modelBox };
   const testMode = new URLSearchParams(location.search).has('test');
   if (testMode) document.body.dataset.test = '1';
   window.__t2a.render = () => { controls.update(); renderer.render(scene, camera); };
