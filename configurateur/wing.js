@@ -6,7 +6,8 @@ const { Vector3 } = THREE;
 const rad = THREE.MathUtils.degToRad;
 
 export const KA = {
-  span: 10, noseAngleDeg: 128, keelLength: 3.1, hangFromNose: 1.55, rootChord: 2.75, tipChord: 0.85,
+  span: 10, noseAngleDeg: 120, keelLength: 3.1, hangFromNose: 1.55, rootChord: 2.490, tipChord: 0.770,   // 120° : angle de nez de la gamme La Mouette ; cordes réglées pour une surface de 16,9 m²
+ 
   billowRoot: 0.075, billowTip: 0.04, washoutDeg: 11, anhedral: 0.08, pitchDeg: 4, leHeight: 0.06,
   doubleSurface: { root: 0.64, tip: 0.86 }, battensPerSide: 13, scallop: 0.035,
   crossbarStation: 0.58, haubanStation: 0.52,
