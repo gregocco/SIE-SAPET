@@ -53,7 +53,7 @@ def ts(s):
     h, m = int(s // 3600), int(s % 3600 // 60); return f"{h:02d}:{m:02d}:{s % 60:06.3f}".replace(".", ",")
 
 def main():
-    ap = argparse.ArgumentParser(); ap.add_argument("--scale", type=float, default=1.0)
+    ap = argparse.ArgumentParser(); ap.add_argument("--scale", type=float, default=1.0); ap.add_argument("--fit", action="store_true", help="durée = voix + 2.5 s au lieu de la durée du script")
     ap.add_argument("--out", default=os.path.join(ROOT, "out", "bni.mp4")); a = ap.parse_args()
     cfg = json.load(open(os.path.join(ROOT, "data", "members.json"), encoding="utf-8"))
     tmp = os.path.join(ROOT, "out", "tmp"); os.makedirs(tmp, exist_ok=True)
@@ -69,8 +69,11 @@ def main():
                  "line": cfg["closing"]["line"], "belt": cfg["belts"][-1]})
     t, srt, clips = 0.0, [], []
     for k, s in enumerate(segs):
-        dur = s["dur"] * a.scale; png = os.path.join(tmp, f"{s['id']}.png"); mp4 = os.path.join(tmp, f"{s['id']}.mp4")
-        card(s, cfg, png); clip(png, dur, os.path.join(ROOT, "assets", "audio", f"{s['id']}.mp3"), mp4, cfg)
+        au = os.path.join(ROOT, "assets", "audio", f"{s['id']}.mp3")
+        vd = float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", au], capture_output=True, text=True).stdout or 0) if isfile(au) else 0
+        dur = vd + 2.5 if a.fit and vd else max(s["dur"] * a.scale, vd + 0.8)   # jamais de voix coupée
+        png = os.path.join(tmp, f"{s['id']}.png"); mp4 = os.path.join(tmp, f"{s['id']}.mp4")
+        card(s, cfg, png); clip(png, dur, au, mp4, cfg)
         srt.append(f"{k + 1}\n{ts(t + 0.5 * a.scale)} --> {ts(t + dur - 0.3 * a.scale)}\n{s['line']}\n"); clips.append(mp4); t += dur
     lst = os.path.join(tmp, "list.txt"); open(lst, "w").write("".join(f"file '{c}'\n" for c in clips))
     music = os.path.join(ROOT, "assets", "audio", "music.mp3")
