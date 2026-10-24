@@ -11,11 +11,13 @@
   },
   "opening": {
     "duration": 3,
-    "line": "Mesdames et Messieurs, bienvenue aux JO du business : le tournoi des partenaires !"
+    "line": "Mesdames et Messieurs, bienvenue aux JO du business : le tournoi des partenaires !",
+    "tts": "Mesdames et Messieurs, bienvenue aux Jé-Ô du business : le tournoi des partenaires !"
   },
   "closing": {
     "duration": 5,
-    "line": "Ensemble, on vise l'ippon !"
+    "line": "Ensemble, on vise l'ippon !",
+    "tts": "Ensemble, on vise l'ippon !"
   },
   "belts": [
     "#ffffff",
@@ -40,7 +42,8 @@
       "ideal_contact": null,
       "prop": "TODO",
       "pronunciation": "TODO",
-      "portrait_status": "déduit du logo du polo, à confirmer"
+      "portrait_status": "déduit du logo du polo, à confirmer",
+      "tts": "Au judo, tout commence par une bonne garde et une vision limpide. Chez Ixèl Glasse, on vous donne les deux."
     },
     {
       "id": "02",
@@ -54,7 +57,8 @@
       "ideal_contact": null,
       "prop": "TODO",
       "pronunciation": "TODO",
-      "portrait_status": "confirmé : message WhatsApp 'GF synergie plombier chauffagiste' sur cette photo"
+      "portrait_status": "confirmé : message WhatsApp 'GF synergie plombier chauffagiste' sur cette photo",
+      "tts": "Un judoka seul peut gagner un combat. Mais c'est la synergie qui fait gagner les équipes. Jé Èf Synergie."
     },
     {
       "id": "03",
@@ -68,7 +72,8 @@
       "ideal_contact": null,
       "prop": "bobine de fil",
       "pronunciation": "TODO",
-      "portrait_status": "confirmé : 'blonde à lunettes avec t-shirt rose clair'"
+      "portrait_status": "confirmé : 'blonde à lunettes avec t-shirt rose clair'",
+      "tts": "Le judo, c'est le fil qu'on ne lâche pas : la prise, le contrôle, la fluidité. Chez Bobine Club, on tient le fil pour vous."
     },
     {
       "id": "04",
@@ -82,7 +87,8 @@
       "ideal_contact": null,
       "prop": "pneu",
       "pronunciation": "TODO",
-      "portrait_status": "confirmé : message WhatsApp 'Pneumatiques' sur cette photo"
+      "portrait_status": "confirmé : message WhatsApp 'Pneumatiques' sur cette photo",
+      "tts": "Une bonne projection, il faut de l'adhérence et de la stabilité. Chez Idéal Pneu, on vous garde les pieds sur terre… et sur la route."
     },
     {
       "id": "05",
@@ -97,7 +103,8 @@
       "prop": "lunettes",
       "pronunciation": "Papadopulo : TODO",
       "logo_bg": "#20232b",
-      "portrait_status": "confirmé par l'utilisateur : Optic 2000 = femme aux lunettes rouges (corrige ma déduction)"
+      "portrait_status": "confirmé par l'utilisateur : Optic 2000 = femme aux lunettes rouges (corrige ma déduction)",
+      "tts": "Le secret d'un champion : anticiper l'adversaire. Voir le coup avant qu'il arrive. Chez Optic deux mille, on s'occupe de votre regard."
     },
     {
       "id": "06",
@@ -112,7 +119,8 @@
       "prop": "TODO",
       "pronunciation": "Mloctet : TODO",
       "portrait_status": "confirmé : version couleur envoyée avec le message 'Mloctet'",
-      "pitch_note": "La réplique figée 'optimise chaque octet' est vague face à ce métier ; option : '...Chez Mloctet +, l'informatique sans prise de tête.'"
+      "pitch_note": "La réplique figée 'optimise chaque octet' est vague face à ce métier ; option : '...Chez Mloctet +, l'informatique sans prise de tête.'",
+      "tts": "Au judo, un pour cent d'écart peut tout changer. Chez Mloctet plus, on optimise chaque octet pour que vous gagniez en performance."
     },
     {
       "id": "07",
@@ -126,7 +134,8 @@
       "ideal_contact": null,
       "prop": "TODO",
       "pronunciation": "KOésio (accent sur le O)",
-      "portrait_status": "par élimination (dernier portrait), photo floue"
+      "portrait_status": "par élimination (dernier portrait), photo floue",
+      "tts": "Pas de victoire sans coordination entre le coach, les athlètes et les outils. Koésio connecte tout votre dispositif numérique."
     },
     {
       "id": "08",
@@ -140,7 +149,8 @@
       "ideal_contact": null,
       "prop": "ceinture noire",
       "pronunciation": "TODO",
-      "portrait_status": "confirmé : message WhatsApp 'Arc en ciel recyclage / Recyclage bennes' sur cette photo"
+      "portrait_status": "confirmé : message WhatsApp 'Arc en ciel recyclage / Recyclage bennes' sur cette photo",
+      "tts": "Un bon judoka sait que rien ne se perd : on utilise la force de l'autre. Chez Arc en Ciel Recyclage, on fait pareil avec vos déchets : on les transforme en ressources."
     }
   ],
   "music": {
@@ -151,5 +161,11 @@
   "consents": "déclarés oralement par l'utilisateur pour tous les membres (non vérifié, pas d'écrit)",
   "lines_status": "figées : script collé deux fois sans modification",
   "distribution": "privée (déclaré par l'utilisateur) ; à revérifier si la vidéo est partagée sur un réseau public",
-  "recommendation_phrase": "aucune : l'utilisateur ne veut pas de contact idéal"
+  "recommendation_phrase": "aucune : l'utilisateur ne veut pas de contact idéal",
+  "tts_engine": {
+    "model": "text2speech_v2",
+    "variant": "elevenlabs",
+    "voice": "Celine 57ccb351-84d7-54ba-afd4-26b566ca6023",
+    "note": "écrire chiffres et sigles en toutes lettres"
+  }
 }
