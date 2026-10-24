@@ -37,7 +37,7 @@
       "duration": 20,
       "line": "Au judo, tout commence par une bonne garde et une vision limpide. Chez XL Glass, on vous donne les deux.",
       "activity": "Changement de vitrages auto et camions pour les professionnels",
-      "ideal_contact": "TODO",
+      "ideal_contact": null,
       "prop": "TODO",
       "pronunciation": "TODO",
       "portrait_status": "déduit du logo du polo, à confirmer"
@@ -51,7 +51,7 @@
       "duration": 20,
       "line": "Un judoka seul peut gagner un combat. Mais c'est la synergie qui fait gagner les équipes. GF Synergie.",
       "activity": "Plombier chauffagiste",
-      "ideal_contact": "TODO",
+      "ideal_contact": null,
       "prop": "TODO",
       "pronunciation": "TODO",
       "portrait_status": "confirmé : message WhatsApp 'GF synergie plombier chauffagiste' sur cette photo"
@@ -60,15 +60,15 @@
       "id": "03",
       "name": "Estelle Lopez",
       "company": "Bobine Club",
-      "portrait": "TODO",
+      "portrait": "p_H_tshirt_rose.jpg",
       "logo": "bobine_club.jpg",
       "duration": 20,
       "line": "Le judo, c'est le fil qu'on ne lâche pas : la prise, le contrôle, la fluidité. Chez Bobine Club, on tient le fil pour vous.",
       "activity": "Textile personnalisé (t-shirts), slogan 'Make it pop !'",
-      "ideal_contact": "TODO",
+      "ideal_contact": null,
       "prop": "bobine de fil",
       "pronunciation": "TODO",
-      "portrait_status": "NON RÉSOLU : F (dentelle bleue) ou H (t-shirt rose)"
+      "portrait_status": "confirmé : 'blonde à lunettes avec t-shirt rose clair'"
     },
     {
       "id": "04",
@@ -79,7 +79,7 @@
       "duration": 20,
       "line": "Une bonne projection, il faut de l'adhérence et de la stabilité. Chez Idéal Pneu, on vous garde les pieds sur terre… et sur la route.",
       "activity": "Pneumatiques, Bourgoin-Jallieu",
-      "ideal_contact": "TODO",
+      "ideal_contact": null,
       "prop": "pneu",
       "pronunciation": "TODO",
       "portrait_status": "confirmé : message WhatsApp 'Pneumatiques' sur cette photo"
@@ -93,7 +93,7 @@
       "duration": 20,
       "line": "Le secret d'un champion : anticiper l'adversaire. Voir le coup avant qu'il arrive. Chez Optic 2000, on s'occupe de votre regard.",
       "activity": "Opticien, franchisé Optic 2000",
-      "ideal_contact": "TODO",
+      "ideal_contact": null,
       "prop": "lunettes",
       "pronunciation": "Papadopulo : TODO",
       "logo_bg": "#20232b",
@@ -108,7 +108,7 @@
       "duration": 20,
       "line": "Au judo, 1 % d'écart peut tout changer. Chez Mloctet +, on optimise chaque octet pour que vous gagniez en performance.",
       "activity": "Informatique pour entreprises : sites web, maintenance et infogérance, sécurité et sauvegarde, VoIP, matériel. Slogan du site : 'L'informatique, sans prise de tête.'",
-      "ideal_contact": "TODO",
+      "ideal_contact": null,
       "prop": "TODO",
       "pronunciation": "Mloctet : TODO",
       "portrait_status": "confirmé : version couleur envoyée avec le message 'Mloctet'",
@@ -118,15 +118,15 @@
       "id": "07",
       "name": "Samia Fournier",
       "company": "Koesio",
-      "portrait": "TODO",
+      "portrait": "p_F_dentelle_bleue.jpg",
       "logo": "koesio.jpg",
       "duration": 20,
       "line": "Pas de victoire sans coordination entre le coach, les athlètes et les outils. Koesio connecte tout votre dispositif numérique.",
       "activity": "Copieurs et dématérialisation",
-      "ideal_contact": "TODO",
+      "ideal_contact": null,
       "prop": "TODO",
       "pronunciation": "KOésio (accent sur le O)",
-      "portrait_status": "NON RÉSOLU : F (dentelle bleue) ou H (t-shirt rose) ; ma déduction précédente était fausse"
+      "portrait_status": "par élimination (dernier portrait), photo floue"
     },
     {
       "id": "08",
@@ -137,7 +137,7 @@
       "duration": 20,
       "line": "Un bon judoka sait que rien ne se perd : on utilise la force de l'autre. Chez Arc en Ciel Recyclage, on fait pareil avec vos déchets : on les transforme en ressources.",
       "activity": "Recyclage, bennes",
-      "ideal_contact": "TODO",
+      "ideal_contact": null,
       "prop": "ceinture noire",
       "pronunciation": "TODO",
       "portrait_status": "confirmé : message WhatsApp 'Arc en ciel recyclage / Recyclage bennes' sur cette photo"
@@ -150,5 +150,6 @@
   },
   "consents": "déclarés oralement par l'utilisateur pour tous les membres (non vérifié, pas d'écrit)",
   "lines_status": "figées : script collé deux fois sans modification",
-  "distribution": "privée (déclaré par l'utilisateur) ; à revérifier si la vidéo est partagée sur un réseau public"
+  "distribution": "privée (déclaré par l'utilisateur) ; à revérifier si la vidéo est partagée sur un réseau public",
+  "recommendation_phrase": "aucune : l'utilisateur ne veut pas de contact idéal"
 }
