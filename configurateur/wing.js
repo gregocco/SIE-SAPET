@@ -12,6 +12,7 @@ export const KA = {
   crossbarStation: 0.58, haubanStation: 0.52,
   trapeze: { baseBar: [0.87, 1.06], halfWidth: 0.72, apexAhead: 0.05 },
   hangAboveMastTop: 0.085, bandFromLE: 1.2, registrationSide: -1,
+  keelFrontX: 0.14,   // la quille démarre ici (juste devant la ferrure d'accroche)
 };
 
 // ---------------------------------------------------------------- géométrie de la voile
@@ -32,7 +33,7 @@ function topPoint(e, a) {
 }
 function bottomPoint(e, a) {
   const d = dblSurf(e), c = chord(e), t = topPoint(e, d), k = Math.pow(a, 1.6), y0 = leH(e) - 0.03;
-  const y = y0 + (t.y - y0) * k - 0.018 * c * Math.sin(Math.PI * a) * (1 - 0.4 * e);
+  const y = y0 + (t.y - y0) * k - 0.018 * c * Math.sin(Math.PI * a) * (1 - 0.4 * e) - 0.008 * Math.pow(a, 4);   // léger retrait au raccord avec l'extrados
   return new Vector3(xB(e) - a * d * c, y, 0);
 }
 const sR = KA.hangFromNose - MR - KA.tipChord - 0.05;
@@ -64,11 +65,13 @@ const lite = matchMedia('(max-width: 900px), (pointer: coarse)').matches || (nav
 const TW = lite ? 1024 : 2048;
 const TH = Math.round(TW * (KA.hangFromNose - sR) / KA.span);
 const px = (x, z) => { const [u, v] = uvOf(x, z); return [u * TW, v * TH]; };
-function spanPath(ctx, fn, from = -1, to = 1, n = 120) {
+// Trace une courbe le long de l'envergure. `cont` : on continue le sous-tracé en cours (sinon on en démarre un nouveau),
+// indispensable pour fermer une bande entre deux courbes.
+function spanPath(ctx, fn, from = -1, to = 1, n = 120, cont = false) {
   for (let i = 0; i <= n; i++) {
     const z = (from + (to - from) * i / n) * UB;
     const [x, y] = px(fn(Math.abs(z) / UB), z);
-    i ? ctx.lineTo(x, y) : ctx.moveTo(x, y);
+    (i || cont) ? ctx.lineTo(x, y) : ctx.moveTo(x, y);
   }
 }
 function paintTop(ctx, L) {
@@ -78,8 +81,16 @@ function paintTop(ctx, L) {
     for (const side of [1, -1]) {
       ctx.beginPath();
       spanPath(ctx, e => xB(e) + 0.5, side * 0.72, side, 60);
-      spanPath(ctx, e => xB(e) - chord(e) - 0.5, side, side * 0.72, 60);
+      spanPath(ctx, e => xB(e) - chord(e) - 0.5, side, side * 0.72, 60, true);
       ctx.closePath(); ctx.fill();
+    }
+  }
+  if (L.mylar) {   // panneaux translucides entre les lattes, derrière le bord d'attaque
+    ctx.fillStyle = L.mylar;
+    for (const s of [1, -1]) for (let i = 1; i < KA.battensPerSide - 2; i++) {
+      const e0 = i / KA.battensPerSide, e1 = (i + 1) / KA.battensPerSide, m = 0.045 * UB / KA.battensPerSide;
+      const pts = [[xB(e0) - 0.2, (e0 * UB + m) * s], [xB(e0) - 1.15 * (1 - e0 * 0.4), (e0 * UB + m) * s], [xB(e1) - 1.15 * (1 - e1 * 0.4), (e1 * UB - m) * s], [xB(e1) - 0.2, (e1 * UB - m) * s]];
+      ctx.beginPath(); pts.forEach(([x, z], k) => { const [X, Y] = px(x, z); k ? ctx.lineTo(X, Y) : ctx.moveTo(X, Y); }); ctx.closePath(); ctx.fill();
     }
   }
   ctx.strokeStyle = 'rgba(40,45,55,0.16)'; ctx.lineWidth = 3;
@@ -95,7 +106,7 @@ function paintBottom(ctx, L, reg) {
   ctx.fillStyle = L.bottom; ctx.fillRect(0, 0, TW, TH);
   ctx.fillStyle = L.band; ctx.beginPath();
   spanPath(ctx, e => xB(e) - KA.bandFromLE);
-  spanPath(ctx, e => xB(e) - dblSurf(e) * chord(e) - 0.3, 1, -1);
+  spanPath(ctx, e => xB(e) - dblSurf(e) * chord(e) - 0.3, 1, -1, 120, true);
   ctx.closePath(); ctx.fill();
   ctx.strokeStyle = 'rgba(0,0,0,0.13)'; ctx.lineWidth = 3;
   for (const q of [0.55, KA.bandFromLE]) { ctx.beginPath(); spanPath(ctx, e => xB(e) - q); ctx.stroke(); }
@@ -162,7 +173,7 @@ function ellipticTube(mats, a, b, r, sx, mat, name) {   // montant profilé (sec
 }
 
 export const LIVERIES = {
-  oryx: { label: 'ORYX — blanc / bleu / rouge (photos)', top: '#F2F2EE', tip: '#1F4FB5', bottom: '#20214F', band: '#C1121C', le: '#B9BEC2' },
+  oryx: { label: 'ORYX — blanc / bleu / rouge (photos)', top: '#F2F2EE', tip: '#1F4FB5', bottom: '#20214F', band: '#C1121C', le: '#B9BEC2', mylar: 'rgba(140,180,220,0.55)' },
   dta: { label: 'DTA — gris clair / ardoise', top: '#F2F2EE', tip: null, bottom: '#34424F', band: '#8E9CAA' },
   steampunk: { label: 'Nuit & cuivre', top: '#E8E6DF', tip: '#20214F', bottom: '#14214D', band: '#C47E52' },
 };
@@ -204,9 +215,9 @@ export function buildWing(hang) {
   body.add(sail);
 
   const frame = new THREE.Group(); frame.name = 'Structure';
-  frame.add(cyl(mats, [KA.hangFromNose + 0.02, 0, 0], [KA.hangFromNose - KA.keelLength, 0, 0], 0.028, 'ALU', 'Quille'));
+  // La quille n'est visible que derrière la ferrure d'accroche : à l'avant elle est enfermée dans la voile (pas de tube sous le nez).
+  frame.add(cyl(mats, [KA.keelFrontX, 0, 0], [KA.hangFromNose - KA.keelLength, 0, 0], 0.028, 'ALU', 'Quille'));
   const cap = tag(new THREE.Mesh(new THREE.CylinderGeometry(0.04, 0.03, 0.04, 24), mats.BLACK), 'Embout de quille'); cap.position.set(KA.hangFromNose - KA.keelLength, 0, 0); cap.rotation.z = Math.PI / 2; frame.add(cap);
-  frame.add(roundedBox(mats, [0.14, 0.07, 0.1], [KA.hangFromNose - 0.04, 0.03, 0], 'ALU', 'Plaque de nez', 0.01));
   const cbX = KA.hangFromNose - 1.3;
   for (const k of [1, -1]) {
     const pts = []; for (let i = 0; i <= 12; i++) { const l = i / 12; pts.push([xB(l) - 0.012, leH(l) - 0.005, l * UB * k]); }
