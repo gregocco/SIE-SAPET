@@ -27,16 +27,25 @@
   </section>
 
   <section>
-    <h2>Stickers UV <small>(décalcomanies, sans relief)</small></h2>
-    <div id="stickers" class="stk-list"></div>
-    <div class="btns"><button id="automast">Mât : pose auto</button><button id="autovent">Réservoir : grille auto</button></div>
-    <div class="row">
-      <input id="txt" type="text" placeholder="Texte (n° de série…)" maxlength="40">
-      <button id="txtadd">Texte</button>
-    </div>
-    <label class="file">Image perso <input id="imgadd" type="file" accept="image/*"></label>
+    <h2>Mes images <small>(PNG posés sur une surface)</small></h2>
+    <label class="drop" id="drop">Déposer un ou plusieurs PNG ici<br><small>ou cliquer pour choisir un fichier</small>
+      <input id="imgadd" type="file" accept="image/png,image/jpeg,image/webp,image/*" multiple></label>
+    <div id="imgwarn" class="note"></div>
+    <div id="imglib" class="imgs"></div>
     <div id="armed" class="armed"></div>
     <div id="decals"></div>
+  </section>
+
+  <section>
+    <details>
+      <summary>Stickers d'exemple (procéduraux)</summary>
+      <div id="stickers" class="stk-list"></div>
+      <div class="btns"><button id="automast">Mât : pose auto</button><button id="autovent">Réservoir : grille auto</button></div>
+      <div class="row">
+        <input id="txt" type="text" placeholder="Texte (n° de série…)" maxlength="40">
+        <button id="txtadd">Texte</button>
+      </div>
+    </details>
   </section>
 
   <section>

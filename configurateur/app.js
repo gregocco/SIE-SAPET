@@ -83,7 +83,6 @@ const PRESETS = {
   steampunk: {
     label: 'Steampunk industriel',
     reset: true,
-    decals: ['mast', 'vent'],
     groups: {
       mat: 'cuivre', chassis: 'cuivre', train_ar: 'cuivre', rivets_mat: 'laiton', pneus: 'caoutchouc', roues: 'noir_satine', reservoir: 'alu_brosse',
       gaines: 'cuivre_tresse', durites: 'noir_mat', colliers: 'laiton',
@@ -143,7 +142,8 @@ addEventListener('resize', resize);
 const state = {
   groupMat: {},      // groupId -> { preset, color?, roughness?, metalness? }
   visible: {},       // groupId -> bool
-  decals: [],        // { id, node, point, normal, w, h, rot, opacity, sticker, dataUrl?, text? }
+  decals: [],        // { id, node, point, normal, h (m), sx, rot, flip, opacity, sticker, imageId?, text? }
+  images: [],        // bibliothèque PNG de l'utilisateur : { id, name, dataUrl, aspect }
   variants: {},      // groupId -> id de variante active (défaut : native)
   pose: {},          // groupId -> { dx, dy, dz (mm), ry (deg) } réglage fin de la variante
   bg: '#f4f3f0',
@@ -358,32 +358,53 @@ function setView(name) {
 // ---------------------------------------------------------------- décalcomanies
 const decalMeshes = new Map();
 const stickerTexCache = {};
+const imageEls = {};   // imageId -> HTMLImageElement chargé
+let selDecal = null;
+
+function getImage(id) { return state.images.find(i => i.id === id); }
+function imageElement(img) {
+  if (imageEls[img.id]) return imageEls[img.id];
+  const el = new Image(); el.src = img.dataUrl;
+  imageEls[img.id] = el;
+  return el;
+}
 function stickerTexture(d) {
-  const key = d.sticker + (d.text || '') + (d.dataUrl ? d.dataUrl.length : '');
+  const key = d.sticker === 'image' ? 'img:' + d.imageId : d.sticker + (d.text || '');
   if (stickerTexCache[key]) return stickerTexCache[key];
-  let cnv, img;
-  if (d.sticker === 'text') cnv = textSticker(d.text || 'T2A');
-  else if (d.sticker === 'image') {
-    img = new Image(); img.src = d.dataUrl;
-  } else cnv = STICKERS.find(s => s.id === d.sticker).make();
-  const t = cnv ? new THREE.CanvasTexture(cnv) : new THREE.Texture(img);
-  if (img) img.onload = () => { t.needsUpdate = true; };
+  let t;
+  if (d.sticker === 'image') {
+    const img = getImage(d.imageId);
+    if (!img) return null;
+    const el = imageElement(img);
+    t = new THREE.Texture(el);
+    if (el.complete) t.needsUpdate = true; else el.addEventListener('load', () => { t.needsUpdate = true; renderNow(); });
+  } else {
+    t = new THREE.CanvasTexture(d.sticker === 'text' ? textSticker(d.text || 'T2A') : STICKERS.find(s => s.id === d.sticker).make());
+  }
   t.colorSpace = THREE.SRGBColorSpace;
-  t.anisotropy = 8;
+  t.anisotropy = renderer.capabilities.getMaxAnisotropy();
   return (stickerTexCache[key] = t);
 }
+function renderNow() { window.__t2a?.render && document.body.dataset.test && window.__t2a.render(); }
 
 function stickerAspect(d) {
   if (d.sticker === 'text') return 4;
-  if (d.sticker === 'image') return d.aspect || 1;
+  if (d.sticker === 'image') return getImage(d.imageId)?.aspect || d.aspect || 1;
   return STICKERS.find(s => s.id === d.sticker).aspect;
+}
+
+function disposeDecalMesh(m) {
+  scene.remove(m); m.geometry.dispose();
+  if (m.material.userData.ownMap) m.material.map.dispose();
+  m.material.dispose();
 }
 
 function buildDecal(d) {
   const old = decalMeshes.get(d.id);
-  if (old) { scene.remove(old); old.geometry.dispose(); old.material.dispose(); }
+  if (old) { disposeDecalMesh(old); decalMeshes.delete(d.id); }
   const target = model.getObjectByProperty('name', d.node);
-  if (!target) return;
+  const base = stickerTexture(d);
+  if (!target || !base) return;
   const normal = new THREE.Vector3(...d.normal);
   const point = new THREE.Vector3(...d.point);
   const orient = new THREE.Euler();
@@ -393,26 +414,31 @@ function buildDecal(d) {
   if (Math.abs(normal.y) > 0.98) q.setFromRotationMatrix(new THREE.Matrix4().lookAt(point.clone().add(normal), point, new THREE.Vector3(0, 0, 1)));
   q.multiply(new THREE.Quaternion().setFromAxisAngle(new THREE.Vector3(0, 0, 1), THREE.MathUtils.degToRad(d.rot || 0)));
   orient.setFromQuaternion(q);
-  const aspect = stickerAspect(d);
-  // d.h = hauteur du sticker en mètres ; largeur = h * aspect
-  const h = d.h * unit, w = h * aspect;  // d.h en mètres ; `unit` convertit vers l'unité du modèle
+  // d.h = hauteur en mètres ; largeur = h * aspect * étirement (sx)
+  const h = d.h * unit, w = h * stickerAspect(d) * (d.sx || 1);
   const size = new THREE.Vector3(w, h, Math.max(w, h) * 0.5);
   target.updateWorldMatrix(true, false);
   const geo = new DecalGeometry(target, point, orient, size);
+  let map = base, own = false;
+  if (d.flip) { map = base.clone(); map.repeat.x = -1; map.offset.x = 1; map.needsUpdate = true; own = true; }
+  // Couleurs fidèles au fichier : rendu « imprimé », sans le virage de la tonalité du reste du modèle.
   const mat = new THREE.MeshStandardMaterial({
-    map: stickerTexture(d), transparent: true, opacity: d.opacity ?? 1,
-    metalness: 0.35, roughness: 0.45, depthTest: true, depthWrite: false,
+    map, transparent: true, opacity: d.opacity ?? 1, alphaTest: 0.01,
+    metalness: 0, roughness: 0.55, toneMapped: false,
+    depthTest: true, depthWrite: false,
     polygonOffset: true, polygonOffsetFactor: -4, polygonOffsetUnits: -4,
   });
+  mat.userData.ownMap = own;
   const mesh = new THREE.Mesh(geo, mat);
   mesh.renderOrder = 2;
   mesh.userData.decal = d.id;
+  if (selDecal === d.id) mat.emissive.setHex(0x2a2a2a);
   scene.add(mesh);
   decalMeshes.set(d.id, mesh);
 }
 
 function addDecal(partial, quiet) {
-  const d = { id: 'd' + Date.now() + Math.floor(Math.random() * 1e5), rot: 0, opacity: 1, ...partial };
+  const d = { rot: 0, opacity: 1, sx: 1, ...partial, id: 'd' + Date.now() + Math.floor(Math.random() * 1e5) };
   state.decals.push(d);
   buildDecal(d);
   if (!quiet) { renderDecalList(); save(); }
@@ -420,7 +446,8 @@ function addDecal(partial, quiet) {
 }
 function removeDecal(id, quiet) {
   const m = decalMeshes.get(id);
-  if (m) { scene.remove(m); m.geometry.dispose(); m.material.dispose(); decalMeshes.delete(id); }
+  if (m) { disposeDecalMesh(m); decalMeshes.delete(id); }
+  if (selDecal === id) selDecal = null;
   state.decals = state.decals.filter(d => d.id !== id);
   if (!quiet) { renderDecalList(); save(); }
 }
@@ -504,24 +531,70 @@ function autoTankVent() {
 const ray = new THREE.Raycaster();
 let armed = null;   // sticker armé { sticker, ... }
 let down = null;
-renderer.domElement.addEventListener('pointerdown', e => { down = [e.clientX, e.clientY]; });
-renderer.domElement.addEventListener('pointerup', e => {
-  if (!down || Math.hypot(e.clientX - down[0], e.clientY - down[1]) > 4) return;
+let drag = null;    // { d, moved }
+function pickModel(e) {
   const r = renderer.domElement.getBoundingClientRect();
   const ndc = new THREE.Vector2(((e.clientX - r.left) / r.width) * 2 - 1, -((e.clientY - r.top) / r.height) * 2 + 1);
   ray.setFromCamera(ndc, camera);
   const targets = [];
-  model.traverse(o => { if (o.isMesh && o.visible && o.parent && isVisibleChain(o)) targets.push(o); });
+  model.traverse(o => { if (o.isMesh && isVisibleChain(o)) targets.push(o); });
   const hit = ray.intersectObjects(targets, false)[0];
-  if (!hit) return;
+  if (!hit) return null;
+  const n = hit.face.normal.clone().transformDirection(hit.object.matrixWorld).normalize();
+  if (n.dot(ray.ray.direction) > 0) n.negate();   // face vers l'observateur
+  return { hit, n };
+}
+function pickDecal(e) {
+  const r = renderer.domElement.getBoundingClientRect();
+  ray.setFromCamera(new THREE.Vector2(((e.clientX - r.left) / r.width) * 2 - 1, -((e.clientY - r.top) / r.height) * 2 + 1), camera);
+  const h = ray.intersectObjects([...decalMeshes.values()], false)[0];
+  if (!h) return null;
+  const m = pickModel(e);
+  if (m && m.hit.distance < h.distance - modelSize * 0.01) return null;   // une pièce masque le sticker
+  return state.decals.find(d => d.id === h.object.userData.decal);
+}
+function selectDecal(id) {
+  selDecal = id;
+  for (const [did, m] of decalMeshes) m.material.emissive.setHex(did === id ? 0x2a2a2a : 0x000000);
+  renderDecalList();
+}
+let dragQueued = false;
+renderer.domElement.addEventListener('pointerdown', e => {
+  down = [e.clientX, e.clientY];
+  if (armed) return;
+  const d = pickDecal(e);
+  if (d) { drag = { d, moved: false }; selectDecal(d.id); controls.enabled = false; }
+});
+renderer.domElement.addEventListener('pointermove', e => {
+  if (!drag || !down) return;
+  if (!drag.moved && Math.hypot(e.clientX - down[0], e.clientY - down[1]) < 4) return;
+  drag.moved = true;
+  const p = pickModel(e);
+  if (!p || dragQueued) return;
+  dragQueued = true;
+  requestAnimationFrame(() => {
+    dragQueued = false;
+    const d = drag?.d; if (!d) return;
+    Object.assign(d, { node: p.hit.object.name, point: p.hit.point.toArray(), normal: p.n.toArray() });
+    buildDecal(d);
+  });
+});
+addEventListener('pointerup', e => {
+  if (drag) { controls.enabled = true; const moved = drag.moved; drag = null; if (moved) { save(); return; } }
+});
+renderer.domElement.addEventListener('pointerup', e => {
+  if (!down || Math.hypot(e.clientX - down[0], e.clientY - down[1]) > 4) return;
+  if (selDecal && !armed && decalMeshes.has(selDecal) && pickDecal(e)) return;   // simple clic sur un sticker : sélection faite au pointerdown
+  const p = pickModel(e);
+  if (!p) { if (selDecal) selectDecal(null); return; }
   if (armed) {
-    const n = hit.face.normal.clone().transformDirection(hit.object.matrixWorld).normalize();
-    // face vers l'observateur
-    if (n.dot(ray.ray.direction) > 0) n.negate();
-    const base = armed;
-        addDecal({ node: hit.object.name, point: hit.point.toArray(), normal: n.toArray(), h: base.size, sticker: base.sticker, text: base.text, dataUrl: base.dataUrl, aspect: base.aspect });
+    const b = armed;
+    const d = addDecal({ node: p.hit.object.name, point: p.hit.point.toArray(), normal: p.n.toArray(), h: b.size, sticker: b.sticker, text: b.text, imageId: b.imageId, aspect: b.aspect });
+    selectDecal(d.id);
+    if (!e.shiftKey) disarm();   // Maj enfoncé : on reste armé pour en poser plusieurs
   } else {
-    selectGroup(hit.object.userData.group);
+    selDecal = null; for (const m of decalMeshes.values()) m.material.emissive.setHex(0);
+    selectGroup(p.hit.object.userData.group);
   }
 });
 function isVisibleChain(o) { for (let p = o; p; p = p.parent) if (!p.visible) return false; return true; }
@@ -587,18 +660,23 @@ function rebuildDecalsOn(gid) {
 
 // ---------------------------------------------------------------- persistance
 function save() {
-  try { localStorage.setItem(STORE_KEY, JSON.stringify({ groupMat: state.groupMat, visible: state.visible, variants: state.variants, pose: state.pose, decals: state.decals.filter(d => d.sticker !== 'image'), bg: state.bg })); } catch {}
+  try { localStorage.setItem(STORE_KEY, JSON.stringify({ groupMat: state.groupMat, visible: state.visible, variants: state.variants, pose: state.pose, decals: state.decals, bg: state.bg })); } catch {}
+}
+function saveImages() {
+  try { localStorage.setItem(STORE_KEY + '-img', JSON.stringify(state.images)); } catch { $('#imgwarn').textContent = 'Images trop lourdes pour la sauvegarde automatique : exportez la configuration JSON.'; }
 }
 function loadSaved() {
   try { return JSON.parse(localStorage.getItem(STORE_KEY) || 'null'); } catch { return null; }
 }
 async function applyConfig(cfg) {
-  for (const id of [...decalMeshes.keys()]) { const m = decalMeshes.get(id); scene.remove(m); decalMeshes.delete(id); }
+  for (const id of [...decalMeshes.keys()]) { disposeDecalMesh(decalMeshes.get(id)); decalMeshes.delete(id); }
+  selDecal = null;
   state.groupMat = cfg.groupMat || {};
   state.visible = cfg.visible || {};
   state.variants = cfg.variants || {};
   state.pose = cfg.pose || {};
   state.decals = cfg.decals || [];
+  if (cfg.images) { state.images = cfg.images; saveImages(); renderImages(); }
   state.bg = cfg.bg || state.bg;
   setBackground(state.bg);
   document.getElementById('bg').value = state.bg;
@@ -617,7 +695,6 @@ function applyPreset(id) {
   for (const [g, preset] of Object.entries(p.groups)) groupMat[g] = { preset };
   const decals = id === 'origine' ? [] : state.decals;
   applyConfig({ groupMat, visible: state.visible, variants: state.variants, pose: state.pose, decals, bg: state.bg }).then(() => {
-    if (p.decals) { if (p.decals.includes('mast')) autoMast(); if (p.decals.includes('vent')) autoTankVent(); }
     save();
   });
   save();
@@ -722,24 +799,80 @@ function renderStickers() {
 }
 function arm(b, label) {
   armed = b;
-  $('#armed').textContent = armed ? `Cliquer sur le modèle pour poser : ${label}` : '';
+  setTimeout(renderImages, 0);
+  $('#armed').textContent = armed ? `Cliquer sur une surface du modèle pour poser : ${label} (Maj = en poser plusieurs, Échap = annuler)` : '';
   $('#armed').classList.toggle('on', !!armed);
   renderer.domElement.style.cursor = armed ? 'crosshair' : '';
 }
-function disarm() { armed = null; $('#armed').textContent = ''; $('#armed').classList.remove('on'); renderer.domElement.style.cursor = ''; }
+function disarm() { armed = null; setTimeout(renderImages, 0); $('#armed').textContent = ''; $('#armed').classList.remove('on'); renderer.domElement.style.cursor = ''; }
+
+function renderImages() {
+  const host = $('#imglib');
+  if (!host) return;
+  host.replaceChildren();
+  if (!state.images.length) host.append(el('div', { class: 'note' }, 'Aucune image. Déposez un PNG (transparent de préférence) ci-dessus.'));
+  for (const im of state.images) {
+    const on = armed?.imageId === im.id;
+    host.append(el('div', { class: 'img' + (on ? ' on' : ''), title: `${im.name} — cliquer puis cliquer sur une surface du modèle` },
+      el('img', { src: im.dataUrl, onclick: () => arm({ sticker: 'image', imageId: im.id, size: 0.12, aspect: im.aspect }, im.name) }),
+      el('button', { class: 'x', title: 'Retirer de la bibliothèque', onclick: () => removeImage(im.id) }, '✕')));
+  }
+}
+function removeImage(id) {
+  for (const d of state.decals.filter(d => d.imageId === id)) removeDecal(d.id, true);
+  state.images = state.images.filter(i => i.id !== id);
+  delete stickerTexCache['img:' + id]; delete imageEls[id];
+  if (armed?.imageId === id) disarm();
+  renderImages(); renderDecalList(); saveImages(); save();
+}
+// Import d'un fichier image : réduit à 2048 px max (mémoire GPU), garde la transparence (PNG).
+function addImageFile(file) {
+  return new Promise(resolve => {
+    if (!file.type.startsWith('image/')) return resolve(null);
+    const r = new FileReader();
+    r.onload = () => {
+      const im = new Image();
+      im.onload = () => {
+        let url = r.result;
+        const k = Math.min(1, 2048 / Math.max(im.width, im.height));
+        if (k < 1) {
+          const c = document.createElement('canvas'); c.width = Math.round(im.width * k); c.height = Math.round(im.height * k);
+          c.getContext('2d').drawImage(im, 0, 0, c.width, c.height);
+          url = c.toDataURL('image/png');
+        }
+        const item = { id: 'i' + Date.now() + Math.floor(Math.random() * 1e4), name: file.name, dataUrl: url, aspect: im.width / im.height };
+        state.images.push(item);
+        renderImages(); saveImages();
+        resolve(item);
+      };
+      im.src = r.result;
+    };
+    r.readAsDataURL(file);
+  });
+}
 
 function renderDecalList() {
   const host = $('#decals');
   host.replaceChildren();
-  if (!state.decals.length) host.append(el('div', { class: 'note' }, 'Aucun sticker posé.'));
+  if (!state.decals.length) { host.append(el('div', { class: 'note' }, 'Aucun sticker posé.')); return; }
+  host.append(el('div', { class: 'note' }, 'Glisser un sticker dans la vue pour le déplacer. Suppr : le retire.'));
   state.decals.forEach((d, i) => {
-    const lab = d.sticker === 'text' ? `Texte « ${d.text} »` : d.sticker === 'image' ? 'Image' : STICKERS.find(s => s.id === d.sticker)?.label;
-    host.append(el('div', { class: 'decal' },
-      el('div', { class: 'decal-h' }, el('b', {}, `${i + 1}. ${lab}`), el('button', { class: 'x', title: 'Supprimer', onclick: () => removeDecal(d.id) }, '✕')),
+    const lab = d.sticker === 'text' ? `Texte « ${d.text} »` : d.sticker === 'image' ? (getImage(d.imageId)?.name || 'Image') : STICKERS.find(s => s.id === d.sticker)?.label;
+    const open = selDecal === d.id;
+    const card = el('div', { class: 'decal' + (open ? ' sel' : '') });
+    card.append(el('div', { class: 'decal-h', onclick: () => selectDecal(open ? null : d.id) },
+      el('b', {}, `${i + 1}. ${lab}`),
+      el('button', { class: 'x', title: 'Supprimer', onclick: e => { e.stopPropagation(); removeDecal(d.id); } }, '✕')));
+    if (open) card.append(
       el('div', { class: 'note' }, d.node),
       dslider('Hauteur (m)', d.h, 0.01, 1.6, v => { d.h = v; buildDecal(d); }),
-      dslider('Rotation', d.rot, -180, 180, v => { d.rot = v; buildDecal(d); }, 1),
-      dslider('Opacité', d.opacity, 0.1, 1, v => { d.opacity = v; const m = decalMeshes.get(d.id); if (m) m.material.opacity = v; }, 0.01)));
+      dslider('Largeur ×', d.sx ?? 1, 0.2, 3, v => { d.sx = v; buildDecal(d); }, 0.01),
+      dslider('Rotation °', d.rot, -180, 180, v => { d.rot = v; buildDecal(d); }, 1),
+      dslider('Opacité', d.opacity, 0.1, 1, v => { d.opacity = v; const m = decalMeshes.get(d.id); if (m) m.material.opacity = v; }, 0.01),
+      el('div', { class: 'btns' },
+        el('label', { class: 'chk' }, el('input', { type: 'checkbox', checked: !!d.flip, onchange: e => { d.flip = e.target.checked; buildDecal(d); save(); } }), 'Miroir'),
+        el('button', { onclick: () => { const c = addDecal({ ...d, id: undefined, point: d.point.map((v, k) => v + (k === 0 ? 0.03 : 0)) }); selectDecal(c.id); } }, 'Dupliquer')));
+    host.append(card);
   });
 }
 function dslider(label, value, min, max, onInput, step) {
@@ -761,7 +894,7 @@ function buildUI() {
     const a = el('a', { href: renderer.domElement.toDataURL('image/png'), download: 't2a-rendu.png' }); a.click();
   });
   $('#export').addEventListener('click', () => {
-    const blob = new Blob([JSON.stringify({ groupMat: state.groupMat, visible: state.visible, variants: state.variants, pose: state.pose, decals: state.decals, bg: state.bg }, null, 1)], { type: 'application/json' });
+    const blob = new Blob([JSON.stringify({ groupMat: state.groupMat, visible: state.visible, variants: state.variants, pose: state.pose, decals: state.decals, images: state.images, bg: state.bg }, null, 1)], { type: 'application/json' });
     el('a', { href: URL.createObjectURL(blob), download: 't2a-config.json' }).click();
   });
   $('#import').addEventListener('change', async e => { const f = e.target.files[0]; if (f) { applyConfig(JSON.parse(await f.text())); save(); } });
@@ -769,13 +902,27 @@ function buildUI() {
   $('#automast').addEventListener('click', () => autoMast());
   $('#autovent').addEventListener('click', () => autoTankVent());
   $('#txtadd').addEventListener('click', () => { const t = $('#txt').value.trim(); if (t) arm({ sticker: 'text', text: t, size: 0.03, aspect: 4 }, `texte « ${t} »`); });
-  $('#imgadd').addEventListener('change', e => {
-    const f = e.target.files[0]; if (!f) return;
-    const r = new FileReader();
-    r.onload = () => { const im = new Image(); im.onload = () => arm({ sticker: 'image', dataUrl: r.result, size: 0.08, aspect: im.width / im.height }, f.name); im.src = r.result; };
-    r.readAsDataURL(f);
+  $('#imgadd').addEventListener('change', async e => {
+    let last = null;
+    for (const f of e.target.files) last = (await addImageFile(f)) || last;
+    e.target.value = '';
+    if (last) arm({ sticker: 'image', imageId: last.id, size: 0.12, aspect: last.aspect }, last.name);
   });
-  addEventListener('keydown', e => { if (e.key === 'Escape') disarm(); });
+  const drop = $('#drop');
+  for (const t of [drop, view]) {
+    t.addEventListener('dragover', e => { e.preventDefault(); drop.classList.add('over'); });
+    t.addEventListener('dragleave', () => drop.classList.remove('over'));
+    t.addEventListener('drop', async e => {
+      e.preventDefault(); drop.classList.remove('over');
+      let last = null;
+      for (const f of e.dataTransfer.files) last = (await addImageFile(f)) || last;
+      if (last) arm({ sticker: 'image', imageId: last.id, size: 0.12, aspect: last.aspect }, last.name);
+    });
+  }
+  addEventListener('keydown', e => {
+    if (e.key === 'Escape') disarm();
+    if ((e.key === 'Delete' || e.key === 'Backspace') && selDecal && !/INPUT|SELECT|TEXTAREA/.test(document.activeElement?.tagName)) removeDecal(selDecal);
+  });
   renderStickers();
 }
 
@@ -789,11 +936,14 @@ async function main() {
   status.textContent = 'Préparation…';
   prepareModel(gltf);
   frameModel();
+  try { state.images = JSON.parse(localStorage.getItem(STORE_KEY + '-img') || '[]'); } catch { state.images = []; }
+  renderImages();
   const saved = loadSaved();
   applyConfig(saved || { groupMat: Object.fromEntries(Object.entries(BASE_LOOK).map(([g, p]) => [g, { preset: p }])), visible: {}, decals: [] });
   status.textContent = '';
-  window.__t2a = { autoMast, autoTankVent, setVariant, castDecal, scene, camera, controls, state, applyPreset, setView, addDecal, groupMeshes, THREE, model, get unit() { return unit; }, get modelSize() { return modelSize; }, selectGroup, modelBox };
+  window.__t2a = { addImageFile, selectDecal, buildDecal, autoMast, autoTankVent, setVariant, castDecal, scene, camera, controls, state, applyPreset, setView, addDecal, groupMeshes, THREE, model, get unit() { return unit; }, get modelSize() { return modelSize; }, selectGroup, modelBox };
   const testMode = new URLSearchParams(location.search).has('test');
+  if (testMode) document.body.dataset.test = '1';
   window.__t2a.render = () => { controls.update(); renderer.render(scene, camera); };
   if (!testMode) renderer.setAnimationLoop(() => { controls.update(); renderer.render(scene, camera); });
   document.body.dataset.ready = '1';
