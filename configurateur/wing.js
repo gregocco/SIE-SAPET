@@ -77,8 +77,9 @@ function spanPath(ctx, fn, from = -1, to = 1, n = 120, cont = false) {
 }
 function paintTop(ctx, L) {
   ctx.fillStyle = L.top; ctx.fillRect(0, 0, TW, TH);
-  if (L.tip) {   // saumons colorés
-    ctx.fillStyle = L.tip;
+  const tint = L.tip || L.tipShow;   // `tipShow` : teinte par transparence (l'intrados vu à travers la voile), pas une peinture
+  if (tint) {
+    ctx.fillStyle = tint;
     for (const side of [1, -1]) {
       ctx.beginPath();
       spanPath(ctx, e => xB(e) + 0.5, side * 0.72, side, 60);
@@ -174,9 +175,9 @@ function ellipticTube(mats, a, b, r, sx, mat, name) {   // montant profilé (sec
 }
 
 export const LIVERIES = {
-  oryx: { label: 'ORYX — blanc / bleu / rouge (photos)', top: '#F2F2EE', tip: '#1F4FB5', bottom: '#20214F', band: '#C1121C', le: '#B9BEC2', mylar: 'rgba(140,180,220,0.55)' },
+  oryx: { label: 'ORYX — blanc / bleu / rouge (photos)', top: '#F2F2EE', tip: null, tipShow: 'rgba(32,45,120,0.42)', bottom: '#20214F', band: '#C1121C', le: '#B9BEC2', mylar: 'rgba(140,180,220,0.55)' },
   dta: { label: 'DTA — gris clair / ardoise', top: '#F2F2EE', tip: null, bottom: '#34424F', band: '#8E9CAA' },
-  steampunk: { label: 'Nuit & cuivre', top: '#E8E6DF', tip: '#20214F', bottom: '#14214D', band: '#C47E52' },
+  steampunk: { label: 'Nuit & cuivre', top: '#E8E6DF', tip: null, tipShow: 'rgba(20,33,77,0.42)', bottom: '#14214D', band: '#C47E52' },
 };
 
 // ---------------------------------------------------------------- assemblage
