@@ -4,7 +4,6 @@
 const CAMY = 110, FRONTZ = 450, BACKZ = 800, WALLZ = 900, SP = 300;
 let TL, SEGS, MEM = [], BELTS, OPEN, FIN, SHOTS = [], PASSES = [];
 const $ = id => document.getElementById(id);
-const { shade, mixColor, beltEdge } = window.colorUtil;
 
 // ---------- maths ----------
 const clamp = (v, a = 0, b = 1) => Math.max(a, Math.min(b, v));
@@ -134,7 +133,7 @@ function buildShots() {
     if (m.i === 6) shot(cuEnd, m.E + 0.45, TWO(X, X + SP * 0.9), TWO(X + 6, X + SP * 0.9 + 6), 'lin');
     if (last) {
       shot(m.E - 0.05, m.E + 0.72, MW(X, -6), MW(X, 4), 'lin');
-      const G0 = frame(1300, 110, BACKZ, 0.62, 960, 640), G1 = frame(1300, 110, BACKZ, 0.66, 960, 640);
+      const G0 = frame(1330, 110, BACKZ, 0.70, 960, 600), G1 = frame(1330, 110, BACKZ, 0.72, 960, 600);
       shot(m.E + 0.72, m.N, G0, G1, 'lin');
       continue;
     }
@@ -239,6 +238,10 @@ function stateAt(m, t) {
   if (m.i === 7) {
     const u = clamp((t - (m.E + 0.75)) / 0.32);
     if (u > 0) { p.scaleX = Math.max(0.08, Math.abs(Math.cos(Math.PI * u))); p.back = u > 0.5; }
+    // il rejoint le groupe : quelques pas vers le fond
+    const g = sstep(m.E + 0.9, m.E + 1.6, t);
+    z = lerp(z, 620, g); const wk = bump(t, m.E + 0.9, m.E + 1.6, 0.2);
+    if (wk > 0) { p.walk = wk; p.bob = -Math.abs(Math.sin(p.phase)) * 3 * wk; }
   }
   // la ligne du fond acclame Matthias quand il se retourne
   const L7 = MEM[7];
@@ -286,6 +289,14 @@ function buildWall() {
   let s = '';
   s += `<rect x="-1600" y="-1700" width="5400" height="1090" fill="#3d2a1b"/>`;
   for (let k = 0; k < 9; k++) s += `<rect x="-1600" y="${-1650 + k * 120}" width="5400" height="14" fill="#2c1e13"/>`;
+  // lanternes de papier suspendues sous le plafond
+  for (let x = -1350; x < 3700; x += 600) {
+    s += `<path d="M${x},-1500 L${x},-905" stroke="#1d140c" stroke-width="3"/>`;
+    s += `<rect x="${x - 22}" y="-912" width="44" height="10" rx="3" fill="#2a1d12"/><rect x="${x - 22}" y="-788" width="44" height="10" rx="3" fill="#2a1d12"/>`;
+    s += `<ellipse cx="${x}" cy="-845" rx="44" ry="62" fill="url(#lantern)"/>`;
+    for (let k = -2; k <= 2; k++) s += `<path d="M${x - 42},${-845 + k * 22} Q${x},${-845 + k * 22 + 4} ${x + 42},${-845 + k * 22}" stroke="#d98b3a" stroke-width="1.5" fill="none" opacity="0.6"/>`;
+    s += `<circle cx="${x}" cy="-845" r="14" fill="none" stroke="#b3202a" stroke-width="5"/>`;
+  }
   s += `<rect x="-1600" y="-625" width="5400" height="530" fill="#ecdfc4"/>`;
   // ranma (frise ajourée au-dessus de la poutre)
   s += `<rect x="-1600" y="-625" width="5400" height="70" fill="#d8c39d"/>`;
@@ -337,7 +348,7 @@ function buildWall() {
 
 function drawFloor(c) {
   let s = '';
-  const z0 = 140, z1 = WALLZ, dz = 120, dx = 240;
+  const z0 = 60, z1 = WALLZ, dz = 120, dx = 240;
   for (let z = z1; z > z0; z -= dz) {
     const za = Math.max(z0, z - dz), zb = z;
     for (let x = -1530; x < 3600; x += dx) {
@@ -448,20 +459,20 @@ function drawFreeBelt(c, t) {
     }
     const A = P.kind === 'floor' ? [MEM[0].X + 70, 4, 367] : handWorld(giver, P.Tf, 'R');
     const B0 = handWorld(recv, P.Tc, 'L'), B1 = handWorld(recv, P.Tc, 'R');
-    const B = [(B0[0] + B1[0]) / 2, (B0[1] + B1[1]) / 2, (B0[2] + B1[2]) / 2];
-    const h = P.kind === 'floor' ? 120 : 75;
+    const B = P.kind === 'floor' ? [recv.X, 92, FRONTZ - 2] : [(B0[0] + B1[0]) / 2, (B0[1] + B1[1]) / 2, (B0[2] + B1[2]) / 2];
+    const h = P.kind === 'floor' ? 75 : 75;
     const pos = v => [lerp(A[0], B[0], v), lerp(A[1], B[1], v) + h * 4 * v * (1 - v), lerp(A[2], B[2], v)];
     const ue = u;
     const C = pos(ue), C2 = pos(Math.min(1, ue + 0.02));
     let dx = C2[0] - C[0], dy = C2[1] - C[1]; const dl = Math.hypot(dx, dy) || 1; dx /= dl; dy /= dl;
-    const L = 120 * (0.3 + 0.7 * Math.sin(Math.PI * clamp(u * 1.1)));
-    const N = 22, rib = [];
+    const L = (P.kind === 'floor' ? 60 : 120) * (0.3 + 0.7 * Math.sin(Math.PI * clamp(u * 1.1)));
+    const N = 46, rib = [];
     for (let q = 0; q < N; q++) {
       const v = q / (N - 1) - 0.5;
-      const wv = Math.sin(q * 0.55 - t * 16) * 9 * Math.sin(Math.PI * u);
+      const wv = Math.sin(q * 0.26 - t * 16) * 9 * Math.sin(Math.PI * u);
       rib.push([C[0] - dx * v * L - dy * wv, C[1] - dy * v * L + dx * wv, C[2]]);
     }
-    let pts = rib;
+    let pts = rib, bw = 7;
     if (P.kind === 'spool') {
       const mk = sstep(0.5, 0.85, u); const sp = [];
       for (let q = 0; q < N; q++) {
@@ -469,9 +480,10 @@ function drawFreeBelt(c, t) {
         sp.push([C[0] + r * Math.cos(th), C[1] + r * Math.sin(th), C[2]]);
       }
       pts = rib.map((p, q) => [lerp(sp[q][0], p[0], mk), lerp(sp[q][1], p[1], mk), C[2]]);
+      bw = lerp(4.2, 7, mk);
     }
     const pp = pts.map(p => proj(c, p[0], p[1], p[2]));
-    s += beltStroke(pp, col, 7 * pp[0][2]);
+    s += beltStroke(pp, col, bw * pp[0][2]);
     // pan de nœud au centre + traînée
     const pc = proj(c, C[0], C[1], C[2]);
     if (u > 0.3 && u < 0.85) s += sparkle(pc[0], pc[1], 70 * pc[2], (u - 0.3) / 0.55, c1);
@@ -592,6 +604,7 @@ async function setup(tl, width) {
   document.body.style.width = width + 'px'; document.body.style.height = Math.round(width * 9 / 16) + 'px';
   setupScene();
   let defs = `<radialGradient id="shadowG"><stop offset="0" stop-color="#000" stop-opacity="0.38"/><stop offset="1" stop-color="#000" stop-opacity="0"/></radialGradient>` +
+    `<radialGradient id="lantern" cx="0.45" cy="0.4" r="0.65"><stop offset="0" stop-color="#fff7dc"/><stop offset="0.7" stop-color="#ffd98f"/><stop offset="1" stop-color="#e9a04a"/></radialGradient>` +
     `<radialGradient id="glowG"><stop offset="0" stop-color="#fff6c2" stop-opacity="0.9"/><stop offset="1" stop-color="#fff6c2" stop-opacity="0"/></radialGradient>` +
     `<radialGradient id="shojiGlow" cx="0.5" cy="0.4" r="0.7"><stop offset="0" stop-color="#fffdf3"/><stop offset="1" stop-color="#f1e5c8"/></radialGradient>` +
     `<linearGradient id="sunPatch" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff8dc" stop-opacity="0.28"/><stop offset="1" stop-color="#fff8dc" stop-opacity="0"/></linearGradient>` +

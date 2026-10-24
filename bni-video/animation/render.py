@@ -96,7 +96,7 @@ def prep_logo(name, bg, dst):
     mask = np.abs(a - ref).sum(2) > 40
     ys, xs = np.nonzero(mask)
     if len(xs):
-        pad = int(0.06 * max(xs.ptp(), ys.ptp()))
+        pad = int(0.06 * max(np.ptp(xs), np.ptp(ys)))
         flat = flat.crop((max(0, xs.min() - pad), max(0, ys.min() - pad), min(flat.width, xs.max() + pad), min(flat.height, ys.max() + pad)))
     flat.thumbnail((800, 800))
     flat.convert("RGB").save(dst)
@@ -150,12 +150,12 @@ def mix(tl, dst):
     base = 10 ** (MUSIC_DB / 20)
     fin = tl["segs"][-1]; op = tl["segs"][0]
     g = np.full(n, base, np.float32)
-    g = np.where(tt < op["vstart"] - 0.1, base * 2.6, g)                        # fanfare d'ouverture avant la voix
+    g = np.where(tt < op["vstart"] - 0.1, base * 3.5, g)                        # fanfare d'ouverture avant la voix
     ramp_in = np.clip((tt - (op["vstart"] - 0.4)) / 0.3, 0, 1)
-    g = np.where((tt >= op["vstart"] - 0.4) & (tt < op["vstart"] - 0.1), base * (2.6 - 1.6 * ramp_in), g)
+    g = np.where((tt >= op["vstart"] - 0.4) & (tt < op["vstart"] - 0.1), base * (3.5 - 2.5 * ramp_in), g)
     vend = fin["vstart"] + fin["vdur"]
     up = np.clip((tt - vend - 0.1) / 0.6, 0, 1)                                  # fanfare remonte après la dernière voix
-    g = g * (1 + 1.6 * up)
+    g = g * (1 + 3.5 * up)
     pre = np.clip((tt - fin["start"]) / 0.4, 0, 1) * np.clip((fin["vstart"] - 0.2 - tt) / 0.4, 0, 1)
     g = g * (1 + 1.2 * pre)                                                     # entrée sur le podium (avant la voix)
     g *= np.clip((tl["total"] - tt) / 1.5, 0, 1)                                # fondu final
@@ -252,8 +252,8 @@ def main():
          "-c:a", "aac", "-b:a", "192k", "-shortest", "-movflags", "+faststart", out])
     print(f"OK {out} ({tl['total']:.1f} s) en {time.time() - t0:.0f} s")
     if a.preview:
-        # estimation plein format : coût par image ~ proportionnel aux pixels (capture JPEG), mesuré à x16 px environ 2,5x
-        est = nfr / 12 * 25 * per * 2.6
+        # estimation plein format : coût par image ~ proportionnel aux pixels (capture JPEG), mesuré : ~3,9x le coût preview
+        est = nfr / 12 * 25 * per * 3.9
         print(f"estimation plein format 1920x1080@25 : ~{est / 60:.1f} min de capture (+ ~1 min encodage)")
 
 

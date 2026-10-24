@@ -21,9 +21,10 @@ const LOOKS = {
   // Maxime : cheveux bruns courts dégradés, tempes dégagées, lunettes rectangulaires noires, barbe courte foncée
   '06': { skin: '#f0c2a3', hair: '#3a2a1f', hairStyle: 'fade', brow: '#3a2a1f', eye: '#5a3a22',
           glasses: 'rect', beard: 'full', beardColor: '#3a2a1f', beardOp: 0.92, face: [25, 28], male: true },
-  // Samia : cheveux bruns raides mi-longs, raie sur le côté, rouge à lèvres, teint mat, yeux foncés
-  '07': { skin: '#d6a07a', hair: '#3b291e', hairHi: '#6a4a33', hairStyle: 'shoulderSide', brow: '#2e2018', eye: '#3a2416',
-          lips: '#b3243f', face: [24, 29], male: false },
+  // Samia : cheveux bruns raides mi-longs avec reflets caramel, raie sur le côté, teint mat chaud,
+  // rouge à lèvres prune, grand sourire (portrait p_I_samia_rose.jpg)
+  '07': { skin: '#c98f6a', hair: '#3a2519', hairHi: '#9a6538', hairStyle: 'shoulderSide', brow: '#2a1b12', eye: '#3a2416',
+          lips: '#8e1f3c', bigSmile: true, face: [24, 29], male: false },
   // Matthias : cheveux bruns texturés en houppe, moustache et barbe légère, yeux verts
   '08': { skin: '#ebb792', hair: '#4b3221', hairStyle: 'quiff', brow: '#3e2a1c', eye: '#5f7d55',
           beard: 'light', beardColor: '#6b4a33', beardOp: 0.6, face: [24, 28], male: true },
@@ -53,8 +54,8 @@ function rig(look, p) {
   const bow = p.bow || 0;
   const breath = p.breath || 0;
   const lift = (p.bob || 0);
-  const shY = -150 + 24 * bow + breath * 1.3 + lift;
-  const headY = -184 + 40 * bow + breath * 1.0 + lift;
+  const shY = -150 + 30 * bow + breath * 1.3 + lift;
+  const headY = -184 + 54 * bow + breath * 1.0 + lift;
   const L = armFK(-1, -33, shY + 5, p.armL.a, p.armL.b);
   const R = armFK(1, 33, shY + 5, p.armR.a, p.armR.b);
   return { shY, headY, L, R, waistY: -87 + lift * 0.6, lift };
@@ -114,7 +115,7 @@ function hairBack(look, hx, hy, R, RY) {
   }
   if (look.hairStyle === 'shoulderSide') {
     const w = (x, y) => `${f1(hx + x)},${f1(hy + y)}`;
-    return `<path d="M${w(-R * 1.08, -4)} L${w(-R * 1.3, 50)} Q${w(0, 60)} ${w(R * 1.3, 50)} L${w(R * 1.08, -4)} A${f1(R * 1.1)},${f1(RY * 1.08)} 0 0 0 ${w(-R * 1.08, -4)} Z" fill="${c}"/>`;
+    return `<path d="M${w(-R * 1.08, -4)} L${w(-R * 1.32, 60)} Q${w(0, 70)} ${w(R * 1.32, 60)} L${w(R * 1.08, -4)} A${f1(R * 1.1)},${f1(RY * 1.08)} 0 0 0 ${w(-R * 1.08, -4)} Z" fill="${c}"/>`;
   }
   return '';
 }
@@ -131,7 +132,7 @@ function capPath(hx, hy, R, RY, o) {
 function hairFront(look, hx, hy, R, RY, pitch) {
   const c = look.hair, st = look.hairStyle;
   const w = (x, y) => `${f1(hx + x)},${f1(hy + y)}`;
-  const pd = pitch * RY * 0.35; // inclinaison (salut) : la calotte descend
+  const pd = pitch * RY * 0.6; // inclinaison (salut) : la calotte descend
   let s = '';
   if (st === 'buzz') {
     s += `<path d="${capPath(hx, hy, R, RY, { side: -0.05, hairline: look.hairline + pd / RY, recede: 0.10, temple: -0.22 })}" fill="${c}" opacity="0.92"/>`;
@@ -139,9 +140,9 @@ function hairFront(look, hx, hy, R, RY, pitch) {
     s += `<path d="${capPath(hx, hy, R, RY, { side: 0.02, hairline: -0.56 + pd / RY, recede: 0.12, temple: -0.2 })}" fill="${c}" opacity="0.5"/>`;
     s += `<path d="${capPath(hx, hy, R * 0.86, RY, { side: -0.38, ext: 5, hairline: -0.58 + pd / RY, recede: 0.08, temple: -0.45 })}" fill="${c}"/>`;
   } else if (st === 'quiff') {
-    s += `<path d="${capPath(hx, hy, R, RY, { side: 0.0, ext: 3, hairline: -0.52 + pd / RY, recede: 0.05, temple: -0.15 })}" fill="${c}"/>`;
-    s += `<path d="M${w(-R * 0.75, -RY * 0.6 + pd)} Q${w(-R * 0.35, -RY * 1.45)} ${w(R * 0.55, -RY * 1.22)} Q${w(R * 0.98, -RY * 1.05)} ${w(R * 0.82, -RY * 0.62 + pd)} Q${w(R * 0.3, -RY * 0.95)} ${w(-R * 0.75, -RY * 0.6 + pd)} Z" fill="${c}"/>`;
-    s += `<path d="M${w(-R * 0.3, -RY * 1.05)} Q${w(R * 0.1, -RY * 1.25)} ${w(R * 0.5, -RY * 1.1)}" stroke="${shade(c, 0.25)}" stroke-width="1.6" fill="none"/>`;
+    s += `<path d="${capPath(hx, hy, R, RY, { side: 0.0, ext: 2, hairline: -0.52 + pd / RY, recede: 0.05, temple: -0.15 })}" fill="${c}"/>`;
+    s += `<path d="M${w(-R * 0.98, -RY * 0.3)} Q${w(-R * 1.0, -RY * 1.15)} ${w(-R * 0.2, -RY * 1.28)} Q${w(R * 0.7, -RY * 1.42)} ${w(R * 1.02, -RY * 0.9)} Q${w(R * 1.1, -RY * 0.5)} ${w(R * 0.95, -RY * 0.28)} Q${w(R * 0.55, -RY * 0.72 + pd)} ${w(0, -RY * 0.58 + pd)} Q${w(-R * 0.6, -RY * 0.68 + pd)} ${w(-R * 0.98, -RY * 0.3)} Z" fill="${c}"/>`;
+    s += `<path d="M${w(-R * 0.5, -RY * 0.95)} Q${w(R * 0.1, -RY * 1.3)} ${w(R * 0.75, -RY * 1.0)} M${w(-R * 0.2, -RY * 0.8)} Q${w(R * 0.3, -RY * 1.1)} ${w(R * 0.85, -RY * 0.7)}" stroke="${shade(c, 0.22)}" stroke-width="1.5" fill="none"/>`;
   } else if (st === 'pixie') {
     s += `<path d="${capPath(hx, hy, R, RY, { side: 0.18, ext: 3, hairline: -0.42 + pd / RY, recede: -0.05, temple: 0.05 })}" fill="${c}"/>`;
     // frange balayée + épi
@@ -174,8 +175,8 @@ function hairLocks(look, hx, hy, R, RY) {
   if (look.hairStyle === 'shoulderSide') {
     let s = '';
     for (const sd of [-1, 1]) {
-      s += `<path d="M${w(sd * R * 0.92, -RY * 0.3)} L${w(sd * R * 1.02, 46)} Q${w(sd * R * 1.2, 52)} ${w(sd * R * 1.36, 46)} L${w(sd * R * 1.12, -RY * 0.4)} Z" fill="${c}"/>`;
-      s += `<path d="M${w(sd * R * 1.08, 0)} L${w(sd * R * 1.18, 40)}" stroke="${look.hairHi}" stroke-width="1.4" fill="none"/>`;
+      s += `<path d="M${w(sd * R * 0.92, -RY * 0.3)} L${w(sd * R * 1.02, 58)} Q${w(sd * R * 1.2, 64)} ${w(sd * R * 1.38, 57)} L${w(sd * R * 1.12, -RY * 0.4)} Z" fill="${c}"/>`;
+      s += `<path d="M${w(sd * R * 1.06, 0)} L${w(sd * R * 1.16, 50)} M${w(sd * R * 1.2, 5)} L${w(sd * R * 1.28, 48)}" stroke="${look.hairHi}" stroke-width="1.6" fill="none" opacity="0.85"/>`;
     }
     return s;
   }
@@ -223,8 +224,8 @@ function glasses(look, hx, ey) {
     const lens = (cx) => `M${f1(cx - 8)},${f1(ey - 6)} L${f1(cx + 8)},${f1(ey - 7)} Q${f1(cx + 9)},${f1(ey + 6)} ${f1(cx)},${f1(ey + 6)} Q${f1(cx - 9)},${f1(ey + 6)} ${f1(cx - 8)},${f1(ey - 6)} Z`;
     const L = lens(hx - 10), R = lens(hx + 10);
     return `<g fill="rgba(235,240,255,0.18)"><path d="${L}" stroke="#e9eef6" stroke-width="3"/><path d="${R}" stroke="#e9eef6" stroke-width="3"/>` +
-      `<path d="${L}" stroke="#2747c4" stroke-width="2.4" stroke-dasharray="3 3" fill="none"/><path d="${R}" stroke="#2747c4" stroke-width="2.4" stroke-dasharray="3 3" fill="none"/>` +
-      `<path d="${L}" stroke="#e0313f" stroke-width="2.4" stroke-dasharray="2 4" stroke-dashoffset="3" fill="none"/><path d="${R}" stroke="#e0313f" stroke-width="2.4" stroke-dasharray="2 4" stroke-dashoffset="3" fill="none"/>` +
+      `<path d="${L}" stroke="#2747c4" stroke-width="1.7" stroke-dasharray="2.5 3.5" fill="none"/><path d="${R}" stroke="#2747c4" stroke-width="1.7" stroke-dasharray="2.5 3.5" fill="none"/>` +
+      `<path d="${L}" stroke="#e0313f" stroke-width="1.7" stroke-dasharray="1.8 4.2" stroke-dashoffset="3" fill="none"/><path d="${R}" stroke="#e0313f" stroke-width="1.7" stroke-dasharray="1.8 4.2" stroke-dashoffset="3" fill="none"/>` +
       `<path d="M${f1(hx - 2)},${f1(ey - 4)} L${f1(hx + 2)},${f1(ey - 4)}" stroke="#e9eef6" stroke-width="2.4"/></g>`;
   }
   return '';
@@ -326,7 +327,7 @@ function drawAvatar(m, look, p, t) {
     for (const sd of [-1, 1]) s += `<ellipse cx="${f1(hx * 0.4 + sd * R * 0.98)}" cy="${f1(hy + 3)}" rx="5" ry="7" fill="${skin}" stroke="${skinD}" stroke-width="1.1"/>`;
     s += `<ellipse cx="${f1(hx * 0.3)}" cy="${f1(hy)}" rx="${R}" ry="${RY}" fill="${skin}" stroke="${skinD}" stroke-width="1.3"/>`;
     const pitch = (p.bow || 0);
-    const fy = hy + pitch * 7;
+    const fy = hy + pitch * 11;
     if (look.wrinkles) s += `<path d="M${f1(hx - 9)},${f1(fy - 15)} Q${f1(hx)},${f1(fy - 17)} ${f1(hx + 9)},${f1(fy - 15)} M${f1(hx - 7)},${f1(fy - 12)} Q${f1(hx)},${f1(fy - 13.5)} ${f1(hx + 7)},${f1(fy - 12)}" stroke="${skinD}" stroke-width="0.8" fill="none" opacity="0.7"/>`;
     s += `<circle cx="${f1(hx - 14)}" cy="${f1(fy + 8)}" r="4.5" fill="#ff7b6b" opacity="0.18"/><circle cx="${f1(hx + 14)}" cy="${f1(fy + 8)}" r="4.5" fill="#ff7b6b" opacity="0.18"/>`;
     s += beard(look, hx, hy, R, RY, pitch);
