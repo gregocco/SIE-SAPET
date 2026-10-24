@@ -175,7 +175,8 @@ function ellipticTube(mats, a, b, r, sx, mat, name) {   // montant profilé (sec
 }
 
 export const LIVERIES = {
-  oryx: { label: 'ORYX — blanc / bleu / rouge (photos)', top: '#F2F2EE', tip: null, tipShow: 'rgba(32,45,120,0.42)', bottom: '#20214F', band: '#C1121C', le: '#B9BEC2', mylar: 'rgba(140,180,220,0.55)' },
+  oryx: { label: 'ORYX — blanc / bleu nuit / cuivre (couleurs du chariot)', top: '#F2F2EE', tip: null, tipShow: 'rgba(32,45,120,0.42)', bottom: '#20214F', band: '#C8875A', le: '#B9BEC2', mylar: 'rgba(140,180,220,0.55)' },
+  oryx_rouge: { label: 'ORYX d\'origine — bande rouge (photos)', top: '#F2F2EE', tip: null, tipShow: 'rgba(32,45,120,0.42)', bottom: '#20214F', band: '#C1121C', le: '#B9BEC2', mylar: 'rgba(140,180,220,0.55)' },
   dta: { label: 'DTA — gris clair / ardoise', top: '#F2F2EE', tip: null, bottom: '#34424F', band: '#8E9CAA' },
   steampunk: { label: 'Nuit & cuivre', top: '#E8E6DF', tip: null, tipShow: 'rgba(20,33,77,0.42)', bottom: '#14214D', band: '#C47E52' },
 };
