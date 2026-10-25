@@ -1,0 +1,119 @@
+{
+ "UAC70": [
+  "Germany|Q|LFA 8 - Sector D|250-500"
+ ],
+ "UAC78": [
+  "Belgium|C|Brussels TMA 3A (BRUSSELS DEP 126.630)|3500-19500"
+ ],
+ "UAC4": [
+  "Belgium|D|LUXEMBOURG TMA THREE (LUXEMBOURG APPROACH 120.885)|2500-16500",
+  "France|D|TMA LUXEMBOURG 3|2500-16500",
+  "France|P|LF-R45N3 LUXEMBOURG (MON-FRI)|800-2700"
+ ],
+ "UAC95": [
+  "Croatia|D|PULA TMA|1000-13500",
+  "Croatia|D|ZAGREB TMA|1000-11500"
+ ],
+ "UAC59": [
+  "Croatia|D|ZADAR TMA|1000-15500",
+  "Croatia|D|ZAGREB TMA|1000-11500",
+  "Croatia|R|Corridor P-1|0-1000"
+ ],
+ "UAC27": [
+  "Spain|Q|LED131|0-14500"
+ ],
+ "UAC14": [
+  "France|D|TMA AJACCIO 3|2500-11500"
+ ],
+ "UAC19": [
+  "France|D|TMA CAZAUX 4|3300-19500",
+  "France|P|LF-R31A1 CAZAUX|0-4000",
+  "France|P|LF-R31A4 CAZAUX|3300-19500",
+  "France|P|LF-R31A7 CAZAUX|0-3300"
+ ],
+ "UAC3": [
+  "France|D|TMA LORRAINE 4|3800-7500"
+ ],
+ "UAC12": [
+  "France|D|TMA MONTPELLIER 10|2500-11500",
+  "France|D|TMA MONTPELLIER 11|2500-9500",
+  "France|D|CTA RHONE 3|2500-19500",
+  "France|P|LF-R217/3 RHONE|2500-19500"
+ ],
+ "UAC15": [
+  "France|D|TMA MONTPELLIER 14|1500-11500"
+ ],
+ "UAC11": [
+  "France|C|TMA NICE 5|3500-11500",
+  "France|P|LF-R95C LE LUC|2000-3500"
+ ],
+ "UAC1": [
+  "France|P|LF-R45N2 ARDENNES (MON-FRI)|800-2400"
+ ],
+ "UAC2": [
+  "France|P|LF-R45N5.1 MEUSE NORD (MON-FRI)|800-2700",
+  "France|P|LF-R213 NORD-EST A|250-11500"
+ ],
+ "UAC10": [
+  "France|P|LF-R95A LE LUC|0-5500"
+ ],
+ "LFJY": [
+  "France|P|LF-R104 CHAMBLEY|0-11000"
+ ],
+ "UAC22": [
+  "France|P|LF-D18A1 Atlantique BREST|0-9500"
+ ],
+ "UAC21": [
+  "France|P|LF-D18A3 Atlantique BREST|0-9500"
+ ],
+ "UAC20": [
+  "France|P|LF-D18A4 Atlantique BREST|0-9500"
+ ],
+ "UAC49": [
+  "Greece|CTR|GPZ: 120.45|1000-16000"
+ ],
+ "UAC50": [
+  "Greece|B|GGG: 120.65|1000-8500"
+ ],
+ "UAC51": [
+  "Greece|CTR|GGG: 122.1|1000-99999"
+ ],
+ "UAC63": [
+  "Hungary|D|LHSDZLHSK 125,435|0-15499"
+ ],
+ "UAC62": [
+  "Hungary|D|ESETI Puspokladany|2500-9501"
+ ],
+ "UAC48": [
+  "Italy|D|LECCE CTR Z1|0-8500",
+  "Italy|R|Salentina Peninsula Area(ULM)|0-500"
+ ],
+ "UAC93": [
+  "Italy|R|LI-R54/A-Oristano|1500-10000"
+ ],
+ "UAC47": [
+  "Italy|R|LI-R403/A-Trebisacce|1500-14500",
+  "Italy|R|LI-R407/A-Est CirC2 Marina|1500-14500"
+ ],
+ "UAC44": [
+  "Italy|R|Benevento(Pa)|0-3000"
+ ],
+ "UAC80": [
+  "Netherlands|R|EHR 49 <notam>|0-19500"
+ ],
+ "UAC100": [
+  "Portugal|R|LPR60B MONTE REAL|1000-50000"
+ ],
+ "UAC68": [
+  "LKAA RMZ and ATZ LKCS|R|LKTRA76 BLATNA 126.10|1000-7500"
+ ],
+ "UAC61": [
+  "Romania|C|Arad TMA 1 - APP 123.530 MHz / ftN 126.350 MHz|2500-17500",
+  "Romania|R|LRTRA2G - Active by NOTAM|0-3500",
+  "Romania|R|LRTRA2L - Active by NOTAM|3500-20000",
+  "Romania|R|LRTRA13G - Active by NOTAM|0-5500"
+ ],
+ "UAC87": [
+  "Sweden|C|Lule� TMA d|2001-9500"
+ ]
+}
