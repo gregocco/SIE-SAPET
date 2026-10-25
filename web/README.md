@@ -6,3 +6,8 @@ Application statique : carte, inventaire des espaces aériens, moteur de calcul 
 
 Données : `web/data/*.json` générées par `tools/export_web.py` (balises 2026, espaces aériens OpenAIP, vent NASA POWER) ;
 `land.json` : côtes Natural Earth 50 m simplifiées.
+
+## Modules
+- `engine.js` (worker) : grille de coûts (espaces aériens, mer), plus courts chemins, recuit simulé.
+- `sun.js` : lever/coucher du soleil, fuseau d'été ; `weather.js` : prévisions Open-Meteo ; `viz.js` : vent animé, couches météo, radar RainViewer, simulation.
+- `app.js` : interface, planning d'étapes (fenêtres de vol selon le soleil), altitude par tronçon, export GPX.

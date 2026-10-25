@@ -68,7 +68,7 @@ function bindSettings() {
       saveSettings();
       if (key === 'profil') applyProfile();
       else if (['maxday', 'pausegap', 'midday', 'cutmode'].includes(key) && $('profil').value !== 'libre') { $('profil').value = 'libre'; settings.ui.profil = 'libre'; }
-      if (key === 'alt') { refreshZones(); fc = null; setFcInfo(); }
+      if (key === 'alt') refreshZones();
       if (key === 'mode') $('replanbox').hidden = el.value !== 'replan';
       if (key === 'cat') updateBeaconStyles();
       updateCapacity();
@@ -90,7 +90,7 @@ function cfg() {
   const f = (id) => +$(id).value;
   return {
     mode: $('mode').value, d1: $('d1').value, cat: $('cat').value, tas: f('tas'), alt: f('alt'), maxday: f('maxday'), pausegap: f('pausegap'),
-    midday: $('midday').checked, cutmode: $('cutmode').value, hours: $('hours').value ? f('hours') : null, seamax: f('seamax'),
+    midday: $('midday').checked, cutmode: $('cutmode').value, hours: $('hours').value ? f('hours') : null, seamax: f('seamax'), margin: f('margin'), optalt: $('optalt').checked, altmax: f('altmax'), climb: f('climb'),
     conso: f('conso'), tank: f('tank'), reserve: f('reserve'), wsrc: $('wsrc').value, wfac: f('wfac'), gmax: f('gmax'), fcdays: f('fcdays'),
     iters: f('prec'), cell: f('cell'),
   };
@@ -102,8 +102,8 @@ function missionStart(c) {
   return { clock: (f1($('nowday').value) - 1) * 24 + hh + mm / 60, lat: isFinite(lat) ? lat : home.lat, lon: isFinite(lon) ? lon : home.lon, set: isFinite(lat) && isFinite(lon) };
 }
 const f1 = (v) => parseFloat(v);
-function schedOpts(c, start) {
-  return { start: start ?? 10, dayStart: 6.5, dayEnd: 20.5, midday: c.midday, maxDay: c.maxday, pauseTarget: c.pausegap, pauseMin: 0.75, contMax: 4, deadline: DEADLINE, cutmode: c.cutmode };
+function schedOpts(c, start, loc) {
+  return { start: start ?? 10, margin: (c.margin || 0) / 60, d1: c.d1, loc, midday: c.midday, maxDay: c.maxday, pauseTarget: c.pausegap, pauseMin: 0.75, contMax: 4, deadline: DEADLINE, cutmode: c.cutmode };
 }
 function updateCapacity() {
   const c = cfg(), ms = missionStart(c);
@@ -277,31 +277,36 @@ function savePauses() {
 }
 
 // ---------- planning d'étapes ----------
+// totalT : heures de vol à placer ; o.loc(s) : position [lat, lon] à l'heure de vol cumulée s (lever/coucher du soleil locaux)
 function schedule(totalT, o, pauses, limit) {
   const ev = [], dayAir = {};
+  const loc = o.loc || (() => [home.lat, home.lon]);
   let s = 0, c = o.start, air = 0, guard = 0;
-  const nextFlyable = (x) => {
-    for (;;) {
-      const d = Math.floor(x / 24), h = x - d * 24;
-      if (h < o.dayStart - 1e-9) return d * 24 + o.dayStart;
-      if (h >= o.dayEnd - 1e-9) return (d + 1) * 24 + o.dayStart;
-      if (o.midday && h >= 11 - 1e-9 && h < 16 - 1e-9) return d * 24 + 16;
+  const bounds = (d, sx) => { const [la, lo] = loc(sx); const t = SUN.times(la, lo, o.d1, d); return [t.rise + o.margin, t.set - o.margin]; };
+  const nextFlyable = (x, sx) => {
+    for (let i = 0; i < 40; i++) {
+      const d = Math.floor(x / 24), h = x - d * 24, [a, b] = bounds(d, sx);
+      if (h < a - 1e-9) return d * 24 + a;
+      if (h >= b - 1e-9) { x = (d + 1) * 24; continue; }
+      if (o.midday && h >= 11 - 1e-9 && h < 16 - 1e-9) return d * 24 + Math.max(16, a);
       return x;
     }
+    return x;
   };
-  const winEnd = (x) => { const d = Math.floor(x / 24), h = x - d * 24; return d * 24 + ((o.midday && h < 11 - 1e-9) ? 11 : o.dayEnd); };
+  const winEnd = (x, sx) => { const d = Math.floor(x / 24), h = x - d * 24, [, b] = bounds(d, sx); return d * 24 + ((o.midday && h < 11 - 1e-9) ? Math.min(11, b) : b); };
   while (s < totalT - 1e-6 && guard++ < 600) {
-    c = nextFlyable(c);
+    c = nextFlyable(c, s);
     if (limit && c >= o.deadline) break;
     const d = Math.floor(c / 24), used = dayAir[d] || 0;
-    let avail = Math.min(winEnd(c) - c, o.maxDay - used);
+    let avail = Math.min(winEnd(c, s) - c, o.maxDay - used);
     if (limit) avail = Math.min(avail, o.deadline - c);
     if (avail < 0.05) {
-      c = (o.maxDay - used < 0.05) ? (d + 1) * 24 + o.dayStart : winEnd(c) + 1e-6;
+      c = (o.maxDay - used < 0.05) ? (d + 1) * 24 + 0.01 : winEnd(c, s) + 1e-6;
       continue;
     }
     const left = totalT - s;
-    const stopKind = (len) => ((o.maxDay - used - len < 0.05) ? 'nuit' : (o.midday && winEnd(c) === d * 24 + 11 ? 'arrêt de midi' : 'nuit'));
+    const wE = winEnd(c, s);
+    const stopKind = (len) => ((o.maxDay - used - len < 0.05) ? 'nuit' : (o.midday && wE === d * 24 + 11 ? 'arrêt de midi' : 'nuit'));
     let L, kind = 'fin', name = '', fuel = false;
     if (o.cutmode === 'balanced') {
       let n = Math.max(1, Math.ceil(avail / o.pauseTarget - 1e-9));
@@ -325,8 +330,13 @@ function schedule(totalT, o, pauses, limit) {
         }
       }
     }
+    // coucher du soleil au lieu d'arrivée : on raccourcit le vol si besoin
+    const endLimit = d * 24 + bounds(d, s + L)[1];
+    if (c + L > endLimit + 1e-6) {
+      L = Math.max(0.05, endLimit - c);
+      kind = left > L + 1e-6 ? 'nuit' : 'fin'; name = ''; fuel = false;
+    }
     ev.push({ day: d, c0: c, c1: c + L, s0: s, s1: s + L, kind, name, fuel });
-    const wE = winEnd(c);
     s += L; c += L; air += L; dayAir[d] = used + L;
     if (kind === 'pause') c += o.pauseMin;
     else if (kind !== 'fin') c = Math.max(c, wE + 1e-6); // arrêt de midi ou nuit : on ne reprend pas dans la même fenêtre
@@ -342,6 +352,11 @@ const fmtClock = (c) => {
 };
 const hhmm = (c) => fmtClock(c).split(' ').pop();
 function fmtH(h) { let hh = Math.floor(h), mm = Math.round((h - hh) * 60); if (mm === 60) { hh++; mm = 0; } return `${hh}h${String(mm).padStart(2, '0')}`; }
+// heure locale (fuseau du lieu) si elle diffère de l'heure de Chambley
+function localNote(c, lat, lon) {
+  const off = SUN.tzOffset(lat, lon);
+  return off === SUN.REF_OFFSET ? '' : `<span class="sun">loc. ${hhmm(c + off - SUN.REF_OFFSET)} (UTC+${off})</span>`;
+}
 
 // ---------- trace GPX ----------
 function parseTrace(text) {
@@ -408,8 +423,14 @@ function applyTrace(pts) {
 }
 
 // ---------- prévisions ----------
+function neededLevels(c) {
+  if (c.wsrc !== 'fc') return [WX.levelFor(c.alt)];
+  if (c.optalt) { const l = [925, 850, 800, 700].filter((h) => WX.altOf(h) <= c.altmax); if (l.length) return l; }
+  return [WX.levelFor(c.alt)];
+}
+function fcValid(c) { return !!fc && fc.firstDate === c.d1 && neededLevels({ ...c, wsrc: 'fc' }).every((h) => fc.levels.includes(h)); }
 function setFcInfo(msg) {
-  $('fcinfo').textContent = msg || (fc ? `Prévisions chargées : ${fc.pts.length} points, niveau ${fc.hpa} hPa (≈ ${WX.levelFor ? '' : ''}${$('alt').value} ft), jours J1–J${fc.nDays}.` : 'Prévisions disponibles jusqu\'à 16 jours : avant cela, la climatologie reste utilisée.');
+  $('fcinfo').textContent = msg || (fc ? `Prévisions chargées : niveaux ${fc.levels.join(', ')} hPa, jours J1–J${fc.nDays} (J1 = ${fc.firstDate}).` : 'Prévisions disponibles jusqu\'à 16 jours : avant cela, la climatologie reste utilisée.');
 }
 async function loadForecast() {
   const c = cfg();
@@ -421,8 +442,10 @@ async function loadForecast() {
   $('loadfc').disabled = true;
   try {
     setFcInfo('Téléchargement des prévisions…');
-    fc = await WX.fetchForecast(wind, c.alt, c.d1, nDays, (f) => setFcInfo(`Téléchargement des prévisions… ${Math.round(f * 100)} %`));
-    setFcInfo(`Prévisions chargées : niveau ${fc.hpa} hPa, jours J1–J${fc.nDays} (J1 = ${c.d1}). Résolution ≈ 270 km : indicatif.`);
+    fc = await WX.fetchForecast(wind, neededLevels({ ...c, wsrc: 'fc' }), c.d1, nDays, (f) => setFcInfo(`Téléchargement des prévisions… ${Math.round(f * 100)} %`));
+    setFcInfo();
+    $('fcinfo').textContent += ' Résolution ≈ 270 km : indicatif.';
+    if (!lastRun) VIZ.setRange(0, nDays * 24 - 1, fc, fc.levels[0]);
     return true;
   } catch (e) {
     fc = null; setFcInfo(`Prévisions indisponibles (${e.message}). Climatologie utilisée.`); return false;
@@ -443,6 +466,52 @@ function progress(frac, text) {
   $('bar').style.width = `${Math.round(frac * 100)}%`;
   $('ptext').textContent = text;
 }
+const climbPenalty = (c, alt) => Math.max(0, alt - 1500) / c.climb / 60 / 2; // heures, par tronçon (montée partagée entre tronçons voisins)
+
+async function computeLevel(c, ms, nodes, nb, hpa, altFt, K, useFc, label, p0, p1) {
+  const nn = nodes.length;
+  let windObj = wind, wf;
+  if (useFc) { const day0 = Math.floor(ms.clock / 24); windObj = WX.windField(fc, hpa, day0, day0 + c.fcdays - 1, { midday: c.midday }); wf = 1; }
+  else wf = c.wsrc === 'none' ? 0 : c.wfac;
+  const zs = [];
+  for (const z of zones) { const s = stateOf(z); if (s > 0 && activeZone(z, altFt)) zs.push({ r: z.r, s }); }
+  progress(p0, `${label}Rastérisation de ${zs.length} zones…`);
+  const prepRes = await callWorker({ type: 'prep', zones: zs, factors: FACT, cell: c.cell, nodes, wind: windObj, windFactor: wf, land, seaMax: c.seamax });
+  prepRes.worker.terminate();
+  const prep = prepRes.data;
+  let doneSrc = 0;
+  const jobs = [];
+  for (let k = 0; k < K; k++) {
+    const sources = [];
+    for (let a = k; a < nn - 1; a += K) sources.push(a);
+    jobs.push(callWorker({ type: 'dijk', sources, grid: prep.grid, cost: prep.cost.slice(), state: prep.state.slice(), wu: prep.wu, wv: prep.wv, nodeCells: prep.nodeCells, nodesXY: prep.nodesXY, nb, tas: c.tas },
+      (m) => { if (m.type === 'progress') { doneSrc++; progress(p0 + (p1 - p0) * doneSrc / (nn - 1), `${label}Itinéraires entre balises (${doneSrc}/${nn - 1})…`); } }));
+  }
+  const legs = (await Promise.all(jobs)).flatMap((r) => { r.worker.terminate(); return r.data.legs; });
+  const T = new Float64Array(nn * nn).fill(Infinity), M = new Float32Array(nn * nn * nb).fill(1e9);
+  const paths = new Map();
+  for (let i = 0; i < nn; i++) T[i * nn + i] = 0;
+  for (const l of legs) {
+    if (!isFinite(l.D)) continue;
+    T[l.a * nn + l.b] = l.Tab; T[l.b * nn + l.a] = l.Tba;
+    M.set(l.M, (l.a * nn + l.b) * nb); M.set(l.M, (l.b * nn + l.a) * nb);
+    paths.set(l.a * nn + l.b, l.pts);
+  }
+  return { alt: altFt, hpa, prep, T, M, paths };
+}
+
+async function runSA(run, budget, iters, label) {
+  const { nb, nn, K } = run;
+  const prog = new Array(K).fill(0), sas = [];
+  for (let k = 0; k < K; k++) {
+    sas.push(callWorker({ type: 'sa', nb, nn, M: run.M.slice(), T: run.T.slice(), val: run.val, bank: run.bank, budget, iters, seed: 1000 + 77 * k + Math.floor(budget * 10), t0: 100 * run.mult, startNode: run.START, endNode: run.HOME },
+      (m) => { if (m.type === 'sa-progress') { prog[k] = m.k / m.iters; progress(0.55 + 0.4 * prog.reduce((a, b) => a + b, 0) / K, label); } }));
+  }
+  const res = await Promise.all(sas);
+  res.forEach((r) => r.worker.terminate());
+  const sorted = res.map((r) => r.data).sort((a, b) => b.score - a.score);
+  return { route: sorted[0].route, scores: sorted.map((r) => Math.round(r.score)) };
+}
 
 async function compute() {
   const c = cfg(), btn = $('run');
@@ -450,64 +519,68 @@ async function compute() {
   try {
     const ms = missionStart(c);
     if (c.mode === 'replan' && !ms.set) { progress(0, 'Renseigne ta position (carte ou trace GPX) pour replanifier.'); return; }
-    if (c.wsrc === 'fc' && !fc) await loadForecast();
-    const nb = beacons.length, HOME = nb;
-    const replan = c.mode === 'replan';
+    if (c.wsrc === 'fc' && !fcValid(c)) await loadForecast();
+    const useFc = c.wsrc === 'fc' && fcValid(c);
+    const nb = beacons.length, HOME = nb, replan = c.mode === 'replan';
     const nodes = beacons.map((b) => ({ lat: b.lat, lon: b.lon })).concat([{ lat: home.lat, lon: home.lon }]);
     if (replan) nodes.push({ lat: ms.lat, lon: ms.lon });
     const nn = nodes.length, START = replan ? nb + 1 : HOME;
     const K = Math.max(1, Math.min(4, navigator.hardwareConcurrency || 2));
 
-    let windObj = wind, wf = c.wsrc === 'none' ? 0 : c.wfac, windNote = 'climatologie';
-    if (c.wsrc === 'fc' && fc) {
-      const day0 = Math.floor(ms.clock / 24);
-      windObj = WX.windField(fc, day0, day0 + c.fcdays - 1, { midday: c.midday }); wf = 1; windNote = windObj.src;
+    const hpas = useFc ? neededLevels(c) : [useFc ? WX.levelFor(c.alt) : null];
+    const multi = hpas.length > 1;
+    const levels = [];
+    for (let i = 0; i < hpas.length; i++) {
+      const altFt = multi ? WX.altOf(hpas[i]) : c.alt;
+      const label = multi ? `Altitude ${altFt} ft (${i + 1}/${hpas.length}) · ` : '';
+      levels.push(await computeLevel(c, ms, nodes, nb, hpas[i], altFt, K, useFc, label, 0.02 + 0.5 * i / hpas.length, 0.02 + 0.5 * (i + 1) / hpas.length));
     }
-    const zs = [];
-    for (const z of zones) { const s = stateOf(z); if (s > 0 && activeZone(z, c.alt)) zs.push({ r: z.r, s }); }
-    progress(0.02, `Rastérisation de ${zs.length} zones…`);
-    const prepRes = await callWorker({ type: 'prep', zones: zs, factors: FACT, cell: c.cell, nodes, wind: windObj, windFactor: wf, land, seaMax: c.seamax });
-    prepRes.worker.terminate();
-    const prep = prepRes.data;
-
-    let doneSrc = 0;
-    const jobs = [];
-    for (let k = 0; k < K; k++) {
-      const sources = [];
-      for (let a = k; a < nn - 1; a += K) sources.push(a);
-      jobs.push(callWorker({ type: 'dijk', sources, grid: prep.grid, cost: prep.cost.slice(), state: prep.state.slice(), wu: prep.wu, wv: prep.wv, nodeCells: prep.nodeCells, nodesXY: prep.nodesXY, nb, tas: c.tas },
-        (m) => { if (m.type === 'progress') { doneSrc++; progress(0.05 + 0.45 * doneSrc / (nn - 1), `Itinéraires entre balises (${doneSrc}/${nn - 1})…`); } }));
+    // fusion : pour chaque tronçon orienté, l'altitude la plus rapide (montée comprise)
+    const legAlt = new Uint8Array(nn * nn);
+    let T, M;
+    if (levels.length === 1) { T = levels[0].T; M = levels[0].M; } else {
+      T = new Float64Array(nn * nn).fill(Infinity); M = new Float32Array(nn * nn * nb).fill(1e9);
+      for (let a = 0; a < nn; a++) for (let b = 0; b < nn; b++) {
+        if (a === b) { T[a * nn + b] = 0; continue; }
+        let bi = -1, bt = Infinity;
+        levels.forEach((l, i) => { const t = l.T[a * nn + b] + climbPenalty(c, l.alt); if (t < bt) { bt = t; bi = i; } });
+        if (bi < 0) continue;
+        T[a * nn + b] = bt; legAlt[a * nn + b] = bi;
+        M.set(levels[bi].M.subarray((a * nn + b) * nb, (a * nn + b + 1) * nb), (a * nn + b) * nb);
+      }
     }
-    const legs = (await Promise.all(jobs)).flatMap((r) => { r.worker.terminate(); return r.data.legs; });
-    const T = new Float64Array(nn * nn).fill(Infinity), M = new Float32Array(nn * nn * nb).fill(1e9);
-    const paths = new Map();
-    for (let i = 0; i < nn; i++) T[i * nn + i] = 0;
-    for (const l of legs) {
-      if (!isFinite(l.D)) continue;
-      T[l.a * nn + l.b] = l.Tab; T[l.b * nn + l.a] = l.Tba;
-      M.set(l.M, (l.a * nn + l.b) * nb); M.set(l.M, (l.b * nn + l.a) * nb);
-      paths.set(l.a * nn + l.b, l.pts);
-    }
-
-    const cap = schedule(1e6, schedOpts(c, ms.clock), [], true).air;
-    const budget = c.hours || cap;
     const mult = cats[c.cat][1];
-    const val = Float64Array.from(beacons, (b) => b.base * mult);
-    const bank = mission.bank && replan ? Float32Array.from(mission.bank) : new Float32Array(nb);
+    const run = {
+      c, ms, levels, legAlt, nb, nn, T, M, K, START, HOME, mult, multi, useFc,
+      val: Float64Array.from(beacons, (b) => b.base * mult),
+      bank: mission.bank && replan ? Float32Array.from(mission.bank) : new Float32Array(nb),
+      windNote: useFc ? `Open-Meteo ${hpas.join('/')} hPa` : (c.wsrc === 'none' ? 'ignoré' : 'climatologie'),
+    };
+    run.cap = schedule(1e6, schedOpts(c, ms.clock), [], true).air;
 
-    progress(0.52, 'Optimisation du parcours…');
-    const prog = new Array(K).fill(0);
-    const sas = [];
-    for (let k = 0; k < K; k++) {
-      sas.push(callWorker({ type: 'sa', nb, nn, M: M.slice(), T: T.slice(), val, bank, budget, iters: c.iters, seed: 1000 + 77 * k, t0: 100 * mult, startNode: START, endNode: HOME },
-        (m) => { if (m.type === 'sa-progress') { prog[k] = m.k / m.iters; progress(0.52 + 0.43 * prog.reduce((a, b) => a + b, 0) / K, 'Optimisation du parcours…'); } }));
+    // optimisation, puis recalage du budget d'heures sur le planning réel (lever/coucher, fuseaux)
+    let budget = c.hours || run.cap;
+    const cand = [];
+    for (let pass = 0; pass < 3; pass++) {
+      const label = `Optimisation du parcours${pass ? ` (passe ${pass + 1}, budget ${budget.toFixed(1)} h)` : ''}…`;
+      progress(0.55, label);
+      const res = await runSA(run, budget, pass ? Math.round(c.iters * 0.7) : c.iters, label);
+      run.best = { route: res.route.slice() };
+      const tl = buildTimeline(run), sch = scheduleFor(run, tl);
+      const ok = sch.finished && sch.end <= DEADLINE + 1e-6;
+      cand.push({ ok, sc: evalRoute(run, run.best.route).score, route: res.route.slice(), budget, scores: res.scores, sch });
+      if (c.hours) break;
+      const slack = sch.finished ? DEADLINE - sch.end : -12;
+      if (ok && slack < 2.5) break;
+      const ratio = Math.max(0.35, Math.min(0.95, sch.air / Math.max(1, sch.end - ms.clock)));
+      budget = Math.max(5, budget + slack * ratio * (ok ? 0.85 : 1.1));
     }
-    const res = await Promise.all(sas);
-    res.forEach((r) => r.worker.terminate());
-    const best = res.map((r) => r.data).sort((a, b) => b.score - a.score)[0];
-    lastRun = { c, ms, prep, nb, nn, T, M, paths, val, bank, budget, cap, best: { route: best.route.slice() }, START, HOME, windNote, scores: res.map((r) => Math.round(r.data.score)) };
+    const pick = cand.filter((x) => x.ok).sort((a, b) => b.sc - a.sc)[0] || cand[cand.length - 1];
+    run.best = { route: pick.route.slice() };
+    run.budget = pick.budget; run.scores = pick.scores; run.passes = cand.length;
+    lastRun = run;
     progress(1, 'Terminé');
-    finalize(lastRun);
+    finalize(run);
   } catch (err) {
     progress(0, `Erreur : ${err.message}`);
     console.error(err);
@@ -556,27 +629,62 @@ function editRoute(act, k) {
 }
 window.editRoute = editRoute;
 
-// ---------- résultat ----------
-function finalize(run, edited) {
-  const { c, prep, nb, nn, paths, M, val, bank, START, HOME } = run;
-  const route = run.best.route, grid = prep.grid;
-  const seq = [START, ...route, HOME];
-  const P = [], wpIdx = [0];
+// ---------- chronologie du vol : polyligne, temps, altitude par tronçon ----------
+function legPts(run, a, b) {
+  const nn = run.nn, lvl = run.levels[run.levels.length > 1 ? run.legAlt[a * nn + b] : 0];
+  if (a < b) return { pts: lvl.paths.get(a * nn + b), lvl };
+  const o = lvl.paths.get(b * nn + a), pts = new Float32Array(o.length);
+  for (let k = 0; k < o.length / 2; k++) { pts[2 * k] = o[o.length - 2 - 2 * k]; pts[2 * k + 1] = o[o.length - 1 - 2 * k]; }
+  return { pts, lvl };
+}
+function buildTimeline(run) {
+  const { c, START, HOME } = run, route = run.best.route, seq = [START, ...route, HOME];
+  const P = [], segT = [], segLen = [], segAlt = [], segHpa = [], wpIdx = [0];
+  const useWind = c.wsrc !== 'none';
   for (let q = 0; q < seq.length - 1; q++) {
-    const a = seq[q], b = seq[q + 1];
-    let pts;
-    if (a < b) pts = paths.get(a * nn + b);
-    else { const o = paths.get(b * nn + a); pts = new Float32Array(o.length); for (let k = 0; k < o.length / 2; k++) { pts[2 * k] = o[o.length - 2 - 2 * k]; pts[2 * k + 1] = o[o.length - 1 - 2 * k]; } }
-    for (let k = q === 0 ? 0 : 1; k < pts.length / 2; k++) P.push(pts[2 * k], pts[2 * k + 1]);
+    const { pts, lvl } = legPts(run, seq[q], seq[q + 1]);
+    const pa = Float64Array.from(pts), n = pa.length / 2;
+    const st = GEO.segTimes(pa, lvl.prep.grid, useWind ? lvl.prep.wu : null, useWind ? lvl.prep.wv : null, c.tas);
+    for (let k = q === 0 ? 0 : 1; k < n; k++) P.push(pa[2 * k], pa[2 * k + 1]);
+    for (let s = 0; s < n - 1; s++) {
+      segT.push(st.t[s] + (s === 0 && run.levels.length > 1 ? climbPenalty(c, lvl.alt) : 0));
+      segLen.push(st.len[s]); segAlt.push(lvl.alt); segHpa.push(lvl.hpa);
+    }
     wpIdx.push(P.length / 2 - 1);
   }
-  const PA = Float64Array.from(P);
-  const useWind = c.wsrc !== 'none';
-  const st = GEO.segTimes(PA, grid, useWind ? prep.wu : null, useWind ? prep.wv : null, c.tas);
-  const nv = PA.length / 2;
+  const PA = Float64Array.from(P), nv = PA.length / 2;
   const cumT = new Float64Array(nv), cumD = new Float64Array(nv);
-  for (let i = 1; i < nv; i++) { cumT[i] = cumT[i - 1] + st.t[i - 1]; cumD[i] = cumD[i - 1] + st.len[i - 1]; }
-  const total = cumT[nv - 1], km = cumD[nv - 1];
+  for (let i = 1; i < nv; i++) { cumT[i] = cumT[i - 1] + segT[i - 1]; cumD[i] = cumD[i - 1] + segLen[i - 1]; }
+  const idxAt = (s) => { let lo = 0, hi = nv - 1; while (hi - lo > 1) { const m = (lo + hi) >> 1; if (cumT[m] <= s) lo = m; else hi = m; } return lo; };
+  const posAt = (s) => {
+    const lo = idxAt(s), hi = Math.min(nv - 1, lo + 1);
+    const f = cumT[hi] > cumT[lo] ? Math.min(1, Math.max(0, (s - cumT[lo]) / (cumT[hi] - cumT[lo]))) : 0;
+    const x = PA[2 * lo] + f * (PA[2 * hi] - PA[2 * lo]), y = PA[2 * lo + 1] + f * (PA[2 * hi + 1] - PA[2 * lo + 1]);
+    return { ll: GEO.inv(x, y), x, y, d: cumD[lo] + f * (cumD[hi] - cumD[lo]) };
+  };
+  return { PA, nv, cumT, cumD, segAlt, segHpa, wpIdx, total: cumT[nv - 1], km: cumD[nv - 1], idxAt, posAt, seq };
+}
+function userPausesOnPath(tl) {
+  const pp = [];
+  for (const u of userPauses) {
+    const [ux, uy] = GEO.laea(u.lat, u.lon);
+    let bd = 1e9, bi = 0;
+    for (let i = 0; i < tl.nv; i++) { const d = Math.hypot(tl.PA[2 * i] - ux, tl.PA[2 * i + 1] - uy); if (d < bd) { bd = d; bi = i; } }
+    if (bd <= 30) pp.push({ t: tl.cumT[bi], name: u.name, fuel: u.fuel, d: bd });
+  }
+  return pp;
+}
+function scheduleFor(run, tl) {
+  const o = schedOpts(run.c, run.ms.clock, (s) => tl.posAt(s).ll);
+  return schedule(tl.total, o, userPausesOnPath(tl), false);
+}
+
+// ---------- résultat ----------
+function finalize(run, edited) {
+  const { c, nb, nn, M, val, bank, START, HOME } = run;
+  const route = run.best.route, grid = run.levels[0].prep.grid;
+  const tl = buildTimeline(run);
+  const { PA, nv, cumT, cumD, total, km, posAt, idxAt, wpIdx, seq } = tl;
   const LL = []; for (let i = 0; i < nv; i++) LL.push(GEO.inv(PA[2 * i], PA[2 * i + 1]));
 
   // points
@@ -593,63 +701,42 @@ function finalize(run, edited) {
   }
   const acquired = beacons.reduce((s, b, k) => s + bank[k] * val[k], 0);
 
-  // pauses personnelles
-  const pp = [];
-  for (const u of userPauses) {
-    const [ux, uy] = GEO.laea(u.lat, u.lon);
-    let bd = 1e9, bi = 0;
-    for (let i = 0; i < nv; i++) { const d = Math.hypot(PA[2 * i] - ux, PA[2 * i + 1] - uy); if (d < bd) { bd = d; bi = i; } }
-    if (bd <= 30) pp.push({ t: cumT[bi], name: u.name, fuel: u.fuel, d: bd });
-  }
-  const sched = schedule(total, schedOpts(c, run.ms.clock), pp, false);
-  const idxAt = (s) => { let lo = 0, hi = nv - 1; while (hi - lo > 1) { const m = (lo + hi) >> 1; if (cumT[m] <= s) lo = m; else hi = m; } return lo; };
-  const posAt = (s) => {
-    const lo = idxAt(s), hi = Math.min(nv - 1, lo + 1);
-    const f = cumT[hi] > cumT[lo] ? Math.min(1, Math.max(0, (s - cumT[lo]) / (cumT[hi] - cumT[lo]))) : 0;
-    const x = PA[2 * lo] + f * (PA[2 * hi] - PA[2 * lo]), y = PA[2 * lo + 1] + f * (PA[2 * hi + 1] - PA[2 * lo + 1]);
-    return { ll: GEO.inv(x, y), x, y, d: cumD[lo] + f * (cumD[hi] - cumD[lo]) };
-  };
-  const clockAt = (s) => {
-    for (const e of sched.events) if (s <= e.s1 + 1e-9) return e.c0 + Math.max(0, s - e.s0);
-    return sched.end;
-  };
+  const sched = scheduleFor(run, tl);
+  const clockAt = (s) => { for (const e of sched.events) if (s <= e.s1 + 1e-9) return e.c0 + Math.max(0, s - e.s0); return sched.end; };
   const nearestBeacon = (x, y) => {
     let bd = 1e9, bk = 0;
     beacons.forEach((b, k) => { const [bx, by] = GEO.laea(b.lat, b.lon); const d = Math.hypot(bx - x, by - y); if (d < bd) { bd = d; bk = k; } });
     return `${beacons[bk].id.replace('UAC', 'balise ')} (${Math.round(bd)} km)`;
   };
 
-  // conditions par vol
+  // conditions prévues par vol
   const conds = sched.events.map((e) => {
     const dur = e.s1 - e.s0, dkm = posAt(e.s1).d - posAt(e.s0).d;
     const gs = dur > 0 ? dkm / dur : 0;
     let w = null;
-    if (fc) {
+    if (fc && dur > 0) {
       const samples = [];
       const n = Math.max(1, Math.ceil(dur / 0.25));
       for (let i = 0; i < n; i++) {
-        const s = e.s0 + (i + 0.5) * dur / n, a = posAt(s), b = posAt(Math.min(total, s + 0.05));
-        const hx = b.x - a.x, hy = b.y - a.y, hl = Math.hypot(hx, hy) || 1;
-        samples.push({ clock: e.c0 + (i + 0.5) * dur / n, lat: a.ll[0], lon: a.ll[1], hx: hx / hl, hy: hy / hl });
+        const s = e.s0 + (i + 0.5) * dur / n, a = posAt(s);
+        samples.push({ clock: e.c0 + (i + 0.5) * dur / n, lat: a.ll[0], lon: a.ll[1] });
       }
-      w = WX.stageConditions(fc, samples, c.tas);
+      const mid = tl.segHpa[Math.min(tl.segHpa.length - 1, idxAt((e.s0 + e.s1) / 2))] || fc.levels[0];
+      w = WX.stageConditions(fc, samples, fc.levels.includes(mid) ? mid : fc.levels[0]);
     }
     return { gs, tail: gs - c.tas, w, dkm };
   });
 
   // carte
   routeLayer.clearLayers(); dayLayers = {};
-  sched.events.forEach((e, i) => {
+  sched.events.forEach((e) => {
     const i0 = idxAt(e.s0), i1 = Math.min(nv - 1, idxAt(e.s1) + 1);
     const line = [posAt(e.s0).ll, ...LL.slice(i0 + 1, i1), posAt(e.s1).ll];
-    const col = DAY_COLORS[e.day % DAY_COLORS.length];
-    const pl = L.polyline(line, { color: col, weight: 4, opacity: 0.9 }).addTo(routeLayer);
+    const pl = L.polyline(line, { color: DAY_COLORS[e.day % DAY_COLORS.length], weight: 4, opacity: 0.9 }).addTo(routeLayer);
     pl.bindTooltip(`${e.day + 1} août · ${hhmm(e.c0)}→${hhmm(e.c1)} · ${fmtH(e.s1 - e.s0)}`);
     (dayLayers[e.day] ||= []).push(pl);
   });
-  route.forEach((k, i) => {
-    L.circleMarker([beacons[k].lat, beacons[k].lon], { radius: 10, color: '#222', weight: 2, fillOpacity: 0, interactive: false }).addTo(routeLayer);
-  });
+  route.forEach((k) => L.circleMarker([beacons[k].lat, beacons[k].lon], { radius: 10, color: '#222', weight: 2, fillOpacity: 0, interactive: false }).addTo(routeLayer));
   sched.events.forEach((e, i) => {
     if (e.kind === 'fin') return;
     const pos = posAt(e.s1), night = e.kind.startsWith('nuit');
@@ -662,58 +749,83 @@ function finalize(run, edited) {
 
   // résumé
   const late = sched.end > DEADLINE + 1e-6 || !sched.finished;
+  const altNote = run.multi ? ` · altitudes ${[...new Set(tl.segAlt)].sort((a, b) => a - b).join('/')} ft` : '';
   $('results').hidden = false;
   $('summary').innerHTML = `
     <div class="kpi">
       <div><b>${Math.round(ev.score + acquired).toLocaleString('fr-FR')}</b><span>points au total (${cats[c.cat][0]})${acquired ? ` dont ${Math.round(acquired).toLocaleString('fr-FR')} acquis` : ''}</span></div>
-      <div><b>${total.toFixed(1)} h · ${Math.round(km)} km</b><span>de vol prévus · vent : ${run.windNote}</span></div>
+      <div><b>${total.toFixed(1)} h · ${Math.round(km)} km</b><span>de vol prévus · vent : ${run.windNote}${altNote}</span></div>
       <div><b>${route.length}</b><span>balises visées · ${rows.filter((r) => !r.visee).length} au passage</span></div>
     </div>
-    <p class="${late ? 'bad' : 'good'}">Arrivée à LFJY : ${fmtClock(sched.end)} — ${late ? 'APRÈS la limite du 8 août 12h00 : réduis les heures de vol ou retire des balises.' : 'avant la limite du 8 août 12h00.'}</p>
-    <p class="note">Budget d'optimisation : ${run.budget.toFixed(1)} h${c.hours ? ' (imposé)' : ' (capacité calculée)'}${edited ? ' · itinéraire modifié à la main' : ` · scores des ${run.scores.length} recuits : ${run.scores.join(', ')}`}.
+    <p class="${late ? 'bad' : 'good'}">Arrivée à LFJY : ${fmtClock(sched.end)} (heure de Chambley) — ${late ? 'APRÈS la limite du 8 août 12h00 : réduis les heures de vol ou retire des balises.' : 'avant la limite du 8 août 12h00.'}</p>
+    <p class="note">Budget d'optimisation : ${run.budget.toFixed(1)} h${c.hours ? ' (imposé)' : ` (recalé sur le planning réel en ${run.passes || 1} passe${(run.passes || 1) > 1 ? 's' : ''})`}${edited ? ' · itinéraire modifié à la main' : ` · scores des recuits : ${run.scores.join(', ')}`}.
     Si ces scores divergent beaucoup, relance en précision « Précise ». Clique une balise sur la carte pour l'ajouter ou la retirer.</p>`;
 
-  // pastilles de jours
+  // pastilles de jours + export GPX
   const days = [...new Set(sched.events.map((e) => e.day))];
   $('daychips').innerHTML = days.map((d) => `<button class="chip" data-day="${d}" style="--c:${DAY_COLORS[d % DAY_COLORS.length]}">${d + 1} août</button>`).join('');
   $('daychips').querySelectorAll('.chip').forEach((b) => { b.onclick = () => focusDay(+b.dataset.day); });
+  $('gpxbtns').innerHTML = `<button class="mini" data-gpx="all">⬇ GPX complet</button> ` + days.map((d) => `<button class="mini" data-gpx="${d}">⬇ ${d + 1} août</button>`).join(' ');
+  $('gpxbtns').querySelectorAll('button').forEach((b) => { b.onclick = () => exportGPX(b.dataset.gpx === 'all' ? null : +b.dataset.gpx); });
   dayFocus = null;
 
   // itinéraire
   let html = '<table><tr><th>Jour</th><th>Décollage</th><th>Atterrissage</th><th class="num">Durée</th><th class="num">km</th><th>Vitesse sol</th><th>Conditions prévues</th><th>Arrêt</th></tr>';
+  let lastDay = -1;
   sched.events.forEach((e, i) => {
     const a = posAt(e.s0), b = posAt(e.s1), cd = conds[i];
     const stop = e.kind === 'fin' ? 'arrivée LFJY' : `${e.kind}${e.name ? ' — ' + e.name : ''}${e.fuel ? ' ⛽' : ''}<br><small>${nearestBeacon(b.x, b.y)}, ${b.ll[0].toFixed(2)}, ${b.ll[1].toFixed(2)}</small>`;
-    html += `<tr data-day="${e.day}"><td style="border-left:4px solid ${DAY_COLORS[e.day % DAY_COLORS.length]}">${e.day + 1} août</td><td>${hhmm(e.c0)}</td><td>${hhmm(e.c1)}</td><td class="num">${fmtH(e.s1 - e.s0)}</td><td class="num">${Math.round(b.d - a.d)}</td>` +
-      `<td>${Math.round(cd.gs)} km/h<br><small class="${cd.tail >= 0 ? 'good' : 'warn'}">${cd.tail >= 0 ? 'vent arrière' : 'vent de face'} ${Math.abs(Math.round(cd.tail))}</small></td><td>${condCell(cd.w, c)}</td><td>${stop}</td></tr>`;
+    const sun = e.day !== lastDay ? (() => { const t = SUN.times(a.ll[0], a.ll[1], c.d1, e.day); return `<span class="sun">☀ ${hhmm(e.day * 24 + t.rise)}–${hhmm(e.day * 24 + t.set)}</span>`; })() : '';
+    lastDay = e.day;
+    const alt = tl.segAlt[Math.min(tl.segAlt.length - 1, idxAt((e.s0 + e.s1) / 2))];
+    html += `<tr data-day="${e.day}"><td style="border-left:4px solid ${DAY_COLORS[e.day % DAY_COLORS.length]}">${e.day + 1} août${sun}</td><td>${hhmm(e.c0)}${localNote(e.c0, a.ll[0], a.ll[1])}</td><td>${hhmm(e.c1)}${localNote(e.c1, b.ll[0], b.ll[1])}</td><td class="num">${fmtH(e.s1 - e.s0)}</td><td class="num">${Math.round(b.d - a.d)}</td>` +
+      `<td>${Math.round(cd.gs)} km/h<br><small class="${cd.tail >= 0 ? 'good' : 'warn'}">${cd.tail >= 0 ? 'vent arrière' : 'vent de face'} ${Math.abs(Math.round(cd.tail))}</small>${run.multi ? `<small class="sun">${alt} ft</small>` : ''}</td><td>${condCell(cd.w, c)}</td><td>${stop}</td></tr>`;
   });
-  $('itin').innerHTML = html + '</table>' + `<p class="note">${fc ? '' : 'Conditions détaillées : charge les prévisions (section 2). '}Les arrêts sont des zones conseillées, à confirmer sur place (terrain, carburant, météo). Heure locale supposée UTC+2 partout.</p>`;
+  $('itin').innerHTML = html + '</table>' + `<p class="note">${fc ? '' : 'Conditions détaillées : charge les prévisions (section 2). '}Heures données à l'heure de Chambley (UTC+2), avec l'heure locale en gris si elle diffère. ☀ lever–coucher du soleil au lieu de départ du jour. Les arrêts sont des zones conseillées, à confirmer sur place.</p>`;
   $('itin').querySelectorAll('tr[data-day]').forEach((tr) => { tr.onclick = () => focusDay(+tr.dataset.day); });
 
   fuelPlan(sched, c);
 
-  // balises du parcours (avec retrait)
   let bh = '<table><tr><th>#</th><th>Balise</th><th>Passage</th><th class="num">%</th><th class="num">Points</th><th></th></tr>';
   route.forEach((k, i) => {
     const r = rows.find((x) => x.k === k);
-    const s = cumT[wpIdx[i + 1]];
-    bh += `<tr><td>${i + 1}</td><td>${beacons[k].id}</td><td>${fmtClock(clockAt(s))}</td><td class="num">${r ? Math.round(r.p * 100) : ''}</td><td class="num">${r ? Math.round(r.pts) : ''}</td><td><button class="mini" onclick="editRoute('del',${k})">retirer</button></td></tr>`;
+    bh += `<tr><td>${i + 1}</td><td>${beacons[k].id}</td><td>${fmtClock(clockAt(cumT[wpIdx[i + 1]]))}</td><td class="num">${r ? Math.round(r.p * 100) : ''}</td><td class="num">${r ? Math.round(r.pts) : ''}</td><td><button class="mini" onclick="editRoute('del',${k})">retirer</button></td></tr>`;
   });
   for (const r of rows.filter((x) => !x.visee).sort((a, b) => b.pts - a.pts)) bh += `<tr><td></td><td>${r.id}</td><td>au passage (${r.d.toFixed(1)} km)</td><td class="num">${Math.round(r.p * 100)}</td><td class="num">${Math.round(r.pts)}</td><td></td></tr>`;
   $('btable').innerHTML = bh + '</table>';
 
-  seaReport(PA, nv, prep);
-  crossings(PA, nv, c.alt);
+  seaReport(PA, nv, run.levels[0].prep);
+  crossings(PA, nv, tl.segAlt);
   if (!edited) $('results').scrollIntoView({ behavior: 'smooth' });
-  run.view = { sched, total, km };
+
+  // simulation / météo animée
+  const hpaMain = fc ? (fc.levels.includes(WX.levelFor(c.alt)) ? WX.levelFor(c.alt) : fc.levels[0]) : null;
+  run.view = {
+    tl, sched, clockAt,
+    stateAt: (t) => {
+      const evs = sched.events;
+      if (!evs.length) return null;
+      let e = evs.find((x) => t >= x.c0 - 1e-9 && t <= x.c1 + 1e-9), s, label, kind = 'vol';
+      if (e) { s = e.s0 + (t - e.c0); label = `En vol · ${e.day + 1} août`; } else {
+        const prev = [...evs].reverse().find((x) => x.c1 <= t);
+        if (!prev) { s = 0; label = 'Au sol · départ'; } else { s = prev.s1; label = `Au sol · ${prev.kind === 'fin' ? 'arrivée' : prev.kind}`; }
+        kind = 'sol';
+      }
+      const p = posAt(s), q = posAt(Math.min(total, s + 0.03)), i = Math.min(tl.segAlt.length - 1, idxAt(s));
+      const hdg = (Math.atan2(q.x - p.x, q.y - p.y) * 180 / Math.PI + 360) % 360;
+      const alt = tl.segAlt[i], h = tl.segHpa[i];
+      if (kind === 'vol') label += ` · ${Math.round(c.tas)} km/h air`;
+      return { ll: p.ll, hdg: hdg - 45, label, alt, hpa: fc && h && fc.levels.includes(h) ? h : hpaMain };
+    },
+  };
+  VIZ.setRange(Math.floor(sched.events[0].c0) - 1, Math.ceil(sched.end) + 1, fc, hpaMain);
 }
 
 function condCell(w, c) {
   if (!w) return '<small>—</small>';
   const dots = '●'.repeat(w.turb) + '○'.repeat(4 - w.turb);
-  const bad = w.gust > c.gmax || w.storm;
   return `<small>vent ${Math.round(w.wmax)} km/h en route<br>rafales sol ${Math.round(w.gust)}${w.gust > c.gmax ? ' ⚠' : ''}<br>turbulence <span class="${w.turb >= 3 ? 'bad' : w.turb >= 2 ? 'warn' : ''}">${dots}</span>` +
-    `${w.storm ? '<br><b class="bad">orage possible</b>' : ''}${w.rain > 0.3 ? `<br>pluie ${w.rain.toFixed(1)} mm/h` : ''}${bad ? '' : ''}</small>`;
+    `${w.storm ? '<br><b class="bad">orage possible</b>' : ''}${w.rain > 0.3 ? `<br>pluie ${w.rain.toFixed(1)} mm/h` : ''}</small>`;
 }
 
 function focusDay(d) {
@@ -723,6 +835,50 @@ function focusDay(d) {
   }
   document.querySelectorAll('#daychips .chip').forEach((b) => b.classList.toggle('on', dayFocus !== null && +b.dataset.day === dayFocus));
   if (dayFocus !== null && dayLayers[dayFocus]) map.fitBounds(L.featureGroup(dayLayers[dayFocus]).getBounds().pad(0.3));
+}
+
+// ---------- export GPX (waypoints, route des balises, trace prévue horodatée) ----------
+function exportGPX(day) {
+  const run = lastRun;
+  if (!run || !run.view) return;
+  const { tl, sched, clockAt } = run.view, c = run.c;
+  const iso = (clk) => new Date(Date.parse(c.d1 + 'T00:00:00Z') + (clk - SUN.REF_OFFSET) * 3600000).toISOString().replace(/\.\d+Z$/, 'Z');
+  const esc = (s) => String(s).replace(/[<>&"]/g, (m) => ({ '<': '&lt;', '>': '&gt;', '&': '&amp;', '"': '&quot;' }[m]));
+  const evs = sched.events.filter((e) => day === null || e.day === day);
+  if (!evs.length) return;
+  const s0 = evs[0].s0, s1 = evs[evs.length - 1].s1;
+  let wpts = '', rte = '', trk = '';
+  const route = run.best.route;
+  route.forEach((k, i) => {
+    const s = tl.cumT[tl.wpIdx[i + 1]];
+    if (s < s0 - 1e-6 || s > s1 + 1e-6) return;
+    const b = beacons[k];
+    const d = `${b.id} · ${catValue(b).toLocaleString('fr-FR')} pts max · passage prévu ${fmtClock(clockAt(s))} (heure de Chambley)`;
+    wpts += `<wpt lat="${b.lat}" lon="${b.lon}"><time>${iso(clockAt(s))}</time><name>${esc(b.id)}</name><desc>${esc(d)}</desc><sym>Flag, Blue</sym></wpt>\n`;
+    rte += `<rtept lat="${b.lat}" lon="${b.lon}"><name>${esc(b.id)}</name></rtept>\n`;
+  });
+  evs.forEach((e, i) => {
+    if (e.kind === 'fin') return;
+    const p = tl.posAt(e.s1), nx = evs[i + 1];
+    wpts += `<wpt lat="${p.ll[0].toFixed(5)}" lon="${p.ll[1].toFixed(5)}"><time>${iso(e.c1)}</time><name>${esc(`${e.day + 1}/08 ${e.kind}${e.name ? ' ' + e.name : ''}`)}</name>` +
+      `<desc>${esc(`Zone de pause/arrêt conseillée (à confirmer). Atterrissage ${hhmm(e.c1)}${nx ? `, décollage ${hhmm(nx.c0)}` : ''} heure de Chambley.`)}</desc><sym>Airport</sym></wpt>\n`;
+  });
+  trk = '<trk><name>Trace prévue UAC</name>\n';
+  for (const e of evs) {
+    trk += '<trkseg>\n';
+    const i0 = tl.idxAt(e.s0), i1 = Math.min(tl.nv - 1, tl.idxAt(e.s1) + 1);
+    const pt = (ll, clk) => `<trkpt lat="${ll[0].toFixed(5)}" lon="${ll[1].toFixed(5)}"><time>${iso(clk)}</time></trkpt>\n`;
+    trk += pt(tl.posAt(e.s0).ll, e.c0);
+    for (let i = i0 + 1; i < i1; i++) { const ll = GEO.inv(tl.PA[2 * i], tl.PA[2 * i + 1]); trk += pt(ll, e.c0 + (tl.cumT[i] - e.s0)); }
+    trk += pt(tl.posAt(e.s1).ll, e.c1);
+    trk += '</trkseg>\n';
+  }
+  trk += '</trk>\n';
+  const gpx = `<?xml version="1.0" encoding="UTF-8"?>\n<gpx version="1.1" creator="UAC Planner" xmlns="http://www.topografix.com/GPX/1/1">\n<metadata><name>UAC ${day === null ? 'parcours complet' : `${day + 1} août`}</name></metadata>\n${wpts}<rte><name>Balises</name>\n${rte}</rte>\n${trk}</gpx>\n`;
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(new Blob([gpx], { type: 'application/gpx+xml' }));
+  a.download = day === null ? 'uac-parcours.gpx' : `uac-${day + 1}-aout.gpx`;
+  document.body.appendChild(a); a.click(); a.remove();
 }
 
 // ---------- carburant ----------
@@ -776,13 +932,14 @@ function seaReport(PA, nv, prep) {
     : '<p class="note">Aucune traversée maritime de plus de 10 km.</p>';
 }
 
-function crossings(PA, nv, alt) {
+function crossings(PA, nv, segAlt) {
+  const alts = [...new Set(segAlt)];
   const act = [];
   let minx = 1e9, maxx = -1e9, miny = 1e9, maxy = -1e9;
   for (let i = 0; i < nv; i++) { minx = Math.min(minx, PA[2 * i]); maxx = Math.max(maxx, PA[2 * i]); miny = Math.min(miny, PA[2 * i + 1]); maxy = Math.max(maxy, PA[2 * i + 1]); }
   for (const z of zones) {
     const s = stateOf(z);
-    if (s < 1 || !activeZone(z, alt)) continue;
+    if (s < 1 || !alts.some((a) => activeZone(z, a))) continue;
     const n = z.r.length / 2, xs = new Float64Array(n), ys = new Float64Array(n);
     let a = 1e9, b = -1e9, c = 1e9, d = -1e9;
     for (let k = 0; k < n; k++) {
@@ -799,6 +956,7 @@ function crossings(PA, nv, alt) {
       const x = PA[2 * i] + dx * (q + 0.5) / ns, y = PA[2 * i + 1] + dy * (q + 0.5) / ns;
       for (const A of act) {
         if (x < A.a || x > A.b || y < A.c || y > A.d) continue;
+        if (!activeZone(A.z, segAlt[Math.min(segAlt.length - 1, i)])) continue;
         let inside = false;
         for (let k = 0, p = A.xs.length - 1; k < A.xs.length; p = k++) {
           if ((A.ys[k] > y) !== (A.ys[p] > y) && x < (A.xs[p] - A.xs[k]) * (y - A.ys[k]) / (A.ys[p] - A.ys[k]) + A.xs[k]) inside = !inside;
@@ -830,6 +988,7 @@ function crossings(PA, nv, alt) {
   bindSettings();
   buildInventory();
   initMap();
+  VIZ.init(map, { stateAt: (t) => (lastRun && lastRun.view ? lastRun.view.stateAt(t) : null) });
   savePauses();
   updateCapacity();
   drawZones();
