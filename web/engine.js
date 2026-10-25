@@ -236,8 +236,8 @@ function dijk(m) {
 
 // ---------- 3. recuit simulé ----------
 function sa(m) {
-  const { nb, M, T, val, budget, iters, seed } = m;
-  const nn = nb + 1, HOME = nb;
+  const { nb, nn, M, T, val, budget, iters, seed, bank } = m;
+  const START = m.startNode, END = m.endNode;
   let rs = seed >>> 0 || 1;
   const rnd = () => { rs ^= rs << 13; rs >>>= 0; rs ^= rs >>> 17; rs ^= rs << 5; rs >>>= 0; return rs / 4294967296; };
   const ri = (n) => Math.floor(rnd() * n);
@@ -245,9 +245,9 @@ function sa(m) {
   let lastT = 0;
   function score(route) {
     dm.fill(1e9);
-    let t = 0, prev = HOME;
+    let t = 0, prev = START;
     for (let q = 0; q <= route.length; q++) {
-      const n = q < route.length ? route[q] : HOME;
+      const n = q < route.length ? route[q] : END;
       t += T[prev * nn + n];
       const base = (prev * nn + n) * nb;
       for (let k = 0; k < nb; k++) { const d = M[base + k]; if (d < dm[k]) dm[k] = d; }
@@ -260,7 +260,8 @@ function sa(m) {
     for (let k = 0; k < nb; k++) {
       let p = GEO.tierPct(dm[k]);
       if (!wp[k] && p > 0.65) p = 0.65;
-      s += p * val[k];
+      p -= bank[k];                      // points déjà acquis par la trace
+      if (p > 0) s += p * val[k];
     }
     for (const c of route) wp[c] = 0;
     return s;
@@ -273,7 +274,7 @@ function sa(m) {
     const r = rnd();
     if (r < 0.3 || !nw.length) {
       const c = ri(nb);
-      if (nw.includes(c)) continue;
+      if (nw.includes(c) || (m.exclude && m.exclude[c])) continue;
       nw.splice(ri(nw.length + 1), 0, c);
     } else if (r < 0.45) nw.splice(ri(nw.length), 1);
     else if (r < 0.6 && nw.length > 1) { const i = ri(nw.length), j = ri(nw.length); const t = nw[i]; nw[i] = nw[j]; nw[j] = t; }

@@ -14,16 +14,43 @@
     <p class="sub">Ultimate Air Challenge · planification de parcours pendulaire</p>
 
     <details open>
-      <summary>1 · Machine et règlement</summary>
+      <summary>0 · Mission</summary>
+      <div class="grid2">
+        <label>Mode<select id="mode"><option value="full">Départ de course (Chambley)</option><option value="replan">Replanification en cours de course</option></select></label>
+        <label>Date du jour J1<input id="d1" type="date" value="2027-08-01"></label>
+      </div>
+      <div id="replanbox" hidden>
+        <div class="grid2">
+          <label>Jour (1 = J1)<input id="nowday" type="number" value="2" min="1" max="8"></label>
+          <label>Heure locale<input id="nowtime" type="time" value="06:30"></label>
+          <label>Latitude<input id="nowlat" type="number" step="0.001" placeholder="48.9"></label>
+          <label>Longitude<input id="nowlon" type="number" step="0.001" placeholder="5.8"></label>
+        </div>
+        <button id="pickpos" class="sec">Choisir la position sur la carte</button>
+        <label class="file">Importer ma trace (GPX ou CSV lat,lon,heure)<input id="trace" type="file" accept=".gpx,.csv,.txt"></label>
+        <div id="traceinfo" class="note"></div>
+      </div>
+    </details>
+
+    <details open>
+      <summary>1 · Machine, journée, carburant</summary>
       <div class="grid2">
         <label>Catégorie (multiplicateur)<select id="cat"></select></label>
         <label>Vitesse air (km/h)<input id="tas" type="number" value="100" min="40" max="200"></label>
         <label>Altitude de croisière (ft)<input id="alt" type="number" value="4500" min="500" max="19000" step="500"></label>
+        <label>Profil de journée<select id="profil">
+          <option value="prudent">Prudent : 2 vols, pas de vol 11h–16h</option>
+          <option value="intensif">Intensif : 3 cycles de 4 h dans la journée</option>
+          <option value="libre">Libre (réglages manuels)</option></select></label>
         <label>Max heures de vol / jour<input id="maxday" type="number" value="8" min="2" max="14" step="0.5"></label>
+        <label>Durée max d'un vol (h)<input id="pausegap" type="number" value="3.75" min="1.5" max="4" step="0.25"></label>
         <label class="chk"><input id="midday" type="checkbox" checked> Pas de vol de 11h à 16h (turbulences)</label>
+        <label>Découpage<select id="cutmode"><option value="full">Vols pleins (4 h puis pause)</option><option value="balanced">Vols équilibrés dans la fenêtre</option></select></label>
         <label>Heures de vol totales<input id="hours" type="number" placeholder="auto" min="5" max="120" step="0.5"></label>
-        <label>Pause conseillée tous les (h)<input id="pausegap" type="number" value="3" min="1.5" max="4" step="0.25"></label>
-        <label>Mer : distance max à la côte (km)<input id="seamax" type="number" value="30" min="5" max="300" step="5"></label>
+        <label>Mer : distance max à la côte (km)<input id="seamax" type="number" value="500" min="5" max="1000" step="5"></label>
+        <label>Consommation (L/h)<input id="conso" type="number" value="12" min="4" max="40" step="0.5"></label>
+        <label>Capacité totale (L)<input id="tank" type="number" value="90" min="20" max="400" step="5"></label>
+        <label>Réserve à l'arrivée (h)<input id="reserve" type="number" value="0.5" min="0" max="2" step="0.25"></label>
       </div>
       <p id="capinfo" class="note"></p>
     </details>
@@ -31,22 +58,25 @@
     <details open>
       <summary>2 · Météo</summary>
       <div class="grid2">
-        <label>Source<select id="wsrc"><option value="clim">Climatologie 1–8 août (NASA POWER)</option><option value="none">Sans vent</option></select></label>
-        <label>Facteur vent altitude<input id="wfac" type="number" value="1.5" min="0.5" max="3" step="0.1"></label>
+        <label>Source du vent<select id="wsrc"><option value="clim">Climatologie 1–8 août (NASA POWER)</option><option value="fc">Prévisions Open-Meteo</option><option value="none">Sans vent</option></select></label>
+        <label>Facteur vent altitude (climatologie)<input id="wfac" type="number" value="1.5" min="0.5" max="3" step="0.1"></label>
+        <label>Vent sol max (km/h)<input id="gmax" type="number" value="30" min="10" max="60"></label>
+        <label>Jours de prévision lissés<input id="fcdays" type="number" value="3" min="1" max="8"></label>
       </div>
-      <p class="note">Le vent climatologique est un vent moyen à 50 m ; le facteur le ramène à l'altitude de croisière (hypothèse à valider). Les prévisions réelles s'ajouteront à l'approche de la course.</p>
+      <button id="loadfc" class="sec">Charger les prévisions</button>
+      <p id="fcinfo" class="note">Prévisions disponibles jusqu'à 16 jours : avant cela, la climatologie reste utilisée.</p>
     </details>
 
     <details open>
       <summary>3 · Espaces aériens (inventaire)</summary>
-      <p class="note">Choisis le traitement de chaque type de zone : <b>Ignorer</b>, <b>Signaler</b> (listé dans le résultat), <b>Éviter</b> (détour jusqu'à ×5), <b>Interdire</b> (détour jusqu'à ×25). Une zone n'est prise en compte que si l'altitude de croisière est entre son plancher et son plafond.</p>
+      <p class="note">Traitement de chaque type : <b>Ignorer</b>, <b>Signaler</b> (listé dans le résultat), <b>Éviter</b> (détour jusqu'à ×5), <b>Interdire</b> (détour jusqu'à ×25). Une zone n'est prise en compte que si l'altitude de croisière est entre son plancher et son plafond.</p>
       <div id="inventory"></div>
       <label class="chk"><input id="showzones" type="checkbox" checked> Afficher sur la carte les zones évitées/interdites</label>
     </details>
 
     <details>
       <summary>4 · Points de pause personnels</summary>
-      <p class="note">Terrain d'un ami, campo volo, aérodrome connu : le moteur y calera les pauses quand ils sont à moins de 30 km du parcours, 1h30 à 3h30 après la pause précédente.</p>
+      <p class="note">Terrain d'un ami, campo volo, aérodrome connu. Le moteur y cale les pauses à moins de 30 km du parcours. Coche « carburant » si on y trouve de l'essence.</p>
       <button id="addpause" class="sec">+ Ajouter un point (clic sur la carte)</button>
       <ul id="pauselist"></ul>
     </details>
@@ -65,20 +95,24 @@
     <section id="results" hidden>
       <h2>Résultat</h2>
       <div id="summary"></div>
+      <div id="daychips"></div>
       <h3>Itinéraire jour par jour</h3>
-      <div id="itin"></div>
-      <h3>Balises</h3>
-      <div id="btable"></div>
+      <div id="itin" class="scroll"></div>
+      <h3>Carburant par jour</h3>
+      <div id="fuel"></div>
+      <h3>Balises du parcours</h3>
+      <div id="btable" class="scroll"></div>
       <h3>Traversées maritimes</h3>
       <div id="sea"></div>
       <h3>Espaces aériens traversés</h3>
-      <div id="crossings"></div>
+      <div id="crossings" class="scroll"></div>
     </section>
   </aside>
   <main id="map"></main>
 </div>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="geo.js"></script>
+<script src="weather.js"></script>
 <script src="app.js"></script>
 </body>
 </html>
