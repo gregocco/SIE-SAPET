@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>UAC Planner</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+  <aside id="panel">
+    <h1>UAC Planner</h1>
+    <p class="sub">Ultimate Air Challenge · planification de parcours pendulaire</p>
+
+    <details open>
+      <summary>1 · Machine et règlement</summary>
+      <div class="grid2">
+        <label>Catégorie (multiplicateur)<select id="cat"></select></label>
+        <label>Vitesse air (km/h)<input id="tas" type="number" value="100" min="40" max="200"></label>
+        <label>Altitude de croisière (ft)<input id="alt" type="number" value="4500" min="500" max="19000" step="500"></label>
+        <label>Max heures de vol / jour<input id="maxday" type="number" value="8" min="2" max="14" step="0.5"></label>
+        <label class="chk"><input id="midday" type="checkbox" checked> Pas de vol de 11h à 16h (turbulences)</label>
+        <label>Heures de vol totales<input id="hours" type="number" placeholder="auto" min="5" max="120" step="0.5"></label>
+        <label>Pause conseillée tous les (h)<input id="pausegap" type="number" value="3" min="1.5" max="4" step="0.25"></label>
+        <label>Mer : distance max à la côte (km)<input id="seamax" type="number" value="30" min="5" max="300" step="5"></label>
+      </div>
+      <p id="capinfo" class="note"></p>
+    </details>
+
+    <details open>
+      <summary>2 · Météo</summary>
+      <div class="grid2">
+        <label>Source<select id="wsrc"><option value="clim">Climatologie 1–8 août (NASA POWER)</option><option value="none">Sans vent</option></select></label>
+        <label>Facteur vent altitude<input id="wfac" type="number" value="1.5" min="0.5" max="3" step="0.1"></label>
+      </div>
+      <p class="note">Le vent climatologique est un vent moyen à 50 m ; le facteur le ramène à l'altitude de croisière (hypothèse à valider). Les prévisions réelles s'ajouteront à l'approche de la course.</p>
+    </details>
+
+    <details open>
+      <summary>3 · Espaces aériens (inventaire)</summary>
+      <p class="note">Choisis le traitement de chaque type de zone : <b>Ignorer</b>, <b>Signaler</b> (listé dans le résultat), <b>Éviter</b> (détour jusqu'à ×5), <b>Interdire</b> (détour jusqu'à ×25). Une zone n'est prise en compte que si l'altitude de croisière est entre son plancher et son plafond.</p>
+      <div id="inventory"></div>
+      <label class="chk"><input id="showzones" type="checkbox" checked> Afficher sur la carte les zones évitées/interdites</label>
+    </details>
+
+    <details>
+      <summary>4 · Points de pause personnels</summary>
+      <p class="note">Terrain d'un ami, campo volo, aérodrome connu : le moteur y calera les pauses quand ils sont à moins de 30 km du parcours, 1h30 à 3h30 après la pause précédente.</p>
+      <button id="addpause" class="sec">+ Ajouter un point (clic sur la carte)</button>
+      <ul id="pauselist"></ul>
+    </details>
+
+    <details>
+      <summary>5 · Calcul</summary>
+      <div class="grid2">
+        <label>Précision<select id="prec"><option value="400000">Rapide</option><option value="1500000" selected>Normale</option><option value="5000000">Précise</option></select></label>
+        <label>Cellule de grille (km)<select id="cell"><option>8</option><option selected>10</option><option>14</option></select></label>
+      </div>
+    </details>
+
+    <button id="run">Lancer le calcul</button>
+    <div id="progress" hidden><div id="bar"></div><span id="ptext"></span></div>
+
+    <section id="results" hidden>
+      <h2>Résultat</h2>
+      <div id="summary"></div>
+      <h3>Itinéraire jour par jour</h3>
+      <div id="itin"></div>
+      <h3>Balises</h3>
+      <div id="btable"></div>
+      <h3>Traversées maritimes</h3>
+      <div id="sea"></div>
+      <h3>Espaces aériens traversés</h3>
+      <div id="crossings"></div>
+    </section>
+  </aside>
+  <main id="map"></main>
+</div>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="geo.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
