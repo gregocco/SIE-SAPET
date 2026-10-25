@@ -31,7 +31,7 @@
     bar.innerHTML = `
       <div class="vrow"><button id="vplay" title="Lecture / pause">▶</button>
         <input id="vslider" type="range" min="0" max="100" step="0.25" value="0">
-        <span id="vtime">—</span></div>
+        <span id="vtime">—</span><button id="vtoggle" title="Options">⚙</button></div>
       <div class="vrow vopts">
         <label><input id="vwind" type="checkbox" checked> Vent animé</label>
         <label>Couche <select id="vkind"><option value="rain">Pluie prévue</option><option value="cape">Convection (CAPE)</option><option value="gust">Rafales</option><option value="cloud">Nuages</option><option value="">aucune</option></select></label>
@@ -42,6 +42,7 @@
     c.appendChild(bar);
     L.DomEvent.disableClickPropagation(bar);
     L.DomEvent.disableScrollPropagation(bar);
+    $('vtoggle').onclick = () => bar.classList.toggle('open');
     $('vplay').onclick = () => (playing ? pause() : play());
     $('vslider').oninput = () => setTime(+$('vslider').value);
     $('vkind').onchange = () => { layerKind = $('vkind').value; render(true); };

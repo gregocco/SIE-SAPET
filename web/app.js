@@ -750,7 +750,7 @@ function finalize(run, edited) {
   // résumé
   const late = sched.end > DEADLINE + 1e-6 || !sched.finished;
   const altNote = run.multi ? ` · altitudes ${[...new Set(tl.segAlt)].sort((a, b) => a - b).join('/')} ft` : '';
-  $('results').hidden = false;
+  $('results').hidden = false; $('noresult').hidden = true;
   $('summary').innerHTML = `
     <div class="kpi">
       <div><b>${Math.round(ev.score + acquired).toLocaleString('fr-FR')}</b><span>points au total (${cats[c.cat][0]})${acquired ? ` dont ${Math.round(acquired).toLocaleString('fr-FR')} acquis` : ''}</span></div>
@@ -796,7 +796,7 @@ function finalize(run, edited) {
 
   seaReport(PA, nv, run.levels[0].prep);
   crossings(PA, nv, tl.segAlt);
-  if (!edited) $('results').scrollIntoView({ behavior: 'smooth' });
+  if (!edited) showTab('results');
 
   // simulation / météo animée
   const hpaMain = fc ? (fc.levels.includes(WX.levelFor(c.alt)) ? WX.levelFor(c.alt) : fc.levels[0]) : null;
@@ -979,6 +979,13 @@ function crossings(PA, nv, segAlt) {
     : '<p class="note">Aucune zone signalée ou évitée n\'est traversée.</p>';
 }
 
+// ---------- onglets, réinitialisation, mode hors ligne ----------
+function showTab(name) {
+  document.querySelectorAll('.tab').forEach((t) => t.classList.toggle('on', t.id === `tab-${name}`));
+  document.querySelectorAll('.tabbtn').forEach((b) => b.classList.toggle('on', b.dataset.tab === name));
+  const el = $(`tab-${name}`); if (el) el.scrollTop = 0;
+}
+
 // ---------- démarrage ----------
 (async function main() {
   await loadData();
@@ -999,5 +1006,8 @@ function crossings(PA, nv, segAlt) {
   $('trace').onchange = async (e) => { const f = e.target.files[0]; if (f) applyTrace(parseTrace(await f.text())); };
   for (const id of ['nowlat', 'nowlon', 'nowday', 'nowtime']) $(id).addEventListener('change', () => { showStart(); updateCapacity(); });
   $('run').onclick = compute;
+  document.querySelectorAll('.tabbtn').forEach((b) => { b.onclick = () => showTab(b.dataset.tab); });
+  $('resetui').onclick = () => { if (confirm('Réinitialiser tous les réglages (les points de pause sont conservés) ?')) { localStorage.removeItem('uac-settings'); location.reload(); } };
+  if ('serviceWorker' in navigator && location.protocol !== 'file:') navigator.serviceWorker.register('sw.js').catch(() => {});
   window.__ready = true;
 })();
