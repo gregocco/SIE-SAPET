@@ -1,0 +1,2802 @@
+[
+  {
+    "id": "UAC53",
+    "altitude_ft": 1001,
+    "latitude": 36.2438353400661,
+    "longitude": 27.5579433441162,
+    "categories": {
+      "AA": {
+        "name": "Hélicoptères / Autogires",
+        "multiplier": 1.8,
+        "max": 4066
+      },
+      "AT": {
+        "name": "Pendulaire",
+        "multiplier": 2.5,
+        "max": 5648
+      },
+      "AM": {
+        "name": "Multiaxe Aventure",
+        "multiplier": 1.0,
+        "max": 2259
+      },
+      "AX": {
+        "name": "Multiaxe Avancé",
+        "multiplier": 1.0,
+        "max": 2259
+      }
+    }
+  },
+  {
+    "id": "UAC52",
+    "altitude_ft": 1001,
+    "latitude": 36.8534911951923,
+    "longitude": 25.6727638244629,
+    "categories": {
+      "AA": {
+        "name": "Hélicoptères / Autogires",
+        "multiplier": 1.8,
+        "max": 3767
+      },
+      "AT": {
+        "name": "Pendulaire",
+        "multiplier": 2.5,
+        "max": 5233
+      },
+      "AM": {
+        "name": "Multiaxe Aventure",
+        "multiplier": 1.0,
+        "max": 2093
+      },
+      "AX": {
+        "name": "Multiaxe Avancé",
+        "multiplier": 1.0,
+        "max": 2093
+      }
+    }
+  },
+  {
+    "id": "UAC87",
+    "altitude_ft": 1004,
+    "latitude": 65.1845455516095,
+    "longitude": 21.9289436340332,
+    "categories": {
+      "AA": {
+        "name": "Hélicoptères / Autogires",
+        "multiplier": 1.8,
+        "max": 3650
+      },
+      "AT": {
+        "name": "Pendulaire",
+        "multiplier": 2.5,
+        "max": 5070
+      },
+      "AM": {
+        "name": "Multiaxe Aventure",
+        "multiplier": 1.0,
+        "max": 2028
+      },
+      "AX": {
+        "name": "Multiaxe Avancé",
+        "multiplier": 1.0,
+        "max": 2028
+      }
+    }
+  },
+  {
+    "id": "UAC51",
+    "altitude_ft": 1001,
+    "latitude": 38.7695436724885,
+    "longitude": 23.6993350982666,
+    "categories": {
+      "AA": {
+        "name": "Hélicoptères / Autogires",
+        "multiplier": 1.8,
+        "max": 3276
+      },
+      "AT": {
+        "name": "Pendulaire",
+        "multiplier": 2.5,
+        "max": 4550
+      },
+      "AM": {
+        "name": "Multiaxe Aventure",
+        "multiplier": 1.0,
+        "max": 1820
+      },
+      "AX": {
+        "name": "Multiaxe Avancé",
+        "multiplier": 1.0,
+        "max": 1820
+      }
+    }
+  },
+  {
+    "id": "UAC50",
+    "altitude_ft": 1001,
+    "latitude": 38.2931345627855,
+    "longitude": 21.4943943023682,
+    "categories": {
+      "AA": {
+        "name": "Hélicoptères / Autogires",
+        "multiplier": 1.8,
+        "max": 3109
+      },
+      "AT": {
+        "name": "Pendulaire",
+        "multiplier": 2.5,
+        "max": 4318
+      },
+      "AM": {
+        "name": "Multiaxe Aventure",
+        "multiplier": 1.0,
+        "max": 1727
+      },
+      "AX": {
+        "name": "Multiaxe Avancé",
+        "multiplier": 1.0,
+        "max": 1727
+      }
+    }
+  },
+  {
+    "id": "UAC30",
+    "altitude_ft": 1483,
+    "latitude": 37.873330645829,
+    "longitude": -8.62651634216309,
+    "categories": {
+      "AA": {
+        "name": "Hélicoptères / Autogires",
+        "multiplier": 1.8,
+        "max": 3060
+      },
+      "AT": {
+        "name": "Pendulaire",
+        "multiplier": 2.5,
+        "max": 4250
+      },
+      "AM": {
+        "name": "Multiaxe Aventure",
+        "multiplier": 1.0,
+        "max": 1700
+      },
+      "AX": {
+        "name": "Multiaxe Avancé",
+        "multiplier": 1.0,
+        "max": 1700
+      }
+    }
+  },
+  {
+    "id": "UAC54",
+    "altitude_ft": 1040,
+    "latitude": 41.0308178160992,
+    "longitude": 23.5410346984863,
+    "categories": {
+      "AA": {
+        "name": "Hélicoptères / Autogires",
+        "multiplier": 1.8,
+        "max": 2956
+      },
+      "AT": {
+        "name": "Pendulaire",
+        "multiplier": 2.5,
+        "max": 4105
+      },
+      "AM": {
+        "name": "Multiaxe Aventure",
+        "multiplier": 1.0,
+        "max": 1642
+      },
+      "AX": {
+        "name": "Multiaxe Avancé",
+        "multiplier": 1.0,
+        "max": 1642
+      }
+    }
+  },
+  {
+    "id": "UAC89",
+    "altitude_ft": 1007,
+    "latitude": 63.6794518962947,
+    "longitude": 8.27811717987061,
+    "categories": {
+      "AA": {
+        "name": "Hélicoptères / Autogires",
+        "multiplier": 1.8,
+        "max": 2945
+      },
+      "AT": {
+        "name": "Pendulaire",
+        "multiplier": 2.5,
+        "max": 4090
+      },
+      "AM": {
+        "name": "Multiaxe Aventure",
+        "multiplier": 1.0,
+        "max": 1636
+      },
+      "AX": {
+        "name": "Multiaxe Avancé",
+        "multiplier": 1.0,
+        "max": 1636
+      }
+    }
+  },
+  {
+    "id": "UAC55",
+    "altitude_ft": 1765,
+    "latitude": 42.3310023812191,
+    "longitude": 24.6157684326172,
+    "categories": {
+      "AA": {
+        "name": "Hélicoptères / Autogires",
+        "multiplier": 1.8,
+        "max": 2932
+      },
+      "AT": {
+        "name": "Pendulaire",
+        "multiplier": 2.5,
+        "max": 4073
+      },
+      "AM": {
+        "name": "Multiaxe Aventure",
+        "multiplier": 1.0,
+        "max": 1629
+      },
+      "AX": {
+        "name": "Multiaxe Avancé",
+        "multiplier": 1.0,
+        "max": 1629
+      }
+    }
+  },
+  {
+    "id": "UAC49",
+    "altitude_ft": 1329,
+    "latitude": 39.3477806574326,
+    "longitude": 20.4239730834961,
+    "categories": {
+      "AA": {
+        "name": "Hélicoptères / Autogires",
+        "multiplier": 1.8,
+        "max": 2839
+      },
+      "AT": {
+        "name": "Pendulaire",
+        "multiplier": 2.5,
+        "max": 3943
+      },
+      "AM": {
+        "name": "Multiaxe Aventure",
+        "multiplier": 1.0,
+        "max": 1577
+      },
+      "AX": {
+        "name": "Multiaxe Avancé",
+        "multiplier": 1.0,
+        "max": 1577
+      }
+    }
+  },
+  {
+    "id": "UAC46",
+    "altitude_ft": 1001,
+    "latitude": 36.7503963198601,
+    "longitude": 14.6443204879761,
+    "categories": {
+      "AA": {
+        "name": "Hélicoptères / Autogires",
+        "multiplier": 1.8,
+        "max": 2768
+      },
+      "AT": {
+        "name": "Pendulaire",
+        "multiplier": 2.5,
+        "max": 3845
+      },
+      "AM": {
+        "name": "Multiaxe Aventure",
+        "multiplier": 1.0,
+        "max": 1538
+      },
+      "AX": {
+        "name": "Multiaxe Avancé",
+        "multiplier": 1.0,
+        "max": 1538
+      }
+    }
+  },
+  {
+    "id": "UAC86",
+    "altitude_ft": 1001,
+    "latitude": 61.1735511124654,
+    "longitude": 17.3256206512451,
+    "categories": {
+      "AA": {
+        "name": "Hélicoptères / Autogires",
+        "multiplier": 1.8,
+        "max": 2754
+      },
+      "AT": {
+        "name": "Pendulaire",
+        "multiplier": 2.5,
+        "max": 3825
+      },
+      "AM": {
+        "name": "Multiaxe Aventure",
+        "multiplier": 1.0,
+        "max": 1530
+      },
+      "AX": {
+        "name": "Multiaxe Avancé",
+        "multiplier": 1.0,
+        "max": 1530
+      }
+    }
+  },
+  {
+    "id": "UAC60",
+    "altitude_ft": 1585,
+    "latitude": 44.4548257979724,
+    "longitude": 24.8684692382812,
+    "categories": {
+      "AA": {
+        "name": "Hélicoptères / Autogires",
+        "multiplier": 1.8,
+        "max": 2752
+      },
+      "AT": {
+        "name": "Pendulaire",
+        "multiplier": 2.5,
+        "max": 3823
+      },
+      "AM": {
+        "name": "Multiaxe Aventure",
+        "multiplier": 1.0,
+        "max": 1529
+      },
+      "AX": {
+        "name": "Multiaxe Avancé",
+        "multiplier": 1.0,
+        "max": 1529
+      }
+    }
+  },
+  {
+    "id": "UAC100",
+    "altitude_ft": 1001,
+    "latitude": 40.1861453969166,
+    "longitude": -8.92325210571289,
+    "categories": {
+      "AA": {
+        "name": "Hélicoptères / Autogires",
+        "multiplier": 1.8,
+        "max": 2745
+      },
+      "AT": {
+        "name": "Pendulaire",
+        "multiplier": 2.5,
+        "max": 3813
+      },
+      "AM": {
+        "name": "Multiaxe Aventure",
+        "multiplier": 1.0,
+        "max": 1525
+      },
+      "AX": {
+        "name": "Multiaxe Avancé",
+        "multiplier": 1.0,
+        "max": 1525
+      }
+    }
+  },
+  {
+    "id": "UAC56",
+    "altitude_ft": 3671,
+    "latitude": 40.7709325332748,
+    "longitude": 20.793794631958,
+    "categories": {
+      "AA": {
+        "name": "Hélicoptères / Autogires",
+        "multiplier": 1.8,
+        "max": 2677
+      },
+      "AT": {
+        "name": "Pendulaire",
+        "multiplier": 2.5,
+        "max": 3718
+      },
+      "AM": {
+        "name": "Multiaxe Aventure",
+        "multiplier": 1.0,
+        "max": 1487
+      },
+      "AX": {
+        "name": "Multiaxe Avancé",
+        "multiplier": 1.0,
+        "max": 1487
+      }
+    }
+  },
+  {
+    "id": "UAC29",
+    "altitude_ft": 2310,
+    "latitude": 39.356615507124,
+    "longitude": -6.26317119598389,
+    "categories": {
+      "AA": {
+        "name": "Hélicoptères / Autogires",
+        "multiplier": 1.8,
+        "max": 2597
+      },
+      "AT": {
+        "name": "Pendulaire",
+        "multiplier": 2.5,
+        "max": 3608
+      },
+      "AM": {
+        "name": "Multiaxe Aventure",
+        "multiplier": 1.0,
+        "max": 1443
+      },
+      "AX": {
+        "name": "Multiaxe Avancé",
+        "multiplier": 1.0,
+        "max": 1443
+      }
+    }
+  },
+  {
+    "id": "UAC48",
+    "altitude_ft": 1168,
+    "latitude": 39.8075036149932,
+    "longitude": 18.3568744659424,
+    "categories": {
+      "AA": {
+        "name": "Hélicoptères / Autogires",
+        "multiplier": 1.8,
+        "max": 2560
+      },
+      "AT": {
+        "name": "Pendulaire",
+        "multiplier": 2.5,
+        "max": 3555
+      },
+      "AM": {
+        "name": "Multiaxe Aventure",
+        "multiplier": 1.0,
+        "max": 1422
+      },
+      "AX": {
+        "name": "Multiaxe Avancé",
+        "multiplier": 1.0,
+        "max": 1422
+      }
+    }
+  },
+  {
+    "id": "UAC45",
+    "altitude_ft": 1001,
+    "latitude": 38.0438429033638,
+    "longitude": 14.4323453903198,
+    "categories": {
+      "AA": {
+        "name": "Hélicoptères / Autogires",
+        "multiplier": 1.8,
+        "max": 2520
+      },
+      "AT": {
+        "name": "Pendulaire",
+        "multiplier": 2.5,
+        "max": 3500
+      },
+      "AM": {
+        "name": "Multiaxe Aventure",
+        "multiplier": 1.0,
+        "max": 1400
+      },
+      "AX": {
+        "name": "Multiaxe Avancé",
+        "multiplier": 1.0,
+        "max": 1400
+      }
+    }
+  },
+  {
+    "id": "UAC47",
+    "altitude_ft": 1004,
+    "latitude": 39.401810868862,
+    "longitude": 17.1481266021729,
+    "categories": {
+      "AA": {
+        "name": "Hélicoptères / Autogires",
+        "multiplier": 1.8,
+        "max": 2509
+      },
+      "AT": {
+        "name": "Pendulaire",
+        "multiplier": 2.5,
+        "max": 3485
+      },
+      "AM": {
+        "name": "Multiaxe Aventure",
+        "multiplier": 1.0,
+        "max": 1394
+      },
+      "AX": {
+        "name": "Multiaxe Avancé",
+        "multiplier": 1.0,
+        "max": 1394
+      }
+    }
+  },
+  {
+    "id": "UAC28",
+    "altitude_ft": 3323,
+    "latitude": 38.6791358735396,
+    "longitude": -3.56262183189392,
+    "categories": {
+      "AA": {
+        "name": "Hélicoptères / Autogires",
+        "multiplier": 1.8,
+        "max": 2475
+      },
+      "AT": {
+        "name": "Pendulaire",
+        "multiplier": 2.5,
+        "max": 3438
+      },
+      "AM": {
+        "name": "Multiaxe Aventure",
+        "multiplier": 1.0,
+        "max": 1375
+      },
+      "AX": {
+        "name": "Multiaxe Avancé",
+        "multiplier": 1.0,
+        "max": 1375
+      }
+    }
+  },
+  {
+    "id": "UAC57",
+    "altitude_ft": 1024,
+    "latitude": 42.1878655218777,
+    "longitude": 19.4298820495605,
+    "categories": {
+      "AA": {
+        "name": "Hélicoptères / Autogires",
+        "multiplier": 1.8,
+        "max": 2335
+      },
+      "AT": {
+        "name": "Pendulaire",
+        "multiplier": 2.5,
+        "max": 3243
+      },
+      "AM": {
+        "name": "Multiaxe Aventure",
+        "multiplier": 1.0,
+        "max": 1297
+      },
+      "AX": {
+        "name": "Multiaxe Avancé",
+        "multiplier": 1.0,
+        "max": 1297
+      }
+    }
+  },
+  {
+    "id": "UAC41",
+    "altitude_ft": 1417,
+    "latitude": 58.2553801103341,
+    "longitude": -5.38433837890625,
+    "categories": {
+      "AA": {
+        "name": "Hélicoptères / Autogires",
+        "multiplier": 1.8,
+        "max": 2273
+      },
+      "AT": {
+        "name": "Pendulaire",
+        "multiplier": 2.5,
+        "max": 3158
+      },
+      "AM": {
+        "name": "Multiaxe Aventure",
+        "multiplier": 1.0,
+        "max": 1263
+      },
+      "AX": {
+        "name": "Multiaxe Avancé",
+        "multiplier": 1.0,
+        "max": 1263
+      }
+    }
+  },
+  {
+    "id": "UAC92",
+    "altitude_ft": 1001,
+    "latitude": 57.6062389316161,
+    "longitude": -6.63717699050903,
+    "categories": {
+      "AA": {
+        "name": "Hélicoptères / Autogires",
+        "multiplier": 1.8,
+        "max": 2270
+      },
+      "AT": {
+        "name": "Pendulaire",
+        "multiplier": 2.5,
+        "max": 3153
+      },
+      "AM": {
+        "name": "Multiaxe Aventure",
+        "multiplier": 1.0,
+        "max": 1261
+      },
+      "AX": {
+        "name": "Multiaxe Avancé",
+        "multiplier": 1.0,
+        "max": 1261
+      }
+    }
+  },
+  {
+    "id": "UAC27",
+    "altitude_ft": 3661,
+    "latitude": 39.7658633667182,
+    "longitude": -2.55986666679382,
+    "categories": {
+      "AA": {
+        "name": "Hélicoptères / Autogires",
+        "multiplier": 1.8,
+        "max": 2209
+      },
+      "AT": {
+        "name": "Pendulaire",
+        "multiplier": 2.5,
+        "max": 3068
+      },
+      "AM": {
+        "name": "Multiaxe Aventure",
+        "multiplier": 1.0,
+        "max": 1227
+      },
+      "AX": {
+        "name": "Multiaxe Avancé",
+        "multiplier": 1.0,
+        "max": 1227
+      }
+    }
+  },
+  {
+    "id": "UAC61",
+    "altitude_ft": 1342,
+    "latitude": 45.4908254761854,
+    "longitude": 21.2974891662598,
+    "categories": {
+      "AA": {
+        "name": "Hélicoptères / Autogires",
+        "multiplier": 1.8,
+        "max": 2207
+      },
+      "AT": {
+        "name": "Pendulaire",
+        "multiplier": 2.5,
+        "max": 3065
+      },
+      "AM": {
+        "name": "Multiaxe Aventure",
+        "multiplier": 1.0,
+        "max": 1226
+      },
+      "AX": {
+        "name": "Multiaxe Avancé",
+        "multiplier": 1.0,
+        "max": 1226
+      }
+    }
+  },
+  {
+    "id": "UAC31",
+    "altitude_ft": 1093,
+    "latitude": 43.5564032051165,
+    "longitude": -7.21647596359253,
+    "categories": {
+      "AA": {
+        "name": "Hélicoptères / Autogires",
+        "multiplier": 1.8,
+        "max": 2111
+      },
+      "AT": {
+        "name": "Pendulaire",
+        "multiplier": 2.5,
+        "max": 2933
+      },
+      "AM": {
+        "name": "Multiaxe Aventure",
+        "multiplier": 1.0,
+        "max": 1173
+      },
+      "AX": {
+        "name": "Multiaxe Avancé",
+        "multiplier": 1.0,
+        "max": 1173
+      }
+    }
+  },
+  {
+    "id": "UAC62",
+    "altitude_ft": 1270,
+    "latitude": 46.930950372115,
+    "longitude": 21.1719436645508,
+    "categories": {
+      "AA": {
+        "name": "Hélicoptères / Autogires",
+        "multiplier": 1.8,
+        "max": 2088
+      },
+      "AT": {
+        "name": "Pendulaire",
+        "multiplier": 2.5,
+        "max": 2900
+      },
+      "AM": {
+        "name": "Multiaxe Aventure",
+        "multiplier": 1.0,
+        "max": 1160
+      },
+      "AX": {
+        "name": "Multiaxe Avancé",
+        "multiplier": 1.0,
+        "max": 1160
+      }
+    }
+  },
+  {
+    "id": "UAC85",
+    "altitude_ft": 1004,
+    "latitude": 56.9867749248418,
+    "longitude": 16.9004974365234,
+    "categories": {
+      "AA": {
+        "name": "Hélicoptères / Autogires",
+        "multiplier": 1.8,
+        "max": 2068
+      },
+      "AT": {
+        "name": "Pendulaire",
+        "multiplier": 2.5,
+        "max": 2873
+      },
+      "AM": {
+        "name": "Multiaxe Aventure",
+        "multiplier": 1.0,
+        "max": 1149
+      },
+      "AX": {
+        "name": "Multiaxe Avancé",
+        "multiplier": 1.0,
+        "max": 1149
+      }
+    }
+  },
+  {
+    "id": "UAC91",
+    "altitude_ft": 1076,
+    "latitude": 57.1770298441725,
+    "longitude": -4.61233854293823,
+    "categories": {
+      "AA": {
+        "name": "Hélicoptères / Autogires",
+        "multiplier": 1.8,
+        "max": 2057
+      },
+      "AT": {
+        "name": "Pendulaire",
+        "multiplier": 2.5,
+        "max": 2858
+      },
+      "AM": {
+        "name": "Multiaxe Aventure",
+        "multiplier": 1.0,
+        "max": 1143
+      },
+      "AX": {
+        "name": "Multiaxe Avancé",
+        "multiplier": 1.0,
+        "max": 1143
+      }
+    }
+  },
+  {
+    "id": "UAC40",
+    "altitude_ft": 1001,
+    "latitude": 56.1369559581196,
+    "longitude": -6.14594984054565,
+    "categories": {
+      "AA": {
+        "name": "Hélicoptères / Autogires",
+        "multiplier": 1.8,
+        "max": 2036
+      },
+      "AT": {
+        "name": "Pendulaire",
+        "multiplier": 2.5,
+        "max": 2828
+      },
+      "AM": {
+        "name": "Multiaxe Aventure",
+        "multiplier": 1.0,
+        "max": 1131
+      },
+      "AX": {
+        "name": "Multiaxe Avancé",
+        "multiplier": 1.0,
+        "max": 1131
+      }
+    }
+  },
+  {
+    "id": "UAC44",
+    "altitude_ft": 1624,
+    "latitude": 41.1769531284862,
+    "longitude": 14.7367820739746,
+    "categories": {
+      "AA": {
+        "name": "Hélicoptères / Autogires",
+        "multiplier": 1.8,
+        "max": 2005
+      },
+      "AT": {
+        "name": "Pendulaire",
+        "multiplier": 2.5,
+        "max": 2785
+      },
+      "AM": {
+        "name": "Multiaxe Aventure",
+        "multiplier": 1.0,
+        "max": 1114
+      },
+      "AX": {
+        "name": "Multiaxe Avancé",
+        "multiplier": 1.0,
+        "max": 1114
+      }
+    }
+  },
+  {
+    "id": "UAC90",
+    "altitude_ft": 1001,
+    "latitude": 57.6950996927179,
+    "longitude": -2.30253076553345,
+    "categories": {
+      "AA": {
+        "name": "Hélicoptères / Autogires",
+        "multiplier": 1.8,
+        "max": 1989
+      },
+      "AT": {
+        "name": "Pendulaire",
+        "multiplier": 2.5,
+        "max": 2763
+      },
+      "AM": {
+        "name": "Multiaxe Aventure",
+        "multiplier": 1.0,
+        "max": 1105
+      },
+      "AX": {
+        "name": "Multiaxe Avancé",
+        "multiplier": 1.0,
+        "max": 1105
+      }
+    }
+  },
+  {
+    "id": "UAC93",
+    "altitude_ft": 1001,
+    "latitude": 39.3806065465837,
+    "longitude": 8.37558650970459,
+    "categories": {
+      "AA": {
+        "name": "Hélicoptères / Autogires",
+        "multiplier": 1.8,
+        "max": 1964
+      },
+      "AT": {
+        "name": "Pendulaire",
+        "multiplier": 2.5,
+        "max": 2728
+      },
+      "AM": {
+        "name": "Multiaxe Aventure",
+        "multiplier": 1.0,
+        "max": 1091
+      },
+      "AX": {
+        "name": "Multiaxe Avancé",
+        "multiplier": 1.0,
+        "max": 1091
+      }
+    }
+  },
+  {
+    "id": "UAC32",
+    "altitude_ft": 3717,
+    "latitude": 42.2912028689254,
+    "longitude": -4.3167896270752,
+    "categories": {
+      "AA": {
+        "name": "Hélicoptères / Autogires",
+        "multiplier": 1.8,
+        "max": 1958
+      },
+      "AT": {
+        "name": "Pendulaire",
+        "multiplier": 2.5,
+        "max": 2720
+      },
+      "AM": {
+        "name": "Multiaxe Aventure",
+        "multiplier": 1.0,
+        "max": 1088
+      },
+      "AX": {
+        "name": "Multiaxe Avancé",
+        "multiplier": 1.0,
+        "max": 1088
+      }
+    }
+  },
+  {
+    "id": "UAC42",
+    "altitude_ft": 1001,
+    "latitude": 55.2962006524261,
+    "longitude": -6.29112768173218,
+    "categories": {
+      "AA": {
+        "name": "Hélicoptères / Autogires",
+        "multiplier": 1.8,
+        "max": 1946
+      },
+      "AT": {
+        "name": "Pendulaire",
+        "multiplier": 2.5,
+        "max": 2703
+      },
+      "AM": {
+        "name": "Multiaxe Aventure",
+        "multiplier": 1.0,
+        "max": 1081
+      },
+      "AX": {
+        "name": "Multiaxe Avancé",
+        "multiplier": 1.0,
+        "max": 1081
+      }
+    }
+  },
+  {
+    "id": "UAC58",
+    "altitude_ft": 3848,
+    "latitude": 43.7124081408541,
+    "longitude": 17.2527923583984,
+    "categories": {
+      "AA": {
+        "name": "Hélicoptères / Autogires",
+        "multiplier": 1.8,
+        "max": 1894
+      },
+      "AT": {
+        "name": "Pendulaire",
+        "multiplier": 2.5,
+        "max": 2630
+      },
+      "AM": {
+        "name": "Multiaxe Aventure",
+        "multiplier": 1.0,
+        "max": 1052
+      },
+      "AX": {
+        "name": "Multiaxe Avancé",
+        "multiplier": 1.0,
+        "max": 1052
+      }
+    }
+  },
+  {
+    "id": "UAC26",
+    "altitude_ft": 1775,
+    "latitude": 40.6948066598804,
+    "longitude": 0.400880813598633,
+    "categories": {
+      "AA": {
+        "name": "Hélicoptères / Autogires",
+        "multiplier": 1.8,
+        "max": 1838
+      },
+      "AT": {
+        "name": "Pendulaire",
+        "multiplier": 2.5,
+        "max": 2553
+      },
+      "AM": {
+        "name": "Multiaxe Aventure",
+        "multiplier": 1.0,
+        "max": 1021
+      },
+      "AX": {
+        "name": "Multiaxe Avancé",
+        "multiplier": 1.0,
+        "max": 1021
+      }
+    }
+  },
+  {
+    "id": "UAC88",
+    "altitude_ft": 1014,
+    "latitude": 58.0156199798991,
+    "longitude": 7.01850461959839,
+    "categories": {
+      "AA": {
+        "name": "Hélicoptères / Autogires",
+        "multiplier": 1.8,
+        "max": 1804
+      },
+      "AT": {
+        "name": "Pendulaire",
+        "multiplier": 2.5,
+        "max": 2505
+      },
+      "AM": {
+        "name": "Multiaxe Aventure",
+        "multiplier": 1.0,
+        "max": 1002
+      },
+      "AX": {
+        "name": "Multiaxe Avancé",
+        "multiplier": 1.0,
+        "max": 1002
+      }
+    }
+  },
+  {
+    "id": "UAC84",
+    "altitude_ft": 1001,
+    "latitude": 57.5427318327133,
+    "longitude": 9.88407135009766,
+    "categories": {
+      "AA": {
+        "name": "Hélicoptères / Autogires",
+        "multiplier": 1.8,
+        "max": 1769
+      },
+      "AT": {
+        "name": "Pendulaire",
+        "multiplier": 2.5,
+        "max": 2458
+      },
+      "AM": {
+        "name": "Multiaxe Aventure",
+        "multiplier": 1.0,
+        "max": 983
+      },
+      "AX": {
+        "name": "Multiaxe Avancé",
+        "multiplier": 1.0,
+        "max": 983
+      }
+    }
+  },
+  {
+    "id": "UAC39",
+    "altitude_ft": 1010,
+    "latitude": 55.9309369621845,
+    "longitude": -2.21256160736084,
+    "categories": {
+      "AA": {
+        "name": "Hélicoptères / Autogires",
+        "multiplier": 1.8,
+        "max": 1696
+      },
+      "AT": {
+        "name": "Pendulaire",
+        "multiplier": 2.5,
+        "max": 2355
+      },
+      "AM": {
+        "name": "Multiaxe Aventure",
+        "multiplier": 1.0,
+        "max": 942
+      },
+      "AX": {
+        "name": "Multiaxe Avancé",
+        "multiplier": 1.0,
+        "max": 942
+      }
+    }
+  },
+  {
+    "id": "UAC63",
+    "altitude_ft": 1375,
+    "latitude": 46.9170885031945,
+    "longitude": 18.14426612854,
+    "categories": {
+      "AA": {
+        "name": "Hélicoptères / Autogires",
+        "multiplier": 1.8,
+        "max": 1696
+      },
+      "AT": {
+        "name": "Pendulaire",
+        "multiplier": 2.5,
+        "max": 2355
+      },
+      "AM": {
+        "name": "Multiaxe Aventure",
+        "multiplier": 1.0,
+        "max": 942
+      },
+      "AX": {
+        "name": "Multiaxe Avancé",
+        "multiplier": 1.0,
+        "max": 942
+      }
+    }
+  },
+  {
+    "id": "UAC65",
+    "altitude_ft": 1654,
+    "latitude": 48.3620560032457,
+    "longitude": 18.31081199646,
+    "categories": {
+      "AA": {
+        "name": "Hélicoptères / Autogires",
+        "multiplier": 1.8,
+        "max": 1647
+      },
+      "AT": {
+        "name": "Pendulaire",
+        "multiplier": 2.5,
+        "max": 2288
+      },
+      "AM": {
+        "name": "Multiaxe Aventure",
+        "multiplier": 1.0,
+        "max": 915
+      },
+      "AX": {
+        "name": "Multiaxe Avancé",
+        "multiplier": 1.0,
+        "max": 915
+      }
+    }
+  },
+  {
+    "id": "UAC14",
+    "altitude_ft": 1001,
+    "latitude": 41.3772347655185,
+    "longitude": 9.27268695831299,
+    "categories": {
+      "AA": {
+        "name": "Hélicoptères / Autogires",
+        "multiplier": 1.8,
+        "max": 1604
+      },
+      "AT": {
+        "name": "Pendulaire",
+        "multiplier": 2.5,
+        "max": 2228
+      },
+      "AM": {
+        "name": "Multiaxe Aventure",
+        "multiplier": 1.0,
+        "max": 891
+      },
+      "AX": {
+        "name": "Multiaxe Avancé",
+        "multiplier": 1.0,
+        "max": 891
+      }
+    }
+  },
+  {
+    "id": "UAC43",
+    "altitude_ft": 1001,
+    "latitude": 42.2578954514378,
+    "longitude": 11.0886650085449,
+    "categories": {
+      "AA": {
+        "name": "Hélicoptères / Autogires",
+        "multiplier": 1.8,
+        "max": 1537
+      },
+      "AT": {
+        "name": "Pendulaire",
+        "multiplier": 2.5,
+        "max": 2135
+      },
+      "AM": {
+        "name": "Multiaxe Aventure",
+        "multiplier": 1.0,
+        "max": 854
+      },
+      "AX": {
+        "name": "Multiaxe Avancé",
+        "multiplier": 1.0,
+        "max": 854
+      }
+    }
+  },
+  {
+    "id": "UAC59",
+    "altitude_ft": 1001,
+    "latitude": 44.5796372597706,
+    "longitude": 14.9840316772461,
+    "categories": {
+      "AA": {
+        "name": "Hélicoptères / Autogires",
+        "multiplier": 1.8,
+        "max": 1532
+      },
+      "AT": {
+        "name": "Pendulaire",
+        "multiplier": 2.5,
+        "max": 2128
+      },
+      "AM": {
+        "name": "Multiaxe Aventure",
+        "multiplier": 1.0,
+        "max": 851
+      },
+      "AX": {
+        "name": "Multiaxe Avancé",
+        "multiplier": 1.0,
+        "max": 851
+      }
+    }
+  },
+  {
+    "id": "UAC64",
+    "altitude_ft": 1398,
+    "latitude": 47.9316652930757,
+    "longitude": 17.2109508514404,
+    "categories": {
+      "AA": {
+        "name": "Hélicoptères / Autogires",
+        "multiplier": 1.8,
+        "max": 1517
+      },
+      "AT": {
+        "name": "Pendulaire",
+        "multiplier": 2.5,
+        "max": 2108
+      },
+      "AM": {
+        "name": "Multiaxe Aventure",
+        "multiplier": 1.0,
+        "max": 843
+      },
+      "AX": {
+        "name": "Multiaxe Avancé",
+        "multiplier": 1.0,
+        "max": 843
+      }
+    }
+  },
+  {
+    "id": "UAC35",
+    "altitude_ft": 1001,
+    "latitude": 53.3217842086721,
+    "longitude": -4.0193772315979,
+    "categories": {
+      "AA": {
+        "name": "Hélicoptères / Autogires",
+        "multiplier": 1.8,
+        "max": 1508
+      },
+      "AT": {
+        "name": "Pendulaire",
+        "multiplier": 2.5,
+        "max": 2095
+      },
+      "AM": {
+        "name": "Multiaxe Aventure",
+        "multiplier": 1.0,
+        "max": 838
+      },
+      "AX": {
+        "name": "Multiaxe Avancé",
+        "multiplier": 1.0,
+        "max": 838
+      }
+    }
+  },
+  {
+    "id": "UAC66",
+    "altitude_ft": 1955,
+    "latitude": 49.7944081438999,
+    "longitude": 17.0378818511963,
+    "categories": {
+      "AA": {
+        "name": "Hélicoptères / Autogires",
+        "multiplier": 1.8,
+        "max": 1460
+      },
+      "AT": {
+        "name": "Pendulaire",
+        "multiplier": 2.5,
+        "max": 2028
+      },
+      "AM": {
+        "name": "Multiaxe Aventure",
+        "multiplier": 1.0,
+        "max": 811
+      },
+      "AX": {
+        "name": "Multiaxe Avancé",
+        "multiplier": 1.0,
+        "max": 811
+      }
+    }
+  },
+  {
+    "id": "UAC22",
+    "altitude_ft": 1001,
+    "latitude": 48.4353951594587,
+    "longitude": -5.12160491943359,
+    "categories": {
+      "AA": {
+        "name": "Hélicoptères / Autogires",
+        "multiplier": 1.8,
+        "max": 1456
+      },
+      "AT": {
+        "name": "Pendulaire",
+        "multiplier": 2.5,
+        "max": 2023
+      },
+      "AM": {
+        "name": "Multiaxe Aventure",
+        "multiplier": 1.0,
+        "max": 809
+      },
+      "AX": {
+        "name": "Multiaxe Avancé",
+        "multiplier": 1.0,
+        "max": 809
+      }
+    }
+  },
+  {
+    "id": "UAC83",
+    "altitude_ft": 1001,
+    "latitude": 55.5128030264801,
+    "longitude": 11.0770988464355,
+    "categories": {
+      "AA": {
+        "name": "Hélicoptères / Autogires",
+        "multiplier": 1.8,
+        "max": 1445
+      },
+      "AT": {
+        "name": "Pendulaire",
+        "multiplier": 2.5,
+        "max": 2008
+      },
+      "AM": {
+        "name": "Multiaxe Aventure",
+        "multiplier": 1.0,
+        "max": 803
+      },
+      "AX": {
+        "name": "Multiaxe Avancé",
+        "multiplier": 1.0,
+        "max": 803
+      }
+    }
+  },
+  {
+    "id": "UAC19",
+    "altitude_ft": 1001,
+    "latitude": 44.0674789399518,
+    "longitude": -1.37279045581818,
+    "categories": {
+      "AA": {
+        "name": "Hélicoptères / Autogires",
+        "multiplier": 1.8,
+        "max": 1406
+      },
+      "AT": {
+        "name": "Pendulaire",
+        "multiplier": 2.5,
+        "max": 1953
+      },
+      "AM": {
+        "name": "Multiaxe Aventure",
+        "multiplier": 1.0,
+        "max": 781
+      },
+      "AX": {
+        "name": "Multiaxe Avancé",
+        "multiplier": 1.0,
+        "max": 781
+      }
+    }
+  },
+  {
+    "id": "UAC34",
+    "altitude_ft": 1033,
+    "latitude": 51.5758136869931,
+    "longitude": -4.28862762451172,
+    "categories": {
+      "AA": {
+        "name": "Hélicoptères / Autogires",
+        "multiplier": 1.8,
+        "max": 1395
+      },
+      "AT": {
+        "name": "Pendulaire",
+        "multiplier": 2.5,
+        "max": 1938
+      },
+      "AM": {
+        "name": "Multiaxe Aventure",
+        "multiplier": 1.0,
+        "max": 775
+      },
+      "AX": {
+        "name": "Multiaxe Avancé",
+        "multiplier": 1.0,
+        "max": 775
+      }
+    }
+  },
+  {
+    "id": "UAC38",
+    "altitude_ft": 1276,
+    "latitude": 54.5276677670162,
+    "longitude": -0.755708813667297,
+    "categories": {
+      "AA": {
+        "name": "Hélicoptères / Autogires",
+        "multiplier": 1.8,
+        "max": 1373
+      },
+      "AT": {
+        "name": "Pendulaire",
+        "multiplier": 2.5,
+        "max": 1908
+      },
+      "AM": {
+        "name": "Multiaxe Aventure",
+        "multiplier": 1.0,
+        "max": 763
+      },
+      "AX": {
+        "name": "Multiaxe Avancé",
+        "multiplier": 1.0,
+        "max": 763
+      }
+    }
+  },
+  {
+    "id": "UAC33",
+    "altitude_ft": 1555,
+    "latitude": 51.1806257718053,
+    "longitude": -4.19183444976807,
+    "categories": {
+      "AA": {
+        "name": "Hélicoptères / Autogires",
+        "multiplier": 1.8,
+        "max": 1361
+      },
+      "AT": {
+        "name": "Pendulaire",
+        "multiplier": 2.5,
+        "max": 1890
+      },
+      "AM": {
+        "name": "Multiaxe Aventure",
+        "multiplier": 1.0,
+        "max": 756
+      },
+      "AX": {
+        "name": "Multiaxe Avancé",
+        "multiplier": 1.0,
+        "max": 756
+      }
+    }
+  },
+  {
+    "id": "UAC13",
+    "altitude_ft": 1001,
+    "latitude": 42.7262039567852,
+    "longitude": 9.25679588317871,
+    "categories": {
+      "AA": {
+        "name": "Hélicoptères / Autogires",
+        "multiplier": 1.8,
+        "max": 1346
+      },
+      "AT": {
+        "name": "Pendulaire",
+        "multiplier": 2.5,
+        "max": 1870
+      },
+      "AM": {
+        "name": "Multiaxe Aventure",
+        "multiplier": 1.0,
+        "max": 748
+      },
+      "AX": {
+        "name": "Multiaxe Avancé",
+        "multiplier": 1.0,
+        "max": 748
+      }
+    }
+  },
+  {
+    "id": "UAC36",
+    "altitude_ft": 1371,
+    "latitude": 52.6774275774677,
+    "longitude": -2.9079008102417,
+    "categories": {
+      "AA": {
+        "name": "Hélicoptères / Autogires",
+        "multiplier": 1.8,
+        "max": 1328
+      },
+      "AT": {
+        "name": "Pendulaire",
+        "multiplier": 2.5,
+        "max": 1845
+      },
+      "AM": {
+        "name": "Multiaxe Aventure",
+        "multiplier": 1.0,
+        "max": 738
+      },
+      "AX": {
+        "name": "Multiaxe Avancé",
+        "multiplier": 1.0,
+        "max": 738
+      }
+    }
+  },
+  {
+    "id": "UAC15",
+    "altitude_ft": 1001,
+    "latitude": 42.6885218031342,
+    "longitude": 3.09442496299744,
+    "categories": {
+      "AA": {
+        "name": "Hélicoptères / Autogires",
+        "multiplier": 1.8,
+        "max": 1327
+      },
+      "AT": {
+        "name": "Pendulaire",
+        "multiplier": 2.5,
+        "max": 1843
+      },
+      "AM": {
+        "name": "Multiaxe Aventure",
+        "multiplier": 1.0,
+        "max": 737
+      },
+      "AX": {
+        "name": "Multiaxe Avancé",
+        "multiplier": 1.0,
+        "max": 737
+      }
+    }
+  },
+  {
+    "id": "UAC16",
+    "altitude_ft": 1824,
+    "latitude": 43.4181601763154,
+    "longitude": 0.882771909236908,
+    "categories": {
+      "AA": {
+        "name": "Hélicoptères / Autogires",
+        "multiplier": 1.8,
+        "max": 1318
+      },
+      "AT": {
+        "name": "Pendulaire",
+        "multiplier": 2.5,
+        "max": 1830
+      },
+      "AM": {
+        "name": "Multiaxe Aventure",
+        "multiplier": 1.0,
+        "max": 732
+      },
+      "AX": {
+        "name": "Multiaxe Avancé",
+        "multiplier": 1.0,
+        "max": 732
+      }
+    }
+  },
+  {
+    "id": "UAC82",
+    "altitude_ft": 991,
+    "latitude": 54.8793644526639,
+    "longitude": 10.0542945861816,
+    "categories": {
+      "AA": {
+        "name": "Hélicoptères / Autogires",
+        "multiplier": 1.8,
+        "max": 1280
+      },
+      "AT": {
+        "name": "Pendulaire",
+        "multiplier": 2.5,
+        "max": 1778
+      },
+      "AM": {
+        "name": "Multiaxe Aventure",
+        "multiplier": 1.0,
+        "max": 711
+      },
+      "AX": {
+        "name": "Multiaxe Avancé",
+        "multiplier": 1.0,
+        "max": 711
+      }
+    }
+  },
+  {
+    "id": "UAC95",
+    "altitude_ft": 1001,
+    "latitude": 45.3307121816619,
+    "longitude": 13.5374660491943,
+    "categories": {
+      "AA": {
+        "name": "Hélicoptères / Autogires",
+        "multiplier": 1.8,
+        "max": 1276
+      },
+      "AT": {
+        "name": "Pendulaire",
+        "multiplier": 2.5,
+        "max": 1773
+      },
+      "AM": {
+        "name": "Multiaxe Aventure",
+        "multiplier": 1.0,
+        "max": 709
+      },
+      "AX": {
+        "name": "Multiaxe Avancé",
+        "multiplier": 1.0,
+        "max": 709
+      }
+    }
+  },
+  {
+    "id": "UAC67",
+    "altitude_ft": 2795,
+    "latitude": 48.8349031692965,
+    "longitude": 15.4236431121826,
+    "categories": {
+      "AA": {
+        "name": "Hélicoptères / Autogires",
+        "multiplier": 1.8,
+        "max": 1255
+      },
+      "AT": {
+        "name": "Pendulaire",
+        "multiplier": 2.5,
+        "max": 1743
+      },
+      "AM": {
+        "name": "Multiaxe Aventure",
+        "multiplier": 1.0,
+        "max": 697
+      },
+      "AX": {
+        "name": "Multiaxe Avancé",
+        "multiplier": 1.0,
+        "max": 697
+      }
+    }
+  },
+  {
+    "id": "UAC94",
+    "altitude_ft": 1001,
+    "latitude": 45.0136172343495,
+    "longitude": 12.4554815292358,
+    "categories": {
+      "AA": {
+        "name": "Hélicoptères / Autogires",
+        "multiplier": 1.8,
+        "max": 1204
+      },
+      "AT": {
+        "name": "Pendulaire",
+        "multiplier": 2.5,
+        "max": 1673
+      },
+      "AM": {
+        "name": "Multiaxe Aventure",
+        "multiplier": 1.0,
+        "max": 669
+      },
+      "AX": {
+        "name": "Multiaxe Avancé",
+        "multiplier": 1.0,
+        "max": 669
+      }
+    }
+  },
+  {
+    "id": "UAC21",
+    "altitude_ft": 1001,
+    "latitude": 46.691446373774,
+    "longitude": -2.27126169204712,
+    "categories": {
+      "AA": {
+        "name": "Hélicoptères / Autogires",
+        "multiplier": 1.8,
+        "max": 1190
+      },
+      "AT": {
+        "name": "Pendulaire",
+        "multiplier": 2.5,
+        "max": 1653
+      },
+      "AM": {
+        "name": "Multiaxe Aventure",
+        "multiplier": 1.0,
+        "max": 661
+      },
+      "AX": {
+        "name": "Multiaxe Avancé",
+        "multiplier": 1.0,
+        "max": 661
+      }
+    }
+  },
+  {
+    "id": "UAC20",
+    "altitude_ft": 1001,
+    "latitude": 45.5865335019302,
+    "longitude": -1.17012405395508,
+    "categories": {
+      "AA": {
+        "name": "Hélicoptères / Autogires",
+        "multiplier": 1.8,
+        "max": 1177
+      },
+      "AT": {
+        "name": "Pendulaire",
+        "multiplier": 2.5,
+        "max": 1635
+      },
+      "AM": {
+        "name": "Multiaxe Aventure",
+        "multiplier": 1.0,
+        "max": 654
+      },
+      "AX": {
+        "name": "Multiaxe Avancé",
+        "multiplier": 1.0,
+        "max": 654
+      }
+    }
+  },
+  {
+    "id": "UAC18",
+    "altitude_ft": 1171,
+    "latitude": 44.6401766414791,
+    "longitude": 0.338943004608154,
+    "categories": {
+      "AA": {
+        "name": "Hélicoptères / Autogires",
+        "multiplier": 1.8,
+        "max": 1159
+      },
+      "AT": {
+        "name": "Pendulaire",
+        "multiplier": 2.5,
+        "max": 1610
+      },
+      "AM": {
+        "name": "Multiaxe Aventure",
+        "multiplier": 1.0,
+        "max": 644
+      },
+      "AX": {
+        "name": "Multiaxe Avancé",
+        "multiplier": 1.0,
+        "max": 644
+      }
+    }
+  },
+  {
+    "id": "UAC17",
+    "altitude_ft": 1680,
+    "latitude": 43.8788940018732,
+    "longitude": 2.08125567436218,
+    "categories": {
+      "AA": {
+        "name": "Hélicoptères / Autogires",
+        "multiplier": 1.8,
+        "max": 1156
+      },
+      "AT": {
+        "name": "Pendulaire",
+        "multiplier": 2.5,
+        "max": 1605
+      },
+      "AM": {
+        "name": "Multiaxe Aventure",
+        "multiplier": 1.0,
+        "max": 642
+      },
+      "AX": {
+        "name": "Multiaxe Avancé",
+        "multiplier": 1.0,
+        "max": 642
+      }
+    }
+  },
+  {
+    "id": "UAC11",
+    "altitude_ft": 1014,
+    "latitude": 43.4283849695029,
+    "longitude": 6.70563411712646,
+    "categories": {
+      "AA": {
+        "name": "Hélicoptères / Autogires",
+        "multiplier": 1.8,
+        "max": 1127
+      },
+      "AT": {
+        "name": "Pendulaire",
+        "multiplier": 2.5,
+        "max": 1565
+      },
+      "AM": {
+        "name": "Multiaxe Aventure",
+        "multiplier": 1.0,
+        "max": 626
+      },
+      "AX": {
+        "name": "Multiaxe Avancé",
+        "multiplier": 1.0,
+        "max": 626
+      }
+    }
+  },
+  {
+    "id": "UAC71",
+    "altitude_ft": 1158,
+    "latitude": 53.5534095838056,
+    "longitude": 11.1827192306519,
+    "categories": {
+      "AA": {
+        "name": "Hélicoptères / Autogires",
+        "multiplier": 1.8,
+        "max": 1123
+      },
+      "AT": {
+        "name": "Pendulaire",
+        "multiplier": 2.5,
+        "max": 1560
+      },
+      "AM": {
+        "name": "Multiaxe Aventure",
+        "multiplier": 1.0,
+        "max": 624
+      },
+      "AX": {
+        "name": "Multiaxe Avancé",
+        "multiplier": 1.0,
+        "max": 624
+      }
+    }
+  },
+  {
+    "id": "UAC70",
+    "altitude_ft": 1171,
+    "latitude": 52.9515572198062,
+    "longitude": 12.2228450775146,
+    "categories": {
+      "AA": {
+        "name": "Hélicoptères / Autogires",
+        "multiplier": 1.8,
+        "max": 1120
+      },
+      "AT": {
+        "name": "Pendulaire",
+        "multiplier": 2.5,
+        "max": 1555
+      },
+      "AM": {
+        "name": "Multiaxe Aventure",
+        "multiplier": 1.0,
+        "max": 622
+      },
+      "AX": {
+        "name": "Multiaxe Avancé",
+        "multiplier": 1.0,
+        "max": 622
+      }
+    }
+  },
+  {
+    "id": "UAC12",
+    "altitude_ft": 1004,
+    "latitude": 43.6321295124444,
+    "longitude": 4.20805978775024,
+    "categories": {
+      "AA": {
+        "name": "Hélicoptères / Autogires",
+        "multiplier": 1.8,
+        "max": 1103
+      },
+      "AT": {
+        "name": "Pendulaire",
+        "multiplier": 2.5,
+        "max": 1533
+      },
+      "AM": {
+        "name": "Multiaxe Aventure",
+        "multiplier": 1.0,
+        "max": 613
+      },
+      "AX": {
+        "name": "Multiaxe Avancé",
+        "multiplier": 1.0,
+        "max": 613
+      }
+    }
+  },
+  {
+    "id": "UAC10",
+    "altitude_ft": 2405,
+    "latitude": 43.6061406426525,
+    "longitude": 6.07956457138062,
+    "categories": {
+      "AA": {
+        "name": "Hélicoptères / Autogires",
+        "multiplier": 1.8,
+        "max": 1085
+      },
+      "AT": {
+        "name": "Pendulaire",
+        "multiplier": 2.5,
+        "max": 1508
+      },
+      "AM": {
+        "name": "Multiaxe Aventure",
+        "multiplier": 1.0,
+        "max": 603
+      },
+      "AX": {
+        "name": "Multiaxe Avancé",
+        "multiplier": 1.0,
+        "max": 603
+      }
+    }
+  },
+  {
+    "id": "UAC37",
+    "altitude_ft": 1001,
+    "latitude": 53.0165293942859,
+    "longitude": 0.176025182008743,
+    "categories": {
+      "AA": {
+        "name": "Hélicoptères / Autogires",
+        "multiplier": 1.8,
+        "max": 1073
+      },
+      "AT": {
+        "name": "Pendulaire",
+        "multiplier": 2.5,
+        "max": 1490
+      },
+      "AM": {
+        "name": "Multiaxe Aventure",
+        "multiplier": 1.0,
+        "max": 596
+      },
+      "AX": {
+        "name": "Multiaxe Avancé",
+        "multiplier": 1.0,
+        "max": 596
+      }
+    }
+  },
+  {
+    "id": "UAC96",
+    "altitude_ft": 1096,
+    "latitude": 45.3746781093493,
+    "longitude": 11.31272315979,
+    "categories": {
+      "AA": {
+        "name": "Hélicoptères / Autogires",
+        "multiplier": 1.8,
+        "max": 1039
+      },
+      "AT": {
+        "name": "Pendulaire",
+        "multiplier": 2.5,
+        "max": 1443
+      },
+      "AM": {
+        "name": "Multiaxe Aventure",
+        "multiplier": 1.0,
+        "max": 577
+      },
+      "AX": {
+        "name": "Multiaxe Avancé",
+        "multiplier": 1.0,
+        "max": 577
+      }
+    }
+  },
+  {
+    "id": "UAC68",
+    "altitude_ft": 2887,
+    "latitude": 49.5098078215638,
+    "longitude": 13.7146415710449,
+    "categories": {
+      "AA": {
+        "name": "Hélicoptères / Autogires",
+        "multiplier": 1.8,
+        "max": 1028
+      },
+      "AT": {
+        "name": "Pendulaire",
+        "multiplier": 2.5,
+        "max": 1428
+      },
+      "AM": {
+        "name": "Multiaxe Aventure",
+        "multiplier": 1.0,
+        "max": 571
+      },
+      "AX": {
+        "name": "Multiaxe Avancé",
+        "multiplier": 1.0,
+        "max": 571
+      }
+    }
+  },
+  {
+    "id": "UAC69",
+    "altitude_ft": 1476,
+    "latitude": 51.2491837955993,
+    "longitude": 13.0891437530518,
+    "categories": {
+      "AA": {
+        "name": "Hélicoptères / Autogires",
+        "multiplier": 1.8,
+        "max": 1026
+      },
+      "AT": {
+        "name": "Pendulaire",
+        "multiplier": 2.5,
+        "max": 1425
+      },
+      "AM": {
+        "name": "Multiaxe Aventure",
+        "multiplier": 1.0,
+        "max": 570
+      },
+      "AX": {
+        "name": "Multiaxe Avancé",
+        "multiplier": 1.0,
+        "max": 570
+      }
+    }
+  },
+  {
+    "id": "UAC23",
+    "altitude_ft": 1001,
+    "latitude": 49.3481543193826,
+    "longitude": -1.74783325195312,
+    "categories": {
+      "AA": {
+        "name": "Hélicoptères / Autogires",
+        "multiplier": 1.8,
+        "max": 999
+      },
+      "AT": {
+        "name": "Pendulaire",
+        "multiplier": 2.5,
+        "max": 1388
+      },
+      "AM": {
+        "name": "Multiaxe Aventure",
+        "multiplier": 1.0,
+        "max": 555
+      },
+      "AX": {
+        "name": "Multiaxe Avancé",
+        "multiplier": 1.0,
+        "max": 555
+      }
+    }
+  },
+  {
+    "id": "UAC81",
+    "altitude_ft": 1001,
+    "latitude": 53.7813808077331,
+    "longitude": 7.6978120803833,
+    "categories": {
+      "AA": {
+        "name": "Hélicoptères / Autogires",
+        "multiplier": 1.8,
+        "max": 979
+      },
+      "AT": {
+        "name": "Pendulaire",
+        "multiplier": 2.5,
+        "max": 1360
+      },
+      "AM": {
+        "name": "Multiaxe Aventure",
+        "multiplier": 1.0,
+        "max": 544
+      },
+      "AX": {
+        "name": "Multiaxe Avancé",
+        "multiplier": 1.0,
+        "max": 544
+      }
+    }
+  },
+  {
+    "id": "UAC72",
+    "altitude_ft": 1001,
+    "latitude": 53.6049911724176,
+    "longitude": 8.26025676727295,
+    "categories": {
+      "AA": {
+        "name": "Hélicoptères / Autogires",
+        "multiplier": 1.8,
+        "max": 963
+      },
+      "AT": {
+        "name": "Pendulaire",
+        "multiplier": 2.5,
+        "max": 1338
+      },
+      "AM": {
+        "name": "Multiaxe Aventure",
+        "multiplier": 1.0,
+        "max": 535
+      },
+      "AX": {
+        "name": "Multiaxe Avancé",
+        "multiplier": 1.0,
+        "max": 535
+      }
+    }
+  },
+  {
+    "id": "UAC7",
+    "altitude_ft": 1739,
+    "latitude": 46.2849305898477,
+    "longitude": 1.03935849666595,
+    "categories": {
+      "AA": {
+        "name": "Hélicoptères / Autogires",
+        "multiplier": 1.8,
+        "max": 851
+      },
+      "AT": {
+        "name": "Pendulaire",
+        "multiplier": 2.5,
+        "max": 1183
+      },
+      "AM": {
+        "name": "Multiaxe Aventure",
+        "multiplier": 1.0,
+        "max": 473
+      },
+      "AX": {
+        "name": "Multiaxe Avancé",
+        "multiplier": 1.0,
+        "max": 473
+      }
+    }
+  },
+  {
+    "id": "UAC9",
+    "altitude_ft": 1476,
+    "latitude": 45.0384620474554,
+    "longitude": 4.8908519744873,
+    "categories": {
+      "AA": {
+        "name": "Hélicoptères / Autogires",
+        "multiplier": 1.8,
+        "max": 810
+      },
+      "AT": {
+        "name": "Pendulaire",
+        "multiplier": 2.5,
+        "max": 1125
+      },
+      "AM": {
+        "name": "Multiaxe Aventure",
+        "multiplier": 1.0,
+        "max": 450
+      },
+      "AX": {
+        "name": "Multiaxe Avancé",
+        "multiplier": 1.0,
+        "max": 450
+      }
+    }
+  },
+  {
+    "id": "UAC97",
+    "altitude_ft": 3199,
+    "latitude": 47.7169582965164,
+    "longitude": 11.5544996261597,
+    "categories": {
+      "AA": {
+        "name": "Hélicoptères / Autogires",
+        "multiplier": 1.8,
+        "max": 799
+      },
+      "AT": {
+        "name": "Pendulaire",
+        "multiplier": 2.5,
+        "max": 1110
+      },
+      "AM": {
+        "name": "Multiaxe Aventure",
+        "multiplier": 1.0,
+        "max": 444
+      },
+      "AX": {
+        "name": "Multiaxe Avancé",
+        "multiplier": 1.0,
+        "max": 444
+      }
+    }
+  },
+  {
+    "id": "UAC99",
+    "altitude_ft": 2428,
+    "latitude": 45.5612686321903,
+    "longitude": 3.23444414138794,
+    "categories": {
+      "AA": {
+        "name": "Hélicoptères / Autogires",
+        "multiplier": 1.8,
+        "max": 781
+      },
+      "AT": {
+        "name": "Pendulaire",
+        "multiplier": 2.5,
+        "max": 1085
+      },
+      "AM": {
+        "name": "Multiaxe Aventure",
+        "multiplier": 1.0,
+        "max": 434
+      },
+      "AX": {
+        "name": "Multiaxe Avancé",
+        "multiplier": 1.0,
+        "max": 434
+      }
+    }
+  },
+  {
+    "id": "UAC80",
+    "altitude_ft": 988,
+    "latitude": 52.8773984408928,
+    "longitude": 5.07968330383301,
+    "categories": {
+      "AA": {
+        "name": "Hélicoptères / Autogires",
+        "multiplier": 1.8,
+        "max": 778
+      },
+      "AT": {
+        "name": "Pendulaire",
+        "multiplier": 2.5,
+        "max": 1080
+      },
+      "AM": {
+        "name": "Multiaxe Aventure",
+        "multiplier": 1.0,
+        "max": 432
+      },
+      "AX": {
+        "name": "Multiaxe Avancé",
+        "multiplier": 1.0,
+        "max": 432
+      }
+    }
+  },
+  {
+    "id": "UAC25",
+    "altitude_ft": 1427,
+    "latitude": 48.3011341309438,
+    "longitude": 0.215912789106369,
+    "categories": {
+      "AA": {
+        "name": "Hélicoptères / Autogires",
+        "multiplier": 1.8,
+        "max": 761
+      },
+      "AT": {
+        "name": "Pendulaire",
+        "multiplier": 2.5,
+        "max": 1058
+      },
+      "AM": {
+        "name": "Multiaxe Aventure",
+        "multiplier": 1.0,
+        "max": 423
+      },
+      "AX": {
+        "name": "Multiaxe Avancé",
+        "multiplier": 1.0,
+        "max": 423
+      }
+    }
+  },
+  {
+    "id": "UAC24",
+    "altitude_ft": 1001,
+    "latitude": 50.8734243535056,
+    "longitude": 1.57598030567169,
+    "categories": {
+      "AA": {
+        "name": "Hélicoptères / Autogires",
+        "multiplier": 1.8,
+        "max": 666
+      },
+      "AT": {
+        "name": "Pendulaire",
+        "multiplier": 2.5,
+        "max": 925
+      },
+      "AM": {
+        "name": "Multiaxe Aventure",
+        "multiplier": 1.0,
+        "max": 370
+      },
+      "AX": {
+        "name": "Multiaxe Avancé",
+        "multiplier": 1.0,
+        "max": 370
+      }
+    }
+  },
+  {
+    "id": "UAC79",
+    "altitude_ft": 1001,
+    "latitude": 51.7349161135193,
+    "longitude": 3.71915793418884,
+    "categories": {
+      "AA": {
+        "name": "Hélicoptères / Autogires",
+        "multiplier": 1.8,
+        "max": 608
+      },
+      "AT": {
+        "name": "Pendulaire",
+        "multiplier": 2.5,
+        "max": 845
+      },
+      "AM": {
+        "name": "Multiaxe Aventure",
+        "multiplier": 1.0,
+        "max": 338
+      },
+      "AX": {
+        "name": "Multiaxe Avancé",
+        "multiplier": 1.0,
+        "max": 338
+      }
+    }
+  },
+  {
+    "id": "UAC73",
+    "altitude_ft": 1755,
+    "latitude": 49.9258243986256,
+    "longitude": 10.2479810714722,
+    "categories": {
+      "AA": {
+        "name": "Hélicoptères / Autogires",
+        "multiplier": 1.8,
+        "max": 596
+      },
+      "AT": {
+        "name": "Pendulaire",
+        "multiplier": 2.5,
+        "max": 828
+      },
+      "AM": {
+        "name": "Multiaxe Aventure",
+        "multiplier": 1.0,
+        "max": 331
+      },
+      "AX": {
+        "name": "Multiaxe Avancé",
+        "multiplier": 1.0,
+        "max": 331
+      }
+    }
+  },
+  {
+    "id": "UAC98",
+    "altitude_ft": 2598,
+    "latitude": 48.6412946270834,
+    "longitude": 10.2997331619263,
+    "categories": {
+      "AA": {
+        "name": "Hélicoptères / Autogires",
+        "multiplier": 1.8,
+        "max": 589
+      },
+      "AT": {
+        "name": "Pendulaire",
+        "multiplier": 2.5,
+        "max": 818
+      },
+      "AM": {
+        "name": "Multiaxe Aventure",
+        "multiplier": 1.0,
+        "max": 327
+      },
+      "AX": {
+        "name": "Multiaxe Avancé",
+        "multiplier": 1.0,
+        "max": 327
+      }
+    }
+  },
+  {
+    "id": "UAC8",
+    "altitude_ft": 1693,
+    "latitude": 46.3331483102934,
+    "longitude": 4.98583316802979,
+    "categories": {
+      "AA": {
+        "name": "Hélicoptères / Autogires",
+        "multiplier": 1.8,
+        "max": 553
+      },
+      "AT": {
+        "name": "Pendulaire",
+        "multiplier": 2.5,
+        "max": 768
+      },
+      "AM": {
+        "name": "Multiaxe Aventure",
+        "multiplier": 1.0,
+        "max": 307
+      },
+      "AX": {
+        "name": "Multiaxe Avancé",
+        "multiplier": 1.0,
+        "max": 307
+      }
+    }
+  },
+  {
+    "id": "UAC74",
+    "altitude_ft": 1706,
+    "latitude": 50.8706820325539,
+    "longitude": 8.82746601104736,
+    "categories": {
+      "AA": {
+        "name": "Hélicoptères / Autogires",
+        "multiplier": 1.8,
+        "max": 529
+      },
+      "AT": {
+        "name": "Pendulaire",
+        "multiplier": 2.5,
+        "max": 735
+      },
+      "AM": {
+        "name": "Multiaxe Aventure",
+        "multiplier": 1.0,
+        "max": 294
+      },
+      "AX": {
+        "name": "Multiaxe Avancé",
+        "multiplier": 1.0,
+        "max": 294
+      }
+    }
+  },
+  {
+    "id": "UAC77",
+    "altitude_ft": 1010,
+    "latitude": 51.1318787116989,
+    "longitude": 3.57695269584656,
+    "categories": {
+      "AA": {
+        "name": "Hélicoptères / Autogires",
+        "multiplier": 1.8,
+        "max": 515
+      },
+      "AT": {
+        "name": "Pendulaire",
+        "multiplier": 2.5,
+        "max": 715
+      },
+      "AM": {
+        "name": "Multiaxe Aventure",
+        "multiplier": 1.0,
+        "max": 286
+      },
+      "AX": {
+        "name": "Multiaxe Avancé",
+        "multiplier": 1.0,
+        "max": 286
+      }
+    }
+  },
+  {
+    "id": "UAC6",
+    "altitude_ft": 1624,
+    "latitude": 47.8744966097227,
+    "longitude": 2.91367745399475,
+    "categories": {
+      "AA": {
+        "name": "Hélicoptères / Autogires",
+        "multiplier": 1.8,
+        "max": 455
+      },
+      "AT": {
+        "name": "Pendulaire",
+        "multiplier": 2.5,
+        "max": 633
+      },
+      "AM": {
+        "name": "Multiaxe Aventure",
+        "multiplier": 1.0,
+        "max": 253
+      },
+      "AX": {
+        "name": "Multiaxe Avancé",
+        "multiplier": 1.0,
+        "max": 253
+      }
+    }
+  },
+  {
+    "id": "UAC78",
+    "altitude_ft": 1155,
+    "latitude": 50.7128875872536,
+    "longitude": 3.53195095062256,
+    "categories": {
+      "AA": {
+        "name": "Hélicoptères / Autogires",
+        "multiplier": 1.8,
+        "max": 454
+      },
+      "AT": {
+        "name": "Pendulaire",
+        "multiplier": 2.5,
+        "max": 630
+      },
+      "AM": {
+        "name": "Multiaxe Aventure",
+        "multiplier": 1.0,
+        "max": 252
+      },
+      "AX": {
+        "name": "Multiaxe Avancé",
+        "multiplier": 1.0,
+        "max": 252
+      }
+    }
+  },
+  {
+    "id": "UAC75",
+    "altitude_ft": 1827,
+    "latitude": 50.7159031157722,
+    "longitude": 6.4862060546875,
+    "categories": {
+      "AA": {
+        "name": "Hélicoptères / Autogires",
+        "multiplier": 1.8,
+        "max": 347
+      },
+      "AT": {
+        "name": "Pendulaire",
+        "multiplier": 2.5,
+        "max": 483
+      },
+      "AM": {
+        "name": "Multiaxe Aventure",
+        "multiplier": 1.0,
+        "max": 193
+      },
+      "AX": {
+        "name": "Multiaxe Avancé",
+        "multiplier": 1.0,
+        "max": 193
+      }
+    }
+  },
+  {
+    "id": "UAC5",
+    "altitude_ft": 1663,
+    "latitude": 47.419308897771,
+    "longitude": 5.37554931640625,
+    "categories": {
+      "AA": {
+        "name": "Hélicoptères / Autogires",
+        "multiplier": 1.8,
+        "max": 328
+      },
+      "AT": {
+        "name": "Pendulaire",
+        "multiplier": 2.5,
+        "max": 455
+      },
+      "AM": {
+        "name": "Multiaxe Aventure",
+        "multiplier": 1.0,
+        "max": 182
+      },
+      "AX": {
+        "name": "Multiaxe Avancé",
+        "multiplier": 1.0,
+        "max": 182
+      }
+    }
+  },
+  {
+    "id": "UAC76",
+    "altitude_ft": 2762,
+    "latitude": 50.1604106607642,
+    "longitude": 6.23050498962402,
+    "categories": {
+      "AA": {
+        "name": "Hélicoptères / Autogires",
+        "multiplier": 1.8,
+        "max": 232
+      },
+      "AT": {
+        "name": "Pendulaire",
+        "multiplier": 2.5,
+        "max": 323
+      },
+      "AM": {
+        "name": "Multiaxe Aventure",
+        "multiplier": 1.0,
+        "max": 129
+      },
+      "AX": {
+        "name": "Multiaxe Avancé",
+        "multiplier": 1.0,
+        "max": 129
+      }
+    }
+  },
+  {
+    "id": "UAC1",
+    "altitude_ft": 1716,
+    "latitude": 49.5015228021006,
+    "longitude": 5.1309118270874,
+    "categories": {
+      "AA": {
+        "name": "Hélicoptères / Autogires",
+        "multiplier": 1.8,
+        "max": 137
+      },
+      "AT": {
+        "name": "Pendulaire",
+        "multiplier": 2.5,
+        "max": 190
+      },
+      "AM": {
+        "name": "Multiaxe Aventure",
+        "multiplier": 1.0,
+        "max": 76
+      },
+      "AX": {
+        "name": "Multiaxe Avancé",
+        "multiplier": 1.0,
+        "max": 76
+      }
+    }
+  },
+  {
+    "id": "UAC4",
+    "altitude_ft": 2129,
+    "latitude": 49.4267834571077,
+    "longitude": 6.40580272674561,
+    "categories": {
+      "AA": {
+        "name": "Hélicoptères / Autogires",
+        "multiplier": 1.8,
+        "max": 106
+      },
+      "AT": {
+        "name": "Pendulaire",
+        "multiplier": 2.5,
+        "max": 148
+      },
+      "AM": {
+        "name": "Multiaxe Aventure",
+        "multiplier": 1.0,
+        "max": 59
+      },
+      "AX": {
+        "name": "Multiaxe Avancé",
+        "multiplier": 1.0,
+        "max": 59
+      }
+    }
+  },
+  {
+    "id": "UAC2",
+    "altitude_ft": 1781,
+    "latitude": 48.9629418954776,
+    "longitude": 5.14935207366943,
+    "categories": {
+      "AA": {
+        "name": "Hélicoptères / Autogires",
+        "multiplier": 1.8,
+        "max": 95
+      },
+      "AT": {
+        "name": "Pendulaire",
+        "multiplier": 2.5,
+        "max": 133
+      },
+      "AM": {
+        "name": "Multiaxe Aventure",
+        "multiplier": 1.0,
+        "max": 53
+      },
+      "AX": {
+        "name": "Multiaxe Avancé",
+        "multiplier": 1.0,
+        "max": 53
+      }
+    }
+  },
+  {
+    "id": "UAC3",
+    "altitude_ft": 2001,
+    "latitude": 48.8133812432218,
+    "longitude": 6.47728681564331,
+    "categories": {
+      "AA": {
+        "name": "Hélicoptères / Autogires",
+        "multiplier": 1.8,
+        "max": 90
+      },
+      "AT": {
+        "name": "Pendulaire",
+        "multiplier": 2.5,
+        "max": 125
+      },
+      "AM": {
+        "name": "Multiaxe Aventure",
+        "multiplier": 1.0,
+        "max": 50
+      },
+      "AX": {
+        "name": "Multiaxe Avancé",
+        "multiplier": 1.0,
+        "max": 50
+      }
+    }
+  }
+]
